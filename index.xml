@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mark&#39;s Blog</title>
+      <title> on Mark&#39;s Blog </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
     <link>http://mlavi.github.io/</link>
-    <description>Recent content on Mark&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2015 14:11:47 -0800</lastBuildDate>
-    <atom:link href="http://mlavi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <updated>Fri, 06 Mar 2015 14:11:47 PST</updated>
     
     <item>
       <title>About Mark</title>
       <link>http://mlavi.github.io/about/</link>
-      <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
+      <pubDate>Fri, 06 Mar 2015 14:11:47 PST</pubDate>
       
       <guid>http://mlavi.github.io/about/</guid>
       <description>&lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
@@ -20,22 +20,22 @@
  Service Provider (before the world wide web).&lt;/p&gt;
 
 &lt;p&gt;One of the web masters of Netscape, cnnfn.com, and sgi.com, Mark was part of the
- world&amp;rsquo;s largest and earliest media and web sites. Mark progressed to Netscape Developer
- Relations, where he was the JavaScript and LDAP Technology Evangelist.
-One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; summarizes his ability to explain technical
- subjects to all.&lt;/p&gt;
+ world&amp;rsquo;s largest and earliest media and web sites. Mark progressed to Developer
+ Relations, where he became the JavaScript and LDAP Technology Evangelist.
+One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures his ability to relate technical
+ subjects to anyone.&lt;/p&gt;
 
 &lt;p&gt;Mark&amp;rsquo;s approach mixes software engineering disciplines with art and operations, embracing
  Internet architecture, real-time media, and the ability to nurture people, developers,
  networks, and systems to work together. His multi-disciplinary practice is partially
- encompassed by the term DevOps.&lt;/p&gt;
+ encompassed by the term &lt;a href=&#34;https://en.wikipedia.org/wiki/DevOps&#34;&gt;DevOps&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Time for a new development project!</title>
       <link>http://mlavi.github.io/post/first/</link>
-      <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
+      <pubDate>Fri, 06 Mar 2015 14:11:47 PST</pubDate>
       
       <guid>http://mlavi.github.io/post/first/</guid>
       <description>
