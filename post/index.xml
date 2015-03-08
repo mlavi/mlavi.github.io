@@ -24,7 +24,7 @@
 
 &lt;h3 id=&#34;then-you-start:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Then you start&amp;hellip;&lt;/h3&gt;
 
-&lt;p&gt;You find that your idea is broad and multi-faceted, tools are in various states of acceptable
+&lt;p&gt;You find that your idea is broad and multifaceted, tools are in various states of acceptable
  use and documentation, and there is a bevy of dependencies: each representing a small
  landscape to conquer.&lt;/p&gt;
 
@@ -37,7 +37,7 @@
 
 &lt;p&gt;I&amp;rsquo;ll update later with how I&amp;rsquo;ve navigated the static web site blog quest, thus far it has been an
  exercise in transferring most of the standard content management system functionality into
- smaller tools and libraries which inverts the workflow. I think the journey will be worth
+ smaller tools and libraries which inverts the work flow. I think the journey will be worth
  it because I&amp;rsquo;ve caught glimpses which validate this approach:&lt;/p&gt;
 
 &lt;ul&gt;

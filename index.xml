@@ -17,7 +17,7 @@
       
       <guid>http://mlavi.github.io/about/</guid>
       <description>&lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
- After graduation and Internet withdrawl, he joined the first national commercial Internet
+ After graduation and Internet withdrawal, he joined the first national commercial Internet
  Service Provider (before the world wide web).&lt;/p&gt;
 
 &lt;p&gt;One of the web masters of Netscape, cnnfn.com, and sgi.com, Mark was part of the
@@ -28,8 +28,8 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
 
 &lt;p&gt;Mark&amp;rsquo;s approach mixes software engineering disciplines with art and operations, embracing
  Internet architecture, real-time media, and the ability to nurture people, developers,
- networks, and systems to work together. His multi-disciplinary practice is partially
- encompassed by the term &lt;a href=&#34;https://en.wikipedia.org/wiki/DevOps&#34;&gt;DevOps&lt;/a&gt;.&lt;/p&gt;
+ networks, and systems to work together. His multidisciplinary practice is complimented
+ by the term &lt;a href=&#34;https://en.wikipedia.org/wiki/DevOps&#34;&gt;DevOps&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -47,7 +47,7 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
 
 &lt;h3 id=&#34;then-you-start:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Then you start&amp;hellip;&lt;/h3&gt;
 
-&lt;p&gt;You find that your idea is broad and multi-faceted, tools are in various states of acceptable
+&lt;p&gt;You find that your idea is broad and multifaceted, tools are in various states of acceptable
  use and documentation, and there is a bevy of dependencies: each representing a small
  landscape to conquer.&lt;/p&gt;
 
@@ -60,7 +60,7 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
 
 &lt;p&gt;I&amp;rsquo;ll update later with how I&amp;rsquo;ve navigated the static web site blog quest, thus far it has been an
  exercise in transferring most of the standard content management system functionality into
- smaller tools and libraries which inverts the workflow. I think the journey will be worth
+ smaller tools and libraries which inverts the work flow. I think the journey will be worth
  it because I&amp;rsquo;ve caught glimpses which validate this approach:&lt;/p&gt;
 
 &lt;ul&gt;
