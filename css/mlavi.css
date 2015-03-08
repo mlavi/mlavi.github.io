@@ -1,6 +1,8 @@
 .sidebar a:hover { background: black; }
+#all-tags li a, .nav-item { background: grey; }
 /*
 .nav ul { background: #7F1000; }
 .read-more-link a:hover { background: gray; }
+.tags-list { text-align: right;  }
 
  */
