@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Blog on Mark&#39;s Blog </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
+    <title>Blog on Mark&#39;s Blog</title>
     <link>http://mlavi.github.io/tags/blog/</link>
+    <description>Recent content in Blog on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <updated>Fri, 06 Mar 2015 14:11:47 PST</updated>
+    <lastBuildDate>Fri, 06 Mar 2015 14:11:47 -0800</lastBuildDate>
+    <atom:link href="http://mlavi.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Time for a new development project!</title>
       <link>http://mlavi.github.io/post/first/</link>
-      <pubDate>Fri, 06 Mar 2015 14:11:47 PST</pubDate>
+      <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
       <guid>http://mlavi.github.io/post/first/</guid>
       <description>
