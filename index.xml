@@ -7,8 +7,48 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 06 Mar 2015 14:11:47 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2015 23:16:27 -0700</lastBuildDate>
     <atom:link href="http://mlavi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A DevOps Automation State Diagram</title>
+      <link>http://mlavi.github.io/post/diagram/</link>
+      <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/diagram/</guid>
+      <description>&lt;p&gt;Two wonderful things today:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I found exactly the tool I have been looking for over the years!
+I used Wikipedia and &lt;a href=&#34;http://alternativeto.net&#34;&gt;alternativeTo&lt;/a&gt; to survey the market for competitors
+to my favorite open source object drawing tool, &lt;a href=&#34;https://wiki.gnome.org/Apps/Dia&#34;&gt;Dia&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The following snapshot shows authoring the work-in-progress&amp;hellip;
+&lt;img src=&#34;http://mlavi.github.io/img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The DevOps mission of reducing friction between the developer&amp;rsquo;s code and deployment to production
+is mostly captured by this diagram. It has been in my head for a while, extended past but based on
+work with my colleagues at Pertino. It is mostly complete, a bit of an eye-chart, and I want to
+improve the flow by reducing crossing lines. Working on this as a state diagram has yielded some
+insight into improvements, optimization, and bottlenecks. I plan to release the source file as part
+of my infrastructure as code project.&lt;/p&gt;
+
+&lt;p&gt;I made it with &lt;a href=&#34;http://www.plantuml.com/eclipse.html&#34;&gt;PlantUML in Eclipse with GraphViz&lt;/a&gt; with a view
+rendering the results on the fly (no need to save) which felt like unit testing my diagram!
+This allowed me to iterate frequently with text rather than graphics: brilliant and yet
+another example as infrastructure as code. :~) My standby object drawing program, Dia,
+would have done the trick as well, perhaps even better from a layout crossing lines perspective,
+but re-factoring would have been slower. Re-factoring was key in making improvements and I could
+perform analysis on my arrow layout hints, e.g.: &lt;code&gt;$ grep &amp;lsquo;&amp;ndash;&amp;gt;&amp;rsquo; | wc &amp;ndash;lines&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll update with the final product soon: you will be able to view the SVG image in a new browser
+window or tab, then scale it to your liking. I&amp;rsquo;m very happy with the results of performing this work
+with open source software and formats (currently 45Kb SVG which allows you to copy the text of the
+diagram) for flexibility and performance.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>About Mark</title>
