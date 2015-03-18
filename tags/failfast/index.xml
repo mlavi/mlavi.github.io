@@ -16,7 +16,9 @@
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
       <guid>http://mlavi.github.io/post/devops-automation/</guid>
-      <description>&lt;ul&gt;
+      <description>
+
+&lt;ul&gt;
 &lt;li&gt;&amp;ldquo;Perfect is the enemy of good.&amp;rdquo; &amp;ndash;&lt;a href=&#34;http://en.wikiquote.org/wiki/Perfection&#34;&gt;Volare&lt;/a&gt; (paraphrased)&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;Fail fast.&amp;rdquo; &amp;ndash;&lt;a href=&#34;http://en.wikiquote.org/wiki/Ward_Cunningham#The_Simplest_Thing_that_Could_Possibly_Work&#34;&gt;Ward Cunningham&lt;/a&gt;
 (paraphrased as &lt;a href=&#34;https://twitter.com/hashtag/failfast&#34;&gt;#failfast&lt;/a&gt;)&lt;/li&gt;
@@ -35,12 +37,17 @@ some of which are not easily identified off the shelf.&lt;/p&gt;
 &lt;p&gt;You can &amp;ldquo;view the SVG image&amp;rdquo; in a new browser window or tab and scale it to your liking
 and then cut and paste text from it.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/devops-automation_2015-03-11.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-11&#34; /&gt;
+&lt;h3 id=&#34;updated:32baa83692157fcb17c74c92c7c38e39&#34;&gt;Updated!&lt;/h3&gt;
+
+&lt;p&gt;My original release was 2015-03-11 (source below), but today&amp;rsquo;s update adds detail, removes many crossed lines
+for simple visual flow parsing, and is organized vertically.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;Source code: (I&amp;rsquo;m unsure if I should name the file devops-automation.plantuml?)
+&lt;p&gt;Source code: devops_automation.pu
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;startuml&lt;/span&gt;
-&lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;DevOps&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Automation&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2015&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;03&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;DevOps&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Automation&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2015&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;03&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;by&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Mark&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Lavi&lt;/span&gt;
 &lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Development&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color: #a6e22e&#34;&gt;Development&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;language&lt;/span&gt;
   &lt;span style=&#34;color: #a6e22e&#34;&gt;Development&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;editor&lt;/span&gt;
