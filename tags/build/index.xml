@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Build on Mark&#39;s Blog</title>
+    <link>http://mlavi.github.io/tags/build/</link>
+    <description>Recent content in Build on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 18 Mar 2015 21:02:15 -0700</lastBuildDate>
+    <atom:link href="http://mlavi.github.io/tags/build/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DevOps BTD Pattern for Continuous Deployment</title>
+      <link>http://mlavi.github.io/post/devops-btd-pattern/</link>
+      <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
+      <description>
+
+&lt;h3 id=&#34;code-friction-and-service-design:8496744675100c630db0dc665f90a3a3&#34;&gt;Code Friction and Service Design&lt;/h3&gt;
+
+&lt;p&gt;I created the &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt; to map out the flow of code from
+developer to production in a wholly automated manner: better known as continuous deployment.&lt;/p&gt;
+
+&lt;p&gt;This map represents the software development life cycle, service deployment, and feedback loops that are
+integral to service design. I did this so that I could figure out where best to start work for my
+infrastructure as code project and I found a few optimizations by re-factoring the code flow and
+moving processes forward in the chain of events.&lt;/p&gt;
+
+&lt;p&gt;In doing so, I describe a journey that spans different disciplines of build, test, and deployment:
+areas that have been traditionally separated into team or department silos because they represent
+the pillars or domains of software development, quality assurance, and operations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Those traditional silos create code friction by introduce manual hand offs and insulating teams
+from each other, which creates barriers to proper service design and life cycle considerations.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;It&amp;rsquo;s not my job,&amp;rdquo; &amp;ldquo;it works on my laptop,&amp;rdquo; and &amp;ldquo;I don&amp;rsquo;t like the [other team&amp;rsquo;s] attitude&amp;rdquo; are
+verbal indications of code friction. They are blockers for engineers to embrace their responsibility
+for service design over the entire life cycle of code.&lt;/p&gt;
+
+&lt;h3 id=&#34;btd-build-test-deploy-pattern:8496744675100c630db0dc665f90a3a3&#34;&gt;BTD: Build, Test, Deploy Pattern&lt;/h3&gt;
+
+&lt;p&gt;We&amp;rsquo;ve talked about breaking down the traditional walls between software development, quality assurance,
+and operations by describing a responsibility for all of these teams to embrace all of the disciplines
+of BTD (build, test, and deployment) in order to become proper service designers.&lt;/p&gt;
+
+&lt;p&gt;I call this the BTD pattern, but astute readers will note this should be the TBD pattern! :~)&lt;/p&gt;
+
+&lt;p&gt;BTD is nothing revelatory, it is the traditional pipeline for software development.
+The &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt; at a high level &lt;em&gt;is&lt;/em&gt; a BTD pattern,
+but we will examine it further and find BTD should exist in each domain.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Build:&lt;/strong&gt; SoftwareDeveloper codes functionality and &lt;em&gt;builds&lt;/em&gt; the code&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Test:&lt;/strong&gt; QualityAssurance creates &lt;em&gt;tests&lt;/em&gt; for the build artifacts&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deploy:&lt;/strong&gt; Operations &lt;em&gt;deploys&lt;/em&gt; the artifacts&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;What is wrong with the BTD pattern? Nothing except how it has been implemented as traditional roles and hand-offs, e.g.:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;you can see the traditional silos and you can see all of the potential hand-offs and inefficiencies
+to remedy a bug. The cost and time to fix increases the further the bug is discovered from the developer.&lt;/p&gt;
+
+&lt;h3 id=&#34;devops-btd-pattern-for-continuous-deployment:8496744675100c630db0dc665f90a3a3&#34;&gt;DevOps BTD Pattern for Continuous Deployment&lt;/h3&gt;
+
+&lt;p&gt;We need to prevent bugs from happening in deployment, in test, and in development.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Did operations create a deployment bug? How did they test it?&lt;/li&gt;
+&lt;li&gt;Did quality assurance develop a good test? How do you test the tests?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;BTD must be applied at the build domain, at the test domain, and at the deploy domain.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This is why everything is testable, buildable, and deployable on the developer laptop in the DevOps Automation Diagram.
+The traditional software developer or recent college graduate, system administrator, or quality engineer
+does not code tests, code deployment, and code builds, then test deployments and test builds:
+this expanded skill set must be part of the engineering culture for service design and imbued into all.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
