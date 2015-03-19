@@ -235,9 +235,43 @@ The cost and time to fix increases the further the bug is discovered from the de
 <p>This is why everything is testable, buildable, and deployable on the developer laptop in the
 <a href="../devops-automation/">DevOps Automation Diagram</a>.
 The traditional software developer or recent college graduate, system administrator, or quality engineer
-does not code tests, code deployment, and code builds, then test deployments and test builds.
+does not code tests, code deployment, and code builds, then test deployments and test builds &ndash; <strong>but they should!</strong>
 The DevOps engineer must test monitors, deployments, and builds as well.
 This expanded skill set must be part of the engineering culture for service design and imbued into all.</p>
+
+<p>SoftwareDeveloper codes and performs BTD:</p>
+
+<ol>
+<li>BDD feature descriptions (with help from product management, customer support, and sales)</li>
+<li>TDD unit test cases + test data (with help from QualityAssurance)</li>
+<li>Build jobs</li>
+<li>Functionality</li>
+<li>Related logs, metrics, and monitors for internal SLAs (with help from Operations)</li>
+<li>Deployable and configurable artifacts (with help from Operations)</li>
+</ol>
+
+<p>QualityAssurance codes and performs BTD:</p>
+
+<ol>
+<li>Test plan</li>
+<li>Test cases and test data (with help from SoftwareDevelopers) that leverage logs, monitors, and metrics</li>
+<li>Test and periodic test jobs</li>
+<li>Integration tests (with help from SoftwareDevelopers)</li>
+<li>Deployment tests (with help from Operations)</li>
+</ol>
+
+<p>Operations codes and performs BTD:</p>
+
+<ol>
+<li>Deployment Tools and tests</li>
+<li>Server OS builds, run times, and dependencies</li>
+<li>Configuration Management and tests</li>
+<li>Deployment Orchestration (automated run books) and tests</li>
+<li>Monitors and escalations (which are akin to integration tests)</li>
+<li>Logging and Metric reports (which are akin to service level agreements)</li>
+</ol>
+
+<p>I am sure there is more, but this is a very good start to a robust service design organization for continuous deployment!</p>
 
 	
 	

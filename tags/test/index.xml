@@ -85,9 +85,43 @@ The cost and time to fix increases the further the bug is discovered from the de
 &lt;p&gt;This is why everything is testable, buildable, and deployable on the developer laptop in the
 &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt;.
 The traditional software developer or recent college graduate, system administrator, or quality engineer
-does not code tests, code deployment, and code builds, then test deployments and test builds.
+does not code tests, code deployment, and code builds, then test deployments and test builds &amp;ndash; &lt;strong&gt;but they should!&lt;/strong&gt;
 The DevOps engineer must test monitors, deployments, and builds as well.
 This expanded skill set must be part of the engineering culture for service design and imbued into all.&lt;/p&gt;
+
+&lt;p&gt;SoftwareDeveloper codes and performs BTD:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;BDD feature descriptions (with help from product management, customer support, and sales)&lt;/li&gt;
+&lt;li&gt;TDD unit test cases + test data (with help from QualityAssurance)&lt;/li&gt;
+&lt;li&gt;Build jobs&lt;/li&gt;
+&lt;li&gt;Functionality&lt;/li&gt;
+&lt;li&gt;Related logs, metrics, and monitors for internal SLAs (with help from Operations)&lt;/li&gt;
+&lt;li&gt;Deployable and configurable artifacts (with help from Operations)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;QualityAssurance codes and performs BTD:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Test plan&lt;/li&gt;
+&lt;li&gt;Test cases and test data (with help from SoftwareDevelopers) that leverage logs, monitors, and metrics&lt;/li&gt;
+&lt;li&gt;Test and periodic test jobs&lt;/li&gt;
+&lt;li&gt;Integration tests (with help from SoftwareDevelopers)&lt;/li&gt;
+&lt;li&gt;Deployment tests (with help from Operations)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Operations codes and performs BTD:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Deployment Tools and tests&lt;/li&gt;
+&lt;li&gt;Server OS builds, run times, and dependencies&lt;/li&gt;
+&lt;li&gt;Configuration Management and tests&lt;/li&gt;
+&lt;li&gt;Deployment Orchestration (automated run books) and tests&lt;/li&gt;
+&lt;li&gt;Monitors and escalations (which are akin to integration tests)&lt;/li&gt;
+&lt;li&gt;Logging and Metric reports (which are akin to service level agreements)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I am sure there is more, but this is a very good start to a robust service design organization for continuous deployment!&lt;/p&gt;
 </description>
     </item>
     
