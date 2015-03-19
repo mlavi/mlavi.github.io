@@ -185,12 +185,12 @@ the pillars or domains of software development, quality assurance, and operation
 <p><img src="/img/btd-pattern-traditional.dia.png" alt="BTD Silos - 2015-03-18" />
 </p>
 
-<p>Those traditional silos create code friction by introduce manual hand offs and insulating teams
-from each other, which creates barriers to proper service design and life cycle considerations.</p>
+<p>Those traditional silos create code friction by introducing manual hand offs and insulating teams
+from shared responsibilities, creating barriers to proper service design and life cycle considerations.</p>
 
 <p>&ldquo;It&rsquo;s not my job,&rdquo; &ldquo;it works on my laptop,&rdquo; and &ldquo;I don&rsquo;t like the [other team&rsquo;s] attitude&rdquo; are
-verbal indications of code friction. They are blockers for engineers to embrace their responsibility
-for service design over the entire life cycle of code.</p>
+verbal indications of code friction. They are blockers for engineers on any team or any domain
+to embrace their responsibility for service design over the entire life cycle of code.</p>
 
 <h3 id="btd-build-test-deploy-pattern:8496744675100c630db0dc665f90a3a3">BTD: Build, Test, Deploy Pattern</h3>
 
@@ -198,25 +198,25 @@ for service design over the entire life cycle of code.</p>
 and operations by describing a responsibility for all of these teams to embrace all of the disciplines
 of BTD (build, test, and deployment) in order to become proper service designers.</p>
 
-<p>I call this the BTD pattern, but astute readers will note this should be the TBD pattern! :~)</p>
-
-<p>BTD is nothing revelatory, it is the traditional pipeline for software development.
-The <a href="../devops-automation/">DevOps Automation Diagram</a> at a high level <em>is</em> a BTD pattern,
-but we will examine it further and find BTD should exist in each domain.</p>
-
 <ol>
 <li><strong>Build:</strong> SoftwareDeveloper codes functionality and <em>builds</em> the code</li>
 <li><strong>Test:</strong> QualityAssurance creates <em>tests</em> for the build artifacts</li>
 <li><strong>Deploy:</strong> Operations <em>deploys</em> the artifacts</li>
 </ol>
 
+<p>I call this the BTD pattern, but astute readers will note it should be the TBD pattern! :~)</p>
+
+<p>BTD is nothing revelatory, it is the traditional pipeline for software development.
+The <a href="../devops-automation/">DevOps Automation Diagram</a> at a high level <em>is</em> a BTD pattern,
+but we will examine it further and find that BTD should exist in each domain.</p>
+
 <p>What is wrong with the BTD pattern? Nothing except how it has been implemented as traditional roles and hand-offs, e.g.:</p>
 
 <p><img src="/img/btd_silos.pu.png" alt="BTD Silos - 2015-03-18" />
 </p>
 
-<p>&hellip;you can see the traditional silos and you can see all of the potential hand-offs and inefficiencies
-to remedy a bug. The cost and time to fix increases the further the bug is discovered from the developer.</p>
+<p>&hellip;you can see the traditional silos and you can see all of the potential inefficiencies to remedy a bug.
+The cost and time to fix increases the further the bug is discovered from the developer.</p>
 
 <h3 id="devops-btd-pattern-for-continuous-deployment:8496744675100c630db0dc665f90a3a3">DevOps BTD Pattern for Continuous Deployment</h3>
 
@@ -232,10 +232,12 @@ to remedy a bug. The cost and time to fix increases the further the bug is disco
 <p><img src="/img/btd-pattern.dia.png" alt="BTD Pattern - 2015-03-18" />
 </p>
 
-<p>This is why everything is testable, buildable, and deployable on the developer laptop in the DevOps Automation Diagram.
+<p>This is why everything is testable, buildable, and deployable on the developer laptop in the
+<a href="../devops-automation/">DevOps Automation Diagram</a>.
 The traditional software developer or recent college graduate, system administrator, or quality engineer
-does not code tests, code deployment, and code builds, then test deployments and test builds:
-this expanded skill set must be part of the engineering culture for service design and imbued into all.</p>
+does not code tests, code deployment, and code builds, then test deployments and test builds.
+The DevOps engineer must test monitors, deployments, and builds as well.
+This expanded skill set must be part of the engineering culture for service design and imbued into all.</p>
 
 	
 	
