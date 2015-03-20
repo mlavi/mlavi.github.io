@@ -26,8 +26,8 @@
   
   
 
-  <link rel="stylesheet" href="http://mlavi.github.io//css/redlounge.css">
-  <link rel="stylesheet" href="http://mlavi.github.io//css/mlavi.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/mlavi.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -70,46 +70,97 @@
     Mark&#39;s Blog
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://mlavi.github.io/">Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
         <li class="nav-item"><span class="nav-item-separator">//</span><a class="subscribe-button icon-feed" href="">Subscribe</a></li>
 
         
       </ul>
       <ul id="all-tags">Tag Cloud<br />
        
-       <li><a href="/tags/about">about</a></li>
        
-       <li><a href="/tags/automation">automation</a></li>
        
-       <li><a href="/tags/blog">blog</a></li>
        
-       <li><a href="/tags/build">build</a></li>
        
-       <li><a href="/tags/career">career</a></li>
        
-       <li><a href="/tags/cms">cms</a></li>
        
-       <li><a href="/tags/deploy">deploy</a></li>
        
-       <li><a href="/tags/devops">devops</a></li>
        
-       <li><a href="/tags/diagram">diagram</a></li>
        
-       <li><a href="/tags/failfast">failfast</a></li>
        
-       <li><a href="/tags/pattern">pattern</a></li>
        
-       <li><a href="/tags/prototype">prototype</a></li>
        
-       <li><a href="/tags/shipit">shipit</a></li>
        
-       <li><a href="/tags/static">static</a></li>
        
-       <li><a href="/tags/test">test</a></li>
        
-       <li><a href="/tags/webmaster">webmaster</a></li>
        
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+
+
+<li><span class="dark-red"><a href="/tags/devops">devops</a></span>
+ <span class="decorative-marker">//</span> 4</li>
+
+<li><span class="dark-red"><a href="/tags/automation">automation</a></span>
+ <span class="decorative-marker">//</span> 2</li>
+
+<li><span class="dark-red"><a href="/tags/diagram">diagram</a></span>
+ <span class="decorative-marker">//</span> 2</li>
+
+<li><span class="dark-red"><a href="/tags/build">build</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/failfast">failfast</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/career">career</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/webmaster">webmaster</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/static">static</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/pattern">pattern</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/test">test</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/blog">blog</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/prototype">prototype</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/cms">cms</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/deploy">deploy</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/shipit">shipit</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
+<li><span class="dark-red"><a href="/tags/about">about</a></span>
+ <span class="decorative-marker">//</span> 1</li>
+
       </ul>
+
     </nav>
 
     
@@ -135,6 +186,8 @@
 <ul>
 <li><a href="#then-you-start:e8fb9c67eba912c72729806db31eaa1b">Then you start&hellip;</a></li>
 <li><a href="#to-sink-into-reality:e8fb9c67eba912c72729806db31eaa1b">&hellip; to sink into reality!</a></li>
+<li><a href="#a-static-web-cms:e8fb9c67eba912c72729806db31eaa1b">A Static Web CMS?</a></li>
+<li><a href="#infrastructure-as-code:e8fb9c67eba912c72729806db31eaa1b">Infrastructure as Code</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -180,7 +233,8 @@
 <h3 id="to-sink-into-reality:e8fb9c67eba912c72729806db31eaa1b">&hellip; to sink into reality!</h3>
 
 <p>The original title of this first post was &ldquo;Time for a new Blog&rdquo; to document my experiment
- with Github Pages, Jekyll, and Hugo: it has been a fascinating study in scope creep.</p>
+ with <a href="http://jekyllrb.com/docs/github-pages/">Jekyll and Github Pages</a> before settling on
+ <a href="http://gohugo.io/overview/introduction/">Hugo</a>: it has been a fascinating study in scope creep.</p>
 
 <p>But I&rsquo;m prototyping, so it&rsquo;s all good, right?</p>
 
@@ -195,9 +249,26 @@
 <li>Everything under revision control, therefore: blog + content = testable software!</li>
 </ul>
 
-<p>Even though I&rsquo;ve accomplished much with Joomla, WordPress, Drupal, and ModX over the years,
- you inevitably fall out of love after the first month with complex and brittle software.
- Will it happen again?</p>
+<h3 id="a-static-web-cms:e8fb9c67eba912c72729806db31eaa1b">A Static Web CMS?</h3>
+
+<p>Even though I&rsquo;ve accomplished much with various web content management systems (CMS) such as
+ Joomla, WordPress, Drupal, and ModX over the years, you inevitably fall <em>out of love</em> after
+ the first month with complex and brittle software. Will it happen again?</p>
+
+<p>A static, compiled web site removes and loses dynamic, server-side functionality for persistence and
+interaction, or does it? With the advent of application service providers (ASP) or cloud hosted
+anything-as-a-service, we can move from server-side to service providers for comments and
+who knows what else? In addition, we can leverage improved web client capabilities to shift
+what was server-side to client-side processing.</p>
+
+<p>This will be a great experiment!</p>
+
+<h3 id="infrastructure-as-code:e8fb9c67eba912c72729806db31eaa1b">Infrastructure as Code</h3>
+
+<p>The real purpose of this blog will be to catalog and share my research and development towards my passion:
+Infrastructure as Code. It is a ripe time for system and design thinking because the entire industry is
+trying to solve basic problems and automate their solution while integrating many different systems and
+disciplines. It is an exciting and disruptive time!</p>
 
 	
 	
@@ -206,13 +277,13 @@
 		<div class="tags-list">
 		<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
 		
-                <a class="post-tag post-tag-blog" href="http://mlavi.github.io//tags/blog">blog</a>,
+                <a class="post-tag post-tag-blog" href="http://localhost:1313//tags/blog">blog</a>,
                 
-                <a class="post-tag post-tag-prototype" href="http://mlavi.github.io//tags/prototype">prototype</a>,
+                <a class="post-tag post-tag-prototype" href="http://localhost:1313//tags/prototype">prototype</a>,
                 
-                <a class="post-tag post-tag-cms" href="http://mlavi.github.io//tags/cms">CMS</a>,
+                <a class="post-tag post-tag-cms" href="http://localhost:1313//tags/cms">CMS</a>,
                 
-                <a class="post-tag post-tag-static" href="http://mlavi.github.io//tags/static">static</a>,
+                <a class="post-tag post-tag-static" href="http://localhost:1313//tags/static">static</a>,
                 
 		</div>
 	
@@ -252,5 +323,8 @@
 	
 
   
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>

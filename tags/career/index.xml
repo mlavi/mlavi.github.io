@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Career on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/career/</link>
+    <link>http://localhost:1313/tags/career/</link>
     <description>Recent content in Career on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Fri, 06 Mar 2015 14:11:47 -0800</lastBuildDate>
-    <atom:link href="http://mlavi.github.io/tags/career/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/career/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About Mark</title>
-      <link>http://mlavi.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://mlavi.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
  After graduation and Internet withdrawal, he joined the first national commercial Internet
  Service Provider (before the world wide web).&lt;/p&gt;
@@ -30,6 +30,8 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
  Internet architecture, real-time media, and the ability to nurture people, developers,
  networks, and systems to work together. His multidisciplinary practice is complimented
  by the term &lt;a href=&#34;https://en.wikipedia.org/wiki/DevOps&#34;&gt;DevOps&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can review Mark&amp;rsquo;s career and endorsements at &lt;a href=&#34;https://www.linkedin.com/in/marklavi&#34;&gt;https://www.linkedin.com/in/marklavi&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

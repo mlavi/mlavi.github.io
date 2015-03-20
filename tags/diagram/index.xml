@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Diagram on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/diagram/</link>
+    <link>http://localhost:1313/tags/diagram/</link>
     <description>Recent content in Diagram on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Wed, 11 Mar 2015 10:35:41 -0700</lastBuildDate>
-    <atom:link href="http://mlavi.github.io/tags/diagram/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/diagram/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>http://mlavi.github.io/post/devops-automation/</link>
+      <link>http://localhost:1313/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops-automation/</guid>
+      <guid>http://localhost:1313/post/devops-automation/</guid>
       <description>
 
 &lt;ul&gt;
@@ -42,7 +42,7 @@ and then cut and paste text from it.&lt;/p&gt;
 &lt;p&gt;My original release was 2015-03-11 (source below), but today&amp;rsquo;s update adds detail, removes many crossed lines
 for simple visual flow parsing, and is organized vertically.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Source code: devops_automation.pu
@@ -208,23 +208,29 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>http://mlavi.github.io/post/diagram/</link>
+      <link>http://localhost:1313/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/diagram/</guid>
-      <description>&lt;p&gt;Two wonderful things today:&lt;/p&gt;
+      <guid>http://localhost:1313/post/diagram/</guid>
+      <description>
 
-&lt;ul&gt;
+&lt;h3 id=&#34;beautiful-tool-and-diagram:9ae74c72486689c2be9e15358622329b&#34;&gt;Beautiful Tool and Diagram&lt;/h3&gt;
+
+&lt;p&gt;I found and created two wonderful things today:&lt;/p&gt;
+
+&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;I found exactly the tool I have been looking for over the years!
 I used Wikipedia and &lt;a href=&#34;http://alternativeto.net&#34;&gt;alternativeTo&lt;/a&gt; to survey the market for competitors
 to my favorite open source object drawing tool, &lt;a href=&#34;https://wiki.gnome.org/Apps/Dia&#34;&gt;Dia&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The following snapshot shows authoring the work-in-progress&amp;hellip;
-&lt;img src=&#34;http://mlavi.github.io/img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;
-&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;The following snapshot shows authoring a work-in-progress diagram&amp;hellip; I&amp;rsquo;ve been trying to create this
+for a quite a while and I&amp;rsquo;m glad to have the time to do it properly.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;The DevOps mission of reducing friction between the developer&amp;rsquo;s code and deployment to production
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The DevOps mission to reduce all friction between the developer&amp;rsquo;s code and deployment to production
 is mostly captured by this diagram. It has been in my head for a while, extended past but based on
 work with my colleagues at Pertino. It is mostly complete, a bit of an eye-chart, and I want to
 improve the flow by reducing crossing lines. Working on this as a state diagram has yielded some
@@ -244,7 +250,9 @@ window or tab, then scale it to your liking. I&amp;rsquo;m very happy with the r
 with open source software and formats (currently 45Kb SVG which allows you to copy the text of the
 diagram) for flexibility and performance.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;UPDATE&lt;/em&gt; see the &lt;a href=&#34;../devops-automation/&#34;&gt;next posting&lt;/a&gt; for the &amp;ldquo;final&amp;rdquo; product.&lt;/p&gt;
+&lt;h3 id=&#34;update:9ae74c72486689c2be9e15358622329b&#34;&gt;UPDATE&lt;/h3&gt;
+
+&lt;p&gt;Please see the &lt;a href=&#34;../devops-automation/&#34;&gt;next posting&lt;/a&gt; for the &amp;ldquo;final&amp;rdquo; product.&lt;/p&gt;
 </description>
     </item>
     
