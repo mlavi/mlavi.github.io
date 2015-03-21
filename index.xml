@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mark&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>http://mlavi.github.io/</link>
     <description>Recent content on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Wed, 18 Mar 2015 21:02:15 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mlavi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>DevOps BTD Pattern for Continuous Deployment</title>
-      <link>http://localhost:1313/post/devops-btd-pattern/</link>
+      <link>http://mlavi.github.io/post/devops-btd-pattern/</link>
       <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/devops-btd-pattern/</guid>
+      <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>
 
 &lt;h3 id=&#34;code-friction-and-service-design:8496744675100c630db0dc665f90a3a3&#34;&gt;Code Friction and Service Design&lt;/h3&gt;
@@ -32,7 +32,7 @@ moving processes forward in the chain of events.&lt;/p&gt;
 areas that have been traditionally separated into team or department silos because they represent
 the pillars or domains of software development, quality assurance, and operations.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Those traditional silos create code friction by introducing manual hand offs and insulating teams
@@ -54,7 +54,7 @@ of BTD (build, test, and deployment) in order to become proper service designers
 &lt;li&gt;&lt;strong&gt;Deploy:&lt;/strong&gt; Operations &lt;em&gt;deploys&lt;/em&gt; the artifacts&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;I call this the BTD pattern, but astute readers will note it should be the TBD pattern! :~)&lt;/p&gt;
+&lt;p&gt;I call this the BTD pattern, &lt;strong&gt;but astute readers will note it should be the TBD pattern&lt;/strong&gt; because we want to achieve test driven development of code, tests, and operations.&lt;/p&gt;
 
 &lt;p&gt;BTD is nothing revelatory, it is the traditional pipeline for software development.
 The &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt; at a high level &lt;em&gt;is&lt;/em&gt; a BTD pattern,
@@ -62,7 +62,7 @@ but we will examine it further and find that BTD should exist in each domain.&lt
 
 &lt;p&gt;What is wrong with the BTD pattern? Nothing except how it has been implemented as traditional roles and hand-offs, e.g.:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&amp;hellip;you can see the traditional silos and you can see all of the potential inefficiencies to remedy a bug.
@@ -79,7 +79,7 @@ The cost and time to fix increases the further the bug is discovered from the de
 
 &lt;p&gt;BTD must be applied at the build domain, at the test domain, and at the deploy domain.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;This is why everything is testable, buildable, and deployable on the developer laptop in the
@@ -127,10 +127,10 @@ This expanded skill set must be part of the engineering culture for service desi
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>http://localhost:1313/post/devops-automation/</link>
+      <link>http://mlavi.github.io/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/devops-automation/</guid>
+      <guid>http://mlavi.github.io/post/devops-automation/</guid>
       <description>
 
 &lt;ul&gt;
@@ -157,7 +157,7 @@ and then cut and paste text from it.&lt;/p&gt;
 &lt;p&gt;My original release was 2015-03-11 (source below), but today&amp;rsquo;s update adds detail, removes many crossed lines
 for simple visual flow parsing, and is organized vertically.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Source code: devops_automation.pu
@@ -323,10 +323,10 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>http://localhost:1313/post/diagram/</link>
+      <link>http://mlavi.github.io/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/diagram/</guid>
+      <guid>http://mlavi.github.io/post/diagram/</guid>
       <description>
 
 &lt;h3 id=&#34;beautiful-tool-and-diagram:9ae74c72486689c2be9e15358622329b&#34;&gt;Beautiful Tool and Diagram&lt;/h3&gt;
@@ -342,7 +342,7 @@ to my favorite open source object drawing tool, &lt;a href=&#34;https://wiki.gno
 for a quite a while and I&amp;rsquo;m glad to have the time to do it properly.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;The DevOps mission to reduce all friction between the developer&amp;rsquo;s code and deployment to production
@@ -373,10 +373,10 @@ diagram) for flexibility and performance.&lt;/p&gt;
     
     <item>
       <title>About Mark</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://mlavi.github.io/about/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://mlavi.github.io/about/</guid>
       <description>&lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
  After graduation and Internet withdrawal, he joined the first national commercial Internet
  Service Provider (before the world wide web).&lt;/p&gt;
@@ -398,10 +398,10 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
     
     <item>
       <title>Time for a new development project!</title>
-      <link>http://localhost:1313/post/first/</link>
+      <link>http://mlavi.github.io/post/first/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://localhost:1313/post/first/</guid>
+      <guid>http://mlavi.github.io/post/first/</guid>
       <description>
 
 &lt;p&gt;Embarking on a new adventure is always the best time in a project because all your dreams
