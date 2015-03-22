@@ -18,7 +18,10 @@
       <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>
 
-&lt;h3 id=&#34;code-friction-and-service-design:8496744675100c630db0dc665f90a3a3&#34;&gt;Code Friction and Service Design&lt;/h3&gt;
+&lt;p&gt;What happens when you find the same macro and micro pattern in your diagram? You reinforce your goals
+to improve code flow and service design on the way to test driven development!&lt;/p&gt;
+
+&lt;h3 id=&#34;code-flow-and-service-design:8496744675100c630db0dc665f90a3a3&#34;&gt;Code Flow and Service Design&lt;/h3&gt;
 
 &lt;p&gt;I created the &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt; to map out the flow of code from
 developer to production in a wholly automated manner: better known as continuous deployment.&lt;/p&gt;
@@ -89,7 +92,7 @@ does not code tests, code deployment, and code builds, then test deployments and
 The DevOps engineer must test monitors, deployments, and builds as well.
 This expanded skill set must be part of the engineering culture for service design and imbued into all.&lt;/p&gt;
 
-&lt;p&gt;SoftwareDeveloper codes and performs BTD:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SoftwareDeveloper&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;BDD feature descriptions (with help from product management, customer support, and sales)&lt;/li&gt;
@@ -100,7 +103,7 @@ This expanded skill set must be part of the engineering culture for service desi
 &lt;li&gt;Deployable and configurable artifacts (with help from Operations)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;QualityAssurance codes and performs BTD:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;QualityAssurance&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Test plan&lt;/li&gt;
@@ -110,7 +113,7 @@ This expanded skill set must be part of the engineering culture for service desi
 &lt;li&gt;Deployment tests (with help from Operations)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Operations codes and performs BTD:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Operations&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Deployment Tools and tests&lt;/li&gt;
@@ -132,6 +135,11 @@ This expanded skill set must be part of the engineering culture for service desi
       
       <guid>http://mlavi.github.io/post/devops-automation/</guid>
       <description>
+
+&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
+Via open source and this blog, we can elevate the state of our software engineering and service design!&lt;/p&gt;
+
+&lt;h3 id=&#34;quotes-and-motivation:32baa83692157fcb17c74c92c7c38e39&#34;&gt;Quotes and Motivation&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&amp;ldquo;Perfect is the enemy of good.&amp;rdquo; &amp;ndash;&lt;a href=&#34;http://en.wikiquote.org/wiki/Perfection&#34;&gt;Volare&lt;/a&gt; (paraphrased)&lt;/li&gt;
@@ -329,6 +337,10 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
       <guid>http://mlavi.github.io/post/diagram/</guid>
       <description>
 
+&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
+One needs to start with a map of the world before deciding where to focus their efforts.
+It&amp;rsquo;s even better when you can optimize and render the new map in real-time!&lt;/p&gt;
+
 &lt;h3 id=&#34;beautiful-tool-and-diagram:9ae74c72486689c2be9e15358622329b&#34;&gt;Beautiful Tool and Diagram&lt;/h3&gt;
 
 &lt;p&gt;I found and created two wonderful things today:&lt;/p&gt;
@@ -377,7 +389,13 @@ diagram) for flexibility and performance.&lt;/p&gt;
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
       <guid>http://mlavi.github.io/about/</guid>
-      <description>&lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
+      <description>&lt;p&gt;A DevOps professional with pioneering work on the world&amp;rsquo;s biggest Internet real-time event
+ and web sites from an engineering, operations, content, and marketing perspective.
+ My focus is on people and software development along with system design thinking for the
+ whole life cycle: I can build, grow, and manage teams, applications, networks, and servers
+ to work together while planning and nurturing their continuous improvement.&lt;/p&gt;
+
+&lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
  After graduation and Internet withdrawal, he joined the first national commercial Internet
  Service Provider (before the world wide web).&lt;/p&gt;
 
@@ -403,6 +421,10 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
       
       <guid>http://mlavi.github.io/post/first/</guid>
       <description>
+
+&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
+that are in the back of your head and occasionally keep you awake at night. Technical dreams
+and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;
 
 &lt;p&gt;Embarking on a new adventure is always the best time in a project because all your dreams
  are possible! You research your ideas, find new tools and libraries, and smell the fresh

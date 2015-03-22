@@ -18,7 +18,10 @@
       <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>
 
-&lt;h3 id=&#34;code-friction-and-service-design:8496744675100c630db0dc665f90a3a3&#34;&gt;Code Friction and Service Design&lt;/h3&gt;
+&lt;p&gt;What happens when you find the same macro and micro pattern in your diagram? You reinforce your goals
+to improve code flow and service design on the way to test driven development!&lt;/p&gt;
+
+&lt;h3 id=&#34;code-flow-and-service-design:8496744675100c630db0dc665f90a3a3&#34;&gt;Code Flow and Service Design&lt;/h3&gt;
 
 &lt;p&gt;I created the &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt; to map out the flow of code from
 developer to production in a wholly automated manner: better known as continuous deployment.&lt;/p&gt;
@@ -89,7 +92,7 @@ does not code tests, code deployment, and code builds, then test deployments and
 The DevOps engineer must test monitors, deployments, and builds as well.
 This expanded skill set must be part of the engineering culture for service design and imbued into all.&lt;/p&gt;
 
-&lt;p&gt;SoftwareDeveloper codes and performs BTD:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SoftwareDeveloper&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;BDD feature descriptions (with help from product management, customer support, and sales)&lt;/li&gt;
@@ -100,7 +103,7 @@ This expanded skill set must be part of the engineering culture for service desi
 &lt;li&gt;Deployable and configurable artifacts (with help from Operations)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;QualityAssurance codes and performs BTD:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;QualityAssurance&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Test plan&lt;/li&gt;
@@ -110,7 +113,7 @@ This expanded skill set must be part of the engineering culture for service desi
 &lt;li&gt;Deployment tests (with help from Operations)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Operations codes and performs BTD:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Operations&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Deployment Tools and tests&lt;/li&gt;

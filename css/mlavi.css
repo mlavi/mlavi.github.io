@@ -1,8 +1,14 @@
-.sidebar a:hover { background: black; }
-#all-tags li a, .nav-item { background: grey; }
+/* themes/hugo-redlounge.mod/layouts/partials/sidebar.html */
+.sidebar a:hover		{ background: black; }
+#all-tags li a, .nav-item	{ background: grey; }
+
+/* themes/hugo-redlounge.mod/layouts/_default/single.html */
+#TableOfContents		{ margin-left: -120px; }
+#TableOfContents ul li ul li ul li		{ list-style-type: disc; }
 /*
+.header { background: black; }
 .nav ul { background: #7F1000; }
-.read-more-link a:hover { background: gray; }
+.read-more-link a:hover { background: grey; }
 .tags-list { text-align: right;  }
 
  */

@@ -18,6 +18,11 @@
       <guid>http://mlavi.github.io/post/devops-automation/</guid>
       <description>
 
+&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
+Via open source and this blog, we can elevate the state of our software engineering and service design!&lt;/p&gt;
+
+&lt;h3 id=&#34;quotes-and-motivation:32baa83692157fcb17c74c92c7c38e39&#34;&gt;Quotes and Motivation&lt;/h3&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&amp;ldquo;Perfect is the enemy of good.&amp;rdquo; &amp;ndash;&lt;a href=&#34;http://en.wikiquote.org/wiki/Perfection&#34;&gt;Volare&lt;/a&gt; (paraphrased)&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;Fail fast.&amp;rdquo; &amp;ndash;&lt;a href=&#34;http://en.wikiquote.org/wiki/Ward_Cunningham#The_Simplest_Thing_that_Could_Possibly_Work&#34;&gt;Ward Cunningham&lt;/a&gt;
@@ -213,6 +218,10 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
       
       <guid>http://mlavi.github.io/post/diagram/</guid>
       <description>
+
+&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
+One needs to start with a map of the world before deciding where to focus their efforts.
+It&amp;rsquo;s even better when you can optimize and render the new map in real-time!&lt;/p&gt;
 
 &lt;h3 id=&#34;beautiful-tool-and-diagram:9ae74c72486689c2be9e15358622329b&#34;&gt;Beautiful Tool and Diagram&lt;/h3&gt;
 
