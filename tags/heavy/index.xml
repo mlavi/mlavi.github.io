@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heavy on Mark&#39;s Blog</title>
+    <link>http://mlavi.github.io/tags/heavy/</link>
+    <description>Recent content in Heavy on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 04 Apr 2015 07:55:39 -0700</lastBuildDate>
+    <atom:link href="http://mlavi.github.io/tags/heavy/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Container Infrastructure Strategy</title>
+      <link>http://mlavi.github.io/post/container-infrastructure-strategy/</link>
+      <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/container-infrastructure-strategy/</guid>
+      <description>
+
+&lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
+resembles virtual machines, includes the operating system user land, and desires configuration
+management. Does this represent the opposite of container promise and immutable infrastructure?&lt;/p&gt;
+
+&lt;h3 id=&#34;heavy-containers:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Heavy Containers&lt;/h3&gt;
+
+&lt;p&gt;Idea: picture of heavy barrel?&lt;/p&gt;
+
+&lt;p&gt;I have been researching containers for years, I encountered &lt;a href=&#34;https://pantheon.io/blog/why-we-built-pantheon-containers-instead-virtual-machines&#34;&gt;an early mention for Drupal CMS hosting&lt;/a&gt;
+ probably a year before I heard about Docker. I had been working with chroot jails earlier in my career,
+but Docker made LXC containers easy to use, just as Vagrant had done for Virtual Machines.&lt;/p&gt;
+
+&lt;p&gt;An ideal container holds an application and nothing more: the tricky part is defining your application.
+An application may be composed of data, code, runtime configuration, a server facility, and
+various dependencies. e.g.:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;code: /var/www/virtualhost.example.com/microserviceRoute
+
+&lt;ul&gt;
+&lt;li&gt;code libraries: /var/www/shared/language/framework-version&lt;/li&gt;
+&lt;li&gt;application data: /var/www/shared/configuration/databasepassword.inc.txt&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;server facility: Apache-2.4.x
+
+&lt;ul&gt;
+&lt;li&gt;server configuration: /etc/apache2/**&lt;/li&gt;
+&lt;li&gt;server runtime configuration: /etc/defaults/apache2&lt;/li&gt;
+&lt;li&gt;server startup customization: /etc/init/apache2-custom&lt;/li&gt;
+&lt;li&gt;server plug-ins: mod_php, mod_ssl, etc.&lt;/li&gt;
+&lt;li&gt;server plug-in dependencies: openssl, php, etc.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;runtime facilities:
+
+&lt;ul&gt;
+&lt;li&gt;language runtime: php-5.x&lt;/li&gt;
+&lt;li&gt;language runtime configuration: /etc/php.ini&lt;/li&gt;
+&lt;li&gt;language runtime dependencies: openssl, etc.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is desirable to bundle all of these things together as a nice deployment unit,
+making your application portable and self-contained (ha ha).
+There is a challenge to decide the scope of a container because of the natural tendency
+to follow the dependencies and bundle all into the container, which weighs it down.&lt;/p&gt;
+
+&lt;p&gt;In fact, the initial jumping off point most people use for their containers (today) is a full
+Linux operating system distribution, which I call a &amp;ldquo;heavy container,&amp;rdquo; because it contains
+everything and resembles an entire virtual machine:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cat Dockerfile
+FROM ubuntu:14.04.2
+RUN apt-get update &amp;amp;&amp;amp; apt-get install -y somePackage
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All of this application scope increase is natural until you are comfortable with containers,
+ then you are ready for container re-factoring. There is a notion of linked and data containers which
+ I&amp;rsquo;ll explore later, but what would we re-factor and why?&lt;/p&gt;
+
+&lt;h3 id=&#34;container-re-factoring:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Container Re-factoring&lt;/h3&gt;
+
+&lt;p&gt;This is an incomplete thought: I will continue and reorganize it.&lt;/p&gt;
+
+&lt;p&gt;Like all things, you must address your audience. For developers, a dev container might be built into
+the self-contained monolithic full composite dependency, but for production we could separate each
+layer into different containers with a different deployment cadence.&lt;/p&gt;
+
+&lt;p&gt;Because every guest container is hosted on an OS, you would ideally reuse the host OS to remove
+user land needs. This becomes interesting if you&amp;rsquo;ve picked CoreOS, because they are a minimal
+Linux distribution forked from ChromeOS and optimized to run containers. This is a clue that
+we shouldn&amp;rsquo;t bind an OS into a container, although it is awesome that we can and we should use
+this for testing.&lt;/p&gt;
+
+&lt;p&gt;We see an entire industry of minimalist OSes popping up, sometimes application focused, which
+is a clue. Passenger OS, RancherOS, CoreOS, etc.&lt;/p&gt;
+
+&lt;p&gt;Because your server facility or runtime typically do not change unless there is a new release
+which contains a security, performance, or feature fix, this is the next candidate for removal
+from a container. This likely includes the server dependencies (libraries and other run-times).&lt;/p&gt;
+
+&lt;p&gt;However, the run-time configuration of this server facility could be dynamic
+so I would consider that data and a layer closer to the application. In fact, it would be
+ideal to make dynamic run-time configuration a service and pull it out of the application
+container.&lt;/p&gt;
+
+&lt;p&gt;The idea is that the server facility is a separate layer from our application: it iterates
+on a different time line and probably is an infrastructure engineer concern, so why weigh down
+an application container with it?&lt;/p&gt;
+
+&lt;p&gt;Diagnostic and troubleshooting tools and facilities such as SSH, logging, metrics, and monitoring
+are also heavy items and external to the application: these are services which likely reside
+on the container host, external to the container host, or in another container.&lt;/p&gt;
+
+&lt;p&gt;Finally, we get to the application itself: it has dependencies such as runtime configuration
+and libraries. Those can be externalized from the application because they are a layer which
+iterates on a separate time line.&lt;/p&gt;
+
+&lt;p&gt;We can compose all of these things during container build time into a monolithic, heavy container.
+Or we can build a robust application that dynamically invokes its dependencies, allowing each
+to iterate as needed, reducing complexity and risk for rapid deployment.&lt;/p&gt;
+
+&lt;p&gt;This idea was introduced at the CoreOS Meetup (&lt;a href=&#34;http://www.meetup.com/coreos/events/215452012/&#34;&gt;http://www.meetup.com/coreos/events/215452012/&lt;/a&gt;)
+by James Russell, DevOps engineer at Sony Computer Entertainment America, DevNet Team
+(&lt;a href=&#34;https://www.youtube.com/watch?v=M9hBsRUeRdg&#34;&gt;https://www.youtube.com/watch?v=M9hBsRUeRdg&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;All of this suggests that we have two major use cases for containers.&lt;/p&gt;
+
+&lt;h3 id=&#34;application-versus-service-containers:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Application versus Service Containers&lt;/h3&gt;
+
+&lt;p&gt;I am exploring this strategic gap between the VM and the container. I went to ChefConf this week
+and asked this question but didn&amp;rsquo;t find an answer because I think there is a fundamental divide
+between immutable infrastructure (of application containers) and configuration management of
+persistent infrastructure (which is longer lived and has an OS).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Configuration management of a container host, that makes sense to me.&lt;/li&gt;
+&lt;li&gt;Configuration management inside a container guest, that is a heavy container (and doesn&amp;rsquo;t make
+ultimate sense to me).&lt;/li&gt;
+&lt;li&gt;Configuration management to build a container, that makes sense to me, &lt;em&gt;but I haven&amp;rsquo;t found it
+yet.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Reusing our configuration management code so we can use it to build a container or a VM makes sense.&lt;/p&gt;
+
+&lt;h3 id=&#34;immutable-infrastructure-versus-configuration-management-build-time-versus-run-time:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Immutable Infrastructure versus Configuration Management: build-time versus run-time&lt;/h3&gt;
+
+&lt;p&gt;I want to reuse my configuration management to build a container rather than use Docker shell
+commands which are the lowest level primitive of configuration management functionality.&lt;/p&gt;
+
+&lt;p&gt;One of the benefits of configuration management is that you can periodically perform runs
+to sync and update configuration, allowing drift correction of the configured system. This
+implies a longer-lived, persistent system and the heavier it is, the more useful this model
+becomes to maintain run state.&lt;/p&gt;
+
+&lt;p&gt;If a system is immutable, constrained to an application code artifact, and continuously deployed
+thousands of times a day &amp;ndash; do we need configuration management sync and update? I would
+rather re-factor configuration management to be used during build time for artifacts and not
+during run-time of those artifacts.&lt;/p&gt;
+
+&lt;p&gt;Can we bootstrap an OS with a configuration management tool plus data, build the system,
+remove the configuration management tool plus data?&lt;/p&gt;
+
+&lt;p&gt;I think there needs to be a matrix for re-factoring the use cases of containers:
+applications vs. services in a container.&lt;/p&gt;
+
+&lt;h3 id=&#34;container-deployment:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Container Deployment&lt;/h3&gt;
+
+&lt;p&gt;Furthermore, container deployment becomes the next issue: do you use Mesos, Kubernetes,
+or some other scheduler to inform your load balancer, DNS, monitoring, and service discovery and
+dynamic configuration management systems that a tested official build artifact is ready?&lt;/p&gt;
+
+&lt;p&gt;Containers in production are easy when used for the single tier of a web application which
+is immutable and hopefully modeled as a micro-service. But orchestration of complex roll out
+of an entire service and medley of services and applications along with persistent data sources
+is another problem I hope to tackle soon.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

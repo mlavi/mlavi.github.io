@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Building the LAMP stack with Phing // Mark&#39;s Blog
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://mlavi.github.io//css/redlounge.css">
+  <link rel="stylesheet" href="http://mlavi.github.io//css/mlavi.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/img/blog.ico" alt="/favicon.png" althref="http://findicons.com/icon/205490/blog?id=205517">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Mark&#39;s Blog" />
+  <link href="" rel="alternate" type="application/atom+xml" title="Mark&#39;s Blog" />
+  <link href="" rel="feed" type="application/atom+xml" title="Mark&#39;s Blog" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4" style="background: black no-repeat url(/img/firefox_nebula.jpg);">
+  <div class="header">
+    
+
+    
+    
+
+    <span style="background: black;">Mark&#39;s Blog</span>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://mlavi.github.io/">Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span><a class="subscribe-button icon-feed" href="">Subscribe</a></li>
+
+        
+      </ul>
+      <ul id="all-tags"><span style="background: black;"><em><stong>Tag Cloud</strong></em></span><br />
+
+
+<li><a href="/tags/devops">devops</a><span
+ class="decorative-marker">//</span><a
+ name="devops">4</a></li>
+
+<li><a href="/tags/build">build</a><span
+ class="decorative-marker">//</span><a
+ name="build">2</a></li>
+
+<li><a href="/tags/automation">automation</a><span
+ class="decorative-marker">//</span><a
+ name="automation">2</a></li>
+
+<li><a href="/tags/diagram">diagram</a><span
+ class="decorative-marker">//</span><a
+ name="diagram">2</a></li>
+
+<li><a href="/tags/phing">phing</a><span
+ class="decorative-marker">//</span><a
+ name="phing">1</a></li>
+
+<li><a href="/tags/failfast">failfast</a><span
+ class="decorative-marker">//</span><a
+ name="failfast">1</a></li>
+
+<li><a href="/tags/career">career</a><span
+ class="decorative-marker">//</span><a
+ name="career">1</a></li>
+
+<li><a href="/tags/webmaster">webmaster</a><span
+ class="decorative-marker">//</span><a
+ name="webmaster">1</a></li>
+
+<li><a href="/tags/static">static</a><span
+ class="decorative-marker">//</span><a
+ name="static">1</a></li>
+
+<li><a href="/tags/lamp">lamp</a><span
+ class="decorative-marker">//</span><a
+ name="lamp">1</a></li>
+
+<li><a href="/tags/heavy">heavy</a><span
+ class="decorative-marker">//</span><a
+ name="heavy">1</a></li>
+
+<li><a href="/tags/container">container</a><span
+ class="decorative-marker">//</span><a
+ name="container">1</a></li>
+
+<li><a href="/tags/pattern">pattern</a><span
+ class="decorative-marker">//</span><a
+ name="pattern">1</a></li>
+
+<li><a href="/tags/blog">blog</a><span
+ class="decorative-marker">//</span><a
+ name="blog">1</a></li>
+
+<li><a href="/tags/prototype">prototype</a><span
+ class="decorative-marker">//</span><a
+ name="prototype">1</a></li>
+
+<li><a href="/tags/test">test</a><span
+ class="decorative-marker">//</span><a
+ name="test">1</a></li>
+
+<li><a href="/tags/deploy">deploy</a><span
+ class="decorative-marker">//</span><a
+ name="deploy">1</a></li>
+
+<li><a href="/tags/shipit">shipit</a><span
+ class="decorative-marker">//</span><a
+ name="shipit">1</a></li>
+
+<li><a href="/tags/about">about</a><span
+ class="decorative-marker">//</span><a
+ name="about">1</a></li>
+
+<li><a href="/tags/cms">cms</a><span
+ class="decorative-marker">//</span><a
+ name="cms">1</a></li>
+
+<li><a href="/tags/sgi">sgi</a><span
+ class="decorative-marker">//</span><a
+ name="sgi">1</a></li>
+
+      </ul>
+    </nav>
+
+    
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#migration-of-technology-stacks:1d44784f593e898273702c2689a01985">Migration of Technology Stacks</a></li>
+<li><a href="#migration-of-build-methods:1d44784f593e898273702c2689a01985">Migration of Build Methods</a></li>
+<li><a href="#sgi-appendix:1d44784f593e898273702c2689a01985">SGI Appendix</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/post/build-lamp-stack-with-phing/">Building the LAMP stack with Phing</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>10</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Apr</span> <span class="post-date-year">2015</span>
+            	</span>
+            	
+            
+            	
+            
+
+	
+	
+
+	
+
+	
+
+        
+
+<p>A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.</p>
+
+<h3 id="migration-of-technology-stacks:1d44784f593e898273702c2689a01985">Migration of Technology Stacks</h3>
+
+<p>I was the webmaster (Senior Producer, Web Team in the Information Technology department of Silicon Graphics: SGI)
+from 2005-2011, which is to say I designed and implemented improvements to web content, management, publishing,
+revision control, infrastructure, web programming and more.</p>
+
+<p>I transitioned our server (and desktop) infrastructure from IRIX on MIPS architecture to SuSE Linux on Intel Itanium2 architecture as well as allowing folks to move to Windows laptops. It was not shocking to find many
+tools and packages were not ported to the platform or that the Operating System distribution could lag behind
+in security releases or never upgrade packages, so I happily resorted to building from source and benefit
+from open source licensing.</p>
+
+<p>Previously, during my independent consulting years, I had moved technology stacks from SINO to LAMP:</p>
+
+<ul>
+<li>SINO = Solaris, Informix, Netscape, Oracle</li>
+<li>LAMP = Linux, Apache, MySQL/Postgres, PERL/PHP/Python</li>
+</ul>
+
+<p>e.g.: From Netscape Enterprise Web Server to Apache, Informix and Oracle to MySQL, PERL to PHP, and I had been building on both Solaris and Linux.</p>
+
+<h3 id="migration-of-build-methods:1d44784f593e898273702c2689a01985">Migration of Build Methods</h3>
+
+<p>I had a growing shell script to perform the package builds and I refactored it for the release numbers and
+the deployment directory to be variables. Although my build script was a brittle monstrosity without any
+conditionally or intelligence, it was the right approach towards infrastructure as code!</p>
+
+<p>My manager asked how I would document and share the build process for others at SGI to repurpose my work,
+so I consulted my colleagues and they suggested make files. I looked at make systems and liked Ant, an XML
+based build file, but to customize Ant required Java programming or beanshell (a la Groovy) scriptability
+which I explored. I really liked an Ant dependency graph generator that leveraged GraphViz called
+<a href="http://vizant.sourceforge.net">VizAnt</a>.</p>
+
+<p>Ultimately, I found an Ant implementation written in PHP called <a href="http://phing.info">Phing</a> (PHing Is Not GNU make)
+allowing me to reuse some Ant tools (a benefit of using XML as a data structure) and I have been happy with the solution.</p>
+
+<p>I called the project &ldquo;webplatform&rdquo; and refactored my monolithic build shell script to Phing. Now I could:</p>
+
+<ul>
+<li>correct errors faster via Phing&rsquo;s XML validation</li>
+<li>share my work with others by using a centralized repository</li>
+<li>leverage build targets composed from the appropriate mix of software:
+
+<ul>
+<li>Internet server, which has am optimized, reduced configuration</li>
+<li>DMZ server which was minimal and secure</li>
+<li>Intranet server, which had a kitchen sink configuration</li>
+</ul></li>
+<li>respond in hours to incorporate any security patch directly from the software projects without waiting
+for the upstream operating system provider to back-port and distribute</li>
+<li>communicate my work because the code was documented and visualizable, e.g.:</li>
+</ul>
+
+<p><img src="/img/webplatform.ant.phing-guts.png" alt="Webplatform build target dependency diagram" />
+</p>
+
+<p>I wrote one Phing extension called &ldquo;MyUnpack.&rdquo; Given any software package release version, it would:</p>
+
+<ul>
+<li>determine if a current or future release was already installed in the destination directory,
+
+<ul>
+<li>optionally searching the operating system.</li>
+<li>utilizing a number of methods to determine the existing version because every project could be different.</li>
+</ul></li>
+<li>If not up to date, it would then extract the software package and signal to continue the build process.
+Otherwise, signal to skip building this up to date software package.</li>
+</ul>
+
+<p>I practiced object oriented coding and adopted PHP Code Sniffer to improve my coding style.
+I was on the way to continuous integration&hellip; but I didn&rsquo;t finish that part of the project.</p>
+
+<p>My contributions back to open source included documentation for Phing (I became a committer)
+and identifying, testing, and confirming a fix to broken OpenSSL builds on Itanium2.</p>
+
+<p>I hope to open source the webplatform project one day.</p>
+
+<h3 id="sgi-appendix:1d44784f593e898273702c2689a01985">SGI Appendix</h3>
+
+<p>Some fun challenges and SGI trivia:</p>
+
+<ul>
+<li><p><a href="http://sgi.com">http://sgi.com</a> was one of the first web sites I ever saw with Mosaic on the web back in 1993. The banner of the home
+page of www.sgi.com was called &ldquo;Silicon Surf&rdquo; and displayed a metallic robot surfing on the ocean, which was
+also a reference to SGI&rsquo;s ground breaking graphic rendering, powering the earliest days of computer graphic
+imagery (CGI) in Hollywood, pioneered by Lucasfilm&rsquo;s Industrial Light and Magic (ILM) with SGI workstations:
+think <a href="https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day#Effects">Terminator 2</a>.
+The act of browsing the world wide web was called &ldquo;web surfing&rdquo; in those early days
+and SGI nicknamed the web team the Surf Team.</p>
+
+<ul>
+<li><a href="https://web.archive.org/web/19970605011712/http://www.sgi.com/">Archived home page from 1997</a></li>
+<li>I&rsquo;ll see if I can dig up that original image, I think I have the poster.</li>
+</ul></li>
+
+<li><p>SGI engineering has created an in-house improved, centralized revision control system on top of
+<a href="https://en.wikipedia.org/wiki/Revision_Control_System">RCS</a>,
+one of the earliest, local Unix revision control systems. It could be thought of a
+cousin and functional equivalent to <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System">CVS</a>
+because it used RCS format files in the repository.
+However, it ran only on <a href="https://en.wikipedia.org/wiki/IRIX">IRIX</a>, which was SGI&rsquo;s flavor of
+Unix for the MIPS CPU family, and Engineering did not have a road map to port it to Linux. Despite SGI already transitioning from IRIX to Linux, they had not decided to end of life IRIX.</p>
+
+<ul>
+<li>I was working to move us from SGI O2&rsquo;s (IRIX) on every web developer&rsquo;s desk to Linux or Windows laptops
+to modernize our tech stack, desktops, and tools. Some people stayed on IRIX and that was absolutely fine:
+our solution was based on open standards and transports.</li>
+<li>After examining Mercurial, I moved us our team to
+<a href="https://en.wikipedia.org/wiki/Apache_Subversion">Subversion (svn)</a>
+because it represented a straightforward migration without a major change in context for our web developers.</li>
+</ul></li>
+</ul>
+
+	
+	
+
+	
+		<div class="tags-list">
+		<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+		
+                <a class="post-tag post-tag-lamp" href="http://mlavi.github.io//tags/lamp">LAMP</a>,
+                
+                <a class="post-tag post-tag-build" href="http://mlavi.github.io//tags/build">build</a>,
+                
+                <a class="post-tag post-tag-phing" href="http://mlavi.github.io//tags/phing">Phing</a>,
+                
+                <a class="post-tag post-tag-sgi" href="http://mlavi.github.io//tags/sgi">sgi</a>,
+                
+		</div>
+	
+
+	
+		<div class="paging">
+		<span class="paging-label">More Reading</span>
+		
+
+		
+			<div class="paging-older">
+			<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+	            <a class="paging-link" href="/post/container-infrastructure-strategy/">Container Infrastructure Strategy</a>
+	            </div>
+            
+            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2015. All rights reserved. </p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>
