@@ -43,6 +43,13 @@ the data, code, runtime configuration, server facility, and further dependencies
 &lt;li&gt;code libraries: /var/www/shared/language/framework-version&lt;/li&gt;
 &lt;li&gt;static application configuration data: /var/www/shared/configuration/databasepassword.inc.txt&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;runtime facilities: (e.g.: PHP)
+
+&lt;ul&gt;
+&lt;li&gt;language runtime binaries: /usr/bin/local/php-5.x&lt;/li&gt;
+&lt;li&gt;language runtime configuration: /etc/php.ini&lt;/li&gt;
+&lt;li&gt;language runtime dependencies: openssl, etc.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;server facility: (e.g.: Apache-2.4.x)
 
 &lt;ul&gt;
@@ -52,13 +59,6 @@ the data, code, runtime configuration, server facility, and further dependencies
 &lt;li&gt;server startup customization: /etc/init/apache2-custom&lt;/li&gt;
 &lt;li&gt;server plug-ins: mod_php, mod_ssl, etc.&lt;/li&gt;
 &lt;li&gt;server plug-in dependencies: openssl, php, etc.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;runtime facilities: (e.g.: PHP)
-
-&lt;ul&gt;
-&lt;li&gt;language runtime binaries: /usr/bin/local/php-5.x&lt;/li&gt;
-&lt;li&gt;language runtime configuration: /etc/php.ini&lt;/li&gt;
-&lt;li&gt;language runtime dependencies: openssl, etc.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
