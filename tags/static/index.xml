@@ -59,7 +59,7 @@ and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;
  &lt;a href=&#34;http://www.joomla.org/&#34;&gt;Joomla&lt;/a&gt;,
  &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt;,
  &lt;a href=&#34;http://drupal.org&#34;&gt;Drupal&lt;/a&gt;,
- and &lt;a href=&#34;http://modx.org&#34;&gt;ModX&lt;/a&gt;
+ and &lt;a href=&#34;http://modx.com&#34;&gt;ModX&lt;/a&gt;
 over the years, you inevitably fall &lt;em&gt;out of love&lt;/em&gt; after the first month with complex and brittle software
 when you extend it into the enterprise by adding integrations, plugins, etc. which have their own security
 attack surface, dependencies, update schedule, and incompatibilities.&lt;/p&gt;
