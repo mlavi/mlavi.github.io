@@ -238,14 +238,15 @@ but I think we can say this needs some more thought and evangelism.&lt;/p&gt;
 
 &lt;h3 id=&#34;container-deployment-and-orchestration:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Container Deployment and Orchestration&lt;/h3&gt;
 
-&lt;p&gt;Container deployment and orchestration becomes the next issue: do you use Mesos, Kubernetes,
+&lt;p&gt;Container deployment and orchestration becomes the next issue: do you use
+&lt;a href=&#34;http://mesos.apache.org/&#34;&gt;Apache Mesos&lt;/a&gt;, &lt;a href=&#34;http://kubernetes.io/&#34;&gt;Google Kubernetes&lt;/a&gt;,
 or some other scheduler to inform your load balancer, DNS, monitoring, and service discovery and
-dynamic configuration management systems that a tested official build artifact is ready?&lt;/p&gt;
+dynamic configuration management systems that a tested official build artifact is ready to deploy?&lt;/p&gt;
 
 &lt;p&gt;Containers in production are easy when used for the single tier of a web application which
 is immutable and hopefully modeled as a micro-service. But orchestration of complex roll out
-of an entire service and medley of services and applications along with persistent data sources
-is another problem I hope to tackle soon.&lt;/p&gt;
+of an entire service representing medley of smaller services and applications along with persistent
+data sources is a higher level problem I hope to tackle soon.&lt;/p&gt;
 </description>
     </item>
     

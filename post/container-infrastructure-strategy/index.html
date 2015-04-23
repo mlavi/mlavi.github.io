@@ -82,6 +82,10 @@
  class="decorative-marker">//</span><a
  name="devops">4</a></li>
 
+<li><a href="/tags/diagram">diagram</a><span
+ class="decorative-marker">//</span><a
+ name="diagram">2</a></li>
+
 <li><a href="/tags/automation">automation</a><span
  class="decorative-marker">//</span><a
  name="automation">2</a></li>
@@ -90,9 +94,29 @@
  class="decorative-marker">//</span><a
  name="build">2</a></li>
 
-<li><a href="/tags/diagram">diagram</a><span
+<li><a href="/tags/about">about</a><span
  class="decorative-marker">//</span><a
- name="diagram">2</a></li>
+ name="about">1</a></li>
+
+<li><a href="/tags/cms">cms</a><span
+ class="decorative-marker">//</span><a
+ name="cms">1</a></li>
+
+<li><a href="/tags/sgi">sgi</a><span
+ class="decorative-marker">//</span><a
+ name="sgi">1</a></li>
+
+<li><a href="/tags/pattern">pattern</a><span
+ class="decorative-marker">//</span><a
+ name="pattern">1</a></li>
+
+<li><a href="/tags/failfast">failfast</a><span
+ class="decorative-marker">//</span><a
+ name="failfast">1</a></li>
+
+<li><a href="/tags/career">career</a><span
+ class="decorative-marker">//</span><a
+ name="career">1</a></li>
 
 <li><a href="/tags/prototype">prototype</a><span
  class="decorative-marker">//</span><a
@@ -110,17 +134,13 @@
  class="decorative-marker">//</span><a
  name="configuration">1</a></li>
 
-<li><a href="/tags/pattern">pattern</a><span
+<li><a href="/tags/infrastructure">infrastructure</a><span
  class="decorative-marker">//</span><a
- name="pattern">1</a></li>
+ name="infrastructure">1</a></li>
 
-<li><a href="/tags/failfast">failfast</a><span
+<li><a href="/tags/deploy">deploy</a><span
  class="decorative-marker">//</span><a
- name="failfast">1</a></li>
-
-<li><a href="/tags/career">career</a><span
- class="decorative-marker">//</span><a
- name="career">1</a></li>
+ name="deploy">1</a></li>
 
 <li><a href="/tags/shipit">shipit</a><span
  class="decorative-marker">//</span><a
@@ -134,22 +154,6 @@
  class="decorative-marker">//</span><a
  name="container">1</a></li>
 
-<li><a href="/tags/infrastructure">infrastructure</a><span
- class="decorative-marker">//</span><a
- name="infrastructure">1</a></li>
-
-<li><a href="/tags/deploy">deploy</a><span
- class="decorative-marker">//</span><a
- name="deploy">1</a></li>
-
-<li><a href="/tags/blog">blog</a><span
- class="decorative-marker">//</span><a
- name="blog">1</a></li>
-
-<li><a href="/tags/phing">phing</a><span
- class="decorative-marker">//</span><a
- name="phing">1</a></li>
-
 <li><a href="/tags/immutable">immutable</a><span
  class="decorative-marker">//</span><a
  name="immutable">1</a></li>
@@ -162,17 +166,13 @@
  class="decorative-marker">//</span><a
  name="webmaster">1</a></li>
 
-<li><a href="/tags/sgi">sgi</a><span
+<li><a href="/tags/blog">blog</a><span
  class="decorative-marker">//</span><a
- name="sgi">1</a></li>
+ name="blog">1</a></li>
 
-<li><a href="/tags/about">about</a><span
+<li><a href="/tags/phing">phing</a><span
  class="decorative-marker">//</span><a
- name="about">1</a></li>
-
-<li><a href="/tags/cms">cms</a><span
- class="decorative-marker">//</span><a
- name="cms">1</a></li>
+ name="phing">1</a></li>
 
       </ul>
     </nav>
@@ -454,14 +454,15 @@ but I think we can say this needs some more thought and evangelism.</p>
 
 <h3 id="container-deployment-and-orchestration:9b4c54333bd97e87ce05878dcf4182cb">Container Deployment and Orchestration</h3>
 
-<p>Container deployment and orchestration becomes the next issue: do you use Mesos, Kubernetes,
+<p>Container deployment and orchestration becomes the next issue: do you use
+<a href="http://mesos.apache.org/">Apache Mesos</a>, <a href="http://kubernetes.io/">Google Kubernetes</a>,
 or some other scheduler to inform your load balancer, DNS, monitoring, and service discovery and
-dynamic configuration management systems that a tested official build artifact is ready?</p>
+dynamic configuration management systems that a tested official build artifact is ready to deploy?</p>
 
 <p>Containers in production are easy when used for the single tier of a web application which
 is immutable and hopefully modeled as a micro-service. But orchestration of complex roll out
-of an entire service and medley of services and applications along with persistent data sources
-is another problem I hope to tackle soon.</p>
+of an entire service representing medley of smaller services and applications along with persistent
+data sources is a higher level problem I hope to tackle soon.</p>
 
 	
 	
