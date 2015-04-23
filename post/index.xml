@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mark&#39;s Blog</title>
-    <link>http://localhost:1313/post/</link>
+    <link>http://mlavi.github.io/post/</link>
     <description>Recent content in Posts on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Fri, 10 Apr 2015 08:44:19 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mlavi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Building the LAMP stack with Phing</title>
-      <link>http://localhost:1313/post/build-lamp-stack-with-phing/</link>
+      <link>http://mlavi.github.io/post/build-lamp-stack-with-phing/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/build-lamp-stack-with-phing/</guid>
+      <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
       <description>
 
 &lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.&lt;/p&gt;
@@ -72,7 +72,7 @@ for the upstream operating system provider to back-port and distribute&lt;/li&gt
 &lt;li&gt;communicate my work because the code was documented and visualizable, e.g.:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;I wrote one Phing extension called &amp;ldquo;MyUnpack.&amp;rdquo; Given any software package release version, it would:&lt;/p&gt;
@@ -137,10 +137,10 @@ because it represented a straightforward migration without a major change in con
     
     <item>
       <title>Container Infrastructure Strategy</title>
-      <link>http://localhost:1313/post/container-infrastructure-strategy/</link>
+      <link>http://mlavi.github.io/post/container-infrastructure-strategy/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/container-infrastructure-strategy/</guid>
+      <guid>http://mlavi.github.io/post/container-infrastructure-strategy/</guid>
       <description>
 
 &lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
@@ -295,7 +295,7 @@ Principal Architect at CoreOS, but I only found &lt;a href=&#34;https://www.yout
 at a recent Container Days keynote.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Most use of RUN represents a duplication of effort that I abhor:&lt;/strong&gt;
-&lt;a href=&#34;http://localhost:1313/post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;because configuration by shell is something we have done before&lt;/a&gt;
+&lt;a href=&#34;http://mlavi.github.io/post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;because configuration by shell is something we have done before&lt;/a&gt;
  as a first level approximation to solve the problem. Many of us now use configuration management,
  which is a field comprised of tools known as Ansible, CF Engine, Chef, Puppet, Salt, and more.&lt;/p&gt;
 
@@ -363,10 +363,10 @@ is another problem I hope to tackle soon.&lt;/p&gt;
     
     <item>
       <title>DevOps BTD Pattern for Continuous Deployment</title>
-      <link>http://localhost:1313/post/devops-btd-pattern/</link>
+      <link>http://mlavi.github.io/post/devops-btd-pattern/</link>
       <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/devops-btd-pattern/</guid>
+      <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>
 
 &lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
@@ -386,7 +386,7 @@ moving processes forward in the chain of events.&lt;/p&gt;
 areas that have been traditionally separated into team or department silos because they represent
 the pillars or domains of software development, quality assurance, and operations.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Those traditional silos create code friction by introducing manual hand offs and insulating teams
@@ -416,7 +416,7 @@ but we will examine it further and find that BTD should exist in each domain.&lt
 
 &lt;p&gt;What is wrong with the BTD pattern? Nothing except how it has been implemented as traditional roles and hand-offs, e.g.:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&amp;hellip;you can see the traditional silos and you can see all of the potential inefficiencies to remedy a bug.
@@ -433,7 +433,7 @@ The cost and time to fix increases the further the bug is discovered from the de
 
 &lt;p&gt;BTD must be applied at the build domain, at the test domain, and at the deploy domain.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;This is why everything is testable, buildable, and deployable on the developer laptop in the
@@ -481,10 +481,10 @@ This expanded skill set must be part of the engineering culture for service desi
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>http://localhost:1313/post/devops-automation/</link>
+      <link>http://mlavi.github.io/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/devops-automation/</guid>
+      <guid>http://mlavi.github.io/post/devops-automation/</guid>
       <description>
 
 &lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
@@ -516,7 +516,7 @@ and then cut and paste text from it.&lt;/p&gt;
 &lt;p&gt;My original release was 2015-03-11 (source below), but today&amp;rsquo;s update adds detail, removes many crossed lines
 for simple visual flow parsing, and is organized vertically.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Source code: devops_automation.pu
@@ -682,10 +682,10 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>http://localhost:1313/post/diagram/</link>
+      <link>http://mlavi.github.io/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/diagram/</guid>
+      <guid>http://mlavi.github.io/post/diagram/</guid>
       <description>
 
 &lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
@@ -705,7 +705,7 @@ to my favorite open source object drawing tool, &lt;a href=&#34;https://wiki.gno
 for a quite a while and I&amp;rsquo;m glad to have the time to do it properly.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;The DevOps mission to reduce all friction between the developer&amp;rsquo;s code and deployment to production
@@ -736,10 +736,10 @@ diagram) for flexibility and performance.&lt;/p&gt;
     
     <item>
       <title>Time for a new development project!</title>
-      <link>http://localhost:1313/post/first/</link>
+      <link>http://mlavi.github.io/post/first/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://localhost:1313/post/first/</guid>
+      <guid>http://mlavi.github.io/post/first/</guid>
       <description>
 
 &lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things

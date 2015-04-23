@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Infrastructure on Mark&#39;s Blog</title>
-    <link>http://localhost:1313/tags/infrastructure/</link>
+    <link>http://mlavi.github.io/tags/infrastructure/</link>
     <description>Recent content in Infrastructure on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sat, 04 Apr 2015 07:55:39 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mlavi.github.io/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Container Infrastructure Strategy</title>
-      <link>http://localhost:1313/post/container-infrastructure-strategy/</link>
+      <link>http://mlavi.github.io/post/container-infrastructure-strategy/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/container-infrastructure-strategy/</guid>
+      <guid>http://mlavi.github.io/post/container-infrastructure-strategy/</guid>
       <description>
 
 &lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
@@ -170,7 +170,7 @@ Principal Architect at CoreOS, but I only found &lt;a href=&#34;https://www.yout
 at a recent Container Days keynote.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Most use of RUN represents a duplication of effort that I abhor:&lt;/strong&gt;
-&lt;a href=&#34;http://localhost:1313/post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;because configuration by shell is something we have done before&lt;/a&gt;
+&lt;a href=&#34;http://mlavi.github.io/post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;because configuration by shell is something we have done before&lt;/a&gt;
  as a first level approximation to solve the problem. Many of us now use configuration management,
  which is a field comprised of tools known as Ansible, CF Engine, Chef, Puppet, Salt, and more.&lt;/p&gt;
 
