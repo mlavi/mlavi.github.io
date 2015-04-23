@@ -359,7 +359,10 @@ but use &lt;a href=&#34;https://packer.io/docs/builders/docker.html&#34;&gt;Pack
 &lt;a href=&#34;https://docs.chef.io/containers.html&#34;&gt;Chef&lt;/a&gt;
 while potentially supported by &lt;a href=&#34;https://puppetlabs.com/blog/simplify-managing-docker-puppet&#34;&gt;Puppet&lt;/a&gt;
 and &lt;a href=&#34;http://saltstack.com/saltstack-delivers-more-automation-docker-lxc-application-containers/&#34;&gt;SaltStack&lt;/a&gt;,
-but I think we can say this needs some more thought and evangelism.&lt;/p&gt;
+but I think we can say this needs some more thought and evangelism because I think our entire
+community is wrestling with this problem as we transition to understand containers, e.g.:
+R.I. Pienaar (author of Marionette Collective (MCo) which is bundled with Puppet)
+&lt;a href=&#34;https://www.devco.net/archives/2015/02/24/moving-a-service-from-puppet-to-docker-2.php&#34;&gt;Moving a service from Puppet to Docker&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;container-deployment-and-orchestration:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Container Deployment and Orchestration&lt;/h3&gt;
 

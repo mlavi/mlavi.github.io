@@ -86,13 +86,13 @@
  class="decorative-marker">//</span><a
  name="automation">2</a></li>
 
-<li><a href="/tags/diagram">diagram</a><span
- class="decorative-marker">//</span><a
- name="diagram">2</a></li>
-
 <li><a href="/tags/build">build</a><span
  class="decorative-marker">//</span><a
  name="build">2</a></li>
+
+<li><a href="/tags/diagram">diagram</a><span
+ class="decorative-marker">//</span><a
+ name="diagram">2</a></li>
 
 <li><a href="/tags/heavy">heavy</a><span
  class="decorative-marker">//</span><a
@@ -101,38 +101,6 @@
 <li><a href="/tags/container">container</a><span
  class="decorative-marker">//</span><a
  name="container">1</a></li>
-
-<li><a href="/tags/configuration">configuration</a><span
- class="decorative-marker">//</span><a
- name="configuration">1</a></li>
-
-<li><a href="/tags/test">test</a><span
- class="decorative-marker">//</span><a
- name="test">1</a></li>
-
-<li><a href="/tags/pattern">pattern</a><span
- class="decorative-marker">//</span><a
- name="pattern">1</a></li>
-
-<li><a href="/tags/blog">blog</a><span
- class="decorative-marker">//</span><a
- name="blog">1</a></li>
-
-<li><a href="/tags/prototype">prototype</a><span
- class="decorative-marker">//</span><a
- name="prototype">1</a></li>
-
-<li><a href="/tags/about">about</a><span
- class="decorative-marker">//</span><a
- name="about">1</a></li>
-
-<li><a href="/tags/cms">cms</a><span
- class="decorative-marker">//</span><a
- name="cms">1</a></li>
-
-<li><a href="/tags/sgi">sgi</a><span
- class="decorative-marker">//</span><a
- name="sgi">1</a></li>
 
 <li><a href="/tags/infrastructure">infrastructure</a><span
  class="decorative-marker">//</span><a
@@ -146,18 +114,6 @@
  class="decorative-marker">//</span><a
  name="shipit">1</a></li>
 
-<li><a href="/tags/webmaster">webmaster</a><span
- class="decorative-marker">//</span><a
- name="webmaster">1</a></li>
-
-<li><a href="/tags/static">static</a><span
- class="decorative-marker">//</span><a
- name="static">1</a></li>
-
-<li><a href="/tags/lamp">lamp</a><span
- class="decorative-marker">//</span><a
- name="lamp">1</a></li>
-
 <li><a href="/tags/phing">phing</a><span
  class="decorative-marker">//</span><a
  name="phing">1</a></li>
@@ -166,6 +122,42 @@
  class="decorative-marker">//</span><a
  name="immutable">1</a></li>
 
+<li><a href="/tags/test">test</a><span
+ class="decorative-marker">//</span><a
+ name="test">1</a></li>
+
+<li><a href="/tags/webmaster">webmaster</a><span
+ class="decorative-marker">//</span><a
+ name="webmaster">1</a></li>
+
+<li><a href="/tags/blog">blog</a><span
+ class="decorative-marker">//</span><a
+ name="blog">1</a></li>
+
+<li><a href="/tags/sgi">sgi</a><span
+ class="decorative-marker">//</span><a
+ name="sgi">1</a></li>
+
+<li><a href="/tags/about">about</a><span
+ class="decorative-marker">//</span><a
+ name="about">1</a></li>
+
+<li><a href="/tags/cms">cms</a><span
+ class="decorative-marker">//</span><a
+ name="cms">1</a></li>
+
+<li><a href="/tags/lamp">lamp</a><span
+ class="decorative-marker">//</span><a
+ name="lamp">1</a></li>
+
+<li><a href="/tags/configuration">configuration</a><span
+ class="decorative-marker">//</span><a
+ name="configuration">1</a></li>
+
+<li><a href="/tags/pattern">pattern</a><span
+ class="decorative-marker">//</span><a
+ name="pattern">1</a></li>
+
 <li><a href="/tags/failfast">failfast</a><span
  class="decorative-marker">//</span><a
  name="failfast">1</a></li>
@@ -173,6 +165,14 @@
 <li><a href="/tags/career">career</a><span
  class="decorative-marker">//</span><a
  name="career">1</a></li>
+
+<li><a href="/tags/prototype">prototype</a><span
+ class="decorative-marker">//</span><a
+ name="prototype">1</a></li>
+
+<li><a href="/tags/static">static</a><span
+ class="decorative-marker">//</span><a
+ name="static">1</a></li>
 
       </ul>
     </nav>
@@ -450,7 +450,10 @@ but use <a href="https://packer.io/docs/builders/docker.html">Packer to exclusiv
 <a href="https://docs.chef.io/containers.html">Chef</a>
 while potentially supported by <a href="https://puppetlabs.com/blog/simplify-managing-docker-puppet">Puppet</a>
 and <a href="http://saltstack.com/saltstack-delivers-more-automation-docker-lxc-application-containers/">SaltStack</a>,
-but I think we can say this needs some more thought and evangelism.</p>
+but I think we can say this needs some more thought and evangelism because I think our entire
+community is wrestling with this problem as we transition to understand containers, e.g.:
+R.I. Pienaar (author of Marionette Collective (MCo) which is bundled with Puppet)
+<a href="https://www.devco.net/archives/2015/02/24/moving-a-service-from-puppet-to-docker-2.php">Moving a service from Puppet to Docker</a>.</p>
 
 <h3 id="container-deployment-and-orchestration:9b4c54333bd97e87ce05878dcf4182cb">Container Deployment and Orchestration</h3>
 
