@@ -24,26 +24,26 @@
 
 &lt;p&gt;I was the webmaster (Senior Producer, Web Team in the Information Technology department of Silicon Graphics: SGI)
 from 2005-2011, which is to say I designed and implemented improvements to web content, management, publishing,
-revision control, infrastructure, web programming and more.&lt;/p&gt;
+revision control, infrastructure, web programming, extranet design, application service provider integration and more.&lt;/p&gt;
 
-&lt;p&gt;I transitioned our server (and desktop) infrastructure from IRIX on MIPS architecture to SuSE Linux on Intel Itanium2 architecture as well as allowing folks to move to Windows laptops. It was not shocking to find many
-tools and packages were not ported to the platform or that the Operating System distribution could lag behind
-in security releases or never upgrade packages, so I happily resorted to building from source and benefit
+&lt;p&gt;I transitioned our server (and desktop) infrastructure from IRIX on MIPS architecture to SuSE Linux on Intel Itanium2 architecture, allowing folks to move to Windows laptops. It was not shocking to find many
+tools and packages were not ported to the new platform, Operating System distribution packages could lag behind
+in security releases or never receive upgrades, so I happily resorted to building from source and benefit
 from open source licensing.&lt;/p&gt;
 
-&lt;p&gt;Previously, during my independent consulting years, I had moved technology stacks from SINO to LAMP:&lt;/p&gt;
+&lt;p&gt;Previously, during my independent consulting years, I had moved technology web stacks from SINO to LAMP:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;SINO = Solaris, Informix, Netscape, Oracle&lt;/li&gt;
-&lt;li&gt;LAMP = Linux, Apache, MySQL/Postgres, PERL/PHP/Python&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SINO:&lt;/strong&gt; Solaris, Informix, Netscape, Oracle&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LAMP:&lt;/strong&gt; Linux, Apache, MySQL/Postgres, PERL/PHP/Python&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;e.g.: From Netscape Enterprise Web Server to Apache, Informix and Oracle to MySQL, PERL to PHP, and I had been building on both Solaris and Linux.&lt;/p&gt;
+&lt;p&gt;e.g.: From Netscape Enterprise Web Server to Apache, Informix and Oracle to MySQL, PERL to PHP, and I had been building this web stack on both Solaris and Linux.&lt;/p&gt;
 
 &lt;h3 id=&#34;migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;Migration of Build Methods&lt;/h3&gt;
 
-&lt;p&gt;I had a growing shell script to perform the package builds and I refactored it for the release numbers and
-the deployment directory to be variables. Although my build script was a brittle monstrosity without any
+&lt;p&gt;I had an ever growing shell script to perform the package builds and I refactored it for the release numbers and
+the deployment directory to be variable driven. Although my build script was a brittle monstrosity without any
 conditionally or intelligence, it was the right approach towards infrastructure as code!&lt;/p&gt;
 
 &lt;p&gt;My manager asked how I would document and share the build process for others at SGI to repurpose my work,
@@ -63,9 +63,9 @@ allowing me to reuse some Ant tools (a benefit of using XML as a data structure)
 &lt;li&gt;leverage build targets composed from the appropriate mix of software:
 
 &lt;ul&gt;
-&lt;li&gt;Internet server, which has am optimized, reduced configuration&lt;/li&gt;
-&lt;li&gt;DMZ server which was minimal and secure&lt;/li&gt;
-&lt;li&gt;Intranet server, which had a kitchen sink configuration&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Internet server:&lt;/strong&gt; an optimized, reduced web stack&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DMZ server:&lt;/strong&gt; minimal and secure web stack&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Intranet server:&lt;/strong&gt; a kitchen sink (everything) configuration web stack&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;respond in hours to incorporate any security patch directly from the software projects without waiting
 for the upstream operating system provider to back-port and distribute&lt;/li&gt;
@@ -101,7 +101,8 @@ and identifying, testing, and confirming a fix to broken OpenSSL builds on Itani
 &lt;p&gt;Some fun challenges and SGI trivia:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://sgi.com&#34;&gt;http://sgi.com&lt;/a&gt; was one of the first web sites I ever saw with Mosaic on the web back in 1993. The banner of the home
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://sgi.com&#34;&gt;http://sgi.com&lt;/a&gt; was one of the first web sites I ever saw with &lt;a href=&#34;http://en.wikipedia.org/wiki/Mosaic_(web_browser&#34;&gt;NCSA Mosaic&lt;/a&gt;
+on the web back in 1993. The banner of the home
 page of www.sgi.com was called &amp;ldquo;Silicon Surf&amp;rdquo; and displayed a metallic robot surfing on the ocean, which was
 also a reference to SGI&amp;rsquo;s ground breaking graphic rendering, powering the earliest days of computer graphic
 imagery (CGI) in Hollywood, pioneered by Lucasfilm&amp;rsquo;s Industrial Light and Magic (ILM) with SGI workstations:
@@ -116,11 +117,11 @@ and SGI nicknamed the web team the Surf Team.&lt;/p&gt;
 
 &lt;li&gt;&lt;p&gt;SGI engineering has created an in-house improved, centralized revision control system on top of
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Revision_Control_System&#34;&gt;RCS&lt;/a&gt;,
-one of the earliest, local Unix revision control systems. It could be thought of a
+one of the earliest, local file Unix revision control systems. It could be thought of a
 cousin and functional equivalent to &lt;a href=&#34;https://en.wikipedia.org/wiki/Concurrent_Versions_System&#34;&gt;CVS&lt;/a&gt;
 because it used RCS format files in the repository.
 However, it ran only on &lt;a href=&#34;https://en.wikipedia.org/wiki/IRIX&#34;&gt;IRIX&lt;/a&gt;, which was SGI&amp;rsquo;s flavor of
-Unix for the MIPS CPU family, and Engineering did not have a road map to port it to Linux. Despite SGI already transitioning from IRIX to Linux, they had not decided to end of life IRIX.&lt;/p&gt;
+Unix for the MIPS CPU family, and Engineering did not have a road map to port it to Linux. Despite SGI already transitioning from IRIX to Linux, they had not decided to end of life IRIX at that time.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;I was working to move us from SGI O2&amp;rsquo;s (IRIX) on every web developer&amp;rsquo;s desk to Linux or Windows laptops
@@ -148,15 +149,14 @@ management. Does this represent the opposite of container promise and immutable 
 
 &lt;h3 id=&#34;heavy-containers:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Heavy Containers&lt;/h3&gt;
 
-&lt;p&gt;Idea: picture of heavy barrel?&lt;/p&gt;
-
 &lt;p&gt;I have been researching containers for years, I encountered &lt;a href=&#34;https://pantheon.io/blog/why-we-built-pantheon-containers-instead-virtual-machines&#34;&gt;an early mention for Drupal CMS hosting&lt;/a&gt;
- probably a year before I heard about Docker. I had been working with chroot jails earlier in my career,
-but Docker made LXC containers easy to use, just as Vagrant had done for Virtual Machines.&lt;/p&gt;
+ probably a year before I heard about Docker. I had worked with chroot jails earlier in my career,
+ but &lt;a href=&#34;http://docker.com&#34;&gt;Docker&lt;/a&gt; made LXC containers easy to use, just as &lt;a href=&#34;http://vagrantup.com&#34;&gt;Vagrant&lt;/a&gt;
+ had done for Virtual Machines.&lt;/p&gt;
 
-&lt;p&gt;An ideal container holds an application and nothing more: the tricky part is defining your application.
-An application may be composed of data, code, runtime configuration, a server facility, and
-various dependencies. e.g.:&lt;/p&gt;
+&lt;p&gt;An ideal container holds an application and nothing more: the tricky part is defining your application
+and its dependencies. An application may be composed of data, code, runtime configuration, a server facility,
+and further dependencies. e.g.:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;code: /var/www/virtualhost.example.com/microserviceRoute
@@ -197,26 +197,57 @@ FROM ubuntu:14.04.2
 RUN apt-get update &amp;amp;&amp;amp; apt-get install -y somePackage
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;All of this application scope increase is natural until you are comfortable with containers,
- then you are ready for container re-factoring. There is a notion of linked and data containers which
- I&amp;rsquo;ll explore later, but what would we re-factor and why?&lt;/p&gt;
+&lt;p&gt;This scope (equivalent to a VM) is natural until you are comfortable with containers,
+ then you are ready for container re-factoring and layering. There is a notion of linked
+ and data containers which I&amp;rsquo;ll explore later, but what would we re-factor and why?&lt;/p&gt;
 
 &lt;h3 id=&#34;container-re-factoring:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Container Re-factoring&lt;/h3&gt;
 
 &lt;p&gt;This is an incomplete thought: I will continue and reorganize it.&lt;/p&gt;
 
-&lt;p&gt;Like all things, you must address your audience. For developers, a dev container might be built into
-the self-contained monolithic full composite dependency, but for production we could separate each
-layer into different containers with a different deployment cadence.&lt;/p&gt;
+&lt;p&gt;Like all things, you must address your audience. For developers, a developer container might have everything
+needed for production but also add troubleshooting and development tools. For production, we would use the
+lighter version of the developer container by omitting the extras accomplishing a minimal difference
+between dev and prod!&lt;/p&gt;
 
-&lt;p&gt;Because every guest container is hosted on an OS, you would ideally reuse the host OS to remove
-user land needs. This becomes interesting if you&amp;rsquo;ve picked CoreOS, because they are a minimal
-Linux distribution forked from ChromeOS and optimized to run containers. This is a clue that
-we shouldn&amp;rsquo;t bind an OS into a container, although it is awesome that we can and we should use
-this for testing.&lt;/p&gt;
+&lt;p&gt;We can accomplish this by separating containers into layers, where each
+&lt;a href=&#34;http://docs.docker.com/terms/layer/&#34;&gt;container layer&lt;/a&gt; is a container unto itself and
+&lt;a href=&#34;http://docs.docker.com/reference/builder/#from&#34;&gt;they can be added together&lt;/a&gt; to compose a bigger container.&lt;/p&gt;
 
-&lt;p&gt;We see an entire industry of minimalist OSes popping up, sometimes application focused, which
-is a clue. Passenger OS, RancherOS, CoreOS, etc.&lt;/p&gt;
+&lt;p&gt;Therefore, each container layer could represent an area of expertise which models how your organization
+manages resources and would progress with different development cadence. e.g.:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;your system administrators might take care of the base OS&lt;/li&gt;
+&lt;li&gt;your network team might address firewall and networking concerns,&lt;/li&gt;
+&lt;li&gt;your server developer team might take care of the server runtime and dependencies,&lt;/li&gt;
+&lt;li&gt;your DevOps team could address configuration, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Reusing the expertise in your organization suggests a good model to start from and
+allows independent iteration of each concern in a container layer.&lt;/p&gt;
+
+&lt;p&gt;We can then build a robust container that dynamically invokes its dependent layers, allowing each
+to iterate as needed, reducing complexity for a single, monolithic build and risk for rapid deployment.&lt;/p&gt;
+
+&lt;p&gt;So let&amp;rsquo;s explore that idea in more detail:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;FROM minimalist/OS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Because every guest container resides on a container host OS, refactoring should take into account
+the container runtime and container host facilities. This becomes interesting if you&amp;rsquo;ve picked
+a minimal Linux distribution such as &lt;a href=&#34;http://coreos.com/&#34;&gt;CoreOS&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/phusion/passenger-docker#why_use&#34;&gt;Passenger-docker&lt;/a&gt;,
+&lt;a href=&#34;http://rancher.com/rancher-os/&#34;&gt;RancherOS&lt;/a&gt;, or etc. because they are optimized to run containers
+(i.e. boot to container). This is a clue that we shouldn&amp;rsquo;t need to bind a full OS user land into a container,
+although it is awesome that we can and we should use this for developing our first containers
+with sshd and more.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;FROM server/facility&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Because your server facility or runtime typically do not change unless there is a new release
 which contains a security, performance, or feature fix, this is the next candidate for removal
@@ -229,32 +260,47 @@ container.&lt;/p&gt;
 
 &lt;p&gt;The idea is that the server facility is a separate layer from our application: it iterates
 on a different time line and probably is an infrastructure engineer concern, so why weigh down
-an application container with it?&lt;/p&gt;
+an application container layer with it?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;FROM developer/tools&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Diagnostic and troubleshooting tools and facilities such as SSH, logging, metrics, and monitoring
 are also heavy items and external to the application: these are services which likely reside
 on the container host, external to the container host, or in another container.&lt;/p&gt;
 
+&lt;ul&gt;
+&lt;li&gt;FROM application/service&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;Finally, we get to the application itself: it has dependencies such as runtime configuration
 and libraries. Those can be externalized from the application because they are a layer which
 iterates on a separate time line.&lt;/p&gt;
 
-&lt;p&gt;We can compose all of these things during container build time into a monolithic, heavy container.
-Or we can build a robust application that dynamically invokes its dependencies, allowing each
-to iterate as needed, reducing complexity and risk for rapid deployment.&lt;/p&gt;
+&lt;p&gt;I would advocate that we compose all of these layers during container build time versus the
+standard approach we use the first time we build a container with Docker: using CMD to shell out
+and perform installation and configuration tasks.&lt;/p&gt;
 
-&lt;p&gt;This idea was introduced at the CoreOS Meetup (&lt;a href=&#34;http://www.meetup.com/coreos/events/215452012/&#34;&gt;http://www.meetup.com/coreos/events/215452012/&lt;/a&gt;)
-by James Russell, DevOps engineer at Sony Computer Entertainment America, DevNet Team
-(&lt;a href=&#34;https://www.youtube.com/watch?v=M9hBsRUeRdg&#34;&gt;https://www.youtube.com/watch?v=M9hBsRUeRdg&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=M9hBsRUeRdg&#34;&gt;This idea was introduced&lt;/a&gt;
+at the &lt;a href=&#34;http://www.meetup.com/coreos/events/215452012/&#34;&gt;CoreOS Meetup&lt;/a&gt;
+by James Russell, DevOps engineer at Sony Computer Entertainment America, DevNet Team.
+It has been further explored by a talk called
+&amp;ldquo;Exploring Strategies for Minimal Containerization&amp;rdquo; by Brian &amp;ldquo;Red beard&amp;rdquo; Harrington,
+Principal Architect at CoreOS, but I only found &lt;a href=&#34;https://www.youtube.com/watch?v=P3sO9URqOhE&#34;&gt;a partial reference&lt;/a&gt;
+at a recent Container Days keynote.&lt;/p&gt;
 
-&lt;p&gt;All of this suggests that we have two major use cases for containers.&lt;/p&gt;
+&lt;p&gt;In fact, &lt;strong&gt;most every use of CMD represents a duplication of effort that I abhor:&lt;/strong&gt;
+&lt;a href=&#34;http://mlavi.github.io/post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;configuration by shell is something we have done before&lt;/a&gt;
+ as a first level approximation to solve the problem. Many of us now use configuration management,
+ which is a field comprised of tools known as Ansible, CF Engine, Chef, Puppet, Salt, and more.&lt;/p&gt;
 
-&lt;h3 id=&#34;application-versus-service-containers:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Application versus Service Containers&lt;/h3&gt;
-
-&lt;p&gt;I am exploring this strategic gap between the VM and the container. I went to ChefConf this week
+&lt;p&gt;Configuration management is typically invoked after deployment of a resource during run-time,
+but Dockerfiles are invoked in the build domain. I am exploring this strategic gap between the
+VM and the container. I went to ChefConf 2015
 and asked this question but didn&amp;rsquo;t find an answer because I think there is a fundamental divide
-between immutable infrastructure (of application containers) and configuration management of
-persistent infrastructure (which is longer lived and has an OS).&lt;/p&gt;
+between immutable infrastructure (of ephemeral containers) and configuration management of
+persistent infrastructure (which is longer lived).&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Configuration management of a container host, that makes sense to me.&lt;/li&gt;
@@ -265,6 +311,14 @@ yet.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Reusing our configuration management code so we can use it to build a container or a VM makes sense.&lt;/p&gt;
+
+&lt;p&gt;Could it be as simple as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CMD puppet agent apply&lt;/li&gt;
+&lt;li&gt;CMD chef-solo -c ~/solo.rb -j ~/node.json&lt;/li&gt;
+&lt;li&gt;etc?&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&#34;immutable-infrastructure-versus-configuration-management-build-time-versus-run-time:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Immutable Infrastructure versus Configuration Management: build-time versus run-time&lt;/h3&gt;
 
@@ -277,19 +331,22 @@ implies a longer-lived, persistent system and the heavier it is, the more useful
 becomes to maintain run state.&lt;/p&gt;
 
 &lt;p&gt;If a system is immutable, constrained to an application code artifact, and continuously deployed
-thousands of times a day &amp;ndash; do we need configuration management sync and update? I would
-rather re-factor configuration management to be used during build time for artifacts and not
-during run-time of those artifacts.&lt;/p&gt;
+thousands of times a day &amp;ndash; do we need configuration management sync and update? I like configuration
+management to be used during build time for artifacts and only as an option during run-time of those artifacts.
+I arrived at this viewpoint recently during a discussion with HashiCorp&amp;rsquo;s CTO, Armon Dadgar, because
+it is exactly the use case established with Vagrant to develop and test your configuration management,
+but &lt;a href=&#34;https://packer.io/docs/builders/docker.html&#34;&gt;use Packer to exclusively build your container artifact&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Can we bootstrap an OS with a configuration management tool plus data, build the system,
-remove the configuration management tool plus data?&lt;/p&gt;
+&lt;p&gt;It appears this approach is also endorsed by
+&lt;a href=&#34;http://www.ansible.com/blog/ansible-and-containers-why-and-how&#34;&gt;Ansible&lt;/a&gt; and
+&lt;a href=&#34;https://docs.chef.io/containers.html&#34;&gt;Chef&lt;/a&gt;
+while potentially supported by &lt;a href=&#34;https://puppetlabs.com/blog/simplify-managing-docker-puppet&#34;&gt;Puppet&lt;/a&gt;
+and &lt;a href=&#34;http://saltstack.com/saltstack-delivers-more-automation-docker-lxc-application-containers/&#34;&gt;SaltStack&lt;/a&gt;,
+but I think we can say this needs some more thought and evangelism.&lt;/p&gt;
 
-&lt;p&gt;I think there needs to be a matrix for re-factoring the use cases of containers:
-applications vs. services in a container.&lt;/p&gt;
+&lt;h3 id=&#34;container-deployment-and-orchestration:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Container Deployment and Orchestration&lt;/h3&gt;
 
-&lt;h3 id=&#34;container-deployment:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Container Deployment&lt;/h3&gt;
-
-&lt;p&gt;Furthermore, container deployment becomes the next issue: do you use Mesos, Kubernetes,
+&lt;p&gt;Container deployment and orchestration becomes the next issue: do you use Mesos, Kubernetes,
 or some other scheduler to inform your load balancer, DNS, monitoring, and service discovery and
 dynamic configuration management systems that a tested official build artifact is ready?&lt;/p&gt;
 

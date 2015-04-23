@@ -82,25 +82,41 @@
  class="decorative-marker">//</span><a
  name="devops">4</a></li>
 
-<li><a href="/tags/build">build</a><span
+<li><a href="/tags/diagram">diagram</a><span
  class="decorative-marker">//</span><a
- name="build">2</a></li>
+ name="diagram">2</a></li>
 
 <li><a href="/tags/automation">automation</a><span
  class="decorative-marker">//</span><a
  name="automation">2</a></li>
 
-<li><a href="/tags/diagram">diagram</a><span
+<li><a href="/tags/build">build</a><span
  class="decorative-marker">//</span><a
- name="diagram">2</a></li>
+ name="build">2</a></li>
+
+<li><a href="/tags/sgi">sgi</a><span
+ class="decorative-marker">//</span><a
+ name="sgi">1</a></li>
+
+<li><a href="/tags/about">about</a><span
+ class="decorative-marker">//</span><a
+ name="about">1</a></li>
+
+<li><a href="/tags/cms">cms</a><span
+ class="decorative-marker">//</span><a
+ name="cms">1</a></li>
 
 <li><a href="/tags/lamp">lamp</a><span
  class="decorative-marker">//</span><a
  name="lamp">1</a></li>
 
-<li><a href="/tags/phing">phing</a><span
+<li><a href="/tags/configuration">configuration</a><span
  class="decorative-marker">//</span><a
- name="phing">1</a></li>
+ name="configuration">1</a></li>
+
+<li><a href="/tags/pattern">pattern</a><span
+ class="decorative-marker">//</span><a
+ name="pattern">1</a></li>
 
 <li><a href="/tags/failfast">failfast</a><span
  class="decorative-marker">//</span><a
@@ -110,41 +126,25 @@
  class="decorative-marker">//</span><a
  name="career">1</a></li>
 
-<li><a href="/tags/webmaster">webmaster</a><span
+<li><a href="/tags/prototype">prototype</a><span
  class="decorative-marker">//</span><a
- name="webmaster">1</a></li>
+ name="prototype">1</a></li>
 
 <li><a href="/tags/static">static</a><span
  class="decorative-marker">//</span><a
  name="static">1</a></li>
 
-<li><a href="/tags/container">container</a><span
- class="decorative-marker">//</span><a
- name="container">1</a></li>
-
 <li><a href="/tags/heavy">heavy</a><span
  class="decorative-marker">//</span><a
  name="heavy">1</a></li>
 
-<li><a href="/tags/test">test</a><span
+<li><a href="/tags/container">container</a><span
  class="decorative-marker">//</span><a
- name="test">1</a></li>
+ name="container">1</a></li>
 
-<li><a href="/tags/pattern">pattern</a><span
+<li><a href="/tags/infrastructure">infrastructure</a><span
  class="decorative-marker">//</span><a
- name="pattern">1</a></li>
-
-<li><a href="/tags/blog">blog</a><span
- class="decorative-marker">//</span><a
- name="blog">1</a></li>
-
-<li><a href="/tags/prototype">prototype</a><span
- class="decorative-marker">//</span><a
- name="prototype">1</a></li>
-
-<li><a href="/tags/sgi">sgi</a><span
- class="decorative-marker">//</span><a
- name="sgi">1</a></li>
+ name="infrastructure">1</a></li>
 
 <li><a href="/tags/deploy">deploy</a><span
  class="decorative-marker">//</span><a
@@ -154,13 +154,25 @@
  class="decorative-marker">//</span><a
  name="shipit">1</a></li>
 
-<li><a href="/tags/about">about</a><span
+<li><a href="/tags/phing">phing</a><span
  class="decorative-marker">//</span><a
- name="about">1</a></li>
+ name="phing">1</a></li>
 
-<li><a href="/tags/cms">cms</a><span
+<li><a href="/tags/immutable">immutable</a><span
  class="decorative-marker">//</span><a
- name="cms">1</a></li>
+ name="immutable">1</a></li>
+
+<li><a href="/tags/test">test</a><span
+ class="decorative-marker">//</span><a
+ name="test">1</a></li>
+
+<li><a href="/tags/webmaster">webmaster</a><span
+ class="decorative-marker">//</span><a
+ name="webmaster">1</a></li>
+
+<li><a href="/tags/blog">blog</a><span
+ class="decorative-marker">//</span><a
+ name="blog">1</a></li>
 
       </ul>
     </nav>
@@ -188,9 +200,8 @@
 <ul>
 <li><a href="#heavy-containers:9b4c54333bd97e87ce05878dcf4182cb">Heavy Containers</a></li>
 <li><a href="#container-re-factoring:9b4c54333bd97e87ce05878dcf4182cb">Container Re-factoring</a></li>
-<li><a href="#application-versus-service-containers:9b4c54333bd97e87ce05878dcf4182cb">Application versus Service Containers</a></li>
 <li><a href="#immutable-infrastructure-versus-configuration-management-build-time-versus-run-time:9b4c54333bd97e87ce05878dcf4182cb">Immutable Infrastructure versus Configuration Management: build-time versus run-time</a></li>
-<li><a href="#container-deployment:9b4c54333bd97e87ce05878dcf4182cb">Container Deployment</a></li>
+<li><a href="#container-deployment-and-orchestration:9b4c54333bd97e87ce05878dcf4182cb">Container Deployment and Orchestration</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -229,15 +240,14 @@ management. Does this represent the opposite of container promise and immutable 
 
 <h3 id="heavy-containers:9b4c54333bd97e87ce05878dcf4182cb">Heavy Containers</h3>
 
-<p>Idea: picture of heavy barrel?</p>
-
 <p>I have been researching containers for years, I encountered <a href="https://pantheon.io/blog/why-we-built-pantheon-containers-instead-virtual-machines">an early mention for Drupal CMS hosting</a>
- probably a year before I heard about Docker. I had been working with chroot jails earlier in my career,
-but Docker made LXC containers easy to use, just as Vagrant had done for Virtual Machines.</p>
+ probably a year before I heard about Docker. I had worked with chroot jails earlier in my career,
+ but <a href="http://docker.com">Docker</a> made LXC containers easy to use, just as <a href="http://vagrantup.com">Vagrant</a>
+ had done for Virtual Machines.</p>
 
-<p>An ideal container holds an application and nothing more: the tricky part is defining your application.
-An application may be composed of data, code, runtime configuration, a server facility, and
-various dependencies. e.g.:</p>
+<p>An ideal container holds an application and nothing more: the tricky part is defining your application
+and its dependencies. An application may be composed of data, code, runtime configuration, a server facility,
+and further dependencies. e.g.:</p>
 
 <ul>
 <li>code: /var/www/virtualhost.example.com/microserviceRoute
@@ -278,26 +288,57 @@ FROM ubuntu:14.04.2
 RUN apt-get update &amp;&amp; apt-get install -y somePackage
 </code></pre>
 
-<p>All of this application scope increase is natural until you are comfortable with containers,
- then you are ready for container re-factoring. There is a notion of linked and data containers which
- I&rsquo;ll explore later, but what would we re-factor and why?</p>
+<p>This scope (equivalent to a VM) is natural until you are comfortable with containers,
+ then you are ready for container re-factoring and layering. There is a notion of linked
+ and data containers which I&rsquo;ll explore later, but what would we re-factor and why?</p>
 
 <h3 id="container-re-factoring:9b4c54333bd97e87ce05878dcf4182cb">Container Re-factoring</h3>
 
 <p>This is an incomplete thought: I will continue and reorganize it.</p>
 
-<p>Like all things, you must address your audience. For developers, a dev container might be built into
-the self-contained monolithic full composite dependency, but for production we could separate each
-layer into different containers with a different deployment cadence.</p>
+<p>Like all things, you must address your audience. For developers, a developer container might have everything
+needed for production but also add troubleshooting and development tools. For production, we would use the
+lighter version of the developer container by omitting the extras accomplishing a minimal difference
+between dev and prod!</p>
 
-<p>Because every guest container is hosted on an OS, you would ideally reuse the host OS to remove
-user land needs. This becomes interesting if you&rsquo;ve picked CoreOS, because they are a minimal
-Linux distribution forked from ChromeOS and optimized to run containers. This is a clue that
-we shouldn&rsquo;t bind an OS into a container, although it is awesome that we can and we should use
-this for testing.</p>
+<p>We can accomplish this by separating containers into layers, where each
+<a href="http://docs.docker.com/terms/layer/">container layer</a> is a container unto itself and
+<a href="http://docs.docker.com/reference/builder/#from">they can be added together</a> to compose a bigger container.</p>
 
-<p>We see an entire industry of minimalist OSes popping up, sometimes application focused, which
-is a clue. Passenger OS, RancherOS, CoreOS, etc.</p>
+<p>Therefore, each container layer could represent an area of expertise which models how your organization
+manages resources and would progress with different development cadence. e.g.:</p>
+
+<ul>
+<li>your system administrators might take care of the base OS</li>
+<li>your network team might address firewall and networking concerns,</li>
+<li>your server developer team might take care of the server runtime and dependencies,</li>
+<li>your DevOps team could address configuration, etc.</li>
+</ul>
+
+<p>Reusing the expertise in your organization suggests a good model to start from and
+allows independent iteration of each concern in a container layer.</p>
+
+<p>We can then build a robust container that dynamically invokes its dependent layers, allowing each
+to iterate as needed, reducing complexity for a single, monolithic build and risk for rapid deployment.</p>
+
+<p>So let&rsquo;s explore that idea in more detail:</p>
+
+<ul>
+<li>FROM minimalist/OS</li>
+</ul>
+
+<p>Because every guest container resides on a container host OS, refactoring should take into account
+the container runtime and container host facilities. This becomes interesting if you&rsquo;ve picked
+a minimal Linux distribution such as <a href="http://coreos.com/">CoreOS</a>,
+<a href="https://github.com/phusion/passenger-docker#why_use">Passenger-docker</a>,
+<a href="http://rancher.com/rancher-os/">RancherOS</a>, or etc. because they are optimized to run containers
+(i.e. boot to container). This is a clue that we shouldn&rsquo;t need to bind a full OS user land into a container,
+although it is awesome that we can and we should use this for developing our first containers
+with sshd and more.</p>
+
+<ul>
+<li>FROM server/facility</li>
+</ul>
 
 <p>Because your server facility or runtime typically do not change unless there is a new release
 which contains a security, performance, or feature fix, this is the next candidate for removal
@@ -310,32 +351,47 @@ container.</p>
 
 <p>The idea is that the server facility is a separate layer from our application: it iterates
 on a different time line and probably is an infrastructure engineer concern, so why weigh down
-an application container with it?</p>
+an application container layer with it?</p>
+
+<ul>
+<li>FROM developer/tools</li>
+</ul>
 
 <p>Diagnostic and troubleshooting tools and facilities such as SSH, logging, metrics, and monitoring
 are also heavy items and external to the application: these are services which likely reside
 on the container host, external to the container host, or in another container.</p>
 
+<ul>
+<li>FROM application/service</li>
+</ul>
+
 <p>Finally, we get to the application itself: it has dependencies such as runtime configuration
 and libraries. Those can be externalized from the application because they are a layer which
 iterates on a separate time line.</p>
 
-<p>We can compose all of these things during container build time into a monolithic, heavy container.
-Or we can build a robust application that dynamically invokes its dependencies, allowing each
-to iterate as needed, reducing complexity and risk for rapid deployment.</p>
+<p>I would advocate that we compose all of these layers during container build time versus the
+standard approach we use the first time we build a container with Docker: using CMD to shell out
+and perform installation and configuration tasks.</p>
 
-<p>This idea was introduced at the CoreOS Meetup (<a href="http://www.meetup.com/coreos/events/215452012/">http://www.meetup.com/coreos/events/215452012/</a>)
-by James Russell, DevOps engineer at Sony Computer Entertainment America, DevNet Team
-(<a href="https://www.youtube.com/watch?v=M9hBsRUeRdg">https://www.youtube.com/watch?v=M9hBsRUeRdg</a>).</p>
+<p><a href="https://www.youtube.com/watch?v=M9hBsRUeRdg">This idea was introduced</a>
+at the <a href="http://www.meetup.com/coreos/events/215452012/">CoreOS Meetup</a>
+by James Russell, DevOps engineer at Sony Computer Entertainment America, DevNet Team.
+It has been further explored by a talk called
+&ldquo;Exploring Strategies for Minimal Containerization&rdquo; by Brian &ldquo;Red beard&rdquo; Harrington,
+Principal Architect at CoreOS, but I only found <a href="https://www.youtube.com/watch?v=P3sO9URqOhE">a partial reference</a>
+at a recent Container Days keynote.</p>
 
-<p>All of this suggests that we have two major use cases for containers.</p>
+<p>In fact, <strong>most every use of CMD represents a duplication of effort that I abhor:</strong>
+<a href="/post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985">configuration by shell is something we have done before</a>
+ as a first level approximation to solve the problem. Many of us now use configuration management,
+ which is a field comprised of tools known as Ansible, CF Engine, Chef, Puppet, Salt, and more.</p>
 
-<h3 id="application-versus-service-containers:9b4c54333bd97e87ce05878dcf4182cb">Application versus Service Containers</h3>
-
-<p>I am exploring this strategic gap between the VM and the container. I went to ChefConf this week
+<p>Configuration management is typically invoked after deployment of a resource during run-time,
+but Dockerfiles are invoked in the build domain. I am exploring this strategic gap between the
+VM and the container. I went to ChefConf 2015
 and asked this question but didn&rsquo;t find an answer because I think there is a fundamental divide
-between immutable infrastructure (of application containers) and configuration management of
-persistent infrastructure (which is longer lived and has an OS).</p>
+between immutable infrastructure (of ephemeral containers) and configuration management of
+persistent infrastructure (which is longer lived).</p>
 
 <ul>
 <li>Configuration management of a container host, that makes sense to me.</li>
@@ -346,6 +402,14 @@ yet.</em></li>
 </ul>
 
 <p>Reusing our configuration management code so we can use it to build a container or a VM makes sense.</p>
+
+<p>Could it be as simple as:</p>
+
+<ul>
+<li>CMD puppet agent apply</li>
+<li>CMD chef-solo -c ~/solo.rb -j ~/node.json</li>
+<li>etc?</li>
+</ul>
 
 <h3 id="immutable-infrastructure-versus-configuration-management-build-time-versus-run-time:9b4c54333bd97e87ce05878dcf4182cb">Immutable Infrastructure versus Configuration Management: build-time versus run-time</h3>
 
@@ -358,19 +422,22 @@ implies a longer-lived, persistent system and the heavier it is, the more useful
 becomes to maintain run state.</p>
 
 <p>If a system is immutable, constrained to an application code artifact, and continuously deployed
-thousands of times a day &ndash; do we need configuration management sync and update? I would
-rather re-factor configuration management to be used during build time for artifacts and not
-during run-time of those artifacts.</p>
+thousands of times a day &ndash; do we need configuration management sync and update? I like configuration
+management to be used during build time for artifacts and only as an option during run-time of those artifacts.
+I arrived at this viewpoint recently during a discussion with HashiCorp&rsquo;s CTO, Armon Dadgar, because
+it is exactly the use case established with Vagrant to develop and test your configuration management,
+but <a href="https://packer.io/docs/builders/docker.html">use Packer to exclusively build your container artifact</a>.</p>
 
-<p>Can we bootstrap an OS with a configuration management tool plus data, build the system,
-remove the configuration management tool plus data?</p>
+<p>It appears this approach is also endorsed by
+<a href="http://www.ansible.com/blog/ansible-and-containers-why-and-how">Ansible</a> and
+<a href="https://docs.chef.io/containers.html">Chef</a>
+while potentially supported by <a href="https://puppetlabs.com/blog/simplify-managing-docker-puppet">Puppet</a>
+and <a href="http://saltstack.com/saltstack-delivers-more-automation-docker-lxc-application-containers/">SaltStack</a>,
+but I think we can say this needs some more thought and evangelism.</p>
 
-<p>I think there needs to be a matrix for re-factoring the use cases of containers:
-applications vs. services in a container.</p>
+<h3 id="container-deployment-and-orchestration:9b4c54333bd97e87ce05878dcf4182cb">Container Deployment and Orchestration</h3>
 
-<h3 id="container-deployment:9b4c54333bd97e87ce05878dcf4182cb">Container Deployment</h3>
-
-<p>Furthermore, container deployment becomes the next issue: do you use Mesos, Kubernetes,
+<p>Container deployment and orchestration becomes the next issue: do you use Mesos, Kubernetes,
 or some other scheduler to inform your load balancer, DNS, monitoring, and service discovery and
 dynamic configuration management systems that a tested official build artifact is ready?</p>
 
@@ -386,9 +453,15 @@ is another problem I hope to tackle soon.</p>
 		<div class="tags-list">
 		<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
 		
+                <a class="post-tag post-tag-heavy" href="http://mlavi.github.io//tags/heavy">heavy</a>,
+                
                 <a class="post-tag post-tag-container" href="http://mlavi.github.io//tags/container">container</a>,
                 
-                <a class="post-tag post-tag-heavy" href="http://mlavi.github.io//tags/heavy">heavy</a>,
+                <a class="post-tag post-tag-immutable" href="http://mlavi.github.io//tags/immutable">immutable</a>,
+                
+                <a class="post-tag post-tag-infrastructure" href="http://mlavi.github.io//tags/infrastructure">infrastructure</a>,
+                
+                <a class="post-tag post-tag-configuration" href="http://mlavi.github.io//tags/configuration">configuration</a>,
                 
 		</div>
 	
