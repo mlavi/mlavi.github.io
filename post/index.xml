@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Fri, 10 Apr 2015 08:44:19 -0700</lastBuildDate>
-    <atom:link href="http://mlavi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Building the LAMP stack with Phing</title>
-      <link>http://mlavi.github.io/post/build-lamp-stack-with-phing/</link>
+      <link>http://localhost:1313/post/build-lamp-stack-with-phing/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
+      <guid>http://localhost:1313/post/build-lamp-stack-with-phing/</guid>
       <description>
 
 &lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.&lt;/p&gt;
@@ -72,7 +72,7 @@ for the upstream operating system provider to back-port and distribute&lt;/li&gt
 &lt;li&gt;communicate my work because the code was documented and visualizable, e.g.:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;I wrote one Phing extension called &amp;ldquo;MyUnpack.&amp;rdquo; Given any software package release version, it would:&lt;/p&gt;
@@ -137,10 +137,10 @@ because it represented a straightforward migration without a major change in con
     
     <item>
       <title>Container Infrastructure Strategy</title>
-      <link>http://mlavi.github.io/post/container-infrastructure-strategy/</link>
+      <link>http://localhost:1313/post/container-infrastructure-strategy/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/container-infrastructure-strategy/</guid>
+      <guid>http://localhost:1313/post/container-infrastructure-strategy/</guid>
       <description>
 
 &lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
@@ -154,45 +154,49 @@ management. Does this represent the opposite of container promise and immutable 
  but &lt;a href=&#34;http://docker.com&#34;&gt;Docker&lt;/a&gt; made LXC containers easy to use, just as &lt;a href=&#34;http://vagrantup.com&#34;&gt;Vagrant&lt;/a&gt;
  had done for Virtual Machines.&lt;/p&gt;
 
+&lt;p&gt;For the sake of simplifying this discussion, I will not discuss dynamic runtime configuration: it is the
+subject of a future blog post. We will approximate it via static application configuration.&lt;/p&gt;
+
 &lt;p&gt;An ideal container holds an application and nothing more: the tricky part is defining your application
-and its dependencies. An application may be composed of data, code, runtime configuration, a server facility,
-and further dependencies. e.g.:&lt;/p&gt;
+and its dependencies. If you look at the full stack an application may be composed, you would consider
+the data, code, runtime configuration, server facility, and further dependencies. e.g.:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;code: /var/www/virtualhost.example.com/microserviceRoute
 
 &lt;ul&gt;
 &lt;li&gt;code libraries: /var/www/shared/language/framework-version&lt;/li&gt;
-&lt;li&gt;application data: /var/www/shared/configuration/databasepassword.inc.txt&lt;/li&gt;
+&lt;li&gt;static application configuration data: /var/www/shared/configuration/databasepassword.inc.txt&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;server facility: Apache-2.4.x
+&lt;li&gt;server facility: (e.g.: Apache-2.4.x)
 
 &lt;ul&gt;
+&lt;li&gt;server binaries: /usr/bin/local/apache2**&lt;/li&gt;
 &lt;li&gt;server configuration: /etc/apache2/**&lt;/li&gt;
 &lt;li&gt;server runtime configuration: /etc/defaults/apache2&lt;/li&gt;
 &lt;li&gt;server startup customization: /etc/init/apache2-custom&lt;/li&gt;
 &lt;li&gt;server plug-ins: mod_php, mod_ssl, etc.&lt;/li&gt;
 &lt;li&gt;server plug-in dependencies: openssl, php, etc.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;runtime facilities:
+&lt;li&gt;runtime facilities: (e.g. PHP)
 
 &lt;ul&gt;
-&lt;li&gt;language runtime: php-5.x&lt;/li&gt;
+&lt;li&gt;language runtime binaries: /usr/bin/local/php-5.x&lt;/li&gt;
 &lt;li&gt;language runtime configuration: /etc/php.ini&lt;/li&gt;
 &lt;li&gt;language runtime dependencies: openssl, etc.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It is desirable to bundle all of these things together as a nice deployment unit,
+&lt;p&gt;It is desirable to bundle all of these things together as a full stack, static deployment unit,
 making your application portable and self-contained (ha ha).
 There is a challenge to decide the scope of a container because of the natural tendency
 to follow the dependencies and bundle all into the container, which weighs it down.&lt;/p&gt;
 
 &lt;p&gt;In fact, the initial jumping off point most people use for their containers (today) is a full
 Linux operating system distribution, which I call a &amp;ldquo;heavy container,&amp;rdquo; because it contains
-everything and resembles an entire virtual machine:&lt;/p&gt;
+everything and resembles an entire virtual machine (VM):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ cat Dockerfile
+&lt;pre&gt;&lt;code&gt;$ grep -e FROM -e RUN Dockerfile
 FROM ubuntu:14.04.2
 RUN apt-get update &amp;amp;&amp;amp; apt-get install -y somePackage
 &lt;/code&gt;&lt;/pre&gt;
@@ -279,7 +283,7 @@ and libraries. Those can be externalized from the application because they are a
 iterates on a separate time line.&lt;/p&gt;
 
 &lt;p&gt;I would advocate that we compose all of these layers during container build time versus the
-standard approach we use the first time we build a container with Docker: using CMD to shell out
+standard approach we use the first time we build a container with Docker: using RUN to shell out
 and perform installation and configuration tasks.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=M9hBsRUeRdg&#34;&gt;This idea was introduced&lt;/a&gt;
@@ -290,15 +294,15 @@ It has been further explored by a talk called
 Principal Architect at CoreOS, but I only found &lt;a href=&#34;https://www.youtube.com/watch?v=P3sO9URqOhE&#34;&gt;a partial reference&lt;/a&gt;
 at a recent Container Days keynote.&lt;/p&gt;
 
-&lt;p&gt;In fact, &lt;strong&gt;most every use of CMD represents a duplication of effort that I abhor:&lt;/strong&gt;
-&lt;a href=&#34;http://mlavi.github.io/post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;configuration by shell is something we have done before&lt;/a&gt;
+&lt;p&gt;&lt;strong&gt;Most use of RUN represents a duplication of effort that I abhor:&lt;/strong&gt;
+&lt;a href=&#34;http://localhost:1313/post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;because configuration by shell is something we have done before&lt;/a&gt;
  as a first level approximation to solve the problem. Many of us now use configuration management,
  which is a field comprised of tools known as Ansible, CF Engine, Chef, Puppet, Salt, and more.&lt;/p&gt;
 
-&lt;p&gt;Configuration management is typically invoked after deployment of a resource during run-time,
-but Dockerfiles are invoked in the build domain. I am exploring this strategic gap between the
-VM and the container. I went to ChefConf 2015
-and asked this question but didn&amp;rsquo;t find an answer because I think there is a fundamental divide
+&lt;p&gt;However, configuration management is typically invoked after deployment of a resource during run-time,
+but Dockerfiles are invoked in the build domain. I have been exploring this strategic gap between the
+VM and the container for months without resolution. I went to ChefConf 2015 and asked this question
+but didn&amp;rsquo;t find an answer because I think there is a fundamental divide
 between immutable infrastructure (of ephemeral containers) and configuration management of
 persistent infrastructure (which is longer lived).&lt;/p&gt;
 
@@ -315,27 +319,27 @@ yet.&lt;/em&gt;&lt;/li&gt;
 &lt;p&gt;Could it be as simple as:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;CMD puppet agent apply&lt;/li&gt;
-&lt;li&gt;CMD chef-solo -c ~/solo.rb -j ~/node.json&lt;/li&gt;
+&lt;li&gt;RUN puppet agent apply&lt;/li&gt;
+&lt;li&gt;RUN chef-solo -c ~/solo.rb -j ~/node.json&lt;/li&gt;
 &lt;li&gt;etc?&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;immutable-infrastructure-versus-configuration-management-build-time-versus-run-time:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Immutable Infrastructure versus Configuration Management: build-time versus run-time&lt;/h3&gt;
 
-&lt;p&gt;I want to reuse my configuration management to build a container rather than use Docker shell
-commands which are the lowest level primitive of configuration management functionality.&lt;/p&gt;
+&lt;p&gt;I want to reuse my configuration management to build a container rather than use shell
+commands which represent the lowest level primitive of configuration management functionality.&lt;/p&gt;
 
-&lt;p&gt;One of the benefits of configuration management is that you can periodically perform runs
-to sync and update configuration, allowing drift correction of the configured system. This
-implies a longer-lived, persistent system and the heavier it is, the more useful this model
-becomes to maintain run state.&lt;/p&gt;
+&lt;p&gt;One of the benefits of configuration management is that you perform periodic runs
+to sync and update configuration, allowing drift correction and auditing of the configured system.
+This implies a longer-lived, persistent system and we find that the &amp;ldquo;heavier&amp;rdquo; the system is,
+the more useful this model becomes to maintain run state.&lt;/p&gt;
 
 &lt;p&gt;If a system is immutable, constrained to an application code artifact, and continuously deployed
-thousands of times a day &amp;ndash; do we need configuration management sync and update? I like configuration
+thousands of times a day &amp;ndash; do we need configuration management sync and updates? I like configuration
 management to be used during build time for artifacts and only as an option during run-time of those artifacts.
 I arrived at this viewpoint recently during a discussion with HashiCorp&amp;rsquo;s CTO, Armon Dadgar, because
 it is exactly the use case established with Vagrant to develop and test your configuration management,
-but &lt;a href=&#34;https://packer.io/docs/builders/docker.html&#34;&gt;use Packer to exclusively build your container artifact&lt;/a&gt;.&lt;/p&gt;
+but use &lt;a href=&#34;https://packer.io/docs/builders/docker.html&#34;&gt;Packer to exclusively build your container artifact&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;It appears this approach is also endorsed by
 &lt;a href=&#34;http://www.ansible.com/blog/ansible-and-containers-why-and-how&#34;&gt;Ansible&lt;/a&gt; and
@@ -359,10 +363,10 @@ is another problem I hope to tackle soon.&lt;/p&gt;
     
     <item>
       <title>DevOps BTD Pattern for Continuous Deployment</title>
-      <link>http://mlavi.github.io/post/devops-btd-pattern/</link>
+      <link>http://localhost:1313/post/devops-btd-pattern/</link>
       <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
+      <guid>http://localhost:1313/post/devops-btd-pattern/</guid>
       <description>
 
 &lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
@@ -382,7 +386,7 @@ moving processes forward in the chain of events.&lt;/p&gt;
 areas that have been traditionally separated into team or department silos because they represent
 the pillars or domains of software development, quality assurance, and operations.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Those traditional silos create code friction by introducing manual hand offs and insulating teams
@@ -412,7 +416,7 @@ but we will examine it further and find that BTD should exist in each domain.&lt
 
 &lt;p&gt;What is wrong with the BTD pattern? Nothing except how it has been implemented as traditional roles and hand-offs, e.g.:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&amp;hellip;you can see the traditional silos and you can see all of the potential inefficiencies to remedy a bug.
@@ -429,7 +433,7 @@ The cost and time to fix increases the further the bug is discovered from the de
 
 &lt;p&gt;BTD must be applied at the build domain, at the test domain, and at the deploy domain.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;This is why everything is testable, buildable, and deployable on the developer laptop in the
@@ -477,10 +481,10 @@ This expanded skill set must be part of the engineering culture for service desi
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>http://mlavi.github.io/post/devops-automation/</link>
+      <link>http://localhost:1313/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops-automation/</guid>
+      <guid>http://localhost:1313/post/devops-automation/</guid>
       <description>
 
 &lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
@@ -512,7 +516,7 @@ and then cut and paste text from it.&lt;/p&gt;
 &lt;p&gt;My original release was 2015-03-11 (source below), but today&amp;rsquo;s update adds detail, removes many crossed lines
 for simple visual flow parsing, and is organized vertically.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Source code: devops_automation.pu
@@ -678,10 +682,10 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>http://mlavi.github.io/post/diagram/</link>
+      <link>http://localhost:1313/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/diagram/</guid>
+      <guid>http://localhost:1313/post/diagram/</guid>
       <description>
 
 &lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
@@ -701,7 +705,7 @@ to my favorite open source object drawing tool, &lt;a href=&#34;https://wiki.gno
 for a quite a while and I&amp;rsquo;m glad to have the time to do it properly.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://mlavi.github.io/img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;The DevOps mission to reduce all friction between the developer&amp;rsquo;s code and deployment to production
@@ -732,10 +736,10 @@ diagram) for flexibility and performance.&lt;/p&gt;
     
     <item>
       <title>Time for a new development project!</title>
-      <link>http://mlavi.github.io/post/first/</link>
+      <link>http://localhost:1313/post/first/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://mlavi.github.io/post/first/</guid>
+      <guid>http://localhost:1313/post/first/</guid>
       <description>
 
 &lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things

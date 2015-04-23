@@ -29,45 +29,49 @@ management. Does this represent the opposite of container promise and immutable 
  but &lt;a href=&#34;http://docker.com&#34;&gt;Docker&lt;/a&gt; made LXC containers easy to use, just as &lt;a href=&#34;http://vagrantup.com&#34;&gt;Vagrant&lt;/a&gt;
  had done for Virtual Machines.&lt;/p&gt;
 
+&lt;p&gt;For the sake of simplifying this discussion, I will not discuss dynamic runtime configuration: it is the
+subject of a future blog post. We will approximate it via static application configuration.&lt;/p&gt;
+
 &lt;p&gt;An ideal container holds an application and nothing more: the tricky part is defining your application
-and its dependencies. An application may be composed of data, code, runtime configuration, a server facility,
-and further dependencies. e.g.:&lt;/p&gt;
+and its dependencies. If you look at the full stack an application may be composed, you would consider
+the data, code, runtime configuration, server facility, and further dependencies. e.g.:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;code: /var/www/virtualhost.example.com/microserviceRoute
 
 &lt;ul&gt;
 &lt;li&gt;code libraries: /var/www/shared/language/framework-version&lt;/li&gt;
-&lt;li&gt;application data: /var/www/shared/configuration/databasepassword.inc.txt&lt;/li&gt;
+&lt;li&gt;static application configuration data: /var/www/shared/configuration/databasepassword.inc.txt&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;server facility: Apache-2.4.x
+&lt;li&gt;server facility: (e.g.: Apache-2.4.x)
 
 &lt;ul&gt;
+&lt;li&gt;server binaries: /usr/bin/local/apache2**&lt;/li&gt;
 &lt;li&gt;server configuration: /etc/apache2/**&lt;/li&gt;
 &lt;li&gt;server runtime configuration: /etc/defaults/apache2&lt;/li&gt;
 &lt;li&gt;server startup customization: /etc/init/apache2-custom&lt;/li&gt;
 &lt;li&gt;server plug-ins: mod_php, mod_ssl, etc.&lt;/li&gt;
 &lt;li&gt;server plug-in dependencies: openssl, php, etc.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;runtime facilities:
+&lt;li&gt;runtime facilities: (e.g. PHP)
 
 &lt;ul&gt;
-&lt;li&gt;language runtime: php-5.x&lt;/li&gt;
+&lt;li&gt;language runtime binaries: /usr/bin/local/php-5.x&lt;/li&gt;
 &lt;li&gt;language runtime configuration: /etc/php.ini&lt;/li&gt;
 &lt;li&gt;language runtime dependencies: openssl, etc.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It is desirable to bundle all of these things together as a nice deployment unit,
+&lt;p&gt;It is desirable to bundle all of these things together as a full stack, static deployment unit,
 making your application portable and self-contained (ha ha).
 There is a challenge to decide the scope of a container because of the natural tendency
 to follow the dependencies and bundle all into the container, which weighs it down.&lt;/p&gt;
 
 &lt;p&gt;In fact, the initial jumping off point most people use for their containers (today) is a full
 Linux operating system distribution, which I call a &amp;ldquo;heavy container,&amp;rdquo; because it contains
-everything and resembles an entire virtual machine:&lt;/p&gt;
+everything and resembles an entire virtual machine (VM):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ cat Dockerfile
+&lt;pre&gt;&lt;code&gt;$ grep -e FROM -e RUN Dockerfile
 FROM ubuntu:14.04.2
 RUN apt-get update &amp;amp;&amp;amp; apt-get install -y somePackage
 &lt;/code&gt;&lt;/pre&gt;
@@ -154,7 +158,7 @@ and libraries. Those can be externalized from the application because they are a
 iterates on a separate time line.&lt;/p&gt;
 
 &lt;p&gt;I would advocate that we compose all of these layers during container build time versus the
-standard approach we use the first time we build a container with Docker: using CMD to shell out
+standard approach we use the first time we build a container with Docker: using RUN to shell out
 and perform installation and configuration tasks.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=M9hBsRUeRdg&#34;&gt;This idea was introduced&lt;/a&gt;
@@ -165,15 +169,15 @@ It has been further explored by a talk called
 Principal Architect at CoreOS, but I only found &lt;a href=&#34;https://www.youtube.com/watch?v=P3sO9URqOhE&#34;&gt;a partial reference&lt;/a&gt;
 at a recent Container Days keynote.&lt;/p&gt;
 
-&lt;p&gt;In fact, &lt;strong&gt;most every use of CMD represents a duplication of effort that I abhor:&lt;/strong&gt;
-&lt;a href=&#34;http://mlavi.github.io/post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;configuration by shell is something we have done before&lt;/a&gt;
+&lt;p&gt;&lt;strong&gt;Most use of RUN represents a duplication of effort that I abhor:&lt;/strong&gt;
+&lt;a href=&#34;http://mlavi.github.io/post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;because configuration by shell is something we have done before&lt;/a&gt;
  as a first level approximation to solve the problem. Many of us now use configuration management,
  which is a field comprised of tools known as Ansible, CF Engine, Chef, Puppet, Salt, and more.&lt;/p&gt;
 
-&lt;p&gt;Configuration management is typically invoked after deployment of a resource during run-time,
-but Dockerfiles are invoked in the build domain. I am exploring this strategic gap between the
-VM and the container. I went to ChefConf 2015
-and asked this question but didn&amp;rsquo;t find an answer because I think there is a fundamental divide
+&lt;p&gt;However, configuration management is typically invoked after deployment of a resource during run-time,
+but Dockerfiles are invoked in the build domain. I have been exploring this strategic gap between the
+VM and the container for months without resolution. I went to ChefConf 2015 and asked this question
+but didn&amp;rsquo;t find an answer because I think there is a fundamental divide
 between immutable infrastructure (of ephemeral containers) and configuration management of
 persistent infrastructure (which is longer lived).&lt;/p&gt;
 
@@ -190,27 +194,27 @@ yet.&lt;/em&gt;&lt;/li&gt;
 &lt;p&gt;Could it be as simple as:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;CMD puppet agent apply&lt;/li&gt;
-&lt;li&gt;CMD chef-solo -c ~/solo.rb -j ~/node.json&lt;/li&gt;
+&lt;li&gt;RUN puppet agent apply&lt;/li&gt;
+&lt;li&gt;RUN chef-solo -c ~/solo.rb -j ~/node.json&lt;/li&gt;
 &lt;li&gt;etc?&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;immutable-infrastructure-versus-configuration-management-build-time-versus-run-time:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Immutable Infrastructure versus Configuration Management: build-time versus run-time&lt;/h3&gt;
 
-&lt;p&gt;I want to reuse my configuration management to build a container rather than use Docker shell
-commands which are the lowest level primitive of configuration management functionality.&lt;/p&gt;
+&lt;p&gt;I want to reuse my configuration management to build a container rather than use shell
+commands which represent the lowest level primitive of configuration management functionality.&lt;/p&gt;
 
-&lt;p&gt;One of the benefits of configuration management is that you can periodically perform runs
-to sync and update configuration, allowing drift correction of the configured system. This
-implies a longer-lived, persistent system and the heavier it is, the more useful this model
-becomes to maintain run state.&lt;/p&gt;
+&lt;p&gt;One of the benefits of configuration management is that you perform periodic runs
+to sync and update configuration, allowing drift correction and auditing of the configured system.
+This implies a longer-lived, persistent system and we find that the &amp;ldquo;heavier&amp;rdquo; the system is,
+the more useful this model becomes to maintain run state.&lt;/p&gt;
 
 &lt;p&gt;If a system is immutable, constrained to an application code artifact, and continuously deployed
-thousands of times a day &amp;ndash; do we need configuration management sync and update? I like configuration
+thousands of times a day &amp;ndash; do we need configuration management sync and updates? I like configuration
 management to be used during build time for artifacts and only as an option during run-time of those artifacts.
 I arrived at this viewpoint recently during a discussion with HashiCorp&amp;rsquo;s CTO, Armon Dadgar, because
 it is exactly the use case established with Vagrant to develop and test your configuration management,
-but &lt;a href=&#34;https://packer.io/docs/builders/docker.html&#34;&gt;use Packer to exclusively build your container artifact&lt;/a&gt;.&lt;/p&gt;
+but use &lt;a href=&#34;https://packer.io/docs/builders/docker.html&#34;&gt;Packer to exclusively build your container artifact&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;It appears this approach is also endorsed by
 &lt;a href=&#34;http://www.ansible.com/blog/ansible-and-containers-why-and-how&#34;&gt;Ansible&lt;/a&gt; and
