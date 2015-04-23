@@ -800,15 +800,24 @@ and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;
 
 &lt;h3 id=&#34;a-static-web-cms:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;A Static Web CMS?&lt;/h3&gt;
 
-&lt;p&gt;Even though I&amp;rsquo;ve accomplished much with various web content management systems (CMS) such as
- Joomla, WordPress, Drupal, and ModX over the years, you inevitably fall &lt;em&gt;out of love&lt;/em&gt; after
- the first month with complex and brittle software. Will it happen again?&lt;/p&gt;
+&lt;p&gt;Even though I&amp;rsquo;ve accomplished much (including e-commerce) with various web content management systems
+(CMS) such as:
+ &lt;a href=&#34;http://plone.org/&#34;&gt;Plone&lt;/a&gt;, &lt;a href=&#34;http://twiki.org/&#34;&gt;TWiki&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://foswiki.org/&#34;&gt;Foswiki&lt;/a&gt;,
+ &lt;a href=&#34;http://www.joomla.org/&#34;&gt;Joomla&lt;/a&gt;,
+ &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt;,
+ &lt;a href=&#34;http://drupal.org&#34;&gt;Drupal&lt;/a&gt;,
+ and &lt;a href=&#34;http://modx.org&#34;&gt;ModX&lt;/a&gt;
+over the years, you inevitably fall &lt;em&gt;out of love&lt;/em&gt; after the first month with complex and brittle software
+when you extend it into the enterprise by adding integrations, plugins, etc. which have their own security
+attack surface, dependencies, update schedule, and incompatibilities.&lt;/p&gt;
+
+&lt;p&gt;You wonder if Share Point is just as evil (I&amp;rsquo;m sure it is!) and will I fall out of love with a static CMS?&lt;/p&gt;
 
 &lt;p&gt;A static, compiled web site removes and loses dynamic, server-side functionality for persistence and
 interaction, or does it? With the advent of application service providers (ASP) or cloud hosted
-anything-as-a-service, we can move from server-side to service providers for comments and
-who knows what else? In addition, we can leverage improved web client capabilities to shift
-what was server-side to client-side processing.&lt;/p&gt;
+anything-as-a-service, we can move from server-side to service providers for authentication, spam filtered
+comments, forms and polls, advertising, analytics, and who knows what else?
+In addition, we can leverage improved web client capabilities to shift what was server-side to client-side processing.&lt;/p&gt;
 
 &lt;p&gt;This will be a great experiment!&lt;/p&gt;
 
