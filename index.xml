@@ -162,11 +162,12 @@ and its dependencies. If you look at the full stack an application may be compos
 the data, code, runtime configuration, server facility, and further dependencies. e.g.:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;code: /var/www/virtualhost.example.com/microserviceRoute
+&lt;li&gt;application:
 
 &lt;ul&gt;
-&lt;li&gt;code libraries: /var/www/shared/language/framework-version&lt;/li&gt;
-&lt;li&gt;static application configuration data: /var/www/shared/configuration/databasepassword.inc.txt&lt;/li&gt;
+&lt;li&gt;code: /var/www/virtualhost.example.com/micro/service/route&lt;/li&gt;
+&lt;li&gt;code libraries and frameworks: /var/www/shared/language/framework-version (potentially implicitly stored with the code base)&lt;/li&gt;
+&lt;li&gt;static application configuration data: /var/www/shared/configuration/databasepassword.inc.txt (potentially implicitly stored with the code base)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;runtime facilities: (e.g.: PHP)
 
@@ -189,8 +190,8 @@ the data, code, runtime configuration, server facility, and further dependencies
 
 &lt;p&gt;It is desirable to bundle all of these things together as a full stack, static deployment unit,
 making your application portable and self-contained (ha ha).
-There is a challenge to decide the scope of a container because of the natural tendency
-to follow the dependencies and bundle all into the container, which weighs it down.&lt;/p&gt;
+There is a challenge to decide container scope because of the natural tendency
+to follow the dependencies and bundle everything into the container, which weighs it down.&lt;/p&gt;
 
 &lt;p&gt;The initial practice many use for their container is a full
 Linux operating system distribution, which I call a &amp;ldquo;heavy container,&amp;rdquo; because it contains
