@@ -53,7 +53,7 @@ the data, code, runtime configuration, server facility, and further dependencies
 &lt;li&gt;server plug-ins: mod_php, mod_ssl, etc.&lt;/li&gt;
 &lt;li&gt;server plug-in dependencies: openssl, php, etc.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;runtime facilities: (e.g. PHP)
+&lt;li&gt;runtime facilities: (e.g.: PHP)
 
 &lt;ul&gt;
 &lt;li&gt;language runtime binaries: /usr/bin/local/php-5.x&lt;/li&gt;
@@ -73,7 +73,7 @@ everything and resembles an entire virtual machine (VM):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ grep -e FROM -e RUN Dockerfile
 FROM ubuntu:14.04.2
-RUN apt-get update &amp;amp;&amp;amp; apt-get install -y somePackage
+RUN apt-get update &amp;amp;&amp;amp; apt-get install -y apache2 php5
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This scope (equivalent to a VM) is natural until you are comfortable with containers,
