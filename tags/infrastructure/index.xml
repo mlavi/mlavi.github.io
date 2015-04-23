@@ -67,7 +67,7 @@ making your application portable and self-contained (ha ha).
 There is a challenge to decide the scope of a container because of the natural tendency
 to follow the dependencies and bundle all into the container, which weighs it down.&lt;/p&gt;
 
-&lt;p&gt;In fact, the initial jumping off point most people use for their containers (today) is a full
+&lt;p&gt;The initial practice many use for their container is a full
 Linux operating system distribution, which I call a &amp;ldquo;heavy container,&amp;rdquo; because it contains
 everything and resembles an entire virtual machine (VM):&lt;/p&gt;
 
