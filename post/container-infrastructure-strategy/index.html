@@ -94,6 +94,34 @@
  class="decorative-marker">//</span><a
  name="diagram">2</a></li>
 
+<li><a href="/tags/prototype">prototype</a><span
+ class="decorative-marker">//</span><a
+ name="prototype">1</a></li>
+
+<li><a href="/tags/static">static</a><span
+ class="decorative-marker">//</span><a
+ name="static">1</a></li>
+
+<li><a href="/tags/lamp">lamp</a><span
+ class="decorative-marker">//</span><a
+ name="lamp">1</a></li>
+
+<li><a href="/tags/configuration">configuration</a><span
+ class="decorative-marker">//</span><a
+ name="configuration">1</a></li>
+
+<li><a href="/tags/pattern">pattern</a><span
+ class="decorative-marker">//</span><a
+ name="pattern">1</a></li>
+
+<li><a href="/tags/failfast">failfast</a><span
+ class="decorative-marker">//</span><a
+ name="failfast">1</a></li>
+
+<li><a href="/tags/career">career</a><span
+ class="decorative-marker">//</span><a
+ name="career">1</a></li>
+
 <li><a href="/tags/shipit">shipit</a><span
  class="decorative-marker">//</span><a
  name="shipit">1</a></li>
@@ -145,34 +173,6 @@
 <li><a href="/tags/cms">cms</a><span
  class="decorative-marker">//</span><a
  name="cms">1</a></li>
-
-<li><a href="/tags/prototype">prototype</a><span
- class="decorative-marker">//</span><a
- name="prototype">1</a></li>
-
-<li><a href="/tags/static">static</a><span
- class="decorative-marker">//</span><a
- name="static">1</a></li>
-
-<li><a href="/tags/lamp">lamp</a><span
- class="decorative-marker">//</span><a
- name="lamp">1</a></li>
-
-<li><a href="/tags/configuration">configuration</a><span
- class="decorative-marker">//</span><a
- name="configuration">1</a></li>
-
-<li><a href="/tags/pattern">pattern</a><span
- class="decorative-marker">//</span><a
- name="pattern">1</a></li>
-
-<li><a href="/tags/failfast">failfast</a><span
- class="decorative-marker">//</span><a
- name="failfast">1</a></li>
-
-<li><a href="/tags/career">career</a><span
- class="decorative-marker">//</span><a
- name="career">1</a></li>
 
       </ul>
     </nav>
@@ -301,7 +301,7 @@ RUN apt-get update &amp;&amp; apt-get install -y apache2 php5
 
 <p>This is an incomplete thought: I will continue and reorganize it.</p>
 
-<p>Like all things, you must address your audience. For developers, a developer container might have everything
+<p>You must address your audience. For developers, a development container might have everything
 needed for production but also add troubleshooting and development tools. For production, we would use the
 lighter version of the developer container by omitting the extras accomplishing a minimal difference
 between dev and prod!</p>
@@ -311,19 +311,19 @@ between dev and prod!</p>
 <a href="http://docs.docker.com/reference/builder/#from">they can be added together</a> to compose a bigger container.</p>
 
 <p>Therefore, each container layer could represent an area of expertise which models how your organization
-manages resources and would progress with different development cadence. e.g.:</p>
+manages resources and could progress with different development cadence. e.g.:</p>
 
 <ul>
-<li>your system administrators might take care of the base OS</li>
+<li>your system administrators might take care of the base OS,</li>
 <li>your network team might address firewall and networking concerns,</li>
 <li>your server developer team might take care of the server runtime and dependencies,</li>
 <li>your DevOps team could address configuration, etc.</li>
 </ul>
 
 <p>Reusing the expertise in your organization suggests a good model to start from and
-allows independent iteration of each concern in a container layer.</p>
+allows independent iteration of each concern by container layer.</p>
 
-<p>We can then build a robust container that dynamically invokes its dependent layers, allowing each
+<p>The result is a robust container build that dynamically invokes its dependent layers, allowing each
 to iterate as needed, reducing complexity for a single, monolithic build and risk for rapid deployment.</p>
 
 <p>So let&rsquo;s explore that idea in more detail:</p>
@@ -343,38 +343,50 @@ with sshd and more.</p>
 
 <ul>
 <li>FROM server/facility</li>
+<li>FROM server/runtime</li>
 </ul>
 
 <p>Because your server facility or runtime typically do not change unless there is a new release
 which contains a security, performance, or feature fix, this is the next candidate for removal
-from a container. This likely includes the server dependencies (libraries and other run-times).</p>
+from a container and refactoring to its own container layer. This likely includes the server dependencies (libraries and other run-times).</p>
 
 <p>However, the run-time configuration of this server facility could be dynamic
 so I would consider that data and a layer closer to the application. In fact, it would be
-ideal to make dynamic run-time configuration a service and pull it out of the application
-container.</p>
+ideal to make dynamic run-time configuration a service and pull it out of the
+container entirely, allowing you to reuse this container for all stacks.</p>
 
 <p>The idea is that the server facility is a separate layer from our application: it iterates
-on a different time line and probably is an infrastructure engineer concern, so why weigh down
-an application container layer with it?</p>
+on a different time line and it is an infrastructure engineer concern most likely, so why would one weigh down an application container layer with it?</p>
+
+<ul>
+<li>FROM operations/facilities</li>
+</ul>
+
+<p>Facilities such as distributed or centralized logging, metrics, and monitoring are external to the application.
+They may be comprised of libraries, frameworks, clients, and their configuration.  These services which could
+reside many places, such as: on the container host, a service external to the container host,
+ in another container on the same host, or in another container layer.</p>
 
 <ul>
 <li>FROM developer/tools</li>
 </ul>
 
-<p>Diagnostic and troubleshooting tools and facilities such as SSH, logging, metrics, and monitoring
-are also heavy items and external to the application: these are services which likely reside
-on the container host, external to the container host, or in another container.</p>
+<p>Editors, compilers, debuggers, and other diagnostic, utility, and troubleshooting tools and facilities such as SSH,
+local logging, metrics, and monitoring are also heavy items and external to the application and should be refactored
+into their own container layer.</p>
 
 <ul>
-<li>FROM application/service</li>
+<li>FROM application/microserviceX</li>
 </ul>
 
-<p>Finally, we get to the application itself: it has dependencies such as runtime configuration
-and libraries. Those can be externalized from the application because they are a layer which
-iterates on a separate time line.</p>
+<p>Finally, we arrive at the actual code base: this can iterate on its own time line,
+triggering a full container rebuild and deployment. Fortunately, each container
+layer may be cached, minimizing build time!</p>
 
-<p>I would advocate that we compose all of these layers during container build time versus the
+<p>The application has dependencies such as runtime configuration and libraries.
+Potentially, those can be externalized from the application to their own container layer which iterates on a separate time line.</p>
+
+<p>Summary: I would advocate that we compose all of these layers during container build time versus the
 standard approach we use the first time we build a container with Docker: using RUN to shell out
 and perform installation and configuration tasks.</p>
 
