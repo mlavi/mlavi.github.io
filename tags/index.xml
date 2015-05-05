@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mark&#39;s Blog</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 23 Apr 2015 12:59:26 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HTML slide show survey</title>
+      <link>http://localhost:1313/post/html-slideshow-survey/</link>
+      <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
+      
+      <guid>http://localhost:1313/post/html-slideshow-survey/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;HTML Slides&lt;/li&gt;
+&lt;li&gt;SVG Slides
+
+&lt;ul&gt;
+&lt;li&gt;A la&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HTML slide show survey</title>
+      <link>http://localhost:1313/post/html-slideshow-survey/</link>
+      <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
+      
+      <guid>http://localhost:1313/post/html-slideshow-survey/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;HTML Slides&lt;/li&gt;
+&lt;li&gt;SVG Slides
+
+&lt;ul&gt;
+&lt;li&gt;A la&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
