@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sgi on Mark&#39;s Blog</title>
-    <link>http://localhost:1313/tags/sgi/</link>
+    <link>http://mlavi.github.io/tags/sgi/</link>
     <description>Recent content in Sgi on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Fri, 10 Apr 2015 08:44:19 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sgi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mlavi.github.io/tags/sgi/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Building the LAMP stack with Phing</title>
-      <link>http://localhost:1313/post/build-lamp-stack-with-phing/</link>
+      <link>http://mlavi.github.io/post/build-lamp-stack-with-phing/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/build-lamp-stack-with-phing/</guid>
+      <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
       <description>
 
 &lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.&lt;/p&gt;
@@ -72,7 +72,7 @@ for the upstream operating system provider to back-port and distribute&lt;/li&gt
 &lt;li&gt;communicate my work because the code was documented and visualizable, e.g.:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;I wrote one Phing extension called &amp;ldquo;MyUnpack.&amp;rdquo; Given any software package release version, it would:&lt;/p&gt;

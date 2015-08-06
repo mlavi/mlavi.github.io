@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Mark&#39;s Blog</title>
+    <link>http://mlavi.github.io/tags/web/</link>
+    <description>Recent content in Web on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 23 Apr 2015 12:59:26 -0700</lastBuildDate>
+    <atom:link href="http://mlavi.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HTML Slide Show Survey</title>
+      <link>http://mlavi.github.io/post/html-slideshow-survey/</link>
+      <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/html-slideshow-survey/</guid>
+      <description>
+
+&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
+We already have a universal, open system for communication
+called the web, so let&amp;rsquo;s explore web presentation applications.&lt;/p&gt;
+
+&lt;h3 id=&#34;survey-says:fa3a5497626cfaa0f40bed75b9ebaf95&#34;&gt;Survey Says&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;We used dynamic HTML slides at Netscape for our DevCon presentations, it was time to see what
+the state of the art was today! I had encountered a few solutions over the years, but I found
+exhaustive lists on &lt;a href=&#34;http://alternativeto.net/software/microsoft-powerpoint/&#34;&gt;http://alternativeto.net/software/microsoft-powerpoint/&lt;/a&gt;
+and &lt;a href=&#34;http://alternativeto.net/software/prezi/&#34;&gt;http://alternativeto.net/software/prezi/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I was instantly productive with Landslide running in a Python virtualenv with a watchdog script
+for recompiling my updates in Markdown, so I chose that, but I would revisit any of the following.&lt;/p&gt;
+
+&lt;h3 id=&#34;static-tools:fa3a5497626cfaa0f40bed75b9ebaf95&#34;&gt;Static Tools&lt;/h3&gt;
+
+&lt;p&gt;These HTML slide systems are comprised of static HTML+CSS+JavaScript in which you author content directly.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Biggie: &lt;a href=&#34;http://github.com/tmcw/big/&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://www.macwright.org/biggie/&#34;&gt;Demo&lt;/a&gt; author in Markdown, interesting forks!&lt;/li&gt;
+&lt;li&gt;CSSS: &lt;a href=&#34;https://github.com/LeaVerou/CSSS&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://leaverou.github.io/CSSS/&#34;&gt;Demo&lt;/a&gt;
+|| &lt;a href=&#34;http://lea.verou.me/2010/10/my-ft2010-slides-and-csss-my-presentation-framework/&#34;&gt;BlogPost&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Deck.js: &lt;a href=&#34;https://github.com/imakewebthings/deck.js&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://imakewebthings.com/deck.js&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Flowtime.js: &lt;a href=&#34;https://github.com/marcolago/flowtime.js&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://flowtime-js.marcolago.com&#34;&gt;Demo&lt;/a&gt; 2D HUD FTW!&lt;/li&gt;
+&lt;li&gt;Scrolldeck.js: &lt;a href=&#34;http://johnpolacek.github.io/scrolldeck.js&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Shower: &lt;a href=&#34;https://github.com/shower/shower&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://shwr.me&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stack: &lt;a href=&#34;https://github.com/mbostock/stack/&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;https://mbostock.github.io/stack/&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;dynamic-tools:fa3a5497626cfaa0f40bed75b9ebaf95&#34;&gt;Dynamic Tools&lt;/h3&gt;
+
+&lt;p&gt;These HTML slide packages require compiling, but final output is static HTML+CSS+JavaScript:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Slippy: &lt;a href=&#34;https://github.com/Seldaek/slippy/&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://slides.seld.be/?file=2010-05-30+Example.html#1&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Impress.js: &lt;a href=&#34;https://github.com/impress/impress.js&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://impress.github.io/impress.js&#34;&gt;Demo&lt;/a&gt;
+can reproduce Prezi canvas like zooming 2D effects and animations.
+
+&lt;ul&gt;
+&lt;li&gt;Hekyll: &lt;a href=&#34;https://github.com/bmcmurray/hekyll&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://bmcmurray.github.io/hekyll/preso.htm&#34;&gt;Demo&lt;/a&gt;
+author in Markdown, compile to Impress.js&lt;/li&gt;
+&lt;li&gt;jmpress.js: &lt;a href=&#34;https://github.com/jmpressjs/impress.js&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://jmpressjs.github.io/jmpress.js&#34;&gt;Demo&lt;/a&gt; fork of Impress.js using jQuery&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Slides: &lt;a href=&#34;https://github.com/briancavalier/slides&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://briancavalier.com/code/slides&#34;&gt;Demo&lt;/a&gt;
+npm install&lt;/li&gt;
+&lt;li&gt;Reveal.js: &lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://lab.hakim.se/reveal-js/&#34;&gt;Demo&lt;/a&gt;: promotes a paid visual editor site&lt;/li&gt;
+&lt;li&gt;Landslide: &lt;a href=&#34;https://github.com/adamzap/landslide&#34;&gt;Source&lt;/a&gt;
+PyPi: pip install. Compiled slides to PDF export as well!&lt;/li&gt;
+&lt;li&gt;Slide Show (S9): &lt;a href=&#34;http://slideshow-s9.github.io&#34;&gt;Home&lt;/a&gt;: Ruby gem&lt;/li&gt;
+&lt;li&gt;Google I/O-Slides: &lt;a href=&#34;https://code.google.com/p/io-2012-slides/&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bespoke.js: &lt;a href=&#34;https://github.com/markdalgleish/bespoke.js&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://markdalgleish.com/projects/bespoke.js/&#34;&gt;Demo&lt;/a&gt; leverages Yeoman, Grunt, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;other-open-formats:fa3a5497626cfaa0f40bed75b9ebaf95&#34;&gt;Other Open Formats&lt;/h3&gt;
+
+&lt;p&gt;I found some interesting alternate formats for SVG and PDF Slides, a la Prezi:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pres/v/g: &lt;a href=&#34;https://github.com/feklee/presvg&#34;&gt;Source&lt;/a&gt;
+|| &lt;a href=&#34;http://feklee.github.com/presvg/demo.html&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PDFCube: &lt;a href=&#34;http://code.100allora.it/pdfcube/&#34;&gt;Home&lt;/a&gt; || &lt;a href=&#34;https://github.com/baol/pdfcube&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

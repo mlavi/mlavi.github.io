@@ -2,26 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Immutable on Mark&#39;s Blog</title>
-    <link>http://localhost:1313/tags/immutable/</link>
+    <link>http://mlavi.github.io/tags/immutable/</link>
     <description>Recent content in Immutable on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sat, 04 Apr 2015 07:55:39 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/immutable/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mlavi.github.io/tags/immutable/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Container Infrastructure Strategy</title>
-      <link>http://localhost:1313/post/container-infrastructure-strategy/</link>
+      <link>http://mlavi.github.io/post/container-infrastructure-strategy/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/container-infrastructure-strategy/</guid>
+      <guid>http://mlavi.github.io/post/container-infrastructure-strategy/</guid>
       <description>
 
 &lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
 resembles virtual machines, includes the operating system user land, and desires configuration
 management. Does this starting point represent the opposite of container promise and the journey
 to immutable infrastructure?&lt;/p&gt;
+
+&lt;h3 id=&#34;update-2015-07-14:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Update: 2015-07-14&lt;/h3&gt;
+
+&lt;p&gt;The content of this blog post has been given as a talk:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2015-05-16: presented at &lt;a href=&#34;https://rootconf.talkfunnel.com/2015/62-container-infrastructure-strategy&#34;&gt;RootConf 2015&lt;/a&gt; Bangalore, India.
+
+&lt;ul&gt;
+&lt;li&gt;One valuable comment from the audience: the separation of responsibilities which can imply container
+layers resembles &lt;a href=&#34;https://en.wikipedia.org/wiki/OSGi#Architecture&#34;&gt;OSGi architecture&lt;/a&gt;. I think this is a
+great way to look at things.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;2015-04-28: presented to the technical staff of &lt;a href=&#34;http://www.ticketfly.com/about-us&#34;&gt;TicketFly&lt;/a&gt; at the invitation of Jerome, Director of Technology.&lt;/li&gt;
+&lt;li&gt;2015-04-16: led the open space session/discussion at the Container Unconference, preceding &lt;a href=&#34;https://container.camp/sf-2015/&#34;&gt;Container Camp @ San Francisco 2015&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&#34;heavy-containers:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Heavy Containers&lt;/h3&gt;
 
@@ -85,7 +101,7 @@ RUN apt-get update &amp;amp;&amp;amp; apt-get install -y apache2 php5
 
 &lt;h3 id=&#34;container-re-factoring:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Container Re-factoring&lt;/h3&gt;
 
-&lt;p&gt;This is an incomplete thought: I will continue and reorganize it.&lt;/p&gt;
+&lt;p&gt;This is an incomplete thought: I will continue to reorganize it.&lt;/p&gt;
 
 &lt;p&gt;Any solution must properly address the audience. For developers, a development container might have everything
 needed for production but also add troubleshooting and development tools. For production, we would use the
@@ -94,7 +110,7 @@ between dev and prod!&lt;/p&gt;
 
 &lt;p&gt;We can accomplish this by separating containers into layers, where each
 &lt;a href=&#34;http://docs.docker.com/terms/layer/&#34;&gt;container layer&lt;/a&gt; is a container unto itself and
-&lt;a href=&#34;http://docs.docker.com/reference/builder/#from&#34;&gt;they can be added together&lt;/a&gt; to compose a bigger container.&lt;/p&gt;
+&lt;a href=&#34;http://docs.docker.com/reference/builder/#from&#34;&gt;they can be added together&lt;/a&gt; to &lt;strong&gt;compose&lt;/strong&gt; a bigger container.&lt;/p&gt;
 
 &lt;p&gt;Therefore, each container layer could represent an area of expertise which models how your organization
 manages resources and could progress with a different development cadence. e.g.:&lt;/p&gt;
@@ -180,22 +196,27 @@ and perform installation and configuration tasks.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=M9hBsRUeRdg&#34;&gt;This idea was introduced&lt;/a&gt;
 at the &lt;a href=&#34;http://www.meetup.com/coreos/events/215452012/&#34;&gt;CoreOS Meetup&lt;/a&gt;
 by James Russell, DevOps engineer at Sony Computer Entertainment America, DevNet Team.
-It has been further explored by a talk called
-&amp;ldquo;Exploring Strategies for Minimal Containerization&amp;rdquo; by Brian &amp;ldquo;Red beard&amp;rdquo; Harrington,
-Principal Architect at CoreOS, but I only found &lt;a href=&#34;https://www.youtube.com/watch?v=P3sO9URqOhE&#34;&gt;a partial reference&lt;/a&gt;
-at a recent Container Days keynote.&lt;/p&gt;
+It has been further explored in a talk called
+&amp;ldquo;Exploring Strategies for Minimal Containerization&amp;rdquo; by Brian &amp;ldquo;Red Beard&amp;rdquo; Harrington,
+Principal Architect at CoreOS, but I only found
+&lt;a href=&#34;https://www.youtube.com/watch?v=P3sO9URqOhE&#34;&gt;a partial reference&lt;/a&gt;
+at a recent Container Days keynote. Redbeard has polished his talk brilliantly now,
+&lt;a href=&#34;https://www.youtube.com/watch?v=gMpldbcMHuI&#34;&gt;Getting Weird with Containers&lt;/a&gt;.
+The biggest aha moment for me was omitting the kernel, but that is obvious in hindsight.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Most use of RUN represents a duplication of effort that I abhor:&lt;/strong&gt;
-&lt;a href=&#34;http://localhost:1313/post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;because configuration by shell is something we have done before&lt;/a&gt;
- as a first level approximation to solve the problem. Many of us now use configuration management,
+&lt;a href=&#34;../../post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;because configuration by shell is something we have done before&lt;/a&gt;
+ as a first level approximation problem solution. Many of us now use configuration management,
  which is a field comprised of tools known as Ansible, CF Engine, Chef, Puppet, Salt, and more.&lt;/p&gt;
 
 &lt;p&gt;However, configuration management is typically invoked after deployment of a resource during run-time,
 but Dockerfiles are invoked in the build domain. I have been exploring this strategic gap between the
 VM and the container for months without resolution. I went to ChefConf 2015 and asked this question
 but didn&amp;rsquo;t find an answer because I think there is a fundamental divide
-between immutable infrastructure (of ephemeral containers) and configuration management of
-persistent infrastructure (which is longer lived).&lt;/p&gt;
+between immutable infrastructure (of ephemeral containers, called cattle)
+and configuration management of persistent infrastructure (which is longer lived, called pets).
+This is an example of the &lt;a href=&#34;https://news.ycombinator.com/item?id=7311704&#34;&gt;pets versus cattle&lt;/a&gt; discussion,
+which is an upshot of infrastructure as code adoption to reduce snowflake, bespoke, hand maintained infrastructure.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Configuration management of a container host, that makes sense to me.&lt;/li&gt;
@@ -230,17 +251,17 @@ thousands of times a day &amp;ndash; do we need configuration management sync an
 management to be used during build time for artifacts and only as an option during run-time of those artifacts.
 I arrived at this viewpoint recently during a discussion with HashiCorp&amp;rsquo;s CTO, Armon Dadgar, because
 it is exactly the use case established with Vagrant to develop and test your configuration management,
-but use &lt;a href=&#34;https://packer.io/docs/builders/docker.html&#34;&gt;Packer to exclusively build your container artifact&lt;/a&gt;.&lt;/p&gt;
+but then use &lt;a href=&#34;https://packer.io/docs/builders/docker.html&#34;&gt;Packer to build your container artifact&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;It appears this approach is also endorsed by
 &lt;a href=&#34;http://www.ansible.com/blog/ansible-and-containers-why-and-how&#34;&gt;Ansible&lt;/a&gt; and
 &lt;a href=&#34;https://docs.chef.io/containers.html&#34;&gt;Chef&lt;/a&gt;
 while potentially supported by &lt;a href=&#34;https://puppetlabs.com/blog/simplify-managing-docker-puppet&#34;&gt;Puppet&lt;/a&gt;
 and &lt;a href=&#34;http://saltstack.com/saltstack-delivers-more-automation-docker-lxc-application-containers/&#34;&gt;SaltStack&lt;/a&gt;,
-but I think we can say this needs some more thought and evangelism because I think our entire
+but I think we can say this needs some more thought and evangelism because our entire
 community is wrestling with this problem as we transition to understand containers, e.g.:
-R.I. Pienaar (author of Marionette Collective (MCo) which is bundled with Puppet)
-&lt;a href=&#34;https://www.devco.net/archives/2015/02/24/moving-a-service-from-puppet-to-docker-2.php&#34;&gt;Moving a service from Puppet to Docker&lt;/a&gt;.&lt;/p&gt;
+R.I. Pienaar (author of Marionette Collective, MCo, which is bundled with Puppet)
+wrote about &lt;a href=&#34;https://www.devco.net/archives/2015/02/24/moving-a-service-from-puppet-to-docker-2.php&#34;&gt;Moving a service from Puppet to Docker&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;container-deployment-and-orchestration:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Container Deployment and Orchestration&lt;/h3&gt;
 
@@ -249,14 +270,15 @@ R.I. Pienaar (author of Marionette Collective (MCo) which is bundled with Puppet
 or a tool like &lt;a href=&#34;http://terraform.io&#34;&gt;Terraform&lt;/a&gt; to inform your load balancer, DNS, monitoring,
 and service discovery and dynamic configuration management systems that a tested official build
 artifact is ready to deploy? This is an area where configuration management does not suffice
-unless you have some sort of external source driving it.&lt;/p&gt;
+unless you have an external source driving it.&lt;/p&gt;
 
-&lt;p&gt;Containers in production are easy to deploy when used for the single tier of a web application which
-is immutable and hopefully modeled as a micro-service, especially if you reuse the successful model of
-HTTP web browsers and servers with capability negotiation and redirects between coexisting different
-versions of your API services (if necessary when you do not design forward and backward compatible APIs).&lt;/p&gt;
+&lt;p&gt;Containers in production are easy to deploy when used for the single tier web application, which
+is immutable and hopefully modeled as a micro-service. This becomes easier if you use the HTTP
+model of web browsers and servers using capability negotiation and redirects
+between coexisting different versions of your API services (which would be necessary when you do
+not design forward and backward compatible APIs).&lt;/p&gt;
 
-&lt;p&gt;But the orchestration of a complex roll out of an entire service upgrade representing a medley of
+&lt;p&gt;However, the orchestration of a complex roll out of an entire service upgrade representing a medley of
 smaller services and applications along with persistent data sources is a higher level problem I
 want to tackle soon.&lt;/p&gt;
 </description>
