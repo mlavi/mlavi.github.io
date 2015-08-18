@@ -28,7 +28,7 @@ flashback to 1998.&lt;/p&gt;
 &lt;a href=&#34;https://web.archive.org/web/20011218000620/http://www.passpoints.com/info/company_and_vision.shtml&#34;&gt;PassPoints&lt;/a&gt;
 that provided private branded loyalty programs for web sites.&lt;/p&gt;
 
-&lt;p&gt;We were an ASP (Application Service Provider) and we had a web based API for integration.
+&lt;p&gt;We were an &lt;strong&gt;ASP&lt;/strong&gt; (Application Service Provider) and we had a web based API for integration.
 Today, we use different terms to describe the same practices:
 Software as a Service and REST API.&lt;/p&gt;
 
@@ -117,7 +117,8 @@ dynamic control of feature roll out. Let&amp;rsquo;s use this for test driven op
 
 &lt;p&gt;I am sure that we borrowed another term for dynamic configuration at my last start-up.
 We discussed feature toggles, shipping features dark, and later turning them on by
-&amp;ldquo;lighting&amp;rdquo; them. Now there is an application start up (ASP? :~) for that = &lt;a href=&#34;http://launchdarkly.com/&#34;&gt;http://launchdarkly.com/&lt;/a&gt;&lt;/p&gt;
+&amp;ldquo;lighting&amp;rdquo; them. Now there is an application start up &lt;strong&gt;(ASP? :~)&lt;/strong&gt; for that
+= &lt;a href=&#34;http://launchdarkly.com/&#34;&gt;http://launchdarkly.com/&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;more-to-muse-upon:1464b0efd6dda947f7128acb8897f53c&#34;&gt;More to Muse Upon&amp;hellip;&lt;/h3&gt;
 
