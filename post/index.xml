@@ -18,16 +18,18 @@
       <guid>http://mlavi.github.io/post/database_change_management/</guid>
       <description>
 
-&lt;p&gt;Database configuration management tools: version your database and treat it like code!
-We want DevOps, not mysterious, hidden, hand crafted DBA ops whenever possible.&lt;/p&gt;
+&lt;p&gt;Database configuration management tools allow us version the database and treat it like code!
+We want DevOps, not mysterious, hidden, hand crafted DBA ops whenever possible. Another
+flashback to 1998.&lt;/p&gt;
 
 &lt;h3 id=&#34;self-taught-dba:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Self-taught DBA&lt;/h3&gt;
 
 &lt;p&gt;In 1998, I was the co-founder of a start up named
 &lt;a href=&#34;https://web.archive.org/web/20011218000620/http://www.passpoints.com/info/company_and_vision.shtml&#34;&gt;PassPoints&lt;/a&gt;
- that provided private branded
-loyalty programs for web sites. We were an ASP (Application Service Provider) and we had a
-web based API for integration. Today, we use different terms to describe the same practices:
+that provided private branded loyalty programs for web sites.&lt;/p&gt;
+
+&lt;p&gt;We were an ASP (Application Service Provider) and we had a web based API for integration.
+Today, we use different terms to describe the same practices:
 Software as a Service and REST API.&lt;/p&gt;
 
 &lt;p&gt;I was the &lt;em&gt;de-facto&lt;/em&gt; system administrator and after talking to our developers, we chose
@@ -56,7 +58,7 @@ make your database infrastructure agile and testable!&lt;/strong&gt;&lt;/p&gt;
 we paid for Oracle Enterprise Manager on Solaris and I found it helpful, but it was
 not valuable to me.&lt;/p&gt;
 
-&lt;h4 id=&#34;db-configuration-management:1464b0efd6dda947f7128acb8897f53c&#34;&gt;DB Configuration Management&lt;/h4&gt;
+&lt;h4 id=&#34;database-configuration-management:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Database Configuration Management&lt;/h4&gt;
 
 &lt;p&gt;I had accomplished configuration management for a new database instance through shell scripts,
 another artifact from the past! However, translating that accomplishment to using a configuration
@@ -64,7 +66,7 @@ management system like Chef or Puppet is not where the DBA Ops journey should en
 
 &lt;p&gt;I recently rediscovered an open source tool I used back then to visualize and map the database:
 &lt;a href=&#34;http://schemaspy.sourceforge.net/&#34;&gt;http://schemaspy.sourceforge.net/&lt;/a&gt; &amp;ndash; I think this would be a valuable post commit tool to add to
-a build system.&lt;/p&gt;
+a build system for up to date, valuable documentation of your relational data.&lt;/p&gt;
 
 &lt;p&gt;We need to treat the data inside the database as critical infrastructure as well!
 You cannot create an ephemeral test instance of your entire service with an empty persistence
