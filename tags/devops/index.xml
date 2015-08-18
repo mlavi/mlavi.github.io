@@ -380,6 +380,28 @@ diagram) for flexibility and performance.&lt;/p&gt;
 &lt;h3 id=&#34;update:9ae74c72486689c2be9e15358622329b&#34;&gt;UPDATE&lt;/h3&gt;
 
 &lt;p&gt;Please see the &lt;a href=&#34;../devops-automation/&#34;&gt;next posting&lt;/a&gt; for the &amp;ldquo;final&amp;rdquo; product.&lt;/p&gt;
+
+&lt;h3 id=&#34;post-script-2015-08-10:9ae74c72486689c2be9e15358622329b&#34;&gt;Post Script: 2015-08-10&lt;/h3&gt;
+
+&lt;p&gt;There are other &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Unified_Modeling_Language_tools&#34;&gt;UML modelers&lt;/a&gt;,
+I think (&lt;a href=&#34;http://blog.staruml.io/&#34;&gt;http://blog.staruml.io/&lt;/a&gt;) and yEd are noteworthy.&lt;/p&gt;
+
+&lt;p&gt;However, as I explore the work flow and orchestration space, I am rediscovering
+the work done for
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_process_modeling&#34;&gt;Business Process Modeling&lt;/a&gt;
+standards, such as
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_Process_Execution_Language&#34;&gt;BPEL&lt;/a&gt; and
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation&#34;&gt;BPMN&lt;/a&gt;,
+and their various implementations with modelers such as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;* www.open-esb.net
+* [Sirius](http://www.eclipse.org/sirius/getstarted.html) and tools build on it.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;implemented in ServiceMix and ProcessMaker.&lt;/p&gt;
+
+&lt;p&gt;This was triggered by my recent research into OASIS TOSCA and CAMP standards:
+everything new feels old again! :~)s&lt;/p&gt;
 </description>
     </item>
     
