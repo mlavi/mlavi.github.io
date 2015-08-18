@@ -23,7 +23,9 @@ We want DevOps, not mysterious, hidden, hand crafted DBA ops whenever possible.&
 
 &lt;h3 id=&#34;self-taught-dba:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Self-taught DBA&lt;/h3&gt;
 
-&lt;p&gt;In 1998, I was the co-founder of a start up named PassPoints that provided private branded
+&lt;p&gt;In 1998, I was the co-founder of a start up named
+&lt;a href=&#34;https://web.archive.org/web/20011218000620/http://www.passpoints.com/info/company_and_vision.shtml&#34;&gt;PassPoints&lt;/a&gt;
+ that provided private branded
 loyalty programs for web sites. We were an ASP (Application Service Provider) and we had a
 web based API for integration. Today, we use different terms to describe the same practices:
 Software as a Service and REST API.&lt;/p&gt;
@@ -44,6 +46,8 @@ deploy the Oracle 8 relational data base:&lt;/p&gt;
 &lt;li&gt;two hours to complete making a production database instance with my automation.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h4 id=&#34;agile-databases:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Agile Databases&lt;/h4&gt;
+
 &lt;p&gt;I may have gotten it faster, I don&amp;rsquo;t remember now, but restoring data to a new instance
 can be a lengthy procedure fraught with peril. &lt;strong&gt;This is a critical reason to
 make your database infrastructure agile and testable!&lt;/strong&gt;&lt;/p&gt;
@@ -52,7 +56,7 @@ make your database infrastructure agile and testable!&lt;/strong&gt;&lt;/p&gt;
 we paid for Oracle Enterprise Manager on Solaris and I found it helpful, but it was
 not valuable to me.&lt;/p&gt;
 
-&lt;h3 id=&#34;db-configuration-management:1464b0efd6dda947f7128acb8897f53c&#34;&gt;DB Configuration Management&lt;/h3&gt;
+&lt;h4 id=&#34;db-configuration-management:1464b0efd6dda947f7128acb8897f53c&#34;&gt;DB Configuration Management&lt;/h4&gt;
 
 &lt;p&gt;I had accomplished configuration management for a new database instance through shell scripts,
 another artifact from the past! However, translating that accomplishment to using a configuration
