@@ -48,7 +48,7 @@ deploy the Oracle 8 relational data base:&lt;/p&gt;
 &lt;li&gt;two hours to complete making a production database instance with my automation.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;agile-databases:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Agile Databases&lt;/h4&gt;
+&lt;h3 id=&#34;agile-databases:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Agile Databases&lt;/h3&gt;
 
 &lt;p&gt;I may have gotten it faster, I don&amp;rsquo;t remember now, but restoring data to a new instance
 can be a lengthy procedure fraught with peril. &lt;strong&gt;This is a critical reason to
@@ -73,7 +73,7 @@ You cannot create an ephemeral test instance of your entire service with an empt
 tier, you need to populate your database(s) with a proper schema and bootstrap data before
 you even begin testing.&lt;/p&gt;
 
-&lt;h3 id=&#34;database-evolution:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Database Evolution&lt;/h3&gt;
+&lt;h4 id=&#34;database-evolution:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Database Evolution&lt;/h4&gt;
 
 &lt;p&gt;My last start-up was a polyglot development organization, which made QA and Operations
 challenging permutations, but this is the way of the world. It made us increasingly
