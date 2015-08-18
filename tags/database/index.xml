@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database on Mark&#39;s Blog</title>
+    <link>http://mlavi.github.io/tags/database/</link>
+    <description>Recent content in Database on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 17 Aug 2015 21:09:12 -0700</lastBuildDate>
+    <atom:link href="http://mlavi.github.io/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Database Change Management</title>
+      <link>http://mlavi.github.io/post/database_change_management/</link>
+      <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/database_change_management/</guid>
+      <description>
+
+&lt;p&gt;Database configuration management tools: version your database and treat it like code!
+We want DevOps, not mysterious, hidden, hand crafted DBA ops whenever possible.&lt;/p&gt;
+
+&lt;h3 id=&#34;self-taught-dba:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Self-taught DBA&lt;/h3&gt;
+
+&lt;p&gt;In 1998, I was the co-founder of a start up named PassPoints that provided private branded
+loyalty programs for web sites. We were an ASP (Application Service Provider) and we had a
+web based API for integration. Today, we use different terms to describe the same practices:
+Software as a Service and REST API.&lt;/p&gt;
+
+&lt;p&gt;I was the &lt;em&gt;de-facto&lt;/em&gt; system administrator and after talking to our developers, we chose
+to build the application in Java with the Sun-Oracle-Netscape stack. So I became a self-
+taught Oracle DBA (Data Base Administrator). I had some help from our developers who had
+worked at Oracle, but I was pretty much on my own to digest the Oracle TechNet documentation
+on CD-ROM and the web.&lt;/p&gt;
+
+&lt;p&gt;My progressive journey to infrastructure as code took me from two months to two hours to
+deploy the Oracle 8 relational data base:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;two months to complete my first successful development database by hand&lt;/li&gt;
+&lt;li&gt;two weeks to perfect and document the process for a demo instance database&lt;/li&gt;
+&lt;li&gt;two days to create staging and start automating the process with shell scripts&lt;/li&gt;
+&lt;li&gt;two hours to complete making a production database instance with my automation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I may have gotten it faster, I don&amp;rsquo;t remember now, but restoring data to a new instance
+can be a lengthy procedure fraught with peril. &lt;strong&gt;This is a critical reason to
+make your database infrastructure agile and testable!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Along the way, I looked for tools to help visualize the database and perform upgrades:
+we paid for Oracle Enterprise Manager on Solaris and I found it helpful, but it was
+not valuable to me.&lt;/p&gt;
+
+&lt;h3 id=&#34;db-configuration-management:1464b0efd6dda947f7128acb8897f53c&#34;&gt;DB Configuration Management&lt;/h3&gt;
+
+&lt;p&gt;I had accomplished configuration management for a new database instance through shell scripts,
+another artifact from the past! However, translating that accomplishment to using a configuration
+management system like Chef or Puppet is not where the DBA Ops journey should end.&lt;/p&gt;
+
+&lt;p&gt;I recently rediscovered an open source tool I used back then to visualize and map the database:
+&lt;a href=&#34;http://schemaspy.sourceforge.net/&#34;&gt;http://schemaspy.sourceforge.net/&lt;/a&gt; &amp;ndash; I think this would be a valuable post commit tool to add to
+a build system.&lt;/p&gt;
+
+&lt;p&gt;We need to treat the data inside the database as critical infrastructure as well!
+You cannot create an ephemeral test instance of your entire service with an empty persistence
+tier, you need to populate your database(s) with a proper schema and bootstrap data before
+you even begin testing.&lt;/p&gt;
+
+&lt;h3 id=&#34;database-evolution:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Database Evolution&lt;/h3&gt;
+
+&lt;p&gt;My last start-up was a polyglot development organization, which made QA and Operations
+challenging permutations, but this is the way of the world. It made us increasingly
+value automation because we did not want to scale people with manual work. One architectural
+choice was the &lt;a href=&#34;https://en.wikipedia.org/wiki/Play_framework&#34;&gt;Play 1 framework&lt;/a&gt; for Java.
+In their documentation, I never found mention that they had incorporated the
+&lt;a href=&#34;http://flywaydb.org/getstarted/how.html&#34;&gt;Flyway open source project&lt;/a&gt;, but when I came
+across it on the web later, I already knew it intimately!&lt;/p&gt;
+
+&lt;p&gt;By using a simple meta-data table inside the database and ordered SQL statements
+in your code repository, you can keep your databases under version control.
+This is not practical for all of the data in your database, but it is essential for
+maintaining your schema and core data that you need across all instances of your databases.&lt;/p&gt;
+
+&lt;p&gt;The highest of the ordered SQL statements that has been applied is stored in the meta-data table.
+It is called the current evolution of the database. You application can roll out new or changed
+functionality and require the database be evolved to the proper version before it turns on.&lt;/p&gt;
+
+&lt;p&gt;Another notable feature: you can declare how to reverse this change to a database in order
+to devolve a database. There are destructive forward only operations, so this is not a
+perfect safety net, but it is a good design goal. There are some best practices mentioned here:
+&lt;a href=&#34;https://code.google.com/p/dbdeploy/wiki/GuidelinesForUsingDbdeploy&#34;&gt;https://code.google.com/p/dbdeploy/wiki/GuidelinesForUsingDbdeploy&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;database-change-management-tools:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Database Change Management Tools&lt;/h4&gt;
+
+&lt;p&gt;I have found some other tools that roughly model the above methodology, but I only have
+experience with Flyway, which I think is excellent!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://flywaydb.org/getstarted/how.html&#34;&gt;http://flywaydb.org/getstarted/how.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dbv.vizuina.com/&#34;&gt;http://dbv.vizuina.com/&lt;/a&gt; PHP based tool with change review&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.google.com/p/dbdeploy/wiki/GettingStarted&#34;&gt;https://code.google.com/p/dbdeploy/wiki/GettingStarted&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.liquibase.org/quickstart.html&#34;&gt;http://www.liquibase.org/quickstart.html&lt;/a&gt; XML based tool&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;dynamic-configuration:1464b0efd6dda947f7128acb8897f53c&#34;&gt;Dynamic Configuration&lt;/h3&gt;
+
+&lt;p&gt;Knowing the release or version of your database is a component of dynamic configuration,
+allowing you to design forward and backwards compatibility of APIs and features as well as
+dynamic control of feature roll out. Let&amp;rsquo;s use this for test driven operations, too!&lt;/p&gt;
+
+&lt;p&gt;I am sure that we borrowed another term for dynamic configuration at my last start-up.
+We discussed feature toggles, shipping features dark, and later turning them on by
+&amp;ldquo;lighting&amp;rdquo; them. Now there is an application start up (ASP? :~) for that = &lt;a href=&#34;http://launchdarkly.com/&#34;&gt;http://launchdarkly.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;more-to-muse-upon:1464b0efd6dda947f7128acb8897f53c&#34;&gt;More to Muse Upon&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;I will review these links later and update this blog entry:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.codinghorror.com/get-your-database-under-version-control/&#34;&gt;http://blog.codinghorror.com/get-your-database-under-version-control/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/articles/Database-Version-Control&#34;&gt;http://www.infoq.com/articles/Database-Version-Control&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Does not appear to be open source:&lt;/strong&gt; dbmaestro.com || klonio.com&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
