@@ -23,17 +23,24 @@ resembles virtual machines, includes the operating system user land, and desires
 management. Does this starting point represent the opposite of container promise and the journey
 to immutable infrastructure?&lt;/p&gt;
 
-&lt;h3 id=&#34;update-2015-07-14:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Update: 2015-07-14&lt;/h3&gt;
+&lt;h3 id=&#34;update-2015-08-20:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Update: 2015-08-20&lt;/h3&gt;
 
 &lt;p&gt;The content of this blog post has been given as a talk:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;2015-05-16: presented at &lt;a href=&#34;https://rootconf.talkfunnel.com/2015/62-container-infrastructure-strategy&#34;&gt;RootConf 2015&lt;/a&gt; Bangalore, India.
+&lt;li&gt;2015-08-19: presented at &lt;a href=&#34;http://www.meetup.com/AdvancedAWS/events/223822846/&#34;&gt;Advanced AWS Meetup&lt;/a&gt;
+hosted by New Relic, San Francisco, CA
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../slides/container-infrastructure-strategy.html&#34;&gt;DevOps and Heavy Containers&lt;/a&gt; || &lt;a href=&#34;../../slides/container-infrastructure-strategy.md&#34;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;2015-05-16: presented at &lt;a href=&#34;https://rootconf.talkfunnel.com/2015/62-container-infrastructure-strategy&#34;&gt;RootConf 2015&lt;/a&gt;
+Bangalore, India.
 
 &lt;ul&gt;
 &lt;li&gt;One valuable comment from the audience: the separation of responsibilities which can imply container
-layers resembles &lt;a href=&#34;https://en.wikipedia.org/wiki/OSGi#Architecture&#34;&gt;OSGi architecture&lt;/a&gt;. I think this is a
-great way to look at things.&lt;/li&gt;
+layers resembles &lt;a href=&#34;https://en.wikipedia.org/wiki/OSGi#Architecture&#34;&gt;OSGi architecture&lt;/a&gt;.
+I think this is a great way to look at things.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;2015-04-28: presented to the technical staff of &lt;a href=&#34;http://www.ticketfly.com/about-us&#34;&gt;TicketFly&lt;/a&gt; at the invitation of Jerome, Director of Technology.&lt;/li&gt;
 &lt;li&gt;2015-04-16: led the open space session/discussion at the Container Unconference, preceding &lt;a href=&#34;https://container.camp/sf-2015/&#34;&gt;Container Camp @ San Francisco 2015&lt;/a&gt;.&lt;/li&gt;
@@ -47,12 +54,12 @@ great way to look at things.&lt;/li&gt;
  but &lt;a href=&#34;http://docker.com&#34;&gt;Docker&lt;/a&gt; made LXC containers easy to use, just as &lt;a href=&#34;http://vagrantup.com&#34;&gt;Vagrant&lt;/a&gt;
  had done for Virtual Machines.&lt;/p&gt;
 
-&lt;p&gt;For the sake of simplifying this discussion, I will not discuss dynamic runtime configuration: it is the
+&lt;p&gt;For the sake of simplifying this discussion, I will not discuss dynamic run time configuration: it is the
 subject of a future blog post. We will approximate it via static application configuration in the example.&lt;/p&gt;
 
 &lt;p&gt;An ideal container holds an application and nothing more: the tricky part is defining your application
 and its dependencies. If you look at the full technology stack that supports an application, you would consider
-the data, code, runtime configuration, server facility, and further dependencies. e.g.:&lt;/p&gt;
+the data, code, run time configuration, server facility, and further dependencies. e.g.:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;application:
@@ -62,7 +69,7 @@ the data, code, runtime configuration, server facility, and further dependencies
 &lt;li&gt;libraries and frameworks: /var/www/shared/language/framework-version (potentially implicitly stored with the code base)&lt;/li&gt;
 &lt;li&gt;static configuration data: /var/www/shared/configuration/databasepassword.inc.txt (potentially implicitly stored with the code base)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;runtime: (e.g.: PHP)
+&lt;li&gt;run time: (e.g.: PHP)
 
 &lt;ul&gt;
 &lt;li&gt;binaries: /usr/bin/local/php-5.x&lt;/li&gt;
@@ -74,7 +81,7 @@ the data, code, runtime configuration, server facility, and further dependencies
 &lt;ul&gt;
 &lt;li&gt;binaries: /usr/bin/local/apache2**&lt;/li&gt;
 &lt;li&gt;configuration: /etc/apache2/**&lt;/li&gt;
-&lt;li&gt;runtime configuration: /etc/defaults/apache2&lt;/li&gt;
+&lt;li&gt;run time configuration: /etc/defaults/apache2&lt;/li&gt;
 &lt;li&gt;startup customization: /etc/init/apache2-custom&lt;/li&gt;
 &lt;li&gt;plug-ins: mod_php, mod_ssl, etc.&lt;/li&gt;
 &lt;li&gt;plug-in dependencies: openssl, php, etc.&lt;/li&gt;
@@ -118,7 +125,7 @@ manages resources and could progress with a different development cadence. e.g.:
 &lt;ul&gt;
 &lt;li&gt;your system administrators might take care of the base OS,&lt;/li&gt;
 &lt;li&gt;your network team might address firewall and networking concerns,&lt;/li&gt;
-&lt;li&gt;your server developer team might take care of the server runtime and dependencies,&lt;/li&gt;
+&lt;li&gt;your server developer team might take care of the server run time and dependencies,&lt;/li&gt;
 &lt;li&gt;your DevOps team could address configuration, etc.&lt;/li&gt;
 &lt;li&gt;your developers address the application and dependencies.&lt;/li&gt;
 &lt;/ul&gt;
@@ -136,7 +143,7 @@ to iterate as needed, reducing complexity for a single, monolithic build and ris
 &lt;/ul&gt;
 
 &lt;p&gt;Because every guest container resides on a container host OS, refactoring should take into account
-the container runtime and container host facilities. This becomes interesting if you&amp;rsquo;ve picked
+the container run time and container host facilities. This becomes interesting if you&amp;rsquo;ve picked
 a minimal Linux distribution such as &lt;a href=&#34;http://coreos.com/&#34;&gt;CoreOS&lt;/a&gt;,
 &lt;a href=&#34;https://github.com/phusion/passenger-docker#why_use&#34;&gt;Passenger-docker&lt;/a&gt;,
 &lt;a href=&#34;http://rancher.com/rancher-os/&#34;&gt;RancherOS&lt;/a&gt;, or etc. because they are optimized to run containers
@@ -149,7 +156,7 @@ with sshd and more.&lt;/p&gt;
 &lt;li&gt;FROM server/runtime&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Because your server facility or runtime typically do not change unless there is a new release
+&lt;p&gt;Because your server facility or run time typically do not change unless there is a new release
 which contains a security, performance, or feature fix, this is the next candidate for removal
 from a container and refactoring to its own container layer. This likely includes the server dependencies (libraries and other run-times).&lt;/p&gt;
 
@@ -255,7 +262,8 @@ but then use &lt;a href=&#34;https://packer.io/docs/builders/docker.html&#34;&gt
 
 &lt;p&gt;It appears this approach is also endorsed by
 &lt;a href=&#34;http://www.ansible.com/blog/ansible-and-containers-why-and-how&#34;&gt;Ansible&lt;/a&gt; and
-&lt;a href=&#34;https://docs.chef.io/containers.html&#34;&gt;Chef&lt;/a&gt;
+&lt;a href=&#34;https://docs.chef.io/containers.html&#34;&gt;Chef&lt;/a&gt;,
+&lt;a href=&#34;http://www.slideshare.net/mpgoetz/packing-it-in-images-containers-and-config-management-37015676&#34;&gt;Chef Slides&lt;/a&gt;
 while potentially supported by &lt;a href=&#34;https://puppetlabs.com/blog/simplify-managing-docker-puppet&#34;&gt;Puppet&lt;/a&gt;
 and &lt;a href=&#34;http://saltstack.com/saltstack-delivers-more-automation-docker-lxc-application-containers/&#34;&gt;SaltStack&lt;/a&gt;,
 but I think we can say this needs some more thought and evangelism because our entire

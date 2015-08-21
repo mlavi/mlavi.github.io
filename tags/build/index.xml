@@ -42,7 +42,7 @@ from open source licensing.&lt;/p&gt;
 
 &lt;h3 id=&#34;migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;Migration of Build Methods&lt;/h3&gt;
 
-&lt;p&gt;I had an ever growing shell script to perform the package builds and I refactored it for the release numbers and
+&lt;p&gt;I had an ever growing shell script to perform the package builds and I re-factored it for the release numbers and
 the deployment directory to be variable driven. Although my build script was a brittle monstrosity without any
 conditionally or intelligence, it was the right approach towards infrastructure as code!&lt;/p&gt;
 
