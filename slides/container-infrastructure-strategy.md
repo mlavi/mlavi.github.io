@@ -62,6 +62,7 @@ Software engineering practices applied to infrastructure:
 # Infrastructure as Code 
 
 - My dream: behavior and test driven operations
+    - I am searching for others to discuss this topic!
 
 ---
 # [Calm](http://calm.io) = DevOps Automation Platform
@@ -69,7 +70,7 @@ Software engineering practices applied to infrastructure:
 - Control your hybrid clouds and containers:
     - AWS EC2, PXE, KVM, VMware vCenter, OpenStack, Docker, XenServer
 - Overlay and integrate your systems:
-    - Configuration Management: Chef, Puppet, Salt
+    - *Configuration Management:* Chef, Puppet, Salt
     - Jenkins, git, Nagios, etc.: anything with an API or (power)shell access
 - Architectural blueprints define resources, orchestration, and operations:
     - RBAC, approvals, notifications, and financial budget controls.
@@ -81,10 +82,13 @@ Software engineering practices applied to infrastructure:
 ---
 # Container Thought Experiments
 
-* An ideal approach to continuous delivery of immutable infrastructure artifacts
+Containers represent:
+
+* An ideal approach for *continuous delivery* of *immutable infrastructure* artifacts
 * Production challenges remain: deployment, monitoring, metrics, logs, networking, persistence
 * Early days: Docker as a tool versus Docker tool set as a platform
-* [PERL motto](http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it): "There is more than one way to do it."
+* [PERL motto](http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it):
+  "There is more than one way to do it."
 
 ## How do we take advantage of containers properly?
 ---
@@ -97,14 +101,14 @@ Software engineering practices applied to infrastructure:
 ## Criticisms:
 
 - Full operating system (OS)
-- Configuration Management by shell
-- No different from a Virtual Machine
+- Configuration management by shell
+- No difference from a Virtual Machine
 
 ## Proposed Solution:
 
 - Refactor into composable container layers
 - Leverage minimalist OS
-- Reuse configuration management
+- Reuse *configuration management*
 
 ---
 # Full Stack Components 
@@ -159,15 +163,17 @@ Each container built independently:
 * FROM operations/facilities
 * FROM developer/tools
 * FROM application/microserviceX
+
 ---
 # Container Refactor Benefits
 * Each container layer can be maintained by a different team
 * Each built on a different cadence and cacheable
 * Composed together into a deployable artifact
-* Enables continuous delivery of immutable infrastructure
+* Enables *continuous delivery* of *immutable infrastructure* artifacts
     * Shift from configuration management at deploy-time (run time)
       to build time
-* Reuse your Configuration Management for other cases
+* Reuse your *Configuration Management* for other cases
+
 ---
 # Container Deployment
 
@@ -188,6 +194,7 @@ Job Schedulers, Tools, and Services:
 and service discovery and configuration management systems
 * Architectures which are not immutable, e.g:
     * Code or API versions which cannot coexist, preventing rolling blue-green deployments and rollbacks.
+
 ---
 # Thank You, Questions?
 
@@ -195,7 +202,7 @@ and service discovery and configuration management systems
     * Full Blog Entry = [http://mlavi.github.io/post/container-infrastructure-strategy/](http://mlavi.github.io/post/container-infrastructure-strategy/)
 * Resources for this talk:
     * James Russell, DevOps engineer at Sony Computer Entertainment America, DevNet Team [CoreOS MeetUp Presentation](https://www.youtube.com/watch?v=M9hBsRUeRdg)
-    * "Exploring Strategies for Minimal Containerization" by Brian Harrington,
-Principal Architect at CoreOS, [a partial reference found](https://www.youtube.com/watch?v=P3sO9URqOhE)
-at a recent Container Days keynote.
-    * [Kevin Clarke's Code4Lib 2015 presentation on Packer](http://www.kevinclarke.info/slides/c4l15/)
+    * [Getting Weird with Containers](https://www.youtube.com/watch?v=gMpldbcMHuI)
+      a.k.a. "Exploring Strategies for Minimal Containerization" by Brian Harrington,
+      Principal Architect at CoreOS
+    * Kevin Clarke's Code4Lib 2015 presentation on [Packer](http://www.kevinclarke.info/slides/c4l15/)

@@ -3,7 +3,7 @@ tricks:
 - watchmedo_slides.landslideTrick:
   patterns: ["*.md"]
   shell-command:
-  - command 'landslide --quiet container-infrastructure-strategy.md --destination cis.html'
+  command: 'landslide --embed --relative --quiet container-infrastructure-strategy.md --destination cis.html'
 # shell-command --pattern='*strategy.md' --command='landslide --quiet container-infrastructure-strategy.md --destination container-infrastructure-strategy.html' --recursive
 #  args:
 #  - argument1

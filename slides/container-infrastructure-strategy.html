@@ -1508,7 +1508,10 @@ aside {
             
             
             <section><ul>
-<li>My dream: behavior and test driven operations</li>
+<li>My dream: behavior and test driven operations<ul>
+<li>I am searching for others to discuss this topic!</li>
+</ul>
+</li>
 </ul></section>
             
           </div>
@@ -1545,7 +1548,7 @@ aside {
 </ul>
 </li>
 <li>Overlay and integrate your systems:<ul>
-<li>Configuration Management: Chef, Puppet, Salt</li>
+<li><em>Configuration Management:</em> Chef, Puppet, Salt</li>
 <li>Jenkins, git, Nagios, etc.: anything with an API or (power)shell access</li>
 </ul>
 </li>
@@ -1587,11 +1590,13 @@ aside {
             <header><h1>Container Thought Experiments</h1></header>
             
             
-            <section><ul>
-<li>An ideal approach to continuous delivery of immutable infrastructure artifacts</li>
+            <section><p>Containers represent:</p>
+<ul>
+<li>An ideal approach for <em>continuous delivery</em> of <em>immutable infrastructure</em> artifacts</li>
 <li>Production challenges remain: deployment, monitoring, metrics, logs, networking, persistence</li>
 <li>Early days: Docker as a tool versus Docker tool set as a platform</li>
-<li><a href="http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">PERL motto</a>: "There is more than one way to do it."</li>
+<li><a href="http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">PERL motto</a>:
+  "There is more than one way to do it."</li>
 </ul>
 <h2>How do we take advantage of containers properly?</h2></section>
             
@@ -1630,14 +1635,14 @@ aside {
 <h2>Criticisms:</h2>
 <ul>
 <li>Full operating system (OS)</li>
-<li>Configuration Management by shell</li>
-<li>No different from a Virtual Machine</li>
+<li>Configuration management by shell</li>
+<li>No difference from a Virtual Machine</li>
 </ul>
 <h2>Proposed Solution:</h2>
 <ul>
 <li>Refactor into composable container layers</li>
 <li>Leverage minimalist OS</li>
-<li>Reuse configuration management</li>
+<li>Reuse <em>configuration management</em></li>
 </ul></section>
             
           </div>
@@ -1820,12 +1825,12 @@ aside {
 <li>Each container layer can be maintained by a different team</li>
 <li>Each built on a different cadence and cacheable</li>
 <li>Composed together into a deployable artifact</li>
-<li>Enables continuous delivery of immutable infrastructure<ul>
+<li>Enables <em>continuous delivery</em> of <em>immutable infrastructure</em> artifacts<ul>
 <li>Shift from configuration management at deploy-time (run time)
   to build time</li>
 </ul>
 </li>
-<li>Reuse your Configuration Management for other cases</li>
+<li>Reuse your <em>Configuration Management</em> for other cases</li>
 </ul></section>
             
           </div>
@@ -1939,10 +1944,10 @@ and service discovery and configuration management systems</li>
 </li>
 <li>Resources for this talk:<ul>
 <li>James Russell, DevOps engineer at Sony Computer Entertainment America, DevNet Team <a href="https://www.youtube.com/watch?v=M9hBsRUeRdg">CoreOS MeetUp Presentation</a></li>
-<li>"Exploring Strategies for Minimal Containerization" by Brian Harrington,
-Principal Architect at CoreOS, <a href="https://www.youtube.com/watch?v=P3sO9URqOhE">a partial reference found</a>
-at a recent Container Days keynote.</li>
-<li><a href="http://www.kevinclarke.info/slides/c4l15/">Kevin Clarke's Code4Lib 2015 presentation on Packer</a></li>
+<li><a href="https://www.youtube.com/watch?v=gMpldbcMHuI">Getting Weird with Containers</a>
+  a.k.a. "Exploring Strategies for Minimal Containerization" by Brian Harrington,
+  Principal Architect at CoreOS</li>
+<li>Kevin Clarke's Code4Lib 2015 presentation on <a href="http://www.kevinclarke.info/slides/c4l15/">Packer</a></li>
 </ul>
 </li>
 </ul></section>

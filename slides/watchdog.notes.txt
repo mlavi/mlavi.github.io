@@ -5,8 +5,4 @@ cd ~/Documents/github.com/mlavi/hugo/static/slides
 pip install watchdog landslide
 
 watchmedo shell-command --pattern='Vagrantfile;*rb' --command='vagrant provision; echo' --recursive
-watchmedo shell-command --pattern='*.md' --command='landslide --quiet X.md --destination X.html' --recursive &
-
-# Final output:
-landslide --relative --embed X.md --destination X.html
-
+PAGE=x watchmedo shell-command --pattern='*.md' --command='landslide --relative --embed --quiet $PAGE.md --destination $PAGE.html' --recursive &
