@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devops on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/devops/</link>
+    <link>http://localhost:1313/tags/devops/</link>
     <description>Recent content in Devops on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Wed, 18 Mar 2015 21:02:15 -0700</lastBuildDate>
-    <atom:link href="http://mlavi.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>DevOps BTD Pattern for Continuous Deployment</title>
-      <link>http://mlavi.github.io/post/devops-btd-pattern/</link>
+      <link>http://localhost:1313/post/devops-btd-pattern/</link>
       <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
+      <guid>http://localhost:1313/post/devops-btd-pattern/</guid>
       <description>
 
 &lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
@@ -130,10 +130,10 @@ This expanded skill set must be part of the engineering culture for service desi
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>http://mlavi.github.io/post/devops-automation/</link>
+      <link>http://localhost:1313/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops-automation/</guid>
+      <guid>http://localhost:1313/post/devops-automation/</guid>
       <description>
 
 &lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
@@ -331,10 +331,10 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>http://mlavi.github.io/post/diagram/</link>
+      <link>http://localhost:1313/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/diagram/</guid>
+      <guid>http://localhost:1313/post/diagram/</guid>
       <description>
 
 &lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
@@ -407,10 +407,10 @@ everything new feels old again! :~)s&lt;/p&gt;
     
     <item>
       <title>About Mark</title>
-      <link>http://mlavi.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://mlavi.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;A DevOps professional with pioneering work on the world&amp;rsquo;s biggest Internet real-time event
  and web sites from an engineering, operations, content, and marketing perspective.
  My focus is on people and software development along with system design thinking for the

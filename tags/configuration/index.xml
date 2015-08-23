@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Configuration on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/configuration/</link>
+    <link>http://localhost:1313/tags/configuration/</link>
     <description>Recent content in Configuration on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sat, 04 Apr 2015 07:55:39 -0700</lastBuildDate>
-    <atom:link href="http://mlavi.github.io/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Container Infrastructure Strategy</title>
-      <link>http://mlavi.github.io/post/container-infrastructure-strategy/</link>
+      <link>http://localhost:1313/post/container-infrastructure-strategy/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/container-infrastructure-strategy/</guid>
+      <guid>http://localhost:1313/post/container-infrastructure-strategy/</guid>
       <description>
 
 &lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
@@ -49,17 +49,19 @@ I think this is a great way to look at things!&lt;/li&gt;
 &lt;h3 id=&#34;heavy-containers:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Heavy Containers&lt;/h3&gt;
 
 &lt;p&gt;I have been researching containers for years, I encountered &lt;a href=&#34;https://pantheon.io/blog/why-we-built-pantheon-containers-instead-virtual-machines&#34;&gt;an early mention for Drupal CMS hosting&lt;/a&gt;
- probably a year before I heard about Docker. I had worked with
- &lt;a href=&#34;https://en.wikipedia.org/wiki/Chroot&#34;&gt;chroot jails&lt;/a&gt; earlier in my career,
- but &lt;a href=&#34;http://docker.com&#34;&gt;Docker&lt;/a&gt; made LXC containers easy to use, just as &lt;a href=&#34;http://vagrantup.com&#34;&gt;Vagrant&lt;/a&gt;
- had done for Virtual Machines.&lt;/p&gt;
+probably a year before I heard about Docker. I had worked with
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Chroot&#34;&gt;chroot jails&lt;/a&gt; earlier in my career,
+but &lt;a href=&#34;http://docker.com&#34;&gt;Docker&lt;/a&gt; made Linux containers (LXC) easy to use,
+just as &lt;a href=&#34;http://vagrantup.com&#34;&gt;Vagrant&lt;/a&gt; has done for Virtual Machines.&lt;/p&gt;
 
-&lt;p&gt;For the sake of simplifying this discussion, I will not discuss dynamic run time configuration: it is the
-subject of a future blog post. We will approximate it via static application configuration in the example.&lt;/p&gt;
+&lt;p&gt;For the sake of simplifying this discussion, I will not discuss dynamic run time configuration
+and service discovery: it is the subject of a future blog post. We will approximate it via static
+application configuration in the example.&lt;/p&gt;
 
 &lt;p&gt;An ideal container holds an application and nothing more: the tricky part is defining your application
-and its dependencies. If you look at the full technology stack that supports an application, you would consider
-the data, code, run time configuration, server facility, and further dependencies. e.g.:&lt;/p&gt;
+and its dependencies. If you look at the full technology stack that supports an application,
+you would consider the data, code, run time configuration, server facility, and further dependencies.
+e.g.:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;application:
@@ -293,8 +295,8 @@ but then use &lt;a href=&#34;https://packer.io/docs/builders/docker.html&#34;&gt
 
 &lt;p&gt;It appears this approach is also endorsed by
 &lt;a href=&#34;http://www.ansible.com/blog/ansible-and-containers-why-and-how&#34;&gt;Ansible&lt;/a&gt; and
-&lt;a href=&#34;https://docs.chef.io/containers.html&#34;&gt;Chef&lt;/a&gt;,
-&lt;a href=&#34;http://www.slideshare.net/mpgoetz/packing-it-in-images-containers-and-config-management-37015676&#34;&gt;Chef Slides&lt;/a&gt;
+&lt;a href=&#34;https://docs.chef.io/containers.html&#34;&gt;Chef&lt;/a&gt;
+(&lt;a href=&#34;http://www.slideshare.net/mpgoetz/packing-it-in-images-containers-and-config-management-37015676&#34;&gt;slides&lt;/a&gt;),
 while potentially supported by &lt;a href=&#34;https://puppetlabs.com/blog/simplify-managing-docker-puppet&#34;&gt;Puppet&lt;/a&gt;
 and &lt;a href=&#34;http://saltstack.com/saltstack-delivers-more-automation-docker-lxc-application-containers/&#34;&gt;SaltStack&lt;/a&gt;,
 but I think we can say this needs some more thought and evangelism because our entire

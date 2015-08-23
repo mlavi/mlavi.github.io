@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Diagram on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/diagram/</link>
+    <link>http://localhost:1313/tags/diagram/</link>
     <description>Recent content in Diagram on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Mon, 17 Aug 2015 21:09:12 -0700</lastBuildDate>
-    <atom:link href="http://mlavi.github.io/tags/diagram/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/diagram/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Database Change Management</title>
-      <link>http://mlavi.github.io/post/database_change_management/</link>
+      <link>http://localhost:1313/post/database_change_management/</link>
       <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/database_change_management/</guid>
+      <guid>http://localhost:1313/post/database_change_management/</guid>
       <description>
 
 &lt;p&gt;Database configuration management tools allow us version the database and treat it like code!
@@ -134,10 +134,10 @@ We discussed feature toggles, shipping features dark, and later turning them on 
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>http://mlavi.github.io/post/devops-automation/</link>
+      <link>http://localhost:1313/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops-automation/</guid>
+      <guid>http://localhost:1313/post/devops-automation/</guid>
       <description>
 
 &lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
@@ -335,10 +335,10 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>http://mlavi.github.io/post/diagram/</link>
+      <link>http://localhost:1313/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/diagram/</guid>
+      <guid>http://localhost:1313/post/diagram/</guid>
       <description>
 
 &lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.

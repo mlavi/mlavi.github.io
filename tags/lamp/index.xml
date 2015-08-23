@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lamp on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/lamp/</link>
+    <link>http://localhost:1313/tags/lamp/</link>
     <description>Recent content in Lamp on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Fri, 10 Apr 2015 08:44:19 -0700</lastBuildDate>
-    <atom:link href="http://mlavi.github.io/tags/lamp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/lamp/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Building the LAMP stack with Phing</title>
-      <link>http://mlavi.github.io/post/build-lamp-stack-with-phing/</link>
+      <link>http://localhost:1313/post/build-lamp-stack-with-phing/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
+      <guid>http://localhost:1313/post/build-lamp-stack-with-phing/</guid>
       <description>
 
 &lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.&lt;/p&gt;
