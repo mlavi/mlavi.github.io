@@ -2,20 +2,163 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 17 Aug 2015 21:09:12 -0700</lastBuildDate>
-    <atom:link href="http://mlavi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Aug 2015 08:59:59 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Artifact Repositories</title>
+      <link>http://localhost:1313/post/artifact_repositories/</link>
+      <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
+      
+      <guid>http://localhost:1313/post/artifact_repositories/</guid>
+      <description>
+
+&lt;h3 id=&#34;ship-the-bits:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Ship the Bits&lt;/h3&gt;
+
+&lt;p&gt;Once upon a time, software release management was as simple as performing a desktop build,
+uploading the results to a FTP server, updating the web site, and sending an email.&lt;/p&gt;
+
+&lt;p&gt;Software repositories can be that simple, but the state of the art has advanced to support
+secure deployments for continuous delivery to multiple clusters in data centers around the
+world multiple times per hour!&lt;/p&gt;
+
+&lt;h3 id=&#34;release-management:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Release Management&lt;/h3&gt;
+
+&lt;p&gt;There are many considerations for release management today, assuming that our build candidate
+has passed all of the required tests to become an official release. Now that we pursue
+infrastructure as code, we also build and deploy our software as infrastructure artifacts.&lt;/p&gt;
+
+&lt;p&gt;The simple monolithic build of static code and library dependencies has transitioned into
+a collection of multiple versioned artifacts which must be integrated and configured as a
+system even before considering the deployment permutation matrix of multiple hardware,
+OS platform, and client versions. Considerations include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Build Post Processing:
+
+&lt;ul&gt;
+&lt;li&gt;compression into a one file archive to save bandwidth&lt;/li&gt;
+&lt;li&gt;different editions (subsets of the build if they are not handled as separates)&lt;/li&gt;
+&lt;li&gt;checksums and code signing&lt;/li&gt;
+&lt;li&gt;packaging:&lt;/li&gt;
+&lt;li&gt;metadata for each OS or runtime&lt;/li&gt;
+&lt;li&gt;versus bundling an installer as a self extracting executable&lt;/li&gt;
+&lt;li&gt;documentation&lt;/li&gt;
+&lt;li&gt;licensing and potentially providing source code&lt;/li&gt;
+&lt;li&gt;third party licensing&lt;/li&gt;
+&lt;li&gt;purging old artifacts, build, and test logs&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Distribution:
+
+&lt;ul&gt;
+&lt;li&gt;channels for automatic updates&lt;/li&gt;
+&lt;li&gt;artifact repositories versus file servers&lt;/li&gt;
+&lt;li&gt;caches, mirrors, and content/artifact delivery networks&lt;/li&gt;
+&lt;li&gt;privileged versus public official releases&lt;/li&gt;
+&lt;li&gt;private, internal release candidates for testing&lt;/li&gt;
+&lt;li&gt;metrics and logs: download counts and bandwidth constraints&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;naming-the-artifact-and-useful-metadata:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Naming the Artifact and Useful Metadata&lt;/h3&gt;
+
+&lt;p&gt;Surely naming the artifact should be straightforward if we can answer some basic questions,
+such as: do we have file naming conventions and are build, version, and release numbers the same thing?&lt;/p&gt;
+
+&lt;p&gt;You would be surprised how often the answer is&amp;hellip; it depends!
+However, there are guidelines you can adopt:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Software_versioning&#34;&gt;Software Versioning&lt;/a&gt; at Wikipedia&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://semver.org/&#34;&gt;Semantic Versioning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While many software package formats specify the metadata requirements, a few have standardized
+on &lt;a href=&#34;https://github.com/edumbill/doap/wiki&#34;&gt;DOAP: Description of a Project&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;software-artifact-repositories:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Software Artifact Repositories&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://binary-repositories-comparison.github.io/&#34;&gt;Feature Matrix of Archiva, Artifactory, Maven&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;While an engineering organization produces build artifacts, they often bundle other third
+party open or closed source libraries. In order to speed manual developer builds and automated
+build systems, these external resources can be cached to increase build speed, reliability, and
+conserve upstream network bandwidth.&lt;/p&gt;
+
+&lt;p&gt;While each language may have it&amp;rsquo;s own packaging format for build artifacts, e.g.:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java: .jar, .war, and .ear&lt;/li&gt;
+&lt;li&gt;JavaScript: .npm&lt;/li&gt;
+&lt;li&gt;PERL: CPAN modules are compressed tarballs&lt;/li&gt;
+&lt;li&gt;PHP: .phar&lt;/li&gt;
+&lt;li&gt;Python: .egg, .whl&lt;/li&gt;
+&lt;li&gt;Ruby: .gem&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We also have operating system package management:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;RedHat, Fedora, CentOS and related derivatives: .rpm format with yum repositories&lt;/li&gt;
+&lt;li&gt;Debian, Ubuntu, and related derivates: .deb format with apt repositories and Launchpad PPA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And now we have public and private container repositories as hosted services or private deployments:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hub.docker.com/&#34;&gt;Docker Hub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://quay.io/&#34;&gt;Quay.io&lt;/a&gt; and &lt;a href=&#34;https://coreos.com/products/enterprise-registry/&#34;&gt;CoreOS Enterprise Registry&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Along with Vagrant box hosting:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://atlas.hashicorp.com/search/&#34;&gt;Atlas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.vagrantbox.es/&#34;&gt;VagrantBox.es&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;JFrog&amp;rsquo;s Bintray and Artifactory (see below)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Caveat Emptor: downloading and installing any artifact from the Internet is potential for malware,
+virus, and other abuse unless you know, trust, and verify the source.&lt;/p&gt;
+
+&lt;p&gt;Personally, I&amp;rsquo;ve had very good experience with &lt;a href=&#34;http://www.jfrog.com/open-source/&#34;&gt;JFrog&amp;rsquo;s Artifactory&lt;/a&gt;,
+which is a meta repository of many different formats, but you will probably outgrow
+the open source version when you need to handle authentication and some of the formats mentioned above,
+so the SaaS subscription may be a better option.&lt;/p&gt;
+
+&lt;h3 id=&#34;software-distribution-networks:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Software Distribution Networks&lt;/h3&gt;
+
+&lt;p&gt;These are specific to build artifacts, however they can be considered a special case
+of content delivery networks such as Akami, &lt;a href=&#34;https://cachefly.com&#34;&gt;CacheFly&lt;/a&gt;, and Fastly
+as well as related to content accelerators such as CloudFlare
+ and Amazon &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;CloudFront&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JFrog&amp;rsquo;s &lt;a href=&#34;https://bintray.com&#34;&gt;Bintray&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sf.net&#34;&gt;SourceForge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;JavaScript:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cdnjs.com/about&#34;&gt;CDNJS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jsdelivr.com/&#34;&gt;jsDelivr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One potentially baised resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Database Change Management</title>
-      <link>http://mlavi.github.io/post/database_change_management/</link>
+      <link>http://localhost:1313/post/database_change_management/</link>
       <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/database_change_management/</guid>
+      <guid>http://localhost:1313/post/database_change_management/</guid>
       <description>
 
 &lt;p&gt;Database configuration management tools allow us version the database and treat it like code!
@@ -134,10 +277,10 @@ We discussed feature toggles, shipping features dark, and later turning them on 
     
     <item>
       <title>HTML Slide Show Survey</title>
-      <link>http://mlavi.github.io/post/html-slideshow-survey/</link>
+      <link>http://localhost:1313/post/html-slideshow-survey/</link>
       <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/html-slideshow-survey/</guid>
+      <guid>http://localhost:1313/post/html-slideshow-survey/</guid>
       <description>
 
 &lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
@@ -220,10 +363,10 @@ PyPi: pip install. Compiled slides to PDF export as well!&lt;/li&gt;
     
     <item>
       <title>Building the LAMP stack with Phing</title>
-      <link>http://mlavi.github.io/post/build-lamp-stack-with-phing/</link>
+      <link>http://localhost:1313/post/build-lamp-stack-with-phing/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
+      <guid>http://localhost:1313/post/build-lamp-stack-with-phing/</guid>
       <description>
 
 &lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.&lt;/p&gt;
@@ -345,10 +488,10 @@ because it represented a straightforward migration without a major change in con
     
     <item>
       <title>Container Infrastructure Strategy</title>
-      <link>http://mlavi.github.io/post/container-infrastructure-strategy/</link>
+      <link>http://localhost:1313/post/container-infrastructure-strategy/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/container-infrastructure-strategy/</guid>
+      <guid>http://localhost:1313/post/container-infrastructure-strategy/</guid>
       <description>
 
 &lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
@@ -666,10 +809,10 @@ to work toward test driven DevOps and behavior driven DevOps to accomplish this.
     
     <item>
       <title>DevOps BTD Pattern for Continuous Deployment</title>
-      <link>http://mlavi.github.io/post/devops-btd-pattern/</link>
+      <link>http://localhost:1313/post/devops-btd-pattern/</link>
       <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
+      <guid>http://localhost:1313/post/devops-btd-pattern/</guid>
       <description>
 
 &lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
@@ -784,10 +927,10 @@ This expanded skill set must be part of the engineering culture for service desi
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>http://mlavi.github.io/post/devops-automation/</link>
+      <link>http://localhost:1313/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops-automation/</guid>
+      <guid>http://localhost:1313/post/devops-automation/</guid>
       <description>
 
 &lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
@@ -985,10 +1128,10 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>http://mlavi.github.io/post/diagram/</link>
+      <link>http://localhost:1313/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/diagram/</guid>
+      <guid>http://localhost:1313/post/diagram/</guid>
       <description>
 
 &lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
@@ -1061,10 +1204,10 @@ everything new feels old again! :~)s&lt;/p&gt;
     
     <item>
       <title>About Mark</title>
-      <link>http://mlavi.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://mlavi.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;A DevOps professional with pioneering work on the world&amp;rsquo;s biggest Internet real-time event
  and web sites from an engineering, operations, content, and marketing perspective.
  My focus is on people and software development along with system design thinking for the
@@ -1092,10 +1235,10 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
     
     <item>
       <title>Time for a new development project!</title>
-      <link>http://mlavi.github.io/post/first/</link>
+      <link>http://localhost:1313/post/first/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://mlavi.github.io/post/first/</guid>
+      <guid>http://localhost:1313/post/first/</guid>
       <description>
 
 &lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things

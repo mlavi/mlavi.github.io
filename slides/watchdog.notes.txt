@@ -1,8 +1,10 @@
 https://github.com/gorakhargosh/watchdog
 
 cd ~/Documents/github.com/mlavi/hugo/static/slides
+sudo pip install --upgrade virtualenv
+virtualenv landslide
 . landslide/bin/activate.fish
-pip install watchdog landslide
+sudo pip install --upgrade watchdog landslide
 
 watchmedo shell-command --pattern='Vagrantfile;*rb' --command='vagrant provision; echo' --recursive
 PAGE=x watchmedo shell-command --pattern='*.md' --command='landslide --relative --embed --quiet $PAGE.md --destination $PAGE.html' --recursive &
