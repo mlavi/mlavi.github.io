@@ -18,6 +18,9 @@
       <guid>http://mlavi.github.io/post/artifact_repositories/</guid>
       <description>
 
+&lt;p&gt;The past: desktop builds uploaded to FTP server, the present: global artifact delivery networks.
+Release management and artifact repositories are they way we deliver software and infrastructure today.&lt;/p&gt;
+
 &lt;h3 id=&#34;ship-the-bits:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Ship the Bits&lt;/h3&gt;
 
 &lt;p&gt;Once upon a time, software release management was as simple as performing a desktop build,
