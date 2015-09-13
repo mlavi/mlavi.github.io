@@ -26,8 +26,8 @@
   
   
 
-  <link rel="stylesheet" href="http://localhost:1313//css/redlounge.css">
-  <link rel="stylesheet" href="http://localhost:1313//css/mlavi.css">
+  <link rel="stylesheet" href="http://mlavi.github.io//css/redlounge.css">
+  <link rel="stylesheet" href="http://mlavi.github.io//css/mlavi.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -70,7 +70,7 @@
     <span style="background: black;">Mark&#39;s Blog</span>
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313/">Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://mlavi.github.io/">Home</a></li>
         <li class="nav-item"><span class="nav-item-separator">//</span><a class="subscribe-button icon-feed" href="">Subscribe</a></li>
 
         
@@ -90,6 +90,14 @@
  class="decorative-marker">//</span><a
  name="diagram">3</a></li>
 
+<li><a href="../../tags/automation">automation</a><span
+ class="decorative-marker">//</span><a
+ name="automation">2</a></li>
+
+<li><a href="../../tags/infrastructure">infrastructure</a><span
+ class="decorative-marker">//</span><a
+ name="infrastructure">2</a></li>
+
 <li><a href="../../tags/webmaster">webmaster</a><span
  class="decorative-marker">//</span><a
  name="webmaster">2</a></li>
@@ -102,17 +110,13 @@
  class="decorative-marker">//</span><a
  name="web">2</a></li>
 
-<li><a href="../../tags/infrastructure">infrastructure</a><span
+<li><a href="../../tags/deploy">deploy</a><span
  class="decorative-marker">//</span><a
- name="infrastructure">2</a></li>
+ name="deploy">1</a></li>
 
-<li><a href="../../tags/automation">automation</a><span
+<li><a href="../../tags/container">container</a><span
  class="decorative-marker">//</span><a
- name="automation">2</a></li>
-
-<li><a href="../../tags/phing">phing</a><span
- class="decorative-marker">//</span><a
- name="phing">1</a></li>
+ name="container">1</a></li>
 
 <li><a href="../../tags/immutable">immutable</a><span
  class="decorative-marker">//</span><a
@@ -122,9 +126,9 @@
  class="decorative-marker">//</span><a
  name="test">1</a></li>
 
-<li><a href="../../tags/database">database</a><span
+<li><a href="../../tags/phing">phing</a><span
  class="decorative-marker">//</span><a
- name="database">1</a></li>
+ name="phing">1</a></li>
 
 <li><a href="../../tags/code">code</a><span
  class="decorative-marker">//</span><a
@@ -142,17 +146,13 @@
  class="decorative-marker">//</span><a
  name="sgi">1</a></li>
 
+<li><a href="../../tags/database">database</a><span
+ class="decorative-marker">//</span><a
+ name="database">1</a></li>
+
 <li><a href="../../tags/cms">cms</a><span
  class="decorative-marker">//</span><a
  name="cms">1</a></li>
-
-<li><a href="../../tags/artifact">artifact</a><span
- class="decorative-marker">//</span><a
- name="artifact">1</a></li>
-
-<li><a href="../../tags/distribution">distribution</a><span
- class="decorative-marker">//</span><a
- name="distribution">1</a></li>
 
 <li><a href="../../tags/lamp">lamp</a><span
  class="decorative-marker">//</span><a
@@ -170,13 +170,13 @@
  class="decorative-marker">//</span><a
  name="career">1</a></li>
 
-<li><a href="../../tags/container">container</a><span
+<li><a href="../../tags/artifact">artifact</a><span
  class="decorative-marker">//</span><a
- name="container">1</a></li>
+ name="artifact">1</a></li>
 
-<li><a href="../../tags/deploy">deploy</a><span
+<li><a href="../../tags/distribution">distribution</a><span
  class="decorative-marker">//</span><a
- name="deploy">1</a></li>
+ name="distribution">1</a></li>
 
       </ul>
     </nav>
@@ -265,7 +265,7 @@ OS platform, and client versions. Considerations include:</p>
 <ul>
 <li>compression into a one file archive to save bandwidth</li>
 <li>different editions (subsets of the build if they are not handled as separates)</li>
-<li>checksums and code signing</li>
+<li>check sums and code signing</li>
 <li>packaging:</li>
 <li>metadata for each OS or runtime</li>
 <li>versus bundling an installer as a self extracting executable</li>
@@ -326,7 +326,7 @@ conserve upstream network bandwidth.</p>
 
 <ul>
 <li>RedHat, Fedora, CentOS and related derivatives: .rpm format with yum repositories</li>
-<li>Debian, Ubuntu, and related derivates: .deb format with apt repositories and Launchpad PPA</li>
+<li>Debian, Ubuntu, and related derivatives: .deb format with apt repositories and Launchpad PPA</li>
 </ul>
 
 <p>And now we have public and private container repositories as hosted services or private deployments:</p>
@@ -370,7 +370,7 @@ as well as related to content accelerators such as CloudFlare
 </ul></li>
 </ul>
 
-<p>One potentially baised resource gives a good overview of the market [<a href="http://www.cdnplanet.com/">http://www.cdnplanet.com/</a>]</p>
+<p>One potentially biased resource gives a good overview of the market [<a href="http://www.cdnplanet.com/">http://www.cdnplanet.com/</a>]</p>
 
 	
 	
@@ -379,11 +379,11 @@ as well as related to content accelerators such as CloudFlare
 		<div class="tags-list">
 		<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
 		
-                <a class="post-tag post-tag-artifact" href="http://localhost:1313//tags/artifact">artifact</a>,
+                <a class="post-tag post-tag-artifact" href="http://mlavi.github.io//tags/artifact">artifact</a>,
                 
-                <a class="post-tag post-tag-build" href="http://localhost:1313//tags/build">build</a>,
+                <a class="post-tag post-tag-build" href="http://mlavi.github.io//tags/build">build</a>,
                 
-                <a class="post-tag post-tag-distribution" href="http://localhost:1313//tags/distribution">distribution</a>,
+                <a class="post-tag post-tag-distribution" href="http://mlavi.github.io//tags/distribution">distribution</a>,
                 
 		</div>
 	
@@ -423,8 +423,5 @@ as well as related to content accelerators such as CloudFlare
 	
 
   
-<script data-no-instant>document.write('<script src="http://'
-        + (location.host || 'localhost').split(':')[0]
-		+ ':1313/livereload.js?mindelay=10"></'
-        + 'script>')</script></body>
+</body>
 </html>

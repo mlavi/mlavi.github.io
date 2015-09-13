@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Distribution on Mark&#39;s Blog</title>
-    <link>http://localhost:1313/tags/distribution/</link>
+    <link>http://mlavi.github.io/tags/distribution/</link>
     <description>Recent content in Distribution on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Wed, 26 Aug 2015 08:59:59 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/distribution/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mlavi.github.io/tags/distribution/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Artifact Repositories</title>
-      <link>http://localhost:1313/post/artifact_repositories/</link>
+      <link>http://mlavi.github.io/post/artifact_repositories/</link>
       <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/artifact_repositories/</guid>
+      <guid>http://mlavi.github.io/post/artifact_repositories/</guid>
       <description>
 
 &lt;h3 id=&#34;ship-the-bits:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Ship the Bits&lt;/h3&gt;
@@ -44,7 +44,7 @@ OS platform, and client versions. Considerations include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;compression into a one file archive to save bandwidth&lt;/li&gt;
 &lt;li&gt;different editions (subsets of the build if they are not handled as separates)&lt;/li&gt;
-&lt;li&gt;checksums and code signing&lt;/li&gt;
+&lt;li&gt;check sums and code signing&lt;/li&gt;
 &lt;li&gt;packaging:&lt;/li&gt;
 &lt;li&gt;metadata for each OS or runtime&lt;/li&gt;
 &lt;li&gt;versus bundling an installer as a self extracting executable&lt;/li&gt;
@@ -105,7 +105,7 @@ conserve upstream network bandwidth.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;RedHat, Fedora, CentOS and related derivatives: .rpm format with yum repositories&lt;/li&gt;
-&lt;li&gt;Debian, Ubuntu, and related derivates: .deb format with apt repositories and Launchpad PPA&lt;/li&gt;
+&lt;li&gt;Debian, Ubuntu, and related derivatives: .deb format with apt repositories and Launchpad PPA&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;And now we have public and private container repositories as hosted services or private deployments:&lt;/p&gt;
@@ -149,7 +149,7 @@ as well as related to content accelerators such as CloudFlare
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;One potentially baised resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;One potentially biased resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;
 </description>
     </item>
     

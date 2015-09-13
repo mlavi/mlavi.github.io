@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Immutable on Mark&#39;s Blog</title>
-    <link>http://localhost:1313/tags/immutable/</link>
+    <link>http://mlavi.github.io/tags/immutable/</link>
     <description>Recent content in Immutable on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sat, 04 Apr 2015 07:55:39 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/immutable/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mlavi.github.io/tags/immutable/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Container Infrastructure Strategy</title>
-      <link>http://localhost:1313/post/container-infrastructure-strategy/</link>
+      <link>http://mlavi.github.io/post/container-infrastructure-strategy/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/container-infrastructure-strategy/</guid>
+      <guid>http://mlavi.github.io/post/container-infrastructure-strategy/</guid>
       <description>
 
 &lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mark&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>http://mlavi.github.io/</link>
     <description>Recent content on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Wed, 26 Aug 2015 08:59:59 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mlavi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Artifact Repositories</title>
-      <link>http://localhost:1313/post/artifact_repositories/</link>
+      <link>http://mlavi.github.io/post/artifact_repositories/</link>
       <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/artifact_repositories/</guid>
+      <guid>http://mlavi.github.io/post/artifact_repositories/</guid>
       <description>
 
 &lt;h3 id=&#34;ship-the-bits:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Ship the Bits&lt;/h3&gt;
@@ -44,7 +44,7 @@ OS platform, and client versions. Considerations include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;compression into a one file archive to save bandwidth&lt;/li&gt;
 &lt;li&gt;different editions (subsets of the build if they are not handled as separates)&lt;/li&gt;
-&lt;li&gt;checksums and code signing&lt;/li&gt;
+&lt;li&gt;check sums and code signing&lt;/li&gt;
 &lt;li&gt;packaging:&lt;/li&gt;
 &lt;li&gt;metadata for each OS or runtime&lt;/li&gt;
 &lt;li&gt;versus bundling an installer as a self extracting executable&lt;/li&gt;
@@ -105,7 +105,7 @@ conserve upstream network bandwidth.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;RedHat, Fedora, CentOS and related derivatives: .rpm format with yum repositories&lt;/li&gt;
-&lt;li&gt;Debian, Ubuntu, and related derivates: .deb format with apt repositories and Launchpad PPA&lt;/li&gt;
+&lt;li&gt;Debian, Ubuntu, and related derivatives: .deb format with apt repositories and Launchpad PPA&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;And now we have public and private container repositories as hosted services or private deployments:&lt;/p&gt;
@@ -149,16 +149,16 @@ as well as related to content accelerators such as CloudFlare
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;One potentially baised resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;One potentially biased resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Database Change Management</title>
-      <link>http://localhost:1313/post/database_change_management/</link>
+      <link>http://mlavi.github.io/post/database_change_management/</link>
       <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/database_change_management/</guid>
+      <guid>http://mlavi.github.io/post/database_change_management/</guid>
       <description>
 
 &lt;p&gt;Database configuration management tools allow us version the database and treat it like code!
@@ -277,10 +277,10 @@ We discussed feature toggles, shipping features dark, and later turning them on 
     
     <item>
       <title>HTML Slide Show Survey</title>
-      <link>http://localhost:1313/post/html-slideshow-survey/</link>
+      <link>http://mlavi.github.io/post/html-slideshow-survey/</link>
       <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/html-slideshow-survey/</guid>
+      <guid>http://mlavi.github.io/post/html-slideshow-survey/</guid>
       <description>
 
 &lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
@@ -363,10 +363,10 @@ PyPi: pip install. Compiled slides to PDF export as well!&lt;/li&gt;
     
     <item>
       <title>Building the LAMP stack with Phing</title>
-      <link>http://localhost:1313/post/build-lamp-stack-with-phing/</link>
+      <link>http://mlavi.github.io/post/build-lamp-stack-with-phing/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/build-lamp-stack-with-phing/</guid>
+      <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
       <description>
 
 &lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.&lt;/p&gt;
@@ -488,10 +488,10 @@ because it represented a straightforward migration without a major change in con
     
     <item>
       <title>Container Infrastructure Strategy</title>
-      <link>http://localhost:1313/post/container-infrastructure-strategy/</link>
+      <link>http://mlavi.github.io/post/container-infrastructure-strategy/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/container-infrastructure-strategy/</guid>
+      <guid>http://mlavi.github.io/post/container-infrastructure-strategy/</guid>
       <description>
 
 &lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
@@ -809,10 +809,10 @@ to work toward test driven DevOps and behavior driven DevOps to accomplish this.
     
     <item>
       <title>DevOps BTD Pattern for Continuous Deployment</title>
-      <link>http://localhost:1313/post/devops-btd-pattern/</link>
+      <link>http://mlavi.github.io/post/devops-btd-pattern/</link>
       <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/devops-btd-pattern/</guid>
+      <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>
 
 &lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
@@ -927,10 +927,10 @@ This expanded skill set must be part of the engineering culture for service desi
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>http://localhost:1313/post/devops-automation/</link>
+      <link>http://mlavi.github.io/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/devops-automation/</guid>
+      <guid>http://mlavi.github.io/post/devops-automation/</guid>
       <description>
 
 &lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
@@ -1128,10 +1128,10 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>http://localhost:1313/post/diagram/</link>
+      <link>http://mlavi.github.io/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/diagram/</guid>
+      <guid>http://mlavi.github.io/post/diagram/</guid>
       <description>
 
 &lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
@@ -1204,10 +1204,10 @@ everything new feels old again! :~)s&lt;/p&gt;
     
     <item>
       <title>About Mark</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://mlavi.github.io/about/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://mlavi.github.io/about/</guid>
       <description>&lt;p&gt;A DevOps professional with pioneering work on the world&amp;rsquo;s biggest Internet real-time event
  and web sites from an engineering, operations, content, and marketing perspective.
  My focus is on people and software development along with system design thinking for the
@@ -1235,10 +1235,10 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
     
     <item>
       <title>Time for a new development project!</title>
-      <link>http://localhost:1313/post/first/</link>
+      <link>http://mlavi.github.io/post/first/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://localhost:1313/post/first/</guid>
+      <guid>http://mlavi.github.io/post/first/</guid>
       <description>
 
 &lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
