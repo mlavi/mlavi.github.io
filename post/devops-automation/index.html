@@ -80,7 +80,7 @@
 
 <li><a href="../../tags/devops">devops</a><span
  class="decorative-marker">//</span><a
- name="devops">4</a></li>
+ name="devops">5</a></li>
 
 <li><a href="../../tags/build">build</a><span
  class="decorative-marker">//</span><a
@@ -90,13 +90,9 @@
  class="decorative-marker">//</span><a
  name="diagram">3</a></li>
 
-<li><a href="../../tags/automation">automation</a><span
+<li><a href="../../tags/web">web</a><span
  class="decorative-marker">//</span><a
- name="automation">2</a></li>
-
-<li><a href="../../tags/infrastructure">infrastructure</a><span
- class="decorative-marker">//</span><a
- name="infrastructure">2</a></li>
+ name="web">2</a></li>
 
 <li><a href="../../tags/webmaster">webmaster</a><span
  class="decorative-marker">//</span><a
@@ -106,17 +102,13 @@
  class="decorative-marker">//</span><a
  name="about">2</a></li>
 
-<li><a href="../../tags/web">web</a><span
+<li><a href="../../tags/infrastructure">infrastructure</a><span
  class="decorative-marker">//</span><a
- name="web">2</a></li>
+ name="infrastructure">2</a></li>
 
-<li><a href="../../tags/container">container</a><span
+<li><a href="../../tags/automation">automation</a><span
  class="decorative-marker">//</span><a
- name="container">1</a></li>
-
-<li><a href="../../tags/deploy">deploy</a><span
- class="decorative-marker">//</span><a
- name="deploy">1</a></li>
+ name="automation">2</a></li>
 
 <li><a href="../../tags/immutable">immutable</a><span
  class="decorative-marker">//</span><a
@@ -130,10 +122,6 @@
  class="decorative-marker">//</span><a
  name="phing">1</a></li>
 
-<li><a href="../../tags/html">html</a><span
- class="decorative-marker">//</span><a
- name="html">1</a></li>
-
 <li><a href="../../tags/slide">slide</a><span
  class="decorative-marker">//</span><a
  name="slide">1</a></li>
@@ -142,6 +130,26 @@
  class="decorative-marker">//</span><a
  name="sgi">1</a></li>
 
+<li><a href="../../tags/definition">definition</a><span
+ class="decorative-marker">//</span><a
+ name="definition">1</a></li>
+
+<li><a href="../../tags/artifact">artifact</a><span
+ class="decorative-marker">//</span><a
+ name="artifact">1</a></li>
+
+<li><a href="../../tags/distribution">distribution</a><span
+ class="decorative-marker">//</span><a
+ name="distribution">1</a></li>
+
+<li><a href="../../tags/career">career</a><span
+ class="decorative-marker">//</span><a
+ name="career">1</a></li>
+
+<li><a href="../../tags/deploy">deploy</a><span
+ class="decorative-marker">//</span><a
+ name="deploy">1</a></li>
+
 <li><a href="../../tags/database">database</a><span
  class="decorative-marker">//</span><a
  name="database">1</a></li>
@@ -149,6 +157,10 @@
 <li><a href="../../tags/code">code</a><span
  class="decorative-marker">//</span><a
  name="code">1</a></li>
+
+<li><a href="../../tags/html">html</a><span
+ class="decorative-marker">//</span><a
+ name="html">1</a></li>
 
 <li><a href="../../tags/cms">cms</a><span
  class="decorative-marker">//</span><a
@@ -166,17 +178,13 @@
  class="decorative-marker">//</span><a
  name="pattern">1</a></li>
 
-<li><a href="../../tags/career">career</a><span
+<li><a href="../../tags/culture">culture</a><span
  class="decorative-marker">//</span><a
- name="career">1</a></li>
+ name="culture">1</a></li>
 
-<li><a href="../../tags/artifact">artifact</a><span
+<li><a href="../../tags/container">container</a><span
  class="decorative-marker">//</span><a
- name="artifact">1</a></li>
-
-<li><a href="../../tags/distribution">distribution</a><span
- class="decorative-marker">//</span><a
- name="distribution">1</a></li>
+ name="container">1</a></li>
 
       </ul>
     </nav>
@@ -269,159 +277,160 @@ for simple visual flow parsing, and is organized vertically.</p>
 </p>
 
 <p>Source code: devops_automation.pu
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #960050; background-color: #1e0010">@</span><span style="color: #a6e22e">startuml</span>
-<span style="color: #a6e22e">title</span> <span style="color: #a6e22e">DevOps</span> <span style="color: #a6e22e">Automation</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">2015</span><span style="color: #f92672">-</span><span style="color: #ae81ff">03</span><span style="color: #f92672">-</span><span style="color: #ae81ff">11</span><span style="color: #f8f8f2">)</span> <span style="color: #a6e22e">by</span> <span style="color: #a6e22e">Mark</span> <span style="color: #a6e22e">Lavi</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">Development</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">Development</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">language</span>
-  <span style="color: #a6e22e">Development</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">editor</span>
-  <span style="color: #a6e22e">Development</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">code</span> <span style="color: #a6e22e">tools</span>
-  <span style="color: #a6e22e">Development</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">virtual</span> <span style="color: #a6e22e">environment</span>
-  <span style="color: #a6e22e">Development</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">runtime</span>
-  <span style="color: #a6e22e">Development</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">frameworks</span>
-  <span style="color: #a6e22e">Development</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">libraries</span>
-  <span style="color: #a6e22e">BDD</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">UnitTest</span>
-  <span style="color: #a6e22e">BDD</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">featureDescription</span>
-  <span style="color: #a6e22e">Code</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">featureDescription</span>
-  <span style="color: #a6e22e">Code</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">testCases</span>
-  <span style="color: #a6e22e">Code</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">testData</span>
-  <span style="color: #a6e22e">Code</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">functionality</span>
-  <span style="color: #a6e22e">Code</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">configurationData</span>
-  <span style="color: #a6e22e">Code</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">deployability</span>
-  <span style="color: #a6e22e">Code</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">monitors</span>
-  <span style="color: #a6e22e">Code</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">metrics</span>
-  <span style="color: #a6e22e">Code</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">logs</span>
-  <span style="color: #a6e22e">Code</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">UnitTest</span> <span style="color: #f92672">:</span> <span style="color: #a6e22e">OnSave</span>
-  <span style="color: #a6e22e">Code</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">BDD</span>
-  <span style="color: #a6e22e">Code</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">LocalBuild</span>
-  <span style="color: #a6e22e">Code</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">LocalRepo</span> <span style="color: #f92672">:</span> <span style="color: #a6e22e">commit</span>
-  <span style="color: #a6e22e">UnitTest</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">LocalRepo</span>
-  <span style="color: #a6e22e">UnitTest</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">testCases</span>
-  <span style="color: #a6e22e">UnitTest</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">testData</span>
-  <span style="color: #a6e22e">LocalBuild</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">LocalStack</span>
-  <span style="color: #a6e22e">LocalBuild</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">localArtifact</span>
-  <span style="color: #a6e22e">LocalBuild</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">localTestJobs</span>
-  <span style="color: #a6e22e">LocalBuild</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">localBuildAutomationSystemContainer</span><span style="color: #f92672">?</span>
-  <span style="color: #a6e22e">LocalBuild</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">ArtifactRepository</span> <span style="color: #f92672">:</span> <span style="color: #a6e22e">manual</span> <span style="color: #a6e22e">process</span><span style="color: #960050; background-color: #1e0010">\</span><span style="color: #a6e22e">nDesk</span> <span style="color: #a6e22e">Build</span><span style="color: #960050; background-color: #1e0010">\</span><span style="color: #a6e22e">ncandidate</span>
-  <span style="color: #a6e22e">LocalRepo</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">ReviewSystem</span>
-  <span style="color: #a6e22e">LocalRepo</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">CodeRepository</span> <span style="color: #f92672">:</span> <span style="color: #a6e22e">push</span>
-  <span style="color: #a6e22e">LocalStack</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">LocalDeployTest</span><span style="color: #f92672">?</span>
-  <span style="color: #a6e22e">LocalStack</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">LocalIntegrationTest</span><span style="color: #f92672">?</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">CodeRepository</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">CodeRepository</span> <span style="color: #f92672">:</span> <span style="color: #a6e22e">branch</span>
-  <span style="color: #a6e22e">CodeRepository</span> <span style="color: #f92672">:</span> <span style="color: #a6e22e">hash</span>
-  <span style="color: #a6e22e">CodeRepository</span> <span style="color: #f92672">:</span> <span style="color: #a6e22e">tag</span>
-  <span style="color: #a6e22e">preCommitHook</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">BuildAutomationSystem</span>
-  <span style="color: #a6e22e">preCommitHook</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">see</span> <span style="color: #a6e22e">Build</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">TestJobs</span>
-  <span style="color: #a6e22e">postCommitHook</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">BuildAutomationSystem</span>
-  <span style="color: #a6e22e">postCommitHook</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">see</span> <span style="color: #a6e22e">Build</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">TestJobs</span>
-  <span style="color: #a6e22e">webHook</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">see</span> <span style="color: #a6e22e">Build</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">TestJobs</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">ReviewSystem</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">ReviewSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">master</span> <span style="color: #a6e22e">or</span> <span style="color: #a6e22e">all</span> <span style="color: #a6e22e">branches</span><span style="color: #f92672">?</span>
-  <span style="color: #a6e22e">ReviewSystem</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">BuildAutomationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">candidate</span>
-  <span style="color: #a6e22e">ReviewSystem</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">CodeRepository</span> <span style="color: #f92672">:</span> <span style="color: #f92672">+</span><span style="color: #a6e22e">N</span> <span style="color: #f92672">=</span> <span style="color: #a6e22e">passed</span>
-  <span style="color: #a6e22e">ReviewSystem</span><span style="color: #f92672">:</span> <span style="color: #f92672">+</span><span style="color: #ae81ff">1</span> <span style="color: #a6e22e">BuildJob</span>
-  <span style="color: #a6e22e">ReviewSystem</span><span style="color: #f92672">:</span> <span style="color: #f92672">+</span><span style="color: #ae81ff">1</span> <span style="color: #a6e22e">TestJob</span>
-  <span style="color: #a6e22e">ReviewSystem</span><span style="color: #f92672">:</span> <span style="color: #f92672">+</span><span style="color: #ae81ff">1</span> <span style="color: #a6e22e">DeployJob</span>
-  <span style="color: #a6e22e">ReviewSystem</span><span style="color: #f92672">:</span> <span style="color: #f92672">+</span><span style="color: #ae81ff">1</span> <span style="color: #a6e22e">HumanReview</span>
-  <span style="color: #a6e22e">ReviewSystem</span><span style="color: #f92672">:</span> <span style="color: #f92672">+</span><span style="color: #ae81ff">1</span> <span style="color: #a6e22e">PeriodicTestJobs</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">BuildAutomationSystem</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">BuildAutomationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">perBranch</span>
-  <span style="color: #a6e22e">BuildAutomationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">perHash</span>
-  <span style="color: #a6e22e">BuildAutomationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">perTag</span>  
-  <span style="color: #f8f8f2">[</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">BuildScheduler</span>
-  <span style="color: #f8f8f2">[</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">BuildJobs</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">ad</span><span style="color: #f92672">-</span><span style="color: #a6e22e">hoc</span> <span style="color: #f8f8f2">(</span><span style="color: #a6e22e">manual</span><span style="color: #f8f8f2">)</span>
-  <span style="color: #f8f8f2">[</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">DeployJobs</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">promote</span>
-  <span style="color: #a6e22e">BuildJobs</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">TestJobs</span>
-  <span style="color: #a6e22e">BuildJobs</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">ArtifactRepository</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">Candidate</span>
-  <span style="color: #a6e22e">BuildJobs</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">localArtifact</span>
-  <span style="color: #a6e22e">TestJobs</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">ConfigurationSystem</span> <span style="color: #f92672">:</span> <span style="color: #a6e22e">updateManifest</span>
-  <span style="color: #a6e22e">TestJobs</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">ArtifactRepository</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">Official</span>
-  <span style="color: #a6e22e">TestJobs</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">TestAutomationSystem</span>
-  <span style="color: #a6e22e">TestJobs</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">PeriodicTests</span>
-  <span style="color: #a6e22e">TestJobs</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">BasicCodeAcceptanceTests</span>
-  <span style="color: #a6e22e">DeployJobs</span> <span style="color: #f92672">-</span><span style="color: #a6e22e">up</span><span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">DeploySystem</span>
-  <span style="color: #a6e22e">DeployJobs</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">artifact</span>
-  <span style="color: #a6e22e">DeployJobs</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">manifest</span>
-  <span style="color: #a6e22e">DeployJobs</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">stack</span>
-  <span style="color: #a6e22e">DeployJobs</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">ConfigurationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">updateManifest</span>
-  <span style="color: #a6e22e">BuildScheduler</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">TestJobs</span>
-  <span style="color: #a6e22e">BuildScheduler</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">e</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">g</span><span style="color: #f8f8f2">.</span> <span style="color: #a6e22e">Nightly</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">TestAutomationSystem</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">TestAutomationSystem</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">DeployJobs</span>
-  <span style="color: #a6e22e">TestAutomationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">Simulator</span>
-  <span style="color: #a6e22e">TestAutomationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">FeatureIntegrationTesting</span>
-  <span style="color: #a6e22e">TestAutomationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">FullSuiteTesting</span>  
-  <span style="color: #a6e22e">TestAutomationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">LoadTesting</span>
-  <span style="color: #a6e22e">TestAutomationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">RegressionTesting</span>
-  <span style="color: #a6e22e">TestAutomationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">SoakTesting</span>
-  <span style="color: #a6e22e">TestAutomationSystem</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">ConfigurationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">updateManifest</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">ArtifactRepository</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">ArtifactRepository</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">candidate</span>
-  <span style="color: #a6e22e">ArtifactRepository</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">official</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">ConfigurationSystem</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">ConfigurationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">manifest</span>
-  <span style="color: #a6e22e">ConfigurationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">deployability</span>
-  <span style="color: #a6e22e">ConfigurationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">configurationData</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">Monitors</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">Monitors</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">SLA</span>
-  <span style="color: #a6e22e">Monitors</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">Metrics</span>
-  <span style="color: #a6e22e">Monitors</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">Logs</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">Logs</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">Logs</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">Metrics</span>
-  <span style="color: #a6e22e">Logs</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">Monitors</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">Metrics</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">Metrics</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">SLA</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">AuthenticationSystem</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">AuthenticationSystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">LDAP</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">SAML</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">etc</span><span style="color: #f8f8f2">.</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">DeploySystem</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">DeploySystem</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">ConfigurationSystem</span>
-  <span style="color: #a6e22e">DeploySystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">entireStack</span>
-  <span style="color: #a6e22e">DeploySystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">byProfileOnStack</span>
-  <span style="color: #a6e22e">DeploySystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">byRoleOnStack</span>
-  <span style="color: #a6e22e">DeploySystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">read</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">updateManifest</span>
-  <span style="color: #a6e22e">DeploySystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">bill</span> <span style="color: #a6e22e">of</span> <span style="color: #a6e22e">materials</span> <span style="color: #f8f8f2">(</span><span style="color: #a6e22e">BoM</span><span style="color: #f8f8f2">)</span>
-  <span style="color: #a6e22e">DeploySystem</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">readConfigurationData</span>
-  <span style="color: #a6e22e">Provision</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">Stack</span>
-  <span style="color: #a6e22e">Provision</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">profile</span><span style="color: #f92672">/</span><span style="color: #a6e22e">role</span><span style="color: #960050; background-color: #1e0010">@</span><span style="color: #a6e22e">stack</span>
-  <span style="color: #a6e22e">Provision</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">applyManifest</span>
-  <span style="color: #a6e22e">Upgrade</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">Stack</span>
-  <span style="color: #a6e22e">Upgrade</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">role</span><span style="color: #960050; background-color: #1e0010">@</span><span style="color: #a6e22e">stack</span>
-  <span style="color: #a6e22e">Upgrade</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">applyManifest</span>
-  <span style="color: #a6e22e">Canary</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">Stack</span>
-  <span style="color: #a6e22e">Canary</span><span style="color: #f92672">:</span> <span style="color: #f92672">%</span> <span style="color: #a6e22e">existing</span> <span style="color: #a6e22e">role</span><span style="color: #960050; background-color: #1e0010">@</span><span style="color: #a6e22e">stack</span>
-  <span style="color: #a6e22e">Canary</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">applyManifest</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #a6e22e">state</span> <span style="color: #a6e22e">Stack</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">Stack</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">name</span><span style="color: #f92672">/</span><span style="color: #a6e22e">environment</span><span style="color: #960050; background-color: #1e0010">\</span><span style="color: #a6e22e">n</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">e</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">g</span><span style="color: #f8f8f2">.</span> <span style="color: #a6e22e">Feature</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">Team</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">Release</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">dev</span><span style="color: #f92672">/</span><span style="color: #a6e22e">qa</span><span style="color: #f92672">/</span><span style="color: #a6e22e">stage</span><span style="color: #f92672">/</span><span style="color: #a6e22e">prod</span><span style="color: #f8f8f2">)</span>
-  <span style="color: #f8f8f2">[</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">node</span>
-  <span style="color: #f8f8f2">[</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">ProviderInfrastructure</span>
-  <span style="color: #a6e22e">ProviderInfrastructure</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">load</span> <span style="color: #a6e22e">balancer</span>
-  <span style="color: #a6e22e">ProviderInfrastructure</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">DNS</span>
-  <span style="color: #a6e22e">ProviderInfrastructure</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">monitor</span>
-  <span style="color: #a6e22e">ProviderInfrastructure</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">scheduler</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">autoscaler</span>
-  <span style="color: #a6e22e">ProviderInfrastructure</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">Monitors</span>
-  <span style="color: #a6e22e">ProviderInfrastructure</span> <span style="color: #f92672">--&gt;</span> <span style="color: #a6e22e">node</span>
-  <span style="color: #a6e22e">node</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">provider</span>
-  <span style="color: #a6e22e">node</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">profile</span>
-  <span style="color: #a6e22e">node</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">role</span>
-  <span style="color: #a6e22e">node</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">monitor</span>
-  <span style="color: #a6e22e">node</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">Monitors</span>
-  <span style="color: #a6e22e">node</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">Logs</span>
-  <span style="color: #a6e22e">node</span> <span style="color: #f92672">-&gt;</span> <span style="color: #a6e22e">Metrics</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #960050; background-color: #1e0010">@</span><span style="color: #a6e22e">enduml</span>
-</pre></div>
+
+@startuml
+title DevOps Automation (2015-03-11) by Mark Lavi
+state Development {
+  Development: language
+  Development: editor
+  Development: code tools
+  Development: virtual environment
+  Development: runtime
+  Development: frameworks
+  Development: libraries
+  BDD --> UnitTest
+  BDD: featureDescription
+  Code: featureDescription
+  Code: testCases
+  Code: testData
+  Code: functionality
+  Code: configurationData
+  Code: deployability
+  Code: monitors
+  Code: metrics
+  Code: logs
+  Code -> UnitTest : OnSave
+  Code --> BDD
+  Code --> LocalBuild
+  Code --> LocalRepo : commit
+  UnitTest --> LocalRepo
+  UnitTest: testCases
+  UnitTest: testData
+  LocalBuild --> LocalStack
+  LocalBuild: localArtifact
+  LocalBuild: localTestJobs
+  LocalBuild: localBuildAutomationSystemContainer?
+  LocalBuild -> ArtifactRepository : manual process\nDesk Build\ncandidate
+  LocalRepo -> ReviewSystem
+  LocalRepo -> CodeRepository : push
+  LocalStack: LocalDeployTest?
+  LocalStack: LocalIntegrationTest?
+}
+state CodeRepository {
+  CodeRepository : branch
+  CodeRepository : hash
+  CodeRepository : tag
+  preCommitHook -> BuildAutomationSystem
+  preCommitHook: see Build,TestJobs
+  postCommitHook -> BuildAutomationSystem
+  postCommitHook: see Build,TestJobs
+  webHook: see Build,TestJobs
+}
+state ReviewSystem {
+  ReviewSystem: master or all branches?
+  ReviewSystem -> BuildAutomationSystem: candidate
+  ReviewSystem -> CodeRepository : +N = passed
+  ReviewSystem: +1 BuildJob
+  ReviewSystem: +1 TestJob
+  ReviewSystem: +1 DeployJob
+  ReviewSystem: +1 HumanReview
+  ReviewSystem: +1 PeriodicTestJobs
+}
+state BuildAutomationSystem {
+  BuildAutomationSystem: perBranch
+  BuildAutomationSystem: perHash
+  BuildAutomationSystem: perTag  
+  [*] -> BuildScheduler
+  [*] --> BuildJobs: ad-hoc (manual)
+  [*] --> DeployJobs: promote
+  BuildJobs -> TestJobs
+  BuildJobs -> ArtifactRepository: Candidate
+  BuildJobs: localArtifact
+  TestJobs --> ConfigurationSystem : updateManifest
+  TestJobs -> ArtifactRepository: Official
+  TestJobs -> TestAutomationSystem
+  TestJobs: PeriodicTests
+  TestJobs: BasicCodeAcceptanceTests
+  DeployJobs -up-> DeploySystem
+  DeployJobs: artifact
+  DeployJobs: manifest
+  DeployJobs: stack
+  DeployJobs -> ConfigurationSystem: updateManifest
+  BuildScheduler --> TestJobs
+  BuildScheduler: e.g. Nightly
+}
+state TestAutomationSystem {
+  TestAutomationSystem -> DeployJobs
+  TestAutomationSystem: Simulator
+  TestAutomationSystem: FeatureIntegrationTesting
+  TestAutomationSystem: FullSuiteTesting  
+  TestAutomationSystem: LoadTesting
+  TestAutomationSystem: RegressionTesting
+  TestAutomationSystem: SoakTesting
+  TestAutomationSystem -> ConfigurationSystem: updateManifest
+}
+state ArtifactRepository {
+  ArtifactRepository: candidate
+  ArtifactRepository: official
+}
+state ConfigurationSystem {
+  ConfigurationSystem: manifest
+  ConfigurationSystem: deployability
+  ConfigurationSystem: configurationData
+}
+state Monitors {
+  Monitors: SLA
+  Monitors -> Metrics
+  Monitors -> Logs
+}
+state Logs {
+  Logs -> Metrics
+  Logs -> Monitors
+}
+state Metrics {
+  Metrics: SLA
+}
+state AuthenticationSystem {
+  AuthenticationSystem: LDAP, SAML, etc.
+}
+state DeploySystem {
+  DeploySystem -> ConfigurationSystem
+  DeploySystem: entireStack
+  DeploySystem: byProfileOnStack
+  DeploySystem: byRoleOnStack
+  DeploySystem: read, updateManifest
+  DeploySystem: bill of materials (BoM)
+  DeploySystem: readConfigurationData
+  Provision -> Stack
+  Provision: profile/role@stack
+  Provision: applyManifest
+  Upgrade -> Stack
+  Upgrade: role@stack
+  Upgrade: applyManifest
+  Canary -> Stack
+  Canary: % existing role@stack
+  Canary: applyManifest
+}
+state Stack {
+  Stack: name/environment\n(e.g. Feature, Team, Release, dev/qa/stage/prod)
+  [*] --> node
+  [*] -> ProviderInfrastructure
+  ProviderInfrastructure: load balancer
+  ProviderInfrastructure: DNS
+  ProviderInfrastructure: monitor
+  ProviderInfrastructure: scheduler, autoscaler
+  ProviderInfrastructure --> Monitors
+  ProviderInfrastructure --> node
+  node: provider
+  node: profile
+  node: role
+  node: monitor
+  node -> Monitors
+  node -> Logs
+  node -> Metrics
+}
+@enduml
+
 </p>
 
 <p>I will put this under revision control in the Infrastructure as Code project I&rsquo;m undertaking.

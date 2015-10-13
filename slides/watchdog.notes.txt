@@ -8,3 +8,5 @@ sudo pip install --upgrade watchdog landslide
 
 watchmedo shell-command --pattern='Vagrantfile;*rb' --command='vagrant provision; echo' --recursive
 PAGE=x watchmedo shell-command --pattern='*.md' --command='landslide --relative --embed --quiet $PAGE.md --destination $PAGE.html' --recursive &
+PAGE=do watchmedo shell-command --pattern='*.md' --command='landslide --relative --embed --quiet $PAGE.md \
+ --destination $PAGE.html' --recursive &

@@ -48,9 +48,12 @@ OS platform, and client versions. Considerations include:&lt;/p&gt;
 &lt;li&gt;compression into a one file archive to save bandwidth&lt;/li&gt;
 &lt;li&gt;different editions (subsets of the build if they are not handled as separates)&lt;/li&gt;
 &lt;li&gt;check sums and code signing&lt;/li&gt;
-&lt;li&gt;packaging:&lt;/li&gt;
+&lt;li&gt;packaging:
+
+&lt;ul&gt;
 &lt;li&gt;metadata for each OS or runtime&lt;/li&gt;
 &lt;li&gt;versus bundling an installer as a self extracting executable&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;documentation&lt;/li&gt;
 &lt;li&gt;licensing and potentially providing source code&lt;/li&gt;
 &lt;li&gt;third party licensing&lt;/li&gt;
