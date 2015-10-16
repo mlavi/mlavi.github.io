@@ -1,7 +1,6 @@
 https://github.com/gorakhargosh/watchdog
 
 cd ~/Documents/github.com/mlavi/hugo/static/slides
-sudo pip install --upgrade pip
 sudo pip install --upgrade virtualenv
 virtualenv landslide
 . landslide/bin/activate.fish

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Culture on Mark&#39;s Blog</title>
+    <link>http://mlavi.github.io/tags/culture/</link>
+    <description>Recent content in Culture on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 13 Oct 2015 12:03:32 -0700</lastBuildDate>
+    <atom:link href="http://mlavi.github.io/tags/culture/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DevOps Demystified</title>
+      <link>http://mlavi.github.io/post/devops_demystified/</link>
+      <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/devops_demystified/</guid>
+      <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
+ for many software engineering organizations. Let me define DevOps and help
+ you can understand and chart your own journey to DevOps. Hint: it is a cultural term!&lt;/p&gt;
+
+&lt;p&gt;I will polish the slides and elaborate further, but they hammer the key points efficiently!
+Please contact me with any follow up questions or comments.&lt;/p&gt;
+
+&lt;p&gt;The content of this blog post has been given as a talk:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2015-10-03: presented at &lt;a href=&#34;https://www.siliconvalley-codecamp.com/Session/2015/demystifying-devops&#34;&gt;Silicon Valley Code Camp 2015&lt;/a&gt;
+San Jose, CA
+
+&lt;ul&gt;
+&lt;li&gt;Slides: &lt;a href=&#34;../../slides/devops-demystified.html&#34;&gt;DevOps Demystified&lt;/a&gt; || &lt;a href=&#34;../../slides/devops-demystified.md&#34;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Nice turnout of 13 registered, 85 interested, and about 40 attendees.&lt;/li&gt;
+&lt;li&gt;A few tweets ensued:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;DevOps is a culturally rendered term.&amp;quot; &lt;a href=&#34;https://twitter.com/calm_mark&#34;&gt;@calm_mark&lt;/a&gt;&lt;/p&gt;&amp;mdash; Noah Kantrowitz (@kantrn) &lt;a href=&#34;https://twitter.com/kantrn/status/650414900682973184&#34;&gt;October 3, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
