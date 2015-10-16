@@ -48,7 +48,7 @@ Previously:
 - Webmaster at Netscape.com, cnnfn.com, Silicon Graphics
     - Technology Evangelist for LDAP and JavaScript
 
-Infrastructure as Code blog = [http://mlavi.github.io](http://mlavi.github.io)
+*Infrastructure as Code* blog = [http://mlavi.github.io](http://mlavi.github.io)
 
 ---
 # DevOps
@@ -78,15 +78,18 @@ Ask yourself: *Does this [thing] meet our definition of DevOps?*
 # A Brief History of DevOps
 
 - 2008: "Agile Infrastructure" non-discussion at Agile Conference
-    - Patrick Debois and Andrew Clay Shafer
-    - [Agile System Administration](https://groups.google.com/forum/#!forum/agile-system-administration) Google Group: global virtual community
-- 2009: [DevOpsDays Belgium](http://devopsdays.org): physical community begins
-- 2012: Velocity Europe confernece: [Etsy 10x deploys/day](http://www.slideshare.net/mcdonnps/continuously-deploying-culture-scaling-culture-at-etsy-14588485)
-    - A seminal moment in showing the power of the DevOps approach
+    - Patrick Debois finds Andrew Clay Shafer, they create:
+        - [Agile System Administration](https://groups.google.com/forum/#!forum/agile-system-administration) Google Group: virtual community
+- 2009:
+    - May: [10+ Deploys Per Day: Dev & Ops Cooperation at Flickr](http://www.slideshare.net/jallspaw/10-deploys-per-day-dev-and-ops-cooperation-at-flickr)
+ by John Allspaw and Paul Hammond at Velocity Conference
+    - October: [DevOpsDays Belgium](http://devopsdays.org): physical community begins
 - 2013: [The Phoenix Project](https://en.wikipedia.org/wiki/The_Phoenix_Project:_A_Novel_About_IT,_DevOps,_and_Helping_Your_Business_Win) book by Gene Kim, Kevin Behr, George Spafford
 - Today: a mysterious movement, buzzword, a dynamic community!
     - Industry studies showing DevOps enables business agility
-    - "Rediscovery" of lean processes, agile manifesto, etc.
+    - "Rediscovery" of lean processes, [Agile Manifesto](http://www.agilemanifesto.org/), etc.
+
+Reference: [The History Of DevOps](http://itrevolution.com/the-history-of-devops/) by Damon Edwards
 
 ---
 # How to Journey to DevOps?
@@ -96,8 +99,9 @@ Ask yourself: *Does this [thing] meet our definition of DevOps?*
     - Dev + Ops; not developers vs. QA vs. operations
     - Fail fast, fix fast
 - Relentless iteration and automation to achieve goals:
-    - *Continuous Delivery:* multiple production deploys per day
-    - Continuous Feedback = close loop Ops
+    - *Continuous Delivery* = multiple production deploys per day,
+      <br/>tied to continuous integration and integration stack testing
+    - Continuous Feedback = closed loop operations
         - DevOps is a bi-directional process for customers: internal and external
         - What is the health of our application, APIs, key performance metrics?
     - Developers evolve into service engineers
@@ -105,7 +109,7 @@ Ask yourself: *Does this [thing] meet our definition of DevOps?*
 ---
 # Cloud Agility
 
-- All services, platforms, & tools evolving
+- All services, platforms, & tools are evolving
     - RESTful APIs are everywhere
     - Opportunity to codify and automate everything:
         - on private, public or hybrid cloud architectures
@@ -124,11 +128,12 @@ Software engineering practices applied to infrastructure:
     - Test all the things!
     - Challenge: full stack orchestration
 - *Immutable Infrastructure* on the rise
+    - Dynamic versus static configuration, feature flags
     - Bespoke, hand-crafted, snowflake servers == dark magick == friction
     - Automation friction == technical debt == a bug
 
 ---
-# The Future of Infrastructure as Code 
+# The Future of *Infrastructure as Code* 
 
 - My dream: behavior and test driven operations
     - I am searching for others to discuss this topic!
@@ -148,6 +153,7 @@ Therefore, your development laptop = a full system stack/environment:
     - Develop to satisfy your testable code
 - Build on your laptop
 - Deploy on your laptop
+    - Make code configurable with tools
     - Repeat for integration, metrics, logs, etc.
     - Commit to repository -> continuous integration & delivery
 
@@ -157,13 +163,13 @@ Reference: [BTD Pattern Blog Entry](http://mlavi.github.io/post/devops-btd-patte
 # Infrastructure Models
 # Infrastructure Orchestration
 
-- Complex orchestation of the entire system/stack/environment
+- Complex orchestation of the entire distributed system/stack/environment
     - Load balance everything
     - Clustered everything
 - Automate runbooks: operations as code
 - Blue-Green vs. canary vs. rolling deployments and upgrades
     - Test and measure your operations
-- Agile Ops: ChatOps
+- Agile Ops: ChatOps = democratized operations
 
 ---
 # Pets versus Cattle
@@ -218,4 +224,4 @@ Technology Evangelist, Calm.io || [mark@calm.io](mailto:mark@calm.io)
 ##Your Next Steps
 
 - Find your local DevOps community and join us!
-- Sildes on my Infrastructure as Code blog = [http://mlavi.github.io](http://mlavi.github.io)
+- Sildes on my *Infrastructure as Code* blog = [http://mlavi.github.io/post/devops_demystified/](http://mlavi.github.io/post/devops_demystified/)
