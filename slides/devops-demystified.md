@@ -22,7 +22,7 @@ We will cover the following topics so that you can understand and chart your own
  - A Definition and Cultural Rendering of DevOps
  - A Brief History of DevOps
  - DevOps Impact on Organizations
- - The Journey to DevOps via:
+ - The Journey to DevOps:
      - Cloud Agility
      - Infrastructure as Code
      - Test, Build, Deploy Pattern
@@ -111,15 +111,15 @@ Reference: [The History Of DevOps](http://itrevolution.com/the-history-of-devops
 
 - All services, platforms, & tools are evolving
     - RESTful APIs are everywhere
-    - Opportunity to codify and automate everything:
-        - on private, public or hybrid cloud architectures
+    - Opportunity to codify and automate everything
+    - ...on private, public or hybrid cloud architectures
 - Domain expertise democratized, repeatable, and auditable
 - Ephemeral everything = agility
 
 ---
 # Infrastructure as Code 
 
-Software engineering practices applied to infrastructure:
+*Infrastructure as Code* = software engineering practices applied to infrastructure.
 
 - Version everything: even the database
 - *Configuration Management*
@@ -133,13 +133,6 @@ Software engineering practices applied to infrastructure:
     - Automation friction == technical debt == a bug
 
 ---
-# The Future of *Infrastructure as Code* 
-
-- My dream: behavior and test driven operations
-    - I am searching for others to discuss this topic!
-
----
-
 # Test, Build, Deploy Pattern
 
 Between your laptop and production:
@@ -147,12 +140,12 @@ Between your laptop and production:
  - the differences should be minimized
  - troubleshooting should be no different.
 
-Therefore, your development laptop = a full system stack/environment:
+Therefore, your development laptop *IS* a full system stack/environment, leading to:
 
-- Test on your laptop
+- _Test_ on your laptop
     - Develop to satisfy your testable code
-- Build on your laptop
-- Deploy on your laptop
+- _Build_ on your laptop
+- _Deploy_ on your laptop
     - Make code configurable with tools
     - Repeat for integration, metrics, logs, etc.
     - Commit to repository -> continuous integration & delivery
@@ -160,21 +153,26 @@ Therefore, your development laptop = a full system stack/environment:
 Reference: [BTD Pattern Blog Entry](http://mlavi.github.io/post/devops-btd-pattern/)
 
 ---
-# Infrastructure Models
-# Infrastructure Orchestration
+# The Future of *Infrastructure as Code* 
+
+- My dream: *operations as code* = behavior and test driven operations
+    - I am searching for others to discuss this topic!
+
+---
+# Infrastructure Models & Orchestration
 
 - Complex orchestation of the entire distributed system/stack/environment
     - Load balance everything
     - Clustered everything
-- Automate runbooks: operations as code
 - Blue-Green vs. canary vs. rolling deployments and upgrades
     - Test and measure your operations
-- Agile Ops: ChatOps = democratized operations
+- Automate runbooks = *operations as code*
+    - ChatOps = democratized operations are agile ops
 
 ---
 # Pets versus Cattle
 
-##Immutable Infrastructure:
+##Immutable Infrastructure
 
 - Cloud agility enables ephemeral fleets
     - *Cattle* = numbered, can fail and reprovision anytime
@@ -187,20 +185,20 @@ Reference: [BTD Pattern Blog Entry](http://mlavi.github.io/post/devops-btd-patte
 ---
 # Pets versus Cattle versus Bacteria
 
-##Microservices:
+##Microservices
 
 - Refactor the monolith into public API modules (REST), which enables
   independent delivery, monitoring, and testing (per team).
 
-##Containers can represent:
+##Containers
 
-- Agile, lightweight, faster VMs:
-    - an ideal approach for *continuous delivery* of *immutable infrastructure* artifacts
-    - *Bacteria* = Short lived on the order of seconds: build, run, test, destroy
+- Agile, lightweight, smaller, faster VMs:
+    - ideal approach for *continuous delivery* of *immutable infrastructure* artifacts, especially microservices
+    - minimal difference between laptop and production
+    - *Bacteria* = lifecycle on the order of seconds: build, run, test, destroy
 - Early days: Docker as a tool versus Docker tool set as a platform
-    - [PERL motto](http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it):
-  "There is more than one way to do it."
-- Production challenges remain: deployment, monitoring, metrics, logs, networking, persistence
+    - PERL motto = [There is more than one way to do it](http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it).
+- Production challenges remain: orchestration, health, networking, persistence
 
 ---
 # Epilogue: BusinessOps

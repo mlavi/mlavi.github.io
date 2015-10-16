@@ -1348,7 +1348,7 @@ aside {
 <li>A Definition and Cultural Rendering of DevOps</li>
 <li>A Brief History of DevOps</li>
 <li>DevOps Impact on Organizations</li>
-<li>The Journey to DevOps via:<ul>
+<li>The Journey to DevOps:<ul>
 <li>Cloud Agility</li>
 <li>Infrastructure as Code</li>
 <li>Test, Build, Deploy Pattern</li>
@@ -1632,10 +1632,8 @@ aside {
             <section><ul>
 <li>All services, platforms, &amp; tools are evolving<ul>
 <li>RESTful APIs are everywhere</li>
-<li>Opportunity to codify and automate everything:<ul>
-<li>on private, public or hybrid cloud architectures</li>
-</ul>
-</li>
+<li>Opportunity to codify and automate everything</li>
+<li>...on private, public or hybrid cloud architectures</li>
 </ul>
 </li>
 <li>Domain expertise democratized, repeatable, and auditable</li>
@@ -1670,7 +1668,7 @@ aside {
             <header><h1>Infrastructure as Code</h1></header>
             
             
-            <section><p>Software engineering practices applied to infrastructure:</p>
+            <section><p><em>Infrastructure as Code</em> = software engineering practices applied to infrastructure.</p>
 <ul>
 <li>Version everything: even the database</li>
 <li><em>Configuration Management</em><ul>
@@ -1715,15 +1713,29 @@ aside {
         <div class="slide slide-11">
           <div class="inner">
             
-            <header><h1>The Future of <em>Infrastructure as Code</em></h1></header>
+            <header><h1>Test, Build, Deploy Pattern</h1></header>
             
             
-            <section><ul>
-<li>My dream: behavior and test driven operations<ul>
-<li>I am searching for others to discuss this topic!</li>
+            <section><p>Between your laptop and production:</p>
+<ul>
+<li>the differences should be minimized</li>
+<li>troubleshooting should be no different.</li>
+</ul>
+<p>Therefore, your development laptop <em>IS</em> a full system stack/environment, leading to:</p>
+<ul>
+<li><em>Test</em> on your laptop<ul>
+<li>Develop to satisfy your testable code</li>
 </ul>
 </li>
-</ul></section>
+<li><em>Build</em> on your laptop</li>
+<li><em>Deploy</em> on your laptop<ul>
+<li>Make code configurable with tools</li>
+<li>Repeat for integration, metrics, logs, etc.</li>
+<li>Commit to repository -&gt; continuous integration &amp; delivery</li>
+</ul>
+</li>
+</ul>
+<p>Reference: <a href="http://mlavi.github.io/post/devops-btd-pattern/">BTD Pattern Blog Entry</a></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -1750,29 +1762,15 @@ aside {
         <div class="slide slide-12">
           <div class="inner">
             
-            <header><h1>Test, Build, Deploy Pattern</h1></header>
+            <header><h1>The Future of <em>Infrastructure as Code</em></h1></header>
             
             
-            <section><p>Between your laptop and production:</p>
-<ul>
-<li>the differences should be minimized</li>
-<li>troubleshooting should be no different.</li>
-</ul>
-<p>Therefore, your development laptop = a full system stack/environment:</p>
-<ul>
-<li>Test on your laptop<ul>
-<li>Develop to satisfy your testable code</li>
+            <section><ul>
+<li>My dream: <em>operations as code</em> = behavior and test driven operations<ul>
+<li>I am searching for others to discuss this topic!</li>
 </ul>
 </li>
-<li>Build on your laptop</li>
-<li>Deploy on your laptop<ul>
-<li>Make code configurable with tools</li>
-<li>Repeat for integration, metrics, logs, etc.</li>
-<li>Commit to repository -&gt; continuous integration &amp; delivery</li>
-</ul>
-</li>
-</ul>
-<p>Reference: <a href="http://mlavi.github.io/post/devops-btd-pattern/">BTD Pattern Blog Entry</a></p></section>
+</ul></section>
             
           </div>
           <div class="presenter_notes">
@@ -1799,22 +1797,23 @@ aside {
         <div class="slide slide-13">
           <div class="inner">
             
-            <header><h1>Infrastructure Models</h1></header>
+            <header><h1>Infrastructure Models &amp; Orchestration</h1></header>
             
             
-            <section><h1>Infrastructure Orchestration</h1>
-<ul>
+            <section><ul>
 <li>Complex orchestation of the entire distributed system/stack/environment<ul>
 <li>Load balance everything</li>
 <li>Clustered everything</li>
 </ul>
 </li>
-<li>Automate runbooks: operations as code</li>
 <li>Blue-Green vs. canary vs. rolling deployments and upgrades<ul>
 <li>Test and measure your operations</li>
 </ul>
 </li>
-<li>Agile Ops: ChatOps = democratized operations</li>
+<li>Automate runbooks = <em>operations as code</em><ul>
+<li>ChatOps = democratized operations are agile ops</li>
+</ul>
+</li>
 </ul></section>
             
           </div>
@@ -1845,7 +1844,7 @@ aside {
             <header><h1>Pets versus Cattle</h1></header>
             
             
-            <section><h2>Immutable Infrastructure:</h2>
+            <section><h2>Immutable Infrastructure</h2>
 <ul>
 <li>Cloud agility enables ephemeral fleets<ul>
 <li><em>Cattle</em> = numbered, can fail and reprovision anytime</li>
@@ -1888,24 +1887,24 @@ aside {
             <header><h1>Pets versus Cattle versus Bacteria</h1></header>
             
             
-            <section><h2>Microservices:</h2>
+            <section><h2>Microservices</h2>
 <ul>
 <li>Refactor the monolith into public API modules (REST), which enables
   independent delivery, monitoring, and testing (per team).</li>
 </ul>
-<h2>Containers can represent:</h2>
+<h2>Containers</h2>
 <ul>
-<li>Agile, lightweight, faster VMs:<ul>
-<li>an ideal approach for <em>continuous delivery</em> of <em>immutable infrastructure</em> artifacts</li>
-<li><em>Bacteria</em> = Short lived on the order of seconds: build, run, test, destroy</li>
+<li>Agile, lightweight, smaller, faster VMs:<ul>
+<li>ideal approach for <em>continuous delivery</em> of <em>immutable infrastructure</em> artifacts, especially microservices</li>
+<li>minimal difference between laptop and production</li>
+<li><em>Bacteria</em> = lifecycle on the order of seconds: build, run, test, destroy</li>
 </ul>
 </li>
 <li>Early days: Docker as a tool versus Docker tool set as a platform<ul>
-<li><a href="http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">PERL motto</a>:
-  "There is more than one way to do it."</li>
+<li>PERL motto = <a href="http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">There is more than one way to do it</a>.</li>
 </ul>
 </li>
-<li>Production challenges remain: deployment, monitoring, metrics, logs, networking, persistence</li>
+<li>Production challenges remain: orchestration, health, networking, persistence</li>
 </ul></section>
             
           </div>
@@ -2073,19 +2072,19 @@ aside {
       
       
       <tr id="toc-row-11">
-        <th><a href="#slide11">The Future of <em>Infrastructure as Code</em></a></th>
+        <th><a href="#slide11">Test, Build, Deploy Pattern</a></th>
         <td><a href="#slide11">11</a></td>
       </tr>
       
       
       <tr id="toc-row-12">
-        <th><a href="#slide12">Test, Build, Deploy Pattern</a></th>
+        <th><a href="#slide12">The Future of <em>Infrastructure as Code</em></a></th>
         <td><a href="#slide12">12</a></td>
       </tr>
       
       
       <tr id="toc-row-13">
-        <th><a href="#slide13">Infrastructure Models</a></th>
+        <th><a href="#slide13">Infrastructure Models &amp; Orchestration</a></th>
         <td><a href="#slide13">13</a></td>
       </tr>
       
