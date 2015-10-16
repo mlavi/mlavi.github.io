@@ -16,14 +16,25 @@
       <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
       
       <guid>http://mlavi.github.io/post/devops_demystified/</guid>
-      <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
+      <description>
+
+&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
  for many software engineering organizations. Let me define DevOps and help
  you can understand and chart your own journey to DevOps. Hint: it is a cultural term!&lt;/p&gt;
 
-&lt;p&gt;I will polish the slides and elaborate further, but they hammer the key points efficiently!
-Please contact me with any follow up questions or comments.&lt;/p&gt;
+&lt;h3 id=&#34;update-2015-10-16:022f818b4b335cef52e2158f1457d81b&#34;&gt;Update: 2015-10-16&lt;/h3&gt;
 
-&lt;p&gt;The content of this blog post has been given as a talk:&lt;/p&gt;
+&lt;p&gt;I have polished the slides to reinforce and elaborate on key points.
+Please contact me with any follow up questions or comments.
+I am happy to give this talk to any organization and I have provided the slides for you to present as well!&lt;/p&gt;
+
+&lt;h3 id=&#34;abstract:022f818b4b335cef52e2158f1457d81b&#34;&gt;Abstract&lt;/h3&gt;
+
+&lt;p&gt;A brief history of the DevOps movement and community with a cross section view of many methods and practices that are breaking down the barriers to achieve agility and continuous delivery.
+DevOps seems intangible: you can&amp;rsquo;t buy it, there is no certification, and frankly, there is no universal definition, yet everyone wants it or already &amp;ldquo;does&amp;rdquo; it, but still has trouble identifying it.
+I will cover many topics so that you can understand and chart your own journey to DevOps.&lt;/p&gt;
+
+&lt;p&gt;The actual content of this blog post has been given as a talk:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;2015-10-03: presented at &lt;a href=&#34;https://www.siliconvalley-codecamp.com/Session/2015/demystifying-devops&#34;&gt;Silicon Valley Code Camp 2015&lt;/a&gt;
