@@ -2,8 +2,8 @@
 
 $ cat .signature
 
-Technology Evangelist, Idea Device and Calm.io || [mark@calm.io](mailto:mark@calm.io)
-<br />A Sequoia Capital funded company: [info@ideadevice.com](mailto:info@ideadevice.com)
+Technology Evangelist, Calm.io || [mark@calm.io](mailto:mark@calm.io)
+<br />A Sequoia Capital funded company: [team@calm.io](mailto:team@calm.io)
 <br />mobile:+1-650-400-2100 || Twitter [@calm_mark](http://twitter.com/calm_mark) || GitHub [@mlavi](http://github.com/mlavi/)
 
 $ cat .profile || curl [http://mlavi.github.io/about/](http://mlavi.github.io/about/)
