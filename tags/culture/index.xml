@@ -19,20 +19,53 @@
       <description>
 
 &lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
- for many software engineering organizations. Let me define DevOps and help
- you can understand and chart your own journey to DevOps. Hint: it is a cultural term!&lt;/p&gt;
+ for many software engineering organizations. Let me define DevOps to help you
+ understand and chart your own journey to DevOps. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!&lt;/p&gt;
 
 &lt;h3 id=&#34;update-2015-10-16:022f818b4b335cef52e2158f1457d81b&#34;&gt;Update: 2015-10-16&lt;/h3&gt;
 
 &lt;p&gt;I have polished the slides to reinforce and elaborate on key points.
-Please contact me with any follow up questions or comments.
-I am happy to give this talk to any organization and I have provided the slides for you to present as well!&lt;/p&gt;
+I am happy to give this talk to any organization
+ and I have provided the slides for you to present as well!
+Please contact me with any follow up questions or comments.&lt;/p&gt;
 
 &lt;h3 id=&#34;abstract:022f818b4b335cef52e2158f1457d81b&#34;&gt;Abstract&lt;/h3&gt;
 
-&lt;p&gt;A brief history of the DevOps movement and community with a cross section view of many methods and practices that are breaking down the barriers to achieve agility and continuous delivery.
-DevOps seems intangible: you can&amp;rsquo;t buy it, there is no certification, and frankly, there is no universal definition, yet everyone wants it or already &amp;ldquo;does&amp;rdquo; it, but still has trouble identifying it.
+&lt;p&gt;A brief history of the DevOps movement and community with a cross section view of many methods
+and practices that are breaking down the barriers to achieve agility and continuous delivery.
+DevOps seems intangible: you can&amp;rsquo;t buy it, there is no certification, and frankly, there is no
+universal definition, yet everyone wants it or already &amp;ldquo;does&amp;rdquo; it, but still has trouble
+identifying it.
 I will cover many topics so that you can understand and chart your own journey to DevOps.&lt;/p&gt;
+
+&lt;h3 id=&#34;agenda:022f818b4b335cef52e2158f1457d81b&#34;&gt;Agenda&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A Definition and Cultural Rendering of DevOps&lt;/li&gt;
+&lt;li&gt;A Brief History of DevOps&lt;/li&gt;
+&lt;li&gt;DevOps Impact on Organizations&lt;/li&gt;
+&lt;li&gt;The Journey to DevOps:
+
+&lt;ul&gt;
+&lt;li&gt;Cloud Agility&lt;/li&gt;
+&lt;li&gt;Infrastructure as Code&lt;/li&gt;
+&lt;li&gt;Test, Build, Deploy Pattern&lt;/li&gt;
+&lt;li&gt;Pets versus Cattle versus Bacteria&lt;/li&gt;
+&lt;li&gt;Infrastructure Models and Orchestration&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Epilogue: BusinessOps&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;devops-definition:022f818b4b335cef52e2158f1457d81b&#34;&gt;DevOps Definition&lt;/h3&gt;
+
+&lt;p&gt;DevOps is the &lt;em&gt;process&lt;/em&gt; of removing all friction between the developer and customer value.&lt;/p&gt;
+
+&lt;p&gt;However, DevOps is a culturally rendered term: it is practiced by people and dynamically bound
+to their capabilities.&lt;/p&gt;
+
+&lt;p&gt;Elaboration: &lt;a href=&#34;https://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&#34;&gt;I Dream of DevOps, but what is DevOps?&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;presentation:022f818b4b335cef52e2158f1457d81b&#34;&gt;Presentation&lt;/h3&gt;
 
 &lt;p&gt;The actual content of this blog post has been given as a talk:&lt;/p&gt;
 
@@ -43,7 +76,7 @@ San Jose, CA
 &lt;ul&gt;
 &lt;li&gt;Slides: &lt;a href=&#34;../../slides/devops-demystified.html&#34;&gt;DevOps Demystified&lt;/a&gt; || &lt;a href=&#34;../../slides/devops-demystified.md&#34;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Nice turnout of 13 registered, 85 interested, and about 40 attendees.&lt;/li&gt;
-&lt;li&gt;A few tweets ensued:&lt;/li&gt;
+&lt;li&gt;Tweets ensued:&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
