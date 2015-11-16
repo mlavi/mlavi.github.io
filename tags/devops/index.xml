@@ -249,160 +249,159 @@ for simple visual flow parsing, and is organized vertically.&lt;/p&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Source code: devops_automation.pu
-
-@startuml
-title DevOps Automation (2015-03-11) by Mark Lavi
-state Development {
-  Development: language
-  Development: editor
-  Development: code tools
-  Development: virtual environment
-  Development: runtime
-  Development: frameworks
-  Development: libraries
-  BDD --&gt; UnitTest
-  BDD: featureDescription
-  Code: featureDescription
-  Code: testCases
-  Code: testData
-  Code: functionality
-  Code: configurationData
-  Code: deployability
-  Code: monitors
-  Code: metrics
-  Code: logs
-  Code -&gt; UnitTest : OnSave
-  Code --&gt; BDD
-  Code --&gt; LocalBuild
-  Code --&gt; LocalRepo : commit
-  UnitTest --&gt; LocalRepo
-  UnitTest: testCases
-  UnitTest: testData
-  LocalBuild --&gt; LocalStack
-  LocalBuild: localArtifact
-  LocalBuild: localTestJobs
-  LocalBuild: localBuildAutomationSystemContainer?
-  LocalBuild -&gt; ArtifactRepository : manual process\nDesk Build\ncandidate
-  LocalRepo -&gt; ReviewSystem
-  LocalRepo -&gt; CodeRepository : push
-  LocalStack: LocalDeployTest?
-  LocalStack: LocalIntegrationTest?
-}
-state CodeRepository {
-  CodeRepository : branch
-  CodeRepository : hash
-  CodeRepository : tag
-  preCommitHook -&gt; BuildAutomationSystem
-  preCommitHook: see Build,TestJobs
-  postCommitHook -&gt; BuildAutomationSystem
-  postCommitHook: see Build,TestJobs
-  webHook: see Build,TestJobs
-}
-state ReviewSystem {
-  ReviewSystem: master or all branches?
-  ReviewSystem -&gt; BuildAutomationSystem: candidate
-  ReviewSystem -&gt; CodeRepository : +N = passed
-  ReviewSystem: +1 BuildJob
-  ReviewSystem: +1 TestJob
-  ReviewSystem: +1 DeployJob
-  ReviewSystem: +1 HumanReview
-  ReviewSystem: +1 PeriodicTestJobs
-}
-state BuildAutomationSystem {
-  BuildAutomationSystem: perBranch
-  BuildAutomationSystem: perHash
-  BuildAutomationSystem: perTag  
-  [*] -&gt; BuildScheduler
-  [*] --&gt; BuildJobs: ad-hoc (manual)
-  [*] --&gt; DeployJobs: promote
-  BuildJobs -&gt; TestJobs
-  BuildJobs -&gt; ArtifactRepository: Candidate
-  BuildJobs: localArtifact
-  TestJobs --&gt; ConfigurationSystem : updateManifest
-  TestJobs -&gt; ArtifactRepository: Official
-  TestJobs -&gt; TestAutomationSystem
-  TestJobs: PeriodicTests
-  TestJobs: BasicCodeAcceptanceTests
-  DeployJobs -up-&gt; DeploySystem
-  DeployJobs: artifact
-  DeployJobs: manifest
-  DeployJobs: stack
-  DeployJobs -&gt; ConfigurationSystem: updateManifest
-  BuildScheduler --&gt; TestJobs
-  BuildScheduler: e.g. Nightly
-}
-state TestAutomationSystem {
-  TestAutomationSystem -&gt; DeployJobs
-  TestAutomationSystem: Simulator
-  TestAutomationSystem: FeatureIntegrationTesting
-  TestAutomationSystem: FullSuiteTesting  
-  TestAutomationSystem: LoadTesting
-  TestAutomationSystem: RegressionTesting
-  TestAutomationSystem: SoakTesting
-  TestAutomationSystem -&gt; ConfigurationSystem: updateManifest
-}
-state ArtifactRepository {
-  ArtifactRepository: candidate
-  ArtifactRepository: official
-}
-state ConfigurationSystem {
-  ConfigurationSystem: manifest
-  ConfigurationSystem: deployability
-  ConfigurationSystem: configurationData
-}
-state Monitors {
-  Monitors: SLA
-  Monitors -&gt; Metrics
-  Monitors -&gt; Logs
-}
-state Logs {
-  Logs -&gt; Metrics
-  Logs -&gt; Monitors
-}
-state Metrics {
-  Metrics: SLA
-}
-state AuthenticationSystem {
-  AuthenticationSystem: LDAP, SAML, etc.
-}
-state DeploySystem {
-  DeploySystem -&gt; ConfigurationSystem
-  DeploySystem: entireStack
-  DeploySystem: byProfileOnStack
-  DeploySystem: byRoleOnStack
-  DeploySystem: read, updateManifest
-  DeploySystem: bill of materials (BoM)
-  DeploySystem: readConfigurationData
-  Provision -&gt; Stack
-  Provision: profile/role@stack
-  Provision: applyManifest
-  Upgrade -&gt; Stack
-  Upgrade: role@stack
-  Upgrade: applyManifest
-  Canary -&gt; Stack
-  Canary: % existing role@stack
-  Canary: applyManifest
-}
-state Stack {
-  Stack: name/environment\n(e.g. Feature, Team, Release, dev/qa/stage/prod)
-  [*] --&gt; node
-  [*] -&gt; ProviderInfrastructure
-  ProviderInfrastructure: load balancer
-  ProviderInfrastructure: DNS
-  ProviderInfrastructure: monitor
-  ProviderInfrastructure: scheduler, autoscaler
-  ProviderInfrastructure --&gt; Monitors
-  ProviderInfrastructure --&gt; node
-  node: provider
-  node: profile
-  node: role
-  node: monitor
-  node -&gt; Monitors
-  node -&gt; Logs
-  node -&gt; Metrics
-}
-@enduml
-
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;startuml&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;DevOps&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Automation&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2015&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;03&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;by&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Mark&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Lavi&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Development&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Development&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;language&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Development&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;editor&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Development&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;code&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;tools&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Development&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;virtual&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;environment&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Development&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;runtime&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Development&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;frameworks&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Development&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;libraries&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;BDD&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;UnitTest&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;BDD&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;featureDescription&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;featureDescription&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;testCases&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;testData&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;functionality&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;configurationData&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;deployability&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;monitors&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;metrics&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;logs&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;UnitTest&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;OnSave&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;BDD&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalBuild&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Code&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalRepo&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;commit&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;UnitTest&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalRepo&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;UnitTest&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;testCases&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;UnitTest&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;testData&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalBuild&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalStack&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalBuild&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;localArtifact&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalBuild&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;localTestJobs&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalBuild&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;localBuildAutomationSystemContainer&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;?&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalBuild&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ArtifactRepository&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;manual&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;process&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;nDesk&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Build&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;ncandidate&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalRepo&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ReviewSystem&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalRepo&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;CodeRepository&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;push&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalStack&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalDeployTest&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;?&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalStack&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;LocalIntegrationTest&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;?&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;CodeRepository&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;CodeRepository&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;branch&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;CodeRepository&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;hash&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;CodeRepository&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;tag&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;preCommitHook&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildAutomationSystem&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;preCommitHook&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;see&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Build&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TestJobs&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;postCommitHook&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildAutomationSystem&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;postCommitHook&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;see&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Build&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TestJobs&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;webHook&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;see&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Build&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TestJobs&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ReviewSystem&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ReviewSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;master&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;all&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;branches&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;?&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ReviewSystem&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildAutomationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;candidate&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ReviewSystem&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;CodeRepository&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;N&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;passed&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ReviewSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildJob&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ReviewSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;TestJob&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ReviewSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;DeployJob&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ReviewSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;HumanReview&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ReviewSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;PeriodicTestJobs&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildAutomationSystem&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildAutomationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;perBranch&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildAutomationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;perHash&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildAutomationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;perTag&lt;/span&gt;  
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildScheduler&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildJobs&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ad&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;hoc&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;manual&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;DeployJobs&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;promote&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildJobs&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;TestJobs&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildJobs&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ArtifactRepository&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Candidate&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildJobs&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;localArtifact&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestJobs&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ConfigurationSystem&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;updateManifest&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestJobs&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ArtifactRepository&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Official&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestJobs&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;TestAutomationSystem&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestJobs&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;PeriodicTests&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestJobs&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;BasicCodeAcceptanceTests&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeployJobs&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;up&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;DeploySystem&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeployJobs&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;artifact&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeployJobs&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;manifest&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeployJobs&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;stack&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeployJobs&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ConfigurationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;updateManifest&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildScheduler&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;TestJobs&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;BuildScheduler&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;g&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Nightly&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;TestAutomationSystem&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestAutomationSystem&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;DeployJobs&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestAutomationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Simulator&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestAutomationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;FeatureIntegrationTesting&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestAutomationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;FullSuiteTesting&lt;/span&gt;  
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestAutomationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;LoadTesting&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestAutomationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;RegressionTesting&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestAutomationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;SoakTesting&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;TestAutomationSystem&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ConfigurationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;updateManifest&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ArtifactRepository&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ArtifactRepository&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;candidate&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ArtifactRepository&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;official&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ConfigurationSystem&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ConfigurationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;manifest&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ConfigurationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;deployability&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ConfigurationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;configurationData&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Monitors&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Monitors&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;SLA&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Monitors&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Metrics&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Monitors&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Logs&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Logs&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Logs&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Metrics&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Logs&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Monitors&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Metrics&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Metrics&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;SLA&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;AuthenticationSystem&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;AuthenticationSystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;LDAP&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;SAML&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;etc&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;.&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;DeploySystem&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeploySystem&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ConfigurationSystem&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeploySystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;entireStack&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeploySystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;byProfileOnStack&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeploySystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;byRoleOnStack&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeploySystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;read&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;updateManifest&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeploySystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;bill&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;materials&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;BoM&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;DeploySystem&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;readConfigurationData&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Provision&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Stack&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Provision&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;profile&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;role&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;stack&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Provision&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;applyManifest&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Upgrade&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Stack&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Upgrade&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;role&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;stack&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Upgrade&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;applyManifest&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Canary&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Stack&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Canary&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;%&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;existing&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;role&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;stack&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Canary&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;applyManifest&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Stack&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;Stack&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;environment&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;g&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Feature&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Team&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Release&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;dev&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;qa&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;stage&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;prod&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;node&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;ProviderInfrastructure&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ProviderInfrastructure&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;load&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;balancer&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ProviderInfrastructure&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;DNS&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ProviderInfrastructure&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;monitor&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ProviderInfrastructure&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;scheduler&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;autoscaler&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ProviderInfrastructure&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Monitors&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;ProviderInfrastructure&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;--&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;node&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;node&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;provider&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;node&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;profile&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;node&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;role&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;node&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;monitor&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;node&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Monitors&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;node&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Logs&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;node&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;Metrics&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;enduml&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 
 &lt;p&gt;I will put this under revision control in the Infrastructure as Code project I&amp;rsquo;m undertaking.
