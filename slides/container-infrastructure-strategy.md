@@ -201,7 +201,7 @@ and service discovery and configuration management systems
 * [mark@calm.io](mailto:mark@calm.io)
     * Full Blog Entry = [http://mlavi.github.io/post/container-infrastructure-strategy/](http://mlavi.github.io/post/container-infrastructure-strategy/)
 * Resources for this talk:
-    * James Russell, DevOps engineer at Sony Computer Entertainment America, DevNet Team [CoreOS MeetUp Presentation](https://www.youtube.com/watch?v=M9hBsRUeRdg)
+    * James Russell, DevOps engineer at Sony Computer Entertainment America, DevNet Team [CoreOS Meetup Presentation](https://www.youtube.com/watch?v=M9hBsRUeRdg)
     * [Getting Weird with Containers](https://www.youtube.com/watch?v=gMpldbcMHuI)
       a.k.a. "Exploring Strategies for Minimal Containerization" by Brian Harrington,
       Principal Architect at CoreOS
