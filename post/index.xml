@@ -22,15 +22,10 @@
  for many software engineering organizations. Let me define DevOps to help you
  understand and chart your journey to DevOps. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!&lt;/p&gt;
 
-&lt;h3 id=&#34;update-2015-11-09:022f818b4b335cef52e2158f1457d81b&#34;&gt;Update: 2015-11-09&lt;/h3&gt;
+&lt;h3 id=&#34;update-2015-11-18:022f818b4b335cef52e2158f1457d81b&#34;&gt;Update: 2015-11-18&lt;/h3&gt;
 
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I will present Demystifying &lt;a href=&#34;https://twitter.com/hashtag/DevOps?src=hash&#34;&gt;#DevOps&lt;/a&gt; at the &lt;a href=&#34;https://twitter.com/awscloud&#34;&gt;@awscloud&lt;/a&gt; San Mateo MeetUp on Tuesday, November 17 6:30pm &lt;a href=&#34;https://twitter.com/Coupa&#34;&gt;@Coupa&lt;/a&gt;. RSVP = &lt;a href=&#34;https://t.co/skrJVpeGEI&#34;&gt;https://t.co/skrJVpeGEI&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mark (@calm_mark) &lt;a href=&#34;https://twitter.com/calm_mark/status/662066673428467716&#34;&gt;November 5, 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;update-2015-10-16:022f818b4b335cef52e2158f1457d81b&#34;&gt;Update: 2015-10-16&lt;/h3&gt;
-
-&lt;p&gt;I have polished the slides twice to reinforce and elaborate on key points.
-I am happy to give this talk to any organization
+&lt;p&gt;I have polished and reorganized the slides a few times to improve the flow, reinforce,
+ and elaborate on key points.  I am happy to give this talk to any organization
  and I have provided the slides for your evangelism efforts as well!
 Please contact me with any follow up questions or comments.&lt;/p&gt;
 
@@ -57,9 +52,9 @@ I will cover many topics so that you can understand and chart your journey to De
 &lt;ul&gt;
 &lt;li&gt;Agile Infrastructure in the Cloud&lt;/li&gt;
 &lt;li&gt;Infrastructure as Code&lt;/li&gt;
-&lt;li&gt;Infrastructure Orchestration and Models&lt;/li&gt;
-&lt;li&gt;Test, Build, Deploy Pattern&lt;/li&gt;
 &lt;li&gt;Pets versus Cattle versus Bacteria&lt;/li&gt;
+&lt;li&gt;Test, Build, Deploy Pattern&lt;/li&gt;
+&lt;li&gt;Infrastructure Orchestration and Models&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Epilogue: BusinessOps
 
@@ -79,14 +74,28 @@ to their capabilities.&lt;/p&gt;
 
 &lt;h3 id=&#34;presentation:022f818b4b335cef52e2158f1457d81b&#34;&gt;Presentation&lt;/h3&gt;
 
+&lt;ul&gt;
+&lt;li&gt;Slides: &lt;a href=&#34;../slides/devops-demystified.html&#34;&gt;DevOps Demystified&lt;/a&gt; || &lt;a href=&#34;../slides/devops-demystified.md&#34;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;The actual content of this blog post has been given as a talk:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;2015-10-03: presented at &lt;a href=&#34;https://www.siliconvalley-codecamp.com/Session/2015/demystifying-devops&#34;&gt;Silicon Valley Code Camp 2015&lt;/a&gt;
-San Jose, CA
+&lt;li&gt;2015-11-17: presented at &lt;a href=&#34;http://www.meetup.com/awsgurus/events/226547082/&#34;&gt;AWS Bay Area Meetup&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Slides: &lt;a href=&#34;../slides/devops-demystified.html&#34;&gt;DevOps Demystified&lt;/a&gt; || &lt;a href=&#34;../slides/devops-demystified.md&#34;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Typical Meetup attrition: 75 registered, 25+ attended.&lt;/li&gt;
+&lt;li&gt;Tweets ensued:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;RT &lt;a href=&#34;https://twitter.com/raravena80&#34;&gt;@raravena80&lt;/a&gt;: Awesome meetup at &lt;a href=&#34;https://twitter.com/Coupa&#34;&gt;@Coupa&lt;/a&gt; HQ with &lt;a href=&#34;https://twitter.com/calm_mark&#34;&gt;@calm_mark&lt;/a&gt; !! &lt;a href=&#34;https://t.co/5kljKrreD3&#34;&gt;pic.twitter.com/5kljKrreD3&lt;/a&gt;&lt;/p&gt;&amp;mdash; Coupa Software (@Coupa) &lt;a href=&#34;https://twitter.com/Coupa/status/666818169798021120&#34;&gt;November 18, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2015-10-03: presented at &lt;a href=&#34;https://www.siliconvalley-codecamp.com/Session/2015/demystifying-devops&#34;&gt;Silicon Valley Code Camp 2015&lt;/a&gt;
+
+&lt;ul&gt;
 &lt;li&gt;Nice turnout of 13 registered, 85 interested, and about 40 attendees.&lt;/li&gt;
 &lt;li&gt;Tweets ensued:&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
