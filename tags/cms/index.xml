@@ -38,6 +38,8 @@ and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;
  with &lt;a href=&#34;http://jekyllrb.com/docs/github-pages/&#34;&gt;Jekyll and GitHub Pages&lt;/a&gt; before settling on
  &lt;a href=&#34;http://gohugo.io/overview/introduction/&#34;&gt;Hugo&lt;/a&gt;: it has been a fascinating study in scope creep.&lt;/p&gt;
 
+&lt;p&gt;Recently, I discovered &lt;a href=&#34;http://www.mkdocs.org/&#34;&gt;MkDocs&lt;/a&gt; for &amp;ldquo;Project documentation with Markdown.&amp;rdquo;&lt;/p&gt;
+
 &lt;p&gt;But I&amp;rsquo;m prototyping, so it&amp;rsquo;s all good, right?&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ll update later with how I&amp;rsquo;ve navigated the static web site blog quest, thus far it has been an
@@ -61,11 +63,13 @@ and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;
  &lt;a href=&#34;http://drupal.org&#34;&gt;Drupal&lt;/a&gt;,
  &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt;,
  and &lt;a href=&#34;http://modx.com&#34;&gt;ModX&lt;/a&gt;.
-Over the years, you inevitably fall &lt;em&gt;out of love&lt;/em&gt; after the first month with complex and brittle software
-when you extend it into the enterprise by adding integrations, plugins, etc. which have their own security
-attack surface, dependencies, update schedule, and incompatibilities.&lt;/p&gt;
+over the years, you inevitably fall &lt;em&gt;out of love&lt;/em&gt; with them after the first month. You discover a
+landscape of complex and brittle software when you extend a web CMS into the enterprise by adding
+integrations, plugins, etc. which have their own security attack surface, dependencies, update schedule,
+and incompatibilities.&lt;/p&gt;
 
-&lt;p&gt;You wonder if Share Point is just as evil (I&amp;rsquo;m sure it is!) and will I fall out of love with a static CMS?&lt;/p&gt;
+&lt;p&gt;You wonder if Share Point and Alfresco is just as evil (I am sure they are) and
+you wonder if you will fall out of love with a static CMS?&lt;/p&gt;
 
 &lt;p&gt;This is not a unique problem, it is shared by many other classes of software (like Jenkins, JIRA,
 and your web browser) and once you extend any API or customize any work flow (Oracle EBS). It is
