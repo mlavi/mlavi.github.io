@@ -1353,9 +1353,9 @@ aside {
 <li>The Journey to DevOps<ul>
 <li>Agile Infrastructure in the Cloud</li>
 <li>Infrastructure as Code</li>
-<li>Infrastructure Orchestration and Models</li>
-<li>Test, Build, Deploy Pattern</li>
 <li>Pets versus Cattle versus Bacteria</li>
+<li>Test, Build, Deploy Pattern</li>
+<li>Infrastructure Orchestration and Models</li>
 </ul>
 </li>
 <li>Epilogue: BusinessOps<ul>
@@ -1468,7 +1468,9 @@ aside {
 <h1 align="center">DevOps is the <em>process</em> of removing all friction
 <br />between the developer and customer value.</h1>
 
-<p>DevOps has many implications: values, people, tools, and practices.</p>
+<p>DevOps has many implications (values, tools, and practices) and it is
+dynamically bound to the capabilities of the people who practice it,
+therefore it will vary by organization.</p>
 <ul>
 <li>Illustration: <a href="http://mlavi.github.io/post/devops-automation/">DevOps Automation Diagram</a></li>
 <li>Rumination: <a href="https://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/">I Dream of DevOps, but What is DevOps?</a></li>
@@ -1585,7 +1587,7 @@ aside {
             <section><ul>
 <li>2013: <a href="https://en.wikipedia.org/wiki/The_Phoenix_Project:_A_Novel_About_IT,_DevOps,_and_Helping_Your_Business_Win">The Phoenix Project</a>
   book by Gene Kim, Kevin Behr, George Spafford</li>
-<li>Today: a mysterious movement, buzzword, a dynamic community!<ul>
+<li>Today: a mysterious movement, buzzword, and a dynamic community!<ul>
 <li>Industry studies showing DevOps enables business agility, lower MTTF</li>
 <li>"Rediscovery" of lean processes, <a href="http://www.agilemanifesto.org/">Agile Manifesto</a>, etc.</li>
 </ul>
@@ -1703,9 +1705,9 @@ aside {
             <section><ul>
 <li>Agile Infrastructure in the Cloud</li>
 <li>Infrastructure as Code</li>
-<li>Infrastructure Orchestration and Models </li>
-<li>Test, Build, Deploy Pattern</li>
 <li>Pets versus Cattle versus Bacteria</li>
+<li>Test, Build, Deploy Pattern</li>
+<li>Infrastructure Orchestration and Models </li>
 </ul></section>
             
           </div>
@@ -1888,21 +1890,20 @@ aside {
         <div class="slide slide-16">
           <div class="inner">
             
-            <header><h2>Infrastructure Orchestration</h2></header>
+            <header><h2>Pets versus Cattle</h2></header>
             
             
-            <section><ul>
-<li>Orchestration of the entire distributed system/stack/environment<ul>
-<li>Application management lifecycle: all dependencies and operations</li>
+            <section><h2>Immutable Infrastructure</h2>
+<ul>
+<li>Cloud agility enables ephemeral fleets<ul>
+<li><em>Cattle</em> = numbered, can fail and reprovision anytime</li>
+<li><em>Pet</em> = uptime of years, named, backup maintenence</li>
 </ul>
 </li>
-<li>Continuous Deployment + Upgrades:<ul>
-<li>Blue-Green (Red-Black): parallel, atomic cutover</li>
-<li>Rolling vs. canary: incremental cutover</li>
-<li>Test and measure your operations<ul>
-<li>Close the loop to Continuous Delivery</li>
-</ul>
-</li>
+<li>Build time infrastructure artifacts = build system + configuration management</li>
+<li>Ideal for non-persistant tiers:<ul>
+<li>Simplify deployment: ship logs, metrics, etc. off the "box"</li>
+<li>Roll 'em in and out of the load balancer, measure twice!</li>
 </ul>
 </li>
 </ul></section>
@@ -1932,19 +1933,20 @@ aside {
         <div class="slide slide-17">
           <div class="inner">
             
-            <header><h2>Infrastructure Models</h2></header>
+            <header><h2>Pets vs. Cattle: Sidebar</h2></header>
             
             
-            <section><ul>
-<li>Local versus Global Redundancy<ul>
-<li>Load balance everything</li>
-<li>Clustered everything</li>
+            <section><h2>Microservices</h2>
+<ul>
+<li>When monolithic, long-lived infrastructure decomposes, so goes the application...</li>
+<li>Refactor and decompose the monolith into public API modules (REST),
+  which enables independent, continuous:<ul>
+<li>delivery = build and deploy</li>
+<li>testing and monitoring</li>
+<li>(per component, team, feature, etc.)</li>
 </ul>
 </li>
-<li>Automate runbooks = <em>operations as code</em><ul>
-<li>ChatOps = democratized operations are agile ops</li>
-</ul>
-</li>
+<li>API version management and feature lightness topics</li>
 </ul></section>
             
           </div>
@@ -1972,6 +1974,49 @@ aside {
         <div class="slide slide-18">
           <div class="inner">
             
+            <header><h2>Pets vs. Cattle vs. Bacteria (continued)</h2></header>
+            
+            
+            <section><h2>Containers</h2>
+<ul>
+<li>Agile, lightweight, smaller, faster VMs:<ul>
+<li>ideal approach for <em>continuous delivery</em> of <em>immutable infrastructure</em> artifacts, especially microservices</li>
+<li>minimal difference between laptop and production</li>
+<li><em>Bacteria</em> = lifecycle on the order of seconds: build, run, test, destroy</li>
+</ul>
+</li>
+<li>Early days: Docker as a tool versus Docker tool set as a platform<ul>
+<li>PERL motto = <a href="http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">There is more than one way to do it</a>.</li>
+</ul>
+</li>
+<li>Production challenges remain: orchestration, health, networking, persistence, dynamic configuration</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="devops-demystified.md">devops-demystified.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/24
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: devops-demystified.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-19">
+          <div class="inner">
+            
             <header><h2>Test, Build, Deploy Pattern</h2></header>
             
             
@@ -1997,7 +2042,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              18/24
+              19/24
             </aside>
           </footer>
         </div>
@@ -2005,7 +2050,7 @@ aside {
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-19">
+        <div class="slide slide-20">
           <div class="inner">
             
             <header><h2>Test, Build, Deploy Pattern (continued)</h2></header>
@@ -2040,49 +2085,6 @@ aside {
             </aside>
             
             <aside class="page_number">
-              19/24
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: devops-demystified.md -->
-      <div class="slide-wrapper">
-        <div class="slide slide-20">
-          <div class="inner">
-            
-            <header><h2>Pets versus Cattle</h2></header>
-            
-            
-            <section><h2>Immutable Infrastructure</h2>
-<ul>
-<li>Cloud agility enables ephemeral fleets<ul>
-<li><em>Cattle</em> = numbered, can fail and reprovision anytime</li>
-<li><em>Pet</em> = uptime of years, named, backup maintenence</li>
-</ul>
-</li>
-<li>Build time infrastructure artifacts = build system + configuration management</li>
-<li>Ideal for non-persistant tiers:<ul>
-<li>Simplify deployment: ship logs, metrics, etc. off the "box"</li>
-<li>Roll 'em in and out of the load balancer, measure twice!</li>
-</ul>
-</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="devops-demystified.md">devops-demystified.md</a>
-            </aside>
-            
-            <aside class="page_number">
               20/24
             </aside>
           </footer>
@@ -2094,20 +2096,23 @@ aside {
         <div class="slide slide-21">
           <div class="inner">
             
-            <header><h2>Pets vs. Cattle: Sidebar</h2></header>
+            <header><h2>Infrastructure Orchestration</h2></header>
             
             
-            <section><h2>Microservices</h2>
-<ul>
-<li>When monolithic, long-lived infrastructure decomposes, so goes the application...</li>
-<li>Refactor and decompose the monolith into public API modules (REST),
-  which enables independent, continuous:<ul>
-<li>delivery = build and deploy</li>
-<li>testing and monitoring</li>
-<li>(per component, team, feature, etc.)</li>
+            <section><ul>
+<li>Orchestration of the entire distributed system/stack/environment<ul>
+<li>Application management lifecycle: all dependencies and operations</li>
 </ul>
 </li>
-<li>API version management and feature lightness topics</li>
+<li>Continuous Deployment + Upgrades:<ul>
+<li>Blue-Green (Red-Black): parallel, atomic cutover</li>
+<li>Rolling vs. canary: incremental cutover</li>
+<li>Test and measure your operations<ul>
+<li>Close the loop to Continuous Delivery</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul></section>
             
           </div>
@@ -2135,22 +2140,19 @@ aside {
         <div class="slide slide-22">
           <div class="inner">
             
-            <header><h2>Pets vs. Cattle vs. Bacteria (continued)</h2></header>
+            <header><h2>Infrastructure Models</h2></header>
             
             
-            <section><h2>Containers</h2>
-<ul>
-<li>Agile, lightweight, smaller, faster VMs:<ul>
-<li>ideal approach for <em>continuous delivery</em> of <em>immutable infrastructure</em> artifacts, especially microservices</li>
-<li>minimal difference between laptop and production</li>
-<li><em>Bacteria</em> = lifecycle on the order of seconds: build, run, test, destroy</li>
+            <section><ul>
+<li>Local versus Global Redundancy<ul>
+<li>Load balance everything</li>
+<li>Clustered everything</li>
 </ul>
 </li>
-<li>Early days: Docker as a tool versus Docker tool set as a platform<ul>
-<li>PERL motto = <a href="http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">There is more than one way to do it</a>.</li>
+<li>Automate runbooks = <em>operations as code</em><ul>
+<li>ChatOps = democratized operations are agile ops</li>
 </ul>
 </li>
-<li>Production challenges remain: orchestration, health, networking, persistence, dynamic configuration</li>
 </ul></section>
             
           </div>
@@ -2346,37 +2348,37 @@ aside {
         </tr>
         
         <tr id="toc-row-16" class="sub">
-          <th><a href="#slide16">Infrastructure Orchestration</a></th>
+          <th><a href="#slide16">Pets versus Cattle</a></th>
           <td><a href="#slide16">16</a></td>
         </tr>
         
         <tr id="toc-row-17" class="sub">
-          <th><a href="#slide17">Infrastructure Models</a></th>
+          <th><a href="#slide17">Pets vs. Cattle: Sidebar</a></th>
           <td><a href="#slide17">17</a></td>
         </tr>
         
         <tr id="toc-row-18" class="sub">
-          <th><a href="#slide18">Test, Build, Deploy Pattern</a></th>
+          <th><a href="#slide18">Pets vs. Cattle vs. Bacteria (continued)</a></th>
           <td><a href="#slide18">18</a></td>
         </tr>
         
         <tr id="toc-row-19" class="sub">
-          <th><a href="#slide19">Test, Build, Deploy Pattern (continued)</a></th>
+          <th><a href="#slide19">Test, Build, Deploy Pattern</a></th>
           <td><a href="#slide19">19</a></td>
         </tr>
         
         <tr id="toc-row-20" class="sub">
-          <th><a href="#slide20">Pets versus Cattle</a></th>
+          <th><a href="#slide20">Test, Build, Deploy Pattern (continued)</a></th>
           <td><a href="#slide20">20</a></td>
         </tr>
         
         <tr id="toc-row-21" class="sub">
-          <th><a href="#slide21">Pets vs. Cattle: Sidebar</a></th>
+          <th><a href="#slide21">Infrastructure Orchestration</a></th>
           <td><a href="#slide21">21</a></td>
         </tr>
         
         <tr id="toc-row-22" class="sub">
-          <th><a href="#slide22">Pets vs. Cattle vs. Bacteria (continued)</a></th>
+          <th><a href="#slide22">Infrastructure Models</a></th>
           <td><a href="#slide22">22</a></td>
         </tr>
         

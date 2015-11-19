@@ -25,9 +25,9 @@ We will cover the following topics so that you can understand and chart your own
  - The Journey to DevOps
      - Agile Infrastructure in the Cloud
      - Infrastructure as Code
-     - Infrastructure Orchestration and Models
-     - Test, Build, Deploy Pattern
      - Pets versus Cattle versus Bacteria
+     - Test, Build, Deploy Pattern
+     - Infrastructure Orchestration and Models
  - Epilogue: BusinessOps
      - We are all DevOps: your call to action!
 ---
@@ -61,7 +61,9 @@ A culturally rendered term, but Mark's time tested definition follows:
 <h1 align="center">DevOps is the <em>process</em> of removing all friction
 <br />between the developer and customer value.</h1>
 
-DevOps has many implications: values, people, tools, and practices.
+DevOps has many implications (values, tools, and practices) and it is
+dynamically bound to the capabilities of the people who practice it,
+therefore it will vary by organization.
 
 - Illustration: [DevOps Automation Diagram](http://mlavi.github.io/post/devops-automation/)
 - Rumination: [I Dream of DevOps, but What is DevOps?](https://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/)
@@ -92,7 +94,7 @@ Ask yourself: *Does this [thing] meet our definition of DevOps?*
 
 - 2013: [The Phoenix Project](https://en.wikipedia.org/wiki/The_Phoenix_Project:_A_Novel_About_IT,_DevOps,_and_Helping_Your_Business_Win)
   book by Gene Kim, Kevin Behr, George Spafford
-- Today: a mysterious movement, buzzword, a dynamic community!
+- Today: a mysterious movement, buzzword, and a dynamic community!
     - Industry studies showing DevOps enables business agility, lower MTTF
     - "Rediscovery" of lean processes, [Agile Manifesto](http://www.agilemanifesto.org/), etc.
 
@@ -121,9 +123,9 @@ Reference: [The History Of DevOps](http://itrevolution.com/the-history-of-devops
 # The Journey to DevOps: Overview
  - Agile Infrastructure in the Cloud
  - Infrastructure as Code
- - Infrastructure Orchestration and Models 
- - Test, Build, Deploy Pattern
  - Pets versus Cattle versus Bacteria
+ - Test, Build, Deploy Pattern
+ - Infrastructure Orchestration and Models 
 
 ---
 ## Agile Infrastructure in the Cloud
@@ -164,50 +166,6 @@ Reference: [The History Of DevOps](http://itrevolution.com/the-history-of-devops
     - I am searching for others to discuss this topic!
 
 ---
-## Infrastructure Orchestration
-
-- Orchestration of the entire distributed system/stack/environment
-    - Application management lifecycle: all dependencies and operations
-- Continuous Deployment + Upgrades:
-    - Blue-Green (Red-Black): parallel, atomic cutover
-    - Rolling vs. canary: incremental cutover
-    - Test and measure your operations
-         - Close the loop to Continuous Delivery
-
----
-## Infrastructure Models
-
-- Local versus Global Redundancy
-    - Load balance everything
-    - Clustered everything
-- Automate runbooks = *operations as code*
-    - ChatOps = democratized operations are agile ops
-
----
-## Test, Build, Deploy Pattern
-
-Between development and production:
-
- - the differences should be minimized
- - troubleshooting should be no different.
-
-Therefore, development environments *SHOULD EVOLVE* from fully mocked
- systems to fully integrated application environments, leading to:
-
----
-## Test, Build, Deploy Pattern (continued)
-
-- __Test__ on your laptop
-    - Develop to satisfy your testable code
-- __Build__ on your laptop
-- __Deploy__ on your laptop
-    - Make code configurable with tools
-    - Repeat for integration, metrics, logs, etc.
-    - Commit to repository -> continuous integration & delivery
-
-Reference: [BTD Pattern Blog Entry](http://mlavi.github.io/post/devops-btd-pattern/)
-
----
 ## Pets versus Cattle
 
 ## Immutable Infrastructure
@@ -245,6 +203,50 @@ Reference: [BTD Pattern Blog Entry](http://mlavi.github.io/post/devops-btd-patte
 - Early days: Docker as a tool versus Docker tool set as a platform
     - PERL motto = [There is more than one way to do it](http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it).
 - Production challenges remain: orchestration, health, networking, persistence, dynamic configuration
+
+---
+## Test, Build, Deploy Pattern
+
+Between development and production:
+
+ - the differences should be minimized
+ - troubleshooting should be no different.
+
+Therefore, development environments *SHOULD EVOLVE* from fully mocked
+ systems to fully integrated application environments, leading to:
+
+---
+## Test, Build, Deploy Pattern (continued)
+
+- __Test__ on your laptop
+    - Develop to satisfy your testable code
+- __Build__ on your laptop
+- __Deploy__ on your laptop
+    - Make code configurable with tools
+    - Repeat for integration, metrics, logs, etc.
+    - Commit to repository -> continuous integration & delivery
+
+Reference: [BTD Pattern Blog Entry](http://mlavi.github.io/post/devops-btd-pattern/)
+
+---
+## Infrastructure Orchestration
+
+- Orchestration of the entire distributed system/stack/environment
+    - Application management lifecycle: all dependencies and operations
+- Continuous Deployment + Upgrades:
+    - Blue-Green (Red-Black): parallel, atomic cutover
+    - Rolling vs. canary: incremental cutover
+    - Test and measure your operations
+         - Close the loop to Continuous Delivery
+
+---
+## Infrastructure Models
+
+- Local versus Global Redundancy
+    - Load balance everything
+    - Clustered everything
+- Automate runbooks = *operations as code*
+    - ChatOps = democratized operations are agile ops
 
 ---
 # Epilogue: BusinessOps
