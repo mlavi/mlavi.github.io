@@ -20,12 +20,12 @@
 
 &lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
  for many software engineering organizations. Let me define DevOps to help you
- understand and chart your journey to DevOps. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!&lt;/p&gt;
+ understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!&lt;/p&gt;
 
 &lt;h3 id=&#34;update-2015-11-18:022f818b4b335cef52e2158f1457d81b&#34;&gt;Update: 2015-11-18&lt;/h3&gt;
 
 &lt;p&gt;I have polished and reorganized the slides a few times to improve the flow, reinforce,
- and elaborate on key points.  I am happy to give this talk to any organization
+ and elaborate on key points. I am happy to give this talk to any organization
  and I have provided the slides for your evangelism efforts as well!
 Please contact me with any follow up questions or comments.&lt;/p&gt;
 
@@ -85,6 +85,12 @@ to their capabilities.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Typical Meetup attrition: 75 registered, 25+ attended.&lt;/li&gt;
+&lt;li&gt;DevOps definition suggestions:
+
+&lt;ul&gt;
+&lt;li&gt;Change &amp;ldquo;remove friction&amp;rdquo; to &amp;ldquo;enable collaboration.&amp;rdquo; I feel that is nearly the flip side of the same coin, but it does not recurse.&lt;/li&gt;
+&lt;li&gt;Drop the word &amp;ldquo;value.&amp;rdquo; I considered this, but does the definition become too abstract? I feel value yields the properties of something tangible and measurable.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Tweets ensued:&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
