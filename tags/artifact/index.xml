@@ -125,6 +125,7 @@ repositories as hosted services or private deployments:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://hub.docker.com/&#34;&gt;Docker Hub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://quay.io/&#34;&gt;Quay.io&lt;/a&gt; and &lt;a href=&#34;https://coreos.com/products/enterprise-registry/&#34;&gt;CoreOS Enterprise Registry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/ecr/details/&#34;&gt;Amazon EC2 Container Registry&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Along with &lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt; box hosting:&lt;/p&gt;
@@ -148,7 +149,7 @@ so the SaaS subscription may be a better option.&lt;/p&gt;
 &lt;p&gt;These are specific to build artifacts, however they can be considered a special case
 of content delivery networks such as Akami, &lt;a href=&#34;https://cachefly.com&#34;&gt;CacheFly&lt;/a&gt;, and Fastly
 as well as related to content accelerators such as CloudFlare
- and Amazon &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;CloudFront&lt;/a&gt;&lt;/p&gt;
+and &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;Amazon CloudFront&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;JFrog&amp;rsquo;s &lt;a href=&#34;https://bintray.com&#34;&gt;Bintray&lt;/a&gt;&lt;/li&gt;

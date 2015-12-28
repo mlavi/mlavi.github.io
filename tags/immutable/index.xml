@@ -55,7 +55,9 @@ but &lt;a href=&#34;http://docker.com&#34;&gt;Docker&lt;/a&gt; made Linux contai
 just as &lt;a href=&#34;http://vagrantup.com&#34;&gt;Vagrant&lt;/a&gt; has done for Virtual Machines.&lt;/p&gt;
 
 &lt;p&gt;For the sake of simplifying this discussion, I will not discuss dynamic run time configuration
-and service discovery: it is the subject of a future blog post. We will approximate it via static
+and service discovery: it is the subject of a future blog post and I think
+&lt;a href=&#34;https://medium.com/@kelseyhightower/12-fractured-apps-1080c73d481c&#34;&gt;12 Fractured Apps&lt;/a&gt;
+discusses many issues and solutions. We will approximate it via static
 application configuration in the example.&lt;/p&gt;
 
 &lt;p&gt;An ideal container holds an application and nothing more: the tricky part is defining your application
