@@ -82,6 +82,7 @@ However, there are guidelines you can adopt:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Software_versioning&#34;&gt;Software Versioning&lt;/a&gt; at Wikipedia&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://semver.org/&#34;&gt;Semantic Versioning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/prep/standards/html_node/Releases.html#index-version-numbers_002c-for-releases&#34;&gt;GNU Coding Standards: Release Version Numbers&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;While many software package formats specify their metadata requirements, a few have standardized
@@ -125,6 +126,7 @@ repositories as hosted services or private deployments:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://hub.docker.com/&#34;&gt;Docker Hub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://quay.io/&#34;&gt;Quay.io&lt;/a&gt; and &lt;a href=&#34;https://coreos.com/products/enterprise-registry/&#34;&gt;CoreOS Enterprise Registry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/container-registry/&#34;&gt;Google Container Registry&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/ecr/details/&#34;&gt;Amazon EC2 Container Registry&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 

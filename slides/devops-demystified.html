@@ -58,6 +58,7 @@ div.slide div.inner {
     width: 800px;
     height: 600px;
     margin: auto;
+    display: table-cell;
 }
 
 h1 {
@@ -464,45 +465,15 @@ a {
   border-bottom: 2px solid #3f3f3f;
 }
 
-pre, code, tt {
-  font-family: Monaco, Consolas, 'Bitstream Vera Sans Mono', 'Lucida Console', FreeMono, Courier, monospace;
-}
-
-pre, .gist .gist-file .gist-data {
-  font-size: 18px;
-  max-height: 485px;
-  padding-top: 0.25em !important;
-  padding-right: 0.5em !important;
-  padding-left: 0.5em !important;
-  overflow: auto;
-}
-
-/* render a nice scrollbar in overflowed pre area's */
-::-webkit-scrollbar {
-  height: 8px;
-  width: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background: -webkit-gradient(linear, left bottom, left top, from(#777), to(#bbd));
-  -webkit-border-radius: 1ex;
-}
-::-webkit-scrollbar-corner {
-  background: #dedede;
-}
-
-blockquote {
-  border-left: solid 8px #778;
-  padding: .1ex 1ex;
-  font-style: italic;
-  font-size: 20px;
+pre {
+  font-size: 16px;
+  font-family: Monaco, Courier, monospace;
 }
 
 li {
   padding: 10px 0;
   font-size: 20px;
 }
-
-li pre { margin-left: 0em; }
 
 .slide header:only-child h1 {
   line-height: 180%;
@@ -677,7 +648,6 @@ aside {
 .vg { color: #19177C } /* Name.Variable.Global */
 .vi { color: #19177C } /* Name.Variable.Instance */
 .il { color: #666666 } /* Literal.Number.Integer.Long */
-.lineno { padding-right: 10px } /* A few space after linenos */
 
 #blank {
   position: absolute;
@@ -688,10 +658,6 @@ aside {
   height: 100%;
   z-index: 64;
   display: none;
-}
-
-.image-reference {
-  display: inline;
 }
 
     </style>
@@ -1103,13 +1069,11 @@ aside {
                 break;
             case 37: // left arrow
             case 33: // page up
-                event.preventDefault();
                 prevSlide();
                 break;
             case 39: // right arrow
             case 32: // space
             case 34: // page down
-                event.preventDefault();
                 nextSlide();
                 break;
             case 50: // 2
@@ -1285,7 +1249,6 @@ aside {
     </script>
     
     
-    
     <!-- /Javascripts -->
 </head>
 <body>
@@ -1298,7 +1261,7 @@ aside {
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-1">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Demystifying DevOps</h1></header>
@@ -1338,7 +1301,7 @@ aside {
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-2">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Agenda</h2></header>
@@ -1386,7 +1349,7 @@ aside {
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-3">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Mark Lavi</h1></header>
@@ -1430,7 +1393,7 @@ aside {
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-4">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>DevOps</h1></header>
@@ -1458,7 +1421,7 @@ aside {
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-5">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>What is DevOps?</h2></header>
@@ -1498,7 +1461,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-6">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Beware of DevOps Hype and Abuse!</h2></header>
@@ -1534,7 +1497,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-7">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>A Brief History of DevOps</h2></header>
@@ -1549,7 +1512,7 @@ therefore it will vary by organization.</p>
 </ul>
 </li>
 <li>2009:<ul>
-<li>May: <a href="http://www.slideshare.net/jallspaw/10-deploys-per-day-dev-and-ops-cooperation-at-flickr">10+ Deploys Per Day: Dev &amp; Ops Cooperation at Flickr</a>
+<li>May: "10+ Deploys Per Day: Dev &amp; Ops Cooperation at Flickr" <a href="https://www.youtube.com/watch?v=LdOe18KhtT4">Video</a> <a href="http://www.slideshare.net/jallspaw/10-deploys-per-day-dev-and-ops-cooperation-at-flickr">Slides</a>
  by John Allspaw and Paul Hammond at Velocity Conference</li>
 <li>October: <a href="http://devopsdays.org">DevOpsDays Belgium</a>: physical community begins</li>
 </ul>
@@ -1578,7 +1541,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-8">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>A Brief History of DevOps (continued)</h2></header>
@@ -1617,7 +1580,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-9">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>How to Journey to DevOps?</h1></header>
@@ -1654,7 +1617,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-10">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>How to Journey to DevOps? (continued)</h1></header>
@@ -1696,7 +1659,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-11">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>The Journey to DevOps: Overview</h1></header>
@@ -1732,7 +1695,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-12">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Agile Infrastructure in the Cloud</h2></header>
@@ -1771,7 +1734,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-13">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Infrastructure as Code</h2></header>
@@ -1813,7 +1776,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-14">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Infrastructure as Code (continued)</h2></header>
@@ -1851,7 +1814,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-15">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>The Future of <em>Infrastructure as Code</em></h2></header>
@@ -1887,7 +1850,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-16">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Pets versus Cattle</h2></header>
@@ -1930,7 +1893,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-17">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Pets vs. Cattle: Sidebar</h2></header>
@@ -1971,7 +1934,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-18">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Pets vs. Cattle vs. Bacteria (continued)</h2></header>
@@ -2014,7 +1977,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-19">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Test, Build, Deploy Pattern</h2></header>
@@ -2050,7 +2013,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-20">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Test, Build, Deploy Pattern (continued)</h2></header>
@@ -2093,7 +2056,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-21">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Infrastructure Orchestration</h2></header>
@@ -2137,7 +2100,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-22">
+        <div class="slide">
           <div class="inner">
             
             <header><h2>Infrastructure Models</h2></header>
@@ -2177,7 +2140,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-23">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Epilogue: BusinessOps</h1></header>
@@ -2214,7 +2177,7 @@ therefore it will vary by organization.</p>
       
       <!-- slide source: devops-demystified.md -->
       <div class="slide-wrapper">
-        <div class="slide slide-24">
+        <div class="slide">
           <div class="inner">
             
             <header><h1>Thank You, Questions?</h1></header>

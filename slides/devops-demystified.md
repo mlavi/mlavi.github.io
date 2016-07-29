@@ -85,7 +85,7 @@ Ask yourself: *Does this [thing] meet our definition of DevOps?*
     - Patrick Debois finds Andrew Clay Shafer, they create:
         - [Agile System Administration](https://groups.google.com/forum/#!forum/agile-system-administration) Google Group: virtual community
 - 2009:
-    - May: [10+ Deploys Per Day: Dev & Ops Cooperation at Flickr](http://www.slideshare.net/jallspaw/10-deploys-per-day-dev-and-ops-cooperation-at-flickr)
+    - May: "10+ Deploys Per Day: Dev & Ops Cooperation at Flickr" [Video](https://www.youtube.com/watch?v=LdOe18KhtT4) [Slides](http://www.slideshare.net/jallspaw/10-deploys-per-day-dev-and-ops-cooperation-at-flickr)
  by John Allspaw and Paul Hammond at Velocity Conference
     - October: [DevOpsDays Belgium](http://devopsdays.org): physical community begins
 
