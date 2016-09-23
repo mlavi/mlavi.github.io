@@ -1356,8 +1356,7 @@ aside {
             
             
             <section><p>$ cat ~/.signature</p>
-<p>Technology Evangelist, Calm.io || <a href="mailto:mark@calm.io">mark@calm.io</a>
-<br />A Sequoia Capital funded company: <a href="mailto:team@calm.io">team@calm.io</a>
+<p>DevOps and Automation Architect, Nutanix || <a href="mailto:mark.lavi@nutanix.com">mark.lavi@nutanix.com</a>
 <br />mobile:+1-650-400-2100 || Twitter <a href="http://twitter.com/calm_mark">@calm_mark</a> || GitHub <a href="http://github.com/mlavi/">@mlavi</a></p>
 <p>$ cat ~/.profile || curl <a href="http://mlavi.github.io/about/">http://mlavi.github.io/about/</a></p>
 <p>Previously:</p>
@@ -1556,7 +1555,11 @@ therefore it will vary by organization.</p>
 </ul>
 </li>
 </ul>
-<p>Reference: <a href="http://itrevolution.com/the-history-of-devops/">The History Of DevOps</a> by Damon Edwards</p></section>
+<p>References:</p>
+<ul>
+<li><a href="http://itrevolution.com/the-history-of-devops/">The History Of DevOps</a> by Damon Edwards</li>
+<li><a href="https://www.youtube.com/watch?v=IIkbn2V5A40">DevOps: A History</a> by Nell Shamrell-Harrington</li>
+</ul></section>
             
           </div>
           <div class="presenter_notes">
@@ -1859,8 +1862,8 @@ therefore it will vary by organization.</p>
             <section><h2>Immutable Infrastructure</h2>
 <ul>
 <li>Cloud agility enables ephemeral fleets<ul>
-<li><em>Cattle</em> = numbered, can fail and reprovision anytime</li>
 <li><em>Pet</em> = uptime of years, named, backup maintenence</li>
+<li><em>Cattle</em> = numbered, can fail and reprovision anytime</li>
 </ul>
 </li>
 <li>Build time infrastructure artifacts = build system + configuration management</li>
@@ -1869,7 +1872,8 @@ therefore it will vary by organization.</p>
 <li>Roll 'em in and out of the load balancer, measure twice!</li>
 </ul>
 </li>
-</ul></section>
+</ul>
+<p>Reference: <a href="https://news.ycombinator.com/item?id=7311704">Discussion on attribution of Pets v. Cattle</a></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -1945,7 +1949,7 @@ therefore it will vary by organization.</p>
 <li>Agile, lightweight, smaller, faster VMs:<ul>
 <li>ideal approach for <em>continuous delivery</em> of <em>immutable infrastructure</em> artifacts, especially microservices</li>
 <li>minimal difference between laptop and production</li>
-<li><em>Bacteria</em> = lifecycle on the order of seconds: build, run, test, destroy</li>
+<li><em>Bacteria</em><sup>1</sup> = lifecycle on the order of seconds: build, run, test, destroy</li>
 </ul>
 </li>
 <li>Early days: Docker as a tool versus Docker tool set as a platform<ul>
@@ -1953,7 +1957,9 @@ therefore it will vary by organization.</p>
 </ul>
 </li>
 <li>Production challenges remain: orchestration, health, networking, persistence, dynamic configuration</li>
-</ul></section>
+</ul>
+<p><sup>1</sup> Bacteria is the term I learned from <a href="https://blog.newrelic.com/author/toriwieldt/">Tori Wieldt</a>, New Relic Developer Advocate,
+I think it is better than the term insect.</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -2068,7 +2074,7 @@ therefore it will vary by organization.</p>
 </ul>
 </li>
 <li>Continuous Deployment + Upgrades:<ul>
-<li>Blue-Green (Red-Black): parallel, atomic cutover</li>
+<li>Blue-Green (Red-Black): parallel population, atomic cutover</li>
 <li>Rolling vs. canary: incremental cutover</li>
 <li>Test and measure your operations<ul>
 <li>Close the loop to Continuous Delivery</li>
@@ -2187,8 +2193,7 @@ therefore it will vary by organization.</p>
 <br />between the developer and customer value.</h1>
 
 <p>$ cat ~/.signature</p>
-<p>Technology Evangelist, Calm.io || <a href="mailto:mark@calm.io">mark@calm.io</a>
-<br />A Sequoia Capital funded company: <a href="mailto:team@calm.io">team@calm.io</a>
+<p>DevOps and Automation Architect, Nutanix || <a href="mailto:mark.lavi@nutanix.com">mark.lavi@nutanix.com</a>
 <br />mobile:+1-650-400-2100 || Twitter <a href="http://twitter.com/calm_mark">@calm_mark</a> || GitHub <a href="http://github.com/mlavi/">@mlavi</a></p>
 <h2>Your Next Steps</h2>
 <ul>

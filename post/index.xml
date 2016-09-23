@@ -7,88 +7,8 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 12 Mar 2016 15:44:02 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2015 12:03:32 -0700</lastBuildDate>
     <atom:link href="http://mlavi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Declarative Operating Systems</title>
-      <link>http://mlavi.github.io/post/declarative_os/</link>
-      <pubDate>Sat, 12 Mar 2016 15:44:02 -0800</pubDate>
-      
-      <guid>http://mlavi.github.io/post/declarative_os/</guid>
-      <description>
-
-&lt;p&gt;A new breed of operating systems adopt declarative configuration management for
-an interesting hybrid! OS maintenance of long-lived servers remains a challenge
-for our &amp;ldquo;mutable&amp;rdquo; infrastructure.&lt;/p&gt;
-
-&lt;p&gt;Although Linux containers greatly abstract away the operating system (OS) and
-can displace most of configuration management, we now see innovation on the
-OS side of the equation.&lt;/p&gt;
-
-&lt;h2 id=&#34;nixos-linux:6991032b21a185a6248c08473960ddc6&#34;&gt;NixOS Linux&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://nixos.org/&#34;&gt;NixOS Linux&lt;/a&gt; is Linux operating system distribution which
-uses a declarative model for system configuration, software management, and
-&lt;a href=&#34;http://nixos.org/nixops/&#34;&gt;remote operation&lt;/a&gt;. &lt;a href=&#34;http://nixos.org/nix/&#34;&gt;Nix&lt;/a&gt;,
-the package manager, works on MacOS and Linux, understands package dependencies,
-and allows multiple versions of software to coexist, making rollback easy.
-Nix works with the combination build system and Nix package repository named
-&lt;a href=&#34;http://nixos.org/hydra/&#34;&gt;Hydra&lt;/a&gt;. There is a public repository of Nix
-packages, which helps complete dependencies.&lt;/p&gt;
-
-&lt;p&gt;An interesting proponent&amp;rsquo;s opinion =
-[&lt;a href=&#34;https://www.domenkozar.com/2014/03/11/why-puppet-chef-ansible-arent-good-enough-and-we-can-do-better/&#34;&gt;https://www.domenkozar.com/2014/03/11/why-puppet-chef-ansible-arent-good-enough-and-we-can-do-better/&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;I found a &lt;a href=&#34;https://www.meetup.com/Bay-Area-Nix-NixOS-User-Group/&#34;&gt;Nix/NixOS MeetUp&lt;/a&gt;
-in the SF Bay Area, but the community is small. I very much admire the efforts
-but had some trouble getting Hydra running on a virtual NixOS box.&lt;/p&gt;
-
-&lt;h2 id=&#34;qubes-os-project:6991032b21a185a6248c08473960ddc6&#34;&gt;Qubes OS Project&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.qubes-os.org/tour/#what-is-qubes-os&#34;&gt;Qubes OS&lt;/a&gt; is a &amp;ldquo;reasonably
-secure operating system&amp;rdquo; for your laptop or desktop which  boots to the Xen
-hyper-visor and enforces &amp;ldquo;security by compartmentalization.&amp;rdquo;
-Programs run inside Xen VMs for isolation from each other and inside a hardware
-sandbox.
-&lt;a href=&#34;https://www.qubes-os.org/doc/salt/&#34;&gt;Qubes integrates SaltStack&lt;/a&gt; for OS
-configuration management. I found the
-&lt;a href=&#34;https://www.qubes-os.org/getting-started/&#34;&gt;Getting Started&lt;/a&gt; section to be a
-great overview of how it works!&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&#34;http://xenproject.org/&#34;&gt;Xen Project&lt;/a&gt; has some early integration work with
-&lt;a href=&#34;http://wiki.xenproject.org/wiki/Unikernels&#34;&gt;Unikernels&lt;/a&gt;
-and &lt;a href=&#34;http://xenserver.org/partners/docker.html&#34;&gt;XenServer&lt;/a&gt; integrates
-&lt;a href=&#34;https://xen-orchestra.com/blog/docker-support-in-xenserver-the-ultimate-guide/&#34;&gt;Docker via APIs to a a CoreOS VM&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I plan to try this in my spare time, but seeing as how this blog entry took
-over four months to publish, perhaps I&amp;rsquo;ll hold off for another release.&lt;/p&gt;
-
-&lt;h2 id=&#34;gnu-guixsd:6991032b21a185a6248c08473960ddc6&#34;&gt;GNU GuixSD&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.gnu.org/software/guix/&#34;&gt;Guix System Distribution&lt;/a&gt; is GNU OS that
-provides a Guile Scheme API and domain specific language definitions for
-package management and
-&lt;a href=&#34;http://www.gnu.org/software/guix/manual/html_node/System-Configuration.html&#34;&gt;system configuration&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I found this interesting, but a bit overwhelming to start diving into!&lt;/p&gt;
-
-&lt;h2 id=&#34;addendum-further-investigations:6991032b21a185a6248c08473960ddc6&#34;&gt;Addendum: Further Investigations&lt;/h2&gt;
-
-&lt;p&gt;There is more to investigate:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Intel&amp;rsquo;s &lt;a href=&#34;https://clearlinux.org/&#34;&gt;Clear Linux Project&lt;/a&gt; is distro which
-attempts to secure and run containers with optimal performance
-on Intel hardware. Most interesting is their design goal of making &lt;a href=&#34;https://clearlinux.org/features/stateless&#34;&gt;the OS
-stateless&lt;/a&gt;. This approach should
-be contrasted to the minimal host OSs for containers: RancherOS, CoreOS, etc.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Docker&amp;rsquo;s recent acquisition of &lt;a href=&#34;https://blog.docker.com/2016/01/unikernel/&#34;&gt;Unikernel Systems&lt;/a&gt;
-and the micro-kernel movement as a whole (&lt;a href=&#34;http://unikernel.org/projects/&#34;&gt;http://unikernel.org/projects/&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
     <item>
       <title>DevOps Demystified</title>
@@ -628,8 +548,7 @@ for the upstream operating system provider to back-port and distribute&lt;/li&gt
 &lt;li&gt;communicate my work because the code was documented and visualizable, e.g.:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;../img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I wrote one Phing extension called &amp;ldquo;MyUnpack.&amp;rdquo; Given any software package release version, it would:&lt;/p&gt;
 
@@ -1039,8 +958,7 @@ moving processes forward in the chain of events.&lt;/p&gt;
 areas that have been traditionally separated into team or department silos because they represent
 the pillars or domains of software development, quality assurance, and operations.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Those traditional silos create code friction by introducing manual hand offs and insulating teams
 from shared responsibilities, creating barriers to proper service design and life cycle considerations.&lt;/p&gt;
@@ -1069,8 +987,7 @@ but we will examine it further and find that BTD should exist in each domain.&lt
 
 &lt;p&gt;What is wrong with the BTD pattern? Nothing except how it has been implemented as traditional roles and hand-offs, e.g.:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;hellip;you can see the traditional silos and you can see all of the potential inefficiencies to remedy a bug.
 The cost and time to fix increases the further the bug is discovered from the developer.&lt;/p&gt;
@@ -1086,8 +1003,7 @@ The cost and time to fix increases the further the bug is discovered from the de
 
 &lt;p&gt;BTD must be applied at the build domain, at the test domain, and at the deploy domain.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is why everything is testable, buildable, and deployable on the developer laptop in the
 &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt;.
@@ -1169,8 +1085,7 @@ and then cut and paste text from it.&lt;/p&gt;
 &lt;p&gt;My original release was 2015-03-11 (source below), but today&amp;rsquo;s update adds detail, removes many crossed lines
 for simple visual flow parsing, and is organized vertically.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Source code: devops_automation.pu
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;startuml&lt;/span&gt;
@@ -1358,8 +1273,7 @@ to my favorite open source object drawing tool, &lt;a href=&#34;https://wiki.gno
 for a quite a while and I&amp;rsquo;m glad to have the time to do it properly.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&#34;../img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The DevOps mission to reduce all friction between the developer&amp;rsquo;s code and deployment to production
 is mostly captured by this diagram. It has been in my head for a while, extended past but based on

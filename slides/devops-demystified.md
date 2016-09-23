@@ -35,8 +35,7 @@ We will cover the following topics so that you can understand and chart your own
 
 $ cat ~/.signature
 
-Technology Evangelist, Calm.io || [mark@calm.io](mailto:mark@calm.io)
-<br />A Sequoia Capital funded company: [team@calm.io](mailto:team@calm.io)
+DevOps and Automation Architect, Nutanix || [mark.lavi@nutanix.com](mailto:mark.lavi@nutanix.com)
 <br />mobile:+1-650-400-2100 || Twitter [@calm_mark](http://twitter.com/calm_mark) || GitHub [@mlavi](http://github.com/mlavi/)
 
 $ cat ~/.profile || curl [http://mlavi.github.io/about/](http://mlavi.github.io/about/)
@@ -98,8 +97,10 @@ Ask yourself: *Does this [thing] meet our definition of DevOps?*
     - Industry studies showing DevOps enables business agility, lower MTTF
     - "Rediscovery" of lean processes, [Agile Manifesto](http://www.agilemanifesto.org/), etc.
 
-Reference: [The History Of DevOps](http://itrevolution.com/the-history-of-devops/) by Damon Edwards
+References:
 
+- [The History Of DevOps](http://itrevolution.com/the-history-of-devops/) by Damon Edwards
+- [DevOps: A History](https://www.youtube.com/watch?v=IIkbn2V5A40) by Nell Shamrell-Harrington
 ---
 # How to Journey to DevOps?
 
@@ -171,12 +172,14 @@ Reference: [The History Of DevOps](http://itrevolution.com/the-history-of-devops
 ## Immutable Infrastructure
 
 - Cloud agility enables ephemeral fleets
-    - *Cattle* = numbered, can fail and reprovision anytime
     - *Pet* = uptime of years, named, backup maintenence
+    - *Cattle* = numbered, can fail and reprovision anytime
 - Build time infrastructure artifacts = build system + configuration management
 - Ideal for non-persistant tiers:
     - Simplify deployment: ship logs, metrics, etc. off the "box"
     - Roll 'em in and out of the load balancer, measure twice!
+
+Reference: [Discussion on attribution of Pets v. Cattle](https://news.ycombinator.com/item?id=7311704)
 
 ---
 ## Pets vs. Cattle: Sidebar
@@ -199,10 +202,13 @@ Reference: [The History Of DevOps](http://itrevolution.com/the-history-of-devops
 - Agile, lightweight, smaller, faster VMs:
     - ideal approach for *continuous delivery* of *immutable infrastructure* artifacts, especially microservices
     - minimal difference between laptop and production
-    - *Bacteria* = lifecycle on the order of seconds: build, run, test, destroy
+    - *Bacteria*<sup>1</sup> = lifecycle on the order of seconds: build, run, test, destroy
 - Early days: Docker as a tool versus Docker tool set as a platform
     - PERL motto = [There is more than one way to do it](http://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it).
 - Production challenges remain: orchestration, health, networking, persistence, dynamic configuration
+
+<sup>1</sup> Bacteria is the term I learned from [Tori Wieldt](https://blog.newrelic.com/author/toriwieldt/), New Relic Developer Advocate,
+I think it is better than the term insect.
 
 ---
 ## Test, Build, Deploy Pattern
@@ -234,7 +240,7 @@ Reference: [BTD Pattern Blog Entry](http://mlavi.github.io/post/devops-btd-patte
 - Orchestration of the entire distributed system/stack/environment
     - Application management lifecycle: all dependencies and operations
 - Continuous Deployment + Upgrades:
-    - Blue-Green (Red-Black): parallel, atomic cutover
+    - Blue-Green (Red-Black): parallel population, atomic cutover
     - Rolling vs. canary: incremental cutover
     - Test and measure your operations
          - Close the loop to Continuous Delivery
@@ -264,8 +270,7 @@ Reference: [BTD Pattern Blog Entry](http://mlavi.github.io/post/devops-btd-patte
 
 $ cat ~/.signature
 
-Technology Evangelist, Calm.io || [mark@calm.io](mailto:mark@calm.io)
-<br />A Sequoia Capital funded company: [team@calm.io](mailto:team@calm.io)
+DevOps and Automation Architect, Nutanix || [mark.lavi@nutanix.com](mailto:mark.lavi@nutanix.com)
 <br />mobile:+1-650-400-2100 || Twitter [@calm_mark](http://twitter.com/calm_mark) || GitHub [@mlavi](http://github.com/mlavi/)
 
 ##Your Next Steps

@@ -145,8 +145,7 @@ moving processes forward in the chain of events.&lt;/p&gt;
 areas that have been traditionally separated into team or department silos because they represent
 the pillars or domains of software development, quality assurance, and operations.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../../img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Those traditional silos create code friction by introducing manual hand offs and insulating teams
 from shared responsibilities, creating barriers to proper service design and life cycle considerations.&lt;/p&gt;
@@ -175,8 +174,7 @@ but we will examine it further and find that BTD should exist in each domain.&lt
 
 &lt;p&gt;What is wrong with the BTD pattern? Nothing except how it has been implemented as traditional roles and hand-offs, e.g.:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../../img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;hellip;you can see the traditional silos and you can see all of the potential inefficiencies to remedy a bug.
 The cost and time to fix increases the further the bug is discovered from the developer.&lt;/p&gt;
@@ -192,8 +190,7 @@ The cost and time to fix increases the further the bug is discovered from the de
 
 &lt;p&gt;BTD must be applied at the build domain, at the test domain, and at the deploy domain.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../../img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is why everything is testable, buildable, and deployable on the developer laptop in the
 &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt;.
@@ -275,8 +272,7 @@ and then cut and paste text from it.&lt;/p&gt;
 &lt;p&gt;My original release was 2015-03-11 (source below), but today&amp;rsquo;s update adds detail, removes many crossed lines
 for simple visual flow parsing, and is organized vertically.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../../img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Source code: devops_automation.pu
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;startuml&lt;/span&gt;
@@ -464,8 +460,7 @@ to my favorite open source object drawing tool, &lt;a href=&#34;https://wiki.gno
 for a quite a while and I&amp;rsquo;m glad to have the time to do it properly.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&#34;../../img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The DevOps mission to reduce all friction between the developer&amp;rsquo;s code and deployment to production
 is mostly captured by this diagram. It has been in my head for a while, extended past but based on

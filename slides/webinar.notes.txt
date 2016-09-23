@@ -1,0 +1,138 @@
+<!--
+
+- demo1 explain more, show more
+- demo2: explain container management tools: swarm vs mesos vs kubernetes etc.
+  then how does Calm does it demo4
+- demo2 begets demo3 in AWS "in production"
+  with docker machine/swarm
+  versus doing it by hand
+end :50 ideally
+
+    Container overview:
+        Deployable app packaging:
+            designed correctly, a container built on a developer laptop can run in production.
+            Built as a stand alone bundle, no external dependencies
+        Containers can be thought of as lightweight virtual machines
+            e.g.: VMs <=1GB <= containers <= 10MB
+            no overhead of kernel+hardware, network, userland
+        This makes starting and destroying multiple containers on a container host quick!
+    Container benefits:
+        To a growing extent, you can refactor bare metal servers and VMs in the public/private cloud to containers, gaining:
+            application isolation
+            application portability
+            higher density of applications (containers can co-locate on a container host)
+        Because now we can automate provisioning infrastructure with containers, we can shrink the deployment to the application layer. Ideally: immutable build artifacts enabling reuse and ease of deployment across multiple environments.
+        Immutable infrastructure eases deployments: easy roll forward/roll back
+        Ideal form factor for microservices (refactor the monolith), which is a highly scalable model used by Amazon, Google, and Netflix
+            Footnote: 12 fractured apps, microservices.org, etc.
+    Container internals:
+        A container image is a single file: a tarball of the filesystem with metadata: name, owner, security signature, etc.
+        Use a container runtime (Docker engine, CoreOS rkt, https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html, etc.) Footnote: https://github.com/appc/spec
+        Specific to modern Linux kernel, based on LXC/chroot jails/chgroups more.
+    Container technology platforms and ecosystem
+        Docker is the leading implementation, now three years old, and a runaway open source success story. It is rapidly becoming a platform for container runtime, networking, building, monitoring, and more.
+            Windows containers: Docker coming to Windows Server: technology preview
+            Beta Windows, Mac using native virtualization for a Linux VM kernel >= 2.6.32; replaces boot2docker
+            Footnote: http://www.slideshare.net/Docker/docker-birthday-3-intro-to-docker-slides
+        However, there is a lot of innovation for containers (outside of Docker), e.g.:
+            Scheduling and Orchestration: Container cluster PaaS
+            Networking
+            Persistence
+            Minimal Operating Systems
+            Building container images and Registry Hosting
+            Hosting: ECS, ACS, Joyent, etc.
+            Instrumentation and Auditing: security, performance, monitoring, logging, metrics
+            Dynamic configuration management
+            and the future: Microkernels
+        All of this points to many use cases which do not easily fit into containers without investment
+        Therefore, do not confuse containers and Docker (the platform) as being the same thing because you would be blinded to all of the innovation.
+        There are challenges to running containers in production, start with development + builds and expand towards production
+    Let's play with containers!
+        Scenario: a developer on a local machine with one container: Docker Toolbox for Windows/Mac, docker on Linux
+            The dockerfile, union filesystem = git transactions for FS, layers, CMD
+            Is this the end of configuration management?
+            Run on laptop/desktop: docker build && docker run
+    Let's run containers in production!
+        Upload image to a public or private container registry: share for consumption
+        Pull image and run on a container host, a la your laptop or a cloud VM
+        Let's build an update, upload, pull, run to see it working
+    Let's operationalize our containers
+        Immutable: treat as read-only file system
+            Inject dynamic configuration management via environment variables
+            Ship logs/metrics off box or console STDOUT to related facilities or services
+        Load balance containers
+            Orchestration unnecessary for immutables and microservices if API design is backwards/forwards compatible
+        Shrink "heavy" containers
+
+Container lifecycle: build+signing, registry, schedule+cluster+orchestrate, run time+dynamic configuration mgmt, Instrumentation: monitoring+metrics+logging
+PaaSi (openshift, Deis), IaaS (CloudFoundry, DockerDataCenter?), CaaS (ECS, ACS, Joyent, etc.)
+
+CNCI?
+front runners: K8s, consul. Surprising: ansible
+
+Orchestration = umbrella term for everything (DNS, persistence, etc.), = automted operations, orchestration as code
+why isn't orchestrtor on dev laptop?
+
+DBaaS: Percona docker img @joyent, "autopilot pattern"
+minimesos, mantl?
+github.com/autopilotpattern also on joyent blog, container buddy gh:joyent//containerpilot
+
+Docker 1.11 = OCI (opencountainerInitiative) containerd/runc
+swarm DNS rr load balancing.
+
+Container image formats:
+
+Docker = image format, runtime, collection deamon, etc.
+Dec2014: github:appc = iamge format (aci), image discovery, signing, conent addressing
+rkt = implementation of appc
+dgr build system for containers?
+
+Dec2015: docker 2.2 image format
+10monts ago: OCI
+ - OCI runtime spec for container runtimes
+Last week: OCI: image format spec = quay/dh/ecs reg, etc. serialized image formt, content addr. (opt: mx record for addr & signing)
+
+countiner networking interface: CNI (for rkt) = gh:appc/cni
+ linux-brige, macvlan, upvlan, openvSwitch, weave, metaswitch calico, flannel, gce nw, aws vpc
+ alloc. IP: via DHCP, IMP, SND, etc.
+ JSON nw config, continers
+ article at lwn - read namespaces in kernel
+
+cloud native CF: CNCF
+
+Container networking model: docker/dni with libnetwork in docker enginer
+ bridge, overlay = vxlan with ilbkv, or remote drivers: metaswitch, weave
+
+CNM: new inteface, CNI: network model
+
+K8s:________
+pod = container collection
+repl. controller = how many pods
+service = load balancer for tier across pods
+
+ubernetes = multizone clusters, ga K8s 1.3
+deployments = updates as a service, creates replication, etc. cutover, from server side: can undo, etc. for rolling; beta in 1.2
+"kube cuttle = kubectl)
+
+DaemonSets: run only one container per clusterhost; beta in 1.2
+
+Horizontal autopod autoscaler: looks at CPU, custom stats later; in 1.2
+Jobs: run to completion for big data/batch; GA in 1.2
+Secrets:  tempfs or env variable
+ConfigMaps: vs. flags inotify
+https load balancing: ingress L7 load balancer; plugins ; beta 1.2
+persistent volume:
+nw islation: beta 1.3
+_________________
+k8s/contrib/ansible - k8s cluster bootstrap
+_________________
+deis workflow: log aggr., source to img builder, app release+rollback, authn/authz, edge router
+buildpacks, heroku supp by cf, creates a slug
+
+build pack > Dockerfile > buildimg to reg
+charts = federated app list
+helm
+
+Countainers+security:redhat
+
+-->
