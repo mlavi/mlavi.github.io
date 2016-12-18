@@ -20,13 +20,13 @@ We will cover these topics so that
 
 - A Definition and Cultural Rendering of DevOps
     - A Brief History of DevOps
-    - DevOps Success and Challenges
+    - DevOps Success, Challenges, and the Journey
 - The Technical Journey to DevOps
-    - Agile Infrastructure
-    - Infrastructure as Code
-    - Pets versus Cattle versus Bacteria
-    - Test, Build, Deploy Pattern
-   - Infrastructure Orchestration and Models
+    - Agile Infrastructure and Infrastructure as Code
+        - Microservices
+        - Pets versus Cattle versus Bacteria
+        - Test, Build, Deploy Pattern
+    - Infrastructure Orchestration and Models
 - Epilogue: BusinessOps
     - We are all DevOps: your call to action!
 
@@ -132,12 +132,12 @@ Use your definition as a lens to evaluate any use of the term!
     - Manufacturing theory applied to technical work
       
 ---
-# DevOps Success and Challenges
+## DevOps Success and Challenges
 
-## Success
+### Success
 Technology + Culture transformation for business agility<sup>3</sup>
 
-## Challenges
+### Challenges
 
 - Fragmentation: ecosystem involves multiple tools and platforms, fragile integrations
 - People: DevOps superstars bridge gaps, but hiring is difficult, expensive, and unscalable
@@ -146,7 +146,7 @@ Technology + Culture transformation for business agility<sup>3</sup>
 <br />&nbsp;&nbsp;&nbsp;Manufacturing Analog: [Toyota Production System](https://en.wikipedia.org/wiki/Toyota_Production_System)
 
 ---
-# The Journey to DevOps
+## The Journey to DevOps
 
 **We are all DevOps:** continual evolution for organizations
 
@@ -160,7 +160,7 @@ Technology + Culture transformation for business agility<sup>3</sup>
         - Fail fast, fix fast = antifragile attitude, minimize risk, increase flow
 
 ---
-# The Journey to DevOps (continued)
+## The Journey to DevOps (continued)
 
 - Closed loop feedback for health and value measurements<sup>4</sup>
   <br />= monitors + logs + metrics for KPIs: Key Performance Indicators
@@ -356,7 +356,7 @@ $ cat ~/.signature
 DevOps and Automation Architect, Nutanix || [mark.lavi@nutanix.com](mailto:mark.lavi@nutanix.com)
 <br />mobile:+1-650-400-2100 || Twitter [@calm_mark](http://twitter.com/calm_mark) || GitHub [@mlavi](http://github.com/mlavi/)
 
-##Your Next Steps
+##We are All DevOps: Your Next Steps
 
 - **Find:** your local DevOps community and join us!
     - [DevOpsDays.org](http://www.devopsdays.org), [MeetUp](https://www.meetup.com/find/devops/), and [devopsconferences.com](http://devopsconferences.com/?past)
