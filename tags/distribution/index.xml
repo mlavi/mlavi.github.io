@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Distribution on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/distribution/</link>
+    <link>http://mlavi.github.io/tags/distribution/index.xml</link>
     <description>Recent content in Distribution on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 26 Aug 2015 08:59:59 -0700</lastBuildDate>
     <atom:link href="http://mlavi.github.io/tags/distribution/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,12 +15,11 @@
       <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
       
       <guid>http://mlavi.github.io/post/artifact_repositories/</guid>
-      <description>
+      <description>&lt;p&gt;The past: desktop builds uploaded to the FTP server; the present: global artifact delivery networks.
+Release management and artifact repositories are they way we deliver software and infrastructure today.
+&lt;/p&gt;
 
-&lt;p&gt;The past: desktop builds uploaded to the FTP server; the present: global artifact delivery networks.
-Release management and artifact repositories are they way we deliver software and infrastructure today.&lt;/p&gt;
-
-&lt;h3 id=&#34;ship-the-bits:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Ship the Bits&lt;/h3&gt;
+&lt;h3 id=&#34;ship-the-bits&#34;&gt;Ship the Bits&lt;/h3&gt;
 
 &lt;p&gt;Once upon a time, software release management was as simple as performing a desktop build,
 uploading the results to a FTP server, updating the web site, and sending an email.&lt;/p&gt;
@@ -30,7 +28,7 @@ uploading the results to a FTP server, updating the web site, and sending an ema
 secure deployments for continuous delivery to multiple clusters in data centers around the
 world multiple times per hour!&lt;/p&gt;
 
-&lt;h3 id=&#34;release-management:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Release Management&lt;/h3&gt;
+&lt;h3 id=&#34;release-management&#34;&gt;Release Management&lt;/h3&gt;
 
 &lt;p&gt;There are many considerations for release management today, assuming that our build candidate
 has passed all of the required tests to become an official release. Now that we pursue
@@ -71,7 +69,7 @@ OS platform, and client versions. Considerations include:&lt;/p&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;naming-the-artifact-and-useful-metadata:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Naming the Artifact and Useful Metadata&lt;/h3&gt;
+&lt;h3 id=&#34;naming-the-artifact-and-useful-metadata&#34;&gt;Naming the Artifact and Useful Metadata&lt;/h3&gt;
 
 &lt;p&gt;Surely naming the artifact should be straightforward if we can answer some basic questions,
 such as: do we have file naming conventions and are build, version, and release numbers the same thing?&lt;/p&gt;
@@ -88,7 +86,7 @@ However, there are guidelines you can adopt:&lt;/p&gt;
 &lt;p&gt;While many software package formats specify their metadata requirements, a few have standardized
 on &lt;a href=&#34;https://github.com/edumbill/doap/wiki&#34;&gt;DOAP: Description of a Project&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;software-artifact-repositories:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Software Artifact Repositories&lt;/h3&gt;
+&lt;h3 id=&#34;software-artifact-repositories&#34;&gt;Software Artifact Repositories&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://binary-repositories-comparison.github.io/&#34;&gt;Feature Matrix of Archiva, Artifactory, Maven&lt;/a&gt;&lt;/p&gt;
 
@@ -146,7 +144,7 @@ which is a meta repository of many different formats, but you will probably outg
 the open source version when you need to handle authentication and some of the formats mentioned above,
 so the SaaS subscription may be a better option.&lt;/p&gt;
 
-&lt;h3 id=&#34;software-distribution-networks:dc7746208ae99d8d6ff8bde15a0c990e&#34;&gt;Software Distribution Networks&lt;/h3&gt;
+&lt;h3 id=&#34;software-distribution-networks&#34;&gt;Software Distribution Networks&lt;/h3&gt;
 
 &lt;p&gt;These are specific to build artifacts, however they can be considered a special case
 of content delivery networks such as Akami, &lt;a href=&#34;https://cachefly.com&#34;&gt;CacheFly&lt;/a&gt;, and Fastly
@@ -164,8 +162,7 @@ and &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;Amazon CloudFront
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;One potentially biased resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;
-</description>
+&lt;p&gt;One potentially biased resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;</description>
     </item>
     
   </channel>

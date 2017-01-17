@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Definition on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/definition/</link>
+    <link>http://mlavi.github.io/tags/definition/index.xml</link>
     <description>Recent content in Definition on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 13 Oct 2015 12:03:32 -0700</lastBuildDate>
     <atom:link href="http://mlavi.github.io/tags/definition/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,20 +15,25 @@
       <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
       
       <guid>http://mlavi.github.io/post/devops_demystified/</guid>
-      <description>
-
-&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
+      <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
  for many software engineering organizations. Let me define DevOps to help you
- understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!&lt;/p&gt;
+ understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!
+&lt;/p&gt;
 
-&lt;h3 id=&#34;update-2015-11-18:022f818b4b335cef52e2158f1457d81b&#34;&gt;Update: 2015-11-18&lt;/h3&gt;
+&lt;h3 id=&#34;update-2016-12-17&#34;&gt;Update: 2016-12-17&lt;/h3&gt;
+
+&lt;p&gt;Yet another refactoring and updates with expanded citations, leveraging a bit of
+my last four months of DevOps evangelism for Nutanix across five countries. It
+could use more more work!&lt;/p&gt;
+
+&lt;h3 id=&#34;update-2015-11-18&#34;&gt;Update: 2015-11-18&lt;/h3&gt;
 
 &lt;p&gt;I have polished and reorganized the slides a few times to improve the flow, reinforce,
  and elaborate on key points. I am happy to give this talk to any organization
  and I have provided the slides for your evangelism efforts as well!
 Please contact me with any follow up questions or comments.&lt;/p&gt;
 
-&lt;h3 id=&#34;abstract:022f818b4b335cef52e2158f1457d81b&#34;&gt;Abstract&lt;/h3&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;A brief history of the DevOps movement and community with a cross section view of many methods
 and practices that are breaking down the barriers to achieve engineering agility.
@@ -38,7 +42,7 @@ universal definition, yet everyone wants it or already &amp;ldquo;does&amp;rdquo
 identifying it.
 I will cover many topics so that you can understand and chart your journey to DevOps.&lt;/p&gt;
 
-&lt;h3 id=&#34;agenda:022f818b4b335cef52e2158f1457d81b&#34;&gt;Agenda&lt;/h3&gt;
+&lt;h3 id=&#34;agenda&#34;&gt;Agenda&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;A Definition and Cultural Rendering of DevOps
@@ -63,7 +67,7 @@ I will cover many topics so that you can understand and chart your journey to De
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;devops-definition:022f818b4b335cef52e2158f1457d81b&#34;&gt;DevOps Definition&lt;/h3&gt;
+&lt;h3 id=&#34;devops-definition&#34;&gt;DevOps Definition&lt;/h3&gt;
 
 &lt;p&gt;DevOps is the &lt;em&gt;process&lt;/em&gt; of removing all friction between the developer and customer value.&lt;/p&gt;
 
@@ -72,13 +76,23 @@ to their capabilities.&lt;/p&gt;
 
 &lt;p&gt;Elaboration: &lt;a href=&#34;https://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&#34;&gt;I Dream of DevOps, but What is DevOps?&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;presentation:022f818b4b335cef52e2158f1457d81b&#34;&gt;Presentation&lt;/h3&gt;
+&lt;h3 id=&#34;presentation&#34;&gt;Presentation&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Slides: &lt;a href=&#34;../../slides/devops-demystified.html&#34;&gt;DevOps Demystified&lt;/a&gt; || &lt;a href=&#34;../../slides/devops-demystified.md&#34;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The actual content of this blog post has been given as a talk:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2016-12-17: presented at &lt;a href=&#34;https://www.meetup.com/Cloud-Computing-Basics/events/234108925/&#34;&gt;Cloud Computing Basics&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Online presentation captured and uploaded to &lt;a href=&#34;https://www.youtube.com/watch?v=7WBEhtQssn8&#34;&gt;YouTube&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&#34;640&#34; height=&#34;360&#34; src=&#34;https://www.youtube.com/embed/7WBEhtQssn8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;ul&gt;
 &lt;li&gt;2015-11-17: presented at &lt;a href=&#34;http://www.meetup.com/awsgurus/events/226547082/&#34;&gt;AWS Bay Area Meetup&lt;/a&gt;
@@ -116,8 +130,7 @@ to their capabilities.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;DevOps is a culturally rendered term.&amp;quot; &lt;a href=&#34;https://twitter.com/calm_mark&#34;&gt;@calm_mark&lt;/a&gt;&lt;/p&gt;&amp;mdash; Noah Kantrowitz (@kantrn) &lt;a href=&#34;https://twitter.com/kantrn/status/650414900682973184&#34;&gt;October 3, 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-</description>
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

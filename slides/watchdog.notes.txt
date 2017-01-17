@@ -1,4 +1,5 @@
-https://github.com/gorakhargosh/watchdog
+# https://github.com/gorakhargosh/watchdog
+# sudo apt-get install python-pip python-landslide
 
 cd ~/Documents/github.com/mlavi/hugo/static/slides
 sudo pip install --upgrade virtualenv

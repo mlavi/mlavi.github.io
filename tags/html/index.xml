@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/html/</link>
+    <link>http://mlavi.github.io/tags/html/index.xml</link>
     <description>Recent content in Html on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 23 Apr 2015 12:59:26 -0700</lastBuildDate>
     <atom:link href="http://mlavi.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,13 +15,12 @@
       <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
       
       <guid>http://mlavi.github.io/post/html-slideshow-survey/</guid>
-      <description>
-
-&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
+      <description>&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
 We already have a universal, open system for communication
-called the web, so let&amp;rsquo;s explore web presentation applications.&lt;/p&gt;
+called the web, so let&amp;rsquo;s explore web presentation applications.
+&lt;/p&gt;
 
-&lt;h3 id=&#34;survey-says:fa3a5497626cfaa0f40bed75b9ebaf95&#34;&gt;Survey Says&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;survey-says&#34;&gt;Survey Says&amp;hellip;&lt;/h3&gt;
 
 &lt;p&gt;We used dynamic HTML slides at Netscape for our DevCon presentations, it was time to see what
 the state of the art was today! I had encountered a few solutions over the years, but I found
@@ -32,7 +30,7 @@ and &lt;a href=&#34;http://alternativeto.net/software/prezi/&#34;&gt;http://alte
 &lt;p&gt;I was instantly productive with Landslide running in a Python virtualenv with a watchdog script
 for recompiling my updates in Markdown, so I chose that, but I would revisit any of the following.&lt;/p&gt;
 
-&lt;h3 id=&#34;static-tools:fa3a5497626cfaa0f40bed75b9ebaf95&#34;&gt;Static Tools&lt;/h3&gt;
+&lt;h3 id=&#34;static-tools&#34;&gt;Static Tools&lt;/h3&gt;
 
 &lt;p&gt;These HTML slide systems are comprised of static HTML+CSS+JavaScript in which you author content directly.&lt;/p&gt;
 
@@ -53,7 +51,7 @@ for recompiling my updates in Markdown, so I chose that, but I would revisit any
 || &lt;a href=&#34;https://mbostock.github.io/stack/&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;dynamic-tools:fa3a5497626cfaa0f40bed75b9ebaf95&#34;&gt;Dynamic Tools&lt;/h3&gt;
+&lt;h3 id=&#34;dynamic-tools&#34;&gt;Dynamic Tools&lt;/h3&gt;
 
 &lt;p&gt;These HTML slide packages require compiling, but final output is static HTML+CSS+JavaScript:&lt;/p&gt;
 
@@ -84,7 +82,7 @@ PyPi: pip install. Compiled slides to PDF export as well!&lt;/li&gt;
 || &lt;a href=&#34;http://markdalgleish.com/projects/bespoke.js/&#34;&gt;Demo&lt;/a&gt; leverages Yeoman, Grunt, etc.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;other-open-formats:fa3a5497626cfaa0f40bed75b9ebaf95&#34;&gt;Other Open Formats&lt;/h3&gt;
+&lt;h3 id=&#34;other-open-formats&#34;&gt;Other Open Formats&lt;/h3&gt;
 
 &lt;p&gt;I found some interesting alternate formats for SVG and PDF Slides, a la Prezi:&lt;/p&gt;
 
@@ -92,8 +90,7 @@ PyPi: pip install. Compiled slides to PDF export as well!&lt;/li&gt;
 &lt;li&gt;Pres/v/g: &lt;a href=&#34;https://github.com/feklee/presvg&#34;&gt;Source&lt;/a&gt;
 || &lt;a href=&#34;http://feklee.github.com/presvg/demo.html&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;PDFCube: &lt;a href=&#34;http://code.100allora.it/pdfcube/&#34;&gt;Home&lt;/a&gt; || &lt;a href=&#34;https://github.com/baol/pdfcube&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

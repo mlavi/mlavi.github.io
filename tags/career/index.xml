@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Career on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/career/</link>
+    <link>http://mlavi.github.io/tags/career/index.xml</link>
     <description>Recent content in Career on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 06 Mar 2015 14:11:47 -0800</lastBuildDate>
     <atom:link href="http://mlavi.github.io/tags/career/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -20,7 +19,8 @@
  and web sites from an engineering, operations, content, and marketing perspective.
  My focus is on people and software development along with system design thinking for the
  whole life cycle: I can build, grow, and manage teams, applications, networks, and servers
- to work together while planning and nurturing their continuous improvement.&lt;/p&gt;
+ to work together while planning and nurturing their continuous improvement.
+&lt;/p&gt;
 
 &lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
  After graduation and Internet withdrawal, he joined the first national commercial Internet
@@ -37,8 +37,7 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
  networks, and systems to work together. His multidisciplinary practice is complimented
  by the term &lt;a href=&#34;https://en.wikipedia.org/wiki/DevOps&#34;&gt;DevOps&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;You can review Mark&amp;rsquo;s career and endorsements at &lt;a href=&#34;https://www.linkedin.com/in/marklavi&#34;&gt;https://www.linkedin.com/in/marklavi&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;You can review Mark&amp;rsquo;s career and endorsements at &lt;a href=&#34;https://www.linkedin.com/in/marklavi&#34;&gt;https://www.linkedin.com/in/marklavi&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

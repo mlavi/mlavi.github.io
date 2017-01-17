@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Webmaster on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/webmaster/</link>
+    <link>http://mlavi.github.io/tags/webmaster/index.xml</link>
     <description>Recent content in Webmaster on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 10 Apr 2015 08:44:19 -0700</lastBuildDate>
     <atom:link href="http://mlavi.github.io/tags/webmaster/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,11 +15,10 @@
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
       <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
-      <description>
+      <description>&lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.
+&lt;/p&gt;
 
-&lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.&lt;/p&gt;
-
-&lt;h3 id=&#34;migration-of-technology-stacks:1d44784f593e898273702c2689a01985&#34;&gt;Migration of Technology Stacks&lt;/h3&gt;
+&lt;h3 id=&#34;migration-of-technology-stacks&#34;&gt;Migration of Technology Stacks&lt;/h3&gt;
 
 &lt;p&gt;I was the webmaster (Senior Producer, Web Team in the Information Technology department of Silicon Graphics: SGI)
 from 2005-2011, which is to say I designed and implemented improvements to web content, management, publishing,
@@ -40,7 +38,7 @@ from open source licensing.&lt;/p&gt;
 
 &lt;p&gt;e.g.: From Netscape Enterprise Web Server to Apache, Informix and Oracle to MySQL, PERL to PHP, and I had been building this web stack on both Solaris and Linux.&lt;/p&gt;
 
-&lt;h3 id=&#34;migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;Migration of Build Methods&lt;/h3&gt;
+&lt;h3 id=&#34;migration-of-build-methods&#34;&gt;Migration of Build Methods&lt;/h3&gt;
 
 &lt;p&gt;I had an ever growing shell script to perform the package builds and I re-factored it for the release numbers and
 the deployment directory to be variable driven. Although my build script was a brittle monstrosity without any
@@ -72,8 +70,7 @@ for the upstream operating system provider to back-port and distribute&lt;/li&gt
 &lt;li&gt;communicate my work because the code was documented and visualizable, e.g.:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;../../img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I wrote one Phing extension called &amp;ldquo;MyUnpack.&amp;rdquo; Given any software package release version, it would:&lt;/p&gt;
 
@@ -96,16 +93,16 @@ and identifying, testing, and confirming a fix to broken OpenSSL builds on Itani
 
 &lt;p&gt;I hope to open source the webplatform project one day.&lt;/p&gt;
 
-&lt;h3 id=&#34;sgi-appendix:1d44784f593e898273702c2689a01985&#34;&gt;SGI Appendix&lt;/h3&gt;
+&lt;h3 id=&#34;sgi-appendix&#34;&gt;SGI Appendix&lt;/h3&gt;
 
 &lt;p&gt;Some fun challenges and SGI trivia:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://sgi.com&#34;&gt;http://sgi.com&lt;/a&gt; was one of the first web sites I ever saw with &lt;a href=&#34;http://en.wikipedia.org/wiki/Mosaic_(web_browser&#34;&gt;NCSA Mosaic&lt;/a&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://sgi.com&#34;&gt;http://sgi.com&lt;/a&gt; was one of the first web sites I ever saw with &lt;a href=&#34;http://en.wikipedia.org/wiki/Mosaic_(web_browser)
 on the web back in 1993. The banner of the home
-page of www.sgi.com was called &amp;ldquo;Silicon Surf&amp;rdquo; and displayed a metallic robot surfing on the ocean, which was
-also a reference to SGI&amp;rsquo;s ground breaking graphic rendering, powering the earliest days of computer graphic
-imagery (CGI) in Hollywood, pioneered by Lucasfilm&amp;rsquo;s Industrial Light and Magic (ILM) with SGI workstations:
+page of www.sgi.com was called &amp;quot;Silicon Surf&amp;quot; and displayed a metallic robot surfing on the ocean, which was
+also a reference to SGI&#39;s ground breaking graphic rendering, powering the earliest days of computer graphic
+imagery (CGI&#34;&gt;NCSA Mosaic&lt;/a&gt; in Hollywood, pioneered by Lucasfilm&amp;rsquo;s Industrial Light and Magic (ILM) with SGI workstations:
 think &lt;a href=&#34;https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day#Effects&#34;&gt;Terminator 2&lt;/a&gt;.
 The act of browsing the world wide web was called &amp;ldquo;web surfing&amp;rdquo; in those early days
 and SGI nicknamed the web team the Surf Team.&lt;/p&gt;
@@ -131,8 +128,7 @@ our solution was based on open standards and transports.&lt;/li&gt;
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Apache_Subversion&#34;&gt;Subversion (svn)&lt;/a&gt;
 because it represented a straightforward migration without a major change in context for our web developers.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -145,7 +141,8 @@ because it represented a straightforward migration without a major change in con
  and web sites from an engineering, operations, content, and marketing perspective.
  My focus is on people and software development along with system design thinking for the
  whole life cycle: I can build, grow, and manage teams, applications, networks, and servers
- to work together while planning and nurturing their continuous improvement.&lt;/p&gt;
+ to work together while planning and nurturing their continuous improvement.
+&lt;/p&gt;
 
 &lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
  After graduation and Internet withdrawal, he joined the first national commercial Internet
@@ -162,8 +159,7 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
  networks, and systems to work together. His multidisciplinary practice is complimented
  by the term &lt;a href=&#34;https://en.wikipedia.org/wiki/DevOps&#34;&gt;DevOps&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;You can review Mark&amp;rsquo;s career and endorsements at &lt;a href=&#34;https://www.linkedin.com/in/marklavi&#34;&gt;https://www.linkedin.com/in/marklavi&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;You can review Mark&amp;rsquo;s career and endorsements at &lt;a href=&#34;https://www.linkedin.com/in/marklavi&#34;&gt;https://www.linkedin.com/in/marklavi&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

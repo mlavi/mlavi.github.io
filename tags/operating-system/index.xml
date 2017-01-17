@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Operating System on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/operating-system/</link>
+    <link>http://mlavi.github.io/tags/operating-system/index.xml</link>
     <description>Recent content in Operating System on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 12 Mar 2016 15:44:02 -0800</lastBuildDate>
     <atom:link href="http://mlavi.github.io/tags/operating-system/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,22 +15,21 @@
       <pubDate>Sat, 12 Mar 2016 15:44:02 -0800</pubDate>
       
       <guid>http://mlavi.github.io/post/declarative_os/</guid>
-      <description>
-
-&lt;p&gt;A new breed of operating systems adopt declarative configuration management for
+      <description>&lt;p&gt;A new breed of operating systems adopt declarative configuration management for
 an interesting hybrid! OS maintenance of long-lived servers remains a challenge
-for our &amp;ldquo;mutable&amp;rdquo; infrastructure.&lt;/p&gt;
+for our &amp;ldquo;mutable&amp;rdquo; infrastructure.
+&lt;/p&gt;
 
 &lt;p&gt;Although Linux containers greatly abstract away the operating system (OS) and
 can displace most of configuration management, we now see innovation on the
 OS side of the equation.&lt;/p&gt;
 
-&lt;h2 id=&#34;nixos-linux:6991032b21a185a6248c08473960ddc6&#34;&gt;NixOS Linux&lt;/h2&gt;
+&lt;h2 id=&#34;nixos-linux&#34;&gt;NixOS Linux&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://nixos.org/&#34;&gt;NixOS Linux&lt;/a&gt; is Linux operating system distribution which
 uses a declarative model for system configuration, software management, and
 &lt;a href=&#34;http://nixos.org/nixops/&#34;&gt;remote operation&lt;/a&gt;. &lt;a href=&#34;http://nixos.org/nix/&#34;&gt;Nix&lt;/a&gt;,
-the package manager, works on MacOS and Linux, understands package dependencies,
+the package manager, works on Mac OS and Linux, understands package dependencies,
 and allows multiple versions of software to coexist, making rollback easy.
 Nix works with the combination build system and Nix package repository named
 &lt;a href=&#34;http://nixos.org/hydra/&#34;&gt;Hydra&lt;/a&gt;. There is a public repository of Nix
@@ -44,7 +42,7 @@ packages, which helps complete dependencies.&lt;/p&gt;
 in the SF Bay Area, but the community is small. I very much admire the efforts
 but had some trouble getting Hydra running on a virtual NixOS box.&lt;/p&gt;
 
-&lt;h2 id=&#34;qubes-os-project:6991032b21a185a6248c08473960ddc6&#34;&gt;Qubes OS Project&lt;/h2&gt;
+&lt;h2 id=&#34;qubes-os-project&#34;&gt;Qubes OS Project&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.qubes-os.org/tour/#what-is-qubes-os&#34;&gt;Qubes OS&lt;/a&gt; is a &amp;ldquo;reasonably
 secure operating system&amp;rdquo; for your laptop or desktop which  boots to the Xen
@@ -64,7 +62,7 @@ and &lt;a href=&#34;http://xenserver.org/partners/docker.html&#34;&gt;XenServer&
 &lt;p&gt;I plan to try this in my spare time, but seeing as how this blog entry took
 over four months to publish, perhaps I&amp;rsquo;ll hold off for another release.&lt;/p&gt;
 
-&lt;h2 id=&#34;gnu-guixsd:6991032b21a185a6248c08473960ddc6&#34;&gt;GNU GuixSD&lt;/h2&gt;
+&lt;h2 id=&#34;gnu-guixsd&#34;&gt;GNU GuixSD&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.gnu.org/software/guix/&#34;&gt;Guix System Distribution&lt;/a&gt; is GNU OS that
 provides a Guile Scheme API and domain specific language definitions for
@@ -73,12 +71,12 @@ package management and
 
 &lt;p&gt;I found this interesting, but a bit overwhelming to start diving into!&lt;/p&gt;
 
-&lt;h2 id=&#34;addendum-further-investigations:6991032b21a185a6248c08473960ddc6&#34;&gt;Addendum: Further Investigations&lt;/h2&gt;
+&lt;h2 id=&#34;addendum-further-investigations&#34;&gt;Addendum: Further Investigations&lt;/h2&gt;
 
 &lt;p&gt;There is more to investigate:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Intel&amp;rsquo;s &lt;a href=&#34;https://clearlinux.org/&#34;&gt;Clear Linux Project&lt;/a&gt; is distro which
+&lt;li&gt;&lt;p&gt;Intel&amp;rsquo;s &lt;a href=&#34;https://clearlinux.org/&#34;&gt;Clear Linux Project&lt;/a&gt; is distribution which
 attempts to secure and run containers with optimal performance
 on Intel hardware. Most interesting is their design goal of making &lt;a href=&#34;https://clearlinux.org/features/stateless&#34;&gt;the OS
 stateless&lt;/a&gt;. This approach should
@@ -86,8 +84,7 @@ be contrasted to the minimal host OSs for containers: RancherOS, CoreOS, etc.&lt
 
 &lt;li&gt;&lt;p&gt;Docker&amp;rsquo;s recent acquisition of &lt;a href=&#34;https://blog.docker.com/2016/01/unikernel/&#34;&gt;Unikernel Systems&lt;/a&gt;
 and the micro-kernel movement as a whole (&lt;a href=&#34;http://unikernel.org/projects/&#34;&gt;http://unikernel.org/projects/&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

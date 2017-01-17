@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Infrastructure on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/infrastructure/</link>
+    <link>http://mlavi.github.io/tags/infrastructure/index.xml</link>
     <description>Recent content in Infrastructure on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 04 Apr 2015 07:55:39 -0700</lastBuildDate>
     <atom:link href="http://mlavi.github.io/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,14 +15,13 @@
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
       <guid>http://mlavi.github.io/post/container-infrastructure-strategy/</guid>
-      <description>
-
-&lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
+      <description>&lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
 resembles virtual machines, includes the operating system user land, and desires configuration
 management. Does this starting point represent the opposite of container promise and the journey
-to immutable infrastructure?&lt;/p&gt;
+to immutable infrastructure?
+&lt;/p&gt;
 
-&lt;h3 id=&#34;update-2015-08-20:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Update: 2015-08-20&lt;/h3&gt;
+&lt;h3 id=&#34;update-2015-08-20&#34;&gt;Update: 2015-08-20&lt;/h3&gt;
 
 &lt;p&gt;The content of this blog post has been given as a talk:&lt;/p&gt;
 
@@ -46,7 +44,7 @@ I think this is a great way to look at things!&lt;/li&gt;
 &lt;li&gt;2015-04-16: led the open space session at the Container Unconference, preceding &lt;a href=&#34;https://container.camp/sf-2015/&#34;&gt;Container Camp @ San Francisco 2015&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;heavy-containers:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Heavy Containers&lt;/h3&gt;
+&lt;h3 id=&#34;heavy-containers&#34;&gt;Heavy Containers&lt;/h3&gt;
 
 &lt;p&gt;I have been researching containers for years, I encountered &lt;a href=&#34;https://pantheon.io/blog/why-we-built-pantheon-containers-instead-virtual-machines&#34;&gt;an early mention for Drupal CMS hosting&lt;/a&gt;
 probably a year before I heard about Docker. I had worked with
@@ -110,7 +108,7 @@ RUN apt-get update &amp;amp;&amp;amp; apt-get install -y apache2 php5
  then you are ready for container re-factoring and layering. There is a notion of linked
  and data containers which I&amp;rsquo;ll explore later, but what would we re-factor and why?&lt;/p&gt;
 
-&lt;h3 id=&#34;container-re-factoring:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Container Re-factoring&lt;/h3&gt;
+&lt;h3 id=&#34;container-re-factoring&#34;&gt;Container Re-factoring&lt;/h3&gt;
 
 &lt;p&gt;This is an incomplete thought: I will continue to organize and expand it.&lt;/p&gt;
 
@@ -278,7 +276,7 @@ yet.&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;etc?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;immutable-infrastructure-versus-configuration-management-build-time-versus-run-time:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Immutable Infrastructure versus Configuration Management: build-time versus run-time&lt;/h3&gt;
+&lt;h3 id=&#34;immutable-infrastructure-versus-configuration-management-build-time-versus-run-time&#34;&gt;Immutable Infrastructure versus Configuration Management: build-time versus run-time&lt;/h3&gt;
 
 &lt;p&gt;I want to reuse my configuration management to build a container rather than use shell
 commands which represent the lowest level primitive of configuration management functionality.&lt;/p&gt;
@@ -306,7 +304,7 @@ community is wrestling with this problem as we transition to understand containe
 R.I. Pienaar (author of Marionette Collective, MCo, which is bundled with Puppet)
 wrote about &lt;a href=&#34;https://www.devco.net/archives/2015/02/24/moving-a-service-from-puppet-to-docker-2.php&#34;&gt;Moving a service from Puppet to Docker&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;container-deployment-and-orchestration:9b4c54333bd97e87ce05878dcf4182cb&#34;&gt;Container Deployment and Orchestration&lt;/h3&gt;
+&lt;h3 id=&#34;container-deployment-and-orchestration&#34;&gt;Container Deployment and Orchestration&lt;/h3&gt;
 
 &lt;p&gt;Container deployment and orchestration becomes the next issue: do you use a scheduler like
 &lt;a href=&#34;http://mesos.apache.org/&#34;&gt;Apache Mesos&lt;/a&gt;, &lt;a href=&#34;http://kubernetes.io/&#34;&gt;Google Kubernetes&lt;/a&gt;,
@@ -329,8 +327,7 @@ or database schemas). More thought exists for application and system design in t
 &lt;p&gt;The roll out of an entire service upgrade is a complex orchestration exercise.
 It represents a medley of service and application operations along with persistent
 data sources and it is a higher level problem I want to tackle soon. My dream is
-to work toward test driven DevOps and behavior driven DevOps to accomplish this.&lt;/p&gt;
-</description>
+to work toward test driven DevOps and behavior driven DevOps to accomplish this.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -339,23 +336,22 @@ to work toward test driven DevOps and behavior driven DevOps to accomplish this.
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
       <guid>http://mlavi.github.io/post/first/</guid>
-      <description>
-
-&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
+      <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
-and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;
+and technical debt follow as I start my Infrastructure as Code blog.
+&lt;/p&gt;
 
 &lt;p&gt;Embarking on a new adventure is always the best time in a project because all your dreams
  are possible! You research your ideas, find new tools and libraries, and smell the fresh
  scent of unhindered development.&lt;/p&gt;
 
-&lt;h3 id=&#34;then-you-start:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Then you start&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;then-you-start&#34;&gt;Then you start&amp;hellip;&lt;/h3&gt;
 
 &lt;p&gt;You find that your idea is broad and multifaceted, tools are in various states of acceptable
  use and documentation, and there is a bevy of dependencies: each representing a small
  landscape to conquer.&lt;/p&gt;
 
-&lt;h3 id=&#34;to-sink-into-reality:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;&amp;hellip; to sink into reality!&lt;/h3&gt;
+&lt;h3 id=&#34;to-sink-into-reality&#34;&gt;&amp;hellip; to sink into reality!&lt;/h3&gt;
 
 &lt;p&gt;The original title of this first post was &amp;ldquo;Time for a new Blog&amp;rdquo; to document my experiment
  with &lt;a href=&#34;http://jekyllrb.com/docs/github-pages/&#34;&gt;Jekyll and GitHub Pages&lt;/a&gt; before settling on
@@ -376,7 +372,7 @@ and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;
 &lt;li&gt;Everything under revision control, therefore: blog + content = testable software!&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;a-static-web-cms:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;A Static Web CMS?&lt;/h3&gt;
+&lt;h3 id=&#34;a-static-web-cms&#34;&gt;A Static Web CMS?&lt;/h3&gt;
 
 &lt;p&gt;Even though I&amp;rsquo;ve accomplished much (including e-commerce) with various web content management systems
 (CMS) such as:
@@ -406,13 +402,12 @@ In addition, we can leverage improved web client capabilities to shift what was 
 
 &lt;p&gt;This will be a great experiment!&lt;/p&gt;
 
-&lt;h3 id=&#34;infrastructure-as-code:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Infrastructure as Code&lt;/h3&gt;
+&lt;h3 id=&#34;infrastructure-as-code&#34;&gt;Infrastructure as Code&lt;/h3&gt;
 
 &lt;p&gt;The real purpose of this blog will be to catalog and share my research and development towards my passion:
 Infrastructure as Code which will lead to my dream of behavior driven DevOps. It is a ripe time for
 system and design thinking because the entire industry is trying to solve basic problems and automate
-solutions while integrating many different systems and disciplines. It is an exciting and disruptive time!&lt;/p&gt;
-</description>
+solutions while integrating many different systems and disciplines. It is an exciting and disruptive time!&lt;/p&gt;</description>
     </item>
     
   </channel>
