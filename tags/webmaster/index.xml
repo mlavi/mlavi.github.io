@@ -7,7 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+<<<<<<< HEAD
     <atom:link href="http://mlavi.github.io/tags/webmaster/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Fri, 10 Apr 2015 08:44:19 -0700</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/webmaster/index.xml" rel="self" type="application/rss+xml" />
+    
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>Building the LAMP stack with Phing</title>
@@ -16,6 +23,7 @@
       
       <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
       <description>&lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;migration-of-technology-stacks&#34;&gt;Migration of Technology Stacks&lt;/h3&gt;
@@ -129,6 +137,9 @@ our solution was based on open standards and transports.&lt;/li&gt;
 because it represented a straightforward migration without a major change in context for our web developers.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -142,6 +153,7 @@ because it represented a straightforward migration without a major change in con
  My focus is on people and software development along with system design thinking for the
  whole life cycle: I can build, grow, and manage teams, applications, networks, and servers
  to work together while planning and nurturing their continuous improvement.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
@@ -160,6 +172,9 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
  by the term &lt;a href=&#34;https://en.wikipedia.org/wiki/DevOps&#34;&gt;DevOps&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can review Mark&amp;rsquo;s career and endorsements at &lt;a href=&#34;https://www.linkedin.com/in/marklavi&#34;&gt;https://www.linkedin.com/in/marklavi&lt;/a&gt;&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

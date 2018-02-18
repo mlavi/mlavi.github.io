@@ -7,7 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+<<<<<<< HEAD
     <atom:link href="http://mlavi.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Thu, 23 Apr 2015 12:59:26 -0700</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>HTML Slide Show Survey</title>
@@ -18,6 +25,7 @@
       <description>&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
 We already have a universal, open system for communication
 called the web, so let&amp;rsquo;s explore web presentation applications.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;survey-says&#34;&gt;Survey Says&amp;hellip;&lt;/h3&gt;
@@ -91,6 +99,9 @@ PyPi: pip install. Compiled slides to PDF export as well!&lt;/li&gt;
 || &lt;a href=&#34;http://feklee.github.com/presvg/demo.html&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;PDFCube: &lt;a href=&#34;http://code.100allora.it/pdfcube/&#34;&gt;Home&lt;/a&gt; || &lt;a href=&#34;https://github.com/baol/pdfcube&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -100,6 +111,7 @@ PyPi: pip install. Compiled slides to PDF export as well!&lt;/li&gt;
       
       <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
       <description>&lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;migration-of-technology-stacks&#34;&gt;Migration of Technology Stacks&lt;/h3&gt;
@@ -213,6 +225,9 @@ our solution was based on open standards and transports.&lt;/li&gt;
 because it represented a straightforward migration without a major change in context for our web developers.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

@@ -7,7 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+<<<<<<< HEAD
     <atom:link href="http://mlavi.github.io/tags/distribution/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Wed, 26 Aug 2015 08:59:59 -0700</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/distribution/index.xml" rel="self" type="application/rss+xml" />
+    
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>Artifact Repositories</title>
@@ -17,6 +24,7 @@
       <guid>http://mlavi.github.io/post/artifact_repositories/</guid>
       <description>&lt;p&gt;The past: desktop builds uploaded to the FTP server; the present: global artifact delivery networks.
 Release management and artifact repositories are they way we deliver software and infrastructure today.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;ship-the-bits&#34;&gt;Ship the Bits&lt;/h3&gt;
@@ -163,6 +171,9 @@ and &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;Amazon CloudFront
 &lt;/ul&gt;
 
 &lt;p&gt;One potentially biased resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

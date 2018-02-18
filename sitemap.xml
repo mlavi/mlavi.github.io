@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<<<<<<< HEAD
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+=======
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
   
   <url>
     <loc>http://mlavi.github.io/post/declarative_os/</loc>
@@ -92,6 +97,14 @@
   </url>
   
   <url>
+<<<<<<< HEAD
+=======
+    <loc>http://mlavi.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     <loc>http://mlavi.github.io/tags/cms/</loc>
     <lastmod>2015-03-06T14:11:47-08:00</lastmod>
     <priority>0</priority>
@@ -231,6 +244,10 @@
   
   <url>
     <loc>http://mlavi.github.io/tags/</loc>
+<<<<<<< HEAD
+=======
+    <lastmod>2015-03-06T14:11:47-08:00</lastmod>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     <priority>0</priority>
   </url>
   

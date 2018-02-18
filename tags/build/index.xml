@@ -7,7 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+<<<<<<< HEAD
     <atom:link href="http://mlavi.github.io/tags/build/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Wed, 26 Aug 2015 08:59:59 -0700</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/build/index.xml" rel="self" type="application/rss+xml" />
+    
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>Artifact Repositories</title>
@@ -17,6 +24,7 @@
       <guid>http://mlavi.github.io/post/artifact_repositories/</guid>
       <description>&lt;p&gt;The past: desktop builds uploaded to the FTP server; the present: global artifact delivery networks.
 Release management and artifact repositories are they way we deliver software and infrastructure today.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;ship-the-bits&#34;&gt;Ship the Bits&lt;/h3&gt;
@@ -163,6 +171,9 @@ and &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;Amazon CloudFront
 &lt;/ul&gt;
 
 &lt;p&gt;One potentially biased resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -172,6 +183,7 @@ and &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;Amazon CloudFront
       
       <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
       <description>&lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;migration-of-technology-stacks&#34;&gt;Migration of Technology Stacks&lt;/h3&gt;
@@ -285,6 +297,9 @@ our solution was based on open standards and transports.&lt;/li&gt;
 because it represented a straightforward migration without a major change in context for our web developers.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -295,6 +310,7 @@ because it represented a straightforward migration without a major change in con
       <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
  You reinforce your goals to improve code flow and service design on the way to test driven development!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;code-flow-and-service-design&#34;&gt;Code Flow and Service Design&lt;/h3&gt;
@@ -398,6 +414,9 @@ This expanded skill set must be part of the engineering culture for service desi
 &lt;/ol&gt;
 
 &lt;p&gt;I am sure there is more, but this is a very good start to a robust service design organization for continuous deployment!&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

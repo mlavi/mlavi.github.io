@@ -7,7 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+<<<<<<< HEAD
     <atom:link href="http://mlavi.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Wed, 18 Mar 2015 21:02:15 -0700</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>DevOps BTD Pattern for Continuous Deployment</title>
@@ -17,6 +24,7 @@
       <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
  You reinforce your goals to improve code flow and service design on the way to test driven development!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;code-flow-and-service-design&#34;&gt;Code Flow and Service Design&lt;/h3&gt;
@@ -120,6 +128,9 @@ This expanded skill set must be part of the engineering culture for service desi
 &lt;/ol&gt;
 
 &lt;p&gt;I am sure there is more, but this is a very good start to a robust service design organization for continuous deployment!&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

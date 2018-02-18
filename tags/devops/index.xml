@@ -7,7 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+<<<<<<< HEAD
     <atom:link href="http://mlavi.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Tue, 13 Oct 2015 12:03:32 -0700</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>DevOps Demystified</title>
@@ -18,6 +25,7 @@
       <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
  for many software engineering organizations. Let me define DevOps to help you
  understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;update-2016-12-17&#34;&gt;Update: 2016-12-17&lt;/h3&gt;
@@ -131,6 +139,9 @@ to their capabilities.&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;DevOps is a culturally rendered term.&amp;quot; &lt;a href=&#34;https://twitter.com/calm_mark&#34;&gt;@calm_mark&lt;/a&gt;&lt;/p&gt;&amp;mdash; Noah Kantrowitz (@kantrn) &lt;a href=&#34;https://twitter.com/kantrn/status/650414900682973184&#34;&gt;October 3, 2015&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -141,6 +152,7 @@ to their capabilities.&lt;/p&gt;
       <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
  You reinforce your goals to improve code flow and service design on the way to test driven development!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;code-flow-and-service-design&#34;&gt;Code Flow and Service Design&lt;/h3&gt;
@@ -244,6 +256,9 @@ This expanded skill set must be part of the engineering culture for service desi
 &lt;/ol&gt;
 
 &lt;p&gt;I am sure there is more, but this is a very good start to a robust service design organization for continuous deployment!&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -254,6 +269,7 @@ This expanded skill set must be part of the engineering culture for service desi
       <guid>http://mlavi.github.io/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
 Via open source and this blog, we can elevate the state of our software engineering and service design!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;quotes-and-motivation&#34;&gt;Quotes and Motivation&lt;/h3&gt;
@@ -443,6 +459,9 @@ state Stack {
 
 &lt;p&gt;I will put this under revision control in the Infrastructure as Code project I&amp;rsquo;m undertaking.
 I do not believe authored hyperlinks export to SVG yet, perhaps that will be my first request for PlantUML.&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -454,6 +473,7 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
 One needs to start with a map of the world before deciding where to focus their efforts.
 It&amp;rsquo;s even better when you can optimize and render the new map in real-time!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;beautiful-tool-and-diagram&#34;&gt;Beautiful Tool and Diagram&lt;/h3&gt;
@@ -516,6 +536,9 @@ and their various implementations with modelers such as:&lt;/p&gt;
 
 &lt;p&gt;This was triggered by my recent research into OASIS TOSCA and CAMP standards:
 everything new feels old again! :~)s&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -529,6 +552,7 @@ everything new feels old again! :~)s&lt;/p&gt;</description>
  My focus is on people and software development along with system design thinking for the
  whole life cycle: I can build, grow, and manage teams, applications, networks, and servers
  to work together while planning and nurturing their continuous improvement.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
@@ -547,6 +571,9 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
  by the term &lt;a href=&#34;https://en.wikipedia.org/wiki/DevOps&#34;&gt;DevOps&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can review Mark&amp;rsquo;s career and endorsements at &lt;a href=&#34;https://www.linkedin.com/in/marklavi&#34;&gt;https://www.linkedin.com/in/marklavi&lt;/a&gt;&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

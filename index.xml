@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sat, 12 Mar 2016 15:44:02 -0800</lastBuildDate>
-    <atom:link href="http://mlavi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://mlavi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Declarative Operating Systems</title>
@@ -19,6 +21,7 @@
       <description>&lt;p&gt;A new breed of operating systems adopt declarative configuration management for
 an interesting hybrid! OS maintenance of long-lived servers remains a challenge
 for our &amp;ldquo;mutable&amp;rdquo; infrastructure.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;p&gt;Although Linux containers greatly abstract away the operating system (OS) and
@@ -86,6 +89,9 @@ be contrasted to the minimal host OSs for containers: RancherOS, CoreOS, etc.&lt
 &lt;li&gt;&lt;p&gt;Docker&amp;rsquo;s recent acquisition of &lt;a href=&#34;https://blog.docker.com/2016/01/unikernel/&#34;&gt;Unikernel Systems&lt;/a&gt;
 and the micro-kernel movement as a whole (&lt;a href=&#34;http://unikernel.org/projects/&#34;&gt;http://unikernel.org/projects/&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -97,6 +103,7 @@ and the micro-kernel movement as a whole (&lt;a href=&#34;http://unikernel.org/p
       <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
  for many software engineering organizations. Let me define DevOps to help you
  understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;update-2016-12-17&#34;&gt;Update: 2016-12-17&lt;/h3&gt;
@@ -210,6 +217,9 @@ to their capabilities.&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;DevOps is a culturally rendered term.&amp;quot; &lt;a href=&#34;https://twitter.com/calm_mark&#34;&gt;@calm_mark&lt;/a&gt;&lt;/p&gt;&amp;mdash; Noah Kantrowitz (@kantrn) &lt;a href=&#34;https://twitter.com/kantrn/status/650414900682973184&#34;&gt;October 3, 2015&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -220,6 +230,7 @@ to their capabilities.&lt;/p&gt;
       <guid>http://mlavi.github.io/post/artifact_repositories/</guid>
       <description>&lt;p&gt;The past: desktop builds uploaded to the FTP server; the present: global artifact delivery networks.
 Release management and artifact repositories are they way we deliver software and infrastructure today.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;ship-the-bits&#34;&gt;Ship the Bits&lt;/h3&gt;
@@ -366,6 +377,9 @@ and &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;Amazon CloudFront
 &lt;/ul&gt;
 
 &lt;p&gt;One potentially biased resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -377,6 +391,7 @@ and &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;Amazon CloudFront
       <description>&lt;p&gt;Database configuration management tools allow us version the database and treat it like code!
 We want DevOps, not mysterious, hidden, hand crafted DBA ops whenever possible. Another
 flashback to 1998.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;self-taught-dba&#34;&gt;Self-taught DBA&lt;/h3&gt;
@@ -486,6 +501,9 @@ We discussed feature toggles, shipping features dark, and later turning them on 
 &lt;li&gt;&lt;a href=&#34;http://www.infoq.com/articles/Database-Version-Control&#34;&gt;http://www.infoq.com/articles/Database-Version-Control&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Does not appear to be open source:&lt;/strong&gt; dbmaestro.com || klonio.com&lt;/li&gt;
 &lt;/ul&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -497,6 +515,7 @@ We discussed feature toggles, shipping features dark, and later turning them on 
       <description>&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
 We already have a universal, open system for communication
 called the web, so let&amp;rsquo;s explore web presentation applications.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;survey-says&#34;&gt;Survey Says&amp;hellip;&lt;/h3&gt;
@@ -570,6 +589,9 @@ PyPi: pip install. Compiled slides to PDF export as well!&lt;/li&gt;
 || &lt;a href=&#34;http://feklee.github.com/presvg/demo.html&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;PDFCube: &lt;a href=&#34;http://code.100allora.it/pdfcube/&#34;&gt;Home&lt;/a&gt; || &lt;a href=&#34;https://github.com/baol/pdfcube&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -579,6 +601,7 @@ PyPi: pip install. Compiled slides to PDF export as well!&lt;/li&gt;
       
       <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
       <description>&lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;migration-of-technology-stacks&#34;&gt;Migration of Technology Stacks&lt;/h3&gt;
@@ -692,6 +715,9 @@ our solution was based on open standards and transports.&lt;/li&gt;
 because it represented a straightforward migration without a major change in context for our web developers.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -704,6 +730,7 @@ because it represented a straightforward migration without a major change in con
 resembles virtual machines, includes the operating system user land, and desires configuration
 management. Does this starting point represent the opposite of container promise and the journey
 to immutable infrastructure?
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;update-2015-08-20&#34;&gt;Update: 2015-08-20&lt;/h3&gt;
@@ -1013,6 +1040,9 @@ or database schemas). More thought exists for application and system design in t
 It represents a medley of service and application operations along with persistent
 data sources and it is a higher level problem I want to tackle soon. My dream is
 to work toward test driven DevOps and behavior driven DevOps to accomplish this.&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -1023,6 +1053,7 @@ to work toward test driven DevOps and behavior driven DevOps to accomplish this.
       <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
  You reinforce your goals to improve code flow and service design on the way to test driven development!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;code-flow-and-service-design&#34;&gt;Code Flow and Service Design&lt;/h3&gt;
@@ -1126,6 +1157,9 @@ This expanded skill set must be part of the engineering culture for service desi
 &lt;/ol&gt;
 
 &lt;p&gt;I am sure there is more, but this is a very good start to a robust service design organization for continuous deployment!&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -1136,6 +1170,7 @@ This expanded skill set must be part of the engineering culture for service desi
       <guid>http://mlavi.github.io/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
 Via open source and this blog, we can elevate the state of our software engineering and service design!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;quotes-and-motivation&#34;&gt;Quotes and Motivation&lt;/h3&gt;
@@ -1325,6 +1360,9 @@ state Stack {
 
 &lt;p&gt;I will put this under revision control in the Infrastructure as Code project I&amp;rsquo;m undertaking.
 I do not believe authored hyperlinks export to SVG yet, perhaps that will be my first request for PlantUML.&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -1336,6 +1374,7 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
 One needs to start with a map of the world before deciding where to focus their efforts.
 It&amp;rsquo;s even better when you can optimize and render the new map in real-time!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;beautiful-tool-and-diagram&#34;&gt;Beautiful Tool and Diagram&lt;/h3&gt;
@@ -1398,6 +1437,9 @@ and their various implementations with modelers such as:&lt;/p&gt;
 
 &lt;p&gt;This was triggered by my recent research into OASIS TOSCA and CAMP standards:
 everything new feels old again! :~)s&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -1411,6 +1453,7 @@ everything new feels old again! :~)s&lt;/p&gt;</description>
  My focus is on people and software development along with system design thinking for the
  whole life cycle: I can build, grow, and manage teams, applications, networks, and servers
  to work together while planning and nurturing their continuous improvement.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
@@ -1429,6 +1472,9 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
  by the term &lt;a href=&#34;https://en.wikipedia.org/wiki/DevOps&#34;&gt;DevOps&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can review Mark&amp;rsquo;s career and endorsements at &lt;a href=&#34;https://www.linkedin.com/in/marklavi&#34;&gt;https://www.linkedin.com/in/marklavi&lt;/a&gt;&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -1440,6 +1486,7 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
       <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
 and technical debt follow as I start my Infrastructure as Code blog.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;p&gt;Embarking on a new adventure is always the best time in a project because all your dreams
@@ -1509,6 +1556,9 @@ In addition, we can leverage improved web client capabilities to shift what was 
 Infrastructure as Code which will lead to my dream of behavior driven DevOps. It is a ripe time for
 system and design thinking because the entire industry is trying to solve basic problems and automate
 solutions while integrating many different systems and disciplines. It is an exciting and disruptive time!&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

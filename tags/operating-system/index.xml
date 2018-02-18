@@ -7,7 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+<<<<<<< HEAD
     <atom:link href="http://mlavi.github.io/tags/operating-system/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Sat, 12 Mar 2016 15:44:02 -0800</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/operating-system/index.xml" rel="self" type="application/rss+xml" />
+    
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>Declarative Operating Systems</title>
@@ -18,6 +25,7 @@
       <description>&lt;p&gt;A new breed of operating systems adopt declarative configuration management for
 an interesting hybrid! OS maintenance of long-lived servers remains a challenge
 for our &amp;ldquo;mutable&amp;rdquo; infrastructure.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;p&gt;Although Linux containers greatly abstract away the operating system (OS) and
@@ -85,6 +93,9 @@ be contrasted to the minimal host OSs for containers: RancherOS, CoreOS, etc.&lt
 &lt;li&gt;&lt;p&gt;Docker&amp;rsquo;s recent acquisition of &lt;a href=&#34;https://blog.docker.com/2016/01/unikernel/&#34;&gt;Unikernel Systems&lt;/a&gt;
 and the micro-kernel movement as a whole (&lt;a href=&#34;http://unikernel.org/projects/&#34;&gt;http://unikernel.org/projects/&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

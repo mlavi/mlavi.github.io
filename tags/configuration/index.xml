@@ -7,7 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+<<<<<<< HEAD
     <atom:link href="http://mlavi.github.io/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Sat, 04 Apr 2015 07:55:39 -0700</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>Container Infrastructure Strategy</title>
@@ -19,6 +26,7 @@
 resembles virtual machines, includes the operating system user land, and desires configuration
 management. Does this starting point represent the opposite of container promise and the journey
 to immutable infrastructure?
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;update-2015-08-20&#34;&gt;Update: 2015-08-20&lt;/h3&gt;
@@ -328,6 +336,9 @@ or database schemas). More thought exists for application and system design in t
 It represents a medley of service and application operations along with persistent
 data sources and it is a higher level problem I want to tackle soon. My dream is
 to work toward test driven DevOps and behavior driven DevOps to accomplish this.&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

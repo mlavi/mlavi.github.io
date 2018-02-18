@@ -7,7 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+<<<<<<< HEAD
     <atom:link href="http://mlavi.github.io/tags/diagram/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Mon, 17 Aug 2015 21:09:12 -0700</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/diagram/index.xml" rel="self" type="application/rss+xml" />
+    
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>Database Change Management</title>
@@ -18,6 +25,7 @@
       <description>&lt;p&gt;Database configuration management tools allow us version the database and treat it like code!
 We want DevOps, not mysterious, hidden, hand crafted DBA ops whenever possible. Another
 flashback to 1998.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;self-taught-dba&#34;&gt;Self-taught DBA&lt;/h3&gt;
@@ -127,6 +135,9 @@ We discussed feature toggles, shipping features dark, and later turning them on 
 &lt;li&gt;&lt;a href=&#34;http://www.infoq.com/articles/Database-Version-Control&#34;&gt;http://www.infoq.com/articles/Database-Version-Control&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Does not appear to be open source:&lt;/strong&gt; dbmaestro.com || klonio.com&lt;/li&gt;
 &lt;/ul&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -137,6 +148,7 @@ We discussed feature toggles, shipping features dark, and later turning them on 
       <guid>http://mlavi.github.io/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
 Via open source and this blog, we can elevate the state of our software engineering and service design!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;quotes-and-motivation&#34;&gt;Quotes and Motivation&lt;/h3&gt;
@@ -326,6 +338,9 @@ state Stack {
 
 &lt;p&gt;I will put this under revision control in the Infrastructure as Code project I&amp;rsquo;m undertaking.
 I do not believe authored hyperlinks export to SVG yet, perhaps that will be my first request for PlantUML.&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -337,6 +352,7 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
 One needs to start with a map of the world before deciding where to focus their efforts.
 It&amp;rsquo;s even better when you can optimize and render the new map in real-time!
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;h3 id=&#34;beautiful-tool-and-diagram&#34;&gt;Beautiful Tool and Diagram&lt;/h3&gt;
@@ -399,6 +415,9 @@ and their various implementations with modelers such as:&lt;/p&gt;
 
 &lt;p&gt;This was triggered by my recent research into OASIS TOSCA and CAMP standards:
 everything new feels old again! :~)s&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

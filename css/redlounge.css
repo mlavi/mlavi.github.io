@@ -218,6 +218,10 @@ a.post-author {
 	font-weight: 200;
 	color: #999;
 }
+.post table {
+    margin-bottom: 1.75rem;
+    margin-top: 0;
+}
 .post-title {
     font-size: 2rem;
     color: #222;
@@ -397,6 +401,9 @@ a.post-category:hover {
 nav#TableOfContents li {
 	padding-bottom: 0.25rem;
 }
+nav#TableOfContents ul:first-child {
+    padding-left: 0px;
+}
 .toc-label {
 	font-size: 0.8rem;
 	color: #aeaeae;
@@ -451,6 +458,14 @@ hr.thin {
 	h2.brand-tagline {
 		font-size: 1.2rem;
 	}
+
+	.header>.sidebarphoto{
+	    width:160px;
+	    height:160px;
+	    border-radius: 50%;
+	    -moz-border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	}
 }
 
 @media (min-width: 48rem) {
@@ -464,9 +479,17 @@ hr.thin {
     }
 
     .header {
-        margin: 60% 2rem 0;
+        margin: 30% 2rem 0;
         text-align: right;
     }
+
+    .header>.sidebarphoto{
+	    width:160px;
+	    height:160px;
+	    border-radius: 50%;
+	    -moz-border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	}
 
     .sidebar {
         position: fixed;

@@ -7,7 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+<<<<<<< HEAD
     <atom:link href="http://mlavi.github.io/tags/cms/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Fri, 06 Mar 2015 14:11:47 -0800</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/cms/index.xml" rel="self" type="application/rss+xml" />
+    
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>Time for a new development project!</title>
@@ -18,6 +25,7 @@
       <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
 and technical debt follow as I start my Infrastructure as Code blog.
+<<<<<<< HEAD
 &lt;/p&gt;
 
 &lt;p&gt;Embarking on a new adventure is always the best time in a project because all your dreams
@@ -87,6 +95,9 @@ In addition, we can leverage improved web client capabilities to shift what was 
 Infrastructure as Code which will lead to my dream of behavior driven DevOps. It is a ripe time for
 system and design thinking because the entire industry is trying to solve basic problems and automate
 solutions while integrating many different systems and disciplines. It is an exciting and disruptive time!&lt;/p&gt;</description>
+=======
+&lt;/p&gt;</description>
+>>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

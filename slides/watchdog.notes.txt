@@ -11,3 +11,5 @@ watchmedo shell-command --pattern='Vagrantfile;*rb' --command='vagrant provision
 PAGE=x watchmedo shell-command --pattern='*.md' --command='landslide --relative --embed --quiet $PAGE.md --destination $PAGE.html' --recursive &
 set PAGE filename ; watchmedo shell-command --pattern='*.md' --command='landslide --relative --embed --quiet $PAGE.md \
  --destination $PAGE.html' --recursive &
+
+watchmedo shell-command --pattern="*.md" --command="landslide --relative --embed --quiet devops-demystified.md --destination devops-demystified.html" &

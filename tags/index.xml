@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mark&#39;s Blog</title>
+    <link>http://mlavi.github.io/tags/</link>
+    <description>Recent content in Tags on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 06 Mar 2015 14:11:47 -0800</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://mlavi.github.io/tags/about/</link>
+      <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Artifact</title>
+      <link>http://mlavi.github.io/tags/artifact/</link>
+      <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/artifact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automation</title>
+      <link>http://mlavi.github.io/tags/automation/</link>
+      <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Build</title>
+      <link>http://mlavi.github.io/tags/build/</link>
+      <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Career</title>
+      <link>http://mlavi.github.io/tags/career/</link>
+      <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/career/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cms</title>
+      <link>http://mlavi.github.io/tags/cms/</link>
+      <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/cms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>http://mlavi.github.io/tags/code/</link>
+      <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>http://mlavi.github.io/tags/configuration/</link>
+      <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Container</title>
+      <link>http://mlavi.github.io/tags/container/</link>
+      <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Culture</title>
+      <link>http://mlavi.github.io/tags/culture/</link>
+      <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database</title>
+      <link>http://mlavi.github.io/tags/database/</link>
+      <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Declarative</title>
+      <link>http://mlavi.github.io/tags/declarative/</link>
+      <pubDate>Sat, 12 Mar 2016 15:44:02 -0800</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/declarative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Definition</title>
+      <link>http://mlavi.github.io/tags/definition/</link>
+      <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/definition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deploy</title>
+      <link>http://mlavi.github.io/tags/deploy/</link>
+      <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/deploy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>http://mlavi.github.io/tags/devops/</link>
+      <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diagram</title>
+      <link>http://mlavi.github.io/tags/diagram/</link>
+      <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/diagram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distribution</title>
+      <link>http://mlavi.github.io/tags/distribution/</link>
+      <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/distribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>http://mlavi.github.io/tags/html/</link>
+      <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Immutable</title>
+      <link>http://mlavi.github.io/tags/immutable/</link>
+      <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/immutable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infrastructure</title>
+      <link>http://mlavi.github.io/tags/infrastructure/</link>
+      <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/infrastructure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lamp</title>
+      <link>http://mlavi.github.io/tags/lamp/</link>
+      <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/lamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operating System</title>
+      <link>http://mlavi.github.io/tags/operating-system/</link>
+      <pubDate>Sat, 12 Mar 2016 15:44:02 -0800</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/operating-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pattern</title>
+      <link>http://mlavi.github.io/tags/pattern/</link>
+      <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/pattern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phing</title>
+      <link>http://mlavi.github.io/tags/phing/</link>
+      <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/phing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sgi</title>
+      <link>http://mlavi.github.io/tags/sgi/</link>
+      <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/sgi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slide</title>
+      <link>http://mlavi.github.io/tags/slide/</link>
+      <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/slide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>http://mlavi.github.io/tags/test/</link>
+      <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>http://mlavi.github.io/tags/web/</link>
+      <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webmaster</title>
+      <link>http://mlavi.github.io/tags/webmaster/</link>
+      <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/webmaster/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

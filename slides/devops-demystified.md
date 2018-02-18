@@ -253,14 +253,15 @@ Reference: [Amazon REST API manifesto](https://apievangelist.com/2012/01/12/the-
 ---
 ## Pets versus Cattle<sup>7</sup>
 
-- Cloud agility enables ephemeral fleets
-    - *Pet* = uptime of years, named, backup maintenence
-    - *Cattle* = numbered, can fail and reprovision anytime
-    - SGI example: 12 years uptime on IRIX! Yesterday's success = today's failure
+Cloud agility enables ephemeral fleets
+
+- *Pet* = uptime of years, named, backup maintenence
+- *Cattle* = numbered, can fail and reprovision anytime
+- SGI example: 12 years uptime on IRIX! Yesterday's success = today's failure
 
 This is a lens to evaluate infrastructure and ops; evolve to fleet management + app first design
 
-<sup>7</sup> [Discussion on attribution of Pets versus Cattle](https://news.ycombinator.com/item?id=7311704)
+<sup>7</sup> [Pets versus Cattle attributed to Bill Baker, MSFT](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)
 
 ---
 ## Pets vs. Cattle vs. Bacteria (continued)
