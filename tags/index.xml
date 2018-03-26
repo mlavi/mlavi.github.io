@@ -33,9 +33,18 @@
     <item>
       <title>Automation</title>
       <link>http://mlavi.github.io/tags/automation/</link>
-      <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
+      <pubDate>Sun, 18 Feb 2018 12:00:00 -0700</pubDate>
       
       <guid>http://mlavi.github.io/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blueprint</title>
+      <link>http://mlavi.github.io/tags/blueprint/</link>
+      <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/blueprint/</guid>
       <description></description>
     </item>
     
@@ -45,6 +54,15 @@
       <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
       
       <guid>http://mlavi.github.io/tags/build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calm.io</title>
+      <link>http://mlavi.github.io/tags/calm.io/</link>
+      <pubDate>Sun, 18 Feb 2018 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/calm.io/</guid>
       <description></description>
     </item>
     
@@ -85,6 +103,15 @@
     </item>
     
     <item>
+      <title>Configuration Management</title>
+      <link>http://mlavi.github.io/tags/configuration-management/</link>
+      <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/configuration-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Container</title>
       <link>http://mlavi.github.io/tags/container/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
@@ -94,9 +121,36 @@
     </item>
     
     <item>
+      <title>Continuous Delivery</title>
+      <link>http://mlavi.github.io/tags/continuous-delivery/</link>
+      <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/continuous-delivery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Deployment</title>
+      <link>http://mlavi.github.io/tags/continuous-deployment/</link>
+      <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/continuous-deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration</title>
+      <link>http://mlavi.github.io/tags/continuous-integration/</link>
+      <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/continuous-integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Culture</title>
       <link>http://mlavi.github.io/tags/culture/</link>
-      <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
+      <pubDate>Tue, 20 Oct 2015 12:00:00 -0700</pubDate>
       
       <guid>http://mlavi.github.io/tags/culture/</guid>
       <description></description>
@@ -141,7 +195,7 @@
     <item>
       <title>Devops</title>
       <link>http://mlavi.github.io/tags/devops/</link>
-      <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
+      <pubDate>Sun, 18 Feb 2018 12:00:00 -0700</pubDate>
       
       <guid>http://mlavi.github.io/tags/devops/</guid>
       <description></description>
@@ -150,7 +204,7 @@
     <item>
       <title>Diagram</title>
       <link>http://mlavi.github.io/tags/diagram/</link>
-      <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
+      <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
       
       <guid>http://mlavi.github.io/tags/diagram/</guid>
       <description></description>
@@ -177,7 +231,7 @@
     <item>
       <title>Immutable</title>
       <link>http://mlavi.github.io/tags/immutable/</link>
-      <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
+      <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
       
       <guid>http://mlavi.github.io/tags/immutable/</guid>
       <description></description>
@@ -193,11 +247,29 @@
     </item>
     
     <item>
+      <title>Infrastructure as Code</title>
+      <link>http://mlavi.github.io/tags/infrastructure-as-code/</link>
+      <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/infrastructure-as-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Lamp</title>
       <link>http://mlavi.github.io/tags/lamp/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
       <guid>http://mlavi.github.io/tags/lamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maturity</title>
+      <link>http://mlavi.github.io/tags/maturity/</link>
+      <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/maturity/</guid>
       <description></description>
     </item>
     

@@ -2,15 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/post/index.xml</link>
+    <link>http://mlavi.github.io/post/</link>
     <description>Recent content in Posts on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 12 Mar 2016 15:44:02 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 18 Feb 2018 12:00:00 -0700</lastBuildDate>
     
 	<atom:link href="http://mlavi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Calm.io: a blog series recap!</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/</link>
+      <pubDate>Sun, 18 Feb 2018 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/</guid>
+      <description>&lt;p&gt;From September 23, 2015 to May 26, 2016,
+ I took hiatus from my personal blog to explore, explain, and write a number
+ of DevOps articles for my employer on the
+ &lt;a href=&#34;http://calm.io/author/mark&#34;&gt;Calm.io blog&lt;/a&gt;. Nutanix acquired Calm.io and I
+ am still part of the Nutanix Calm team, but I&amp;rsquo;m reposting these articles on
+ my personal blog since the originals are no longer directly accessible.
+ I am also enhancing them to clarify language, add learnings,
+ and append significant developments as postscripts.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DevOps Maturity Diagram</title>
+      <link>http://mlavi.github.io/post/devops-maturity-diagram/</link>
+      <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/devops-maturity-diagram/</guid>
+      <description>&lt;p&gt;The opening of
+ &lt;a href=&#34;../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/&#34;&gt;my first Calm.io DevOps article&lt;/a&gt;
+ started with:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Let me share what I’ve learned on my journey to DevOps: it is a culturally
+ rendered term and it has a different meaning for everyone.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reconciling Configuration Management and Immutable Infrastructure</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
+      <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on May 26, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuration Management in the DevOps World</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
+      <pubDate>Tue, 24 May 2016 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on May 24, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Declarative Operating Systems</title>
@@ -21,77 +82,42 @@
       <description>&lt;p&gt;A new breed of operating systems adopt declarative configuration management for
 an interesting hybrid! OS maintenance of long-lived servers remains a challenge
 for our &amp;ldquo;mutable&amp;rdquo; infrastructure.
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;p&gt;Although Linux containers greatly abstract away the operating system (OS) and
-can displace most of configuration management, we now see innovation on the
-OS side of the equation.&lt;/p&gt;
-
-&lt;h2 id=&#34;nixos-linux&#34;&gt;NixOS Linux&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://nixos.org/&#34;&gt;NixOS Linux&lt;/a&gt; is Linux operating system distribution which
-uses a declarative model for system configuration, software management, and
-&lt;a href=&#34;http://nixos.org/nixops/&#34;&gt;remote operation&lt;/a&gt;. &lt;a href=&#34;http://nixos.org/nix/&#34;&gt;Nix&lt;/a&gt;,
-the package manager, works on Mac OS and Linux, understands package dependencies,
-and allows multiple versions of software to coexist, making rollback easy.
-Nix works with the combination build system and Nix package repository named
-&lt;a href=&#34;http://nixos.org/hydra/&#34;&gt;Hydra&lt;/a&gt;. There is a public repository of Nix
-packages, which helps complete dependencies.&lt;/p&gt;
-
-&lt;p&gt;An interesting proponent&amp;rsquo;s opinion =
-[&lt;a href=&#34;https://www.domenkozar.com/2014/03/11/why-puppet-chef-ansible-arent-good-enough-and-we-can-do-better/&#34;&gt;https://www.domenkozar.com/2014/03/11/why-puppet-chef-ansible-arent-good-enough-and-we-can-do-better/&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;I found a &lt;a href=&#34;https://www.meetup.com/Bay-Area-Nix-NixOS-User-Group/&#34;&gt;Nix/NixOS MeetUp&lt;/a&gt;
-in the SF Bay Area, but the community is small. I very much admire the efforts
-but had some trouble getting Hydra running on a virtual NixOS box.&lt;/p&gt;
-
-&lt;h2 id=&#34;qubes-os-project&#34;&gt;Qubes OS Project&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.qubes-os.org/tour/#what-is-qubes-os&#34;&gt;Qubes OS&lt;/a&gt; is a &amp;ldquo;reasonably
-secure operating system&amp;rdquo; for your laptop or desktop which  boots to the Xen
-hyper-visor and enforces &amp;ldquo;security by compartmentalization.&amp;rdquo;
-Programs run inside Xen VMs for isolation from each other and inside a hardware
-sandbox.
-&lt;a href=&#34;https://www.qubes-os.org/doc/salt/&#34;&gt;Qubes integrates SaltStack&lt;/a&gt; for OS
-configuration management. I found the
-&lt;a href=&#34;https://www.qubes-os.org/getting-started/&#34;&gt;Getting Started&lt;/a&gt; section to be a
-great overview of how it works!&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&#34;http://xenproject.org/&#34;&gt;Xen Project&lt;/a&gt; has some early integration work with
-&lt;a href=&#34;http://wiki.xenproject.org/wiki/Unikernels&#34;&gt;Unikernels&lt;/a&gt;
-and &lt;a href=&#34;http://xenserver.org/partners/docker.html&#34;&gt;XenServer&lt;/a&gt; integrates
-&lt;a href=&#34;https://xen-orchestra.com/blog/docker-support-in-xenserver-the-ultimate-guide/&#34;&gt;Docker via APIs to a a CoreOS VM&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I plan to try this in my spare time, but seeing as how this blog entry took
-over four months to publish, perhaps I&amp;rsquo;ll hold off for another release.&lt;/p&gt;
-
-&lt;h2 id=&#34;gnu-guixsd&#34;&gt;GNU GuixSD&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.gnu.org/software/guix/&#34;&gt;Guix System Distribution&lt;/a&gt; is GNU OS that
-provides a Guile Scheme API and domain specific language definitions for
-package management and
-&lt;a href=&#34;http://www.gnu.org/software/guix/manual/html_node/System-Configuration.html&#34;&gt;system configuration&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I found this interesting, but a bit overwhelming to start diving into!&lt;/p&gt;
-
-&lt;h2 id=&#34;addendum-further-investigations&#34;&gt;Addendum: Further Investigations&lt;/h2&gt;
-
-&lt;p&gt;There is more to investigate:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Intel&amp;rsquo;s &lt;a href=&#34;https://clearlinux.org/&#34;&gt;Clear Linux Project&lt;/a&gt; is distribution which
-attempts to secure and run containers with optimal performance
-on Intel hardware. Most interesting is their design goal of making &lt;a href=&#34;https://clearlinux.org/features/stateless&#34;&gt;the OS
-stateless&lt;/a&gt;. This approach should
-be contrasted to the minimal host OSs for containers: RancherOS, CoreOS, etc.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Docker&amp;rsquo;s recent acquisition of &lt;a href=&#34;https://blog.docker.com/2016/01/unikernel/&#34;&gt;Unikernel Systems&lt;/a&gt;
-and the micro-kernel movement as a whole (&lt;a href=&#34;http://unikernel.org/projects/&#34;&gt;http://unikernel.org/projects/&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
+    </item>
+    
+    <item>
+      <title>Demystifying Continuous Integration, Delivery, and Deployment</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
+      <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infrastructure as Code and Calm Blueprints</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</link>
+      <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on Nov 3, 2015 at
+&lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Why is DevOps So Hard?</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</link>
+      <pubDate>Tue, 20 Oct 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on October 20, 2015 at
+&lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -103,123 +129,21 @@ and the micro-kernel movement as a whole (&lt;a href=&#34;http://unikernel.org/p
       <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
  for many software engineering organizations. Let me define DevOps to help you
  understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;update-2016-12-17&#34;&gt;Update: 2016-12-17&lt;/h3&gt;
-
-&lt;p&gt;Yet another refactoring and updates with expanded citations, leveraging a bit of
-my last four months of DevOps evangelism for Nutanix across five countries. It
-could use more more work!&lt;/p&gt;
-
-&lt;h3 id=&#34;update-2015-11-18&#34;&gt;Update: 2015-11-18&lt;/h3&gt;
-
-&lt;p&gt;I have polished and reorganized the slides a few times to improve the flow, reinforce,
- and elaborate on key points. I am happy to give this talk to any organization
- and I have provided the slides for your evangelism efforts as well!
-Please contact me with any follow up questions or comments.&lt;/p&gt;
-
-&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
-
-&lt;p&gt;A brief history of the DevOps movement and community with a cross section view of many methods
-and practices that are breaking down the barriers to achieve engineering agility.
-DevOps seems intangible: you can&amp;rsquo;t buy it, there is no certification, and frankly, there is no
-universal definition, yet everyone wants it or already &amp;ldquo;does&amp;rdquo; it, but still has trouble
-identifying it.
-I will cover many topics so that you can understand and chart your journey to DevOps.&lt;/p&gt;
-
-&lt;h3 id=&#34;agenda&#34;&gt;Agenda&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A Definition and Cultural Rendering of DevOps
-
-&lt;ul&gt;
-&lt;li&gt;A Brief History of DevOps&lt;/li&gt;
-&lt;li&gt;DevOps Impact on Organizations&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The Journey to DevOps
-
-&lt;ul&gt;
-&lt;li&gt;Agile Infrastructure in the Cloud&lt;/li&gt;
-&lt;li&gt;Infrastructure as Code&lt;/li&gt;
-&lt;li&gt;Pets versus Cattle versus Bacteria&lt;/li&gt;
-&lt;li&gt;Test, Build, Deploy Pattern&lt;/li&gt;
-&lt;li&gt;Infrastructure Orchestration and Models&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Epilogue: BusinessOps
-
-&lt;ul&gt;
-&lt;li&gt;We are all DevOps: your call to action!&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;devops-definition&#34;&gt;DevOps Definition&lt;/h3&gt;
-
-&lt;p&gt;DevOps is the &lt;em&gt;process&lt;/em&gt; of removing all friction between the developer and customer value.&lt;/p&gt;
-
-&lt;p&gt;However, DevOps is a culturally rendered term: it is practiced by people and dynamically bound
-to their capabilities.&lt;/p&gt;
-
-&lt;p&gt;Elaboration: &lt;a href=&#34;https://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&#34;&gt;I Dream of DevOps, but What is DevOps?&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;presentation&#34;&gt;Presentation&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Slides: &lt;a href=&#34;../slides/devops-demystified.html&#34;&gt;DevOps Demystified&lt;/a&gt; || &lt;a href=&#34;../slides/devops-demystified.md&#34;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The actual content of this blog post has been given as a talk:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2016-12-17: presented at &lt;a href=&#34;https://www.meetup.com/Cloud-Computing-Basics/events/234108925/&#34;&gt;Cloud Computing Basics&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Online presentation captured and uploaded to &lt;a href=&#34;https://www.youtube.com/watch?v=7WBEhtQssn8&#34;&gt;YouTube&lt;/a&gt;:&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&#34;640&#34; height=&#34;360&#34; src=&#34;https://www.youtube.com/embed/7WBEhtQssn8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2015-11-17: presented at &lt;a href=&#34;http://www.meetup.com/awsgurus/events/226547082/&#34;&gt;AWS Bay Area Meetup&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Typical Meetup attrition: 75 registered, 25+ attended.&lt;/li&gt;
-&lt;li&gt;DevOps definition suggestions:
-
-&lt;ul&gt;
-&lt;li&gt;Change &amp;ldquo;remove friction&amp;rdquo; to &amp;ldquo;increase collaboration.&amp;rdquo;
-
-&lt;ul&gt;
-&lt;li&gt;It is close to being the flip side of the same coin, but does not allow a clean notion of recursion and application to tools.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Drop the word &amp;ldquo;value.&amp;rdquo;
-
-&lt;ul&gt;
-&lt;li&gt;I considered this, but the definition becomes too abstract: value yields tangible and measurable properties.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Tweets ensued:&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;RT &lt;a href=&#34;https://twitter.com/raravena80&#34;&gt;@raravena80&lt;/a&gt;: Awesome Meetup at &lt;a href=&#34;https://twitter.com/Coupa&#34;&gt;@Coupa&lt;/a&gt; HQ with &lt;a href=&#34;https://twitter.com/calm_mark&#34;&gt;@calm_mark&lt;/a&gt; !! &lt;a href=&#34;https://t.co/5kljKrreD3&#34;&gt;pic.twitter.com/5kljKrreD3&lt;/a&gt;&lt;/p&gt;&amp;mdash; Coupa Software (@Coupa) &lt;a href=&#34;https://twitter.com/Coupa/status/666818169798021120&#34;&gt;November 18, 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2015-10-03: presented at &lt;a href=&#34;https://www.siliconvalley-codecamp.com/Session/2015/demystifying-devops&#34;&gt;Silicon Valley Code Camp 2015&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Nice turnout of 13 registered, 85 interested, and about 40 attendees.&lt;/li&gt;
-&lt;li&gt;Tweets ensued:&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;DevOps is a culturally rendered term.&amp;quot; &lt;a href=&#34;https://twitter.com/calm_mark&#34;&gt;@calm_mark&lt;/a&gt;&lt;/p&gt;&amp;mdash; Noah Kantrowitz (@kantrn) &lt;a href=&#34;https://twitter.com/kantrn/status/650414900682973184&#34;&gt;October 3, 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
+    </item>
+    
+    <item>
+      <title>I Dream of DevOps, but What is DevOps?</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</link>
+      <pubDate>Wed, 23 Sep 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on September 23, 2015 at
+&lt;a href=&#34;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&#34;&gt;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&lt;/a&gt;
+and slightly enhanced on February 18, 2018, be sure to see the
+&lt;a href=&#34;#postscript-february-18-2018&#34;&gt;Postscript&lt;/a&gt; for significant developments!
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -230,156 +154,7 @@ to their capabilities.&lt;/p&gt;
       <guid>http://mlavi.github.io/post/artifact_repositories/</guid>
       <description>&lt;p&gt;The past: desktop builds uploaded to the FTP server; the present: global artifact delivery networks.
 Release management and artifact repositories are they way we deliver software and infrastructure today.
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;ship-the-bits&#34;&gt;Ship the Bits&lt;/h3&gt;
-
-&lt;p&gt;Once upon a time, software release management was as simple as performing a desktop build,
-uploading the results to a FTP server, updating the web site, and sending an email.&lt;/p&gt;
-
-&lt;p&gt;Software repositories can still be that simple, but the state of the art has advanced to support
-secure deployments for continuous delivery to multiple clusters in data centers around the
-world multiple times per hour!&lt;/p&gt;
-
-&lt;h3 id=&#34;release-management&#34;&gt;Release Management&lt;/h3&gt;
-
-&lt;p&gt;There are many considerations for release management today, assuming that our build candidate
-has passed all of the required tests to become an official release. Now that we pursue
-infrastructure as code, we can also build and deploy our software as infrastructure artifacts.&lt;/p&gt;
-
-&lt;p&gt;The simple monolithic build of static code and library dependencies has transitioned into
-a collection of multiple versioned artifacts which must be integrated, configured, and orchestrated
-as a system even before considering the deployment permutation matrix of multiple hardware,
-OS platform, and client versions. Considerations include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Build Post Processing:
-
-&lt;ul&gt;
-&lt;li&gt;compression into a one file archive to save bandwidth&lt;/li&gt;
-&lt;li&gt;different editions (subsets of the build if they are not handled as separates)&lt;/li&gt;
-&lt;li&gt;check sums and code signing&lt;/li&gt;
-&lt;li&gt;packaging:
-
-&lt;ul&gt;
-&lt;li&gt;metadata for each OS or runtime&lt;/li&gt;
-&lt;li&gt;versus bundling an installer as a self extracting executable&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;documentation&lt;/li&gt;
-&lt;li&gt;licensing and potentially providing source code&lt;/li&gt;
-&lt;li&gt;third party licensing&lt;/li&gt;
-&lt;li&gt;purging old artifacts, build, and test logs&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Distribution:
-
-&lt;ul&gt;
-&lt;li&gt;channels for automatic updates&lt;/li&gt;
-&lt;li&gt;artifact repositories versus file servers&lt;/li&gt;
-&lt;li&gt;caches, mirrors, and content/artifact delivery networks&lt;/li&gt;
-&lt;li&gt;privileged versus public official releases&lt;/li&gt;
-&lt;li&gt;private, internal release candidates for testing&lt;/li&gt;
-&lt;li&gt;metrics and logs: download counts and bandwidth constraints&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;naming-the-artifact-and-useful-metadata&#34;&gt;Naming the Artifact and Useful Metadata&lt;/h3&gt;
-
-&lt;p&gt;Surely naming the artifact should be straightforward if we can answer some basic questions,
-such as: do we have file naming conventions and are build, version, and release numbers the same thing?&lt;/p&gt;
-
-&lt;p&gt;You would be surprised how often the answer is&amp;hellip; it depends!
-However, there are guidelines you can adopt:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Software_versioning&#34;&gt;Software Versioning&lt;/a&gt; at Wikipedia&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://semver.org/&#34;&gt;Semantic Versioning&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/prep/standards/html_node/Releases.html#index-version-numbers_002c-for-releases&#34;&gt;GNU Coding Standards: Release Version Numbers&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;While many software package formats specify their metadata requirements, a few have standardized
-on &lt;a href=&#34;https://github.com/edumbill/doap/wiki&#34;&gt;DOAP: Description of a Project&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;software-artifact-repositories&#34;&gt;Software Artifact Repositories&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://binary-repositories-comparison.github.io/&#34;&gt;Feature Matrix of Archiva, Artifactory, Maven&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;While an engineering organization produces build artifacts, they often bundle third party
-open or closed source libraries. In order to speed manual developer builds and automated
-build systems, these external resources can be cached to increase build speed, reliability, and
-conserve upstream network bandwidth. Conversely, these can be used to publish artifacts for
-public consumption as well.&lt;/p&gt;
-
-&lt;p&gt;Many languages have their own packaging format for build artifacts, e.g.:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Java: .jar, .war, and .ear&lt;/li&gt;
-&lt;li&gt;JavaScript: .npm&lt;/li&gt;
-&lt;li&gt;PERL: CPAN modules are compressed tarballs&lt;/li&gt;
-&lt;li&gt;PHP: .phar&lt;/li&gt;
-&lt;li&gt;Python: .egg, .whl&lt;/li&gt;
-&lt;li&gt;Ruby: .gem&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There also exist library dependency descriptions:
-* Bundler for Ruby gems
-* Berkshelf for Chef recipes&lt;/p&gt;
-
-&lt;p&gt;We also have operating system package management:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;RedHat, Fedora, CentOS and related derivatives: .rpm format with yum repositories&lt;/li&gt;
-&lt;li&gt;Debian, Ubuntu, and related derivatives: .deb format with apt repositories and Launchpad PPA&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Infrastructure artifacts follow a similar pattern: public and private container
-repositories as hosted services or private deployments:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://hub.docker.com/&#34;&gt;Docker Hub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://quay.io/&#34;&gt;Quay.io&lt;/a&gt; and &lt;a href=&#34;https://coreos.com/products/enterprise-registry/&#34;&gt;CoreOS Enterprise Registry&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/container-registry/&#34;&gt;Google Container Registry&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/ecr/details/&#34;&gt;Amazon EC2 Container Registry&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Along with &lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt; box hosting:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://atlas.hashicorp.com/search/&#34;&gt;Atlas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.vagrantbox.es/&#34;&gt;VagrantBox.es&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;JFrog&amp;rsquo;s Bintray and Artifactory (see below)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Caveat Emptor: downloading and installing any artifact from the Internet is potential for malware,
-virus, and other abuse unless you know, trust, and verify the source.&lt;/p&gt;
-
-&lt;p&gt;Personally, I&amp;rsquo;ve had very good experience with &lt;a href=&#34;http://www.jfrog.com/open-source/&#34;&gt;JFrog&amp;rsquo;s Artifactory&lt;/a&gt;,
-which is a meta repository of many different formats, but you will probably outgrow
-the open source version when you need to handle authentication and some of the formats mentioned above,
-so the SaaS subscription may be a better option.&lt;/p&gt;
-
-&lt;h3 id=&#34;software-distribution-networks&#34;&gt;Software Distribution Networks&lt;/h3&gt;
-
-&lt;p&gt;These are specific to build artifacts, however they can be considered a special case
-of content delivery networks such as Akami, &lt;a href=&#34;https://cachefly.com&#34;&gt;CacheFly&lt;/a&gt;, and Fastly
-as well as related to content accelerators such as CloudFlare
-and &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;Amazon CloudFront&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;JFrog&amp;rsquo;s &lt;a href=&#34;https://bintray.com&#34;&gt;Bintray&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://sf.net&#34;&gt;SourceForge&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;JavaScript:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cdnjs.com/about&#34;&gt;CDNJS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jsdelivr.com/&#34;&gt;jsDelivr&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;One potentially biased resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -391,119 +166,7 @@ and &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;Amazon CloudFront
       <description>&lt;p&gt;Database configuration management tools allow us version the database and treat it like code!
 We want DevOps, not mysterious, hidden, hand crafted DBA ops whenever possible. Another
 flashback to 1998.
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;self-taught-dba&#34;&gt;Self-taught DBA&lt;/h3&gt;
-
-&lt;p&gt;In 1998, I was the co-founder of a start up named
-&lt;a href=&#34;https://web.archive.org/web/20011218000620/http://www.passpoints.com/info/company_and_vision.shtml&#34;&gt;PassPoints&lt;/a&gt;
-that provided private branded loyalty programs for web sites.&lt;/p&gt;
-
-&lt;p&gt;We were an &lt;strong&gt;ASP&lt;/strong&gt; (Application Service Provider) and we had a web based API for integration.
-Today, we use different terms to describe the same practices:
-Software as a Service and REST API.&lt;/p&gt;
-
-&lt;p&gt;I was the &lt;em&gt;de-facto&lt;/em&gt; system administrator and after talking to our developers, we chose
-to build the application in Java with the Sun-Oracle-Netscape stack. So I became a self-
-taught Oracle DBA (Data Base Administrator). I had some help from our developers who had
-worked at Oracle, but I was pretty much on my own to digest the Oracle TechNet documentation
-on CD-ROM and the web.&lt;/p&gt;
-
-&lt;p&gt;My progressive journey to infrastructure as code took me from two months to two hours to
-deploy the Oracle 8 relational data base:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;two months to complete my first successful development database by hand&lt;/li&gt;
-&lt;li&gt;two weeks to perfect and document the process for a demo instance database&lt;/li&gt;
-&lt;li&gt;two days to create staging and start automating the process with shell scripts&lt;/li&gt;
-&lt;li&gt;two hours to complete making a production database instance with my automation.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;agile-databases&#34;&gt;Agile Databases&lt;/h3&gt;
-
-&lt;p&gt;I may have gotten it faster, I don&amp;rsquo;t remember now, but restoring data to a new instance
-can be a lengthy procedure fraught with peril. &lt;strong&gt;This is a critical reason to
-make your database infrastructure agile and testable!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Along the way, I looked for tools to help visualize the database and perform upgrades:
-we paid for Oracle Enterprise Manager on Solaris and I found it helpful, but it was
-not valuable to me.&lt;/p&gt;
-
-&lt;h4 id=&#34;database-configuration-management&#34;&gt;Database Configuration Management&lt;/h4&gt;
-
-&lt;p&gt;I had accomplished configuration management for a new database instance through shell scripts,
-another artifact from the past! However, translating that accomplishment to using a configuration
-management system like Chef or Puppet is not where the DBA Ops journey should end.&lt;/p&gt;
-
-&lt;p&gt;I recently rediscovered an open source tool I used back then to visualize and map the database:
-&lt;a href=&#34;http://schemaspy.sourceforge.net/&#34;&gt;http://schemaspy.sourceforge.net/&lt;/a&gt; &amp;ndash; I think this would be a valuable post commit tool to add to
-a build system for up to date, valuable documentation of your relational data.&lt;/p&gt;
-
-&lt;p&gt;We need to treat the data inside the database as critical infrastructure as well!
-You cannot create an ephemeral test instance of your entire service with an empty persistence
-tier, you need to populate your database(s) with a proper schema and bootstrap data before
-you even begin testing.&lt;/p&gt;
-
-&lt;h4 id=&#34;database-evolution&#34;&gt;Database Evolution&lt;/h4&gt;
-
-&lt;p&gt;My last start-up was a polyglot development organization, which made QA and Operations
-challenging permutations, but this is the way of the world. It made us increasingly
-value automation because we did not want to scale people with manual work. One architectural
-choice was the &lt;a href=&#34;https://en.wikipedia.org/wiki/Play_framework&#34;&gt;Play 1 framework&lt;/a&gt; for Java.
-In their documentation, I never found mention that they had incorporated the
-&lt;a href=&#34;http://flywaydb.org/getstarted/how.html&#34;&gt;Flyway open source project&lt;/a&gt;, but when I came
-across it on the web later, I already knew it intimately!&lt;/p&gt;
-
-&lt;p&gt;By using a simple meta-data table inside the database and ordered SQL statements
-in your code repository, you can keep your databases under version control.
-This is not practical for all of the data in your database, but it is essential for
-maintaining your schema and core data that you need across all instances of your databases.&lt;/p&gt;
-
-&lt;p&gt;The highest of the ordered SQL statements that has been applied is stored in the meta-data table.
-It is called the current evolution of the database. You application can roll out new or changed
-functionality and require the database be evolved to the proper version before it turns on.&lt;/p&gt;
-
-&lt;p&gt;Another notable feature: you can declare how to reverse this change to a database in order
-to devolve a database. There are destructive forward only operations, so this is not a
-perfect safety net, but it is a good design goal. There are some best practices mentioned here:
-&lt;a href=&#34;https://code.google.com/p/dbdeploy/wiki/GuidelinesForUsingDbdeploy&#34;&gt;https://code.google.com/p/dbdeploy/wiki/GuidelinesForUsingDbdeploy&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;database-change-management-tools&#34;&gt;Database Change Management Tools&lt;/h4&gt;
-
-&lt;p&gt;I have found some other tools that roughly model the above methodology, but I only have
-experience with Flyway, which I think is excellent!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://flywaydb.org/getstarted/how.html&#34;&gt;http://flywaydb.org/getstarted/how.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dbv.vizuina.com/&#34;&gt;http://dbv.vizuina.com/&lt;/a&gt; PHP based tool with change review&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://code.google.com/p/dbdeploy/wiki/GettingStarted&#34;&gt;https://code.google.com/p/dbdeploy/wiki/GettingStarted&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.liquibase.org/quickstart.html&#34;&gt;http://www.liquibase.org/quickstart.html&lt;/a&gt; XML based tool&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;dynamic-configuration&#34;&gt;Dynamic Configuration&lt;/h3&gt;
-
-&lt;p&gt;Knowing the release or version of your database is a component of dynamic configuration,
-allowing you to design forward and backwards compatibility of APIs and features as well as
-dynamic control of feature roll out. Let&amp;rsquo;s use this for test driven operations, too!&lt;/p&gt;
-
-&lt;p&gt;I am sure that we borrowed another term for dynamic configuration at my last start-up.
-We discussed feature toggles, shipping features dark, and later turning them on by
-&amp;ldquo;lighting&amp;rdquo; them. Now there is an application start up &lt;strong&gt;(ASP? :~)&lt;/strong&gt; for that
-= &lt;a href=&#34;http://launchdarkly.com/&#34;&gt;http://launchdarkly.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;more-to-muse-upon&#34;&gt;More to Muse Upon&amp;hellip;&lt;/h3&gt;
-
-&lt;p&gt;I will review these links later and update this blog entry:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.codinghorror.com/get-your-database-under-version-control/&#34;&gt;http://blog.codinghorror.com/get-your-database-under-version-control/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/articles/Database-Version-Control&#34;&gt;http://www.infoq.com/articles/Database-Version-Control&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Does not appear to be open source:&lt;/strong&gt; dbmaestro.com || klonio.com&lt;/li&gt;
-&lt;/ul&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -515,83 +178,7 @@ We discussed feature toggles, shipping features dark, and later turning them on 
       <description>&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
 We already have a universal, open system for communication
 called the web, so let&amp;rsquo;s explore web presentation applications.
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;survey-says&#34;&gt;Survey Says&amp;hellip;&lt;/h3&gt;
-
-&lt;p&gt;We used dynamic HTML slides at Netscape for our DevCon presentations, it was time to see what
-the state of the art was today! I had encountered a few solutions over the years, but I found
-exhaustive lists on &lt;a href=&#34;http://alternativeto.net/software/microsoft-powerpoint/&#34;&gt;http://alternativeto.net/software/microsoft-powerpoint/&lt;/a&gt;
-and &lt;a href=&#34;http://alternativeto.net/software/prezi/&#34;&gt;http://alternativeto.net/software/prezi/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I was instantly productive with Landslide running in a Python virtualenv with a watchdog script
-for recompiling my updates in Markdown, so I chose that, but I would revisit any of the following.&lt;/p&gt;
-
-&lt;h3 id=&#34;static-tools&#34;&gt;Static Tools&lt;/h3&gt;
-
-&lt;p&gt;These HTML slide systems are comprised of static HTML+CSS+JavaScript in which you author content directly.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Biggie: &lt;a href=&#34;http://github.com/tmcw/big/&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://www.macwright.org/biggie/&#34;&gt;Demo&lt;/a&gt; author in Markdown, interesting forks!&lt;/li&gt;
-&lt;li&gt;CSSS: &lt;a href=&#34;https://github.com/LeaVerou/CSSS&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://leaverou.github.io/CSSS/&#34;&gt;Demo&lt;/a&gt;
-|| &lt;a href=&#34;http://lea.verou.me/2010/10/my-ft2010-slides-and-csss-my-presentation-framework/&#34;&gt;BlogPost&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Deck.js: &lt;a href=&#34;https://github.com/imakewebthings/deck.js&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://imakewebthings.com/deck.js&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Flowtime.js: &lt;a href=&#34;https://github.com/marcolago/flowtime.js&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://flowtime-js.marcolago.com&#34;&gt;Demo&lt;/a&gt; 2D HUD FTW!&lt;/li&gt;
-&lt;li&gt;Scrolldeck.js: &lt;a href=&#34;http://johnpolacek.github.io/scrolldeck.js&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Shower: &lt;a href=&#34;https://github.com/shower/shower&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://shwr.me&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Stack: &lt;a href=&#34;https://github.com/mbostock/stack/&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;https://mbostock.github.io/stack/&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;dynamic-tools&#34;&gt;Dynamic Tools&lt;/h3&gt;
-
-&lt;p&gt;These HTML slide packages require compiling, but final output is static HTML+CSS+JavaScript:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Slippy: &lt;a href=&#34;https://github.com/Seldaek/slippy/&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://slides.seld.be/?file=2010-05-30+Example.html#1&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Impress.js: &lt;a href=&#34;https://github.com/impress/impress.js&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://impress.github.io/impress.js&#34;&gt;Demo&lt;/a&gt;
-can reproduce Prezi canvas like zooming 2D effects and animations.
-
-&lt;ul&gt;
-&lt;li&gt;Hekyll: &lt;a href=&#34;https://github.com/bmcmurray/hekyll&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://bmcmurray.github.io/hekyll/preso.htm&#34;&gt;Demo&lt;/a&gt;
-author in Markdown, compile to Impress.js&lt;/li&gt;
-&lt;li&gt;jmpress.js: &lt;a href=&#34;https://github.com/jmpressjs/impress.js&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://jmpressjs.github.io/jmpress.js&#34;&gt;Demo&lt;/a&gt; fork of Impress.js using jQuery&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Slides: &lt;a href=&#34;https://github.com/briancavalier/slides&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://briancavalier.com/code/slides&#34;&gt;Demo&lt;/a&gt;
-npm install&lt;/li&gt;
-&lt;li&gt;Reveal.js: &lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://lab.hakim.se/reveal-js/&#34;&gt;Demo&lt;/a&gt;: promotes a paid visual editor site&lt;/li&gt;
-&lt;li&gt;Landslide: &lt;a href=&#34;https://github.com/adamzap/landslide&#34;&gt;Source&lt;/a&gt;
-PyPi: pip install. Compiled slides to PDF export as well!&lt;/li&gt;
-&lt;li&gt;Slide Show (S9): &lt;a href=&#34;http://slideshow-s9.github.io&#34;&gt;Home&lt;/a&gt;: Ruby gem&lt;/li&gt;
-&lt;li&gt;Google I/O-Slides: &lt;a href=&#34;https://code.google.com/p/io-2012-slides/&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Bespoke.js: &lt;a href=&#34;https://github.com/markdalgleish/bespoke.js&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://markdalgleish.com/projects/bespoke.js/&#34;&gt;Demo&lt;/a&gt; leverages Yeoman, Grunt, etc.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;other-open-formats&#34;&gt;Other Open Formats&lt;/h3&gt;
-
-&lt;p&gt;I found some interesting alternate formats for SVG and PDF Slides, a la Prezi:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Pres/v/g: &lt;a href=&#34;https://github.com/feklee/presvg&#34;&gt;Source&lt;/a&gt;
-|| &lt;a href=&#34;http://feklee.github.com/presvg/demo.html&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;PDFCube: &lt;a href=&#34;http://code.100allora.it/pdfcube/&#34;&gt;Home&lt;/a&gt; || &lt;a href=&#34;https://github.com/baol/pdfcube&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -601,123 +188,7 @@ PyPi: pip install. Compiled slides to PDF export as well!&lt;/li&gt;
       
       <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
       <description>&lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;migration-of-technology-stacks&#34;&gt;Migration of Technology Stacks&lt;/h3&gt;
-
-&lt;p&gt;I was the webmaster (Senior Producer, Web Team in the Information Technology department of Silicon Graphics: SGI)
-from 2005-2011, which is to say I designed and implemented improvements to web content, management, publishing,
-revision control, infrastructure, web programming, extranet design, application service provider integration and more.&lt;/p&gt;
-
-&lt;p&gt;I transitioned our server (and desktop) infrastructure from IRIX on MIPS architecture to SuSE Linux on Intel Itanium2 architecture, allowing folks to move to Windows laptops. It was not shocking to find many
-tools and packages were not ported to the new platform, Operating System distribution packages could lag behind
-in security releases or never receive upgrades, so I happily resorted to building from source and benefit
-from open source licensing.&lt;/p&gt;
-
-&lt;p&gt;Previously, during my independent consulting years, I had moved technology web stacks from SINO to LAMP:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SINO:&lt;/strong&gt; Solaris, Informix, Netscape, Oracle&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LAMP:&lt;/strong&gt; Linux, Apache, MySQL/Postgres, PERL/PHP/Python&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;e.g.: From Netscape Enterprise Web Server to Apache, Informix and Oracle to MySQL, PERL to PHP, and I had been building this web stack on both Solaris and Linux.&lt;/p&gt;
-
-&lt;h3 id=&#34;migration-of-build-methods&#34;&gt;Migration of Build Methods&lt;/h3&gt;
-
-&lt;p&gt;I had an ever growing shell script to perform the package builds and I re-factored it for the release numbers and
-the deployment directory to be variable driven. Although my build script was a brittle monstrosity without any
-conditionally or intelligence, it was the right approach towards infrastructure as code!&lt;/p&gt;
-
-&lt;p&gt;My manager asked how I would document and share the build process for others at SGI to repurpose my work,
-so I consulted my colleagues and they suggested make files. I looked at make systems and liked Ant, an XML
-based build file, but to customize Ant required Java programming or beanshell (a la Groovy) scriptability
-which I explored. I really liked an Ant dependency graph generator that leveraged GraphViz called
-&lt;a href=&#34;http://vizant.sourceforge.net&#34;&gt;VizAnt&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ultimately, I found an Ant implementation written in PHP called &lt;a href=&#34;http://phing.info&#34;&gt;Phing&lt;/a&gt; (PHing Is Not GNU make)
-allowing me to reuse some Ant tools (a benefit of using XML as a data structure) and I have been happy with the solution.&lt;/p&gt;
-
-&lt;p&gt;I called the project &amp;ldquo;webplatform&amp;rdquo; and refactored my monolithic build shell script to Phing. Now I could:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;correct errors faster via Phing&amp;rsquo;s XML validation&lt;/li&gt;
-&lt;li&gt;share my work with others by using a centralized repository&lt;/li&gt;
-&lt;li&gt;leverage build targets composed from the appropriate mix of software:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Internet server:&lt;/strong&gt; an optimized, reduced web stack&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;DMZ server:&lt;/strong&gt; minimal and secure web stack&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Intranet server:&lt;/strong&gt; a kitchen sink (everything) configuration web stack&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;respond in hours to incorporate any security patch directly from the software projects without waiting
-for the upstream operating system provider to back-port and distribute&lt;/li&gt;
-&lt;li&gt;communicate my work because the code was documented and visualizable, e.g.:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;../img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I wrote one Phing extension called &amp;ldquo;MyUnpack.&amp;rdquo; Given any software package release version, it would:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;determine if a current or future release was already installed in the destination directory,
-
-&lt;ul&gt;
-&lt;li&gt;optionally searching the operating system.&lt;/li&gt;
-&lt;li&gt;utilizing a number of methods to determine the existing version because every project could be different.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;If not up to date, it would then extract the software package and signal to continue the build process.
-Otherwise, signal to skip building this up to date software package.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I practiced object oriented coding and adopted PHP Code Sniffer to improve my coding style.
-I was on the way to continuous integration&amp;hellip; but I didn&amp;rsquo;t finish that part of the project.&lt;/p&gt;
-
-&lt;p&gt;My contributions back to open source included documentation for Phing (I became a committer)
-and identifying, testing, and confirming a fix to broken OpenSSL builds on Itanium2.&lt;/p&gt;
-
-&lt;p&gt;I hope to open source the webplatform project one day.&lt;/p&gt;
-
-&lt;h3 id=&#34;sgi-appendix&#34;&gt;SGI Appendix&lt;/h3&gt;
-
-&lt;p&gt;Some fun challenges and SGI trivia:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://sgi.com&#34;&gt;http://sgi.com&lt;/a&gt; was one of the first web sites I ever saw with &lt;a href=&#34;http://en.wikipedia.org/wiki/Mosaic_(web_browser)
-on the web back in 1993. The banner of the home
-page of www.sgi.com was called &amp;quot;Silicon Surf&amp;quot; and displayed a metallic robot surfing on the ocean, which was
-also a reference to SGI&#39;s ground breaking graphic rendering, powering the earliest days of computer graphic
-imagery (CGI&#34;&gt;NCSA Mosaic&lt;/a&gt; in Hollywood, pioneered by Lucasfilm&amp;rsquo;s Industrial Light and Magic (ILM) with SGI workstations:
-think &lt;a href=&#34;https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day#Effects&#34;&gt;Terminator 2&lt;/a&gt;.
-The act of browsing the world wide web was called &amp;ldquo;web surfing&amp;rdquo; in those early days
-and SGI nicknamed the web team the Surf Team.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/19970605011712/http://www.sgi.com/&#34;&gt;Archived home page from 1997&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;ll see if I can dig up that original image, I think I have the poster.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;SGI engineering had created an in-house improved, centralized revision control system on top of
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Revision_Control_System&#34;&gt;RCS&lt;/a&gt;,
-one of the earliest, local file Unix revision control systems. It could be thought of a
-cousin and functional equivalent to &lt;a href=&#34;https://en.wikipedia.org/wiki/Concurrent_Versions_System&#34;&gt;CVS&lt;/a&gt;
-because it used RCS format files in the repository and allowed multiple users.
-However, it ran only on &lt;a href=&#34;https://en.wikipedia.org/wiki/IRIX&#34;&gt;IRIX&lt;/a&gt;, which was SGI&amp;rsquo;s flavor of
-Unix for the MIPS CPU family, and there was no road map to port it to Linux. Despite SGI already transitioning from IRIX to Linux, they had not decided to end of life IRIX at that time.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I was working to move us from SGI O2&amp;rsquo;s (IRIX) on every web developer&amp;rsquo;s desk to Linux or Windows laptops
-to modernize our tech stack, desktops, and tools. Some people stayed on IRIX and that was absolutely fine:
-our solution was based on open standards and transports.&lt;/li&gt;
-&lt;li&gt;After examining Mercurial, I moved our team to
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Apache_Subversion&#34;&gt;Subversion (svn)&lt;/a&gt;
-because it represented a straightforward migration without a major change in context for our web developers.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -730,319 +201,7 @@ because it represented a straightforward migration without a major change in con
 resembles virtual machines, includes the operating system user land, and desires configuration
 management. Does this starting point represent the opposite of container promise and the journey
 to immutable infrastructure?
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;update-2015-08-20&#34;&gt;Update: 2015-08-20&lt;/h3&gt;
-
-&lt;p&gt;The content of this blog post has been given as a talk:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2015-08-19: presented at &lt;a href=&#34;http://www.meetup.com/AdvancedAWS/events/223822846/&#34;&gt;Advanced AWS Meetup&lt;/a&gt;
-hosted by New Relic, San Francisco, CA
-
-&lt;ul&gt;
-&lt;li&gt;Slides: &lt;a href=&#34;../slides/container-infrastructure-strategy.html&#34;&gt;DevOps and Heavy Containers&lt;/a&gt; || &lt;a href=&#34;../slides/container-infrastructure-strategy.md&#34;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;2015-05-16: presented at &lt;a href=&#34;https://rootconf.talkfunnel.com/2015/62-container-infrastructure-strategy&#34;&gt;RootConf 2015&lt;/a&gt;
-Bangalore, India.
-
-&lt;ul&gt;
-&lt;li&gt;One valuable comment from the audience: the separation of responsibilities which can imply container
-layers resembles &lt;a href=&#34;https://en.wikipedia.org/wiki/OSGi#Architecture&#34;&gt;OSGi architecture&lt;/a&gt;.
-I think this is a great way to look at things!&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;2015-04-28: presented to the technical staff of &lt;a href=&#34;http://www.ticketfly.com/about-us&#34;&gt;TicketFly&lt;/a&gt; at the invitation of Jerome, Director of Technology.&lt;/li&gt;
-&lt;li&gt;2015-04-16: led the open space session at the Container Unconference, preceding &lt;a href=&#34;https://container.camp/sf-2015/&#34;&gt;Container Camp @ San Francisco 2015&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;heavy-containers&#34;&gt;Heavy Containers&lt;/h3&gt;
-
-&lt;p&gt;I have been researching containers for years, I encountered &lt;a href=&#34;https://pantheon.io/blog/why-we-built-pantheon-containers-instead-virtual-machines&#34;&gt;an early mention for Drupal CMS hosting&lt;/a&gt;
-probably a year before I heard about Docker. I had worked with
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Chroot&#34;&gt;chroot jails&lt;/a&gt; earlier in my career,
-but &lt;a href=&#34;http://docker.com&#34;&gt;Docker&lt;/a&gt; made Linux containers (LXC) easy to use,
-just as &lt;a href=&#34;http://vagrantup.com&#34;&gt;Vagrant&lt;/a&gt; has done for Virtual Machines.&lt;/p&gt;
-
-&lt;p&gt;For the sake of simplifying this discussion, I will not discuss dynamic run time configuration
-and service discovery: it is the subject of a future blog post and I think
-&lt;a href=&#34;https://medium.com/@kelseyhightower/12-fractured-apps-1080c73d481c&#34;&gt;12 Fractured Apps&lt;/a&gt;
-discusses many issues and solutions. We will approximate it via static
-application configuration in the example.&lt;/p&gt;
-
-&lt;p&gt;An ideal container holds an application and nothing more: the tricky part is defining your application
-and its dependencies. If you look at the full technology stack that supports an application,
-you would consider the data, code, run time configuration, server facility, and further dependencies.
-e.g.:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;application:
-
-&lt;ul&gt;
-&lt;li&gt;code: /var/www/virtualhost.example.com/micro/service/route&lt;/li&gt;
-&lt;li&gt;libraries and frameworks: /var/www/shared/language/framework-version (potentially implicitly stored with the code base)&lt;/li&gt;
-&lt;li&gt;static configuration data: /var/www/shared/configuration/databasepassword.inc.txt (potentially implicitly stored with the code base)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;run time: (e.g.: PHP)
-
-&lt;ul&gt;
-&lt;li&gt;binaries: /usr/bin/local/php-5.x&lt;/li&gt;
-&lt;li&gt;configuration: /etc/php.ini&lt;/li&gt;
-&lt;li&gt;library dependencies: openssl, etc.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;server: (e.g.: Apache-2.4.x)
-
-&lt;ul&gt;
-&lt;li&gt;binaries: /usr/bin/local/apache2**&lt;/li&gt;
-&lt;li&gt;configuration: /etc/apache2/**&lt;/li&gt;
-&lt;li&gt;run time configuration: /etc/defaults/apache2&lt;/li&gt;
-&lt;li&gt;startup customization: /etc/init/apache2-custom&lt;/li&gt;
-&lt;li&gt;plug-ins: mod_php, mod_ssl, etc.&lt;/li&gt;
-&lt;li&gt;plug-in dependencies: openssl, php, etc.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It is desirable to bundle all of these things together as a full stack into a static deployment unit,
-making your application portable and self-contained (ha ha).
-There is a challenge to decide container scope because of the natural tendency
-to follow the dependencies and bundle everything into the container, which weighs it down.&lt;/p&gt;
-
-&lt;p&gt;The initial practice many use for their container is a full
-Linux operating system distribution, which I call a &amp;ldquo;heavy container,&amp;rdquo; because it contains
-everything and resembles an entire virtual machine (VM):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ grep -e FROM -e RUN Dockerfile
-FROM ubuntu:14.04.2
-RUN apt-get update &amp;amp;&amp;amp; apt-get install -y apache2 php5
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This scope (equivalent to a VM) is natural until you are comfortable with containers,
- then you are ready for container re-factoring and layering. There is a notion of linked
- and data containers which I&amp;rsquo;ll explore later, but what would we re-factor and why?&lt;/p&gt;
-
-&lt;h3 id=&#34;container-re-factoring&#34;&gt;Container Re-factoring&lt;/h3&gt;
-
-&lt;p&gt;This is an incomplete thought: I will continue to organize and expand it.&lt;/p&gt;
-
-&lt;p&gt;Any solution must properly address the audience. For developers, a development container might have everything
-needed for production but also add troubleshooting and development tools. For production, we would use the
-lighter version of the developer container by omitting the developer extras, this minimizes the difference between dev and prod!&lt;/p&gt;
-
-&lt;p&gt;We can accomplish this by separating containers into layers, where each
-&lt;a href=&#34;http://docs.docker.com/terms/layer/&#34;&gt;container layer&lt;/a&gt; is a container unto itself and
-&lt;a href=&#34;http://docs.docker.com/reference/builder/#from&#34;&gt;they can be added together&lt;/a&gt; to &lt;strong&gt;compose&lt;/strong&gt; a bigger container.&lt;/p&gt;
-
-&lt;p&gt;Therefore, each container layer could represent an area of expertise which models how your organization
-manages resources and could progress with a different development cadence. e.g.:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;your system administrators might take care of the base OS,&lt;/li&gt;
-&lt;li&gt;your network team might address firewall and networking concerns,&lt;/li&gt;
-&lt;li&gt;your server developer team might take care of the server run time and dependencies,&lt;/li&gt;
-&lt;li&gt;your DevOps team could address configuration, etc.&lt;/li&gt;
-&lt;li&gt;your developers address the application and dependencies.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Reusing the expertise in your organization suggests a good starting model
-and allows independent iteration of each concern by container layer.&lt;/p&gt;
-
-&lt;p&gt;The result is a robust container build that dynamically invokes its dependent layers, allowing each
-to iterate as needed, reducing complexity for a single, monolithic build and risk for rapid deployment.&lt;/p&gt;
-
-&lt;p&gt;So let&amp;rsquo;s explore this idea in more detail:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;FROM minimalist/OS&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Because every guest container resides on a container host, which is an area of OS refactoring
-and innovation as they are optimized to run containers (i.e.: boot to container):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://coreos.com/&#34;&gt;CoreOS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.projectatomic.io/docs/introduction/&#34;&gt;Project Atomic&lt;/a&gt; by Red Hat&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://rancher.com/rancher-os/&#34;&gt;RancherOS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&amp;lsquo;Snappy&amp;rsquo; &lt;a href=&#34;http://www.ubuntu.com/cloud/tools/snappy&#34;&gt;Ubuntu Core&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;All modern Linux distributions are the default candidates for container hosting in development&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;refactoring should take into account both the container host (above)
-and the container run time facilities (below):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.docker.com/docker-engine&#34;&gt;Docker engine&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://coreos.com/rkt/docs/latest/&#34;&gt;CoreOS rkt&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html&#34;&gt;sytemd-nspawn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://linuxcontainers.org/&#34;&gt;LXC/LXD&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This becomes interesting if you&amp;rsquo;ve picked a minimal Linux distribution as a base for your
-container, such as:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://hub.docker.com/_/alpine/&#34;&gt;Alpine&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://phusion.github.io/baseimage-docker/&#34;&gt;Baseimage-docker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/phusion/passenger-docker#why_use&#34;&gt;Passenger-docker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;etc.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;because they are stripped down and a better starting point than a full OS,
-but perhaps entirely unnecessary depending on your container host and container run time.&lt;/p&gt;
-
-&lt;p&gt;This is a clue that we shouldn&amp;rsquo;t need to bind a full operating system user land (or kernel)
-into our containers. Developing your first containers with sshd and more is where you start
-the container journey, but not where you should end.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;FROM server/facility&lt;/li&gt;
-&lt;li&gt;FROM server/runtime&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Because your server facility or run time typically do not change unless there is a new release
-which contains a security, performance, or feature fix, this is the next candidate for removal
-from a monolithic, full OS based container and should be refactored to its own container layer.
-This likely includes the server dependencies (libraries and other run-times).&lt;/p&gt;
-
-&lt;p&gt;However, the run-time configuration of this server facility could be dynamic
-so I would consider that data and a layer closer to the application. In fact, it would be
-ideal to make dynamic run-time configuration a service and pull it out of the
-container entirely, allowing you to reuse this container for all stacks.&lt;/p&gt;
-
-&lt;p&gt;The idea is that the server facility is a separate layer from our application: it iterates
-on a different time line and it is an infrastructure engineer concern most likely,
-so why would one weigh down an application container layer with it?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;FROM operations/facilities&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Facilities such as distributed or centralized logging, metrics, and monitoring are external
-to the application. They may be comprised of libraries, frameworks, clients, and their configuration.
-These services which could reside many places, such as: on the container host, a service external
-to the container host, in another container on the same host, or in another container layer.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;FROM developer/tools&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Editors, compilers, debuggers, and other diagnostic, utility, and troubleshooting tools
-and facilities such as SSH, local logging, metrics, and monitoring are also heavy items
-and external to the application, so they should be refactored into their own container layer.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;FROM application/microserviceX&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Finally, we arrive at the actual code base: this can iterate on its own time line,
-triggering a full container rebuild and deployment. Fortunately, each container
-layer may be cached, minimizing build time!&lt;/p&gt;
-
-&lt;p&gt;The application has dependencies such as runtime configuration and libraries.
-Potentially, those can be externalized from the application to their own container
-layer which iterates on a separate time line.&lt;/p&gt;
-
-&lt;p&gt;Summary: I would advocate that we compose all of these layers during container build time versus the
-typical approach we use the first time we build a container with Docker: using RUN to shell out
-and perform installation and configuration tasks.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=M9hBsRUeRdg&#34;&gt;This idea was introduced&lt;/a&gt;
-at the &lt;a href=&#34;http://www.meetup.com/coreos/events/215452012/&#34;&gt;CoreOS Meetup&lt;/a&gt;
-by James Russell, DevOps engineer at Sony Computer Entertainment America, DevNet Team.
-It has been further explored in a talk called
-&amp;ldquo;Exploring Strategies for Minimal Containerization&amp;rdquo; by Brian &amp;ldquo;Red Beard&amp;rdquo; Harrington,
-Principal Architect at CoreOS, but I only found
-&lt;a href=&#34;https://www.youtube.com/watch?v=P3sO9URqOhE&#34;&gt;a partial reference&lt;/a&gt;
-at a recent Container Days keynote. Redbeard has polished his talk brilliantly now,
-&lt;a href=&#34;https://www.youtube.com/watch?v=gMpldbcMHuI&#34;&gt;Getting Weird with Containers&lt;/a&gt;.
-The biggest aha moment for me was omitting the kernel, but that is obvious in hindsight.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Most use of RUN represents a duplication of effort that I abhor:&lt;/strong&gt;
-&lt;a href=&#34;../post/build-lamp-stack-with-phing/#migration-of-build-methods:1d44784f593e898273702c2689a01985&#34;&gt;because configuration by shell is something we have done before&lt;/a&gt;
-as a first level approximation problem solution. Many of us now use configuration management,
-which is a field comprised of tools known as Ansible, CF Engine, Chef, Puppet, Salt, and more.&lt;/p&gt;
-
-&lt;p&gt;However, configuration management is typically invoked after deployment of a resource during run-time,
-but Dockerfiles are invoked in the build domain. I have been exploring this strategic gap between the
-VM and the container for months without resolution. I went to ChefConf 2015 and asked this question
-but didn&amp;rsquo;t find an answer because I think there is a fundamental divide
-between immutable infrastructure (of ephemeral containers, called cattle)
-and configuration management of persistent infrastructure (which is longer lived, called pets).
-This is an example of the &lt;a href=&#34;https://news.ycombinator.com/item?id=7311704&#34;&gt;pets versus cattle&lt;/a&gt; discussion,
-which is an upshot of infrastructure as code adoption to reduce snowflake, bespoke, hand maintained infrastructure.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Configuration management of a container host, that makes sense to me.&lt;/li&gt;
-&lt;li&gt;Configuration management inside a container guest, that is a heavy container (and doesn&amp;rsquo;t make
-ultimate sense to me).&lt;/li&gt;
-&lt;li&gt;Configuration management to build a container, that makes sense to me, &lt;em&gt;but I haven&amp;rsquo;t found it
-yet.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Reusing our configuration management code so we can use it to build a container or a VM makes sense.&lt;/p&gt;
-
-&lt;p&gt;Could it be as simple as:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;RUN puppet agent apply&lt;/li&gt;
-&lt;li&gt;RUN chef-solo -c ~/solo.rb -j ~/node.json&lt;/li&gt;
-&lt;li&gt;etc?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;immutable-infrastructure-versus-configuration-management-build-time-versus-run-time&#34;&gt;Immutable Infrastructure versus Configuration Management: build-time versus run-time&lt;/h3&gt;
-
-&lt;p&gt;I want to reuse my configuration management to build a container rather than use shell
-commands which represent the lowest level primitive of configuration management functionality.&lt;/p&gt;
-
-&lt;p&gt;One of the benefits of configuration management is that you perform periodic runs
-to sync and update configuration, allowing drift correction and auditing of the configured system.
-This implies a longer-lived, persistent system and we find that the &amp;ldquo;heavier&amp;rdquo; the system is,
-the more useful this model becomes to maintain run state.&lt;/p&gt;
-
-&lt;p&gt;If a system is immutable, constrained to an application code artifact, and continuously deployed
-thousands of times a day &amp;ndash; do we need configuration management sync and updates? I like configuration
-management to be used during build time for artifacts and only as an option during run-time of those artifacts.
-I arrived at this viewpoint recently during a discussion with HashiCorp&amp;rsquo;s CTO, Armon Dadgar, because
-it is exactly the use case established with Vagrant to develop and test your configuration management,
-but then use &lt;a href=&#34;https://packer.io/docs/builders/docker.html&#34;&gt;Packer to build your container artifact&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It appears this approach is also endorsed by
-&lt;a href=&#34;http://www.ansible.com/blog/ansible-and-containers-why-and-how&#34;&gt;Ansible&lt;/a&gt; and
-&lt;a href=&#34;https://docs.chef.io/containers.html&#34;&gt;Chef&lt;/a&gt;
-(&lt;a href=&#34;http://www.slideshare.net/mpgoetz/packing-it-in-images-containers-and-config-management-37015676&#34;&gt;slides&lt;/a&gt;),
-while potentially supported by &lt;a href=&#34;https://puppetlabs.com/blog/simplify-managing-docker-puppet&#34;&gt;Puppet&lt;/a&gt;
-and &lt;a href=&#34;http://saltstack.com/saltstack-delivers-more-automation-docker-lxc-application-containers/&#34;&gt;SaltStack&lt;/a&gt;,
-but I think we can say this needs some more thought and evangelism because our entire
-community is wrestling with this problem as we transition to understand containers, e.g.:
-R.I. Pienaar (author of Marionette Collective, MCo, which is bundled with Puppet)
-wrote about &lt;a href=&#34;https://www.devco.net/archives/2015/02/24/moving-a-service-from-puppet-to-docker-2.php&#34;&gt;Moving a service from Puppet to Docker&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;container-deployment-and-orchestration&#34;&gt;Container Deployment and Orchestration&lt;/h3&gt;
-
-&lt;p&gt;Container deployment and orchestration becomes the next issue: do you use a scheduler like
-&lt;a href=&#34;http://mesos.apache.org/&#34;&gt;Apache Mesos&lt;/a&gt;, &lt;a href=&#34;http://kubernetes.io/&#34;&gt;Google Kubernetes&lt;/a&gt;,
-or a tool like &lt;a href=&#34;http://terraform.io&#34;&gt;Terraform&lt;/a&gt; to inform your load balancer, DNS, monitoring,
-and service discovery and dynamic configuration management systems that a tested official build
-artifact is ready to deploy? This is an area where configuration management does not suffice
-unless you have an external source driving it.&lt;/p&gt;
-
-&lt;p&gt;Containers in production are easy to deploy when used for single tier applications which
-are immutable and hopefully modeled as a micro-service (see the
-&lt;a href=&#34;http://12factor.net/&#34;&gt;Twelve-Factor App&lt;/a&gt;, but this application model certainly &lt;em&gt;does not&lt;/em&gt;
-fit all sizes.&lt;/p&gt;
-
-&lt;p&gt;Application deployments becomes easier if you leverage the HTTP model of web browsers and servers
-using capability negotiation and redirects between coexisting different versions of your API
-services (which would be necessary when you do not design forward and backward compatible APIs
-or database schemas). More thought exists for application and system design in the
-&lt;a href=&#34;http://www.reactivemanifesto.org/&#34;&gt;Reactive Manifesto&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The roll out of an entire service upgrade is a complex orchestration exercise.
-It represents a medley of service and application operations along with persistent
-data sources and it is a higher level problem I want to tackle soon. My dream is
-to work toward test driven DevOps and behavior driven DevOps to accomplish this.&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -1053,113 +212,7 @@ to work toward test driven DevOps and behavior driven DevOps to accomplish this.
       <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
  You reinforce your goals to improve code flow and service design on the way to test driven development!
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;code-flow-and-service-design&#34;&gt;Code Flow and Service Design&lt;/h3&gt;
-
-&lt;p&gt;I created the &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt; to map out the flow of code from
-developer to production in a wholly automated manner: better known as continuous deployment.&lt;/p&gt;
-
-&lt;p&gt;This map represents the software development life cycle, service deployment, and feedback loops that are
-integral to service design. I did this so that I could figure out where best to start work for my
-infrastructure as code project and I found a few optimizations by re-factoring the code flow and
-moving processes forward in the chain of events.&lt;/p&gt;
-
-&lt;p&gt;In doing so, I describe a journey that spans different disciplines of build, test, and deployment:
-areas that have been traditionally separated into team or department silos because they represent
-the pillars or domains of software development, quality assurance, and operations.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;../img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Those traditional silos create code friction by introducing manual hand offs and insulating teams
-from shared responsibilities, creating barriers to proper service design and life cycle considerations.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;It&amp;rsquo;s not my job,&amp;rdquo; &amp;ldquo;it works on my laptop,&amp;rdquo; and &amp;ldquo;I don&amp;rsquo;t like the [other team&amp;rsquo;s] attitude&amp;rdquo; are
-verbal indications of code friction. They are blockers for engineers on any team or any domain
-to embrace their responsibility for service design over the entire life cycle of code.&lt;/p&gt;
-
-&lt;h3 id=&#34;btd-build-test-deploy-pattern&#34;&gt;BTD: Build, Test, Deploy Pattern&lt;/h3&gt;
-
-&lt;p&gt;We&amp;rsquo;ve talked about breaking down the traditional walls between software development, quality assurance,
-and operations by describing a responsibility for all of these teams to embrace all of the disciplines
-of BTD (build, test, and deployment) in order to become proper service designers.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Build:&lt;/strong&gt; SoftwareDeveloper codes functionality and &lt;em&gt;builds&lt;/em&gt; the code&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test:&lt;/strong&gt; QualityAssurance creates &lt;em&gt;tests&lt;/em&gt; for the build artifacts&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Deploy:&lt;/strong&gt; Operations &lt;em&gt;deploys&lt;/em&gt; the artifacts&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I call this the BTD pattern, &lt;strong&gt;but astute readers will note it should be the TBD pattern&lt;/strong&gt; because we want to achieve test driven development of code, tests, and operations.&lt;/p&gt;
-
-&lt;p&gt;BTD is nothing revelatory, it is the traditional pipeline for software development.
-The &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt; at a high level &lt;em&gt;is&lt;/em&gt; a BTD pattern,
-but we will examine it further and find that BTD should exist in each domain.&lt;/p&gt;
-
-&lt;p&gt;What is wrong with the BTD pattern? Nothing except how it has been implemented as traditional roles and hand-offs, e.g.:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;../img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;hellip;you can see the traditional silos and you can see all of the potential inefficiencies to remedy a bug.
-The cost and time to fix increases the further the bug is discovered from the developer.&lt;/p&gt;
-
-&lt;h3 id=&#34;devops-btd-pattern-for-continuous-deployment&#34;&gt;DevOps BTD Pattern for Continuous Deployment&lt;/h3&gt;
-
-&lt;p&gt;We need to prevent bugs from happening in deployment, in test, and in development.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Did operations create a deployment bug? How did they test it?&lt;/li&gt;
-&lt;li&gt;Did quality assurance develop a good test? How do you test the tests?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;BTD must be applied at the build domain, at the test domain, and at the deploy domain.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;../img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is why everything is testable, buildable, and deployable on the developer laptop in the
-&lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt;.
-The traditional software developer or recent college graduate, system administrator, or quality engineer
-does not code tests, code deployment, and code builds, then test deployments and test builds &amp;ndash; &lt;strong&gt;but they should!&lt;/strong&gt;
-The DevOps engineer must test monitors, deployments, and builds as well.
-This expanded skill set must be part of the engineering culture for service design and imbued into all.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;SoftwareDeveloper&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;BDD feature descriptions (with help from product management, customer support, and sales)&lt;/li&gt;
-&lt;li&gt;TDD unit test cases + test data (with help from QualityAssurance)&lt;/li&gt;
-&lt;li&gt;Build jobs&lt;/li&gt;
-&lt;li&gt;Functionality&lt;/li&gt;
-&lt;li&gt;Related logs, metrics, and monitors for internal SLAs (with help from Operations)&lt;/li&gt;
-&lt;li&gt;Deployable and configurable artifacts (with help from Operations)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;QualityAssurance&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Test plan&lt;/li&gt;
-&lt;li&gt;Test cases and test data (with help from SoftwareDevelopers) that leverage logs, monitors, and metrics&lt;/li&gt;
-&lt;li&gt;Test and periodic test jobs&lt;/li&gt;
-&lt;li&gt;Integration tests (with help from SoftwareDevelopers)&lt;/li&gt;
-&lt;li&gt;Deployment tests (with help from Operations)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Operations&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Deployment Tools and tests&lt;/li&gt;
-&lt;li&gt;Server OS builds, run times, and dependencies&lt;/li&gt;
-&lt;li&gt;Configuration Management and tests&lt;/li&gt;
-&lt;li&gt;Deployment Orchestration (automated run books) and tests&lt;/li&gt;
-&lt;li&gt;Monitors and escalations (which are akin to integration tests)&lt;/li&gt;
-&lt;li&gt;Logging and Metric reports (which are akin to service level agreements)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I am sure there is more, but this is a very good start to a robust service design organization for continuous deployment!&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -1170,199 +223,7 @@ This expanded skill set must be part of the engineering culture for service desi
       <guid>http://mlavi.github.io/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
 Via open source and this blog, we can elevate the state of our software engineering and service design!
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;quotes-and-motivation&#34;&gt;Quotes and Motivation&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;Perfect is the enemy of good.&amp;rdquo; &amp;ndash;&lt;a href=&#34;http://en.wikiquote.org/wiki/Perfection&#34;&gt;Volare&lt;/a&gt; (paraphrased)&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;Fail fast.&amp;rdquo; &amp;ndash;&lt;a href=&#34;http://en.wikiquote.org/wiki/Ward_Cunningham#The_Simplest_Thing_that_Could_Possibly_Work&#34;&gt;Ward Cunningham&lt;/a&gt;
-(paraphrased as &lt;a href=&#34;https://twitter.com/hashtag/failfast&#34;&gt;#failfast&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;I hope to replace myself with a tiny shell script one day.&amp;rdquo; &amp;ndash;Unknown Internet meme?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ship it and fail fast: I would love to get feedback! I also wonder if anyone can improve my quote attributions.&lt;/p&gt;
-
-&lt;p&gt;Here is today&amp;rsquo;s snapshot of the entire DevOps Automation Diagram source and image.
-I&amp;rsquo;ve omitted many possible connections for the sake of showing
-the optimal automated progression from a developer&amp;rsquo;s mind to the production stack.
-I&amp;rsquo;ve refactored terminology to help inform systems and actions, but you can see there are
-many moving pieces to enable modern day software development life cycle automation,
-some of which are not easily identified off the shelf.&lt;/p&gt;
-
-&lt;p&gt;You can &amp;ldquo;view the SVG image&amp;rdquo; in a new browser window or tab and scale it to your liking
-and then cut and paste text from it.&lt;/p&gt;
-
-&lt;h3 id=&#34;updated&#34;&gt;Updated!&lt;/h3&gt;
-
-&lt;p&gt;My original release was 2015-03-11 (source below), but today&amp;rsquo;s update adds detail, removes many crossed lines
-for simple visual flow parsing, and is organized vertically.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;../img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Source code: devops_automation.pu
-
-@startuml
-title DevOps Automation (2015-03-11) by Mark Lavi
-state Development {
-  Development: language
-  Development: editor
-  Development: code tools
-  Development: virtual environment
-  Development: runtime
-  Development: frameworks
-  Development: libraries
-  BDD --&gt; UnitTest
-  BDD: featureDescription
-  Code: featureDescription
-  Code: testCases
-  Code: testData
-  Code: functionality
-  Code: configurationData
-  Code: deployability
-  Code: monitors
-  Code: metrics
-  Code: logs
-  Code -&gt; UnitTest : OnSave
-  Code --&gt; BDD
-  Code --&gt; LocalBuild
-  Code --&gt; LocalRepo : commit
-  UnitTest --&gt; LocalRepo
-  UnitTest: testCases
-  UnitTest: testData
-  LocalBuild --&gt; LocalStack
-  LocalBuild: localArtifact
-  LocalBuild: localTestJobs
-  LocalBuild: localBuildAutomationSystemContainer?
-  LocalBuild -&gt; ArtifactRepository : manual process\nDesk Build\ncandidate
-  LocalRepo -&gt; ReviewSystem
-  LocalRepo -&gt; CodeRepository : push
-  LocalStack: LocalDeployTest?
-  LocalStack: LocalIntegrationTest?
-}
-state CodeRepository {
-  CodeRepository : branch
-  CodeRepository : hash
-  CodeRepository : tag
-  preCommitHook -&gt; BuildAutomationSystem
-  preCommitHook: see Build,TestJobs
-  postCommitHook -&gt; BuildAutomationSystem
-  postCommitHook: see Build,TestJobs
-  webHook: see Build,TestJobs
-}
-state ReviewSystem {
-  ReviewSystem: master or all branches?
-  ReviewSystem -&gt; BuildAutomationSystem: candidate
-  ReviewSystem -&gt; CodeRepository : +N = passed
-  ReviewSystem: +1 BuildJob
-  ReviewSystem: +1 TestJob
-  ReviewSystem: +1 DeployJob
-  ReviewSystem: +1 HumanReview
-  ReviewSystem: +1 PeriodicTestJobs
-}
-state BuildAutomationSystem {
-  BuildAutomationSystem: perBranch
-  BuildAutomationSystem: perHash
-  BuildAutomationSystem: perTag  
-  [*] -&gt; BuildScheduler
-  [*] --&gt; BuildJobs: ad-hoc (manual)
-  [*] --&gt; DeployJobs: promote
-  BuildJobs -&gt; TestJobs
-  BuildJobs -&gt; ArtifactRepository: Candidate
-  BuildJobs: localArtifact
-  TestJobs --&gt; ConfigurationSystem : updateManifest
-  TestJobs -&gt; ArtifactRepository: Official
-  TestJobs -&gt; TestAutomationSystem
-  TestJobs: PeriodicTests
-  TestJobs: BasicCodeAcceptanceTests
-  DeployJobs -up-&gt; DeploySystem
-  DeployJobs: artifact
-  DeployJobs: manifest
-  DeployJobs: stack
-  DeployJobs -&gt; ConfigurationSystem: updateManifest
-  BuildScheduler --&gt; TestJobs
-  BuildScheduler: e.g. Nightly
-}
-state TestAutomationSystem {
-  TestAutomationSystem -&gt; DeployJobs
-  TestAutomationSystem: Simulator
-  TestAutomationSystem: FeatureIntegrationTesting
-  TestAutomationSystem: FullSuiteTesting  
-  TestAutomationSystem: LoadTesting
-  TestAutomationSystem: RegressionTesting
-  TestAutomationSystem: SoakTesting
-  TestAutomationSystem -&gt; ConfigurationSystem: updateManifest
-}
-state ArtifactRepository {
-  ArtifactRepository: candidate
-  ArtifactRepository: official
-}
-state ConfigurationSystem {
-  ConfigurationSystem: manifest
-  ConfigurationSystem: deployability
-  ConfigurationSystem: configurationData
-}
-state Monitors {
-  Monitors: SLA
-  Monitors -&gt; Metrics
-  Monitors -&gt; Logs
-}
-state Logs {
-  Logs -&gt; Metrics
-  Logs -&gt; Monitors
-}
-state Metrics {
-  Metrics: SLA
-}
-state AuthenticationSystem {
-  AuthenticationSystem: LDAP, SAML, etc.
-}
-state DeploySystem {
-  DeploySystem -&gt; ConfigurationSystem
-  DeploySystem: entireStack
-  DeploySystem: byProfileOnStack
-  DeploySystem: byRoleOnStack
-  DeploySystem: read, updateManifest
-  DeploySystem: bill of materials (BoM)
-  DeploySystem: readConfigurationData
-  Provision -&gt; Stack
-  Provision: profile/role@stack
-  Provision: applyManifest
-  Upgrade -&gt; Stack
-  Upgrade: role@stack
-  Upgrade: applyManifest
-  Canary -&gt; Stack
-  Canary: % existing role@stack
-  Canary: applyManifest
-}
-state Stack {
-  Stack: name/environment\n(e.g. Feature, Team, Release, dev/qa/stage/prod)
-  [*] --&gt; node
-  [*] -&gt; ProviderInfrastructure
-  ProviderInfrastructure: load balancer
-  ProviderInfrastructure: DNS
-  ProviderInfrastructure: monitor
-  ProviderInfrastructure: scheduler, autoscaler
-  ProviderInfrastructure --&gt; Monitors
-  ProviderInfrastructure --&gt; node
-  node: provider
-  node: profile
-  node: role
-  node: monitor
-  node -&gt; Monitors
-  node -&gt; Logs
-  node -&gt; Metrics
-}
-@enduml
-
-&lt;/p&gt;
-
-&lt;p&gt;I will put this under revision control in the Infrastructure as Code project I&amp;rsquo;m undertaking.
-I do not believe authored hyperlinks export to SVG yet, perhaps that will be my first request for PlantUML.&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -1374,72 +235,7 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
 One needs to start with a map of the world before deciding where to focus their efforts.
 It&amp;rsquo;s even better when you can optimize and render the new map in real-time!
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;beautiful-tool-and-diagram&#34;&gt;Beautiful Tool and Diagram&lt;/h3&gt;
-
-&lt;p&gt;I found and created two wonderful things today:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;I found exactly the tool I have been looking for over the years!
-I used Wikipedia and &lt;a href=&#34;http://alternativeto.net&#34;&gt;alternativeTo&lt;/a&gt; to survey the market for competitors
-to my favorite open source object drawing tool, &lt;a href=&#34;https://wiki.gnome.org/Apps/Dia&#34;&gt;Dia&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The following snapshot shows authoring a work-in-progress diagram&amp;hellip; I&amp;rsquo;ve been trying to create this
-for a quite a while and I&amp;rsquo;m glad to have the time to do it properly.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;../img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The DevOps mission to reduce all friction between the developer&amp;rsquo;s code and deployment to production
-is mostly captured by this diagram. It has been in my head for a while, extended past but based on
-work with my colleagues at Pertino. It is mostly complete, a bit of an eye-chart, and I want to
-improve the flow by reducing crossing lines. Working on this as a state diagram has yielded some
-insight into improvements, optimization, and bottlenecks. I plan to release the source file as part
-of my infrastructure as code project.&lt;/p&gt;
-
-&lt;p&gt;I made it with &lt;a href=&#34;http://www.plantuml.com/eclipse.html&#34;&gt;PlantUML in Eclipse with GraphViz&lt;/a&gt; with a view
-rendering the results on the fly (no need to save) which felt like unit testing my diagram!
-This allowed me to iterate frequently with text rather than graphics: brilliant and yet
-another example as infrastructure as code. :~) My standby object drawing program, Dia,
-would have done the trick as well, perhaps even better from a layout crossing lines perspective,
-but re-factoring would have been slower. Re-factoring was key in making improvements and I could
-perform analysis on my arrow layout hints, e.g.: &lt;code&gt;$ grep &amp;lsquo;&amp;ndash;&amp;gt;&amp;rsquo; | wc &amp;ndash;lines&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll update with the final product soon: you will be able to view the SVG image in a new browser
-window or tab, then scale it to your liking. I&amp;rsquo;m very happy with the results of performing this work
-with open source software and formats (currently 45Kb SVG which allows you to copy the text of the
-diagram) for flexibility and performance.&lt;/p&gt;
-
-&lt;h3 id=&#34;update&#34;&gt;UPDATE&lt;/h3&gt;
-
-&lt;p&gt;Please see the &lt;a href=&#34;../devops-automation/&#34;&gt;next posting&lt;/a&gt; for the &amp;ldquo;final&amp;rdquo; product.&lt;/p&gt;
-
-&lt;h3 id=&#34;post-script-2015-08-10&#34;&gt;Post Script: 2015-08-10&lt;/h3&gt;
-
-&lt;p&gt;There are other &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Unified_Modeling_Language_tools&#34;&gt;UML modelers&lt;/a&gt;,
-I think (&lt;a href=&#34;http://blog.staruml.io/&#34;&gt;http://blog.staruml.io/&lt;/a&gt;) and yEd are noteworthy.&lt;/p&gt;
-
-&lt;p&gt;However, as I explore the work flow and orchestration space, I am rediscovering
-the work done for
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_process_modeling&#34;&gt;Business Process Modeling&lt;/a&gt;
-standards, such as
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_Process_Execution_Language&#34;&gt;BPEL&lt;/a&gt; and
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation&#34;&gt;BPMN&lt;/a&gt;,
-and their various implementations with modelers such as:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;* www.open-esb.net
-* [Sirius](http://www.eclipse.org/sirius/getstarted.html) and tools build on it.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;implemented in ServiceMix and ProcessMaker.&lt;/p&gt;
-
-&lt;p&gt;This was triggered by my recent research into OASIS TOSCA and CAMP standards:
-everything new feels old again! :~)s&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -1451,79 +247,7 @@ everything new feels old again! :~)s&lt;/p&gt;</description>
       <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
 and technical debt follow as I start my Infrastructure as Code blog.
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;p&gt;Embarking on a new adventure is always the best time in a project because all your dreams
- are possible! You research your ideas, find new tools and libraries, and smell the fresh
- scent of unhindered development.&lt;/p&gt;
-
-&lt;h3 id=&#34;then-you-start&#34;&gt;Then you start&amp;hellip;&lt;/h3&gt;
-
-&lt;p&gt;You find that your idea is broad and multifaceted, tools are in various states of acceptable
- use and documentation, and there is a bevy of dependencies: each representing a small
- landscape to conquer.&lt;/p&gt;
-
-&lt;h3 id=&#34;to-sink-into-reality&#34;&gt;&amp;hellip; to sink into reality!&lt;/h3&gt;
-
-&lt;p&gt;The original title of this first post was &amp;ldquo;Time for a new Blog&amp;rdquo; to document my experiment
- with &lt;a href=&#34;http://jekyllrb.com/docs/github-pages/&#34;&gt;Jekyll and GitHub Pages&lt;/a&gt; before settling on
- &lt;a href=&#34;http://gohugo.io/overview/introduction/&#34;&gt;Hugo&lt;/a&gt;: it has been a fascinating study in scope creep.&lt;/p&gt;
-
-&lt;p&gt;Recently, I discovered &lt;a href=&#34;http://www.mkdocs.org/&#34;&gt;MkDocs&lt;/a&gt; for &amp;ldquo;Project documentation with Markdown.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;But I&amp;rsquo;m prototyping, so it&amp;rsquo;s all good, right?&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll update later with how I&amp;rsquo;ve navigated the static web site blog quest, thus far it has been an
- exercise in transferring most of the standard content management system functionality into
- smaller tools and libraries which inverts the work flow. I think the journey will be worth
- it because I&amp;rsquo;ve caught glimpses which validate this approach:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I can blog from the command line and presumably anywhere (including my phone) with some setup.&lt;/li&gt;
-&lt;li&gt;I can test the build of my content, templates, and enhanced work on those elements.&lt;/li&gt;
-&lt;li&gt;Everything under revision control, therefore: blog + content = testable software!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;a-static-web-cms&#34;&gt;A Static Web CMS?&lt;/h3&gt;
-
-&lt;p&gt;Even though I&amp;rsquo;ve accomplished much (including e-commerce) with various web content management systems
-(CMS) such as:
- &lt;a href=&#34;http://plone.org/&#34;&gt;Plone&lt;/a&gt;,
- &lt;a href=&#34;http://twiki.org/&#34;&gt;TWiki&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://foswiki.org/&#34;&gt;Foswiki&lt;/a&gt;,
- &lt;a href=&#34;http://www.joomla.org/&#34;&gt;Joomla&lt;/a&gt;,
- &lt;a href=&#34;http://drupal.org&#34;&gt;Drupal&lt;/a&gt;,
- &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt;,
- and &lt;a href=&#34;http://modx.com&#34;&gt;ModX&lt;/a&gt;.
-over the years, you inevitably fall &lt;em&gt;out of love&lt;/em&gt; with them after the first month. You discover a
-landscape of complex and brittle software when you extend a web CMS into the enterprise by adding
-integrations, plugins, etc. which have their own security attack surface, dependencies, update schedule,
-and incompatibilities.&lt;/p&gt;
-
-&lt;p&gt;You wonder if Share Point and Alfresco is just as evil (I am sure they are) and
-you wonder if you will fall out of love with a static CMS?&lt;/p&gt;
-
-&lt;p&gt;This is not a unique problem, it is shared by many other classes of software (like Jenkins, JIRA,
-and your web browser) and once you extend any API or customize any work flow (Oracle EBS). It is
-an indication of richness, complexity, and technical debt.&lt;/p&gt;
-
-&lt;p&gt;A static, compiled web site removes and loses dynamic, server-side functionality for persistence and
-interaction, or does it? With the advent of application service providers (ASP) or cloud hosted
-anything-as-a-service, we can move from server-side to service providers for authentication, spam filtered
-comments, forms and polls, advertising, analytics, and who knows what else?
-In addition, we can leverage improved web client capabilities to shift what was server-side to client-side processing.&lt;/p&gt;
-
-&lt;p&gt;This will be a great experiment!&lt;/p&gt;
-
-&lt;h3 id=&#34;infrastructure-as-code&#34;&gt;Infrastructure as Code&lt;/h3&gt;
-
-&lt;p&gt;The real purpose of this blog will be to catalog and share my research and development towards my passion:
-Infrastructure as Code which will lead to my dream of behavior driven DevOps. It is a ripe time for
-system and design thinking because the entire industry is trying to solve basic problems and automate
-solutions while integrating many different systems and disciplines. It is an exciting and disruptive time!&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

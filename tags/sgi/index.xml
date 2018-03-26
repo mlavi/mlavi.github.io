@@ -2,19 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sgi on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/sgi/index.xml</link>
+    <link>http://mlavi.github.io/tags/sgi/</link>
     <description>Recent content in Sgi on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-<<<<<<< HEAD
-    <atom:link href="http://mlavi.github.io/tags/sgi/index.xml" rel="self" type="application/rss+xml" />
-=======
     <lastBuildDate>Fri, 10 Apr 2015 08:44:19 -0700</lastBuildDate>
     
 	<atom:link href="http://mlavi.github.io/tags/sgi/index.xml" rel="self" type="application/rss+xml" />
     
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>Building the LAMP stack with Phing</title>
@@ -23,123 +19,7 @@
       
       <guid>http://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
       <description>&lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;migration-of-technology-stacks&#34;&gt;Migration of Technology Stacks&lt;/h3&gt;
-
-&lt;p&gt;I was the webmaster (Senior Producer, Web Team in the Information Technology department of Silicon Graphics: SGI)
-from 2005-2011, which is to say I designed and implemented improvements to web content, management, publishing,
-revision control, infrastructure, web programming, extranet design, application service provider integration and more.&lt;/p&gt;
-
-&lt;p&gt;I transitioned our server (and desktop) infrastructure from IRIX on MIPS architecture to SuSE Linux on Intel Itanium2 architecture, allowing folks to move to Windows laptops. It was not shocking to find many
-tools and packages were not ported to the new platform, Operating System distribution packages could lag behind
-in security releases or never receive upgrades, so I happily resorted to building from source and benefit
-from open source licensing.&lt;/p&gt;
-
-&lt;p&gt;Previously, during my independent consulting years, I had moved technology web stacks from SINO to LAMP:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SINO:&lt;/strong&gt; Solaris, Informix, Netscape, Oracle&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LAMP:&lt;/strong&gt; Linux, Apache, MySQL/Postgres, PERL/PHP/Python&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;e.g.: From Netscape Enterprise Web Server to Apache, Informix and Oracle to MySQL, PERL to PHP, and I had been building this web stack on both Solaris and Linux.&lt;/p&gt;
-
-&lt;h3 id=&#34;migration-of-build-methods&#34;&gt;Migration of Build Methods&lt;/h3&gt;
-
-&lt;p&gt;I had an ever growing shell script to perform the package builds and I re-factored it for the release numbers and
-the deployment directory to be variable driven. Although my build script was a brittle monstrosity without any
-conditionally or intelligence, it was the right approach towards infrastructure as code!&lt;/p&gt;
-
-&lt;p&gt;My manager asked how I would document and share the build process for others at SGI to repurpose my work,
-so I consulted my colleagues and they suggested make files. I looked at make systems and liked Ant, an XML
-based build file, but to customize Ant required Java programming or beanshell (a la Groovy) scriptability
-which I explored. I really liked an Ant dependency graph generator that leveraged GraphViz called
-&lt;a href=&#34;http://vizant.sourceforge.net&#34;&gt;VizAnt&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ultimately, I found an Ant implementation written in PHP called &lt;a href=&#34;http://phing.info&#34;&gt;Phing&lt;/a&gt; (PHing Is Not GNU make)
-allowing me to reuse some Ant tools (a benefit of using XML as a data structure) and I have been happy with the solution.&lt;/p&gt;
-
-&lt;p&gt;I called the project &amp;ldquo;webplatform&amp;rdquo; and refactored my monolithic build shell script to Phing. Now I could:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;correct errors faster via Phing&amp;rsquo;s XML validation&lt;/li&gt;
-&lt;li&gt;share my work with others by using a centralized repository&lt;/li&gt;
-&lt;li&gt;leverage build targets composed from the appropriate mix of software:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Internet server:&lt;/strong&gt; an optimized, reduced web stack&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;DMZ server:&lt;/strong&gt; minimal and secure web stack&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Intranet server:&lt;/strong&gt; a kitchen sink (everything) configuration web stack&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;respond in hours to incorporate any security patch directly from the software projects without waiting
-for the upstream operating system provider to back-port and distribute&lt;/li&gt;
-&lt;li&gt;communicate my work because the code was documented and visualizable, e.g.:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../img/webplatform.ant.phing-guts.png&#34; alt=&#34;Webplatform build target dependency diagram&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I wrote one Phing extension called &amp;ldquo;MyUnpack.&amp;rdquo; Given any software package release version, it would:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;determine if a current or future release was already installed in the destination directory,
-
-&lt;ul&gt;
-&lt;li&gt;optionally searching the operating system.&lt;/li&gt;
-&lt;li&gt;utilizing a number of methods to determine the existing version because every project could be different.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;If not up to date, it would then extract the software package and signal to continue the build process.
-Otherwise, signal to skip building this up to date software package.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I practiced object oriented coding and adopted PHP Code Sniffer to improve my coding style.
-I was on the way to continuous integration&amp;hellip; but I didn&amp;rsquo;t finish that part of the project.&lt;/p&gt;
-
-&lt;p&gt;My contributions back to open source included documentation for Phing (I became a committer)
-and identifying, testing, and confirming a fix to broken OpenSSL builds on Itanium2.&lt;/p&gt;
-
-&lt;p&gt;I hope to open source the webplatform project one day.&lt;/p&gt;
-
-&lt;h3 id=&#34;sgi-appendix&#34;&gt;SGI Appendix&lt;/h3&gt;
-
-&lt;p&gt;Some fun challenges and SGI trivia:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://sgi.com&#34;&gt;http://sgi.com&lt;/a&gt; was one of the first web sites I ever saw with &lt;a href=&#34;http://en.wikipedia.org/wiki/Mosaic_(web_browser)
-on the web back in 1993. The banner of the home
-page of www.sgi.com was called &amp;quot;Silicon Surf&amp;quot; and displayed a metallic robot surfing on the ocean, which was
-also a reference to SGI&#39;s ground breaking graphic rendering, powering the earliest days of computer graphic
-imagery (CGI&#34;&gt;NCSA Mosaic&lt;/a&gt; in Hollywood, pioneered by Lucasfilm&amp;rsquo;s Industrial Light and Magic (ILM) with SGI workstations:
-think &lt;a href=&#34;https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day#Effects&#34;&gt;Terminator 2&lt;/a&gt;.
-The act of browsing the world wide web was called &amp;ldquo;web surfing&amp;rdquo; in those early days
-and SGI nicknamed the web team the Surf Team.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/19970605011712/http://www.sgi.com/&#34;&gt;Archived home page from 1997&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;ll see if I can dig up that original image, I think I have the poster.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;SGI engineering had created an in-house improved, centralized revision control system on top of
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Revision_Control_System&#34;&gt;RCS&lt;/a&gt;,
-one of the earliest, local file Unix revision control systems. It could be thought of a
-cousin and functional equivalent to &lt;a href=&#34;https://en.wikipedia.org/wiki/Concurrent_Versions_System&#34;&gt;CVS&lt;/a&gt;
-because it used RCS format files in the repository and allowed multiple users.
-However, it ran only on &lt;a href=&#34;https://en.wikipedia.org/wiki/IRIX&#34;&gt;IRIX&lt;/a&gt;, which was SGI&amp;rsquo;s flavor of
-Unix for the MIPS CPU family, and there was no road map to port it to Linux. Despite SGI already transitioning from IRIX to Linux, they had not decided to end of life IRIX at that time.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I was working to move us from SGI O2&amp;rsquo;s (IRIX) on every web developer&amp;rsquo;s desk to Linux or Windows laptops
-to modernize our tech stack, desktops, and tools. Some people stayed on IRIX and that was absolutely fine:
-our solution was based on open standards and transports.&lt;/li&gt;
-&lt;li&gt;After examining Mercurial, I moved our team to
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Apache_Subversion&#34;&gt;Subversion (svn)&lt;/a&gt;
-because it represented a straightforward migration without a major change in context for our web developers.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

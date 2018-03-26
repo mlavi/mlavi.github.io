@@ -2,19 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Automation on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/automation/index.xml</link>
+    <link>http://mlavi.github.io/tags/automation/</link>
     <description>Recent content in Automation on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-<<<<<<< HEAD
-    <atom:link href="http://mlavi.github.io/tags/automation/index.xml" rel="self" type="application/rss+xml" />
-=======
-    <lastBuildDate>Wed, 11 Mar 2015 10:35:41 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 18 Feb 2018 12:00:00 -0700</lastBuildDate>
     
 	<atom:link href="http://mlavi.github.io/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
+    
+    <item>
+      <title>Calm.io: a blog series recap!</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/</link>
+      <pubDate>Sun, 18 Feb 2018 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/</guid>
+      <description>&lt;p&gt;From September 23, 2015 to May 26, 2016,
+ I took hiatus from my personal blog to explore, explain, and write a number
+ of DevOps articles for my employer on the
+ &lt;a href=&#34;http://calm.io/author/mark&#34;&gt;Calm.io blog&lt;/a&gt;. Nutanix acquired Calm.io and I
+ am still part of the Nutanix Calm team, but I&amp;rsquo;m reposting these articles on
+ my personal blog since the originals are no longer directly accessible.
+ I am also enhancing them to clarify language, add learnings,
+ and append significant developments as postscripts.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reconciling Configuration Management and Immutable Infrastructure</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
+      <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on May 26, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuration Management in the DevOps World</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
+      <pubDate>Tue, 24 May 2016 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on May 24, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Demystifying Continuous Integration, Delivery, and Deployment</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
+      <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infrastructure as Code and Calm Blueprints</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</link>
+      <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on Nov 3, 2015 at
+&lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Why is DevOps So Hard?</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</link>
+      <pubDate>Tue, 20 Oct 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on October 20, 2015 at
+&lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
@@ -24,199 +98,7 @@
       <guid>http://mlavi.github.io/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
 Via open source and this blog, we can elevate the state of our software engineering and service design!
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;quotes-and-motivation&#34;&gt;Quotes and Motivation&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;Perfect is the enemy of good.&amp;rdquo; &amp;ndash;&lt;a href=&#34;http://en.wikiquote.org/wiki/Perfection&#34;&gt;Volare&lt;/a&gt; (paraphrased)&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;Fail fast.&amp;rdquo; &amp;ndash;&lt;a href=&#34;http://en.wikiquote.org/wiki/Ward_Cunningham#The_Simplest_Thing_that_Could_Possibly_Work&#34;&gt;Ward Cunningham&lt;/a&gt;
-(paraphrased as &lt;a href=&#34;https://twitter.com/hashtag/failfast&#34;&gt;#failfast&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;I hope to replace myself with a tiny shell script one day.&amp;rdquo; &amp;ndash;Unknown Internet meme?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ship it and fail fast: I would love to get feedback! I also wonder if anyone can improve my quote attributions.&lt;/p&gt;
-
-&lt;p&gt;Here is today&amp;rsquo;s snapshot of the entire DevOps Automation Diagram source and image.
-I&amp;rsquo;ve omitted many possible connections for the sake of showing
-the optimal automated progression from a developer&amp;rsquo;s mind to the production stack.
-I&amp;rsquo;ve refactored terminology to help inform systems and actions, but you can see there are
-many moving pieces to enable modern day software development life cycle automation,
-some of which are not easily identified off the shelf.&lt;/p&gt;
-
-&lt;p&gt;You can &amp;ldquo;view the SVG image&amp;rdquo; in a new browser window or tab and scale it to your liking
-and then cut and paste text from it.&lt;/p&gt;
-
-&lt;h3 id=&#34;updated&#34;&gt;Updated!&lt;/h3&gt;
-
-&lt;p&gt;My original release was 2015-03-11 (source below), but today&amp;rsquo;s update adds detail, removes many crossed lines
-for simple visual flow parsing, and is organized vertically.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Source code: devops_automation.pu
-
-@startuml
-title DevOps Automation (2015-03-11) by Mark Lavi
-state Development {
-  Development: language
-  Development: editor
-  Development: code tools
-  Development: virtual environment
-  Development: runtime
-  Development: frameworks
-  Development: libraries
-  BDD --&gt; UnitTest
-  BDD: featureDescription
-  Code: featureDescription
-  Code: testCases
-  Code: testData
-  Code: functionality
-  Code: configurationData
-  Code: deployability
-  Code: monitors
-  Code: metrics
-  Code: logs
-  Code -&gt; UnitTest : OnSave
-  Code --&gt; BDD
-  Code --&gt; LocalBuild
-  Code --&gt; LocalRepo : commit
-  UnitTest --&gt; LocalRepo
-  UnitTest: testCases
-  UnitTest: testData
-  LocalBuild --&gt; LocalStack
-  LocalBuild: localArtifact
-  LocalBuild: localTestJobs
-  LocalBuild: localBuildAutomationSystemContainer?
-  LocalBuild -&gt; ArtifactRepository : manual process\nDesk Build\ncandidate
-  LocalRepo -&gt; ReviewSystem
-  LocalRepo -&gt; CodeRepository : push
-  LocalStack: LocalDeployTest?
-  LocalStack: LocalIntegrationTest?
-}
-state CodeRepository {
-  CodeRepository : branch
-  CodeRepository : hash
-  CodeRepository : tag
-  preCommitHook -&gt; BuildAutomationSystem
-  preCommitHook: see Build,TestJobs
-  postCommitHook -&gt; BuildAutomationSystem
-  postCommitHook: see Build,TestJobs
-  webHook: see Build,TestJobs
-}
-state ReviewSystem {
-  ReviewSystem: master or all branches?
-  ReviewSystem -&gt; BuildAutomationSystem: candidate
-  ReviewSystem -&gt; CodeRepository : +N = passed
-  ReviewSystem: +1 BuildJob
-  ReviewSystem: +1 TestJob
-  ReviewSystem: +1 DeployJob
-  ReviewSystem: +1 HumanReview
-  ReviewSystem: +1 PeriodicTestJobs
-}
-state BuildAutomationSystem {
-  BuildAutomationSystem: perBranch
-  BuildAutomationSystem: perHash
-  BuildAutomationSystem: perTag  
-  [*] -&gt; BuildScheduler
-  [*] --&gt; BuildJobs: ad-hoc (manual)
-  [*] --&gt; DeployJobs: promote
-  BuildJobs -&gt; TestJobs
-  BuildJobs -&gt; ArtifactRepository: Candidate
-  BuildJobs: localArtifact
-  TestJobs --&gt; ConfigurationSystem : updateManifest
-  TestJobs -&gt; ArtifactRepository: Official
-  TestJobs -&gt; TestAutomationSystem
-  TestJobs: PeriodicTests
-  TestJobs: BasicCodeAcceptanceTests
-  DeployJobs -up-&gt; DeploySystem
-  DeployJobs: artifact
-  DeployJobs: manifest
-  DeployJobs: stack
-  DeployJobs -&gt; ConfigurationSystem: updateManifest
-  BuildScheduler --&gt; TestJobs
-  BuildScheduler: e.g. Nightly
-}
-state TestAutomationSystem {
-  TestAutomationSystem -&gt; DeployJobs
-  TestAutomationSystem: Simulator
-  TestAutomationSystem: FeatureIntegrationTesting
-  TestAutomationSystem: FullSuiteTesting  
-  TestAutomationSystem: LoadTesting
-  TestAutomationSystem: RegressionTesting
-  TestAutomationSystem: SoakTesting
-  TestAutomationSystem -&gt; ConfigurationSystem: updateManifest
-}
-state ArtifactRepository {
-  ArtifactRepository: candidate
-  ArtifactRepository: official
-}
-state ConfigurationSystem {
-  ConfigurationSystem: manifest
-  ConfigurationSystem: deployability
-  ConfigurationSystem: configurationData
-}
-state Monitors {
-  Monitors: SLA
-  Monitors -&gt; Metrics
-  Monitors -&gt; Logs
-}
-state Logs {
-  Logs -&gt; Metrics
-  Logs -&gt; Monitors
-}
-state Metrics {
-  Metrics: SLA
-}
-state AuthenticationSystem {
-  AuthenticationSystem: LDAP, SAML, etc.
-}
-state DeploySystem {
-  DeploySystem -&gt; ConfigurationSystem
-  DeploySystem: entireStack
-  DeploySystem: byProfileOnStack
-  DeploySystem: byRoleOnStack
-  DeploySystem: read, updateManifest
-  DeploySystem: bill of materials (BoM)
-  DeploySystem: readConfigurationData
-  Provision -&gt; Stack
-  Provision: profile/role@stack
-  Provision: applyManifest
-  Upgrade -&gt; Stack
-  Upgrade: role@stack
-  Upgrade: applyManifest
-  Canary -&gt; Stack
-  Canary: % existing role@stack
-  Canary: applyManifest
-}
-state Stack {
-  Stack: name/environment\n(e.g. Feature, Team, Release, dev/qa/stage/prod)
-  [*] --&gt; node
-  [*] -&gt; ProviderInfrastructure
-  ProviderInfrastructure: load balancer
-  ProviderInfrastructure: DNS
-  ProviderInfrastructure: monitor
-  ProviderInfrastructure: scheduler, autoscaler
-  ProviderInfrastructure --&gt; Monitors
-  ProviderInfrastructure --&gt; node
-  node: provider
-  node: profile
-  node: role
-  node: monitor
-  node -&gt; Monitors
-  node -&gt; Logs
-  node -&gt; Metrics
-}
-@enduml
-
-&lt;/p&gt;
-
-&lt;p&gt;I will put this under revision control in the Infrastructure as Code project I&amp;rsquo;m undertaking.
-I do not believe authored hyperlinks export to SVG yet, perhaps that will be my first request for PlantUML.&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -228,72 +110,7 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
 One needs to start with a map of the world before deciding where to focus their efforts.
 It&amp;rsquo;s even better when you can optimize and render the new map in real-time!
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;beautiful-tool-and-diagram&#34;&gt;Beautiful Tool and Diagram&lt;/h3&gt;
-
-&lt;p&gt;I found and created two wonderful things today:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;I found exactly the tool I have been looking for over the years!
-I used Wikipedia and &lt;a href=&#34;http://alternativeto.net&#34;&gt;alternativeTo&lt;/a&gt; to survey the market for competitors
-to my favorite open source object drawing tool, &lt;a href=&#34;https://wiki.gnome.org/Apps/Dia&#34;&gt;Dia&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The following snapshot shows authoring a work-in-progress diagram&amp;hellip; I&amp;rsquo;ve been trying to create this
-for a quite a while and I&amp;rsquo;m glad to have the time to do it properly.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The DevOps mission to reduce all friction between the developer&amp;rsquo;s code and deployment to production
-is mostly captured by this diagram. It has been in my head for a while, extended past but based on
-work with my colleagues at Pertino. It is mostly complete, a bit of an eye-chart, and I want to
-improve the flow by reducing crossing lines. Working on this as a state diagram has yielded some
-insight into improvements, optimization, and bottlenecks. I plan to release the source file as part
-of my infrastructure as code project.&lt;/p&gt;
-
-&lt;p&gt;I made it with &lt;a href=&#34;http://www.plantuml.com/eclipse.html&#34;&gt;PlantUML in Eclipse with GraphViz&lt;/a&gt; with a view
-rendering the results on the fly (no need to save) which felt like unit testing my diagram!
-This allowed me to iterate frequently with text rather than graphics: brilliant and yet
-another example as infrastructure as code. :~) My standby object drawing program, Dia,
-would have done the trick as well, perhaps even better from a layout crossing lines perspective,
-but re-factoring would have been slower. Re-factoring was key in making improvements and I could
-perform analysis on my arrow layout hints, e.g.: &lt;code&gt;$ grep &amp;lsquo;&amp;ndash;&amp;gt;&amp;rsquo; | wc &amp;ndash;lines&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll update with the final product soon: you will be able to view the SVG image in a new browser
-window or tab, then scale it to your liking. I&amp;rsquo;m very happy with the results of performing this work
-with open source software and formats (currently 45Kb SVG which allows you to copy the text of the
-diagram) for flexibility and performance.&lt;/p&gt;
-
-&lt;h3 id=&#34;update&#34;&gt;UPDATE&lt;/h3&gt;
-
-&lt;p&gt;Please see the &lt;a href=&#34;../devops-automation/&#34;&gt;next posting&lt;/a&gt; for the &amp;ldquo;final&amp;rdquo; product.&lt;/p&gt;
-
-&lt;h3 id=&#34;post-script-2015-08-10&#34;&gt;Post Script: 2015-08-10&lt;/h3&gt;
-
-&lt;p&gt;There are other &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Unified_Modeling_Language_tools&#34;&gt;UML modelers&lt;/a&gt;,
-I think (&lt;a href=&#34;http://blog.staruml.io/&#34;&gt;http://blog.staruml.io/&lt;/a&gt;) and yEd are noteworthy.&lt;/p&gt;
-
-&lt;p&gt;However, as I explore the work flow and orchestration space, I am rediscovering
-the work done for
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_process_modeling&#34;&gt;Business Process Modeling&lt;/a&gt;
-standards, such as
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_Process_Execution_Language&#34;&gt;BPEL&lt;/a&gt; and
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation&#34;&gt;BPMN&lt;/a&gt;,
-and their various implementations with modelers such as:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;* www.open-esb.net
-* [Sirius](http://www.eclipse.org/sirius/getstarted.html) and tools build on it.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;implemented in ServiceMix and ProcessMaker.&lt;/p&gt;
-
-&lt;p&gt;This was triggered by my recent research into OASIS TOSCA and CAMP standards:
-everything new feels old again! :~)s&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

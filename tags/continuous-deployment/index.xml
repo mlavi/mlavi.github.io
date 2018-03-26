@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Continuous Deployment on Mark&#39;s Blog</title>
+    <link>http://mlavi.github.io/tags/continuous-deployment/</link>
+    <description>Recent content in Continuous Deployment on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 28 Dec 2015 12:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/continuous-deployment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Demystifying Continuous Integration, Delivery, and Deployment</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
+      <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

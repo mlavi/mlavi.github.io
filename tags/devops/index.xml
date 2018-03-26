@@ -2,19 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devops on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/devops/index.xml</link>
+    <link>http://mlavi.github.io/tags/devops/</link>
     <description>Recent content in Devops on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-<<<<<<< HEAD
-    <atom:link href="http://mlavi.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
-=======
-    <lastBuildDate>Tue, 13 Oct 2015 12:03:32 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 18 Feb 2018 12:00:00 -0700</lastBuildDate>
     
 	<atom:link href="http://mlavi.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
+    
+    <item>
+      <title>Calm.io: a blog series recap!</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/</link>
+      <pubDate>Sun, 18 Feb 2018 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/</guid>
+      <description>&lt;p&gt;From September 23, 2015 to May 26, 2016,
+ I took hiatus from my personal blog to explore, explain, and write a number
+ of DevOps articles for my employer on the
+ &lt;a href=&#34;http://calm.io/author/mark&#34;&gt;Calm.io blog&lt;/a&gt;. Nutanix acquired Calm.io and I
+ am still part of the Nutanix Calm team, but I&amp;rsquo;m reposting these articles on
+ my personal blog since the originals are no longer directly accessible.
+ I am also enhancing them to clarify language, add learnings,
+ and append significant developments as postscripts.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DevOps Maturity Diagram</title>
+      <link>http://mlavi.github.io/post/devops-maturity-diagram/</link>
+      <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/devops-maturity-diagram/</guid>
+      <description>&lt;p&gt;The opening of
+ &lt;a href=&#34;../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/&#34;&gt;my first Calm.io DevOps article&lt;/a&gt;
+ started with:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Let me share what I’ve learned on my journey to DevOps: it is a culturally
+ rendered term and it has a different meaning for everyone.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reconciling Configuration Management and Immutable Infrastructure</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
+      <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on May 26, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuration Management in the DevOps World</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
+      <pubDate>Tue, 24 May 2016 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on May 24, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Demystifying Continuous Integration, Delivery, and Deployment</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
+      <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infrastructure as Code and Calm Blueprints</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</link>
+      <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on Nov 3, 2015 at
+&lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Why is DevOps So Hard?</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</link>
+      <pubDate>Tue, 20 Oct 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on October 20, 2015 at
+&lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/&lt;/a&gt;
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>DevOps Demystified</title>
@@ -25,123 +117,21 @@
       <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
  for many software engineering organizations. Let me define DevOps to help you
  understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;update-2016-12-17&#34;&gt;Update: 2016-12-17&lt;/h3&gt;
-
-&lt;p&gt;Yet another refactoring and updates with expanded citations, leveraging a bit of
-my last four months of DevOps evangelism for Nutanix across five countries. It
-could use more more work!&lt;/p&gt;
-
-&lt;h3 id=&#34;update-2015-11-18&#34;&gt;Update: 2015-11-18&lt;/h3&gt;
-
-&lt;p&gt;I have polished and reorganized the slides a few times to improve the flow, reinforce,
- and elaborate on key points. I am happy to give this talk to any organization
- and I have provided the slides for your evangelism efforts as well!
-Please contact me with any follow up questions or comments.&lt;/p&gt;
-
-&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
-
-&lt;p&gt;A brief history of the DevOps movement and community with a cross section view of many methods
-and practices that are breaking down the barriers to achieve engineering agility.
-DevOps seems intangible: you can&amp;rsquo;t buy it, there is no certification, and frankly, there is no
-universal definition, yet everyone wants it or already &amp;ldquo;does&amp;rdquo; it, but still has trouble
-identifying it.
-I will cover many topics so that you can understand and chart your journey to DevOps.&lt;/p&gt;
-
-&lt;h3 id=&#34;agenda&#34;&gt;Agenda&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A Definition and Cultural Rendering of DevOps
-
-&lt;ul&gt;
-&lt;li&gt;A Brief History of DevOps&lt;/li&gt;
-&lt;li&gt;DevOps Impact on Organizations&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The Journey to DevOps
-
-&lt;ul&gt;
-&lt;li&gt;Agile Infrastructure in the Cloud&lt;/li&gt;
-&lt;li&gt;Infrastructure as Code&lt;/li&gt;
-&lt;li&gt;Pets versus Cattle versus Bacteria&lt;/li&gt;
-&lt;li&gt;Test, Build, Deploy Pattern&lt;/li&gt;
-&lt;li&gt;Infrastructure Orchestration and Models&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Epilogue: BusinessOps
-
-&lt;ul&gt;
-&lt;li&gt;We are all DevOps: your call to action!&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;devops-definition&#34;&gt;DevOps Definition&lt;/h3&gt;
-
-&lt;p&gt;DevOps is the &lt;em&gt;process&lt;/em&gt; of removing all friction between the developer and customer value.&lt;/p&gt;
-
-&lt;p&gt;However, DevOps is a culturally rendered term: it is practiced by people and dynamically bound
-to their capabilities.&lt;/p&gt;
-
-&lt;p&gt;Elaboration: &lt;a href=&#34;https://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&#34;&gt;I Dream of DevOps, but What is DevOps?&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;presentation&#34;&gt;Presentation&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Slides: &lt;a href=&#34;../../slides/devops-demystified.html&#34;&gt;DevOps Demystified&lt;/a&gt; || &lt;a href=&#34;../../slides/devops-demystified.md&#34;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The actual content of this blog post has been given as a talk:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2016-12-17: presented at &lt;a href=&#34;https://www.meetup.com/Cloud-Computing-Basics/events/234108925/&#34;&gt;Cloud Computing Basics&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Online presentation captured and uploaded to &lt;a href=&#34;https://www.youtube.com/watch?v=7WBEhtQssn8&#34;&gt;YouTube&lt;/a&gt;:&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&#34;640&#34; height=&#34;360&#34; src=&#34;https://www.youtube.com/embed/7WBEhtQssn8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2015-11-17: presented at &lt;a href=&#34;http://www.meetup.com/awsgurus/events/226547082/&#34;&gt;AWS Bay Area Meetup&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Typical Meetup attrition: 75 registered, 25+ attended.&lt;/li&gt;
-&lt;li&gt;DevOps definition suggestions:
-
-&lt;ul&gt;
-&lt;li&gt;Change &amp;ldquo;remove friction&amp;rdquo; to &amp;ldquo;increase collaboration.&amp;rdquo;
-
-&lt;ul&gt;
-&lt;li&gt;It is close to being the flip side of the same coin, but does not allow a clean notion of recursion and application to tools.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Drop the word &amp;ldquo;value.&amp;rdquo;
-
-&lt;ul&gt;
-&lt;li&gt;I considered this, but the definition becomes too abstract: value yields tangible and measurable properties.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Tweets ensued:&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;RT &lt;a href=&#34;https://twitter.com/raravena80&#34;&gt;@raravena80&lt;/a&gt;: Awesome Meetup at &lt;a href=&#34;https://twitter.com/Coupa&#34;&gt;@Coupa&lt;/a&gt; HQ with &lt;a href=&#34;https://twitter.com/calm_mark&#34;&gt;@calm_mark&lt;/a&gt; !! &lt;a href=&#34;https://t.co/5kljKrreD3&#34;&gt;pic.twitter.com/5kljKrreD3&lt;/a&gt;&lt;/p&gt;&amp;mdash; Coupa Software (@Coupa) &lt;a href=&#34;https://twitter.com/Coupa/status/666818169798021120&#34;&gt;November 18, 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2015-10-03: presented at &lt;a href=&#34;https://www.siliconvalley-codecamp.com/Session/2015/demystifying-devops&#34;&gt;Silicon Valley Code Camp 2015&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Nice turnout of 13 registered, 85 interested, and about 40 attendees.&lt;/li&gt;
-&lt;li&gt;Tweets ensued:&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;DevOps is a culturally rendered term.&amp;quot; &lt;a href=&#34;https://twitter.com/calm_mark&#34;&gt;@calm_mark&lt;/a&gt;&lt;/p&gt;&amp;mdash; Noah Kantrowitz (@kantrn) &lt;a href=&#34;https://twitter.com/kantrn/status/650414900682973184&#34;&gt;October 3, 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
+    </item>
+    
+    <item>
+      <title>I Dream of DevOps, but What is DevOps?</title>
+      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</link>
+      <pubDate>Wed, 23 Sep 2015 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written by me and posted on September 23, 2015 at
+&lt;a href=&#34;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&#34;&gt;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&lt;/a&gt;
+and slightly enhanced on February 18, 2018, be sure to see the
+&lt;a href=&#34;#postscript-february-18-2018&#34;&gt;Postscript&lt;/a&gt; for significant developments!
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -152,113 +142,7 @@ to their capabilities.&lt;/p&gt;
       <guid>http://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
  You reinforce your goals to improve code flow and service design on the way to test driven development!
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;code-flow-and-service-design&#34;&gt;Code Flow and Service Design&lt;/h3&gt;
-
-&lt;p&gt;I created the &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt; to map out the flow of code from
-developer to production in a wholly automated manner: better known as continuous deployment.&lt;/p&gt;
-
-&lt;p&gt;This map represents the software development life cycle, service deployment, and feedback loops that are
-integral to service design. I did this so that I could figure out where best to start work for my
-infrastructure as code project and I found a few optimizations by re-factoring the code flow and
-moving processes forward in the chain of events.&lt;/p&gt;
-
-&lt;p&gt;In doing so, I describe a journey that spans different disciplines of build, test, and deployment:
-areas that have been traditionally separated into team or department silos because they represent
-the pillars or domains of software development, quality assurance, and operations.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../img/btd-pattern-traditional.dia.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Those traditional silos create code friction by introducing manual hand offs and insulating teams
-from shared responsibilities, creating barriers to proper service design and life cycle considerations.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;It&amp;rsquo;s not my job,&amp;rdquo; &amp;ldquo;it works on my laptop,&amp;rdquo; and &amp;ldquo;I don&amp;rsquo;t like the [other team&amp;rsquo;s] attitude&amp;rdquo; are
-verbal indications of code friction. They are blockers for engineers on any team or any domain
-to embrace their responsibility for service design over the entire life cycle of code.&lt;/p&gt;
-
-&lt;h3 id=&#34;btd-build-test-deploy-pattern&#34;&gt;BTD: Build, Test, Deploy Pattern&lt;/h3&gt;
-
-&lt;p&gt;We&amp;rsquo;ve talked about breaking down the traditional walls between software development, quality assurance,
-and operations by describing a responsibility for all of these teams to embrace all of the disciplines
-of BTD (build, test, and deployment) in order to become proper service designers.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Build:&lt;/strong&gt; SoftwareDeveloper codes functionality and &lt;em&gt;builds&lt;/em&gt; the code&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test:&lt;/strong&gt; QualityAssurance creates &lt;em&gt;tests&lt;/em&gt; for the build artifacts&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Deploy:&lt;/strong&gt; Operations &lt;em&gt;deploys&lt;/em&gt; the artifacts&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I call this the BTD pattern, &lt;strong&gt;but astute readers will note it should be the TBD pattern&lt;/strong&gt; because we want to achieve test driven development of code, tests, and operations.&lt;/p&gt;
-
-&lt;p&gt;BTD is nothing revelatory, it is the traditional pipeline for software development.
-The &lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt; at a high level &lt;em&gt;is&lt;/em&gt; a BTD pattern,
-but we will examine it further and find that BTD should exist in each domain.&lt;/p&gt;
-
-&lt;p&gt;What is wrong with the BTD pattern? Nothing except how it has been implemented as traditional roles and hand-offs, e.g.:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../img/btd_silos.pu.png&#34; alt=&#34;BTD Silos - 2015-03-18&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;hellip;you can see the traditional silos and you can see all of the potential inefficiencies to remedy a bug.
-The cost and time to fix increases the further the bug is discovered from the developer.&lt;/p&gt;
-
-&lt;h3 id=&#34;devops-btd-pattern-for-continuous-deployment&#34;&gt;DevOps BTD Pattern for Continuous Deployment&lt;/h3&gt;
-
-&lt;p&gt;We need to prevent bugs from happening in deployment, in test, and in development.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Did operations create a deployment bug? How did they test it?&lt;/li&gt;
-&lt;li&gt;Did quality assurance develop a good test? How do you test the tests?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;BTD must be applied at the build domain, at the test domain, and at the deploy domain.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../img/btd-pattern.dia.png&#34; alt=&#34;BTD Pattern - 2015-03-18&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is why everything is testable, buildable, and deployable on the developer laptop in the
-&lt;a href=&#34;../devops-automation/&#34;&gt;DevOps Automation Diagram&lt;/a&gt;.
-The traditional software developer or recent college graduate, system administrator, or quality engineer
-does not code tests, code deployment, and code builds, then test deployments and test builds &amp;ndash; &lt;strong&gt;but they should!&lt;/strong&gt;
-The DevOps engineer must test monitors, deployments, and builds as well.
-This expanded skill set must be part of the engineering culture for service design and imbued into all.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;SoftwareDeveloper&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;BDD feature descriptions (with help from product management, customer support, and sales)&lt;/li&gt;
-&lt;li&gt;TDD unit test cases + test data (with help from QualityAssurance)&lt;/li&gt;
-&lt;li&gt;Build jobs&lt;/li&gt;
-&lt;li&gt;Functionality&lt;/li&gt;
-&lt;li&gt;Related logs, metrics, and monitors for internal SLAs (with help from Operations)&lt;/li&gt;
-&lt;li&gt;Deployable and configurable artifacts (with help from Operations)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;QualityAssurance&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Test plan&lt;/li&gt;
-&lt;li&gt;Test cases and test data (with help from SoftwareDevelopers) that leverage logs, monitors, and metrics&lt;/li&gt;
-&lt;li&gt;Test and periodic test jobs&lt;/li&gt;
-&lt;li&gt;Integration tests (with help from SoftwareDevelopers)&lt;/li&gt;
-&lt;li&gt;Deployment tests (with help from Operations)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Operations&lt;/strong&gt; codes and performs BTD:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Deployment Tools and tests&lt;/li&gt;
-&lt;li&gt;Server OS builds, run times, and dependencies&lt;/li&gt;
-&lt;li&gt;Configuration Management and tests&lt;/li&gt;
-&lt;li&gt;Deployment Orchestration (automated run books) and tests&lt;/li&gt;
-&lt;li&gt;Monitors and escalations (which are akin to integration tests)&lt;/li&gt;
-&lt;li&gt;Logging and Metric reports (which are akin to service level agreements)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I am sure there is more, but this is a very good start to a robust service design organization for continuous deployment!&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -269,199 +153,7 @@ This expanded skill set must be part of the engineering culture for service desi
       <guid>http://mlavi.github.io/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
 Via open source and this blog, we can elevate the state of our software engineering and service design!
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;quotes-and-motivation&#34;&gt;Quotes and Motivation&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;Perfect is the enemy of good.&amp;rdquo; &amp;ndash;&lt;a href=&#34;http://en.wikiquote.org/wiki/Perfection&#34;&gt;Volare&lt;/a&gt; (paraphrased)&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;Fail fast.&amp;rdquo; &amp;ndash;&lt;a href=&#34;http://en.wikiquote.org/wiki/Ward_Cunningham#The_Simplest_Thing_that_Could_Possibly_Work&#34;&gt;Ward Cunningham&lt;/a&gt;
-(paraphrased as &lt;a href=&#34;https://twitter.com/hashtag/failfast&#34;&gt;#failfast&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;I hope to replace myself with a tiny shell script one day.&amp;rdquo; &amp;ndash;Unknown Internet meme?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ship it and fail fast: I would love to get feedback! I also wonder if anyone can improve my quote attributions.&lt;/p&gt;
-
-&lt;p&gt;Here is today&amp;rsquo;s snapshot of the entire DevOps Automation Diagram source and image.
-I&amp;rsquo;ve omitted many possible connections for the sake of showing
-the optimal automated progression from a developer&amp;rsquo;s mind to the production stack.
-I&amp;rsquo;ve refactored terminology to help inform systems and actions, but you can see there are
-many moving pieces to enable modern day software development life cycle automation,
-some of which are not easily identified off the shelf.&lt;/p&gt;
-
-&lt;p&gt;You can &amp;ldquo;view the SVG image&amp;rdquo; in a new browser window or tab and scale it to your liking
-and then cut and paste text from it.&lt;/p&gt;
-
-&lt;h3 id=&#34;updated&#34;&gt;Updated!&lt;/h3&gt;
-
-&lt;p&gt;My original release was 2015-03-11 (source below), but today&amp;rsquo;s update adds detail, removes many crossed lines
-for simple visual flow parsing, and is organized vertically.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../img/devops_automation.pu.svg&#34; alt=&#34;DevOps Automation Diagram - 2015-03-17&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Source code: devops_automation.pu
-
-@startuml
-title DevOps Automation (2015-03-11) by Mark Lavi
-state Development {
-  Development: language
-  Development: editor
-  Development: code tools
-  Development: virtual environment
-  Development: runtime
-  Development: frameworks
-  Development: libraries
-  BDD --&gt; UnitTest
-  BDD: featureDescription
-  Code: featureDescription
-  Code: testCases
-  Code: testData
-  Code: functionality
-  Code: configurationData
-  Code: deployability
-  Code: monitors
-  Code: metrics
-  Code: logs
-  Code -&gt; UnitTest : OnSave
-  Code --&gt; BDD
-  Code --&gt; LocalBuild
-  Code --&gt; LocalRepo : commit
-  UnitTest --&gt; LocalRepo
-  UnitTest: testCases
-  UnitTest: testData
-  LocalBuild --&gt; LocalStack
-  LocalBuild: localArtifact
-  LocalBuild: localTestJobs
-  LocalBuild: localBuildAutomationSystemContainer?
-  LocalBuild -&gt; ArtifactRepository : manual process\nDesk Build\ncandidate
-  LocalRepo -&gt; ReviewSystem
-  LocalRepo -&gt; CodeRepository : push
-  LocalStack: LocalDeployTest?
-  LocalStack: LocalIntegrationTest?
-}
-state CodeRepository {
-  CodeRepository : branch
-  CodeRepository : hash
-  CodeRepository : tag
-  preCommitHook -&gt; BuildAutomationSystem
-  preCommitHook: see Build,TestJobs
-  postCommitHook -&gt; BuildAutomationSystem
-  postCommitHook: see Build,TestJobs
-  webHook: see Build,TestJobs
-}
-state ReviewSystem {
-  ReviewSystem: master or all branches?
-  ReviewSystem -&gt; BuildAutomationSystem: candidate
-  ReviewSystem -&gt; CodeRepository : +N = passed
-  ReviewSystem: +1 BuildJob
-  ReviewSystem: +1 TestJob
-  ReviewSystem: +1 DeployJob
-  ReviewSystem: +1 HumanReview
-  ReviewSystem: +1 PeriodicTestJobs
-}
-state BuildAutomationSystem {
-  BuildAutomationSystem: perBranch
-  BuildAutomationSystem: perHash
-  BuildAutomationSystem: perTag  
-  [*] -&gt; BuildScheduler
-  [*] --&gt; BuildJobs: ad-hoc (manual)
-  [*] --&gt; DeployJobs: promote
-  BuildJobs -&gt; TestJobs
-  BuildJobs -&gt; ArtifactRepository: Candidate
-  BuildJobs: localArtifact
-  TestJobs --&gt; ConfigurationSystem : updateManifest
-  TestJobs -&gt; ArtifactRepository: Official
-  TestJobs -&gt; TestAutomationSystem
-  TestJobs: PeriodicTests
-  TestJobs: BasicCodeAcceptanceTests
-  DeployJobs -up-&gt; DeploySystem
-  DeployJobs: artifact
-  DeployJobs: manifest
-  DeployJobs: stack
-  DeployJobs -&gt; ConfigurationSystem: updateManifest
-  BuildScheduler --&gt; TestJobs
-  BuildScheduler: e.g. Nightly
-}
-state TestAutomationSystem {
-  TestAutomationSystem -&gt; DeployJobs
-  TestAutomationSystem: Simulator
-  TestAutomationSystem: FeatureIntegrationTesting
-  TestAutomationSystem: FullSuiteTesting  
-  TestAutomationSystem: LoadTesting
-  TestAutomationSystem: RegressionTesting
-  TestAutomationSystem: SoakTesting
-  TestAutomationSystem -&gt; ConfigurationSystem: updateManifest
-}
-state ArtifactRepository {
-  ArtifactRepository: candidate
-  ArtifactRepository: official
-}
-state ConfigurationSystem {
-  ConfigurationSystem: manifest
-  ConfigurationSystem: deployability
-  ConfigurationSystem: configurationData
-}
-state Monitors {
-  Monitors: SLA
-  Monitors -&gt; Metrics
-  Monitors -&gt; Logs
-}
-state Logs {
-  Logs -&gt; Metrics
-  Logs -&gt; Monitors
-}
-state Metrics {
-  Metrics: SLA
-}
-state AuthenticationSystem {
-  AuthenticationSystem: LDAP, SAML, etc.
-}
-state DeploySystem {
-  DeploySystem -&gt; ConfigurationSystem
-  DeploySystem: entireStack
-  DeploySystem: byProfileOnStack
-  DeploySystem: byRoleOnStack
-  DeploySystem: read, updateManifest
-  DeploySystem: bill of materials (BoM)
-  DeploySystem: readConfigurationData
-  Provision -&gt; Stack
-  Provision: profile/role@stack
-  Provision: applyManifest
-  Upgrade -&gt; Stack
-  Upgrade: role@stack
-  Upgrade: applyManifest
-  Canary -&gt; Stack
-  Canary: % existing role@stack
-  Canary: applyManifest
-}
-state Stack {
-  Stack: name/environment\n(e.g. Feature, Team, Release, dev/qa/stage/prod)
-  [*] --&gt; node
-  [*] -&gt; ProviderInfrastructure
-  ProviderInfrastructure: load balancer
-  ProviderInfrastructure: DNS
-  ProviderInfrastructure: monitor
-  ProviderInfrastructure: scheduler, autoscaler
-  ProviderInfrastructure --&gt; Monitors
-  ProviderInfrastructure --&gt; node
-  node: provider
-  node: profile
-  node: role
-  node: monitor
-  node -&gt; Monitors
-  node -&gt; Logs
-  node -&gt; Metrics
-}
-@enduml
-
-&lt;/p&gt;
-
-&lt;p&gt;I will put this under revision control in the Infrastructure as Code project I&amp;rsquo;m undertaking.
-I do not believe authored hyperlinks export to SVG yet, perhaps that will be my first request for PlantUML.&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -473,72 +165,7 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
 One needs to start with a map of the world before deciding where to focus their efforts.
 It&amp;rsquo;s even better when you can optimize and render the new map in real-time!
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;beautiful-tool-and-diagram&#34;&gt;Beautiful Tool and Diagram&lt;/h3&gt;
-
-&lt;p&gt;I found and created two wonderful things today:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;I found exactly the tool I have been looking for over the years!
-I used Wikipedia and &lt;a href=&#34;http://alternativeto.net&#34;&gt;alternativeTo&lt;/a&gt; to survey the market for competitors
-to my favorite open source object drawing tool, &lt;a href=&#34;https://wiki.gnome.org/Apps/Dia&#34;&gt;Dia&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The following snapshot shows authoring a work-in-progress diagram&amp;hellip; I&amp;rsquo;ve been trying to create this
-for a quite a while and I&amp;rsquo;m glad to have the time to do it properly.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../img/devops-automation-screenshot.png&#34; alt=&#34;DevOps Automation Diagram&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The DevOps mission to reduce all friction between the developer&amp;rsquo;s code and deployment to production
-is mostly captured by this diagram. It has been in my head for a while, extended past but based on
-work with my colleagues at Pertino. It is mostly complete, a bit of an eye-chart, and I want to
-improve the flow by reducing crossing lines. Working on this as a state diagram has yielded some
-insight into improvements, optimization, and bottlenecks. I plan to release the source file as part
-of my infrastructure as code project.&lt;/p&gt;
-
-&lt;p&gt;I made it with &lt;a href=&#34;http://www.plantuml.com/eclipse.html&#34;&gt;PlantUML in Eclipse with GraphViz&lt;/a&gt; with a view
-rendering the results on the fly (no need to save) which felt like unit testing my diagram!
-This allowed me to iterate frequently with text rather than graphics: brilliant and yet
-another example as infrastructure as code. :~) My standby object drawing program, Dia,
-would have done the trick as well, perhaps even better from a layout crossing lines perspective,
-but re-factoring would have been slower. Re-factoring was key in making improvements and I could
-perform analysis on my arrow layout hints, e.g.: &lt;code&gt;$ grep &amp;lsquo;&amp;ndash;&amp;gt;&amp;rsquo; | wc &amp;ndash;lines&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll update with the final product soon: you will be able to view the SVG image in a new browser
-window or tab, then scale it to your liking. I&amp;rsquo;m very happy with the results of performing this work
-with open source software and formats (currently 45Kb SVG which allows you to copy the text of the
-diagram) for flexibility and performance.&lt;/p&gt;
-
-&lt;h3 id=&#34;update&#34;&gt;UPDATE&lt;/h3&gt;
-
-&lt;p&gt;Please see the &lt;a href=&#34;../devops-automation/&#34;&gt;next posting&lt;/a&gt; for the &amp;ldquo;final&amp;rdquo; product.&lt;/p&gt;
-
-&lt;h3 id=&#34;post-script-2015-08-10&#34;&gt;Post Script: 2015-08-10&lt;/h3&gt;
-
-&lt;p&gt;There are other &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Unified_Modeling_Language_tools&#34;&gt;UML modelers&lt;/a&gt;,
-I think (&lt;a href=&#34;http://blog.staruml.io/&#34;&gt;http://blog.staruml.io/&lt;/a&gt;) and yEd are noteworthy.&lt;/p&gt;
-
-&lt;p&gt;However, as I explore the work flow and orchestration space, I am rediscovering
-the work done for
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_process_modeling&#34;&gt;Business Process Modeling&lt;/a&gt;
-standards, such as
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_Process_Execution_Language&#34;&gt;BPEL&lt;/a&gt; and
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation&#34;&gt;BPMN&lt;/a&gt;,
-and their various implementations with modelers such as:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;* www.open-esb.net
-* [Sirius](http://www.eclipse.org/sirius/getstarted.html) and tools build on it.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;implemented in ServiceMix and ProcessMaker.&lt;/p&gt;
-
-&lt;p&gt;This was triggered by my recent research into OASIS TOSCA and CAMP standards:
-everything new feels old again! :~)s&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -548,32 +175,11 @@ everything new feels old again! :~)s&lt;/p&gt;</description>
       
       <guid>http://mlavi.github.io/about/</guid>
       <description>&lt;p&gt;A DevOps professional with pioneering work on the world&amp;rsquo;s biggest Internet real-time event
- and web sites from an engineering, operations, content, and marketing perspective.
- My focus is on people and software development along with system design thinking for the
- whole life cycle: I can build, grow, and manage teams, applications, networks, and servers
+ and web sites across the engineering, operations, content, and marketing disciplines.
+ Mark&amp;rsquo;s focus is on people and software development along with system design thinking for the
+ whole life cycle: he can build, grow, and manage teams, applications, networks, and servers
  to work together while planning and nurturing their continuous improvement.
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
- After graduation and Internet withdrawal, he joined the first national commercial Internet
- Service Provider (before the world wide web).&lt;/p&gt;
-
-&lt;p&gt;One of the web masters of Netscape, cnnfn.com, and sgi.com, Mark was part of the
- world&amp;rsquo;s largest and earliest media and web sites. Mark progressed to Developer
- Relations, where he became the JavaScript and LDAP Technology Evangelist.
-One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures his ability to relate technical
- subjects to anyone.&lt;/p&gt;
-
-&lt;p&gt;Mark&amp;rsquo;s approach mixes software engineering disciplines with art and operations, embracing
- Internet architecture, real-time media, and the ability to nurture people, developers,
- networks, and systems to work together. His multidisciplinary practice is complimented
- by the term &lt;a href=&#34;https://en.wikipedia.org/wiki/DevOps&#34;&gt;DevOps&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can review Mark&amp;rsquo;s career and endorsements at &lt;a href=&#34;https://www.linkedin.com/in/marklavi&#34;&gt;https://www.linkedin.com/in/marklavi&lt;/a&gt;&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

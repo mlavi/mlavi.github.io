@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maturity on Mark&#39;s Blog</title>
+    <link>http://mlavi.github.io/tags/maturity/</link>
+    <description>Recent content in Maturity on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 12 Apr 2017 12:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/maturity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DevOps Maturity Diagram</title>
+      <link>http://mlavi.github.io/post/devops-maturity-diagram/</link>
+      <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/devops-maturity-diagram/</guid>
+      <description>&lt;p&gt;The opening of
+ &lt;a href=&#34;../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/&#34;&gt;my first Calm.io DevOps article&lt;/a&gt;
+ started with:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Let me share what I’ve learned on my journey to DevOps: it is a culturally
+ rendered term and it has a different meaning for everyone.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

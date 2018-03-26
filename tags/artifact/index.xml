@@ -2,19 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Artifact on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/artifact/index.xml</link>
+    <link>http://mlavi.github.io/tags/artifact/</link>
     <description>Recent content in Artifact on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-<<<<<<< HEAD
-    <atom:link href="http://mlavi.github.io/tags/artifact/index.xml" rel="self" type="application/rss+xml" />
-=======
     <lastBuildDate>Wed, 26 Aug 2015 08:59:59 -0700</lastBuildDate>
     
 	<atom:link href="http://mlavi.github.io/tags/artifact/index.xml" rel="self" type="application/rss+xml" />
     
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>Artifact Repositories</title>
@@ -24,156 +20,7 @@
       <guid>http://mlavi.github.io/post/artifact_repositories/</guid>
       <description>&lt;p&gt;The past: desktop builds uploaded to the FTP server; the present: global artifact delivery networks.
 Release management and artifact repositories are they way we deliver software and infrastructure today.
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;h3 id=&#34;ship-the-bits&#34;&gt;Ship the Bits&lt;/h3&gt;
-
-&lt;p&gt;Once upon a time, software release management was as simple as performing a desktop build,
-uploading the results to a FTP server, updating the web site, and sending an email.&lt;/p&gt;
-
-&lt;p&gt;Software repositories can still be that simple, but the state of the art has advanced to support
-secure deployments for continuous delivery to multiple clusters in data centers around the
-world multiple times per hour!&lt;/p&gt;
-
-&lt;h3 id=&#34;release-management&#34;&gt;Release Management&lt;/h3&gt;
-
-&lt;p&gt;There are many considerations for release management today, assuming that our build candidate
-has passed all of the required tests to become an official release. Now that we pursue
-infrastructure as code, we can also build and deploy our software as infrastructure artifacts.&lt;/p&gt;
-
-&lt;p&gt;The simple monolithic build of static code and library dependencies has transitioned into
-a collection of multiple versioned artifacts which must be integrated, configured, and orchestrated
-as a system even before considering the deployment permutation matrix of multiple hardware,
-OS platform, and client versions. Considerations include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Build Post Processing:
-
-&lt;ul&gt;
-&lt;li&gt;compression into a one file archive to save bandwidth&lt;/li&gt;
-&lt;li&gt;different editions (subsets of the build if they are not handled as separates)&lt;/li&gt;
-&lt;li&gt;check sums and code signing&lt;/li&gt;
-&lt;li&gt;packaging:
-
-&lt;ul&gt;
-&lt;li&gt;metadata for each OS or runtime&lt;/li&gt;
-&lt;li&gt;versus bundling an installer as a self extracting executable&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;documentation&lt;/li&gt;
-&lt;li&gt;licensing and potentially providing source code&lt;/li&gt;
-&lt;li&gt;third party licensing&lt;/li&gt;
-&lt;li&gt;purging old artifacts, build, and test logs&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Distribution:
-
-&lt;ul&gt;
-&lt;li&gt;channels for automatic updates&lt;/li&gt;
-&lt;li&gt;artifact repositories versus file servers&lt;/li&gt;
-&lt;li&gt;caches, mirrors, and content/artifact delivery networks&lt;/li&gt;
-&lt;li&gt;privileged versus public official releases&lt;/li&gt;
-&lt;li&gt;private, internal release candidates for testing&lt;/li&gt;
-&lt;li&gt;metrics and logs: download counts and bandwidth constraints&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;naming-the-artifact-and-useful-metadata&#34;&gt;Naming the Artifact and Useful Metadata&lt;/h3&gt;
-
-&lt;p&gt;Surely naming the artifact should be straightforward if we can answer some basic questions,
-such as: do we have file naming conventions and are build, version, and release numbers the same thing?&lt;/p&gt;
-
-&lt;p&gt;You would be surprised how often the answer is&amp;hellip; it depends!
-However, there are guidelines you can adopt:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Software_versioning&#34;&gt;Software Versioning&lt;/a&gt; at Wikipedia&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://semver.org/&#34;&gt;Semantic Versioning&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/prep/standards/html_node/Releases.html#index-version-numbers_002c-for-releases&#34;&gt;GNU Coding Standards: Release Version Numbers&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;While many software package formats specify their metadata requirements, a few have standardized
-on &lt;a href=&#34;https://github.com/edumbill/doap/wiki&#34;&gt;DOAP: Description of a Project&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;software-artifact-repositories&#34;&gt;Software Artifact Repositories&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://binary-repositories-comparison.github.io/&#34;&gt;Feature Matrix of Archiva, Artifactory, Maven&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;While an engineering organization produces build artifacts, they often bundle third party
-open or closed source libraries. In order to speed manual developer builds and automated
-build systems, these external resources can be cached to increase build speed, reliability, and
-conserve upstream network bandwidth. Conversely, these can be used to publish artifacts for
-public consumption as well.&lt;/p&gt;
-
-&lt;p&gt;Many languages have their own packaging format for build artifacts, e.g.:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Java: .jar, .war, and .ear&lt;/li&gt;
-&lt;li&gt;JavaScript: .npm&lt;/li&gt;
-&lt;li&gt;PERL: CPAN modules are compressed tarballs&lt;/li&gt;
-&lt;li&gt;PHP: .phar&lt;/li&gt;
-&lt;li&gt;Python: .egg, .whl&lt;/li&gt;
-&lt;li&gt;Ruby: .gem&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There also exist library dependency descriptions:
-* Bundler for Ruby gems
-* Berkshelf for Chef recipes&lt;/p&gt;
-
-&lt;p&gt;We also have operating system package management:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;RedHat, Fedora, CentOS and related derivatives: .rpm format with yum repositories&lt;/li&gt;
-&lt;li&gt;Debian, Ubuntu, and related derivatives: .deb format with apt repositories and Launchpad PPA&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Infrastructure artifacts follow a similar pattern: public and private container
-repositories as hosted services or private deployments:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://hub.docker.com/&#34;&gt;Docker Hub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://quay.io/&#34;&gt;Quay.io&lt;/a&gt; and &lt;a href=&#34;https://coreos.com/products/enterprise-registry/&#34;&gt;CoreOS Enterprise Registry&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/container-registry/&#34;&gt;Google Container Registry&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/ecr/details/&#34;&gt;Amazon EC2 Container Registry&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Along with &lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt; box hosting:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://atlas.hashicorp.com/search/&#34;&gt;Atlas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.vagrantbox.es/&#34;&gt;VagrantBox.es&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;JFrog&amp;rsquo;s Bintray and Artifactory (see below)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Caveat Emptor: downloading and installing any artifact from the Internet is potential for malware,
-virus, and other abuse unless you know, trust, and verify the source.&lt;/p&gt;
-
-&lt;p&gt;Personally, I&amp;rsquo;ve had very good experience with &lt;a href=&#34;http://www.jfrog.com/open-source/&#34;&gt;JFrog&amp;rsquo;s Artifactory&lt;/a&gt;,
-which is a meta repository of many different formats, but you will probably outgrow
-the open source version when you need to handle authentication and some of the formats mentioned above,
-so the SaaS subscription may be a better option.&lt;/p&gt;
-
-&lt;h3 id=&#34;software-distribution-networks&#34;&gt;Software Distribution Networks&lt;/h3&gt;
-
-&lt;p&gt;These are specific to build artifacts, however they can be considered a special case
-of content delivery networks such as Akami, &lt;a href=&#34;https://cachefly.com&#34;&gt;CacheFly&lt;/a&gt;, and Fastly
-as well as related to content accelerators such as CloudFlare
-and &lt;a href=&#34;https://aws.amazon.com/cloudfront/&#34;&gt;Amazon CloudFront&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;JFrog&amp;rsquo;s &lt;a href=&#34;https://bintray.com&#34;&gt;Bintray&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://sf.net&#34;&gt;SourceForge&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;JavaScript:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cdnjs.com/about&#34;&gt;CDNJS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jsdelivr.com/&#34;&gt;jsDelivr&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;One potentially biased resource gives a good overview of the market [&lt;a href=&#34;http://www.cdnplanet.com/&#34;&gt;http://www.cdnplanet.com/&lt;/a&gt;]&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>

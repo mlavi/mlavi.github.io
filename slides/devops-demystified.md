@@ -70,7 +70,7 @@ It is a bi-directional process and concerns all internal and external customers.
 e.g.: DevOps for yourself on your laptop.
 
 - Illustration: [DevOps Automation Diagram](http://mlavi.github.io/post/devops-automation/)
-- Blog: [I Dream of DevOps, but What is DevOps?](https://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/)
+- Blog: [I Dream of DevOps, but What is DevOps?](/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/)
 
 <sup>1</sup>[Portmanteau](https://en.wiktionary.org/wiki/portmanteau#Etymology_2): two or more terms combined; a hybrid or mash-up
 
@@ -84,7 +84,7 @@ Ask yourself: *Does [this thing] meet our definition of DevOps?*
 
 Use your definition as a lens to evaluate any use of the term!
 
-- Blog: [Why is DevOps So Hard?](https://calm.io/2015/10/20/why-is-devops-so-hard/)
+- Blog: [Why is DevOps So Hard?](/post/calm.io-recap/calm.io-why-is-devops-so-hard/)
 
 ---
 ## A Brief History of DevOps<sup>2</sup>
@@ -142,7 +142,7 @@ Technology + Culture transformation for business agility<sup>3</sup>
 - Fragmentation: ecosystem involves multiple tools and platforms, fragile integrations
 - People: DevOps superstars bridge gaps, but hiring is difficult, expensive, and unscalable
 
-<sup>3</sup> Blog: [Why is DevOps so Hard?](https://calm.io/2015/10/20/why-is-devops-so-hard/)
+<sup>3</sup> Blog: [Why is DevOps so Hard?](/post/calm.io-recap/calm.io-why-is-devops-so-hard/)
 <br />&nbsp;&nbsp;&nbsp;Manufacturing Analog: [Toyota Production System](https://en.wikipedia.org/wiki/Toyota_Production_System)
 
 ---

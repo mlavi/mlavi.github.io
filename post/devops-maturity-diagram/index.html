@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    DevOps Maturity Diagram // Mark&#39;s Blog
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.37.1" />
+
+  <meta property="og:title" content="DevOps Maturity Diagram" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://mlavi.github.io/post/devops-maturity-diagram/" />
+
+
+  
+  <link rel="stylesheet" href="http://mlavi.github.io//css/mlavi.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://mlavi.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Mark&#39;s Blog" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4" style="background: black no-repeat url(/img/firefox_nebula.jpg);">
+  <div class="header">
+    
+
+	
+
+    
+    
+ 
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="http://mlavi.github.io/">Mark&#39;s Blog <span class="nav-item-separator">//</span> Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span> <a class="subscribe-button icon-feed" href="">Subscribe</a></li>
+        
+      </ul>
+      <ul id="all-tags"><span style="background: black;"><em><stong>Tag Cloud</strong></em></span><br />
+      
+      
+      <li><a href="../../tags/devops">devops</a><span
+        class="decorative-marker">//</span><a
+        name="devops">13</a></li>
+      
+      <li><a href="../../tags/automation">automation</a><span
+        class="decorative-marker">//</span><a
+        name="automation">8</a></li>
+      
+      <li><a href="../../tags/diagram">diagram</a><span
+        class="decorative-marker">//</span><a
+        name="diagram">4</a></li>
+      
+      <li><a href="../../tags/build">build</a><span
+        class="decorative-marker">//</span><a
+        name="build">3</a></li>
+      
+      <li><a href="../../tags/culture">culture</a><span
+        class="decorative-marker">//</span><a
+        name="culture">3</a></li>
+      
+      <li><a href="../../tags/about">about</a><span
+        class="decorative-marker">//</span><a
+        name="about">2</a></li>
+      
+      <li><a href="../../tags/configuration-management">configuration-management</a><span
+        class="decorative-marker">//</span><a
+        name="configuration-management">2</a></li>
+      
+      <li><a href="../../tags/immutable">immutable</a><span
+        class="decorative-marker">//</span><a
+        name="immutable">2</a></li>
+      
+      <li><a href="../../tags/infrastructure">infrastructure</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure">2</a></li>
+      
+      <li><a href="../../tags/web">web</a><span
+        class="decorative-marker">//</span><a
+        name="web">2</a></li>
+      
+      <li><a href="../../tags/webmaster">webmaster</a><span
+        class="decorative-marker">//</span><a
+        name="webmaster">2</a></li>
+      
+      <li><a href="../../tags/artifact">artifact</a><span
+        class="decorative-marker">//</span><a
+        name="artifact">1</a></li>
+      
+      <li><a href="../../tags/blueprint">blueprint</a><span
+        class="decorative-marker">//</span><a
+        name="blueprint">1</a></li>
+      
+      <li><a href="../../tags/calm.io">calm.io</a><span
+        class="decorative-marker">//</span><a
+        name="calm.io">1</a></li>
+      
+      <li><a href="../../tags/career">career</a><span
+        class="decorative-marker">//</span><a
+        name="career">1</a></li>
+      
+      <li><a href="../../tags/cms">cms</a><span
+        class="decorative-marker">//</span><a
+        name="cms">1</a></li>
+      
+      <li><a href="../../tags/code">code</a><span
+        class="decorative-marker">//</span><a
+        name="code">1</a></li>
+      
+      <li><a href="../../tags/configuration">configuration</a><span
+        class="decorative-marker">//</span><a
+        name="configuration">1</a></li>
+      
+      <li><a href="../../tags/container">container</a><span
+        class="decorative-marker">//</span><a
+        name="container">1</a></li>
+      
+      <li><a href="../../tags/continuous-delivery">continuous-delivery</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-delivery">1</a></li>
+      
+      <li><a href="../../tags/continuous-deployment">continuous-deployment</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-deployment">1</a></li>
+      
+      <li><a href="../../tags/continuous-integration">continuous-integration</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-integration">1</a></li>
+      
+      <li><a href="../../tags/database">database</a><span
+        class="decorative-marker">//</span><a
+        name="database">1</a></li>
+      
+      <li><a href="../../tags/declarative">declarative</a><span
+        class="decorative-marker">//</span><a
+        name="declarative">1</a></li>
+      
+      <li><a href="../../tags/definition">definition</a><span
+        class="decorative-marker">//</span><a
+        name="definition">1</a></li>
+      
+      <li><a href="../../tags/deploy">deploy</a><span
+        class="decorative-marker">//</span><a
+        name="deploy">1</a></li>
+      
+      <li><a href="../../tags/distribution">distribution</a><span
+        class="decorative-marker">//</span><a
+        name="distribution">1</a></li>
+      
+      <li><a href="../../tags/html">html</a><span
+        class="decorative-marker">//</span><a
+        name="html">1</a></li>
+      
+      <li><a href="../../tags/infrastructure-as-code">infrastructure-as-code</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure-as-code">1</a></li>
+      
+      <li><a href="../../tags/lamp">lamp</a><span
+        class="decorative-marker">//</span><a
+        name="lamp">1</a></li>
+      
+      <li><a href="../../tags/maturity">maturity</a><span
+        class="decorative-marker">//</span><a
+        name="maturity">1</a></li>
+      
+      <li><a href="../../tags/operating-system">operating-system</a><span
+        class="decorative-marker">//</span><a
+        name="operating-system">1</a></li>
+      
+      <li><a href="../../tags/pattern">pattern</a><span
+        class="decorative-marker">//</span><a
+        name="pattern">1</a></li>
+      
+      <li><a href="../../tags/phing">phing</a><span
+        class="decorative-marker">//</span><a
+        name="phing">1</a></li>
+      
+      <li><a href="../../tags/sgi">sgi</a><span
+        class="decorative-marker">//</span><a
+        name="sgi">1</a></li>
+      
+      <li><a href="../../tags/slide">slide</a><span
+        class="decorative-marker">//</span><a
+        name="slide">1</a></li>
+      
+      <li><a href="../../tags/test">test</a><span
+        class="decorative-marker">//</span><a
+        name="test">1</a></li>
+      
+      </ul>
+    </nav>
+
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li><a href="#inspiration">Inspiration</a>
+<ul>
+<li><a href="#mentoring">Mentoring</a></li>
+<li><a href="#business-outcomes">Business Outcomes</a></li>
+</ul></li>
+<li><a href="#preparation">Preparation</a>
+<ul>
+<li><a href="#agility-devops">Agility = DevOps</a></li>
+<li><a href="#scalability-removing-pets">Scalability = Removing Pets</a></li>
+</ul></li>
+<li><a href="#first-diagram-devops-journey-stages">First Diagram: DevOps Journey Stages</a>
+<ul>
+<li><a href="#conflation-and-oversimplification">Conflation and Oversimplification?</a></li>
+<li><a href="#decomposure-aligns-parallel-journeys">Decomposure Aligns Parallel Journeys</a></li>
+</ul></li>
+<li><a href="#second-diagram-devops-maturity">Second Diagram: DevOps Maturity</a></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="../../post/devops-maturity-diagram/">DevOps Maturity Diagram</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>12</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Apr</span> <span class="post-date-year">2017</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            <p>The opening of
+ <a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">my first Calm.io DevOps article</a>
+ started with:</p>
+
+<blockquote>
+<p>Let me share what I’ve learned on my journey to DevOps: it is a culturally
+ rendered term and it has a different meaning for everyone.</p>
+</blockquote>
+
+<p></p>
+
+<h1 id="inspiration">Inspiration</h1>
+
+<p>In August, 2016 <a href="https://www.nutanix.com/products/calm/">Nutanix</a>
+ acquired my employer, <a href="../../tags/calm.io">Calm.io</a>. My role became the first
+ DevOps Solutions Architect in Sales Engineering supporting North America.
+ At Calm, our audience was the DevOps practitioner, but Nutanix had a broader
+ and more traditional IT, Datacenter, and Operations audience. I struggled to
+ explain the benefits of DevOps in under a minute and my &ldquo;elevator pitch&rdquo;
+ failed more often than succeeded. Every failure and success inspired me
+ to do better and I constantly asked for feedback to improve. I still do!</p>
+
+<h2 id="mentoring">Mentoring</h2>
+
+<p>Two discussions with Nutanix executives were another set of inspirations:</p>
+
+<ul>
+<li>In December, 2016, I spoke with Nutanix Chief Development Officer,
+<a href="https://www.linkedin.com/in/sunilpotti/">Sunil Potti</a>
+<a href="https://twitter.com/sunilpotti">@sunilpotti</a>,
+and he explained how Calm&rsquo;s integration into the Nutanix control plane made
+the platform stronger in contrast to the separate, diluted, fragmented
+experience that competitors continually bring to market.</li>
+<li>In January, 2017, I spoke with Nutanix Chief Architect (now co-CTO),
+<a href="https://www.linkedin.com/in/binny-gill-015977/">Binny Gill</a>
+<a href="https://twitter.com/binnygill">@binnygill</a>,
+and he explained how Nutanix aspires to increase feature automation
+(<em>e.g.:</em> storage compression) while removing feature controls from the
+user interface. The feature can be hand-tuned via command-line if needed,
+but the administrator has oversight via feature performance summary graphs.
+The result is a platform value increase while customer complexity decreases,
+something Nutanix aspires to achieve much as Apple&rsquo;s iOS has done.</li>
+</ul>
+
+<p>In hindsight, I could see both discussions partially explained as a learning
+ of the &ldquo;Consumption Gap.&rdquo; Other Nutanix colleagues used variations of the
+ &ldquo;Consumption Gap&rdquo; diagram from
+ <strong><a href="http://blog.tsia.com/blog/your-strategy-for-escaping-the-complexity-avalanche">Complexity Avalanche</a></strong>
+ by J.B. Wood in 2009 (the same year the term DevOps was created) to explain how
+ Nutanix hyper-converged infrastructure software data and control planes reverse
+ complexity in an organization: all of these combined into another inspiration.</p>
+
+<h2 id="business-outcomes">Business Outcomes</h2>
+
+<p>In February, 2017, the Nutanix mid-year sales kick off included an intense
+ sales methodology training based on selling positive business outcomes to
+ customers. It galvanized me to figure out new ways to communicate about DevOps,
+ Nutanix, and Calm. Abstractly, the sales methodology is similar to the TSIA
+ <a href="http://blog.tsia.com/blog/navigating-the-world-of-digital-transformation-offers-infographic">Digital Transformation Journey Infographic</a></p>
+
+<h1 id="preparation">Preparation</h1>
+
+<p>In April 9-13, I was at Nutanix headquarters preparing to be a speaker at the
+ third annual Nutanix .Next User conference with over 4000 attendees.</p>
+
+<p>to explain Calm&rsquo;s value proposition to my colleagues.
+ I likened DevOps to the business outcome of <em><a href="#agility-devops">agility</a></em>
+ and Pets versus Cattle (or removing all single points of failure)
+ to the business outcome of <em><a href="#scalability-removing-pets">scalability</a>.</em></p>
+
+<h2 id="agility-devops">Agility = DevOps</h2>
+
+<p><a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">My DevOps definition</a>
+ aligns everyone to deliver frictionless business value, however the
+ impact can be summarized as business agility. When anyone can
+ <a href="devops-btd-pattern.md">build, test, and deploy</a> value, business processes
+ are transparent and work is democratized.
+ The next stage is to progressively automate these operations with key
+ performance indicators and metrics for heuristically driven business operations.
+ DevOps extends to run the business:
+ the organization constantly tunes and expands the automation systems,
+ while the employees engage to respond to new business initiatives and
+ improve business efficiency, all resulting in business agility!</p>
+
+<p>These benefits are confirmed by the
+ <a href="https://devops-research.com/research.html">annual State of DevOps surveys</a>,
+ which compares low to high performers on the DevOps journey. The 2017 summary
+ is that high performers:</p>
+
+<ul>
+<li>Deliver more</li>
+<li>Repair sooner</li>
+<li>Automate more</li>
+</ul>
+
+<p>&hellip; meaning that the high performers achieve agility delivering value with
+ DevOps, run higher quality operations with less downtime,
+ and invest their productivity gains back into further automation
+ in order to continue a positive feedback loop of reinvestment.
+ DevOps success accomplishes the very definition of an agile business,
+ which accelerates away from their competition.</p>
+
+<p>My interpretation is that the high performers have achieved DevOps maturity,
+ which I will illustrate with the second diagram. High performer DevOps
+ maturity perfectly aligns with
+ <a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">my DevOps definition</a>
+ because they have achieved agility.</p>
+
+<h2 id="scalability-removing-pets">Scalability = Removing Pets</h2>
+
+<p>Understanding that the lens of
+ <a href="http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/">pets versus cattle</a>
+ allows one to evaluate and remove every single point of failure by working to
+ replace each pet with distributed resources under fleet management
+ and service level agreements. Any organization can progressively refactor
+ and remove their pets to unlock unprecedented levels of scalability.</p>
+
+<h1 id="first-diagram-devops-journey-stages">First Diagram: DevOps Journey Stages</h1>
+
+<p>Eventually I arrived at graphing the abstract progressions of both agility and
+ scalability to create the <strong>DevOps Journey Stages Diagram</strong>. I reversed the initial
+ axes layout and I arrived at Gartner-like diagram which yielded instant
+ &ldquo;up and to the right&rdquo; parsing at a glance. The diagram yielded insight into
+ the successive stages for a journey to DevOps to travel from the lower left
+ quadrant to the upper right quadrant. With my experience, I identified the
+ stages of the DevOps journey, something that I had experienced. Success!</p>
+
+<p>IMG:<strong>DevOps Journey Diagram</strong></p>
+
+<p>In April 26, I presented the DevOps Journey diagram to a large defence
+ contractor and before I completed my explaination, one of the audience
+ said, &ldquo;we&rsquo;re a pet shop and depending on the team, we&rsquo;re between stage
+ 0 and 0.5.&rdquo;</p>
+
+<p>The first diagram was incredibly effective, but I knew I was conflating many
+ concerns. For example, replatforming a data center onto Nutanix improved
+ infrastructure by migrating to a distributed system (pets to cattle)
+ moving up along the vertical access, but it also progressed automated
+ operations to the right along the horizontal axis. It didn&rsquo;t make sense
+ that each moved independently along a separate axis, but the combination
+ did make sense along an &ldquo;up and to the right&rdquo; diagonal.</p>
+
+<h2 id="conflation-and-oversimplification">Conflation and Oversimplification?</h2>
+
+<p>The combination of infrastructure and operational automation implied multiple
+ aspects of journey. Progress could be made in any dimension by a siloed
+ infrastructure or operations team by adopting the Nutanix platform, but this
+ success would only be for the &ldquo;Ops&rdquo; side of the organization. It would
+ ignore the other side of the DevOps equation, the &ldquo;Dev&rdquo; or developer impact
+ that could be achieved by extending to application infrastructure and the
+ software development lifecycle. The combination of both sides of the house
+ is the realm of DevOps and it addresses the total delivery of business value,
+ further reinforcing
+ <a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">my DevOps definition</a>.</p>
+
+<p>So how could one address the multiple aspects and progressive stages of the
+ DevOps journey across the entire organization? Did I need more dimensions
+ or could there be parallels? Which choice and enhancement could convey this
+ complexity and enhance the first diagram without spoiling its simplicity?</p>
+
+<h2 id="decomposure-aligns-parallel-journeys">Decomposure Aligns Parallel Journeys</h2>
+
+<p>I worked to decompose the journey into four parallels, each
+ representing infrastructure, architecture, operations, and culture.
+ While any parallel could be its own isolated journey for a siloed team,
+ when aligned and combined together, the overall organization could achieve
+ advanced stage outcomes, yielding the second diagram.</p>
+
+<p>A legend not only helped explain the stages of each parallel, but also
+ illustrated the advanced business outcomes of a mature DevOps organization
+ through examples.</p>
+
+<p>On June 29, I showed both diagrams on stage at .Next AW209.</p>
+
+<h1 id="second-diagram-devops-maturity">Second Diagram: DevOps Maturity</h1>
+
+<p>IMG:<strong>DevOps Maturity Diagram</strong></p>
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-devops" href="http://mlavi.github.io//tags/devops">DevOps</a>,
+	                
+	                <a class="post-tag post-tag-maturity" href="http://mlavi.github.io//tags/maturity">maturity</a>,
+	                
+	                <a class="post-tag post-tag-diagram" href="http://mlavi.github.io//tags/diagram">diagram</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="../../post/calm.io-recap/">Calm.io: a blog series recap!</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="../../post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/">Reconciling Configuration Management and Immutable Infrastructure</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2018. All rights reserved.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

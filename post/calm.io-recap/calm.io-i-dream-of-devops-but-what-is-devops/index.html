@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    I Dream of DevOps, but What is DevOps? // Mark&#39;s Blog
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.37.1" />
+
+  <meta property="og:title" content="I Dream of DevOps, but What is DevOps?" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/" />
+
+
+  
+  <link rel="stylesheet" href="http://mlavi.github.io//css/mlavi.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://mlavi.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../../img/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Mark&#39;s Blog" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4" style="background: black no-repeat url(/img/firefox_nebula.jpg);">
+  <div class="header">
+    
+
+	
+
+    
+    
+ 
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="http://mlavi.github.io/">Mark&#39;s Blog <span class="nav-item-separator">//</span> Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span> <a class="subscribe-button icon-feed" href="">Subscribe</a></li>
+        
+      </ul>
+      <ul id="all-tags"><span style="background: black;"><em><stong>Tag Cloud</strong></em></span><br />
+      
+      
+      <li><a href="../../../tags/devops">devops</a><span
+        class="decorative-marker">//</span><a
+        name="devops">13</a></li>
+      
+      <li><a href="../../../tags/automation">automation</a><span
+        class="decorative-marker">//</span><a
+        name="automation">8</a></li>
+      
+      <li><a href="../../../tags/diagram">diagram</a><span
+        class="decorative-marker">//</span><a
+        name="diagram">4</a></li>
+      
+      <li><a href="../../../tags/build">build</a><span
+        class="decorative-marker">//</span><a
+        name="build">3</a></li>
+      
+      <li><a href="../../../tags/culture">culture</a><span
+        class="decorative-marker">//</span><a
+        name="culture">3</a></li>
+      
+      <li><a href="../../../tags/about">about</a><span
+        class="decorative-marker">//</span><a
+        name="about">2</a></li>
+      
+      <li><a href="../../../tags/configuration-management">configuration-management</a><span
+        class="decorative-marker">//</span><a
+        name="configuration-management">2</a></li>
+      
+      <li><a href="../../../tags/immutable">immutable</a><span
+        class="decorative-marker">//</span><a
+        name="immutable">2</a></li>
+      
+      <li><a href="../../../tags/infrastructure">infrastructure</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure">2</a></li>
+      
+      <li><a href="../../../tags/web">web</a><span
+        class="decorative-marker">//</span><a
+        name="web">2</a></li>
+      
+      <li><a href="../../../tags/webmaster">webmaster</a><span
+        class="decorative-marker">//</span><a
+        name="webmaster">2</a></li>
+      
+      <li><a href="../../../tags/artifact">artifact</a><span
+        class="decorative-marker">//</span><a
+        name="artifact">1</a></li>
+      
+      <li><a href="../../../tags/blueprint">blueprint</a><span
+        class="decorative-marker">//</span><a
+        name="blueprint">1</a></li>
+      
+      <li><a href="../../../tags/calm.io">calm.io</a><span
+        class="decorative-marker">//</span><a
+        name="calm.io">1</a></li>
+      
+      <li><a href="../../../tags/career">career</a><span
+        class="decorative-marker">//</span><a
+        name="career">1</a></li>
+      
+      <li><a href="../../../tags/cms">cms</a><span
+        class="decorative-marker">//</span><a
+        name="cms">1</a></li>
+      
+      <li><a href="../../../tags/code">code</a><span
+        class="decorative-marker">//</span><a
+        name="code">1</a></li>
+      
+      <li><a href="../../../tags/configuration">configuration</a><span
+        class="decorative-marker">//</span><a
+        name="configuration">1</a></li>
+      
+      <li><a href="../../../tags/container">container</a><span
+        class="decorative-marker">//</span><a
+        name="container">1</a></li>
+      
+      <li><a href="../../../tags/continuous-delivery">continuous-delivery</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-delivery">1</a></li>
+      
+      <li><a href="../../../tags/continuous-deployment">continuous-deployment</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-deployment">1</a></li>
+      
+      <li><a href="../../../tags/continuous-integration">continuous-integration</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-integration">1</a></li>
+      
+      <li><a href="../../../tags/database">database</a><span
+        class="decorative-marker">//</span><a
+        name="database">1</a></li>
+      
+      <li><a href="../../../tags/declarative">declarative</a><span
+        class="decorative-marker">//</span><a
+        name="declarative">1</a></li>
+      
+      <li><a href="../../../tags/definition">definition</a><span
+        class="decorative-marker">//</span><a
+        name="definition">1</a></li>
+      
+      <li><a href="../../../tags/deploy">deploy</a><span
+        class="decorative-marker">//</span><a
+        name="deploy">1</a></li>
+      
+      <li><a href="../../../tags/distribution">distribution</a><span
+        class="decorative-marker">//</span><a
+        name="distribution">1</a></li>
+      
+      <li><a href="../../../tags/html">html</a><span
+        class="decorative-marker">//</span><a
+        name="html">1</a></li>
+      
+      <li><a href="../../../tags/infrastructure-as-code">infrastructure-as-code</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure-as-code">1</a></li>
+      
+      <li><a href="../../../tags/lamp">lamp</a><span
+        class="decorative-marker">//</span><a
+        name="lamp">1</a></li>
+      
+      <li><a href="../../../tags/maturity">maturity</a><span
+        class="decorative-marker">//</span><a
+        name="maturity">1</a></li>
+      
+      <li><a href="../../../tags/operating-system">operating-system</a><span
+        class="decorative-marker">//</span><a
+        name="operating-system">1</a></li>
+      
+      <li><a href="../../../tags/pattern">pattern</a><span
+        class="decorative-marker">//</span><a
+        name="pattern">1</a></li>
+      
+      <li><a href="../../../tags/phing">phing</a><span
+        class="decorative-marker">//</span><a
+        name="phing">1</a></li>
+      
+      <li><a href="../../../tags/sgi">sgi</a><span
+        class="decorative-marker">//</span><a
+        name="sgi">1</a></li>
+      
+      <li><a href="../../../tags/slide">slide</a><span
+        class="decorative-marker">//</span><a
+        name="slide">1</a></li>
+      
+      <li><a href="../../../tags/test">test</a><span
+        class="decorative-marker">//</span><a
+        name="test">1</a></li>
+      
+      </ul>
+    </nav>
+
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li><a href="#benefits-of-devops">Benefits of DevOps</a></li>
+<li><a href="#opportunity-for-cultural-disruption">Opportunity for Cultural Disruption</a></li>
+<li><a href="#devops-best-practices">DevOps Best Practices</a></li>
+<li><a href="#beware-exploitation">Beware Exploitation!</a></li>
+<li><a href="#about-the-author">About the Author</a></li>
+<li><a href="#postscript-february-18-2018">Postscript: February 18, 2018</a></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="../../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">I Dream of DevOps, but What is DevOps?</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>23</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Sep</span> <span class="post-date-year">2015</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            <p>This <a href="../../../post/calm.io-recap/">Calm.io blog recap</a>
+ was originally written by me and posted on September 23, 2015 at
+<a href="http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/">http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/</a>
+and slightly enhanced on February 18, 2018, be sure to see the
+<a href="#postscript-february-18-2018">Postscript</a> for significant developments!
+</p>
+
+<p>Let me share what I’ve learned on my journey to DevOps: it is a culturally
+ rendered term and it has a different meaning for everyone. My definition
+ has stood for years with slight reductions and I have arrived at:</p>
+
+<div style="text-align: center; font-weight: bold; font-size: large;">DevOps
+ is the <em>process</em> of removing all friction
+ <br />between the developer and customer value.<br /><br /></div>
+
+<p>Over the years, the more words I removed from my DevOps definition,
+ the closer it encompassed all of the nuances I had experienced.
+ DevOps could be called an art, practice, movement, or value system
+ and I think all apply. I am happy to contribute my
+ understanding to advance our community.</p>
+
+<p>Working backwards to expand on the terms used for my DevOps definition:</p>
+
+<ul>
+<li><strong>Value:</strong> typically, the products and services customers use,
+
+<ul>
+<li><em>e.g.:</em> software or web site.</li>
+</ul></li>
+<li><strong>Customer:</strong> a value consumer,
+
+<ul>
+<li><em>e.g.:</em> target audience or end-user.</li>
+</ul></li>
+<li><strong>Developer:</strong> value creator and contributor.</li>
+<li><strong>Friction:</strong> anything that slows, diminishes, or reduces the value delivery,
+
+<ul>
+<li><em>e.g.:</em> manual hand-offs, separation of duties, silos of responsibility,
+or isolation from the entire value system.</li>
+</ul></li>
+<li><strong>Process:</strong> the methodology to accomplish work.</li>
+</ul>
+
+<p>Putting all of the above together implies that
+ <strong><em>DevOps is a dynamic system
+ which expands or shrinks to the capacity of the people who practice it.</em></strong>
+ This is what makes a universal, static DevOps definition so hard to create
+ and it gives the DevOps movement increasing power: it is a process that will
+ change and grow over time as we pursue the state of the art!</p>
+
+<p>The term <a href="https://en.wikipedia.org/wiki/DevOps">DevOps is about six years old</a>
+ <sup><a href="#postscript-february-18-2018">1</a></sup>,
+ it represents an approach to span
+ the traditional organizational gaps to measure and deliver value to customers.
+ When we realize customers are both internal and external, any portion of the
+ entire value chain can be examined and improved. By measuring customer impact,
+ we can observe bi-directional value flow and identify or create feedback
+ loops to drive improvements. DevOps works to remove division of responsibility
+ and to enable collaboration and automation, thereby achieving both
+ agility and scalability for any organization.</p>
+
+<h1 id="benefits-of-devops">Benefits of DevOps</h1>
+
+<p>DevOps value is immediately realized in engineering organizations
+ and will grow to encompass more in the future. Traditional engineering
+ team silos and tools allow counter-productive practices to exist.</p>
+
+<p>For example, every utterance of these phrases:</p>
+
+<ul>
+<li>&ldquo;It worked on my laptop.&rdquo;</li>
+<li>&ldquo;That’s not my problem!&rdquo;</li>
+<li>“I don’t do that, somebody else does.&rdquo;</li>
+</ul>
+
+<p>&hellip; are cultural indicators that a DevOps approach is needed.
+ The DevOps goal to remove friction will identify cultural and technical debt,
+ artificial separation of responsibilities, and barriers to automation
+ in the organization.</p>
+
+<p>The relentless pursuit of DevOps results in tangible and essential benefits
+ for improving customer value:</p>
+
+<ul>
+<li><strong>Rapid release:</strong> automated testing and release of product all the way
+from the developer source code check-in to the customer in production.</li>
+<li><strong>Fail fast and fix fast:</strong> understanding the health and business impact
+of a release for customer interactions allows automated deployment
+(and revert) strategies to reduce risk while increasing tempo.</li>
+<li><strong>Close loop design and testing:</strong> every change is an opportunity to learn
+and experiment, every gap or mistake an opportunity to improve testing,
+instrumentation, and automation.
+Automated operations allows monitoring systems to trigger healing.</li>
+<li><strong>Democratized access and self-service:</strong> full service, ephemeral environments
+and stacks exercising the entire value chain can be created <em>ad hoc</em>
+by developers, testers, operations or build and test systems.</li>
+</ul>
+
+<p>Agility and scalability of infrastructure, architecture, operations, and culture
+ via governance and best practices are the key accomplishments of the DevOps
+ process.</p>
+
+<h1 id="opportunity-for-cultural-disruption">Opportunity for Cultural Disruption</h1>
+
+<p>When a term represents a cultural shift, a knowledge rift can occur between
+ the have and have nots. It may be easier to define <em>what DevOps is not</em>
+ so that you can assert <em>what DevOps is</em> for your journey.
+ Human nature and confusion fill gaps in understanding DevOps,
+ so we can see religious and political motifs appear in fervor,
+ fundamentalism, rebellion, gorilla warfare, skunk work projects, martyrdom,
+ and staunch conservatism both <strong>for and against DevOps.</strong></p>
+
+<p>How can such emotional turmoil exist in an engineering and IT organizations,
+ by people who are employed for their rational and technical skills?
+ These are all good questions to start with:</p>
+
+<ul>
+<li>What is, why do I want, and how do I get DevOps?</li>
+<li>Who authorized DevOps?</li>
+<li>You can’t get DevOps certification, so how can this be a legitimate thing?</li>
+</ul>
+
+<p>DevOps needs to be discussed, goals set, and an approach must be defined.
+ But any cultural initiative or large project requires a stake holder
+ who must identify the need for DevOps, champion the cause, and sponsor
+ the resources to explore, implement, and measure DevOps success in a top-down
+ fashion. Smaller organizations can forego most of that structure by
+ allowing a bottoms-up approach to experiment and adopt DevOps benefits.</p>
+
+<p>Fortunately, the DevOps community is decentralized and welcoming:
+ new adopters should seek out the nearest
+ <a href="http://www.devopsdays.org/">DevOpsDays</a>,
+ <a href="http://www.meetup.com/find/?allMeetups=false&amp;keywords=devops&amp;radius=50">DevOps Meetup groups</a>,
+ and <a href="http://devopsconferences.com/">related conferences</a>
+ to find local practitioners. By doing so, you can drink directly from the
+ fountain of knowledge and profit from the experience of your community.</p>
+
+<h1 id="devops-best-practices">DevOps Best Practices</h1>
+
+<p>While the field of DevOps is evolving rapidly, we have crystallized many
+ practices into these topics which enable automation, collaboration,
+ and closed loop feedback:</p>
+
+<ul>
+<li><strong><a href="../../../post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/">Infrastructure as Code</a>:</strong>
+configuration management tools to make infrastructure reproducible.</li>
+<li><strong><a href="../../../post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/">Continuous Integration, Delivery, and Deployment</a>:</strong>
+insures all contributed code can build, test, and deploy together.</li>
+<li><strong>Immutable Infrastructure:</strong>
+allows simplicity and consistency in deployment.</li>
+<li><strong>Microservices and Containers:</strong>
+communication patterns and application packaging enables architectural
+and deployment benefits.</li>
+<li><strong>Instrumentation:</strong> allows understanding of the micro and macro trends,
+forensics, and health of systems.</li>
+</ul>
+
+<p>I will explore these topics in future blog posts, some are already linked, above.</p>
+
+<h1 id="beware-exploitation">Beware Exploitation!</h1>
+
+<p>Because we do not have a universal, citable definition of
+ DevOps<sup><a href="#postscript-february-18-2018">1</a></sup>,
+ abuse of the term is rampant. Search on DevOps and you will find the
+ advertisements of everyone extending everything to add DevOps as a buzzword.
+ Ask yourself: <strong><em>&ldquo;Does it meet our DevOps definition?&rdquo;</em></strong>
+ then you may ask,
+ &ldquo;<a href="../../../post/calm.io-recap/calm.io-why-is-devops-so-hard/">Why is DevOps So Hard?</a>&ldquo;</p>
+
+<h1 id="about-the-author">About the Author</h1>
+
+<p>Mark Lavi is Calm’s Technology Evangelist, see his <a href="../../../about/">brief biography</a>.</p>
+
+<h1 id="postscript-february-18-2018">Postscript: February 18, 2018</h1>
+
+<p><sup>1</sup>In
+ <strong><a href="https://itrevolution.com/book/the-devops-handbook/">The DevOps Handbook</a></strong>
+ by Gene Kim, Jez Humble, Jon Willis, and Patrick Dubois published by
+ IT Revolution in 2017, the authors lay out a DevOps definition!
+ Since Patrick (the co-author) and Andrew Schaefer created the term DevOps
+ in 2009, this is as close as we can get to an official definition.</p>
+
+<p>From page 4:</p>
+
+<blockquote>
+<p>DevOps is the outcome of applying the most trusted principles from the
+ domain of physical manufacturing and leadership to the IT value stream.</p>
+</blockquote>
+
+<p>While I believe my definition is sufficiently abstract and succinct,
+ I think the definitions are complimentary! This article was written
+ years before the book was published.</p>
+
+<p>In August, 2016 <a href="https://www.nutanix.com/products/calm/">Nutanix</a>
+ acquired my employer, <a href="../../../tags/calm.io">Calm.io</a>. I constantly struggled
+ to succinctly explain the benefits of DevOps to my new colleagues,
+ because my &ldquo;elevator pitch&rdquo; failed more often than succeeded in under a minute.
+ After nearly a year of working with my Nutanix colleagues, partners, and
+ customers, learning and experiencing the Nutanix platform benefits,
+ I arrived at the
+ <strong><a href="../../../post/devops-maturity-diagram/">DevOps Maturity Diagram</a></strong>
+ and it accomplishes more in less time than my best elevator pitch!</p>
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-devops" href="http://mlavi.github.io//tags/devops">DevOps</a>,
+	                
+	                <a class="post-tag post-tag-culture" href="http://mlavi.github.io//tags/culture">culture</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="../../../post/devops_demystified/">DevOps Demystified</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="../../../post/artifact_repositories/">Artifact Repositories</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2018. All rights reserved.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

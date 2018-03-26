@@ -1,0 +1,369 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0 minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="mlavi">
+
+	<!--meta property="og:title" content="Deploying Docker Containers to Production">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://flowtime-js.marcolago.com">
+	<meta property="og:image" content="http://image.jpg">
+	<meta property="og:site_name" content="Deploying Docker Containers to Production">
+
+	<meta name="twitter:card" content="SUMMARY">
+	<meta name="twitter:url" content="http://exmaple.com">
+	<meta name="twitter:title" content="Deploying Docker Containers to Production">
+	<meta name="twitter:description" content="DESCRIPTION.">
+	<meta name="twitter:image" content="http://image.jpg"-->
+	<meta name="twitter:creator" content="@calm_mark">
+
+	<meta name="description" content="DESCRIPTION">
+
+	<title>Deploying Docker Containers to Production</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="css/flowtime.css">
+	<link rel="stylesheet" href="css/themes/default.css">
+	<link rel="stylesheet" href="assets/css/prism.css">
+
+
+	<link rel="apple-touch-icon-precomposed" 				href="img/touch-icon-iphone.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="72x72" 		href="img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="114x114" 	href="img/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="144x144" 	href="img/touch-icon-ipad-retina.png">
+
+	<link rel="apple-touch-startup-image" href="img/startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="img/startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+ <style rel="stylesheet" type="text/css">
+ h1 { font-family: "Open Sans",Helvetica,Arial,Lucida,sans-serif; }
+ </style>
+</head>
+<body class="">
+
+	<div class="flowtime">
+<div class="ft-section" data-id="section-1">
+  <div id="/section-1/page-1" class="ft-page" data-id="page-1"><h1>Deploying Docker Containers to Production</h1>
+<img src="img/calm_logo_rgb-copy.png" align="right" alt="Calm.io logo" style="background-color: white;"><h2>Mark Lavi</h2>
+            <section><p>$ cat ~/.signature</p>
+<p>Technology Evangelist, <a href="http://www.calm.io>Calm.io</a> || <a href="mailto:mark@calm.io">mark@calm.io</a>
+<br />Twitter <a href="http://twitter.com/calm_mark">@calm_mark</a> || GitHub <a href="http://github.com/mlavi/">@mlavi</a>
+<br />Blog <a href="https://calm.io/author/mark/">https://calm.io/author/mark/</a></p>
+  </div>
+  <div id="/section-1/page-2" class="ft-page" data-id="page-2"><h1>Agenda</h1>
+   <ol>
+    <li>What are containers?</li>
+    <li>Use-cases for moving traditional production workloads to containers</li>
+    <li>What tools are needed to provision and deploy containers to production</li>
+   </ol>
+  </div>
+</div>
+<div class="ft-section" data-id="section-2">
+  <div id="/section-2/page-1" class="ft-page" data-id="page-1"><h1>Container Overview</h1>
+   <ul>
+	 <li>Application package</li>
+	 <li>Composable</li>
+	 <li>"Light weight virtual machine" = OS kernel is the hypervisor</li>
+  	 <ul>
+	  <li>VMs >= 1GB >= containers >= 10MB
+          <br /><!-- 638 px x 458 px, 50% = 319 -->
+          <span style="font-size: small;">Image source = <a href="https://www.docker.com/what-docker">https://www.docker.com/what-docker</a></span><br />
+          <img style="display: inline; width: 319px;" src="img/what-is-docker-diagram.png">&nbsp;<img
+               style="display: inline; width: 319px;" src="img/what-is-vm-diagram.png"></li>
+	 </ul>
+   </ul>
+  </div>
+  <div id="/section-2/page-2" class="ft-page" data-id="page-2"><h1>Container Benefits</h1>
+    <ul>
+	<li>Application reuse</li>
+  		<ul><li>leverage the same image from development to test to production</li></ul>
+	<li>Application portability and isolation:</li>
+   	  <ul>
+	    <li>higher density = greater resource utilization</li>
+	    <li>cost savings: depending on the application, 2x savings on infrastructure</li>
+	  </ul>
+    </ul>
+  </div>
+  <div id="/section-2/page-3" class="ft-page" data-id="page-3"><h1>Container Benefits (continued)</h1>
+    <ul>
+	<li>Dynamic:</li>
+	<ul>
+	 <li>quick activation due to lower overhead + smaller size</li>
+	   <ul><li>makes upgrades and rollbacks faster</li></ul>
+	 <li>rapid iteration = shorter life</li>
+	   <ul><li>i.e.: Pets versus Cattle versus Bacteria</li></ul>
+	 <li>easy to scale and move applications across container clusters</li>
+	</ul>
+    </ul>
+  </div>
+  <div id="/section-2/page-4" class="ft-page" data-id="page-4"><h1>Container Work Loads</h1>
+	<ul>
+             <li>Anything, but cloud native or cloud friendly is key</li>
+               <ul>
+                 <li>long lived, persistent containers are a challenge</li>
+                 <ul><li>i.e.: monolithic databases</li></ul>
+               </ul>
+	     <li>Ideal for:</li>
+  		<ul>
+		 <li>immutable infrastructure</li>
+		 <li><a href="http://microservices.io/">microservice</a> architecture</li>
+		 <li>e.g.: <a href="http://12factor.net/">Twelve-Factor App</a> principles and <a href="https://medium.com/@kelseyhightower/12-fractured-apps-1080c73d481c">12 Fractured Apps</a> counter-examples</li>
+		</ul>
+             <li>Easy to adopt in development, build, and testing: accelerates automated testing</li>
+  	</ul>
+  </div>
+  <div id="/section-2/page-5" class="ft-page" data-id="page-5"><h1>Container Basics</h1>
+	<ul>
+	<li>Requires modern Linux kernel >= 2.6.32:</li>
+  		<ul>
+			<li>kernel namespace for resources: process, storage, memory, network</li>
+			<li>Coming to <a href="https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview">Windows</a> Server technical preview</li>
+			 and other Linux architectures</li>
+		</ul>
+	</ul>
+  </div>
+  <div id="/section-2/page-6" class="ft-page" data-id="page-6"><h1>Container Basics (continued)</h1>
+        <h3>Simple life cycle = BUILD a container image, or<br />DOWNLOAD from a container registry, then<br />EXECUTE it with a container run time.</h3>
+	<ul>
+	<li>Container image = tarball + metadata:</li>
+		<ul><li>name, owner, security signature, etc.</li></ul>
+	<li>Container run time: (see <a href="https://github.com/appc/spec">appc</a>)</li>
+		<ul>
+		<li>Docker engine, CoreOS rkt, <a href="https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html">systemd-nspawn</a>,
+                    <a href="https://linuxcontainers.org/lxc/introduction/">lxc</a>, <a href="https://linuxcontainers.org/lxd/introduction/">lxd</a>, etc.</li>
+		</ul>
+	<li>Container registry:</li>
+		<ul>
+		<li>author/tag:release (e.g.: <a href="https://hub.docker.com/_/ubuntu/">ubuntu</a>:14.04) @ public or private registry (e.g.: Docker Hub, Artifactory, Nexus)</li>
+                <li>static address: remote HTTP or FTP URLs, local filesystem</li>
+		</ul>
+	</ul>
+  </div>
+  <div id="/section-2/page-7" class="ft-page" data-id="page-7"><h1>Container Life Cycle</h1>
+        <h3>Production life cycle = CREATE + DEPLOY + MAINTAIN</h3>
+	<ul>
+	<li>CREATE:</li>
+		<ul>
+		<li>build + run + test*</li>
+		<li>sign image* + upload to registry*</li>
+		</ul>
+	</ul>
+  </div>
+  <div id="/section-2/page-8" class="ft-page" data-id="page-8"><h1>Container Life Cycle (continued)</h1>
+	<ul>
+		<li>DEPLOY:</li>
+		<ul>
+			<li>run time environment variables, feature flags, configuration management, service discovery, etc.</li>
+			<li>scheduler and/or orchestrate to container host(s) or cluster(s)*</li>
+		</ul>
+		<li>MAINTAIN:</li>
+		<ul>
+			<li>container infrastructure versus application instrumentation = monitoring + metrics + logging*</li>
+			<ul><li>versus traditional application operations: update configuration, trouble shooting, etc.</li></ul>
+			<li>UPDATE = re-deploy newly created containers</li>
+                        <ul><li>atomic versus rolling verus canary cutover</li></ul>
+		</ul>
+	</ul>
+  </div>
+</div>
+<div class="ft-section" data-id="section-3">
+  <div id="/section-3/page-1" class="ft-page" data-id="page-1"><h1>A Brief History of Containers</h1>
+        <ul>
+            <li>2006: <a href="http://research.google.com/pubs/pub43438.html">Borg</a> = Google runs production Linux containers, contributes cgroups to Linux kernel</li>
+            <!--ul>
+	 	<li>Google contributed cgroups to Linux kernel, MapReduce begat <a href="https://en.wikipedia.org/wiki/Apache_Hadoop#History">Hadoop</a></li>
+            </ul>
+            <li>2009: <a href="https://en.wikipedia.org/wiki/Apache_Mesos#History">Apache Mesos</a> = cluster job scheduler and framework created at UC Berkeley, adopted by Twitter</li-->
+            <li>2013: <a href="http://www.slideshare.net/Docker/docker-birthday-3-intro-to-docker-slides">Docker</a>, Docker, Docker: Dockerize Applications</li>
+            <ul>
+              <li>Docker the runtime versus company versus the expanding product suite/platform</li>
+              <li><a href="http://coreos.com">CoreOS</a>: minimal OS, etcd, fleet, flannel</li>
+            </ul>
+            <li>2014:</li>
+            <ul>
+              <!--li>Flocker: storage/volume management for persistance</li>
+              <li>Weave, Flannel, + more address container inter-networking</li-->
+              <li>Google <a href="http://kubernetes.io">Kubernetes</a> and <a href="http://rancher.com/">Rancher Labs</a> begin open source projects</li>
+            </ul>
+            <li>2015-now: the container standard wars and amazing innovation!</lil>
+        </ul>
+  </div>
+  <div id="/section-3/page-3" class="ft-page" data-id="page-3"><h1>Brief Container History: Continued</h1>
+        <ul>
+            <li>2015-now: the container standard wars and amazing innovation!</lil>
+             <ul>
+              <li>Runtime = Docker libcloud vs. <a href="https://github.com/appc/spec">appc</a>, runc
+              <li>Image = Docker release format vs. OCF: Open Container Format
+              <li>Network = CNI: Container Network Interface vs. Docker CNM: Container Network Model in libnetwork
+              <li><a href="https://cncf.io/">Cloud Native Computing Foundation</a> and <a href="https://www.opencontainers.org/about">Open Container Initiative</a> under the Linux Foundation</li>
+             </ul>
+            <!--li>Today: Docker Beta on Windows & Mac use native virtualization for Linux VM; replaces boot2docker</li-->
+        </ul>
+  </div>
+  <div id="/section-3/page-4" class="ft-page" data-id="page-4"><h1>Rapid Container Innovations</h1>
+    <ul>
+       <li>Minimal Operating System Distributions:
+          <ul><li>Container Host: <a href="https://coreos.com/using-coreos/">CoreOS Linux</a> (222 MB), <a href="http://rancher.com/rancher-os/">RancherOS</a> (31 MB)
+           <li>Container Guest: <a href="https://alpinelinux.org/">Alpine Linux</a> (83 MB), Ubuntu (120 MB)</ul>
+       <li>Container Registry: Docker <a href="https://hub.docker.com/">Hub</a>, Amazon <a href="http://aws.amazon.com/ecr/">ECR</a>,
+          Red Hat <a href="http://www.projectatomic.io/registry/">Atomic Registry</a>, CoreOS <a href="https://quay.io/">Quay</a>, JFrog <a href="https://www.jfrog.com/artifactory/versions/">Artifactory</a>, Sonatype <a href="http://www.sonatype.com/nexus-repository-oss">Nexus Repository</a>
+       <li>Persistence & Storage Performance: ClusterHQ <a href="https://clusterhq.com/flocker/introduction/">Flocker</a>,
+        Veritas <a href="http://www.veritas.com/community/blogs/veritas-answers-storage-management-containers">InfoScale</a>
+       <li>Instrumentation and Auditing: security, performance, monitoring, logging, metrics: <a href="https://github.com/gliderlabs/logspout">Logspout</a>, NewRelic
+ <a href="http://www.sysdig.org/">SysDig</a>, DataDog, <a href="https://www.iovisor.org/">IOVisor</a>, <a href="https://github.com/google/cadvisor">cAdvisor</a>
+       <li>Dynamic configuration management: etcd, HashiCorp <a href="https://www.consul.io/">Consul</a>, Apache <a href="https://zookeeper.apache.org/">Zookeeper</a>
+       <!--li>and the future? Microkernels</li-->
+    </ul>
+  </div>
+  <div id="/section-3/page-5" class="ft-page" data-id="page-5"><h1>Container Cluster Management</h1>
+    <ul>
+       <li>Scheduling and Orchestration: Container cluster PaaS or IaaS
+       <li>Major players: Apache Mesos, Google Kubernetes, Docker Swarm</li>
+         <!--ul><li>HashiCorp <a href="https://www.nomadproject.io/">Nomad</a>,
+           Rancher,
+           EngineYard <a href="http://deis.io/">Deis</a>,
+           CoreOS <a href="https://tectonic.com/">Techtonic</a>, Empire, etc.</li></ul-->
+       <li>Platforms: Openstack, CloudFoundry, Apache <a href="http://brooklyn.apache.org/">Brooklyn</a>, etc.
+       <li>Cloud Container Hosting: Amazon <a href="http://aws.amazon.com/ecs/">ECS</a>,
+           Microsoft <a href="https://azure.microsoft.com/en-us/services/container-service/">ACS</a>,
+           Joyent <a href="https://www.joyent.com/private-cloud">Triton</a> ECS, etc.
+       <br /><span style="font-size: small;">Footnote: <a href="https://www.socallinuxexpo.org/scale/14x/presentations/docker-kubernetes-and-mesos-compared">https://www.socallinuxexpo.org/scale/14x/presentations/docker-kubernetes-and-mesos-compared</a></span></li>
+    </ul>
+  </div>
+</div>
+<div class="ft-section" data-id="section-4">
+  <div id="/section-4/page-1" class="ft-page" data-id="page-1"><h1>Let's play with containers!</h1>
+    <h3>Scenario: a developer on a local machine with one container: Docker Toolbox for Windows/Mac, docker on Linux</h3>
+    <ul>
+      <li>Dockerfile, union filesystem = git transactions for layers</li>
+      <li>Is this the end of configuration management?</li>
+      <li>Run on laptop/desktop: docker build && docker run</li>
+      <li>DEMO: a web app</li>
+    </ul>
+  </div>
+  <div id="/section-4/page-2" class="ft-page" data-id="page-2"><h1>Let's play with containers!</h1>
+    <h3>Scenario: a developer on a laptop with multiple containers</h3>
+    <ul>
+      <li>DEMO: a web app + database
+      <li>Problems: orchestration, networking, and dynamic service discovery
+      <li>First approximation: docker-compose.yaml
+      <li>Next set of problems: local resource exhaustion and infrastructure expansion
+    </ul>
+  </div>
+  <div id="/section-4/page-3" class="ft-page" data-id="page-3"><h1>Let's run containers in production!</h1>
+    <ul>
+      <li>Upload image to a public or private container registry: share for consumption
+      <li>Pull image and run on a container host, a la your laptop or a cloud VM
+      <li>Let's build an update, upload, pull, run to see it working
+    </ul>
+  </div>
+  <div id="/section-4/page-4" class="ft-page" data-id="page-4"><h1>Let's operationalize containers</h1>
+    <ul>
+      <li>Immutable: treat as read-only file system
+            Inject dynamic configuration management via environment variables
+            Ship logs/metrics off box or console STDOUT to related facilities or services
+      <li>Load balance containers
+        <ul><li>Orchestration unnecessary for immutables and microservices if API design is backwards/forwards compatible</li></ul>
+      <li>Shrink "heavy" containers
+      <li>Discussion: there is more than one way to do it: choose your platform!</li>
+      <li>Demo: Calm container orchestration</li>
+    </ul>
+  </div>
+  <div id="/section-4/page-5" class="ft-page" data-id="page-5"><h1>Let's operationalize containers</h1>
+    <ul>
+     <li>Redundant container clusters with global load balancing: active-standby vs. active-active</li>
+     <li>Expanding workloads: batch jobs (run to completion), VMs, legacy anything</li>
+    </ul>
+  </div>
+</div>
+<div class="ft-section" data-id="section-5">
+  <div id="/section-5/page-1" class="ft-page" data-id="page-1"><h1>Container Conclusions</h1>
+   <ul>
+     <li>Containers work in most enterprises today for a portion of all applications</li>
+     <li>Container friendly architectures and applications are accelerating adoption and engineering agility</li>
+     <li>Production requires an investment in container management, especially for "mutable" long-lived applications and orchestration</li>
+    </ul>
+  </div>
+  <div id="/section-5/page-2" class="ft-page" data-id="page-2"><h1>Thank you, Questions?</h1>
+<img src="img/calm_logo_rgb-copy.png" align="right" alt="Calm.io logo" style="background-color: white;">
+<p><a href="mailto:mark@calm.io">mark@calm.io</a> || Twitter <a href="http://twitter.com/calm_mark">@calm_mark</a>
+<br />Blog <a href="https://calm.io/author/mark/">https://calm.io/author/mark/</a>
+ || <a href="https://www.calm.io/wp-content/uploads/2016/webinar/deploying_docker_containers_in_production/">Slides</a></p>
+<h3>Calm = DevOps Automation Platform with <a href="http://calm.io/downloads/">50 node/200 container free license</a></h3>
+    <ul>
+      <li>Visual Infrastructure as Code for application modeling & hybrid orchestration
+      <li>Reduce cloud spend with budgets, expiration & recurring audits
+      <li>Integrate data centers, clouds, containers, config management, build systems, & more…
+    </ul>
+  </div>
+</div>
+<!--div class="ft-section" data-id="section-X">
+  <div id="/section-X/page-1" class="ft-page" data-id="page-1"><h1>section-X, page-1</h1></div>
+  <div id="/section-X/page-2" class="ft-page" data-id="page-2"><h1>section-X, page-2</h1></div>
+  <div id="/section-X/page-3" class="ft-page" data-id="page-3"><h1>section-X, page-3</h1></div>
+  <div id="/section-X/page-4" class="ft-page" data-id="page-4"><h1>section-X, page-4</h1></div>
+  <div id="/section-X/page-5" class="ft-page" data-id="page-5"><h1>section-X, page-5</h1></div>
+  <div id="/section-X/page-6" class="ft-page" data-id="page-6"><h1>section-X, page-6</h1></div>
+  <div id="/section-X/page-7" class="ft-page" data-id="page-7"><h1>section-X, page-7</h1></div>
+</div-->
+	</div>
+
+	<script src="js/brav1toolbox.js"></script>
+	<script src="js/flowtime.js"></script>
+	<!-- <script src="js/flowtime.min.js"></script> -->
+	<script src="assets/js/prism.js"></script>
+
+	<script type="text/javascript">
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.backFromPageToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		Flowtime.parallaxInPx(true);
+		//
+		// event management
+		// Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		Flowtime.onNavigation(onNavigation);
+		function onNavigation(e)
+		{
+			// console.log(cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", ""));
+			cacheTitle = document.title.replace("Flowtime.js | ", "");
+			//console.log('section', e.section, 'sectionIndex', e.sectionIndex);
+			//console.log('page', e.page, 'pageIndex', e.pageIndex);
+			//console.log('pastSectionIndex', e.pastSectionIndex, 'pastPageIndex', e.pastPageIndex);
+			//console.log('prevSection', e.prevSection);
+			//console.log('nextSection', e.nextSection);
+			//console.log('prevPage', e.prevPage);
+			//console.log('nextPage', e.nextPage);
+			//console.log('fragment', e.fragment, + 'fragmentIndex', e.fragmentIndex);
+			//console.log("isOverview", e.isOverview);
+			//console.log('progress:', e.progress, 'total:', e.total);
+			//var value = Math.round(e.progress * 100 / e.total);
+			//console.log('Completion: ' + value + '%');
+		}
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+</body>
+</html>

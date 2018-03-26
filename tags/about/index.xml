@@ -2,19 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/about/index.xml</link>
+    <link>http://mlavi.github.io/tags/about/</link>
     <description>Recent content in About on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-<<<<<<< HEAD
-    <atom:link href="http://mlavi.github.io/tags/about/index.xml" rel="self" type="application/rss+xml" />
-=======
     <lastBuildDate>Fri, 06 Mar 2015 14:11:47 -0800</lastBuildDate>
     
 	<atom:link href="http://mlavi.github.io/tags/about/index.xml" rel="self" type="application/rss+xml" />
     
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     
     <item>
       <title>About Mark</title>
@@ -23,32 +19,11 @@
       
       <guid>http://mlavi.github.io/about/</guid>
       <description>&lt;p&gt;A DevOps professional with pioneering work on the world&amp;rsquo;s biggest Internet real-time event
- and web sites from an engineering, operations, content, and marketing perspective.
- My focus is on people and software development along with system design thinking for the
- whole life cycle: I can build, grow, and manage teams, applications, networks, and servers
+ and web sites across the engineering, operations, content, and marketing disciplines.
+ Mark&amp;rsquo;s focus is on people and software development along with system design thinking for the
+ whole life cycle: he can build, grow, and manage teams, applications, networks, and servers
  to work together while planning and nurturing their continuous improvement.
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;p&gt;Mark first touched the Internet in 1991 when he was sponsored to do undergraduate research.
- After graduation and Internet withdrawal, he joined the first national commercial Internet
- Service Provider (before the world wide web).&lt;/p&gt;
-
-&lt;p&gt;One of the web masters of Netscape, cnnfn.com, and sgi.com, Mark was part of the
- world&amp;rsquo;s largest and earliest media and web sites. Mark progressed to Developer
- Relations, where he became the JavaScript and LDAP Technology Evangelist.
-One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures his ability to relate technical
- subjects to anyone.&lt;/p&gt;
-
-&lt;p&gt;Mark&amp;rsquo;s approach mixes software engineering disciplines with art and operations, embracing
- Internet architecture, real-time media, and the ability to nurture people, developers,
- networks, and systems to work together. His multidisciplinary practice is complimented
- by the term &lt;a href=&#34;https://en.wikipedia.org/wiki/DevOps&#34;&gt;DevOps&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can review Mark&amp;rsquo;s career and endorsements at &lt;a href=&#34;https://www.linkedin.com/in/marklavi&#34;&gt;https://www.linkedin.com/in/marklavi&lt;/a&gt;&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
     <item>
@@ -60,79 +35,7 @@ One compliment: &amp;ldquo;Mark is an engineer who can speak&amp;rdquo; captures
       <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
 and technical debt follow as I start my Infrastructure as Code blog.
-<<<<<<< HEAD
-&lt;/p&gt;
-
-&lt;p&gt;Embarking on a new adventure is always the best time in a project because all your dreams
- are possible! You research your ideas, find new tools and libraries, and smell the fresh
- scent of unhindered development.&lt;/p&gt;
-
-&lt;h3 id=&#34;then-you-start&#34;&gt;Then you start&amp;hellip;&lt;/h3&gt;
-
-&lt;p&gt;You find that your idea is broad and multifaceted, tools are in various states of acceptable
- use and documentation, and there is a bevy of dependencies: each representing a small
- landscape to conquer.&lt;/p&gt;
-
-&lt;h3 id=&#34;to-sink-into-reality&#34;&gt;&amp;hellip; to sink into reality!&lt;/h3&gt;
-
-&lt;p&gt;The original title of this first post was &amp;ldquo;Time for a new Blog&amp;rdquo; to document my experiment
- with &lt;a href=&#34;http://jekyllrb.com/docs/github-pages/&#34;&gt;Jekyll and GitHub Pages&lt;/a&gt; before settling on
- &lt;a href=&#34;http://gohugo.io/overview/introduction/&#34;&gt;Hugo&lt;/a&gt;: it has been a fascinating study in scope creep.&lt;/p&gt;
-
-&lt;p&gt;Recently, I discovered &lt;a href=&#34;http://www.mkdocs.org/&#34;&gt;MkDocs&lt;/a&gt; for &amp;ldquo;Project documentation with Markdown.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;But I&amp;rsquo;m prototyping, so it&amp;rsquo;s all good, right?&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll update later with how I&amp;rsquo;ve navigated the static web site blog quest, thus far it has been an
- exercise in transferring most of the standard content management system functionality into
- smaller tools and libraries which inverts the work flow. I think the journey will be worth
- it because I&amp;rsquo;ve caught glimpses which validate this approach:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I can blog from the command line and presumably anywhere (including my phone) with some setup.&lt;/li&gt;
-&lt;li&gt;I can test the build of my content, templates, and enhanced work on those elements.&lt;/li&gt;
-&lt;li&gt;Everything under revision control, therefore: blog + content = testable software!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;a-static-web-cms&#34;&gt;A Static Web CMS?&lt;/h3&gt;
-
-&lt;p&gt;Even though I&amp;rsquo;ve accomplished much (including e-commerce) with various web content management systems
-(CMS) such as:
- &lt;a href=&#34;http://plone.org/&#34;&gt;Plone&lt;/a&gt;,
- &lt;a href=&#34;http://twiki.org/&#34;&gt;TWiki&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://foswiki.org/&#34;&gt;Foswiki&lt;/a&gt;,
- &lt;a href=&#34;http://www.joomla.org/&#34;&gt;Joomla&lt;/a&gt;,
- &lt;a href=&#34;http://drupal.org&#34;&gt;Drupal&lt;/a&gt;,
- &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt;,
- and &lt;a href=&#34;http://modx.com&#34;&gt;ModX&lt;/a&gt;.
-over the years, you inevitably fall &lt;em&gt;out of love&lt;/em&gt; with them after the first month. You discover a
-landscape of complex and brittle software when you extend a web CMS into the enterprise by adding
-integrations, plugins, etc. which have their own security attack surface, dependencies, update schedule,
-and incompatibilities.&lt;/p&gt;
-
-&lt;p&gt;You wonder if Share Point and Alfresco is just as evil (I am sure they are) and
-you wonder if you will fall out of love with a static CMS?&lt;/p&gt;
-
-&lt;p&gt;This is not a unique problem, it is shared by many other classes of software (like Jenkins, JIRA,
-and your web browser) and once you extend any API or customize any work flow (Oracle EBS). It is
-an indication of richness, complexity, and technical debt.&lt;/p&gt;
-
-&lt;p&gt;A static, compiled web site removes and loses dynamic, server-side functionality for persistence and
-interaction, or does it? With the advent of application service providers (ASP) or cloud hosted
-anything-as-a-service, we can move from server-side to service providers for authentication, spam filtered
-comments, forms and polls, advertising, analytics, and who knows what else?
-In addition, we can leverage improved web client capabilities to shift what was server-side to client-side processing.&lt;/p&gt;
-
-&lt;p&gt;This will be a great experiment!&lt;/p&gt;
-
-&lt;h3 id=&#34;infrastructure-as-code&#34;&gt;Infrastructure as Code&lt;/h3&gt;
-
-&lt;p&gt;The real purpose of this blog will be to catalog and share my research and development towards my passion:
-Infrastructure as Code which will lead to my dream of behavior driven DevOps. It is a ripe time for
-system and design thinking because the entire industry is trying to solve basic problems and automate
-solutions while integrating many different systems and disciplines. It is an exciting and disruptive time!&lt;/p&gt;</description>
-=======
 &lt;/p&gt;</description>
->>>>>>> rebuilding site Sun Feb 18 15:16:38 CST 2018
     </item>
     
   </channel>
