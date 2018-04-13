@@ -291,8 +291,8 @@
 			
 
             <p>This <a href="../../../post/calm.io-recap/">Calm.io blog recap</a>
- was originally written by me and posted on May 26, 2016 at
-<a href="http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/">http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/</a>
+ was originally written by me, posted on May 26, 2016 at
+<a href="http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/">http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/</a>,
 and slightly enhanced on February 18, 2018.
 </p>
 
@@ -313,7 +313,7 @@ and slightly enhanced on February 18, 2018.
 <p>I characterized the traditional IT operator and system administrator value
  system which views change as risk to system and application availability
  and showed their progressive journey to DevOps in my Calm.io blog post
- <a href="tbd">Configuration Management in the DevOps World</a>.
+ <a href="../../../post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/">Configuration Management in the DevOps World</a>.
  I generally use the terms server, resource, box, and node interchangeably.</p>
 
 <p>When the primary measure of success is keeping servers up for years without
@@ -343,11 +343,13 @@ and slightly enhanced on February 18, 2018.
 <p>Per the <a href="https://memegenerator.net/X-All-The-Things">Internet meme</a>,
  we want to automate all the things!</p>
 
-<p>I quote from my blog post on <a href="tbd">Configuration Management in the DevOps World</a>:</p>
+<p>I quote from my blog post on <a href="../../../post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/">Configuration Management in the DevOps World</a>:</p>
 
+<blockquote>
 <p>&ldquo;Configuration Management represents the next step after provisioning
  a nascent infrastructure resource to install and configure it to perform
  a certain role, such as a web server, database, etc.&rdquo;</p>
+</blockquote>
 
 <p>Having automated the creation of a system role, one can synthesize new peers
  from scratch. However, is it easy to carry forward traditional practices still
@@ -501,10 +503,10 @@ and most are part of cluster scheduling and configuration management systems;
 
 <p>Configuration management runs after a node is provisioned and it &ldquo;builds&rdquo;
  the system into a desired role with static configuration as a run time
- operation, mutating the filesystem. One concern can be addressed by
+ operation, mutating the file system. One concern can be addressed by
  refactoring static to dynamic configuration to remove a state dependency.
  The next step is to never use configuration management again after the initial
- system build for life cycle operations. The resulting filesystem is treated
+ system build for life cycle operations. The resulting file system is treated
  as an infrastructure artifact by exporting it. To recap: we can refactor
  configuration management to move from an ongoing run time operation to
  synthesize mutable infrastructure to a one time build operation producing
@@ -516,7 +518,7 @@ and most are part of cluster scheduling and configuration management systems;
  and software build systems. By eliminating the barrier between application
  and infrastructure, operators have joined developers in creating buildable
  and testable infrastructure, which should be tied to
- <a href="tbd">application integration testing</a>.
+ <a href="../../../post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/#application-integration-testing-and-continuous-delivery">application integration testing</a>.
  Now the application <em>IS</em> the infrastructure!</p>
 
 <p>Immutable infrastructure yields an amazing breakthrough: infrastructure reuse!

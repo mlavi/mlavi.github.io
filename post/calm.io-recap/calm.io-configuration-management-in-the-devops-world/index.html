@@ -254,6 +254,12 @@
 		   	 	<nav id="TableOfContents">
 <ul>
 <li><a href="#ye-olde-system-administrator">Ye Olde System Administrator</a></li>
+<li><a href="#devops-unlocks-progressive-system-administration">DevOps Unlocks Progressive System Administration</a>
+<ul>
+<li><a href="#fail-fast-fix-fast">Fail fast, fix fast</a></li>
+<li><a href="#infrastructure-as-code-and-configuration-management">Infrastructure as Code and Configuration Management</a></li>
+<li><a href="#pets-versus-cattle-versus-bacteria">Pets versus Cattle versus Bacteria</a></li>
+</ul></li>
 <li><a href="#evolving-to-configuration-management">Evolving to Configuration Management</a></li>
 <li><a href="#the-configuration-management-industry">The Configuration Management Industry</a></li>
 <li><a href="#choosing-a-configuration-management-system">Choosing a Configuration Management System</a></li>
@@ -287,61 +293,140 @@
 			
 
             <p>This <a href="../../../post/calm.io-recap/">Calm.io blog recap</a>
- was originally written by me and posted on May 24, 2016 at
-<a href="http://calm.io/2016/05/24/configuration-management-in-the-devops-world/">http://calm.io/2016/05/24/configuration-management-in-the-devops-world/</a>
+ was originally written by me, posted on May 24, 2016 at
+<a href="http://calm.io/2016/05/24/configuration-management-in-the-devops-world/">http://calm.io/2016/05/24/configuration-management-in-the-devops-world/</a>,
 and slightly enhanced on February 18, 2018.
 </p>
 
-<p>Configuration Management is a category of tool which is an essential building block to achieve infrastructure as code. As we transition from long lived, hand crafted, and individually maintained servers to ephemeral infrastructure, we gain the benefits of repeatable automation by coding, collaborating, testing, delegating, and removing the mysteries of infrastructure deployment and operations for applications.</p>
+<p>Configuration Management is a category of tool which is an essential building
+ block to achieve infrastructure as code. As we transition from long lived,
+ hand crafted, and individually maintained servers to ephemeral infrastructure,
+ we gain the benefits of repeatable automation by coding, collaborating,
+ testing, delegating, and removing the mysteries of infrastructure deployment
+ and operations for applications.</p>
 
 <h1 id="ye-olde-system-administrator">Ye Olde System Administrator</h1>
 
 <p>IMG: Interlocking puzzle pieces</p>
 
-<p>Configuration Management can help automate “all the things” by capturing system operators’ brilliance.</p>
+<p>Configuration Management can help automate &ldquo;all the things&rdquo; by capturing
+ system and administrative operators&rsquo; brilliance.</p>
 
-<p>Let me share a profile of the stereotypical operator: they are a person of responsibility charged with the duty to keep the business operations of the organization up and running. Typically, their domain covers the compute, network, storage, and application infrastructure as well as maintenance, backup, security, audit, licensing, and disaster recovery operations. They often also cover the Information Technology (IT) needs of an organization: mail, spam filtering, file sharing, identity, and major business applications hosted in-house such as databases, web sites, internal applications, and the suite of finance, sales, support, and marketing tools. They administer all of these systems throughout their life cycle of upgrades.</p>
+<p>Let me share a profile of the stereotypical operator:
+ they are a person of responsibility charged with the duty
+ to keep the business operations of the organization up and running.
+ Typically, their domain covers the compute, network, storage, and
+ application infrastructure as well as maintenance, backup, security, audit,
+ licensing, and disaster recovery operations. They often also cover the
+ Information Technology (IT) needs of an organization:
+ mail, spam filtering, file sharing, identity, and major business applications
+ hosted in-house such as databases, web sites, internal applications,
+ and the suite of finance, sales, support, and marketing tools.
+ They administer all of these systems throughout their life cycle of upgrades.</p>
 
-<p>Because security and business continuity is of paramount importance to keep the organization performing, administration is not shared for infrastructure. Even development environments, laptops, and desktops can be locked down and constrained to prevent drifting into an unsupported state.</p>
+<p>Because security and business continuity is of paramount importance to keep
+ the organization performing, administration is not shared for infrastructure.
+ Even development environments, laptops, and desktops can be locked down
+ and constrained to prevent drifting into an unsupported state.</p>
 
-<p>Change control review boards constrain work, change control windows and planned downtime for maintenance are required for atomic upgrades, and a continual need to shrink the budget of any IT expense increases responsibility and load while and decreasing IT resources (budgets, equipment, and staff). Change controls are extended to cover as many systems as possible to drive risk out of managing infrastructure and applications. The worst behavior can emerge in people to abuse their power and this has been famously captured by the fictional BOFH: Bastard Operator From Hell inspired by reality.</p>
+<p>Change control review boards constrain work, change control windows and planned
+ downtime for maintenance are required for atomic upgrades, and a continual
+ need to shrink the budget of any IT expense increases responsibility
+ and load while and decreasing IT resources (budgets, equipment, and staff).
+ Change controls are extended to cover as many systems as possible
+ to drive risk out of managing infrastructure and applications.
+ The worst behavior can emerge in people to abuse their power
+ and this has been famously captured by the fictional
+ <a href="https://en.wikipedia.org/wiki/Bastard_Operator_From_Hell">BOFH: Bastard Operator From Hell inspired by reality</a>.</p>
 
-<p>A traditional system administrator names their servers and hand maintains the infrastructure and applications (we will revisit these pets shortly), sometimes with the help of scripts or manually instrumented tools. A frequently cited metric of success for traditional operators is having system up time spanning years! Administrators take disk images of their systems and maintain a large, rotating offsite archive inventory of tapes containing the backups. The overriding challenge to system operators is to maintain the steady, static state of their systems and all change is assessed as a risk.</p>
+<p>A traditional system administrator names their servers
+ and hand maintains the infrastructure and applications
+ (we will revisit these pets shortly), sometimes with the help of scripts
+ or manually instrumented tools. A frequently cited metric of success for
+ traditional operators is having system up time spanning years!
+ Administrators take disk images of their systems and maintain a large,
+ rotating offsite archive inventory of tapes containing the backups.
+ The overriding challenge to system operators is to maintain the steady,
+ static state of their systems and all change is assessed as a risk.</p>
 
-<p>Early in my career, I admired the responsibility and power of system operators and so I wanted to become one of them because I needed to figure out how to get my applications to run on their infrastructure and then I wanted to learn how well my applications ran in production. I learned how to work within a certain amount of policies, procedures, and bureaucracy in order to deploy and improve my applications.
-DevOps Unlocks Progressive System Administration</p>
+<p>Early in my career, I admired the responsibility and power of system operators
+ and so I wanted to become one of them because I needed to figure out
+ how to get my applications to run on their infrastructure.
+ Once that was accomplished, then I wanted to learn how well my applications
+ ran in production. I learned how to work within a certain amount of policies,
+ procedures, and bureaucracy in order to deploy and improve my applications.</p>
 
-<p>However, looking back on the traditional system administrator, there are many fair criticisms to their practices that are not justified in today’s competitive marketplace which demands engineering agility. With virtualization via public and private cloud infrastructure, system administrators are greatly liberated from the constraints of static, physical infrastructure and can apply new DevOps tools and skills. These opportunities are captured by a few simple, reinforcing principles:</p>
+<h1 id="devops-unlocks-progressive-system-administration">DevOps Unlocks Progressive System Administration</h1>
 
-<pre><code>Fail fast, fix fast:
-    Principle: embrace continual smaller changes to minimize risk, rather than constrain and batch up many larger changes subjugated to large change control windows.
-    Benefits:
-        work and changes are unblocked so that value flows quickly to the customer
-        automated change for “hands-off” operations, laying the groundwork for delegation of changes to any system.
-    DevOps work Implications:
-        requires better auditing and better revert operations
-        changes should be testable.
-Infrastructure as Code and Configuration Management:
-    Principle: capturing system administration provisioning and operational tasks enables collaboration, testing, and automation for ephemeral infrastructure.
-    Benefits:
-        most static infrastructure backups become obsolete because the state needed to be preserved is represented by data
-        infrastructure can become ephemeral, robust, repeatable, testable, and delegatable through automation.
-    DevOps work Implications:
-        static infrastructure is brittle, single points of failure are reduced because now they can be reproduced and refactored
-        need to master and maintain configuration management systems.
-Pets versus Cattle versus Bacteria:
-    Principle: infrastructure synthesis and build artifacts trump static state maintenance, i.e.: no longer do we have long lived, named servers (pets), but we have a herd of servers that we terminate regularly (cattle) for operations on the population.
-        Pets = long lived, named servers which are maintained by hand
-        Cattle = a herd of numbered servers which are maintained by automation.
-    Benefit:
-        operations accelerate to replace broken or under performing servers rather than fix by hand
-        engineering agility increase is reflected by infrastructure life cycle decrease.
-    DevOps work Implications:
-        operations orient to fleet maintenance, requiring change or expansion in logging, metrics, and monitoring
-        further life cycle decrease by diversifying application architecture towards microservices and continuous deployment of frequent application updates (bacteria)
-</code></pre>
+<p>However, looking back on the traditional system administrator,
+ there are many fair criticisms to their practices that are not justified
+ in today’s competitive marketplace which demands engineering agility.
+ With virtualization via public and private cloud infrastructure,
+ system administrators are greatly liberated from the constraints of
+ static, physical infrastructure and can apply new DevOps tools and skills.
+ These opportunities are captured by a few simple, reinforcing principles:</p>
 
-<p>We have an umbrella term for these principles: DevOps. Given the framework of principles and benefits above, a DevOps approach enables agility to deliver value to customers rapidly. The exists an important category of DevOps tooling which helps capture the brilliance of system administrators by turning them into infrastructure engineers: configuration management.</p>
+<h2 id="fail-fast-fix-fast">Fail fast, fix fast</h2>
+
+<ul>
+<li>Principle: embrace continual smaller changes to minimize risk, rather than constrain and batch up many larger changes subjugated to large change control windows.</li>
+<li>Benefits:
+
+<ul>
+<li>work and changes are unblocked so that value flows quickly to the customer</li>
+<li>automated change for &ldquo;hands-off&rdquo; operations, laying the groundwork for delegation of changes to any system.</li>
+</ul></li>
+<li>DevOps work Implications:
+
+<ul>
+<li>requires better auditing and better revert operations</li>
+<li>changes should be testable.</li>
+</ul></li>
+</ul>
+
+<h2 id="infrastructure-as-code-and-configuration-management">Infrastructure as Code and Configuration Management</h2>
+
+<ul>
+<li>Principle: capturing system administration provisioning and operational tasks enables collaboration, testing, and automation for ephemeral infrastructure.</li>
+<li>Benefits:
+
+<ul>
+<li>most static infrastructure backups become obsolete because the state needed to be preserved is represented by data</li>
+<li>infrastructure can become ephemeral, robust, repeatable, testable, and delegatable through automation.</li>
+</ul></li>
+<li>DevOps work Implications:
+
+<ul>
+<li>static infrastructure is brittle, single points of failure are reduced because now they can be reproduced and refactored</li>
+<li>need to master and maintain configuration management systems.</li>
+</ul></li>
+</ul>
+
+<h2 id="pets-versus-cattle-versus-bacteria">Pets versus Cattle versus Bacteria</h2>
+
+<ul>
+<li>Principle: infrastructure synthesis and build artifacts trump static state maintenance, i.e.: no longer do we have long lived, named servers (pets), but we have a herd of servers that we terminate regularly (cattle) for operations on the population.
+
+<ul>
+<li><strong>Pets</strong> = long lived, named servers which are maintained by hand</li>
+<li><strong>Cattle</strong> = a herd of numbered servers which are maintained by automation.</li>
+</ul></li>
+<li>Benefit:
+
+<ul>
+<li>operations accelerate to replace broken or under performing servers rather than fix by hand</li>
+<li>engineering agility increase is reflected by infrastructure life cycle decrease.</li>
+</ul></li>
+<li>DevOps work Implications:
+
+<ul>
+<li>operations orient to fleet maintenance, requiring change or expansion in logging, metrics, and monitoring</li>
+<li>further life cycle decrease by diversifying application architecture towards microservices and continuous deployment of frequent application updates (bacteria)</li>
+</ul></li>
+</ul>
+
+<p>We have an umbrella term for these principles: <strong>DevOps.</strong>
+ Given the framework of principles and benefits above, a DevOps approach enables agility to deliver value to customers rapidly. The exists an important category of DevOps tooling which helps capture the brilliance of system administrators by turning them into infrastructure engineers: configuration management.</p>
 
 <h1 id="evolving-to-configuration-management">Evolving to Configuration Management</h1>
 
@@ -357,50 +442,122 @@ Pets versus Cattle versus Bacteria:
 
 <p>This is a field ripe with innovation because there is a natural desire for every operator to automate their operations, but there are so many use cases, human bias, and pride to home grow their efforts for their organization that we inevitably see conflict in how best to automate because there is (always) more than one way to do it! However, the drawbacks to home grown automation are many, including the burden of in-house software maintenance and support. Our white paper “Calm IT Down: DevOps Automation in the Container Era” describes the challenges of in-house automation software efforts and justifies Calm’s approach to model application life cycle and operations.</p>
 
-<p>The field of system configuration management took a seminal (but perhaps not the first) step forward with Mark Burgess’ CFEngine in 1993. Rather than program with shell scripts (with the required permutations of complexity), a simple text declaration of desired state could be authored and CFEngine would work to accomplish the results. This model has been reproduced many times in the industry, leading to a few major players today with funny names which embrace their conceptual themes:
-Name     Year Started     Agentless?     Language     Infrastructure as Code Format
-Puppet     2005     No, but can run stand alone     Ruby     Domain Specific Language
-Chef     2009     No, but can run stand alone     Ruby     Ruby
-Salt     2011     Yes, but can run client/server     Python     YAML
-Ansible     2012     Yes     Python     YAML</p>
+<p>The field of system configuration management took a seminal (but perhaps not the first) step forward with Mark Burgess’ CFEngine in 1993. Rather than program with shell scripts (with the required permutations of complexity), a simple text declaration of desired state could be authored and CFEngine would work to accomplish the results. This model has been reproduced many times in the industry, leading to a few major players today with funny names which embrace their conceptual themes:</p>
+
+<table>
+<thead>
+<tr>
+<th align="right">Name</th>
+<th align="center">Year Started</th>
+<th align="center">Agent-less?</th>
+<th align="center">Language</th>
+<th align="center">Infrastructure as Code Format</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">Puppet</td>
+<td align="center">2005</td>
+<td align="center">No, but can run stand alone</td>
+<td align="center">Ruby</td>
+<td align="center">Domain Specific Language</td>
+</tr>
+
+<tr>
+<td align="right">Chef</td>
+<td align="center">2009</td>
+<td align="center">No, but can run stand alone</td>
+<td align="center">Ruby</td>
+<td align="center">Ruby</td>
+</tr>
+
+<tr>
+<td align="right">Salt</td>
+<td align="center">2011</td>
+<td align="center">Yes, but can run client/server</td>
+<td align="center">Python</td>
+<td align="center">YAML</td>
+</tr>
+
+<tr>
+<td align="right">Ansible</td>
+<td align="center">2012</td>
+<td align="center">Yes, but can run client/server</td>
+<td align="center">Python</td>
+<td align="center">YAML</td>
+</tr>
+</tbody>
+</table>
 
 <p>Some notes on these leaders:</p>
 
-<pre><code>Puppet (2005, open source with enterprise licensing/support at PuppetLabs)
-    Luke Kanies wanted to advance the state of system engineering past CFEngine
-    Robust community contributing to Puppet Forge of modules.
-    Excellent feature set, widely deployed.
-Chef (2009, open source with enterprise licensing/support at Chef Software)
-    Adam Jacob and colleagues created a system operational framework for their clientele before making it a product: Chef recipes are Ruby, but you can use basic notation to describe your infrastructure without using code.
-    Robust community contributing to the Supermarket of cookbooks and recipes.
-    Chef encompasses an ecosystem of products for continuous delivery and auditing now.
-    Chef agent can be changed to Chef-solo and Chef-zero to avoid a server-client relationship.
-    Excellent feature set, widely deployed.
-Salt (2011, open source with enterprise licensing/support at SaltStack, Inc.)
-    Thomas Hatch wanted to improve data center automation, making it fast and dependable compared to other solutions.
-    Salt formulas represent a communal effort of various software stacks, applications, and package automation.
-Ansible (2012, open source with commercial products at RedHat)
-    Michael DeHaan worked to unite and simplify system administration and application deployment after working at Puppet and having developed other provisioning tools.
-    Robust community contributing to the Galaxy of roles and playbooks.
-    Compared to the others, Ansible is disruptively simple for most people to become productive, Red Hat acquired them in 2015.
-</code></pre>
+<ul>
+<li>Puppet: open source with enterprise licensing/support at <a href="https://puppet.com/">PuppetLabs</a>
+
+<ul>
+<li>Luke Kanies wanted to advance the state of system engineering past CFEngine</li>
+<li>Robust community contributing to Puppet Forge of modules.</li>
+<li>Excellent feature set, widely deployed.</li>
+</ul></li>
+<li>Chef: open source with enterprise licensing/support at <a href="https://www.chef.io/">Chef Software</a>
+
+<ul>
+<li>Adam Jacob and colleagues created a system operational framework for their clientele before making it a product: Chef recipes are Ruby, but you can use basic notation to describe your infrastructure without using code.</li>
+<li>Robust community contributing to the Supermarket of cookbooks and recipes.</li>
+<li>Chef encompasses an ecosystem of products for continuous delivery and auditing now.</li>
+<li>Chef agent can be changed to Chef-solo and Chef-zero to avoid a server-client relationship.</li>
+<li>Excellent feature set, widely deployed.</li>
+</ul></li>
+<li>Salt: open source with enterprise licensing/support at <a href="https://saltstack.com/">SaltStack, Inc.</a>
+
+<ul>
+<li>Thomas Hatch wanted to improve data center automation, making it fast and dependable compared to other solutions.</li>
+<li>Salt formulas represent a communal effort of various software stacks, applications, and package automation.</li>
+</ul></li>
+<li>Ansible: open source with commercial products at <a href="https://www.ansible.com/">RedHat</a>
+
+<ul>
+<li>Michael DeHaan worked to unite and simplify system administration and application deployment after working at Puppet and having developed other provisioning tools.</li>
+<li>Robust community contributing to the Galaxy of roles and playbooks.</li>
+<li>Compared to the others, Ansible is disruptively simple for most people to become productive, Red Hat acquired them in 2015.</li>
+</ul></li>
+</ul>
 
 <h1 id="choosing-a-configuration-management-system">Choosing a Configuration Management System</h1>
 
 <p>There are many considerations, but here are some guidelines for your organization to choose a configuration management system:</p>
 
-<pre><code>If you have a love or hate of Python or Ruby and that value is shared in the organization, that should help eliminate some choices because you may need to customize.
-If you need to be instantly productive, look for existing modules that match your environment and try them out.
-If you have a smaller set of machines or are just getting started, Ansible has proven to be easiest to start with.
-If you need to work with a large scale of machines in a data center, Salt excels at this use case.
-If you need to work with a large set of machines in the cloud, Puppet and Chef have been widely deployed at large enterprises, Salt less so. Ansible has yet to be proven to work at large scales.
-Supporting the Windows platform differs between the offerings: is this import to your organization?
-Consider what it takes to add testing to your infrastructure!
-</code></pre>
+<ul>
+<li>If you have a love or hate of Python or Ruby and that value is shared in the organization, that should help eliminate some choices because you may need to customize.</li>
+<li>If you need to be instantly productive, look for existing modules that match your environment and try them out.</li>
+<li>If you have a smaller set of machines or are just getting started, Ansible has proven to be easiest to start with.</li>
+<li>If you need to work with a large scale of machines in a data center, Salt excels at this use case.</li>
+<li>If you need to work with a large set of machines in the cloud, Puppet and Chef have been widely deployed at large enterprises, Salt less so. Ansible has yet to be proven to work at large scales.</li>
+<li>Supporting the Windows platform differs between the offerings: is this import to your organization?</li>
+<li>Consider what it takes to add testing to your infrastructure!</li>
+</ul>
 
 <p>For configuration management to be a success, regardless of which choice you abstractly evaluate, you must always consider your audience and navigate the culture of your engineering and operations organizations.</p>
 
-<p>Once adopted, a configuration management system may become entrenched and worshiped like a religious practice because of the success it brings! It is an amazing, intoxicating day when a team can say they have automated “all of the things” (a popular meme) because they have broken away from pets. This pride is justified because they have achieved the benefits of doing DevOps; however, binding to a single tool to the exclusion of the market can blind an organization to innovation. For instance, testing, operating, and orchestrating “all of the things” becomes the next set of challenges where early design constraints or lacking features could cause reconsideration for the next stage of the journey. Upgrading a configuration management system to a new version can introduce incompatibilities and cause an organization to embrace risk adverse tendencies, which runs contrary to DevOps values. Shouldn’t it be possible to mix and match configuration management versions for different teams, refactor between configuration management systems for different projects, and even orchestrate multiple configuration management systems at once?</p>
+<p>Once adopted, a configuration management system may become entrenched
+ and worshiped like a religious practice because of the success it brings!
+ It is an amazing, intoxicating day when a team can say they have automated
+ &ldquo;all of the things&rdquo; (<a href="https://memegenerator.net/X-All-The-Things">a popular meme</a>)
+ because they have broken away from pets.</p>
+
+<p>This pride is justified because they have achieved the benefits of doing DevOps;
+ however, binding to a single tool to the exclusion of the market can blind
+ an organization to innovation. For instance, testing, operating, and
+ orchestrating &ldquo;all of the things&rdquo; becomes the next set of challenges
+ where early design constraints or lacking features could cause
+ reconsideration for the next stage of the journey.
+ Upgrading a configuration management system to a new version can introduce
+ incompatibilities and cause an organization to embrace risk adverse tendencies,
+ which runs contrary to DevOps values. Shouldn’t it be possible to mix and
+ match configuration management versions for different teams,
+ refactor between configuration management systems for different projects,
+ and even orchestrate multiple configuration management systems at once?</p>
 
 <h1 id="epilogue-the-death-of-configuration-management">Epilogue: the Death of Configuration Management?</h1>
 
