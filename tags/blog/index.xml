@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Mark&#39;s Blog</title>
+    <link>http://mlavi.github.io/tags/blog/</link>
+    <description>Recent content in Blog on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 15 Apr 2018 12:46:39 -0700</lastBuildDate>
+    
+	<atom:link href="http://mlavi.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>External Source Citation Clouds</title>
+      <link>http://mlavi.github.io/post/blog-link-navigation/</link>
+      <pubDate>Sun, 15 Apr 2018 12:46:39 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/blog-link-navigation/</guid>
+      <description>&lt;p&gt;I love tag clouds, given sufficient meta-data, they help navigate through
+ a slice of an information corpus. As valuable as internal navigation is,
+ external sources are essential to see how scholarly your authors might be.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+Nutanix Calm: First Year Retrospective
+
+1: Sales Kick Off and Acquisition
+
+One year ago, I attended the Nutanix 2017 SKO (Sales Kick Off) conference where the global salesforce of 1000 came together to celebrate the past year and train for selling the next year.
+I was not a Nutanix employee, because the acquisition of my current employeer Calm.io, the start-up headquartered in Bangalore, India had not completed.
+
+It was an odd moment in my family life because we were already in transition to move to Austin, Texas from San Jose, California
+where our old home was less than a fifteen minute drive from Nutanix headquarters.
+This transition was prompted by my wife's and my desire to improve both predescesor and successor family generations for the respective reasons around support and education.
+
+Fortunately, during my first interview with Ajay Argawal, VP of Americas Sales Engineering, we agreed to explore my role as a DevOps specialist overlay to the entire Americas organization
+and to build demand for Calm, which required frequent travel for customer engagement, so my new home away from HQ was not a signficant detractor for my hiring.
+This was the first factor I discovered about Nutanix that sets it apart from most companies: upwards of two-thirds of the Nutants work remotely and we collaborate via email, phone,
+Slack, web conference regularly. Of course, Nutants debate about fragmentation across Google Sites, Sharepoint, Yammer, Workplace, and Siesmic, too. But as I have learned,
+you can participate and learn about nearly anything and your contributions help move forward the social hive mind of Nutanix.
+
+During my second interview with John Loiacano, Director of Systems Engineering, it was his third day on the job and he didn't know much about Calm or myself, so we spend an hour
+pitching and collaborating on what Nutanix and Calm are and how they and we would collaborate together. This became the second discovery about Nutanix culture:
+everyone was instantly comfortable working with and discovering new people, ideas, and products; there is an open attitude in this six year old company's start-up roots
+because their product was disruptive for an entire industry and that required customers to learn to grow past the traditional constraints of their jobs.
+
+I landed in Las Vegas on a Sunday, excited and curious to learn about Nutanix culture and customer success to look for clues about the future of Nutanix and Calm together.
+I went to the Sales Engineer training track and in the first session, I met my first colleague from Product Management, Denis Guyadeen, who oversees Containers on the Nutanix platform and is
+an ardant DevOps envangelist inside the company. Unlike most Nutants, he knew about the impending Calm acquisition and he was even more excited to work with the Calm team than I could have expected.
+This theme foreshadowed the rest of my first year at Nutanix. 
+At mid-day break between sessions, I finally reuinited with my Calm colleagues from Bangalore: Aaditya Sood, the CEO of Calm.io and Jasnoor Gill, the Calm Product Manager.
+They introduced me briefly to some of the Nutanix executives who had heard of me being the only U.S. employee of Calm and I would joke that I was the offshore resource.
+This third realization of Nutanix being a global company, where the world is flat, was another shared value with Calm, but it was happening on much larger scale.
+
+Monday morning, when I ran into my San Jose neighbor, Johnny Vieux, an early employee of Nutanix, we were both surprised to see each other.
+I knew Johnny because I walked my dog or chased my kids past his house every day and saw him regularly at school
+when we picked up or dropped off our kids, but we never had discussed our careers.
+
+"Mark, what are you doing at SKO?" asked Johnny.
+"Good to see you, I can't answer yet," I replied. I told him that there would be an announcement in the second keynote that followed.
+
+They introduced me to Binny Gill, the Cheif Architect, and the discussion progressed into describing the mechanics of an iTunes AppStore(tm) experience for Calm blueprints, which we now demonstrate as the Nutanix Marketplace.

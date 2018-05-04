@@ -40,6 +40,15 @@
     </item>
     
     <item>
+      <title>Blog</title>
+      <link>http://mlavi.github.io/tags/blog/</link>
+      <pubDate>Sun, 15 Apr 2018 12:46:39 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Blueprint</title>
       <link>http://mlavi.github.io/tags/blueprint/</link>
       <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
@@ -270,6 +279,15 @@
       <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
       
       <guid>http://mlavi.github.io/tags/maturity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Navigation</title>
+      <link>http://mlavi.github.io/tags/navigation/</link>
+      <pubDate>Sun, 15 Apr 2018 12:46:39 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/tags/navigation/</guid>
       <description></description>
     </item>
     

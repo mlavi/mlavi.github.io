@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 18 Feb 2018 12:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 15 Apr 2018 12:46:39 -0700</lastBuildDate>
     
 	<atom:link href="http://mlavi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>External Source Citation Clouds</title>
+      <link>http://mlavi.github.io/post/blog-link-navigation/</link>
+      <pubDate>Sun, 15 Apr 2018 12:46:39 -0700</pubDate>
+      
+      <guid>http://mlavi.github.io/post/blog-link-navigation/</guid>
+      <description>&lt;p&gt;I love tag clouds, given sufficient meta-data, they help navigate through
+ a slice of an information corpus. As valuable as internal navigation is,
+ external sources are essential to see how scholarly your authors might be.
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Calm.io: a blog series recap!</title>
@@ -30,7 +42,7 @@
     </item>
     
     <item>
-      <title>DevOps Maturity Diagram</title>
+      <title>The DevOps Maturity Diagram</title>
       <link>http://mlavi.github.io/post/devops-maturity-diagram/</link>
       <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
       
@@ -42,6 +54,14 @@
 &lt;blockquote&gt;
 &lt;p&gt;Let me share what I’ve learned on my journey to DevOps: it is a culturally
  rendered term and it has a different meaning for everyone.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In that article, I go on to define DevOps and explain the term:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;div style=&#34;text-align: center; font-weight: bold; font-size: large;&#34;&gt;DevOps
+ is the &lt;em&gt;process&lt;/em&gt; of removing all friction
+ &lt;br /&gt;between the developer and customer value.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -266,6 +286,17 @@ It&amp;rsquo;s even better when you can optimize and render the new map in real-
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
 and technical debt follow as I start my Infrastructure as Code blog.
 &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://mlavi.github.io/post/do_not_hire_devops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://mlavi.github.io/post/do_not_hire_devops/</guid>
+      <description>Do Not Hire DevOps: How to Build a DevOps Culture for Long-Term Success
+A lightening talk: 20 slides, auto advancement every 15 seconds.
+DevOps has no universal definition (by design) or prescription for success, so there is rampant abuse, hype, and failure by our practitioners and industry. I will give an honest and critical look at short-term failures and what it takes to build a DevOps culture for long-term success.</description>
     </item>
     
   </channel>
