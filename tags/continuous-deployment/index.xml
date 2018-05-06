@@ -2,26 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Continuous Deployment on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/continuous-deployment/</link>
+    <link>https://mlavi.github.io/tags/continuous-deployment/</link>
     <description>Recent content in Continuous Deployment on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Mon, 28 Dec 2015 12:00:00 -0700</lastBuildDate>
     
-	<atom:link href="http://mlavi.github.io/tags/continuous-deployment/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mlavi.github.io/tags/continuous-deployment/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Demystifying Continuous Integration, Delivery, and Deployment</title>
-      <link>http://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
+      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
       <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
+      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written by me, posted on December 28, 2015 at
+ was originally written and posted by me on December 28, 2015 at
 &lt;a href=&#34;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/&#34;&gt;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/&lt;/a&gt;,
-and slightly enhanced on February 18, 2018.
+and slightly enhanced on February 18, 2018, be sure to see the
+&lt;a href=&#34;#postscript-2018-04-13-netscape-tinderbox&#34;&gt;Postscript&lt;/a&gt; for more perspective!
 &lt;/p&gt;</description>
     </item>
     

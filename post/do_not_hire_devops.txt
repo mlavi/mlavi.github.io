@@ -1,0 +1,187 @@
+Do Not Hire DevOps: How to Build a DevOps Culture for Long-Term Success
+
+A lightening talk: 20 slides, auto advancement every 15 seconds.
+
+DevOps has no universal definition (by design) or prescription for success, so there is rampant abuse, hype, and failure by our practitioners and industry. I will give an honest and critical look at short-term failures and what it takes to build a DevOps culture for long-term success.
+
+Who am I?
+=========
+
+Mark Lavi, DevOps Solutions Architect, Nutanix
+
+- Webmaster, News Corporation/Delphi
+- Webmaster, cnn/fn
+- Webmaster and Evangelist, Netscape
+- Webmaster and IT Architect, SGI
+- Operations, Kaazing
+- DevOps Manager, Pertino
+- DevOps Evangelist, Calm.io (acquired by Nutanix)
+
+My career has been Dev+Ops since the beginning of the commercial Internet.
+
+No Universal Definition of DevOps
+=================================
+
+- By design: ambiguity makes it a dynamic term
+- No one and everyone is an authority, which leads to:
+- Image:
+"...When everyone's super, no one will be." --Syndrome, The Incredibles
+https://www.youtube.com/watch?v=GYmHYQPaHaw&t=46s
+https://memegenerator.net/Incredibles-Syndrome
+https://en.wikiquote.org/wiki/The_Incredibles#Syndrome_.28Buddy_Pine_.2F_IncrediBoy.29
+"Our powers made us special."
+"Everyone's special, Dash."
+"Which is another way of saying: no one is."
+https://www.youtube.com/watch?v=1E9pKU_N15A&t=43s
+
+Rampant Abuse of the Term DevOps
+================================
+
+- Analysts
+  - Next generation DevOps 2.0? B.S. Mode 2 cloud native only = DevOps
+  - "X tools for a successful DevOps practice" clickbait to LinkedIn DevOps/AWS groups
+  - Lots of stuff on devops.com :)
+- Our industry
+  - DevOps certification: WTF?
+- Our practitioners
+  - "I can tell you if I see it, but I can't tell you what it is."
+  - "Let me do DevOps and I'll do whatever you desire" = false promise
+  - Aspects and fragments which do not represent the journey:
+    - A sysadmin who programs? a developer who gets production alerts?
+    - DevOps === Continuous Deployment
+
+There is so much hype written about DevOps that the term's ambiguity leads to abuse,
+poor perception, and diminishing of our perceived impact.
+We must have the courage to define DevOps, identify problems, and champion corrections.
+
+My DevOps Definition
+====================
+
+"DevOps is the process of removing friction between the developer and customer value."
+
+Use this as a lens to evaluate usage of the term, I could talk for hours on the implications
+and how I arrived at this definition, but it covers all of the nuances I've encountered in my career.
+It also is a business definition which aligns dev, test, ops with the organization mission.
+
+One More Lens
+=============
+
+Pets versus Cattle
+cite?
+
+Pets = single point of failure, manual tending, long lived, embroiled in emotional values
+Cattle = ephemeral fleet management and automation for SLAs, no remediation instead STONITH: shoot the other node in the head
+
+With these two lenses, now we can analyze the problems and solutions.
+
+[Image idea: Cattle]
+
+Why Hire DevOps
+===============
+
+- We map the value chain of the business across fragmented
+  domains, agendas, tools, and methods
+  of dev, test, and ops teams
+- We integrate these disparate systems and teams to enable
+  continuous integration, delivery, and deployment thereby
+  achieving business agility.
+
+[Image/meme idea: Indistinguishable from magic?]
+
+Interdisciplinary Talent is Hard to Find and Keep
+=================================================
+
+- We are expensive unicorns, regularly solicited by recruiters, so we can move on
+- We leave when we:
+  - encounter below market value pay, promotion, or responsibility to change culture
+  - inherit too much debt without corrective management support
+
+[Image idea: unicorn(s) with $ and rainbow poop]
+
+DevOps Inherits Cultural Debt
+=============================
+
+Cause & Effect
+
+- waterfall, agilefall work planning
+  - date driven quality increases risk; anti-agile
+- risk adverse culture
+  - extensive procedures designed for "safety" is friction
+  - heroics demanded out of business hours, weekends, vacations leads to burn out
+- political decision making
+  - unsupportive management blocks change champions
+  - siloed teams and departments, each a pit of technical debt
+  - manual hand offs is barrier to automation
+
+DevOps Inherits Technical Debt
+==============================
+
+Cause & Effect
+
+- no metrics in dev, test, or ops
+    - no baseline, no visibility, no improvement
+- pet architecture (SPoF)
+    - monoliths with hard coded configuration fragments efforts, increases risk
+- pet operations
+    - change controls with outages
+    - heroic acts in the middle of the night lead to burn out without a team to back you up
+    - granular monitoring alerts leads to drowning in hysterysis and masking actual problems
+- pet datacenters (SPoF)
+
+When you use the lens, you will see pets everywhere. Including...
+
+Pet DevOps
+==========
+
+- Cultural Debt fostered on DevOps team(s) is Not Agile.
+  - When we accept all of the cultural and technical debt
+  we become the bottleneck to agility
+- Scaling DevOps efforts through headcount is a pet strategy
+- If we are dishonest with our organizational change agent potential, we remain pets and will burn out
+- When the DevOps team is an expensive pet bottleneck, we have an unsustainable business practice
+
+DO NOT HIRE DevOps
+==================
+
+- Yes, I mean it.
+- Sure, hiring DevOps can be a catalyst for change, but...
+- Unless you have enlightened or agile minded management, you become pet DevOps and a bottleneck
+
+Do I Mean It?
+=============
+
+- Yes: take DevOps out of your title at work (but not on LinkedIn) so people don't have you "do DevOps" for them.
+- I really mean it, so what is the corollary?
+
+We are all DevOps Cattle
+========================
+
+- We must evolve the culture to distribute DevOps across the organization: cattle
+- We must transform dev, test, and Operations to take on a DevOps mindset
+  - Find and align steak holders; the higher their responsibility, the better to support our efforts
+  - Decompose DevOps monolith team into distributed DevOps across all teams
+  - Technical debt epics, stories, and sprints
+  - Refactor and interate towards automation
+- Anything less represents a failure in agility and our potential impact on the business value delivery
+
+Improve DevOps Practices
+========================
+
+- Culture Hacking
+  - Bring case studies of how other engineering teams accomplish DevOps
+  - Join and enhance your community: attend DevOpsDays, MeetUps, conferences
+- Technology Hacking
+  - Establish meaningful metrics to show improvement in dev, test, ops
+  - Establish KPIs to show business impact
+
+The journey to DevOps never ends: we must continue to pursue the state of the art!
+
+Thank You, Get in Touch!
+========================
+
+"DevOps is the process of removing friction between the developer and customer value."
+
+- mailto:mark.lavi@nutanix.com
+- http://mlavi.github.io/about/ = Infrastructure as Code blog with DevOps evangelism talks for you to use.
+- https://www.linkedin.com/in/marklavi
+- https://twitter.com/calm_mark

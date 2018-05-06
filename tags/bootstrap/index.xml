@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bootstrap on Mark&#39;s Blog</title>
+    <link>https://mlavi.github.io/tags/bootstrap/</link>
+    <description>Recent content in Bootstrap on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 05 May 2018 13:42:39 -0700</lastBuildDate>
+    
+	<atom:link href="https://mlavi.github.io/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DevOps in a Box</title>
+      <link>https://mlavi.github.io/post/devops-in-a-box/</link>
+      <pubDate>Sat, 05 May 2018 13:42:39 -0700</pubDate>
+      
+      <guid>https://mlavi.github.io/post/devops-in-a-box/</guid>
+      <description>&lt;p&gt;My long time fantasy has been to demonstrate an entire CI/CD pipeline with
+ continuous operations of applications to discuss behavior driven operations
+ and testing as monitors.&lt;/p&gt;
+
+&lt;p&gt;The call for this happened over and over at DevOpsDays to answer: how does one
+ learn DevOps, practice site reliability engineering, or have a full
+ application lifecycle environment?&lt;/p&gt;
+
+&lt;p&gt;So let&amp;rsquo;s create a minimal viable product &lt;a href=&#34;../devops-btd-pattern&#34;&gt;BTD scenario&lt;/a&gt;
+ of my &lt;a href=&#34;../devops-automation&#34;&gt;DevOps Automation&lt;/a&gt; system,
+ extend it to prefix Governance and suffix Management,
+ and then drive maturity to illustrate and discuss best practices.
+
+I&amp;rsquo;ve been discussing this with my Nutanix colleagues
+ &lt;a href=&#34;https://github.com/mjastad&#34;&gt;@mjasted&lt;/a&gt; and
+ &lt;a href=&#34;https://github.com/andytschmid/&#34;&gt;@andytschmid&lt;/a&gt; for a while,
+ so here is the outline and plan of action!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

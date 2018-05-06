@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maturity on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/maturity/</link>
+    <link>https://mlavi.github.io/tags/maturity/</link>
     <description>Recent content in Maturity on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Wed, 12 Apr 2017 12:00:00 -0700</lastBuildDate>
     
-	<atom:link href="http://mlavi.github.io/tags/maturity/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mlavi.github.io/tags/maturity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The DevOps Maturity Diagram</title>
-      <link>http://mlavi.github.io/post/devops-maturity-diagram/</link>
+      <link>https://mlavi.github.io/post/devops-maturity-diagram/</link>
       <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops-maturity-diagram/</guid>
+      <guid>https://mlavi.github.io/post/devops-maturity-diagram/</guid>
       <description>&lt;p&gt;The opening of
  &lt;a href=&#34;../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/&#34;&gt;my first Calm.io DevOps article&lt;/a&gt;
  started with:&lt;/p&gt;
@@ -35,7 +35,8 @@
  &lt;br /&gt;between the developer and customer value.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;Let me share my experience to easily chart the progressive stages of DevOps maturity.
+&lt;/p&gt;</description>
     </item>
     
   </channel>

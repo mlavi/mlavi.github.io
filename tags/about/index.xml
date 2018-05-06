@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/about/</link>
+    <link>https://mlavi.github.io/tags/about/</link>
     <description>Recent content in About on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Fri, 06 Mar 2015 14:11:47 -0800</lastBuildDate>
     
-	<atom:link href="http://mlavi.github.io/tags/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mlavi.github.io/tags/about/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Mark</title>
-      <link>http://mlavi.github.io/about/</link>
+      <link>https://mlavi.github.io/about/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://mlavi.github.io/about/</guid>
+      <guid>https://mlavi.github.io/about/</guid>
       <description>&lt;p&gt;A DevOps professional with pioneering work on the world&amp;rsquo;s biggest Internet real-time event
  and web sites across the engineering, operations, content, and marketing disciplines.
  Mark&amp;rsquo;s focus is on people and software development along with system design thinking for the
@@ -28,10 +28,10 @@
     
     <item>
       <title>Time for a new development project!</title>
-      <link>http://mlavi.github.io/post/first/</link>
+      <link>https://mlavi.github.io/post/first/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>http://mlavi.github.io/post/first/</guid>
+      <guid>https://mlavi.github.io/post/first/</guid>
       <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
 and technical debt follow as I start my Infrastructure as Code blog.

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authentication on Mark&#39;s Blog</title>
+    <link>https://mlavi.github.io/tags/authentication/</link>
+    <description>Recent content in Authentication on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 22 Apr 2018 12:46:39 -0700</lastBuildDate>
+    
+	<atom:link href="https://mlavi.github.io/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SSH Key Authentication Overview</title>
+      <link>https://mlavi.github.io/post/ssh-key-authentication/</link>
+      <pubDate>Sun, 22 Apr 2018 12:46:39 -0700</pubDate>
+      
+      <guid>https://mlavi.github.io/post/ssh-key-authentication/</guid>
+      <description>&lt;p&gt;For those of you new to automation, Linux, and SSH keypairs:
+ Calm Marketplace blueprints leverage all of these with cloud-init to
+ enable security best-practices, but it can be overwhelming on first
+ exposure to handle every link in the chain to launch your first blueprint.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

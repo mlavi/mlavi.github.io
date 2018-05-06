@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Operating System on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/operating-system/</link>
+    <link>https://mlavi.github.io/tags/operating-system/</link>
     <description>Recent content in Operating System on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sat, 12 Mar 2016 15:44:02 -0800</lastBuildDate>
     
-	<atom:link href="http://mlavi.github.io/tags/operating-system/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mlavi.github.io/tags/operating-system/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Declarative Operating Systems</title>
-      <link>http://mlavi.github.io/post/declarative_os/</link>
+      <link>https://mlavi.github.io/post/declarative_os/</link>
       <pubDate>Sat, 12 Mar 2016 15:44:02 -0800</pubDate>
       
-      <guid>http://mlavi.github.io/post/declarative_os/</guid>
+      <guid>https://mlavi.github.io/post/declarative_os/</guid>
       <description>&lt;p&gt;A new breed of operating systems adopt declarative configuration management for
 an interesting hybrid! OS maintenance of long-lived servers remains a challenge
 for our &amp;ldquo;mutable&amp;rdquo; infrastructure.

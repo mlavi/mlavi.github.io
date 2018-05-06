@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Diagram on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/diagram/</link>
+    <link>https://mlavi.github.io/tags/diagram/</link>
     <description>Recent content in Diagram on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Wed, 12 Apr 2017 12:00:00 -0700</lastBuildDate>
     
-	<atom:link href="http://mlavi.github.io/tags/diagram/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mlavi.github.io/tags/diagram/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The DevOps Maturity Diagram</title>
-      <link>http://mlavi.github.io/post/devops-maturity-diagram/</link>
+      <link>https://mlavi.github.io/post/devops-maturity-diagram/</link>
       <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops-maturity-diagram/</guid>
+      <guid>https://mlavi.github.io/post/devops-maturity-diagram/</guid>
       <description>&lt;p&gt;The opening of
  &lt;a href=&#34;../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/&#34;&gt;my first Calm.io DevOps article&lt;/a&gt;
  started with:&lt;/p&gt;
@@ -35,15 +35,16 @@
  &lt;br /&gt;between the developer and customer value.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;Let me share my experience to easily chart the progressive stages of DevOps maturity.
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Database Change Management</title>
-      <link>http://mlavi.github.io/post/database_change_management/</link>
+      <link>https://mlavi.github.io/post/database_change_management/</link>
       <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/database_change_management/</guid>
+      <guid>https://mlavi.github.io/post/database_change_management/</guid>
       <description>&lt;p&gt;Database configuration management tools allow us version the database and treat it like code!
 We want DevOps, not mysterious, hidden, hand crafted DBA ops whenever possible. Another
 flashback to 1998.
@@ -52,10 +53,10 @@ flashback to 1998.
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>http://mlavi.github.io/post/devops-automation/</link>
+      <link>https://mlavi.github.io/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops-automation/</guid>
+      <guid>https://mlavi.github.io/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
 Via open source and this blog, we can elevate the state of our software engineering and service design!
 &lt;/p&gt;</description>
@@ -63,10 +64,10 @@ Via open source and this blog, we can elevate the state of our software engineer
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>http://mlavi.github.io/post/diagram/</link>
+      <link>https://mlavi.github.io/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/diagram/</guid>
+      <guid>https://mlavi.github.io/post/diagram/</guid>
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project.
 One needs to start with a map of the world before deciding where to focus their efforts.
 It&amp;rsquo;s even better when you can optimize and render the new map in real-time!

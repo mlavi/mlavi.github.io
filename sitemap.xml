@@ -3,368 +3,416 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://mlavi.github.io/post/blog-link-navigation/</loc>
-    <lastmod>2018-04-15T12:46:39-07:00</lastmod>
+    <loc>https://mlavi.github.io/post/devops-in-a-box/</loc>
+    <lastmod>2018-05-05T13:42:39-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/calm.io-recap/</loc>
+    <loc>https://mlavi.github.io/post/ssh-key-authentication/</loc>
+    <lastmod>2018-04-22T12:46:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mlavi.github.io/post/calm.io-recap/</loc>
     <lastmod>2018-02-18T12:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/devops-maturity-diagram/</loc>
+    <loc>https://mlavi.github.io/post/devops-maturity-diagram/</loc>
     <lastmod>2017-04-12T12:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</loc>
+    <loc>https://mlavi.github.io/post/ten_steps_from_pets_to_cattle/</loc>
+    <lastmod>2017-01-25T11:05:13-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</loc>
     <lastmod>2016-05-26T12:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</loc>
+    <loc>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</loc>
     <lastmod>2016-05-24T12:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/declarative_os/</loc>
+    <loc>https://mlavi.github.io/post/declarative_os/</loc>
     <lastmod>2016-03-12T15:44:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</loc>
+    <loc>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</loc>
     <lastmod>2015-12-28T12:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</loc>
+    <loc>https://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</loc>
     <lastmod>2015-11-03T12:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</loc>
+    <loc>https://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</loc>
     <lastmod>2015-10-20T12:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/devops_demystified/</loc>
+    <loc>https://mlavi.github.io/post/devops_demystified/</loc>
     <lastmod>2015-10-13T12:03:32-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</loc>
+    <loc>https://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</loc>
     <lastmod>2015-09-23T12:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/artifact_repositories/</loc>
+    <loc>https://mlavi.github.io/post/artifact_repositories/</loc>
     <lastmod>2015-08-26T08:59:59-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/database_change_management/</loc>
+    <loc>https://mlavi.github.io/post/database_change_management/</loc>
     <lastmod>2015-08-17T21:09:12-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/html-slideshow-survey/</loc>
+    <loc>https://mlavi.github.io/post/html-slideshow-survey/</loc>
     <lastmod>2015-04-23T12:59:26-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/build-lamp-stack-with-phing/</loc>
+    <loc>https://mlavi.github.io/post/build-lamp-stack-with-phing/</loc>
     <lastmod>2015-04-10T08:44:19-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/container-infrastructure-strategy/</loc>
+    <loc>https://mlavi.github.io/post/container-infrastructure-strategy/</loc>
     <lastmod>2015-04-04T07:55:39-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/devops-btd-pattern/</loc>
+    <loc>https://mlavi.github.io/post/devops-btd-pattern/</loc>
     <lastmod>2015-03-18T21:02:15-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/devops-automation/</loc>
+    <loc>https://mlavi.github.io/post/devops-automation/</loc>
     <lastmod>2015-03-11T10:35:41-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/diagram/</loc>
+    <loc>https://mlavi.github.io/post/diagram/</loc>
     <lastmod>2015-03-10T23:16:27-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/about/</loc>
+    <loc>https://mlavi.github.io/about/</loc>
     <lastmod>2015-03-06T14:11:47-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/first/</loc>
+    <loc>https://mlavi.github.io/post/first/</loc>
     <lastmod>2015-03-06T14:11:47-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/do_not_hire_devops/</loc>
-  </url>
-  
-  <url>
-    <loc>http://mlavi.github.io/tags/about/</loc>
+    <loc>https://mlavi.github.io/tags/about/</loc>
     <lastmod>2015-03-06T14:11:47-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/artifact/</loc>
+    <loc>https://mlavi.github.io/tags/artifact/</loc>
     <lastmod>2015-08-26T08:59:59-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/automation/</loc>
+    <loc>https://mlavi.github.io/tags/authentication/</loc>
+    <lastmod>2018-04-22T12:46:39-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mlavi.github.io/tags/automation/</loc>
     <lastmod>2018-02-18T12:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/blog/</loc>
-    <lastmod>2018-04-15T12:46:39-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mlavi.github.io/tags/blueprint/</loc>
+    <loc>https://mlavi.github.io/tags/blueprint/</loc>
     <lastmod>2015-11-03T12:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/build/</loc>
+    <loc>https://mlavi.github.io/tags/bootstrap/</loc>
+    <lastmod>2018-05-05T13:42:39-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mlavi.github.io/tags/build/</loc>
     <lastmod>2015-08-26T08:59:59-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/calm.io/</loc>
-    <lastmod>2018-02-18T12:00:00-07:00</lastmod>
+    <loc>https://mlavi.github.io/tags/calm/</loc>
+    <lastmod>2018-04-22T12:46:39-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/career/</loc>
+    <loc>https://mlavi.github.io/tags/career/</loc>
     <lastmod>2015-03-06T14:11:47-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/categories/</loc>
+    <loc>https://mlavi.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/cms/</loc>
+    <loc>https://mlavi.github.io/tags/cattle/</loc>
+    <lastmod>2017-01-25T11:05:13-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mlavi.github.io/tags/cloud-init/</loc>
+    <lastmod>2018-04-22T12:46:39-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mlavi.github.io/tags/cms/</loc>
     <lastmod>2015-03-06T14:11:47-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/code/</loc>
+    <loc>https://mlavi.github.io/tags/code/</loc>
     <lastmod>2015-08-17T21:09:12-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/configuration/</loc>
+    <loc>https://mlavi.github.io/tags/configuration/</loc>
     <lastmod>2015-04-04T07:55:39-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/configuration-management/</loc>
+    <loc>https://mlavi.github.io/tags/configuration-management/</loc>
     <lastmod>2016-05-26T12:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/container/</loc>
+    <loc>https://mlavi.github.io/tags/container/</loc>
     <lastmod>2015-04-04T07:55:39-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/continuous-delivery/</loc>
+    <loc>https://mlavi.github.io/tags/continuous-delivery/</loc>
     <lastmod>2015-12-28T12:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/continuous-deployment/</loc>
+    <loc>https://mlavi.github.io/tags/continuous-deployment/</loc>
     <lastmod>2015-12-28T12:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/continuous-integration/</loc>
+    <loc>https://mlavi.github.io/tags/continuous-integration/</loc>
     <lastmod>2015-12-28T12:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/culture/</loc>
+    <loc>https://mlavi.github.io/tags/culture/</loc>
     <lastmod>2015-10-20T12:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/database/</loc>
+    <loc>https://mlavi.github.io/tags/database/</loc>
     <lastmod>2015-08-17T21:09:12-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/declarative/</loc>
+    <loc>https://mlavi.github.io/tags/declarative/</loc>
     <lastmod>2016-03-12T15:44:02-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/definition/</loc>
+    <loc>https://mlavi.github.io/tags/definition/</loc>
     <lastmod>2015-10-13T12:03:32-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/deploy/</loc>
+    <loc>https://mlavi.github.io/tags/deploy/</loc>
     <lastmod>2015-03-18T21:02:15-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/devops/</loc>
-    <lastmod>2018-02-18T12:00:00-07:00</lastmod>
+    <loc>https://mlavi.github.io/tags/devops/</loc>
+    <lastmod>2018-05-05T13:42:39-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/diagram/</loc>
+    <loc>https://mlavi.github.io/tags/diagram/</loc>
     <lastmod>2017-04-12T12:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/distribution/</loc>
+    <loc>https://mlavi.github.io/tags/distribution/</loc>
     <lastmod>2015-08-26T08:59:59-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/html/</loc>
+    <loc>https://mlavi.github.io/tags/html/</loc>
     <lastmod>2015-04-23T12:59:26-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/immutable/</loc>
+    <loc>https://mlavi.github.io/tags/immutable/</loc>
     <lastmod>2016-05-26T12:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/infrastructure/</loc>
+    <loc>https://mlavi.github.io/tags/infrastructure/</loc>
     <lastmod>2015-04-04T07:55:39-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/infrastructure-as-code/</loc>
+    <loc>https://mlavi.github.io/tags/infrastructure-as-code/</loc>
     <lastmod>2015-11-03T12:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/lamp/</loc>
+    <loc>https://mlavi.github.io/tags/lamp/</loc>
     <lastmod>2015-04-10T08:44:19-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/</loc>
-    <lastmod>2018-04-15T12:46:39-07:00</lastmod>
+    <loc>https://mlavi.github.io/tags/linux/</loc>
+    <lastmod>2018-04-22T12:46:39-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/maturity/</loc>
+    <loc>https://mlavi.github.io/</loc>
+    <lastmod>2018-05-05T13:42:39-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mlavi.github.io/tags/maturity/</loc>
     <lastmod>2017-04-12T12:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/navigation/</loc>
-    <lastmod>2018-04-15T12:46:39-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mlavi.github.io/tags/operating-system/</loc>
+    <loc>https://mlavi.github.io/tags/operating-system/</loc>
     <lastmod>2016-03-12T15:44:02-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/pattern/</loc>
-    <lastmod>2015-03-18T21:02:15-07:00</lastmod>
+    <loc>https://mlavi.github.io/tags/pattern/</loc>
+    <lastmod>2018-05-05T13:42:39-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/phing/</loc>
+    <loc>https://mlavi.github.io/tags/pets/</loc>
+    <lastmod>2017-01-25T11:05:13-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mlavi.github.io/tags/phing/</loc>
     <lastmod>2015-04-10T08:44:19-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/post/</loc>
-    <lastmod>2018-04-15T12:46:39-07:00</lastmod>
+    <loc>https://mlavi.github.io/post/</loc>
+    <lastmod>2018-05-05T13:42:39-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/sgi/</loc>
+    <loc>https://mlavi.github.io/tags/security/</loc>
+    <lastmod>2018-04-22T12:46:39-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mlavi.github.io/tags/sgi/</loc>
     <lastmod>2015-04-10T08:44:19-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/slide/</loc>
+    <loc>https://mlavi.github.io/tags/slide/</loc>
     <lastmod>2015-04-23T12:59:26-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/</loc>
+    <loc>https://mlavi.github.io/tags/ssh/</loc>
+    <lastmod>2018-04-22T12:46:39-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mlavi.github.io/tags/</loc>
     <lastmod>2015-03-06T14:11:47-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/test/</loc>
+    <loc>https://mlavi.github.io/tags/test/</loc>
     <lastmod>2015-03-18T21:02:15-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/web/</loc>
+    <loc>https://mlavi.github.io/tags/web/</loc>
     <lastmod>2015-04-23T12:59:26-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mlavi.github.io/tags/webmaster/</loc>
+    <loc>https://mlavi.github.io/tags/webmaster/</loc>
     <lastmod>2015-04-10T08:44:19-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mlavi.github.io/tags/windows/</loc>
+    <lastmod>2018-04-22T12:46:39-07:00</lastmod>
     <priority>0</priority>
   </url>
   

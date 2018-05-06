@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Definition on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/definition/</link>
+    <link>https://mlavi.github.io/tags/definition/</link>
     <description>Recent content in Definition on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Tue, 13 Oct 2015 12:03:32 -0700</lastBuildDate>
     
-	<atom:link href="http://mlavi.github.io/tags/definition/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mlavi.github.io/tags/definition/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DevOps Demystified</title>
-      <link>http://mlavi.github.io/post/devops_demystified/</link>
+      <link>https://mlavi.github.io/post/devops_demystified/</link>
       <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/devops_demystified/</guid>
+      <guid>https://mlavi.github.io/post/devops_demystified/</guid>
       <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
  for many software engineering organizations. Let me define DevOps to help you
  understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!

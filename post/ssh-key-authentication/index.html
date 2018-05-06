@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
   <title>
-    Navigation // Mark&#39;s Blog
+    SSH Key Authentication Overview // Mark&#39;s Blog
   </title>
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
@@ -14,17 +14,17 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.38.2" />
+<meta name="generator" content="Hugo 0.40.2" />
 
-  <meta property="og:title" content="Navigation" />
+  <meta property="og:title" content="SSH Key Authentication Overview" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://mlavi.github.io/tags/navigation/" />
+<meta property="og:url" content="https://mlavi.github.io/post/ssh-key-authentication/" />
 
 
   
-  <link rel="stylesheet" href="http://mlavi.github.io//css/mlavi.css">
+  <link rel="stylesheet" href="https://mlavi.github.io//css/mlavi.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
   
@@ -33,7 +33,7 @@
   
   
 
-  <link rel="stylesheet" href="http://mlavi.github.io//css/redlounge.css">
+  <link rel="stylesheet" href="https://mlavi.github.io//css/redlounge.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -43,7 +43,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.png">
 
   
-  <link href="http://mlavi.github.io/tags/navigation/index.xml" rel="alternate" type="application/rss+xml" title="Mark&#39;s Blog" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Mark&#39;s Blog" />
 
     
   
@@ -63,6 +63,8 @@
 </head>
 
 <body>
+	
+
 	<div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-1-4" style="background: black no-repeat url(/img/firefox_nebula.jpg);">
   <div class="header">
@@ -75,8 +77,8 @@
  
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><a href="http://mlavi.github.io/">Mark&#39;s Blog <span class="nav-item-separator">//</span> Home</a></li>
-        <li class="nav-item"><span class="nav-item-separator">//</span> <a class="subscribe-button icon-feed" href="http://mlavi.github.io/tags/navigation/index.xml">Subscribe</a></li>
+        <li class="nav-item"><a href="https://mlavi.github.io/">Mark&#39;s Blog <span class="nav-item-separator">//</span> Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span> <a class="subscribe-button icon-feed" href="">Subscribe</a></li>
         
       </ul>
       <ul id="all-tags"><span style="background: black;"><em><stong>Tag Cloud</strong></em></span><br />
@@ -84,7 +86,7 @@
       
       <li><a href="../../tags/devops">devops</a><span
         class="decorative-marker">//</span><a
-        name="devops">13</a></li>
+        name="devops">15</a></li>
       
       <li><a href="../../tags/automation">automation</a><span
         class="decorative-marker">//</span><a
@@ -106,6 +108,10 @@
         class="decorative-marker">//</span><a
         name="about">2</a></li>
       
+      <li><a href="../../tags/calm">calm</a><span
+        class="decorative-marker">//</span><a
+        name="calm">2</a></li>
+      
       <li><a href="../../tags/configuration-management">configuration-management</a><span
         class="decorative-marker">//</span><a
         name="configuration-management">2</a></li>
@@ -117,6 +123,10 @@
       <li><a href="../../tags/infrastructure">infrastructure</a><span
         class="decorative-marker">//</span><a
         name="infrastructure">2</a></li>
+      
+      <li><a href="../../tags/pattern">pattern</a><span
+        class="decorative-marker">//</span><a
+        name="pattern">2</a></li>
       
       <li><a href="../../tags/web">web</a><span
         class="decorative-marker">//</span><a
@@ -130,21 +140,29 @@
         class="decorative-marker">//</span><a
         name="artifact">1</a></li>
       
-      <li><a href="../../tags/blog">blog</a><span
+      <li><a href="../../tags/authentication">authentication</a><span
         class="decorative-marker">//</span><a
-        name="blog">1</a></li>
+        name="authentication">1</a></li>
       
       <li><a href="../../tags/blueprint">blueprint</a><span
         class="decorative-marker">//</span><a
         name="blueprint">1</a></li>
       
-      <li><a href="../../tags/calm.io">calm.io</a><span
+      <li><a href="../../tags/bootstrap">bootstrap</a><span
         class="decorative-marker">//</span><a
-        name="calm.io">1</a></li>
+        name="bootstrap">1</a></li>
       
       <li><a href="../../tags/career">career</a><span
         class="decorative-marker">//</span><a
         name="career">1</a></li>
+      
+      <li><a href="../../tags/cattle">cattle</a><span
+        class="decorative-marker">//</span><a
+        name="cattle">1</a></li>
+      
+      <li><a href="../../tags/cloud-init">cloud-init</a><span
+        class="decorative-marker">//</span><a
+        name="cloud-init">1</a></li>
       
       <li><a href="../../tags/cms">cms</a><span
         class="decorative-marker">//</span><a
@@ -206,25 +224,29 @@
         class="decorative-marker">//</span><a
         name="lamp">1</a></li>
       
+      <li><a href="../../tags/linux">linux</a><span
+        class="decorative-marker">//</span><a
+        name="linux">1</a></li>
+      
       <li><a href="../../tags/maturity">maturity</a><span
         class="decorative-marker">//</span><a
         name="maturity">1</a></li>
-      
-      <li><a href="../../tags/navigation">navigation</a><span
-        class="decorative-marker">//</span><a
-        name="navigation">1</a></li>
       
       <li><a href="../../tags/operating-system">operating-system</a><span
         class="decorative-marker">//</span><a
         name="operating-system">1</a></li>
       
-      <li><a href="../../tags/pattern">pattern</a><span
+      <li><a href="../../tags/pets">pets</a><span
         class="decorative-marker">//</span><a
-        name="pattern">1</a></li>
+        name="pets">1</a></li>
       
       <li><a href="../../tags/phing">phing</a><span
         class="decorative-marker">//</span><a
         name="phing">1</a></li>
+      
+      <li><a href="../../tags/security">security</a><span
+        class="decorative-marker">//</span><a
+        name="security">1</a></li>
       
       <li><a href="../../tags/sgi">sgi</a><span
         class="decorative-marker">//</span><a
@@ -234,9 +256,17 @@
         class="decorative-marker">//</span><a
         name="slide">1</a></li>
       
+      <li><a href="../../tags/ssh">ssh</a><span
+        class="decorative-marker">//</span><a
+        name="ssh">1</a></li>
+      
       <li><a href="../../tags/test">test</a><span
         class="decorative-marker">//</span><a
         name="test">1</a></li>
+      
+      <li><a href="../../tags/windows">windows</a><span
+        class="decorative-marker">//</span><a
+        name="windows">1</a></li>
       
       </ul>
     </nav>
@@ -246,49 +276,161 @@
   </div>
 </div>
 
+	
+	
 
     <div class="content pure-u-1 pure-u-md-3-4">
-      <a name="top"></a>
-      
+		<a name="top"></a>
+		
 
-      <div class="posts">
-        
-          <section  class="post">
-            <header class="post-header">
-            
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li><a href="#under-construction">Under Construction</a></li>
+<li><a href="#the-basics">The Basics</a></li>
+<li><a href="#the-details">The Details</a></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
             <h1 class="post-title">
-              <a href="../../post/blog-link-navigation/">External Source Citation Clouds</a>
+              <a href="../../post/ssh-key-authentication/">SSH Key Authentication Overview</a>
             </h1>
-            </header>
-            <p class="post-meta">
+            <h3 class="post-subtitle">
             	
-		          <span class="post-date">
-		            <span class="post-date-day"><sup>15</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Apr</span> <span class="post-date-year">2018</span>
-		          </span>
-      				
-      				
-      					
-      				
-              
-                <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>2 min. read</em></span>
-              
-      				
-            </p>
+            </h3>
             
-              <article class="post-summary">
-            	<p>I love tag clouds, given sufficient meta-data, they help navigate through
- a slice of an information corpus. As valuable as internal navigation is,
- external sources are essential to see how scholarly your authors might be.
-</p>
-              </article>
-			  <div class="read-more-link">
-				<a href="../../post/blog-link-navigation/"><span class="read-more-slashes">//</span>Read More...</a>
-			  </div>
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>22</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Apr</span> <span class="post-date-year">2018</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            <p>For those of you new to automation, Linux, and SSH keypairs:
+ Calm Marketplace blueprints leverage all of these with cloud-init to
+ enable security best-practices, but it can be overwhelming on first
+ exposure to handle every link in the chain to launch your first blueprint.</p>
+
+<p></p>
+
+<h1 id="under-construction">Under Construction</h1>
+
+<p>I will continue to update and expand this blog, it serves as a script for
+ a quick video I plan to make.</p>
+
+<h1 id="the-basics">The Basics</h1>
+
+<ul>
+<li>Linux operating system images ready for the cloud do not have any
+accounts with credentials by default.
+
+<ul>
+<li>Therefore, one cannot remotely log in to a cloud VM = security best practice.</li>
+</ul></li>
+<li>Static passwords are pets, passwords should have a dynamic lifecycle.
+
+<ul>
+<li>But if you must use a static password, make it mathematically secure.</li>
+<li>SSH keys = long mathematical passwords, broken into public and private parts.</li>
+</ul></li>
+</ul>
+
+<p>Combining these two ideas together, one would want to insert
+ SSH public keys onto a cloud VM during instantiation.
+ For Linux, cloud-init provides this facility.</p>
+
+<h1 id="the-details">The Details</h1>
+
+<ul>
+<li>Can be generated by ssh-keygen in Linux, MacOS and by PuTTY-gen or cygwin on Windows.</li>
+<li>Make your keys passphraseless (no password to unlock) and store them in a secure place.</li>
+<li>Now the question becomes: how do I put the SSH public key onto a VM image?
+
+<ul>
+<li>Easiest way:</li>
+<li>bake credentials into the VM image by putting SSH cred on an VM,</li>
+<li>export a snapshot of the VM,</li>
+<li>use that as your image with a pre-seeded SSH credential.</li>
+<li>We use the easy way at Calm bootcamps, but it is a bad security practice.
+
+<ul>
+<li>At that point, in the Calm blueprint: you can select that image with
+the SSH credentials and upload your private key into the Credentials
+section of the blueprint.</li>
+</ul></li>
+<li>Security best practice manner:</li>
+<li>For Linux, use a cloud-init enabled image</li>
+<li>Use cloud-init to inject your public key upon VM boot
+(you can do this for AHV VMs with the guest-customization area in Calm)
+as a runtime variable</li>
+<li>Give Calm your private key as a runtime credential during launch</li>
+<li>This is the practice we use for the Marketplace blueprints on Linux.</li>
+</ul></li>
+</ul>
+
+<p>Please see this Nutanix Knowledge Base article:
+<a href="https://portal.nutanix.com/#/page/kbs/details?targetId=kA00e000000XfDKCA0">https://portal.nutanix.com/#/page/kbs/details?targetId=kA00e000000XfDKCA0</a></p>
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-ssh" href="https://mlavi.github.io//tags/ssh">ssh</a>,
+	                
+	                <a class="post-tag post-tag-authentication" href="https://mlavi.github.io//tags/authentication">authentication</a>,
+	                
+	                <a class="post-tag post-tag-windows" href="https://mlavi.github.io//tags/windows">Windows</a>,
+	                
+	                <a class="post-tag post-tag-cloud-init" href="https://mlavi.github.io//tags/cloud-init">cloud-init</a>,
+	                
+	                <a class="post-tag post-tag-linux" href="https://mlavi.github.io//tags/linux">Linux</a>,
+	                
+	                <a class="post-tag post-tag-calm" href="https://mlavi.github.io//tags/calm">calm</a>,
+	                
+	                <a class="post-tag post-tag-security" href="https://mlavi.github.io//tags/security">security</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="../../post/devops-in-a-box/">DevOps in a Box</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="../../post/calm.io-recap/">Calm.io: a blog series recap!</a>
+		            </div>
+		            
+	            </div>
             
           </section>
+          
+          	
+          
         
-      </div>
-
       <div class="footer">
 	<hr class="thin" />
 	<div class="pure-menu pure-menu-horizontal pure-menu-open">
@@ -301,6 +443,10 @@
 </div>
     </div>
   </div>
+	
+
+	
+
   
 </body>
 </html>

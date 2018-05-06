@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    DevOps in a Box // Mark&#39;s Blog
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.40.2" />
+
+  <meta property="og:title" content="DevOps in a Box" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://mlavi.github.io/post/devops-in-a-box/" />
+
+
+  
+  <link rel="stylesheet" href="https://mlavi.github.io//css/mlavi.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://mlavi.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Mark&#39;s Blog" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4" style="background: black no-repeat url(/img/firefox_nebula.jpg);">
+  <div class="header">
+    
+
+	
+
+    
+    
+ 
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="https://mlavi.github.io/">Mark&#39;s Blog <span class="nav-item-separator">//</span> Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span> <a class="subscribe-button icon-feed" href="">Subscribe</a></li>
+        
+      </ul>
+      <ul id="all-tags"><span style="background: black;"><em><stong>Tag Cloud</strong></em></span><br />
+      
+      
+      <li><a href="../../tags/devops">devops</a><span
+        class="decorative-marker">//</span><a
+        name="devops">15</a></li>
+      
+      <li><a href="../../tags/automation">automation</a><span
+        class="decorative-marker">//</span><a
+        name="automation">8</a></li>
+      
+      <li><a href="../../tags/diagram">diagram</a><span
+        class="decorative-marker">//</span><a
+        name="diagram">4</a></li>
+      
+      <li><a href="../../tags/build">build</a><span
+        class="decorative-marker">//</span><a
+        name="build">3</a></li>
+      
+      <li><a href="../../tags/culture">culture</a><span
+        class="decorative-marker">//</span><a
+        name="culture">3</a></li>
+      
+      <li><a href="../../tags/about">about</a><span
+        class="decorative-marker">//</span><a
+        name="about">2</a></li>
+      
+      <li><a href="../../tags/calm">calm</a><span
+        class="decorative-marker">//</span><a
+        name="calm">2</a></li>
+      
+      <li><a href="../../tags/configuration-management">configuration-management</a><span
+        class="decorative-marker">//</span><a
+        name="configuration-management">2</a></li>
+      
+      <li><a href="../../tags/immutable">immutable</a><span
+        class="decorative-marker">//</span><a
+        name="immutable">2</a></li>
+      
+      <li><a href="../../tags/infrastructure">infrastructure</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure">2</a></li>
+      
+      <li><a href="../../tags/pattern">pattern</a><span
+        class="decorative-marker">//</span><a
+        name="pattern">2</a></li>
+      
+      <li><a href="../../tags/web">web</a><span
+        class="decorative-marker">//</span><a
+        name="web">2</a></li>
+      
+      <li><a href="../../tags/webmaster">webmaster</a><span
+        class="decorative-marker">//</span><a
+        name="webmaster">2</a></li>
+      
+      <li><a href="../../tags/artifact">artifact</a><span
+        class="decorative-marker">//</span><a
+        name="artifact">1</a></li>
+      
+      <li><a href="../../tags/authentication">authentication</a><span
+        class="decorative-marker">//</span><a
+        name="authentication">1</a></li>
+      
+      <li><a href="../../tags/blueprint">blueprint</a><span
+        class="decorative-marker">//</span><a
+        name="blueprint">1</a></li>
+      
+      <li><a href="../../tags/bootstrap">bootstrap</a><span
+        class="decorative-marker">//</span><a
+        name="bootstrap">1</a></li>
+      
+      <li><a href="../../tags/career">career</a><span
+        class="decorative-marker">//</span><a
+        name="career">1</a></li>
+      
+      <li><a href="../../tags/cattle">cattle</a><span
+        class="decorative-marker">//</span><a
+        name="cattle">1</a></li>
+      
+      <li><a href="../../tags/cloud-init">cloud-init</a><span
+        class="decorative-marker">//</span><a
+        name="cloud-init">1</a></li>
+      
+      <li><a href="../../tags/cms">cms</a><span
+        class="decorative-marker">//</span><a
+        name="cms">1</a></li>
+      
+      <li><a href="../../tags/code">code</a><span
+        class="decorative-marker">//</span><a
+        name="code">1</a></li>
+      
+      <li><a href="../../tags/configuration">configuration</a><span
+        class="decorative-marker">//</span><a
+        name="configuration">1</a></li>
+      
+      <li><a href="../../tags/container">container</a><span
+        class="decorative-marker">//</span><a
+        name="container">1</a></li>
+      
+      <li><a href="../../tags/continuous-delivery">continuous-delivery</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-delivery">1</a></li>
+      
+      <li><a href="../../tags/continuous-deployment">continuous-deployment</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-deployment">1</a></li>
+      
+      <li><a href="../../tags/continuous-integration">continuous-integration</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-integration">1</a></li>
+      
+      <li><a href="../../tags/database">database</a><span
+        class="decorative-marker">//</span><a
+        name="database">1</a></li>
+      
+      <li><a href="../../tags/declarative">declarative</a><span
+        class="decorative-marker">//</span><a
+        name="declarative">1</a></li>
+      
+      <li><a href="../../tags/definition">definition</a><span
+        class="decorative-marker">//</span><a
+        name="definition">1</a></li>
+      
+      <li><a href="../../tags/deploy">deploy</a><span
+        class="decorative-marker">//</span><a
+        name="deploy">1</a></li>
+      
+      <li><a href="../../tags/distribution">distribution</a><span
+        class="decorative-marker">//</span><a
+        name="distribution">1</a></li>
+      
+      <li><a href="../../tags/html">html</a><span
+        class="decorative-marker">//</span><a
+        name="html">1</a></li>
+      
+      <li><a href="../../tags/infrastructure-as-code">infrastructure-as-code</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure-as-code">1</a></li>
+      
+      <li><a href="../../tags/lamp">lamp</a><span
+        class="decorative-marker">//</span><a
+        name="lamp">1</a></li>
+      
+      <li><a href="../../tags/linux">linux</a><span
+        class="decorative-marker">//</span><a
+        name="linux">1</a></li>
+      
+      <li><a href="../../tags/maturity">maturity</a><span
+        class="decorative-marker">//</span><a
+        name="maturity">1</a></li>
+      
+      <li><a href="../../tags/operating-system">operating-system</a><span
+        class="decorative-marker">//</span><a
+        name="operating-system">1</a></li>
+      
+      <li><a href="../../tags/pets">pets</a><span
+        class="decorative-marker">//</span><a
+        name="pets">1</a></li>
+      
+      <li><a href="../../tags/phing">phing</a><span
+        class="decorative-marker">//</span><a
+        name="phing">1</a></li>
+      
+      <li><a href="../../tags/security">security</a><span
+        class="decorative-marker">//</span><a
+        name="security">1</a></li>
+      
+      <li><a href="../../tags/sgi">sgi</a><span
+        class="decorative-marker">//</span><a
+        name="sgi">1</a></li>
+      
+      <li><a href="../../tags/slide">slide</a><span
+        class="decorative-marker">//</span><a
+        name="slide">1</a></li>
+      
+      <li><a href="../../tags/ssh">ssh</a><span
+        class="decorative-marker">//</span><a
+        name="ssh">1</a></li>
+      
+      <li><a href="../../tags/test">test</a><span
+        class="decorative-marker">//</span><a
+        name="test">1</a></li>
+      
+      <li><a href="../../tags/windows">windows</a><span
+        class="decorative-marker">//</span><a
+        name="windows">1</a></li>
+      
+      </ul>
+    </nav>
+
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li><a href="#manifest">Manifest</a></li>
+<li><a href="#design">Design</a></li>
+<li><a href="#outcomes">Outcomes</a></li>
+<li><a href="#learn-k8s">Learn K8s</a></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="../../post/devops-in-a-box/">DevOps in a Box</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>5</sup></span><span class="post-date-separator">/</span><span class="post-date-month">May</span> <span class="post-date-year">2018</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            <p>My long time fantasy has been to demonstrate an entire CI/CD pipeline with
+ continuous operations of applications to discuss behavior driven operations
+ and testing as monitors.</p>
+
+<p>The call for this happened over and over at DevOpsDays to answer: how does one
+ learn DevOps, practice site reliability engineering, or have a full
+ application lifecycle environment?</p>
+
+<p>So let&rsquo;s create a minimal viable product <a href="../devops-btd-pattern">BTD scenario</a>
+ of my <a href="../devops-automation">DevOps Automation</a> system,
+ extend it to prefix Governance and suffix Management,
+ and then drive maturity to illustrate and discuss best practices.
+
+I&rsquo;ve been discussing this with my Nutanix colleagues
+ <a href="https://github.com/mjastad">@mjasted</a> and
+ <a href="https://github.com/andytschmid/">@andytschmid</a> for a while,
+ so here is the outline and plan of action!</p>
+
+<h1 id="manifest">Manifest</h1>
+
+<p>Some simple principles:
+- Open source components are preferred to remove licensing from the equation
+  when possible
+- Containerized workloads on Kubernetes are preferred, but it is okay to
+  fall back to VMs and configuration management
+- Work for a minimum viable product first, then add phased expansion goals.</p>
+
+<p>The building blocks include:
+- Authentication
+  - Expansion: Secrets management
+  - Expansion: Service Discovery and DNS
+- Source code management repository
+  - Expansion: Review system
+- Build system (and initial testing)
+  - Expansion: Test system
+  - Expansion: file server, then Artifact repository
+  - Expansion: Orchestration system
+- Centralized Metrics and Logging systems with Management
+  - Expansion: Monitoring
+- Application hosting
+- Example three tier web application:
+  - Load Balancer
+  - Web Presentation and business logic tier
+  - Database
+  - Expansion: Compliance
+  - Expansion: <a href="https://12factor.net/">https://12factor.net/</a></p>
+
+<h1 id="design">Design</h1>
+
+<p>The governance and management lifecycle should include:
+- Provision users into groups under authentication,
+  ideally with passwords and SSH keys
+  - One admin account, initially
+- Continuous Integration: to build and test the application artifacts
+  - An update to revision control event should trigger a build, test, and deploy
+    - Expansion: BTD ad-hoc for hash, branch, tag to a
+  corresponding CD environment
+  - Continuous Deployment of artifacts to deploy or update the application
+    - Expansion: Destroy a CD environment
+- Managing the example application lifecycle:
+  - Database storage expansion
+  - Database backup and restore
+  - Web tier autoscale in and out
+  - Web loading operation to trigger autoscale
+  - Database loading operation to trigger expansion
+  - Health metrics, monitors to trigger app operations, above</p>
+
+<h1 id="outcomes">Outcomes</h1>
+
+<p>This would an incredible achievement: an ephemeral DevOps in a Box environment.
+ It could be used to demonstrate application:
+- CI/CD pipeline with integration testing
+- integration testing as monitors
+- health metrics
+- failure modes
+- automatic remediation of failure modes</p>
+
+<p>I paraphrased and shared my &ldquo;DevOps in a Box&rdquo; fantasy at yesterday&rsquo;s
+ <a href="https://twitter.com/hashtag/devopsdaysatx?src=hash">DevOpsDays Austin</a>
+ openspace discussion on how to teach SREs.
+ As <a href="https://twitter.com/ernestmueller">@ernestmueller</a> suggested,
+ <a href="https://en.wikipedia.org/wiki/Design_Patterns">&ldquo;Gang of Four&rdquo; design patterns</a>
+ could emerge, leading to an operational equivalent
+ to the seminal programming book. It could be a workbench to illustrate basic
+ principles and advanced new practices with metrics to record before and after
+ scenarios to show impact and value.</p>
+
+<p>Once enough of a prototype is established, many layers of expansion could be
+ added (a number are already proposed), but some goals would include
+ application lifecycle design of:</p>
+
+<ul>
+<li>security
+
+<ul>
+<li>compliance</li>
+</ul></li>
+<li>performance
+
+<ul>
+<li>resiliency/<a href="https://principlesofchaos.org/">Chaos Engineering</a></li>
+</ul></li>
+<li>communication (ChatOps and bots)</li>
+</ul>
+
+<p>Yes, all of those are huge landscapes to explore of themselves!
+ Then it is time to get meta: all of this should be applied to the building
+ blocks of the CI/CD pipeline (the supporting system governance, health,
+ failure, and operations). Of course, another expansion would be to apply all
+ of the above to the host K8s cluster itself. Final expansion might be to make
+ DevOps in a Box recursively hosted, tested, and ephemeral for full systems
+ lifecycle management.</p>
+
+<h1 id="learn-k8s">Learn K8s</h1>
+
+<p>Oh, and hey, let&rsquo;s learn Kubernetes along the way! As this effort expands,
+ I&rsquo;ll make this a separate blog entry later.</p>
+
+<p>After reviewing the <a href="https://github.com/ramitsurana/awesome-kubernetes">Awesome Kubernetes</a>
+ resource list, I decided to start developing with
+ <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/">MiniKube</a>
+ on my Mac with the goal to evolve understanding of
+ <a href="https://github.com/kelseyhightower/kubernetes-the-hard-way">K8s the Hard Way</a>.
+ This would be the way to prototype the larger system components on my laptop.</p>
+
+<p>Some research turned up possibilities to accelerate local development:
+- <a href="https://gitkube.sh/">GitKube</a> versus
+ <a href="https://blog.hasura.io/sharing-a-local-registry-for-minikube-37c7240d0615">a local registry</a>
+- <a href="https://github.com/GoogleContainerTools/skaffold">Skaffold</a>
+- Research: <a href="https://blog.hasura.io/draft-vs-gitkube-vs-helm-vs-ksonnet-vs-metaparticle-vs-skaffold-f5aa9561f948">https://blog.hasura.io/draft-vs-gitkube-vs-helm-vs-ksonnet-vs-metaparticle-vs-skaffold-f5aa9561f948</a></p>
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-bootstrap" href="https://mlavi.github.io//tags/bootstrap">bootstrap</a>,
+	                
+	                <a class="post-tag post-tag-devops" href="https://mlavi.github.io//tags/devops">DevOps</a>,
+	                
+	                <a class="post-tag post-tag-pattern" href="https://mlavi.github.io//tags/pattern">pattern</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="../../post/ssh-key-authentication/">SSH Key Authentication Overview</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2018. All rights reserved.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

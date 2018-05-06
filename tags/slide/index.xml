@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Slide on Mark&#39;s Blog</title>
-    <link>http://mlavi.github.io/tags/slide/</link>
+    <link>https://mlavi.github.io/tags/slide/</link>
     <description>Recent content in Slide on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Thu, 23 Apr 2015 12:59:26 -0700</lastBuildDate>
     
-	<atom:link href="http://mlavi.github.io/tags/slide/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mlavi.github.io/tags/slide/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HTML Slide Show Survey</title>
-      <link>http://mlavi.github.io/post/html-slideshow-survey/</link>
+      <link>https://mlavi.github.io/post/html-slideshow-survey/</link>
       <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
       
-      <guid>http://mlavi.github.io/post/html-slideshow-survey/</guid>
+      <guid>https://mlavi.github.io/post/html-slideshow-survey/</guid>
       <description>&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
 We already have a universal, open system for communication
 called the web, so let&amp;rsquo;s explore web presentation applications.

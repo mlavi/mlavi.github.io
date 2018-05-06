@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pets on Mark&#39;s Blog</title>
+    <link>https://mlavi.github.io/tags/pets/</link>
+    <description>Recent content in Pets on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 25 Jan 2017 11:05:13 -0700</lastBuildDate>
+    
+	<atom:link href="https://mlavi.github.io/tags/pets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ten Steps from Pets to Cattle</title>
+      <link>https://mlavi.github.io/post/ten_steps_from_pets_to_cattle/</link>
+      <pubDate>Wed, 25 Jan 2017 11:05:13 -0700</pubDate>
+      
+      <guid>https://mlavi.github.io/post/ten_steps_from_pets_to_cattle/</guid>
+      <description>&lt;p&gt;Why do we need DevOps when IT and Operations succeed in their responsibility
+ for security and uptime, using administrative tools to maintain, backup, and
+ restore those systems? Because the operations domain must be documented,
+ democratized, and distributed to achieve agility before Operations returns
+ to become a force multiplier instead of a keep the lights on organization.
+ Let me demonstrate that traditional values for long lived infrastructure and
+ their retroactive justification do not apply when progressing to a DevOps
+ mindset.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
