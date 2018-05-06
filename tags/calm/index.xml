@@ -43,5 +43,86 @@
 &lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Reconciling Configuration Management and Immutable Infrastructure</title>
+      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
+      <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
+      
+      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written and posted by me on May 26, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&lt;/a&gt;,
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuration Management in the DevOps World</title>
+      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
+      <pubDate>Tue, 24 May 2016 12:00:00 -0700</pubDate>
+      
+      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written and posted by me on May 24, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&lt;/a&gt;,
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Demystifying Continuous Integration, Delivery, and Deployment</title>
+      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
+      <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
+      
+      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written and posted by me on December 28, 2015 at
+&lt;a href=&#34;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/&#34;&gt;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/&lt;/a&gt;,
+and slightly enhanced on February 18, 2018, be sure to see the
+&lt;a href=&#34;#postscript-2018-04-13-netscape-tinderbox&#34;&gt;Postscript&lt;/a&gt; for more perspective!
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Infrastructure as Code and Calm Blueprints</title>
+      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</link>
+      <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
+      
+      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written and posted by me on November 3, 2015 at
+&lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&lt;/a&gt;,
+and slightly enhanced on February 18, 2018.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Why is DevOps So Hard?</title>
+      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</link>
+      <pubDate>Tue, 20 Oct 2015 12:00:00 -0700</pubDate>
+      
+      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written and posted by me on October 20, 2015 at
+&lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/&lt;/a&gt;,
+and slightly enhanced on February 27, 2018, be sure to see the
+&lt;a href=&#34;#postscript-february-18-2018-devops-definition&#34;&gt;Postscript&lt;/a&gt; for significant developments!
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I Dream of DevOps, but What is DevOps?</title>
+      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</link>
+      <pubDate>Wed, 23 Sep 2015 12:00:00 -0700</pubDate>
+      
+      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</guid>
+      <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
+ was originally written and posted by me on September 23, 2015 at
+&lt;a href=&#34;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&#34;&gt;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&lt;/a&gt;,
+and slightly enhanced on February 18, 2018, be sure to see the
+&lt;a href=&#34;#postscript-february-18-2018&#34;&gt;Postscript&lt;/a&gt; for significant developments!
+&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>
