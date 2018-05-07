@@ -293,13 +293,14 @@
 <li><a href="#1-the-monolith-in-production">1: The Monolith in Production</a></li>
 <li><a href="#2-separate-monolithic-functions">2: Separate, Monolithic Functions</a></li>
 <li><a href="#3-add-load-balancer-and-dmz">3: Add Load Balancer and DMZ</a></li>
-<li><a href="#4-calm-blueprint-for-ops">4: Calm blueprint for Ops</a></li>
+<li><a href="#4-calm-blueprint-for-ops">4: Calm Blueprint for Ops</a></li>
 <li><a href="#5-synthesis-with-scripting">5: Synthesis with Scripting</a></li>
 <li><a href="#6-configuration-management">6: Configuration Management</a></li>
 <li><a href="#7-infrastructure-artifacts">7: Infrastructure Artifacts</a></li>
 <li><a href="#8-infrastructure-ci-cd">8: Infrastructure CI/CD</a></li>
 <li><a href="#9-enterprise-and-hybrid-clouds">9: Enterprise and Hybrid Clouds</a></li>
 <li><a href="#10-heuristic-driven-operations">10: Heuristic Driven Operations</a></li>
+<li><a href="#postscript">Postscript</a></li>
 <li><a href="#x-y-template">X: Y template</a></li>
 </ul>
 </nav>
@@ -407,6 +408,11 @@ I tried to show to progression from Pets to Cattle to answer the question,
 <ul>
 <li>Built by hand, so very little parallel installation time savings</li>
 </ul></li>
+<li>MTTR: 1X
+
+<ul>
+<li>Repair is a restoral, estimated at half the build and deploy time of this step</li>
+</ul></li>
 <li>Benefits:
 
 <ul>
@@ -442,6 +448,11 @@ I tried to show to progression from Pets to Cattle to answer the question,
 <li>1X: Increased time to configure Master+Minion database</li>
 <li>1X: Increased time to configure OS firewalls, web proxy</li>
 </ul></li>
+<li>MTTR: 3X
+
+<ul>
+<li>Repair is a restoral, estimated at half the build and deploy time of this step</li>
+</ul></li>
 <li>Benefits:
 
 <ul>
@@ -465,7 +476,7 @@ application downtime</li>
 </ul></li>
 </ul>
 
-<h1 id="4-calm-blueprint-for-ops">4: Calm blueprint for Ops</h1>
+<h1 id="4-calm-blueprint-for-ops">4: Calm Blueprint for Ops</h1>
 
 <p>If all of the previous steps were on bare metal, then it is time to virtualize:
  called P2V: physical to virtual. My selfish agenda is do this on
@@ -483,22 +494,64 @@ documented operations and infrastructure: it is a start on the road to
 infrastructure as code and marks the transition to becoming a developer:
  programming ahead!</p>
 
-<p>With more work, one can have push button, separate environment deployments,
- but this is a derivative restoral in parallel and localize strategy: it can
- be better this will stage #5.</p>
+<ul>
+<li>Design: a translation of stage #4.
 
-<p>In the meantime, let&rsquo;s explore what the blueprint unlocks:
-- Adding a revision control service, unless you don&rsquo;t need collaboration
- paves the way to CI of blueprints, infrastructure, and applications.
- This will be stage #8.
-- Adding monitoring, metrics, and logs allows on to heuristically trigger
- these operations: zero-click operations = self-healing, anti-fragile business.
- This will be stage #10.</p>
+<ul>
+<li>5 servers, brownfield imported</li>
+</ul></li>
+<li>Build and Deploy: 2X
+
+<ul>
+<li>Estimating automation to cut down on manual operations and human error at
+33% savings, then parallelization at half of that.</li>
+<li>However, one now adds initial blueprint development time.</li>
+</ul></li>
+<li>Development: 3X
+
+<ul>
+<li>2X: Add some time to learn and bootstrap Calm and Karan.</li>
+<li>1X: minimal because brownfield import, then adding actions for each
+documented change control or runbook operations should be a cut and paste
+with minimal orchestration and variable/macro substitution.</li>
+</ul></li>
+<li>MTTR: 1X
+
+<ul>
+<li>Repair is a restoral, estimated at half the build and deploy time of this step</li>
+</ul></li>
+<li>Benefits:
+
+<ul>
+<li>Documented Production</li>
+<li>Added maintenance operations, can be delegated and audited under RBAC</li>
+</ul></li>
+<li>Criticism:
+
+<ul>
+<li>We can improve!</li>
+</ul></li>
+</ul>
+
+<p>Let&rsquo;s explore what the blueprint unlocks for the future:</p>
+
+<ul>
+<li>With more work, one can have push button, separate environment deployments,
+but this is a derivative restoral in parallel and localize strategy: it can
+be better and this will be <a href="#5-synthesis-with-scripting">stage #5</a>.</li>
+<li>Adding a revision control service, unless you don&rsquo;t need collaboration
+paves the way to CI of blueprints, infrastructure, and applications.
+This will be <a href="#8-infrastructure-ci-cd">stage #8</a>.</li>
+<li>Adding monitoring, metrics, and logs allows on to heuristically trigger
+these operations: zero-click operations = self-healing, anti-fragile business.
+This will be <a href="#10-heuristic-driven-operations">stage #10</a>.</li>
+</ul>
 
 <h1 id="5-synthesis-with-scripting">5: Synthesis with Scripting</h1>
 
-<p>Cloning the blueprint from #4, one can now refactor each host to create a new VM
-instead, then use Powershell scripting to stand up each service from scratch.
+<p>Cloning the blueprint <a href="#4-calm-blueprint-for-ops">from #4</a>,
+ one can now refactor each host to create a new VM
+ instead, then use Powershell scripting to stand up each service from scratch.
 If desired, one can skip this step to proceed to configuration management.</p>
 
 <h1 id="6-configuration-management">6: Configuration Management</h1>
@@ -534,7 +587,12 @@ VM artifacts.</p>
 
 <p>Adding monitoring, metrics, and logs allows on to heuristically trigger
  these operations: zero-click operations = self-healing, anti-fragile business.
- <hr />
+ <hr /></p>
+
+<h1 id="postscript">Postscript</h1>
+
+<p>As mentioned in <a href="#under-construction">Under Construction</a>,
+ there is more to to add! Here are snapshots from my notes:
 <img src="../IMAG1394.jpg" alt="Ten Steps" />
 <img src="../IMAG1408.jpg" alt="1408" />
 <img src="../IMAG1409.jpg" alt="1409" />
@@ -548,6 +606,11 @@ VM artifacts.</p>
 -</li>
 <li>Build and Deploy: X
 -</li>
+<li>MTTR: X
+
+<ul>
+<li>Repair is a restoral, estimated at half the build and deploy time of this step</li>
+</ul></li>
 <li>Benefits:
 -</li>
 <li>Criticism:

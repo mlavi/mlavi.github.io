@@ -343,15 +343,9 @@
  rendered term and it has a different meaning for everyone.</p>
 </blockquote>
 
-<p>In that article, I go on to define DevOps and explain the term:</p>
-
-<blockquote>
-<div style="text-align: center; font-weight: bold; font-size: large;">DevOps
- is the <em>process</em> of removing all friction
- <br />between the developer and customer value.<br /><br /></div>
-</blockquote>
-
-<p>Let me share my experience to easily chart the progressive stages of DevOps maturity.
+<p>In that article, I go on to define DevOps and explain the term. Let me share
+my experience to easily chart the journey of progressive stages
+to DevOps maturity.
 </p>
 
 <h1 id="inspiration">Inspiration</h1>
@@ -428,7 +422,7 @@ The second topic was, &ldquo;Why do I need DevOps?&rdquo; and I landed on
  to show how automation accelerates all efforts.</p>
 
 <p>April 9-13, 2017: I was at Nutanix headquarters preparing
- to speak at the third annual Nutanix .Next User conference with
+ to speak at the third annual Nutanix .Next user conference with
  4000 attendees. To explain Calm&rsquo;s value proposition to my colleagues,
  I likened DevOps to the business outcome of <em><a href="#agility-devops">agility</a></em>
  and Pets versus Cattle (or removing all single points of failure)
@@ -436,17 +430,47 @@ The second topic was, &ldquo;Why do I need DevOps?&rdquo; and I landed on
 
 <h2 id="agility-devops">Agility = DevOps</h2>
 
+<blockquote>
+<div style="text-align: center; font-weight: bold; font-size: large;">DevOps
+ is the <em>process</em> of removing all friction
+ <br />between the developer<sup>1</sup> and customer value.<br /><br /></div>
+</blockquote>
+
 <p><a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">My DevOps definition</a>
  aligns everyone to deliver frictionless business value, however the
  impact can be summarized as business agility. When anyone can
  <a href="devops-btd-pattern.md">build, test, and deploy</a> value, business processes
- are transparent and work is democratized.
- The next stage is to progressively automate these operations with key
- performance indicators and metrics for heuristically driven business operations.
- DevOps extends to run the business:
- the organization constantly tunes and expands the automation systems,
- while the employees engage to respond to new business initiatives and
- improve business efficiency, all resulting in business agility!</p>
+ are transparent and work is democratized.</p>
+
+<p><sup>1</sup> To understand the emergent value of software developers,
+ see <a href="https://thenewkingmakers.com/">https://thenewkingmakers.com/</a>.</p>
+
+<p>Furthermore, the value chain or steam between the developer and customer is
+bi-directional! During the value chain mapping exercise, discovery of friction
+in the forms of technical debt and cultural debt will abound. Therefore,
+you are &ldquo;doing DevOps&rdquo; when you remove friction, even if you are doing it for
+yourself on your own laptop: it will pay dividends down the value stream.</p>
+
+<p>DevOps success is a mixture of culture and technology enablement, allowing
+ the organization to transform and achieve agility. This can be observed
+ in the manufacturing industry by the
+ <a href="https://en.wikipedia.org/wiki/Toyota_Production_System">Toyota Production System</a>
+ and I elaborate on this in
+ <a href="../../post/calm.io-recap/calm.io-why-is-devops-so-hard/">Why is DevOps so Hard?</a>.</p>
+
+<p>If technology and cultural factors enable friction-free DevOps success,
+ it is easy to observe their corresponding challenges in organizations:
+ fragmentation foils any technology integration
+ and people naturally tend to be pets, causing single points of failure,
+ concentrated power, and manual handoffs which foil automation.</p>
+
+<p>The next stage of refactoring friction out of the value stream is to
+progressively automate operations with key performance indicators and metrics for
+ <a href="../../post/ten_steps_from_pets_to_cattle/#10-heuristic-driven-operations">heuristically driven business operations</a>.
+DevOps extends to run the business when
+the organization constantly tunes and expands the automation systems,
+while the employees engage to respond to new business initiatives and
+improve business efficiency, all resulting in business agility!</p>
 
 <p>These benefits are confirmed by the
  <a href="https://devops-research.com/research.html">annual State of DevOps surveys</a>,
@@ -473,9 +497,9 @@ The second topic was, &ldquo;Why do I need DevOps?&rdquo; and I landed on
  because they have achieved agility.</p>
 
 <blockquote>
-<p><strong>Devops Evangelism Slides forthcoming:</strong>
- they are an update, expansion, and summary of my earlier work
- <a href="../devops_demystified">DevOps Demystified </a></p>
+<p><strong>DevOps Evangelism Slides forthcoming:</strong>
+ speaker notes are above, but they are an update, expansion, and summary
+ of my earlier work <a href="../devops_demystified">DevOps Demystified </a></p>
 </blockquote>
 
 <h2 id="scalability-removing-pets">Scalability = Removing Pets</h2>
@@ -491,15 +515,185 @@ The second topic was, &ldquo;Why do I need DevOps?&rdquo; and I landed on
  easy to identify the traditional values which no longer apply.
  Continual discovery reveals invisible prison bars which constrain progress.</p>
 
+<p>Some abstract examples:</p>
+
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Pets</th>
+<th>Cattle</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Organization:</td>
+<td>Single Point of Failure (SPoF)</td>
+<td>Fleet (no SPoF)</td>
+</tr>
+
+<tr>
+<td>Naming:</td>
+<td>Members of a theme</td>
+<td>Naming Conventions and Numbers</td>
+</tr>
+
+<tr>
+<td>Remediation:</td>
+<td>MTTF</td>
+<td>Replace to maintain SLA</td>
+</tr>
+
+<tr>
+<td>Infrastructure:</td>
+<td>Scale up</td>
+<td>Scale out</td>
+</tr>
+
+<tr>
+<td>Architecture:</td>
+<td>Monolith</td>
+<td>Distributed, Microservice</td>
+</tr>
+</tbody>
+</table>
+
+<p>Some technology examples:</p>
+
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Pets</th>
+<th>Cattle</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Naming:</td>
+<td>earth.corp</td>
+<td>webtier-01.ahv01.prod.corp</td>
+</tr>
+
+<tr>
+<td>Uptime Goal:</td>
+<td>Years</td>
+<td>Seconds</td>
+</tr>
+
+<tr>
+<td>Failure:</td>
+<td>MTTR of minutes + hours</td>
+<td>No SPoF!</td>
+</tr>
+
+<tr>
+<td>Network:</td>
+<td>Hardware</td>
+<td>Software Defined</td>
+</tr>
+
+<tr>
+<td>Storage:</td>
+<td>SAN</td>
+<td>Distributed File System</td>
+</tr>
+
+<tr>
+<td>Datacenter:</td>
+<td>Single AWS Region, Cluster, or DC</td>
+<td>Multiple Enterprise/Hybrid Clouds</td>
+</tr>
+</tbody>
+</table>
+
+<p>Some cultural examples:</p>
+
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Pets</th>
+<th>Cattle</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>People:</td>
+<td>Heroic admin at HQ<sup>2</sup></td>
+<td>Global Operations team</td>
+</tr>
+
+<tr>
+<td>Operations:</td>
+<td>Hands on:manual ops, change controls</td>
+<td>Hands off:monitors, KPIs, ChatOps</td>
+</tr>
+
+<tr>
+<td>Values:</td>
+<td>DevOps team</td>
+<td>DevOps mindset distributed across entire organization</td>
+</tr>
+</tbody>
+</table>
+
+<p><sup>2</sup> <em>e.g.:</em> the sysadmin in <strong>The Phoenix Project</strong>,
+by Gene Kim, Kevin Behr, George Spafford: IT Revolution Press, 2013</p>
+
+<p>Yes, I consider the DevOps team a pet! This can be a controversial statement
+  until you use the lens and definition, but this will be a future blog entry.</p>
+
 <blockquote>
-<p><strong>Devops Evangelism Slides forthcoming:</strong>
- they are an update, expansion, and summary of my earlier work
- <a href="../devops_demystified">DevOps Demystified </a></p>
+<p><strong>DevOps Evangelism Slides forthcoming:</strong>
+speaker notes are above, but they are an update, expansion, and summary
+of my earlier work <a href="../devops_demystified">DevOps Demystified </a></p>
 </blockquote>
+
+<p>At this point, it should be easy to ask &ldquo;How many pets do you have?&rdquo;
+ and categorize the answers into culture and technology.
+ This will be developed further for maturity shortly.</p>
+
+<p>To paraphrase the journey to DevOps: we all must become DevOps,
+ working to continuous improve<sup>3</sup>:</p>
+
+<ul>
+<li><strong>Cultural change</strong> to reduce dev+test+ops silos</li>
+<li><strong>Automation</strong> increasing value delivery, by accomplishing:
+
+<ul>
+<li>Agility by democratizing expertise and distributing work
+
+<ul>
+<li>Results: continuous integration, delivery, and deployment</li>
+</ul></li>
+<li>Scalability by eliminating single points of failure
+
+<ul>
+<li>Results: cattle infrastructure and operations</li>
+</ul></li>
+</ul></li>
+<li><strong>Feedback</strong> measuring closed loop value<sup>4</sup>
+
+<ul>
+<li>Results: monitors + logs + metrics for Key Performance Indicators</li>
+</ul></li>
+</ul>
+
+<p><sup>3</sup> Based on <a href="http://itrevolution.com/devops-culture-part-1/">C(L)AMS by John Willis &amp; Damon Edwards</a>
+<br /><sup>4</sup> <em><a href="https://athinkingperson.com/2012/12/02/who-said-what-gets-measured-gets-managed/">Proverb:</a></em>
+&ldquo;What is measured improves.&rdquo;</p>
+
+<p>This cycle is repeated to insure value increases by observing the
+ feedback measured from cultural and automation changes.</p>
 
 <h1 id="first-diagram-devops-journey">First Diagram: DevOps Journey</h1>
 
-<p>I arrived at graphing the abstract progressions of both agility and
+<p>Back to early April, 2017 when I was preparing for my talk,
+I arrived at graphing the abstract progressions of both agility and
  scalability to create the <strong>DevOps Journey Diagram</strong>. I reversed the initial
  axes layout and I arrived at Gartner-like diagram which yielded instant
  &ldquo;up and to the right&rdquo; parsing at a glance. The diagram yielded insight into
@@ -545,8 +739,9 @@ The second topic was, &ldquo;Why do I need DevOps?&rdquo; and I landed on
 </tbody>
 </table>
 
-<p>On April 26, I presented the DevOps Journey diagram to a large defense
- contractor and before I completed my explanation, one of the audience said,
+<p>The next week, on April 26, 2017: I presented the DevOps Journey diagram to a
+large defense contractor and before I completed my explanation,
+one of the audience said,
  &ldquo;we&rsquo;re a pet shop and depending on the team, we&rsquo;re between stage 0 and 0.5.&rdquo;</p>
 
 <p>The first diagram was incredibly effective, but I knew I was conflating many
@@ -629,7 +824,7 @@ The second topic was, &ldquo;Why do I need DevOps?&rdquo; and I landed on
 <td>3</td>
 <td>Hybrid clouds</td>
 <td>Global + active</td>
-<td>KPI driven lifecycle</td>
+<td><a href="../../post/ten_steps_from_pets_to_cattle/#10-heuristic-driven-operations">KPI driven lifecycle</a></td>
 <td>Data-driven experiments</td>
 </tr>
 </tbody>
