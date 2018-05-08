@@ -341,62 +341,98 @@ I&rsquo;ve been discussing this with my Nutanix colleagues
 
 <h1 id="manifest">Manifest</h1>
 
-<p>Some simple principles:
-- Open source components are preferred to remove licensing from the equation
-  when possible
-- Containerized workloads on Kubernetes are preferred, but it is okay to
-  fall back to VMs and configuration management
-- Work for a minimum viable product first, then add phased expansion goals.</p>
+<p>Some simple principles:</p>
 
-<p>The building blocks include:
-- Authentication
-  - Expansion: Secrets management
-  - Expansion: Service Discovery and DNS
-- Source code management repository
-  - Expansion: Review system
-- Build system (and initial testing)
-  - Expansion: Test system
-  - Expansion: file server, then Artifact repository
-  - Expansion: Orchestration system
-- Centralized Metrics and Logging systems with Management
-  - Expansion: Monitoring
-- Application hosting
-- Example three tier web application:
-  - Load Balancer
-  - Web Presentation and business logic tier
-  - Database
-  - Expansion: Compliance
-  - Expansion: <a href="https://12factor.net/">https://12factor.net/</a></p>
+<ul>
+<li>Open source components are preferred to remove licensing from the equation
+when possible</li>
+<li>Containerized workloads on Kubernetes are preferred, but it is okay to
+fall back to VMs and configuration management</li>
+<li>Work for a minimum viable product first, then add phased expansion goals.</li>
+</ul>
+
+<p>The building blocks include:</p>
+
+<ul>
+<li>Authentication
+
+<ul>
+<li>Expansion: Secrets management</li>
+<li>Expansion: Service Discovery and DNS</li>
+</ul></li>
+<li>Source code management repository
+
+<ul>
+<li>Expansion: Review system</li>
+</ul></li>
+<li>Build system (and initial testing)
+
+<ul>
+<li>Expansion: Test system</li>
+<li>Expansion: file server, then Artifact repository</li>
+<li>Expansion: Orchestration system</li>
+</ul></li>
+<li>Centralized Metrics and Logging systems with Management
+
+<ul>
+<li>Expansion: Monitoring</li>
+</ul></li>
+<li>Application hosting</li>
+<li>Example three tier web application:
+
+<ul>
+<li>Load Balancer</li>
+<li>Web Presentation and business logic tier</li>
+<li>Database</li>
+<li>Expansion: Compliance</li>
+<li>Expansion: <a href="https://12factor.net/">https://12factor.net/</a></li>
+</ul></li>
+</ul>
 
 <h1 id="design">Design</h1>
 
-<p>The governance and management lifecycle should include:
-- Provision users into groups under authentication,
-  ideally with passwords and SSH keys
-  - One admin account, initially
-- Continuous Integration: to build and test the application artifacts
-  - An update to revision control event should trigger a build, test, and deploy
-    - Expansion: BTD ad-hoc for hash, branch, tag to a
-  corresponding CD environment
-  - Continuous Deployment of artifacts to deploy or update the application
-    - Expansion: Destroy a CD environment
-- Managing the example application lifecycle:
-  - Database storage expansion
-  - Database backup and restore
-  - Web tier autoscale in and out
-  - Web loading operation to trigger autoscale
-  - Database loading operation to trigger expansion
-  - Health metrics, monitors to trigger app operations, above</p>
+<p>The governance and management lifecycle should include:</p>
+
+<ul>
+<li>Provision users into groups under authentication,
+ideally with passwords and SSH keys
+
+<ul>
+<li>One admin account, initially</li>
+</ul></li>
+<li>Continuous Integration: to build and test the application artifacts
+
+<ul>
+<li>An update to revision control event should trigger a build, test, and deploy</li>
+<li>Expansion: BTD ad-hoc for hash, branch, tag to a
+corresponding CD environment</li>
+<li>Continuous Deployment of artifacts to deploy or update the application</li>
+<li>Expansion: Destroy a CD environment</li>
+</ul></li>
+<li>Managing the example application lifecycle:
+
+<ul>
+<li>Database storage expansion</li>
+<li>Database backup and restore</li>
+<li>Web tier autoscale in and out</li>
+<li>Web loading operation to trigger autoscale</li>
+<li>Database loading operation to trigger expansion</li>
+<li>Health metrics, monitors to trigger app operations, above</li>
+</ul></li>
+</ul>
 
 <h1 id="outcomes">Outcomes</h1>
 
 <p>This would an incredible achievement: an ephemeral DevOps in a Box environment.
- It could be used to demonstrate application:
-- CI/CD pipeline with integration testing
-- integration testing as monitors
-- health metrics
-- failure modes
-- automatic remediation of failure modes</p>
+ It could be used to demonstrate application:</p>
+
+<ul>
+<li>CI/CD pipeline with integration testing</li>
+<li>integration testing as monitors</li>
+<li>health metrics</li>
+<li>failure modes</li>
+<li>automatic remediation of failure modes</li>
+</ul>
 
 <p>I paraphrased and shared my &ldquo;DevOps in a Box&rdquo; fantasy at yesterday&rsquo;s
  <a href="https://twitter.com/hashtag/devopsdaysatx?src=hash">DevOpsDays Austin</a>
@@ -446,11 +482,14 @@ I&rsquo;ve been discussing this with my Nutanix colleagues
  <a href="https://github.com/kelseyhightower/kubernetes-the-hard-way">K8s the Hard Way</a>.
  This would be the way to prototype the larger system components on my laptop.</p>
 
-<p>Some research turned up possibilities to accelerate local development:
-- <a href="https://gitkube.sh/">GitKube</a> versus
- <a href="https://blog.hasura.io/sharing-a-local-registry-for-minikube-37c7240d0615">a local registry</a>
-- <a href="https://github.com/GoogleContainerTools/skaffold">Skaffold</a>
-- Research: <a href="https://blog.hasura.io/draft-vs-gitkube-vs-helm-vs-ksonnet-vs-metaparticle-vs-skaffold-f5aa9561f948">https://blog.hasura.io/draft-vs-gitkube-vs-helm-vs-ksonnet-vs-metaparticle-vs-skaffold-f5aa9561f948</a></p>
+<p>Some research turned up possibilities to accelerate local development:</p>
+
+<ul>
+<li><a href="https://gitkube.sh/">GitKube</a> versus
+<a href="https://blog.hasura.io/sharing-a-local-registry-for-minikube-37c7240d0615">a local registry</a></li>
+<li><a href="https://github.com/GoogleContainerTools/skaffold">Skaffold</a></li>
+<li>Research: <a href="https://blog.hasura.io/draft-vs-gitkube-vs-helm-vs-ksonnet-vs-metaparticle-vs-skaffold-f5aa9561f948">https://blog.hasura.io/draft-vs-gitkube-vs-helm-vs-ksonnet-vs-metaparticle-vs-skaffold-f5aa9561f948</a></li>
+</ul>
 	
 			
 

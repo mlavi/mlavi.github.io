@@ -290,6 +290,7 @@
 		   	 	<nav id="TableOfContents">
 <ul>
 <li><a href="#under-construction">Under Construction</a></li>
+<li><a href="#overview">Overview</a></li>
 <li><a href="#1-the-monolith-in-production">1: The Monolith in Production</a></li>
 <li><a href="#2-separate-monolithic-functions">2: Separate, Monolithic Functions</a></li>
 <li><a href="#3-add-load-balancer-and-dmz">3: Add Load Balancer and DMZ</a></li>
@@ -342,8 +343,11 @@
 
 <h1 id="under-construction">Under Construction</h1>
 
-<p>The following pictures are from my notebook and outline this article.
-Please return back while to see how I flesh out the presentation.</p>
+<p>The following pictures in the <a href="#postscript">Postscript</a> are from my notebook
+ and outline this article. Please return back in a week to see how I flesh
+ out the presentation.</p>
+
+<h1 id="overview">Overview</h1>
 
 <p>January 25, 2017: I gave a Calm deep dive session to my peers at Nutanix,
  and there were two topic requests that shed light into the DevOps world
@@ -359,6 +363,9 @@ I tried to show to progression from Pets to Cattle to answer the question,
  on a Windows server with IIS web server and MS-SQL database. For this exercise,
  we focus on application infrastructure; a SAN or backup system target is out
  of scope.</p>
+
+<p>Throughout this exercise, I will use a mythical, relative value of X
+ as a unit of work and time, my guess is that it is 3 hours.</p>
 
 <h1 id="1-the-monolith-in-production">1: The Monolith in Production</h1>
 
@@ -403,12 +410,12 @@ I tried to show to progression from Pets to Cattle to answer the question,
 <li>web hosts the application: OS + web</li>
 <li>database hosts the data: OS + DB.</li>
 </ul></li>
-<li>Build and Deploy: 2X
+<li>Build and Deploy: 1.5X
 
 <ul>
-<li>Built by hand, so very little parallel installation time savings</li>
+<li>Built by hand, so little parallel OS installation time savings</li>
 </ul></li>
-<li>MTTR: 1X
+<li>MTTR: .75X
 
 <ul>
 <li>Repair is a restoral, estimated at half the build and deploy time of this step</li>
@@ -444,7 +451,7 @@ I tried to show to progression from Pets to Cattle to answer the question,
 <li>Build and Deploy: 6X
 
 <ul>
-<li>4X: Built by hand, so very little parallel installation time savings</li>
+<li>4X: Built by hand, so little parallel OS installation time savings</li>
 <li>1X: Increased time to configure Master+Minion database</li>
 <li>1X: Increased time to configure OS firewalls, web proxy</li>
 </ul></li>
