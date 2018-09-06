@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.40.2" />
+<meta name="generator" content="Hugo 0.42.2" />
 
   <meta property="og:title" content="Today&#39;s DevOps Automation Diagram" />
 <meta property="og:description" content="" />
@@ -352,13 +352,13 @@ and then cut and paste text from it.</p>
 
 <h3 id="updated">Updated!</h3>
 
-<p>My original release was 2015-03-11 (source below), but today&rsquo;s update adds detail, removes many crossed lines
-for simple visual flow parsing, and is organized vertically.</p>
+<p>My original release was 2015-03-11 (source below), but today&rsquo;s update adds detail, removes many crossed lines for simple visual flow parsing, and is organized vertically.</p>
 
-<p><img src="../../img/devops_automation.pu.svg" alt="DevOps Automation Diagram - 2015-03-17" /></p>
+<p><img src="devops_automation.pu.svg" alt="DevOps Automation Diagram - 2015-03-17" /></p>
 
 <p>Source code: devops_automation.pu
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js+genshitext" data-lang="js+genshitext">@startuml
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js+genshitext" data-lang="js+genshitext">```PlantUML
+@startuml
 title DevOps Automation (2015-03-11) by Mark Lavi
 state Development {
   Development: language
@@ -509,7 +509,7 @@ state Stack {
   node -&gt; Logs
   node -&gt; Metrics
 }
-@enduml</code></pre></div></p>
+@enduml```</code></pre></div></p>
 
 <p>I will put this under revision control in the Infrastructure as Code project I&rsquo;m undertaking.
 I do not believe authored hyperlinks export to SVG yet, perhaps that will be my first request for PlantUML.</p>
