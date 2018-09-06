@@ -355,9 +355,8 @@ accounts with credentials by default.
 </ul></li>
 </ul>
 
-<p>Combining these two ideas together, one would want to dynamically insert
- SSH public keys onto a cloud VM during instantiation.
- For Linux, cloud-init provides this facility.</p>
+<p>Combining these two ideas together, one would want to dynamically insert SSH public
+ keys onto a cloud VM during instantiation. For Linux, cloud-init provides this facility.</p>
 
 <h2 id="the-details-ssh">The Details: SSH</h2>
 
@@ -442,7 +441,7 @@ as a runtime variable in the Application profile</li>
 
 <p>On the Unix/Linux/MacOS side of the house, you can generate your keypair with ssh-keygen and load your OpenSSH keypair into ssh-agent upon shell invocation.</p>
 
-<p>Fortunately, because you have likely provided your SSH keypair while provisioning a blueprint, Calm can take care of this for you by Calm when you audit the Application deployment: pick the Manage tab, choose the VM service desired, and then leverage the Web terminal session to log in with one-click!</p>
+<p>Fortunately, because you have likely provided your SSH keypair while provisioning a blueprint, Calm reuse these credentials when you audit the Application deployment: pick the Manage tab, choose the VM service desired, and then leverage the Web terminal session to log in with one-click!</p>
 	
 			
 
