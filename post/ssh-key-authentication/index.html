@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.42.2" />
+<meta name="generator" content="Hugo 0.58.1" />
 
   <meta property="og:title" content="SSH Key Authentication Overview" />
 <meta property="og:description" content="" />
@@ -332,8 +332,6 @@
             <p>For those of you new to automation, it can be overwhelming on first
 exposure to handle every link in the chain to launch your first Nutanix Calm blueprint. Many Calm Marketplace blueprints leverage Linux, cloud-init, and SSH keypairs to enable security best-practices for composable infrastructure as code.</p>
 
-<p></p>
-
 <h1 id="under-construction">Under Construction</h1>
 
 <p>I will continue to update and expand this blog, it serves as a script for a quick video I plan to make.</p>
@@ -377,7 +375,11 @@ accounts with credentials by default.
 and append .pem file suffix.</li>
 </ul></li>
 <li>Make your keys passphraseless (<em>i.e.</em>: no password to unlock)
-and store them in a secure place.</li>
+and store them in a secure place.
+
+<ul>
+<li><a href="https://portal.nutanix.com/#/page/docs/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v59:nuc-generating-ssh-key-windows-t.html">https://portal.nutanix.com/#/page/docs/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v59:nuc-generating-ssh-key-windows-t.html</a></li>
+</ul></li>
 </ul>
 
 <h1 id="use-your-ssh-keypair">Use Your SSH Keypair</h1>
@@ -437,9 +439,11 @@ as a runtime variable in the Application profile</li>
 
 <h2 id="in-practice">In Practice</h2>
 
-<p>On Windows, you can configure your PuTTY session to use your SSH keypair, but it is even better to load your SSH keypair into PuTTY-Agent for every PuTTY session to attempt to use.</p>
+<p>On Windows, you can configure your PuTTY session to use your SSH keypair, but it is even better to load your SSH keypair into PuTTY-Agent for every PuTTY session to attempt to use. While your PuTTY client software will use your PuTTY keypair, <em>please note that you must export your PuTTY keypair to the OpenSSH format to be used on the server.</em> Furthermore, during upload, Calm may require you to name your private key with the .pem file suffix. You can workaround this by opening your private key file, selecting all, and then cutting and pasting the contents.</p>
 
-<p>On the Unix/Linux/MacOS side of the house, you can generate your keypair with ssh-keygen and load your OpenSSH keypair into ssh-agent upon shell invocation.</p>
+<p>On the Unix/Linux/MacOS side of the house, you can generate your keypair with ssh-keygen and load your OpenSSH keypair into ssh-agent upon shell invocation. In this example, I used 4096 bits (which is considered secure today, less bits are easier to crack), I saved my key into my home directory&rsquo;s .ssh folder, and I also saved it without a passphrase to make things easier. I would recommend using a passphrase next, because Calm can support it now.</p>
+
+<p><code>ssh-keygen -b 4096 -f ~/.ssh/First.LastName.passphraseless</code></p>
 
 <p>Fortunately, because you have likely provided your SSH keypair while provisioning a blueprint, Calm will reuse these credentials when you audit the Application deployment: pick the Manage tab, choose the VM service desired, and then leverage the Web terminal session to log in with one-click!</p>
 	
@@ -472,14 +476,14 @@ as a runtime variable in the Application profile</li>
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="../../post/devops-in-a-box/">DevOps in a Box</a>
+						<a class="paging-link" href="../../post/calm.io-recap/">Calm.io: a blog series recap!</a>
 		            </div>
 		            
 
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="../../post/calm.io-recap/">Calm.io: a blog series recap!</a>
+			            <a class="paging-link" href="../../post/devops-in-a-box/">DevOps in a Box</a>
 		            </div>
 		            
 	            </div>
@@ -497,7 +501,7 @@ as a runtime variable in the Application profile</li>
 		</ul>
 	</div>
 
-	<p>&copy; 2018. All rights reserved.</p>
+	<p>&copy; 2019. All rights reserved.</p>
 </div>
     </div>
   </div>

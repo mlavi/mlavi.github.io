@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Maturity on Mark&#39;s Blog</title>
+    <title>maturity on Mark&#39;s Blog</title>
     <link>https://mlavi.github.io/tags/maturity/</link>
-    <description>Recent content in Maturity on Mark&#39;s Blog</description>
+    <description>Recent content in maturity on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
@@ -29,8 +29,7 @@
 
 &lt;p&gt;In that article, I go on to define DevOps and explain the term. Let me share
 my experience to easily chart the journey of progressive stages
-to DevOps maturity.
-&lt;/p&gt;</description>
+to DevOps maturity.&lt;/p&gt;</description>
     </item>
     
   </channel>

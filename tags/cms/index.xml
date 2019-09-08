@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cms on Mark&#39;s Blog</title>
+    <title>CMS on Mark&#39;s Blog</title>
     <link>https://mlavi.github.io/tags/cms/</link>
-    <description>Recent content in Cms on Mark&#39;s Blog</description>
+    <description>Recent content in CMS on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
@@ -20,8 +20,7 @@
       <guid>https://mlavi.github.io/post/first/</guid>
       <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
-and technical debt follow as I start my Infrastructure as Code blog.
-&lt;/p&gt;</description>
+and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;</description>
     </item>
     
   </channel>

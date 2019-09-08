@@ -2,6 +2,9 @@ Do Not Hire DevOps: How to Build a DevOps Culture for Long-Term Success
 
 A lightening talk: 20 slides, auto advancement every 15 seconds.
 
+See also: there is no such thing as a devops team: Jez Humble
+
+
 DevOps has no universal definition (by design) or prescription for success, so there is rampant abuse, hype, and failure by our practitioners and industry. I will give an honest and critical look at short-term failures and what it takes to build a DevOps culture for long-term success.
 
 Who am I?

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pattern on Mark&#39;s Blog</title>
+    <title>pattern on Mark&#39;s Blog</title>
     <link>https://mlavi.github.io/tags/pattern/</link>
-    <description>Recent content in Pattern on Mark&#39;s Blog</description>
+    <description>Recent content in pattern on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
@@ -29,12 +29,7 @@
 &lt;p&gt;So let&amp;rsquo;s create a minimal viable product &lt;a href=&#34;../devops-btd-pattern&#34;&gt;BTD scenario&lt;/a&gt;
  of my &lt;a href=&#34;../devops-automation&#34;&gt;DevOps Automation&lt;/a&gt; system,
  extend it to prefix Governance and suffix Management,
- and then drive maturity to illustrate and discuss best practices.
-
-I&amp;rsquo;ve been discussing this with my Nutanix colleagues
- &lt;a href=&#34;https://github.com/mjastad&#34;&gt;@mjasted&lt;/a&gt; and
- &lt;a href=&#34;https://github.com/andytschmid/&#34;&gt;@andytschmid&lt;/a&gt; for a while,
- so here is the outline and plan of action!&lt;/p&gt;</description>
+ and then drive maturity to illustrate and discuss best practices.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -44,8 +39,7 @@ I&amp;rsquo;ve been discussing this with my Nutanix colleagues
       
       <guid>https://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
- You reinforce your goals to improve code flow and service design on the way to test driven development!
-&lt;/p&gt;</description>
+ You reinforce your goals to improve code flow and service design on the way to test driven development!&lt;/p&gt;</description>
     </item>
     
   </channel>

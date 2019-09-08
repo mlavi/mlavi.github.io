@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Infrastructure on Mark&#39;s Blog</title>
+    <title>infrastructure on Mark&#39;s Blog</title>
     <link>https://mlavi.github.io/tags/infrastructure/</link>
-    <description>Recent content in Infrastructure on Mark&#39;s Blog</description>
+    <description>Recent content in infrastructure on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
@@ -21,8 +21,7 @@
       <description>&lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
 resembles virtual machines, includes the operating system user land, and desires configuration
 management. Does this starting point represent the opposite of container promise and the journey
-to immutable infrastructure?
-&lt;/p&gt;</description>
+to immutable infrastructure?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -33,8 +32,7 @@ to immutable infrastructure?
       <guid>https://mlavi.github.io/post/first/</guid>
       <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
-and technical debt follow as I start my Infrastructure as Code blog.
-&lt;/p&gt;</description>
+and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cloud Init on Mark&#39;s Blog</title>
+    <title>cloud-init on Mark&#39;s Blog</title>
     <link>https://mlavi.github.io/tags/cloud-init/</link>
-    <description>Recent content in Cloud Init on Mark&#39;s Blog</description>
+    <description>Recent content in cloud-init on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
@@ -19,9 +19,7 @@
       
       <guid>https://mlavi.github.io/post/ssh-key-authentication/</guid>
       <description>&lt;p&gt;For those of you new to automation, it can be overwhelming on first
-exposure to handle every link in the chain to launch your first Nutanix Calm blueprint. Many Calm Marketplace blueprints leverage Linux, cloud-init, and SSH keypairs to enable security best-practices for composable infrastructure as code.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+exposure to handle every link in the chain to launch your first Nutanix Calm blueprint. Many Calm Marketplace blueprints leverage Linux, cloud-init, and SSH keypairs to enable security best-practices for composable infrastructure as code.&lt;/p&gt;</description>
     </item>
     
   </channel>

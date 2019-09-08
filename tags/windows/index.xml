@@ -19,9 +19,7 @@
       
       <guid>https://mlavi.github.io/post/ssh-key-authentication/</guid>
       <description>&lt;p&gt;For those of you new to automation, it can be overwhelming on first
-exposure to handle every link in the chain to launch your first Nutanix Calm blueprint. Many Calm Marketplace blueprints leverage Linux, cloud-init, and SSH keypairs to enable security best-practices for composable infrastructure as code.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+exposure to handle every link in the chain to launch your first Nutanix Calm blueprint. Many Calm Marketplace blueprints leverage Linux, cloud-init, and SSH keypairs to enable security best-practices for composable infrastructure as code.&lt;/p&gt;</description>
     </item>
     
   </channel>

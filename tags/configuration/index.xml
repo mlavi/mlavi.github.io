@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Configuration on Mark&#39;s Blog</title>
+    <title>configuration on Mark&#39;s Blog</title>
     <link>https://mlavi.github.io/tags/configuration/</link>
-    <description>Recent content in Configuration on Mark&#39;s Blog</description>
+    <description>Recent content in configuration on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
@@ -21,8 +21,7 @@
       <description>&lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
 resembles virtual machines, includes the operating system user land, and desires configuration
 management. Does this starting point represent the opposite of container promise and the journey
-to immutable infrastructure?
-&lt;/p&gt;</description>
+to immutable infrastructure?&lt;/p&gt;</description>
     </item>
     
   </channel>

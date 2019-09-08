@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Diagram on Mark&#39;s Blog</title>
+    <title>diagram on Mark&#39;s Blog</title>
     <link>https://mlavi.github.io/tags/diagram/</link>
-    <description>Recent content in Diagram on Mark&#39;s Blog</description>
+    <description>Recent content in diagram on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
@@ -29,8 +29,7 @@
 
 &lt;p&gt;In that article, I go on to define DevOps and explain the term. Let me share
 my experience to easily chart the journey of progressive stages
-to DevOps maturity.
-&lt;/p&gt;</description>
+to DevOps maturity.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,8 +40,7 @@ to DevOps maturity.
       <guid>https://mlavi.github.io/post/database_change_management/</guid>
       <description>&lt;p&gt;Database configuration management tools allow us version the database and treat it like code!
 We want DevOps, not mysterious, hidden, hand crafted DBA ops whenever possible. Another
-flashback to 1998.
-&lt;/p&gt;</description>
+flashback to 1998.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -52,8 +50,7 @@ flashback to 1998.
       
       <guid>https://mlavi.github.io/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
-Via open source and this blog, we can elevate the state of our software engineering and service design!
-&lt;/p&gt;</description>
+Via open source and this blog, we can elevate the state of our software engineering and service design!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -64,8 +61,7 @@ Via open source and this blog, we can elevate the state of our software engineer
       <guid>https://mlavi.github.io/post/diagram/</guid>
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project:
 one should start with a map of the world before deciding where to focus,
-but it is even better when you can optimize and render a new map in real-time!
-&lt;/p&gt;</description>
+but it is even better when you can optimize and render a new map in real-time!&lt;/p&gt;</description>
     </item>
     
   </channel>

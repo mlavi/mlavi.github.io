@@ -29,12 +29,7 @@
 &lt;p&gt;So let&amp;rsquo;s create a minimal viable product &lt;a href=&#34;../devops-btd-pattern&#34;&gt;BTD scenario&lt;/a&gt;
  of my &lt;a href=&#34;../devops-automation&#34;&gt;DevOps Automation&lt;/a&gt; system,
  extend it to prefix Governance and suffix Management,
- and then drive maturity to illustrate and discuss best practices.
-
-I&amp;rsquo;ve been discussing this with my Nutanix colleagues
- &lt;a href=&#34;https://github.com/mjastad&#34;&gt;@mjasted&lt;/a&gt; and
- &lt;a href=&#34;https://github.com/andytschmid/&#34;&gt;@andytschmid&lt;/a&gt; for a while,
- so here is the outline and plan of action!&lt;/p&gt;</description>
+ and then drive maturity to illustrate and discuss best practices.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -44,9 +39,7 @@ I&amp;rsquo;ve been discussing this with my Nutanix colleagues
       
       <guid>https://mlavi.github.io/post/ssh-key-authentication/</guid>
       <description>&lt;p&gt;For those of you new to automation, it can be overwhelming on first
-exposure to handle every link in the chain to launch your first Nutanix Calm blueprint. Many Calm Marketplace blueprints leverage Linux, cloud-init, and SSH keypairs to enable security best-practices for composable infrastructure as code.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+exposure to handle every link in the chain to launch your first Nutanix Calm blueprint. Many Calm Marketplace blueprints leverage Linux, cloud-init, and SSH keypairs to enable security best-practices for composable infrastructure as code.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -62,8 +55,7 @@ exposure to handle every link in the chain to launch your first Nutanix Calm blu
  am still part of the Nutanix Calm team, but I&amp;rsquo;m re-posting these articles on
  my personal blog since the originals are no longer directly accessible.
  I am also enhancing them to clarify language, add learnings,
- and append significant developments as &lt;a href=&#34;#postscripts&#34;&gt;postscripts&lt;/a&gt;.
-&lt;/p&gt;</description>
+ and append significant developments as &lt;a href=&#34;#postscripts&#34;&gt;postscripts&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -83,8 +75,7 @@ exposure to handle every link in the chain to launch your first Nutanix Calm blu
 
 &lt;p&gt;In that article, I go on to define DevOps and explain the term. Let me share
 my experience to easily chart the journey of progressive stages
-to DevOps maturity.
-&lt;/p&gt;</description>
+to DevOps maturity.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -100,8 +91,7 @@ to DevOps maturity.
  to become a force multiplier instead of a keep the lights on organization.
  Let me demonstrate that traditional values for long lived infrastructure and
  their retroactive justification do not apply when progressing to a DevOps
- mindset.
-&lt;/p&gt;</description>
+ mindset.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -113,8 +103,7 @@ to DevOps maturity.
       <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
  was originally written and posted by me on May 26, 2016 at
 &lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&lt;/a&gt;,
-and slightly enhanced on February 18, 2018.
-&lt;/p&gt;</description>
+and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -126,8 +115,7 @@ and slightly enhanced on February 18, 2018.
       <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
  was originally written and posted by me on May 24, 2016 at
 &lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&lt;/a&gt;,
-and slightly enhanced on February 18, 2018.
-&lt;/p&gt;</description>
+and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -138,8 +126,7 @@ and slightly enhanced on February 18, 2018.
       <guid>https://mlavi.github.io/post/declarative_os/</guid>
       <description>&lt;p&gt;A new breed of operating systems adopt declarative configuration management for
 an interesting hybrid! OS maintenance of long-lived servers remains a challenge
-for our &amp;ldquo;mutable&amp;rdquo; infrastructure.
-&lt;/p&gt;</description>
+for our &amp;ldquo;mutable&amp;rdquo; infrastructure.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -152,8 +139,7 @@ for our &amp;ldquo;mutable&amp;rdquo; infrastructure.
  was originally written and posted by me on December 28, 2015 at
 &lt;a href=&#34;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/&#34;&gt;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/&lt;/a&gt;,
 and slightly enhanced on February 18, 2018, be sure to see the
-&lt;a href=&#34;#postscript-2018-04-13-netscape-tinderbox&#34;&gt;Postscript&lt;/a&gt; for more perspective!
-&lt;/p&gt;</description>
+&lt;a href=&#34;#postscript-2018-04-13-netscape-tinderbox&#34;&gt;Postscript&lt;/a&gt; for more perspective!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -165,8 +151,7 @@ and slightly enhanced on February 18, 2018, be sure to see the
       <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
  was originally written and posted by me on November 3, 2015 at
 &lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&lt;/a&gt;,
-and slightly enhanced on February 18, 2018.
-&lt;/p&gt;</description>
+and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -179,8 +164,7 @@ and slightly enhanced on February 18, 2018.
  was originally written and posted by me on October 20, 2015 at
 &lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/&lt;/a&gt;,
 and slightly enhanced on February 27, 2018, be sure to see the
-&lt;a href=&#34;#postscript-february-18-2018-devops-definition&#34;&gt;Postscript&lt;/a&gt; for significant developments!
-&lt;/p&gt;</description>
+&lt;a href=&#34;#postscript-february-18-2018-devops-definition&#34;&gt;Postscript&lt;/a&gt; for significant developments!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -191,8 +175,7 @@ and slightly enhanced on February 27, 2018, be sure to see the
       <guid>https://mlavi.github.io/post/devops_demystified/</guid>
       <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
  for many software engineering organizations. Let me define DevOps to help you
- understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!
-&lt;/p&gt;</description>
+ understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -205,8 +188,7 @@ and slightly enhanced on February 27, 2018, be sure to see the
  was originally written and posted by me on September 23, 2015 at
 &lt;a href=&#34;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&#34;&gt;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&lt;/a&gt;,
 and slightly enhanced on February 18, 2018, be sure to see the
-&lt;a href=&#34;#postscript-february-18-2018&#34;&gt;Postscript&lt;/a&gt; for significant developments!
-&lt;/p&gt;</description>
+&lt;a href=&#34;#postscript-february-18-2018&#34;&gt;Postscript&lt;/a&gt; for significant developments!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -216,8 +198,7 @@ and slightly enhanced on February 18, 2018, be sure to see the
       
       <guid>https://mlavi.github.io/post/artifact_repositories/</guid>
       <description>&lt;p&gt;The past: desktop builds uploaded to the FTP server; the present: global artifact delivery networks.
-Release management and artifact repositories are they way we deliver software and infrastructure today.
-&lt;/p&gt;</description>
+Release management and artifact repositories are they way we deliver software and infrastructure today.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -228,8 +209,7 @@ Release management and artifact repositories are they way we deliver software an
       <guid>https://mlavi.github.io/post/database_change_management/</guid>
       <description>&lt;p&gt;Database configuration management tools allow us version the database and treat it like code!
 We want DevOps, not mysterious, hidden, hand crafted DBA ops whenever possible. Another
-flashback to 1998.
-&lt;/p&gt;</description>
+flashback to 1998.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -240,8 +220,7 @@ flashback to 1998.
       <guid>https://mlavi.github.io/post/html-slideshow-survey/</guid>
       <description>&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
 We already have a universal, open system for communication
-called the web, so let&amp;rsquo;s explore web presentation applications.
-&lt;/p&gt;</description>
+called the web, so let&amp;rsquo;s explore web presentation applications.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -250,8 +229,7 @@ called the web, so let&amp;rsquo;s explore web presentation applications.
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
       <guid>https://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
-      <description>&lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -263,8 +241,7 @@ called the web, so let&amp;rsquo;s explore web presentation applications.
       <description>&lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
 resembles virtual machines, includes the operating system user land, and desires configuration
 management. Does this starting point represent the opposite of container promise and the journey
-to immutable infrastructure?
-&lt;/p&gt;</description>
+to immutable infrastructure?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -274,8 +251,7 @@ to immutable infrastructure?
       
       <guid>https://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
- You reinforce your goals to improve code flow and service design on the way to test driven development!
-&lt;/p&gt;</description>
+ You reinforce your goals to improve code flow and service design on the way to test driven development!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -285,8 +261,7 @@ to immutable infrastructure?
       
       <guid>https://mlavi.github.io/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
-Via open source and this blog, we can elevate the state of our software engineering and service design!
-&lt;/p&gt;</description>
+Via open source and this blog, we can elevate the state of our software engineering and service design!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -297,8 +272,7 @@ Via open source and this blog, we can elevate the state of our software engineer
       <guid>https://mlavi.github.io/post/diagram/</guid>
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project:
 one should start with a map of the world before deciding where to focus,
-but it is even better when you can optimize and render a new map in real-time!
-&lt;/p&gt;</description>
+but it is even better when you can optimize and render a new map in real-time!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -309,8 +283,7 @@ but it is even better when you can optimize and render a new map in real-time!
       <guid>https://mlavi.github.io/post/first/</guid>
       <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
-and technical debt follow as I start my Infrastructure as Code blog.
-&lt;/p&gt;</description>
+and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;</description>
     </item>
     
     <item>
