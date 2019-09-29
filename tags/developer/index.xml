@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>developer on Mark&#39;s Blog</title>
+    <link>https://mlavi.github.io/tags/developer/</link>
+    <description>Recent content in developer on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    
+	<atom:link href="https://mlavi.github.io/tags/developer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is a DevOps Advocate?</title>
+      <link>https://mlavi.github.io/post/developer_relations_advocate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlavi.github.io/post/developer_relations_advocate/</guid>
+      <description>&lt;p&gt;How and what is an Advocate and what is it in context of Developer Relations (DevRel)? After more than twenty years, I have returned to the realm of DevRel, so what has changed and what has remained the same?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -297,5 +297,14 @@ Overview We will take you on a journey of a system administrator, responsible fo
  bare-metal in the data center to... configuration management of VMs (circa 2010?) to.</description>
     </item>
     
+    <item>
+      <title>What is a DevOps Advocate?</title>
+      <link>https://mlavi.github.io/post/developer_relations_advocate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlavi.github.io/post/developer_relations_advocate/</guid>
+      <description>&lt;p&gt;How and what is an Advocate and what is it in context of Developer Relations (DevRel)? After more than twenty years, I have returned to the realm of DevRel, so what has changed and what has remained the same?&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>
