@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mark&#39;s Blog</title>
@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 05 May 2018 13:42:39 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 29 Sep 2019 12:37:07 -0600</lastBuildDate>
     
 	<atom:link href="https://mlavi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What is a DevOps Advocate?</title>
+      <link>https://mlavi.github.io/post/developer_relations_advocate/</link>
+      <pubDate>Sun, 29 Sep 2019 12:37:07 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/post/developer_relations_advocate/</guid>
+      <description>&lt;p&gt;How and what is an Advocate and what is it in context of Developer Relations (DevRel)? After more than twenty years, I have returned to the realm of DevRel: so what has changed and what has remained the same?&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>DevOps in a Box</title>
@@ -308,15 +317,6 @@ and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;</
       <description>From Pet to Cattle in 10 Steps   From Pet to Cattle in X Steps 40 mins presentation, 10 min Q&amp;amp;A, review and Call to Action: last words linger
 Overview We will take you on a journey of a system administrator, responsible for the organization&#39;s e-commerce web site, across various era IT best practices:
  bare-metal in the data center to... configuration management of VMs (circa 2010?) to.</description>
-    </item>
-    
-    <item>
-      <title>What is a DevOps Advocate?</title>
-      <link>https://mlavi.github.io/post/developer_relations_advocate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mlavi.github.io/post/developer_relations_advocate/</guid>
-      <description>&lt;p&gt;How and what is an Advocate and what is it in context of Developer Relations (DevRel)? After more than twenty years, I have returned to the realm of DevRel, so what has changed and what has remained the same?&lt;/p&gt;</description>
     </item>
     
   </channel>
