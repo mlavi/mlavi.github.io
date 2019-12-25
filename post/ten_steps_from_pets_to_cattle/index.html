@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
   <meta property="og:title" content="Ten Steps from Pets to Cattle" />
@@ -305,22 +305,21 @@
 		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
 				<small class="toc-label">Contents</small>
 		   	 	<nav id="TableOfContents">
-<ul>
-<li><a href="#under-construction">Under Construction</a></li>
-<li><a href="#overview">Overview</a></li>
-<li><a href="#1-the-monolith-in-production">1: The Monolith in Production</a></li>
-<li><a href="#2-separate-monolithic-functions">2: Separate, Monolithic Functions</a></li>
-<li><a href="#3-add-load-balancer-and-dmz">3: Add Load Balancer and DMZ</a></li>
-<li><a href="#4-calm-blueprint-for-ops">4: Calm Blueprint for Ops</a></li>
-<li><a href="#5-synthesis-with-scripting">5: Synthesis with Scripting</a></li>
-<li><a href="#6-configuration-management">6: Configuration Management</a></li>
-<li><a href="#7-infrastructure-artifacts">7: Infrastructure Artifacts</a></li>
-<li><a href="#8-infrastructure-ci-cd">8: Infrastructure CI/CD</a></li>
-<li><a href="#9-enterprise-and-hybrid-clouds">9: Enterprise and Hybrid Clouds</a></li>
-<li><a href="#10-heuristic-driven-operations">10: Heuristic Driven Operations</a></li>
-<li><a href="#postscript">Postscript</a></li>
-<li><a href="#x-y-template">X: Y template</a></li>
-</ul>
+  <ul>
+    <li><a href="#updates">Updates</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#design">Design:</a></li>
+    <li><a href="#build-and-deploy-x">Build and Deploy: X</a></li>
+    <li><a href="#benefits">Benefits:</a></li>
+    <li><a href="#criticism">Criticism:</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#overview-1">Overview</a></li>
+    <li><a href="#definitions">Definitions</a></li>
+  </ul>
 </nav>
 		    </div>
 		    
@@ -349,296 +348,482 @@
 			
 
             <p>Why do we need DevOps when IT and Operations succeed in their responsibility
- for security and uptime, using administrative tools to maintain, backup, and
- restore those systems? Because the operations domain must be documented,
- democratized, and distributed to achieve agility before Operations returns
- to become a force multiplier instead of a keep the lights on organization.
- Let me demonstrate that traditional values for long lived infrastructure and
- their retroactive justification do not apply when progressing to a DevOps
- mindset.</p>
-
+for security and uptime, using administrative tools to maintain, backup, and
+restore those systems? Because the operations domain must be documented,
+democratized, and distributed to achieve agility before Operations returns
+to become a force multiplier instead of a keep the lights on organization.
+Let me demonstrate that traditional values for long lived infrastructure and
+their retroactive justification do not apply when progressing to a DevOps
+mindset.</p>
 <h1 id="under-construction">Under Construction</h1>
-
 <p>The following pictures in the <a href="#postscript">Postscript</a> are from my notebook
- and outline this article. Please return back in a week to see how I flesh
- out the presentation.</p>
-
+and outline this article. Please return to see how I flesh out the presentation.</p>
+<h2 id="updates">Updates</h2>
+<ul>
+<li>2019-12-25: Since October, I've worked with John Williamson @Nutanix to finish this,
+will provide the final product shortly!</li>
+<li>2018-07: I've brought forward an early draft at the bottom.</li>
+</ul>
 <h1 id="overview">Overview</h1>
-
 <p>January 25, 2017: I gave a Calm deep dive session to my peers at Nutanix,
- and there were two topic requests that shed light into the DevOps world
- for them and provided insight
- (the what, who, why that Nutanix management always cites)
- for the Calm automation product&rsquo;s value and audience for DevOps.
+and there were two topic requests that shed light into the DevOps world
+for them and provided insight
+(the what, who, why that Nutanix management always cites)
+for the Calm automation product's value and audience for DevOps.
 I tried to show to progression from Pets to Cattle to answer the question,
- &ldquo;Why do I need DevOps?&rdquo; by illustrating the roughly ten steps it takes to
- refactor from monolith to hybrid cloud applications and
- to show how automation accelerates all efforts.</p>
-
+&ldquo;Why do I need DevOps?&rdquo; by illustrating the roughly ten steps it takes to
+refactor from monolith to hybrid cloud applications and
+to show how automation accelerates all efforts.</p>
 <p>For the sake of reaching a larger audience, I picked a web application hosted
- on a Windows server with IIS web server and MS-SQL database. For this exercise,
- we focus on application infrastructure; a SAN or backup system target is out
- of scope.</p>
-
+on a Windows server with IIS web server and MS-SQL database. For this exercise,
+we focus on application infrastructure; a SAN or backup system target is out
+of scope.</p>
 <p>Throughout this exercise, I will use a mythical, relative value of X
- as a unit of work and time, my guess is that it is 3 hours.</p>
-
+as a unit of work and time, my guess is that it is 3 hours.</p>
 <h1 id="1-the-monolith-in-production">1: The Monolith in Production</h1>
-
 <ul>
 <li>Design:
-
 <ul>
 <li>A single server, hosting the entire application: OS + web + DB.</li>
-</ul></li>
+</ul>
+</li>
 <li>Build and Deploy: X
-
 <ul>
 <li>Built by hand</li>
-</ul></li>
+</ul>
+</li>
 <li>MTTR: 0.5X
-
 <ul>
 <li>Repair is a restoral, estimated at 0.5 build and deploy time</li>
-</ul></li>
+</ul>
+</li>
 <li>Benefits:
-
 <ul>
 <li>Easy to backup, but it requires application downtime</li>
-</ul></li>
+</ul>
+</li>
 <li>Criticism:
-
 <ul>
 <li>C1.1: A single point of failure on every infrastructure and application tier</li>
 <li>A single point of failure environment: no staging</li>
 <li>A single point of failure data center: no disaster recovery</li>
 <li>Downtime requires human intervention to restore</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h1 id="2-separate-monolithic-functions">2: Separate, Monolithic Functions</h1>
-
 <ul>
 <li>Design:
-
 <ul>
-<li>Two servers:</li>
+<li>Two servers:
+<ul>
 <li>web hosts the application: OS + web</li>
 <li>database hosts the data: OS + DB.</li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Build and Deploy: 1.5X
-
 <ul>
 <li>Built by hand, so little parallel OS installation time savings</li>
-</ul></li>
+</ul>
+</li>
 <li>MTTR: .75X
-
 <ul>
 <li>Repair is a restoral, estimated at half the build and deploy time of this step</li>
-</ul></li>
+</ul>
+</li>
 <li>Benefits:
-
 <ul>
 <li>Separation of each function allows better management of each concern</li>
 <li>Easier to backup web without downtime</li>
 <li>Remediate C1.1: if web node is down, DB is not, and vice-versa</li>
 <li>Minor MTTR decrease for restoral</li>
-</ul></li>
+</ul>
+</li>
 <li>Criticism:
-
 <ul>
 <li>C2.1: Each host remains a single point of failure</li>
 <li>Twice the time to maintain, twice the attack surface, twice OS license cost</li>
 <li>Database still requires application downtime</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h1 id="3-add-load-balancer-and-dmz">3: Add Load Balancer and DMZ</h1>
-
 <ul>
 <li>Design:
-
 <ul>
-<li>Five servers:</li>
+<li>Five servers:
+<ul>
 <li>Load balancer for the web tier, modeled as a web proxy with IIS?</li>
 <li>Web tier: 2* web hosts the application: OS + web</li>
 <li>Database: 2* database hosts the data: OS + DB.</li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Build and Deploy: 6X
-
 <ul>
 <li>4X: Built by hand, so little parallel OS installation time savings</li>
 <li>1X: Increased time to configure Master+Minion database</li>
 <li>1X: Increased time to configure OS firewalls, web proxy</li>
-</ul></li>
+</ul>
+</li>
 <li>MTTR: 3X
-
 <ul>
 <li>Repair is a restoral, estimated at half the build and deploy time of this step</li>
-</ul></li>
+</ul>
+</li>
 <li>Benefits:
-
 <ul>
 <li>A single server in the web tier can fail or be maintained without
 application downtime</li>
 <li>In theory, a master and minion database can be maintained without downtime</li>
-<li>On paper, 2* increased capacity for web and DB</li>
+<li>On paper, 2* increased capacity for web and DB
+<ul>
 <li>Application read traffic can be directed to minion to reduce load on master</li>
-<li>Reduced network attack surface:</li>
+</ul>
+</li>
+<li>Reduced network attack surface:
+<ul>
 <li>Web tier OS firewall can restrict public access to load Balancer</li>
 <li>Database OS firewall can restrict access to web tier servers</li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Criticism:
-
 <ul>
 <li>Load balancer is a single point of failure</li>
 <li>5X the time to maintain, 5X OS license cost, 2X DB license costs</li>
 <li>MTTR is a larger factor</li>
 <li>Increased complexity to troubleshoot network</li>
 <li>No DMZ network for further isolation</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h1 id="4-calm-blueprint-for-ops">4: Calm Blueprint for Ops</h1>
-
 <p>If all of the previous steps were on bare metal, then it is time to virtualize:
- called P2V: physical to virtual. My selfish agenda is do this on
- Nutanix with your hypervisor of choice because it would include Prism Central
- and Calm!</p>
-
+called P2V: physical to virtual. My selfish agenda is do this on
+Nutanix with your hypervisor of choice because it would include Prism Central
+and Calm!</p>
 <p>At this point, Calm can document the current production deployment
 by brownfield importing the servers as existing machines. Orchestrated
 operations from every change control and runbook procedural document
 (such as a backup, a restoral, an OS upgrade) can be added the blueprint
 and made a one click operations under RBAC with audits to delegate operations.</p>
-
 <p>The blueprint can now be saved to revision control to insure no loss to
 documented operations and infrastructure: it is a start on the road to
 infrastructure as code and marks the transition to becoming a developer:
- programming ahead!</p>
-
+programming ahead!</p>
 <ul>
 <li>Design: a translation of stage #4.
-
 <ul>
 <li>5 servers, brownfield imported</li>
-</ul></li>
+</ul>
+</li>
 <li>Build and Deploy: 2X
-
 <ul>
 <li>Estimating automation to cut down on manual operations and human error at
 33% savings, then parallelization at half of that.</li>
 <li>However, one now adds initial blueprint development time.</li>
-</ul></li>
+</ul>
+</li>
 <li>Development: 3X
-
 <ul>
 <li>2X: Add some time to learn and bootstrap Calm and Karan.</li>
 <li>1X: minimal because brownfield import, then adding actions for each
 documented change control or runbook operations should be a cut and paste
 with minimal orchestration and variable/macro substitution.</li>
-</ul></li>
+</ul>
+</li>
 <li>MTTR: 1X
-
 <ul>
 <li>Repair is a restoral, estimated at half the build and deploy time of this step</li>
-</ul></li>
+</ul>
+</li>
 <li>Benefits:
-
 <ul>
 <li>Documented Production</li>
 <li>Added maintenance operations, can be delegated and audited under RBAC</li>
-</ul></li>
+</ul>
+</li>
 <li>Criticism:
-
 <ul>
 <li>We can improve!</li>
-</ul></li>
 </ul>
-
-<p>Let&rsquo;s explore what the blueprint unlocks for the future:</p>
-
+</li>
+</ul>
+<p>Let's explore what the blueprint unlocks for the future:</p>
 <ul>
 <li>With more work, one can have push button, separate environment deployments,
 but this is a derivative restoral in parallel and localize strategy: it can
 be better and this will be <a href="#5-synthesis-with-scripting">stage #5</a>.</li>
-<li>Adding a revision control service, unless you don&rsquo;t need collaboration
+<li>Adding a revision control service, unless you don't need collaboration
 paves the way to CI of blueprints, infrastructure, and applications.
 This will be <a href="#8-infrastructure-ci-cd">stage #8</a>.</li>
 <li>Adding monitoring, metrics, and logs allows on to heuristically trigger
 these operations: zero-click operations = self-healing, anti-fragile business.
 This will be <a href="#10-heuristic-driven-operations">stage #10</a>.</li>
 </ul>
-
 <h1 id="5-synthesis-with-scripting">5: Synthesis with Scripting</h1>
-
 <p>Cloning the blueprint <a href="#4-calm-blueprint-for-ops">from #4</a>,
- one can now refactor each host to create a new VM
- instead, then use Powershell scripting to stand up each service from scratch.
+one can now refactor each host to create a new VM
+instead, then use Powershell scripting to stand up each service from scratch.
 If desired, one can skip this step to proceed to configuration management.</p>
-
 <h1 id="6-configuration-management">6: Configuration Management</h1>
-
 <p>Cloning the blueprint from #5, one can refactor Powershell scripting to
- use configuration management instead. I consider this next generation
- scripting and the effort can benefit by bootstrapping from community
- contributions for web and database. Calm can orchestrate
- configuration management on each service host, so CM could potentially be
- client only without increasing the infrastructure need for supporting CM servers.</p>
-
+use configuration management instead. I consider this next generation
+scripting and the effort can benefit by bootstrapping from community
+contributions for web and database. Calm can orchestrate
+configuration management on each service host, so CM could potentially be
+client only without increasing the infrastructure need for supporting CM servers.</p>
 <h1 id="7-infrastructure-artifacts">7: Infrastructure Artifacts</h1>
-
 <p>Creating a build script, one can now move from runtime configuration Management
 to build time infrastructure: this allows further testing automation and faster
 deployment time. The Calm blueprint can be simplified to instantiate the
 VM artifacts.</p>
-
-<h1 id="8-infrastructure-ci-cd">8: Infrastructure CI/CD</h1>
-
+<h1 id="8-infrastructure-cicd">8: Infrastructure CI/CD</h1>
 <p>The Calm blueprint from #7 can be cloned and refactored to accept runtime
- arguments to the VM artifacts to be used for continuous integration as well
- as perform application integration testing. Calm blueprint changes could also
- trigger CI/CD so that every operational and governance change can also be tested!</p>
-
+arguments to the VM artifacts to be used for continuous integration as well
+as perform application integration testing. Calm blueprint changes could also
+trigger CI/CD so that every operational and governance change can also be tested!</p>
 <h1 id="9-enterprise-and-hybrid-clouds">9: Enterprise and Hybrid Clouds</h1>
-
 <p>The Calm blueprint from #8 can be cloned and refactored for parallel deployments
- to multiple hypervisors and public clouds in multiple datacenters for global
- application load balancing and service level agreements.</p>
-
+to multiple hypervisors and public clouds in multiple datacenters for global
+application load balancing and service level agreements.</p>
 <h1 id="10-heuristic-driven-operations">10: Heuristic Driven Operations</h1>
-
 <p>Adding monitoring, metrics, and logs allows on to heuristically trigger
- these operations: zero-click operations = self-healing, anti-fragile business.
- <hr /></p>
-
-<h1 id="postscript">Postscript</h1>
-
+these operations: zero-click operations = self-healing, anti-fragile business.</p>
+<!-- raw HTML omitted -->
 <p>As mentioned in <a href="#under-construction">Under Construction</a>,
- there is more to to add! Here are snapshots from my notes:
-<img src="../IMAG1394.jpg" alt="Ten Steps" />
-<img src="../IMAG1408.jpg" alt="1408" />
-<img src="../IMAG1409.jpg" alt="1409" />
-<img src="../IMAG1410.jpg" alt="1410" />
-<hr /></p>
-
-<h1 id="x-y-template">X: Y template</h1>
-
+there is more to to add! Here are snapshots from my notes:
+<img src="../IMAG1394.jpg" alt="Ten Steps">
+<img src="../IMAG1408.jpg" alt="1408">
+<img src="../IMAG1409.jpg" alt="1409">
+<img src="../IMAG1410.jpg" alt="1410"></p>
+<!-- raw HTML omitted -->
 <ul>
-<li>Design:
--</li>
-<li>Build and Deploy: X
--</li>
+<li>
+<h2 id="design">Design:</h2>
+</li>
+<li>
+<h2 id="build-and-deploy-x">Build and Deploy: X</h2>
+</li>
 <li>MTTR: X
-
 <ul>
 <li>Repair is a restoral, estimated at half the build and deploy time of this step</li>
-</ul></li>
-<li>Benefits:
--</li>
-<li>Criticism:
--</li>
 </ul>
+</li>
+<li>
+<h2 id="benefits">Benefits:</h2>
+</li>
+<li>
+<h2 id="criticism">Criticism:</h2>
+</li>
+</ul>
+<hr>
+<pre><code>Date:   Mon Jul 9 17:29:24 2018 -0500 Lots of work in progress and ideas
+</code></pre><h1 id="from-pet-to-cattle-in-x-steps">From Pet to Cattle in X Steps</h1>
+<p>40 mins presentation, 10 min Q&amp;A, review and Call to Action: last words
+linger</p>
+<h2 id="overview-1">Overview</h2>
+<p>We will take you on a journey of a system administrator, responsible for
+the organization's e-commerce web site, across various era IT best
+practices:</p>
+<ol>
+<li>bare-metal in the data center to...</li>
+<li>configuration management of VMs (circa 2010?) to...</li>
+<li>continually deployed infrastructure container artifacts.</li>
+</ol>
+<h2 id="definitions">Definitions</h2>
+<ul>
+<li>pet: SPoF with emotional attachments; hand crafted and bespoke</li>
+<li>cattle: a fleet of resources, numbered and maintained by an
+aggregate SLA</li>
+<li>DB: DataBase</li>
+<li>ETA: estimated time of arrival</li>
+<li>MTTR: mean time to restore</li>
+<li>MTTF: mean time to fix (repair)</li>
+<li>OS: Operating System</li>
+<li>www: world wide web</li>
+</ul>
+<h1 id="x-steps">X Steps</h1>
+<p>The monolith in production</p>
+<p>full stack on one server:</p>
+<ul>
+<li>1 OS, 1 www, 1 DB</li>
+<li>config*3+data+docroot</li>
+</ul>
+<p>ops: manual</p>
+<p>build: OS+www+DB+config*3+docroot+data</p>
+<ul>
+<li>MTTB: sequential</li>
+<li>ETA: 8 hours</li>
+</ul>
+<p>lifecycle update stack: OS, www, DB</p>
+<ul>
+<li>downtime required potentially during each operation</li>
+<li>ETA: 2 hours</li>
+</ul>
+<p>lifecycle update config*3, data update, docroot update</p>
+<ul>
+<li>minimal downtime</li>
+<li>ETA: 0.5 hour</li>
+</ul>
+<p>maintenance backup:</p>
+<ul>
+<li>internal (on system)</li>
+<li>ETA: 1 hour</li>
+<li>external (off system)</li>
+<li>ETA: 4 hours</li>
+</ul>
+<p>failure revert change/disaster recovery:</p>
+<ul>
+<li>restore from backup = downtime</li>
+<li>MTTR ETA: 4 hours (op+checks)</li>
+</ul>
+<p>security:</p>
+<ul>
+<li>minimal (unless configured, OS/server/app defaults)</li>
+<li>firewall: admin+www+DB ports open</li>
+</ul>
+<p>criticism: pet infrastructure, pet architecture, pet ops</p>
+<p>Slow: sequential progress to install entire stack</p>
+<p>SPoF infra, arch, and probably ops</p>
+<ul>
+<li>all capacity combined (OS+DB+www+ops), cannot be isolated</li>
+<li>scale up possible, but no scale out</li>
+<li>no redundancy = MTTR from backup</li>
+<li>no change control plan, no safety net</li>
+</ul>
+<p>minimal security</p>
+<ul>
+<li>SPoF for DoS attacks</li>
+<li>high risk, easy to attack</li>
+<li>no defense in depth or isolation (of DB)</li>
+</ul>
+<p>no testing/monitoring/automation:</p>
+<ul>
+<li>failure must be noticed to invoke forensics and MTTF before revert
+ops, increasing MTTR</li>
+<li>best one can hope for is a run book troubleshooting procedure on the
+wiki + vendor documentation + software developer dox</li>
+<li>MTTR increase if backups untested: if a backup fails, best one can
+hope for is a run book troubleshooting procedure on the wiki +
+vendor documentation + software developer dox</li>
+<li>backup queue limited by monolith capacity</li>
+<li>backup limited to userspace copies+exports (in channel resource
+impact), also SPoF -- this prevents full image restoral, therefore
+must be composed of OS backups (restore points?) + restore
+config+data</li>
+</ul>
+<p><strong>Question:</strong> where would you go from here? [hold] who would vote for
+infrastructure separation in prod and who would vote for adding staging
+infrastructure?</p>
+<p>Separate monoliths: www+DB</p>
+<p>full stack * 2: OS+www, OS+DB</p>
+<p>security: remove firewall rules to protect only www, only protects DB</p>
+<p>benefit:</p>
+<ul>
+<li>distributed SPoF means that any failure operation will not require
+working on the other monolith, small reduction to MTTF and MTTR</li>
+<li>increased security for DB</li>
+<li>independent scale up = better capacity management option</li>
+</ul>
+<p>criticism:</p>
+<p>any failure still impacts the overall app downtime</p>
+<p>no scale out (yet), but we've build the first step on that journey</p>
+<p>operation load:</p>
+<ul>
+<li>nearly doubles, reducing work availability</li>
+<li>network + security config is a new skill set, might be a new team?</li>
+</ul>
+<p>Add staging monolith</p>
+<p>full stack * 4</p>
+<p>ops: manual, with the addition of:</p>
+<ol start="6">
+<li>sync data from prod to staging</li>
+</ol>
+<ul>
+<li>ETA: 2 hours</li>
+</ul>
+<p>security: minimal, unless staging is isolated from production and public
+traffic</p>
+<p>benefit:</p>
+<p>update operations can be tested in staging by hand = less
+impact/risk/downtime to production = higher uptime</p>
+<p>fallback to revert change/disaster recovery possible to reduce MTTR</p>
+<ul>
+<li>in a pinch, staging can be considered a redundant, fallback
+monolith, given that staging can be made public and change to
+production configuration (still manual). but still carry a heavy
+resource penalty to revert</li>
+</ul>
+<p>criticism</p>
+<p>Same as above, but now operation ETAs double</p>
+<ul>
+<li>e.g.: reproduce update from staging to prod</li>
+</ul>
+<p>still pet infrastructure, pet architecture, pet ops</p>
+<p>security minimal!</p>
+<p>limited</p>
+<p>REFACTOR INFRASTRUCTURE for speed: bare metal to VMs + cloud?</p>
+<p>REFACTOR INFRA+ARCH for automation: rounds</p>
+<p>monitors = testing, round 1</p>
+<p>Add revision contol:</p>
+<ol>
+<li>scripting builds, ops (opex cost to develop)</li>
+<li>configuration management (vs. package management = apt-get install
+wordpress, chocolatey?)</li>
+<li>Add PC EC automation: Calm blueprint = delegate, self-service,
+Infrastructure as Code</li>
+</ol>
+<p>BUILD + REFACTOR</p>
+<p>Add build system:</p>
+<ol>
+<li>build and distribute as container</li>
+<li>test as container</li>
+</ol>
+<p>Mono*1 &gt; +IsoMono*2*1 &gt; +DevIsoMono*2*2 &gt; +LBDevIsoMono*3*2 &gt;
+blueprintDevIsoMonoPets: cattle ops; that's great, but how good are
+your backups?</p>
+<p>blueprintSynth:scripting+orch,+RCS=IaC=Cattle infra</p>
+<p>blueprintSynth:CM=less code</p>
+<p>CI job:build infra artifacts, refactor blueprint to deploy them</p>
+<p>CI job:build infra artifacts, deploy them via blueprint, simple deploy
+test action exercising whole=app integration testing to pass commit</p>
+<p>Code review on commit: automated test harness inventory</p>
+<p>TDD/BDD IoC with blueprints</p>
+<p>brownfield import pets +LB in blueprint: RBAC cattle ops (ops as code)
++audits, e.g.: 3 pets for webtier</p>
+<ol>
+<li>alice.prod.example.org</li>
+<li>betty.prod.example.org</li>
+<li>carol.prod.example.org</li>
+</ol>
+<p>synthesize pets with CM in blueprint: cattle infra as code, e.g.: 3
+cattle of webtier in two clouds/DCs</p>
+<ol>
+<li>
+<p>pet datacenter 1:</p>
+<ol>
+<li>www1.dc1.prod.example.org</li>
+<li>www2.dc1.prod.example.org</li>
+<li>www3.dc1.prod.example.org</li>
+</ol>
+</li>
+<li>
+<p>pet cloud datacenter 2:</p>
+<ol>
+<li>www1.dc2.prod.example.org</li>
+<li>www2.dc2.prod.example.org</li>
+<li>www3.dc2.prod.example.org</li>
+</ol>
+</li>
+</ol>
+<p>refactor to cattle infra as code behind LB, tie to event triggers: no
+ops</p>
 	
 			
 
@@ -685,9 +870,12 @@ VM artifacts.</p>
 		
 		</ul>
 	</div>
+  
+  
 
 	<p>&copy; 2019. All rights reserved.</p>
 </div>
+
     </div>
   </div>
 	

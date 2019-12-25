@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
   <meta property="og:title" content="Infrastructure as Code and Calm Blueprints" />
@@ -305,20 +305,9 @@
 		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
 				<small class="toc-label">Contents</small>
 		   	 	<nav id="TableOfContents">
-<ul>
-<li><a href="#a-redistribution-of-infrastructure">A Redistribution of Infrastructure</a></li>
-<li><a href="#traditional-infrastructure-is-dead-long-live-ephemera-ephemeral-infrastructure">Traditional Infrastructure is Dead, Long Live Ephemera Ephemeral Infrastructure!</a></li>
-<li><a href="#ephemeral-infrastructure-automate-everything">Ephemeral Infrastructure: Automate Everything</a></li>
-<li><a href="#full-stack-configuration-management">Full Stack Configuration Management</a></li>
-<li><a href="#ephemeral-applications-orchestrate-everything">Ephemeral Applications: Orchestrate Everything</a></li>
-<li><a href="#calm-blueprint-example">Calm Blueprint example</a></li>
-<li><a href="#operations-as-code-automate-everything">Operations as Code: Automate Everything</a>
-<ul>
-<li><a href="#orchestration-of-operations">Orchestration of Operations</a></li>
-</ul></li>
-<li><a href="#business-operations-govern-everything">Business Operations: Govern Everything</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-</ul>
+  <ul>
+    <li><a href="#orchestration-of-operations">Orchestration of Operations</a></li>
+  </ul>
 </nav>
 		    </div>
 		    
@@ -347,235 +336,196 @@
 			
 
             <p>This <a href="../../../post/calm.io-recap/">Calm.io blog recap</a>
- was originally written and posted by me on November 3, 2015 at
-<a href="http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/">http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/</a>,
+was originally written and posted by me on November 3, 2015 at
+<a href="http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,">http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,</a>
 and slightly enhanced on February 18, 2018.</p>
-
 <p>In our continuing journey to DevOps,
- <a href="../../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">let us revisit our definition</a>
- in context of infrastructure:</p>
-
+<a href="../../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">let us revisit our definition</a>
+in context of infrastructure:</p>
 <blockquote>
 <p>DevOps is the <strong><em>process</em></strong> of reducing friction between the developer
- and customer value.</p>
+and customer value.</p>
 </blockquote>
-
 <p>We are in a transition from hand maintained physical infrastructure to
- modeling virtual infrastructure as software. This process can be expressed
- in many ways, but it is often referred to as <strong><em>Infrastructure as Code</em></strong>
- and it is a fundamental component in the practice of
- <strong><em>Immutable Infrastructure,</em></strong>
- which I will cover in a future blog entry.
- Infrastructure as Code democratizes access to infrastructure,
- achieving the dream of on-demand, cloud experience of agile infrastructure
- (and accomplishing <a href="https://groups.google.com/forum/#!topic/agile-system-administration/HKCTSee2u4w">Patrick Dubois&rsquo; original motivation</a>
- for creating DevOps)!</p>
-
+modeling virtual infrastructure as software. This process can be expressed
+in many ways, but it is often referred to as <strong><em>Infrastructure as Code</em></strong>
+and it is a fundamental component in the practice of
+<strong><em>Immutable Infrastructure,</em></strong>
+which I will cover in a future blog entry.
+Infrastructure as Code democratizes access to infrastructure,
+achieving the dream of on-demand, cloud experience of agile infrastructure
+(and accomplishing <a href="https://groups.google.com/forum/#!topic/agile-system-administration/HKCTSee2u4w">Patrick Dubois&rsquo; original motivation</a>
+for creating DevOps)!</p>
 <h1 id="a-redistribution-of-infrastructure">A Redistribution of Infrastructure</h1>
-
 <p>Infrastructure is the bedrock of our applications: it hosts our software
- and infrastructure has been the traditional realm of operations
- to the exclusion of the rest of the engineering organization.</p>
-
+and infrastructure has been the traditional realm of operations
+to the exclusion of the rest of the engineering organization.</p>
 <p>With the advent of commodity virtualization and the rise of the cloud computing,
- we have compute power offered as a utility in public and private data centers.
- This is a huge contrast to the physical time shared, dedicated, and costly
- capital expenditure compute systems that require dedicated operations teams
- to maintain as mainframe, cluster, and server farms concerned with secure
- access, power, networking, cooling, and storage at scale. Today, we see a
- redistribution of dedicated infrastructure in nearly every organization to
- on-demand, elastic compute capacity on premises as a private cloud or over
- the Internet to public clouds. In addition, commodity virtualization and
- containerization enables full stack environment development on a developer
- laptop. The lines between infrastructure and application development have
- been erased forever: today, a developer can build infrastructure artifacts
- and version control environments.</p>
-
+we have compute power offered as a utility in public and private data centers.
+This is a huge contrast to the physical time shared, dedicated, and costly
+capital expenditure compute systems that require dedicated operations teams
+to maintain as mainframe, cluster, and server farms concerned with secure
+access, power, networking, cooling, and storage at scale. Today, we see a
+redistribution of dedicated infrastructure in nearly every organization to
+on-demand, elastic compute capacity on premises as a private cloud or over
+the Internet to public clouds. In addition, commodity virtualization and
+containerization enables full stack environment development on a developer
+laptop. The lines between infrastructure and application development have
+been erased forever: today, a developer can build infrastructure artifacts
+and version control environments.</p>
 <p>This redistribution is a signal and a call for Infrastructure as Code
- and the DevOps process: the friction caused by physical infrastructure
- is being removed as infrastructure becomes increasingly abstract.</p>
-
+and the DevOps process: the friction caused by physical infrastructure
+is being removed as infrastructure becomes increasingly abstract.</p>
 <h1 id="traditional-infrastructure-is-dead-long-live-ephemera-ephemeral-infrastructure">Traditional Infrastructure is Dead, Long Live Ephemera Ephemeral Infrastructure!</h1>
-
 <p>As provisioning compute capacity becomes a simple exercise of a virtualization
- or cloud Application Programmer Interface (API), we are transitioning away
- from hand maintained systems that were the exclusive domain of the operations
- staff. Traditionally, these systems are backed up, restored, and migrated
- with an inventory of storage snapshots and have a critical health metric of
- up-time measured in years.</p>
-
+or cloud Application Programmer Interface (API), we are transitioning away
+from hand maintained systems that were the exclusive domain of the operations
+staff. Traditionally, these systems are backed up, restored, and migrated
+with an inventory of storage snapshots and have a critical health metric of
+up-time measured in years.</p>
 <p>The infrastructure industry worked to provide automated backups and monitoring
- to support operations staff, but the result was further dependency on
- maintaining binary images containing state, insulation from the creation
- process, and increasing operations specialization to support these maintenance
- systems. Operating system vendors tackled the provisioning problem, but their
- solutions were also specialized and isolated the efforts of operations teams
- into tribes.</p>
-
+to support operations staff, but the result was further dependency on
+maintaining binary images containing state, insulation from the creation
+process, and increasing operations specialization to support these maintenance
+systems. Operating system vendors tackled the provisioning problem, but their
+solutions were also specialized and isolated the efforts of operations teams
+into tribes.</p>
 <p>Traditional infrastructure practices are often repeated in the cloud and they
- represent a lateral translation of skills and tools. However, there is little
- to no justification for preserving the values of bespoke, hand crafted, isolated
- systems because we have a new set of capabilities which enable agile
- infrastructure and can replace traditional approaches to maintenance.</p>
-
+represent a lateral translation of skills and tools. However, there is little
+to no justification for preserving the values of bespoke, hand crafted, isolated
+systems because we have a new set of capabilities which enable agile
+infrastructure and can replace traditional approaches to maintenance.</p>
 <p>There were inroads on infrastructure codification and they had limited success.
- The first level of infrastructure codification was the manual operation
- run book: a document of procedures to be performed by the operations staff
- by hand. The second level of codification built on run books by scripting
- at least a portion of the procedures, but often they were hard coded,
- literal historical representations of the work performed and required
- manual interpretation and translation in order to repeat the procedures
- using proprietary vendor tools. While this approach does represent code,
- it did not scale and suffered problems of little to no testing,
- dependency checking, and/or transactional roll backs. Furthermore, efforts
- were compromised by minimal audit logs, wrappers around vendor tools,
- and a lack of governance and accessibility unless you were a system admin
- or reliability engineer. The results were a small improvement
- compared to complete life cycle provisioning APIs.</p>
-
+The first level of infrastructure codification was the manual operation
+run book: a document of procedures to be performed by the operations staff
+by hand. The second level of codification built on run books by scripting
+at least a portion of the procedures, but often they were hard coded,
+literal historical representations of the work performed and required
+manual interpretation and translation in order to repeat the procedures
+using proprietary vendor tools. While this approach does represent code,
+it did not scale and suffered problems of little to no testing,
+dependency checking, and/or transactional roll backs. Furthermore, efforts
+were compromised by minimal audit logs, wrappers around vendor tools,
+and a lack of governance and accessibility unless you were a system admin
+or reliability engineer. The results were a small improvement
+compared to complete life cycle provisioning APIs.</p>
 <p>We discuss many pitfalls of hand scripted work in our whitepaper:
- Calm IT Down, DevOps in the Container Era.</p>
-
+Calm IT Down, DevOps in the Container Era.</p>
 <h1 id="ephemeral-infrastructure-automate-everything">Ephemeral Infrastructure: Automate Everything</h1>
-
 <p>Using provisioning APIs, one can synthesize virtual infrastructure,
- throw it away, and re-instantiate it again in just minutes or seconds:
- this rapid life cycle allows us to test small changes to infrastructure
- in isolation and on demand, paving the way to continuous integration
- of Infrastructure as Code.</p>
-
+throw it away, and re-instantiate it again in just minutes or seconds:
+this rapid life cycle allows us to test small changes to infrastructure
+in isolation and on demand, paving the way to continuous integration
+of Infrastructure as Code.</p>
 <p>One way to characterize the virtual infrastructure life cycle is that
- it approximates the standard software methods of Create, Read, Update,
- Delete (CRUD). Provisioning APIs are an important key for new
- infrastructure models, uniting the operations tribes (storage, OS,
- networking, etc.) again to solve application wide operations instead
- of working from the bottom up on each of the infrastructure pieces in isolation.</p>
-
+it approximates the standard software methods of Create, Read, Update,
+Delete (CRUD). Provisioning APIs are an important key for new
+infrastructure models, uniting the operations tribes (storage, OS,
+networking, etc.) again to solve application wide operations instead
+of working from the bottom up on each of the infrastructure pieces in isolation.</p>
 <p>Even the longest lived data persistence tier is transitioning to this
- infrastructure model, enabling discussions of data gravity, portability,
- and mutable life cycles rather than a the key metric of permanence.
- The age of our systems is declining while the population is increasing:
- we have entered into an era of ephemeral everything!</p>
-
+infrastructure model, enabling discussions of data gravity, portability,
+and mutable life cycles rather than a the key metric of permanence.
+The age of our systems is declining while the population is increasing:
+we have entered into an era of ephemeral everything!</p>
 <p>Collecting all of our operations into API calls allows us to codify the
- order of those operations, i.e.: exercise these APIs with this configuration
- and you will get a new virtual infrastructure resource ready to be used by
- your application.</p>
-
+order of those operations, i.e.: exercise these APIs with this configuration
+and you will get a new virtual infrastructure resource ready to be used by
+your application.</p>
 <h1 id="full-stack-configuration-management">Full Stack Configuration Management</h1>
-
 <p>This brings us to the next problem: we have an entire stack of software
- which resides on each piece of our infrastructure:</p>
-
+which resides on each piece of our infrastructure:</p>
 <ul>
 <li>Operating system, drivers, tools, and configuration
-
 <ul>
 <li><em>e.g.:</em> Red Hat Enterprise Linux, Debian, Ubuntu, CentOS, Windows Server</li>
-</ul></li>
+</ul>
+</li>
 <li>Language runtimes, tooling, libraries, and configuration
-
 <ul>
 <li><em>e.g.:</em> Ruby, Java, PHP, PERL, Python, JavaScript, etc.</li>
-</ul></li>
+</ul>
+</li>
 <li>Server facility packages and configuration
-
 <ul>
 <li><em>e.g.:</em> Apache, Nginx, IIS web server</li>
-</ul></li>
+</ul>
+</li>
 <li>Health packages and configuration
-
 <ul>
 <li><em>e.g.:</em> centralized logging, monitors, metrics</li>
-</ul></li>
+</ul>
+</li>
 <li>Finally, our organization’s application artifacts and configuration
-
 <ul>
 <li><em>e.g.:</em> our e-commerce store, registration system, databases, etc.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>How does one codify the infrastructure and the full stack that resides on it?</p>
-
 <p>We see the traditional first and second order solutions and their problems
- (described above) again: hand crafted run books then shell scripts.
- But another tooling industry has arisen over the past decade to address
- how to configure an individual virtual resource: Configuration Management.
- Fortunately, all of the configuration management work results in code and
- this will be the topic of another future blog entry!</p>
-
+(described above) again: hand crafted run books then shell scripts.
+But another tooling industry has arisen over the past decade to address
+how to configure an individual virtual resource: Configuration Management.
+Fortunately, all of the configuration management work results in code and
+this will be the topic of another future blog entry!</p>
 <p>Combining provisioning APIs and configuration management into code that
- anyone can share and execute removes the barriers to mastering all of the
- infrastructure pieces and this is the promise of infrastructure as code!
- The operations, testing, and development teams can collaborate on
- infrastructure as code, version control their work, automate testing
- of their code, revert their work in case of error, and ultimately
- improve the automation of the infrastructure of their applications.
- This is one of the ways to achieve DevOps today!</p>
-
+anyone can share and execute removes the barriers to mastering all of the
+infrastructure pieces and this is the promise of infrastructure as code!
+The operations, testing, and development teams can collaborate on
+infrastructure as code, version control their work, automate testing
+of their code, revert their work in case of error, and ultimately
+improve the automation of the infrastructure of their applications.
+This is one of the ways to achieve DevOps today!</p>
 <p>We see a a constant stream of innovative new set of tools and platforms
- entering into the DevOps ecosystem built on top of these APIs,
- but mastering them represents a new set of challenges before you can
- recognize the limits of their benefits. I have already discussed the pitfalls,
- please see <a href="../../../post/calm.io-recap/calm.io-why-is-devops-so-hard/">Why is-DevOps-So-Hard?</a>
- for more on this topic.</p>
-
+entering into the DevOps ecosystem built on top of these APIs,
+but mastering them represents a new set of challenges before you can
+recognize the limits of their benefits. I have already discussed the pitfalls,
+please see <a href="../../../post/calm.io-recap/calm.io-why-is-devops-so-hard/">Why is-DevOps-So-Hard?</a>
+for more on this topic.</p>
 <p>This is the DevOps way: we have removed the barriers and friction to
- infrastructure by expressing it as code in a transparent and democratic manner,
- allowing our infrastructure to be consumable by anyone in engineering.
- Now we can design and engineer for the applications which reside on the
- infrastructure and resolve the question of who is responsible for your
- application and the infrastructure it resides upon? The answer is everyone:
- we are all DevOps!</p>
-
+infrastructure by expressing it as code in a transparent and democratic manner,
+allowing our infrastructure to be consumable by anyone in engineering.
+Now we can design and engineer for the applications which reside on the
+infrastructure and resolve the question of who is responsible for your
+application and the infrastructure it resides upon? The answer is everyone:
+we are all DevOps!</p>
 <h1 id="ephemeral-applications-orchestrate-everything">Ephemeral Applications: Orchestrate Everything</h1>
-
 <p>However, truly agile infrastructure requires more than individual resource
- automation: it requires orchestration of all of the resources into an
- application architecture. In other words, can we coordinate all of the
- pieces of the infrastructure and compose them into a whole application?</p>
-
+automation: it requires orchestration of all of the resources into an
+application architecture. In other words, can we coordinate all of the
+pieces of the infrastructure and compose them into a whole application?</p>
 <h1 id="calm-blueprint-example">Calm Blueprint example</h1>
-
 <p>IMG: Three tier application blueprint</p>
-
 <p>For example, the back end persistence tier of databases, authentication,
- and health systems need to exist before our application tier services
- can connect to them and come up. The application services need to be healthy
- before they can be rolled into the application load balancer for
- high availability of the application tier. Once the application load balancer
- has achieved some minimal threshold of service health, then the web servers
- can connect and they can inform the web caching tier,
- which can confirm health and be rolled into the web load balancer.</p>
-
+and health systems need to exist before our application tier services
+can connect to them and come up. The application services need to be healthy
+before they can be rolled into the application load balancer for
+high availability of the application tier. Once the application load balancer
+has achieved some minimal threshold of service health, then the web servers
+can connect and they can inform the web caching tier,
+which can confirm health and be rolled into the web load balancer.</p>
 <p>The cascading set of dependencies from the back to the front of our
- application architecture is the logical next stage of Infrastructure as Code!</p>
-
+application architecture is the logical next stage of Infrastructure as Code!</p>
 <p>Orchestration is a challenge that Calm solves by integrating clouds,
- configuration management, operations, and more via our agentless
- approach to managing resources in a Calm blueprint. By default,
- Calm will begin to provision every resource in parallel,
- but it will not complete deployment tasks until dependencies are met.</p>
-
+configuration management, operations, and more via our agentless
+approach to managing resources in a Calm blueprint. By default,
+Calm will begin to provision every resource in parallel,
+but it will not complete deployment tasks until dependencies are met.</p>
 <p>Calm supports role based authorization to blueprints. Because Calm deals
- with public and private clouds, containers, and bare metal machines,
- integrates different configuration management tools,
- and allows agentless access to anything else, all of these provisioning tasks
- have full auditability! This allows the delegation of application
- provisioning to anyone, allowing self-service, <em>ad-hoc</em> testing for the
- entire, integrated application architecture across many resources and tiers.
- But why should we stop there?</p>
-
+with public and private clouds, containers, and bare metal machines,
+integrates different configuration management tools,
+and allows agentless access to anything else, all of these provisioning tasks
+have full auditability! This allows the delegation of application
+provisioning to anyone, allowing self-service, <em>ad-hoc</em> testing for the
+entire, integrated application architecture across many resources and tiers.
+But why should we stop there?</p>
 <h1 id="operations-as-code-automate-everything">Operations as Code: Automate Everything</h1>
-
 <h2 id="orchestration-of-operations">Orchestration of Operations</h2>
-
 <p>IMG: Orchestration of Operations</p>
-
 <p>Now that we can address the entire application as a whole entity inside
- a Calm blueprint, we can codify, orchestrate, audit, and delegate operations
- as well. I like to call this Operations as Code, and examples include:</p>
-
+a Calm blueprint, we can codify, orchestrate, audit, and delegate operations
+as well. I like to call this Operations as Code, and examples include:</p>
 <ul>
 <li>delegating pulling logs from an entire tier of new application servers
 without having to get the SSH key and then log into each resource</li>
@@ -585,24 +535,20 @@ is tripped</li>
 <li>reference architectures with operational best practices as blueprints
 for other teams to share, improve, and consume.</li>
 </ul>
-
 <p>Each of these operations can be invoked by a RESTful API call into Calm,
- allowing you to incorporate full stack, full application integration testing
- into your continuous integration builds and tests.
- With Calm, engineering organizations can finally test the latest
- developer changes on a fully integrated application on the fly.
- This lowers the barrier to continuous delivery entirely,
- achieving another win for the DevOps process!</p>
-
+allowing you to incorporate full stack, full application integration testing
+into your continuous integration builds and tests.
+With Calm, engineering organizations can finally test the latest
+developer changes on a fully integrated application on the fly.
+This lowers the barrier to continuous delivery entirely,
+achieving another win for the DevOps process!</p>
 <h1 id="business-operations-govern-everything">Business Operations: Govern Everything</h1>
-
 <p>By conquering deployment, orchestration, operations, and audits,
- Calm blueprints enable full application life cycle management
- and unite the DevOps ecosystem with all of people who consume applications.
- The next dimension of the Calm blueprint are the business policies
- such as budgets, application expiration, notifications, and approvals.
- Business policy examples include:</p>
-
+Calm blueprints enable full application life cycle management
+and unite the DevOps ecosystem with all of people who consume applications.
+The next dimension of the Calm blueprint are the business policies
+such as budgets, application expiration, notifications, and approvals.
+Business policy examples include:</p>
 <ul>
 <li>Allow only the QA teams to deploy this blueprint to the public cloud
 with a monthly budget of $X.</li>
@@ -614,24 +560,20 @@ get an approval from the VP of Engineering first.</li>
 Marketing, and Customer Support to alert the waiting customer
 for the feature or fix.</li>
 </ul>
-
 <p>By integrating all of the DevOps tooling, platforms, and clouds
- with people and business rules, Calm allows the management of
- applications and DevOps.</p>
-
+with people and business rules, Calm allows the management of
+applications and DevOps.</p>
 <h1 id="conclusion">Conclusion</h1>
-
 <p>Infrastructure as Code is an essential accomplishment for enabling the
- DevOps goal to remove all friction between the developer and customer value.
- It is enabled by a redistribution of physical hand maintained infrastructure
- into the virtual and cloud platforms with APIs augmented with configuration
- management, allowing the delegation and collaboration for infrastructure
- provisioning.</p>
-
+DevOps goal to remove all friction between the developer and customer value.
+It is enabled by a redistribution of physical hand maintained infrastructure
+into the virtual and cloud platforms with APIs augmented with configuration
+management, allowing the delegation and collaboration for infrastructure
+provisioning.</p>
 <p>The full promise of Infrastructure as Code is delivered when extended
- to orchestrate and operate the whole application life cycle and this
- becomes the basis for business operations to govern the applications
- and the DevOps ecosystem.</p>
+to orchestrate and operate the whole application life cycle and this
+becomes the basis for business operations to govern the applications
+and the DevOps ecosystem.</p>
 	
 			
 
@@ -682,9 +624,12 @@ for the feature or fix.</li>
 		
 		</ul>
 	</div>
+  
+  
 
 	<p>&copy; 2019. All rights reserved.</p>
 </div>
+
     </div>
   </div>
 	

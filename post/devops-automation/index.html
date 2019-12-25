@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
   <meta property="og:title" content="Today&#39;s DevOps Automation Diagram" />
@@ -305,16 +305,14 @@
 		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
 				<small class="toc-label">Contents</small>
 		   	 	<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#quotes-and-motivation">Quotes and Motivation</a></li>
-<li><a href="#updated">Updated!</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#quotes-and-motivation">Quotes and Motivation</a></li>
+        <li><a href="#updated">Updated!</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
 		    </div>
 		    
@@ -344,36 +342,27 @@
 
             <p>#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
 Via open source and this blog, we can elevate the state of our software engineering and service design!</p>
-
 <h3 id="quotes-and-motivation">Quotes and Motivation</h3>
-
 <ul>
 <li>&ldquo;Perfect is the enemy of good.&rdquo; &ndash;<a href="http://en.wikiquote.org/wiki/Perfection">Volare</a> (paraphrased)</li>
 <li>&ldquo;Fail fast.&rdquo; &ndash;<a href="http://en.wikiquote.org/wiki/Ward_Cunningham#The_Simplest_Thing_that_Could_Possibly_Work">Ward Cunningham</a>
 (paraphrased as <a href="https://twitter.com/hashtag/failfast">#failfast</a>)</li>
 <li>&ldquo;I hope to replace myself with a tiny shell script one day.&rdquo; &ndash;Unknown Internet meme?</li>
 </ul>
-
 <p>Ship it and fail fast: I would love to get feedback! I also wonder if anyone can improve my quote attributions.</p>
-
-<p>Here is today&rsquo;s snapshot of the entire DevOps Automation Diagram source and image.
-I&rsquo;ve omitted many possible connections for the sake of showing
-the optimal automated progression from a developer&rsquo;s mind to the production stack.
-I&rsquo;ve refactored terminology to help inform systems and actions, but you can see there are
+<p>Here is today's snapshot of the entire DevOps Automation Diagram source and image.
+I've omitted many possible connections for the sake of showing
+the optimal automated progression from a developer's mind to the production stack.
+I've refactored terminology to help inform systems and actions, but you can see there are
 many moving pieces to enable modern day software development life cycle automation,
 some of which are not easily identified off the shelf.</p>
-
 <h3 id="updated">Updated!</h3>
-
-<p>My original release was 2015-03-11 (source below), but today&rsquo;s update adds detail, removes many crossed lines for simple visual flow parsing, and is organized vertically.</p>
-
+<p>My original release was 2015-03-11 (source below), but today's update adds detail, removes many crossed lines for simple visual flow parsing, and is organized vertically.</p>
 <p><a href="devops_automation.pu.svg">devops_automation.pu.svg</a> is one format, so please &ldquo;view the SVG image&rdquo; in a new browser window or tab and scale it to your liking, you can copy text from it.</p>
-
 <p>The inline display is currently broken:
-<img src="devops_automation.pu.svg" alt="DevOps Automation Diagram - 2015-03-17" /></p>
-
+<img src="devops_automation.pu.svg" alt="DevOps Automation Diagram - 2015-03-17"></p>
 <p>Source code: devops_automation.pu
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js+genshitext" data-lang="js+genshitext">```PlantUML
+<pre><code class="language-js+genshitext" data-lang="js+genshitext">```PlantUML
 @startuml
 title DevOps Automation (2015-03-11) by Mark Lavi
 state Development {
@@ -384,7 +373,7 @@ state Development {
   Development: runtime
   Development: frameworks
   Development: libraries
-  BDD --&gt; UnitTest
+  BDD --> UnitTest
   BDD: featureDescription
   Code: featureDescription
   Code: testCases
@@ -395,20 +384,20 @@ state Development {
   Code: monitors
   Code: metrics
   Code: logs
-  Code -&gt; UnitTest : OnSave
-  Code --&gt; BDD
-  Code --&gt; LocalBuild
-  Code --&gt; LocalRepo : commit
-  UnitTest --&gt; LocalRepo
+  Code -> UnitTest : OnSave
+  Code --> BDD
+  Code --> LocalBuild
+  Code --> LocalRepo : commit
+  UnitTest --> LocalRepo
   UnitTest: testCases
   UnitTest: testData
-  LocalBuild --&gt; LocalStack
+  LocalBuild --> LocalStack
   LocalBuild: localArtifact
   LocalBuild: localTestJobs
   LocalBuild: localBuildAutomationSystemContainer?
-  LocalBuild -&gt; ArtifactRepository : manual process\nDesk Build\ncandidate
-  LocalRepo -&gt; ReviewSystem
-  LocalRepo -&gt; CodeRepository : push
+  LocalBuild -> ArtifactRepository : manual process\nDesk Build\ncandidate
+  LocalRepo -> ReviewSystem
+  LocalRepo -> CodeRepository : push
   LocalStack: LocalDeployTest?
   LocalStack: LocalIntegrationTest?
 }
@@ -416,16 +405,16 @@ state CodeRepository {
   CodeRepository : branch
   CodeRepository : hash
   CodeRepository : tag
-  preCommitHook -&gt; BuildAutomationSystem
+  preCommitHook -> BuildAutomationSystem
   preCommitHook: see Build,TestJobs
-  postCommitHook -&gt; BuildAutomationSystem
+  postCommitHook -> BuildAutomationSystem
   postCommitHook: see Build,TestJobs
   webHook: see Build,TestJobs
 }
 state ReviewSystem {
   ReviewSystem: master or all branches?
-  ReviewSystem -&gt; BuildAutomationSystem: candidate
-  ReviewSystem -&gt; CodeRepository : +N = passed
+  ReviewSystem -> BuildAutomationSystem: candidate
+  ReviewSystem -> CodeRepository : +N = passed
   ReviewSystem: +1 BuildJob
   ReviewSystem: +1 TestJob
   ReviewSystem: +1 DeployJob
@@ -436,34 +425,34 @@ state BuildAutomationSystem {
   BuildAutomationSystem: perBranch
   BuildAutomationSystem: perHash
   BuildAutomationSystem: perTag  
-  [*] -&gt; BuildScheduler
-  [*] --&gt; BuildJobs: ad-hoc (manual)
-  [*] --&gt; DeployJobs: promote
-  BuildJobs -&gt; TestJobs
-  BuildJobs -&gt; ArtifactRepository: Candidate
+  [*] -> BuildScheduler
+  [*] --> BuildJobs: ad-hoc (manual)
+  [*] --> DeployJobs: promote
+  BuildJobs -> TestJobs
+  BuildJobs -> ArtifactRepository: Candidate
   BuildJobs: localArtifact
-  TestJobs --&gt; ConfigurationSystem : updateManifest
-  TestJobs -&gt; ArtifactRepository: Official
-  TestJobs -&gt; TestAutomationSystem
+  TestJobs --> ConfigurationSystem : updateManifest
+  TestJobs -> ArtifactRepository: Official
+  TestJobs -> TestAutomationSystem
   TestJobs: PeriodicTests
   TestJobs: BasicCodeAcceptanceTests
-  DeployJobs -up-&gt; DeploySystem
+  DeployJobs -up-> DeploySystem
   DeployJobs: artifact
   DeployJobs: manifest
   DeployJobs: stack
-  DeployJobs -&gt; ConfigurationSystem: updateManifest
-  BuildScheduler --&gt; TestJobs
+  DeployJobs -> ConfigurationSystem: updateManifest
+  BuildScheduler --> TestJobs
   BuildScheduler: e.g. Nightly
 }
 state TestAutomationSystem {
-  TestAutomationSystem -&gt; DeployJobs
+  TestAutomationSystem -> DeployJobs
   TestAutomationSystem: Simulator
   TestAutomationSystem: FeatureIntegrationTesting
   TestAutomationSystem: FullSuiteTesting  
   TestAutomationSystem: LoadTesting
   TestAutomationSystem: RegressionTesting
   TestAutomationSystem: SoakTesting
-  TestAutomationSystem -&gt; ConfigurationSystem: updateManifest
+  TestAutomationSystem -> ConfigurationSystem: updateManifest
 }
 state ArtifactRepository {
   ArtifactRepository: candidate
@@ -476,12 +465,12 @@ state ConfigurationSystem {
 }
 state Monitors {
   Monitors: SLA
-  Monitors -&gt; Metrics
-  Monitors -&gt; Logs
+  Monitors -> Metrics
+  Monitors -> Logs
 }
 state Logs {
-  Logs -&gt; Metrics
-  Logs -&gt; Monitors
+  Logs -> Metrics
+  Logs -> Monitors
 }
 state Metrics {
   Metrics: SLA
@@ -490,44 +479,43 @@ state AuthenticationSystem {
   AuthenticationSystem: LDAP, SAML, etc.
 }
 state DeploySystem {
-  DeploySystem -&gt; ConfigurationSystem
+  DeploySystem -> ConfigurationSystem
   DeploySystem: entireStack
   DeploySystem: byProfileOnStack
   DeploySystem: byRoleOnStack
   DeploySystem: read, updateManifest
   DeploySystem: bill of materials (BoM)
   DeploySystem: readConfigurationData
-  Provision -&gt; Stack
+  Provision -> Stack
   Provision: profile/role@stack
   Provision: applyManifest
-  Upgrade -&gt; Stack
+  Upgrade -> Stack
   Upgrade: role@stack
   Upgrade: applyManifest
-  Canary -&gt; Stack
+  Canary -> Stack
   Canary: % existing role@stack
   Canary: applyManifest
 }
 state Stack {
   Stack: name/environment\n(e.g. Feature, Team, Release, dev/qa/stage/prod)
-  [*] --&gt; node
-  [*] -&gt; ProviderInfrastructure
+  [*] --> node
+  [*] -> ProviderInfrastructure
   ProviderInfrastructure: load balancer
   ProviderInfrastructure: DNS
   ProviderInfrastructure: monitor
   ProviderInfrastructure: scheduler, autoscaler
-  ProviderInfrastructure --&gt; Monitors
-  ProviderInfrastructure --&gt; node
+  ProviderInfrastructure --> Monitors
+  ProviderInfrastructure --> node
   node: provider
   node: profile
   node: role
   node: monitor
-  node -&gt; Monitors
-  node -&gt; Logs
-  node -&gt; Metrics
+  node -> Monitors
+  node -> Logs
+  node -> Metrics
 }
-@enduml```</code></pre></div></p>
-
-<p>I will put this under revision control in the Infrastructure as Code project I&rsquo;m undertaking.
+@enduml```</code></pre></p>
+<p>I will put this under revision control in the Infrastructure as Code project I'm undertaking.
 I do not believe authored hyperlinks export to SVG yet, perhaps that will be my first request for PlantUML.</p>
 	
 			
@@ -575,9 +563,12 @@ I do not believe authored hyperlinks export to SVG yet, perhaps that will be my 
 		
 		</ul>
 	</div>
+  
+  
 
 	<p>&copy; 2019. All rights reserved.</p>
 </div>
+
     </div>
   </div>
 	

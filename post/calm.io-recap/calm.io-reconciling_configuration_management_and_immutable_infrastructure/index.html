@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
   <meta property="og:title" content="Reconciling Configuration Management and Immutable Infrastructure" />
@@ -305,17 +305,11 @@
 		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
 				<small class="toc-label">Contents</small>
 		   	 	<nav id="TableOfContents">
-<ul>
-<li><a href="#long-lived-pets">Long Lived Pets</a></li>
-<li><a href="#configuration-management-mutable-infrastructure">Configuration Management = Mutable Infrastructure</a></li>
-<li><a href="#a-herd-of-cattle">A Herd of Cattle</a></li>
-<li><a href="#the-journey-to-immutability">The Journey to Immutability</a>
-<ul>
-<li><a href="#read-only">Read Only</a></li>
-<li><a href="#dynamic-configuration">Dynamic Configuration</a></li>
-<li><a href="#infrastructure-artifacts">Infrastructure Artifacts</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#read-only">Read Only</a></li>
+    <li><a href="#dynamic-configuration">Dynamic Configuration</a></li>
+    <li><a href="#infrastructure-artifacts">Infrastructure Artifacts</a></li>
+  </ul>
 </nav>
 		    </div>
 		    
@@ -344,157 +338,130 @@
 			
 
             <p>This <a href="../../../post/calm.io-recap/">Calm.io blog recap</a>
- was originally written and posted by me on May 26, 2016 at
-<a href="http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/">http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/</a>,
+was originally written and posted by me on May 26, 2016 at
+<a href="http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,">http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,</a>
 and slightly enhanced on February 18, 2018.</p>
-
 <p>As organizations move servers from the data center to the cloud, traditional
- approaches should grow to embrace a DevOps mindset for new capabilities,
- architectures, and values. Immutable Infrastructure represents an approach
- to simplify complexity and speed delivery of software to customers.
- Can inherently mutable configuration management tooling contribute to the
- immutable world of infrastructure artifacts?</p>
-
-<p>&ldquo;<a href="http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/">Pets versus Cattle</a>&ldquo;
- is a strategic value we have discovered to increase the scale and agility of
- infrastructure and operations. Immutable infrastructure becomes an
- indispensable manner to achieve this vision.</p>
-
+approaches should grow to embrace a DevOps mindset for new capabilities,
+architectures, and values. Immutable Infrastructure represents an approach
+to simplify complexity and speed delivery of software to customers.
+Can inherently mutable configuration management tooling contribute to the
+immutable world of infrastructure artifacts?</p>
+<p>&ldquo;<a href="http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/">Pets versus Cattle</a>&rdquo;
+is a strategic value we have discovered to increase the scale and agility of
+infrastructure and operations. Immutable infrastructure becomes an
+indispensable manner to achieve this vision.</p>
 <h1 id="long-lived-pets">Long Lived Pets</h1>
-
 <p>I characterized the traditional IT operator and system administrator value
- system which views change as risk to system and application availability
- and showed their progressive journey to DevOps in my Calm.io blog post
- <a href="../../../post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/">Configuration Management in the DevOps World</a>.
- I generally use the terms server, resource, box, and node interchangeably.</p>
-
+system which views change as risk to system and application availability
+and showed their progressive journey to DevOps in my Calm.io blog post
+<a href="../../../post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/">Configuration Management in the DevOps World</a>.
+I generally use the terms server, resource, box, and node interchangeably.</p>
 <p>When the primary measure of success is keeping servers up for years without
- down time, one can grow an emotional attachment to the system you built,
- named, and maintained over those years. It becomes natural to care for these
- systems, return them to health when they are sick, and to watch over them like
- proud parents as they grow through their life cycle. Hence the term <em>pets</em>
- describes the care and feeding of these systems and when performed by hand,
- it becomes a sizable resource investment. These investments were required
- when resources were scarce and long-lived, but these traditions do not apply
- for ephemeral populations.</p>
-
+down time, one can grow an emotional attachment to the system you built,
+named, and maintained over those years. It becomes natural to care for these
+systems, return them to health when they are sick, and to watch over them like
+proud parents as they grow through their life cycle. Hence the term <em>pets</em>
+describes the care and feeding of these systems and when performed by hand,
+it becomes a sizable resource investment. These investments were required
+when resources were scarce and long-lived, but these traditions do not apply
+for ephemeral populations.</p>
 <p>From an abstract viewpoint, it seems ridiculous to have a bond to a machine
- and to treat it with love and care like a pet. I see organizations who merely
- virtualize their pets when they migrate to the cloud; they continue to
- practice manual operations to maintain their pets. One symptom of this problem
- is continuing the disaster recovery practice of maintaining an inventory of
- entire static disk image backups. While they have taken the first step towards
- agile infrastructure by embracing virtualization in the public or private
- cloud, they have stopped short of taking the next step.</p>
-
+and to treat it with love and care like a pet. I see organizations who merely
+virtualize their pets when they migrate to the cloud; they continue to
+practice manual operations to maintain their pets. One symptom of this problem
+is continuing the disaster recovery practice of maintaining an inventory of
+entire static disk image backups. While they have taken the first step towards
+agile infrastructure by embracing virtualization in the public or private
+cloud, they have stopped short of taking the next step.</p>
 <p>One cannot scale efforts beyond a small, hand maintained population of pets
- without embracing automation.</p>
-
-<h1 id="configuration-management-mutable-infrastructure">Configuration Management = Mutable Infrastructure</h1>
-
+without embracing automation.</p>
+<h1 id="configuration-management--mutable-infrastructure">Configuration Management = Mutable Infrastructure</h1>
 <p>Per the <a href="https://memegenerator.net/X-All-The-Things">Internet meme</a>,
- we want to automate all the things!</p>
-
+we want to automate all the things!</p>
 <p>I quote from my blog post on <a href="../../../post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/">Configuration Management in the DevOps World</a>:</p>
-
 <blockquote>
 <p>&ldquo;Configuration Management represents the next step after provisioning
- a nascent infrastructure resource to install and configure it to perform
- a certain role, such as a web server, database, etc.&rdquo;</p>
+a nascent infrastructure resource to install and configure it to perform
+a certain role, such as a web server, database, etc.&rdquo;</p>
 </blockquote>
-
 <p>Having automated the creation of a system role, one can synthesize new peers
- from scratch. However, is it easy to carry forward traditional practices still
- that convey pet status on our resources under configuration management.</p>
-
+from scratch. However, is it easy to carry forward traditional practices still
+that convey pet status on our resources under configuration management.</p>
 <p>Traditional applications maintain local state in memory and storage on these
- resources, <em>e.g.:</em> application and system configuration values such as
- credentials and passwords, customer session tables and transactions,
- system and application logs and metrics are stored locally.
- Exempting ephemeral information, the system state becomes increasingly
- valuable with every local write operation and correspondingly,
- increasing mutation to the system state! This poses a quandary:
- what happens if we lose the resource, how do we preserve the valuable,
- mutable local state? This will be addressed in the section
- <a href="#the-journey-to-immutability">The Journey to Immutability</a>.</p>
-
+resources, <em>e.g.:</em> application and system configuration values such as
+credentials and passwords, customer session tables and transactions,
+system and application logs and metrics are stored locally.
+Exempting ephemeral information, the system state becomes increasingly
+valuable with every local write operation and correspondingly,
+increasing mutation to the system state! This poses a quandary:
+what happens if we lose the resource, how do we preserve the valuable,
+mutable local state? This will be addressed in the section
+<a href="#the-journey-to-immutability">The Journey to Immutability</a>.</p>
 <p>Regularly scheduled configuration management runs serves as a means of
- enforcement to insure that our systems do not drift: they work to return
- everything to a prescribed state. Over time, configuration management runs
- might also introduce further changes to operate on the state of the system,
- e.g.: update a configuration value, install an operating system security patch,
- or another life cycle maintenance operation (restart an application, etc.).
- While configuration management represents a huge step forward for automation,
- all life cycle operations and events conducted via configuration management
- support the maintenance of long lived servers, and thus they represent a
- regression back to <em>pet</em> values.</p>
-
+enforcement to insure that our systems do not drift: they work to return
+everything to a prescribed state. Over time, configuration management runs
+might also introduce further changes to operate on the state of the system,
+e.g.: update a configuration value, install an operating system security patch,
+or another life cycle maintenance operation (restart an application, etc.).
+While configuration management represents a huge step forward for automation,
+all life cycle operations and events conducted via configuration management
+support the maintenance of long lived servers, and thus they represent a
+regression back to <em>pet</em> values.</p>
 <h1 id="a-herd-of-cattle">A Herd of Cattle</h1>
-
 <p>Harnessing automated infrastructure provisioning via configuration management
- and other methods makes it easy to create any quantity of servers, nearly as
- trivial as a single instance! Automated infrastructure requires a new approach
- to operations at scale: resource management. Algorithmic naming conventions are
- needed for each resource, e.g.:</p>
-
+and other methods makes it easy to create any quantity of servers, nearly as
+trivial as a single instance! Automated infrastructure requires a new approach
+to operations at scale: resource management. Algorithmic naming conventions are
+needed for each resource, e.g.:</p>
 <ul>
-<li>webserver<strong>1</strong>,</li>
-<li>webserver<strong>2</strong>,</li>
-<li>webserver<strong>3</strong>,</li>
-<li>… webserver<strong><em>N</em></strong></li>
+<li>webserver__1__,</li>
+<li>webserver__2__,</li>
+<li>webserver__3__,</li>
+<li>… webserver__*N*__</li>
 </ul>
-
 <p>represents a simple naming convention for a population of <strong><em>N</em></strong>
- web servers. This represents a break with pet resources and a transition to a
- fleet of resources. To compliment the popular <em>pets</em> analogy, now the fleet can
- be viewed as a herd of cattle and many livestock or fleet methods and analogies
- abstractly apply.</p>
-
+web servers. This represents a break with pet resources and a transition to a
+fleet of resources. To compliment the popular <em>pets</em> analogy, now the fleet can
+be viewed as a herd of cattle and many livestock or fleet methods and analogies
+abstractly apply.</p>
 <p>A failing resource should not be treated as a <em>pet</em>: it does not need to be
- cared for and returned to health! Borrowing from cluster management,
- the approach is <em><a href="https://en.wikipedia.org/wiki/STONITH">STONITH</a></em>
- = &ldquo;shoot the other node in the head&rdquo; by taking it out of service
- and remediate the loss with a new replacement. Of course, a failing resource
- can be quarantined for troubleshooting, forensics, restoral, and remediation,
- but this represents a significant manual effort. Automated remediation efforts
- are needed at scale because <em>pet operations</em> can not scale due to their
- by hand, manual, one-off nature.</p>
-
+cared for and returned to health! Borrowing from cluster management,
+the approach is <em><a href="https://en.wikipedia.org/wiki/STONITH">STONITH</a></em>
+= &ldquo;shoot the other node in the head&rdquo; by taking it out of service
+and remediate the loss with a new replacement. Of course, a failing resource
+can be quarantined for troubleshooting, forensics, restoral, and remediation,
+but this represents a significant manual effort. Automated remediation efforts
+are needed at scale because <em>pet operations</em> can not scale due to their
+by hand, manual, one-off nature.</p>
 <p>Automated infrastructure provisioning supports maintaining a dynamic population.
- By scaling up and scaling down the population based upon demand, the population
- consumes resources economically. I.e. an elastic population represents cost
- savings by eliminating unused resources compared to a maximum capacity planned,
- static population.</p>
-
+By scaling up and scaling down the population based upon demand, the population
+consumes resources economically. I.e. an elastic population represents cost
+savings by eliminating unused resources compared to a maximum capacity planned,
+static population.</p>
 <h1 id="the-journey-to-immutability">The Journey to Immutability</h1>
-
 <p>To paraphrase Wiktionary:
- <em><a href="https://en.wiktionary.org/wiki/immutable">immutable</a></em> =
- unable to be changed; a constant.</p>
-
+<em><a href="https://en.wiktionary.org/wiki/immutable">immutable</a></em> =
+unable to be changed; a constant.</p>
 <p>We need to reconcile the tendency to treat each of our cattle as a pet with
- valuable local state and a longer life cycle. The solution is to refactor
- from mutable to immutable infrastructure; this encompasses DevOps values
- via strategies which implicate new methods and tools for creating and
- consuming infrastructure on a shorter life cycle. The immutable infrastructure
- strategies are:
- <a href="#read-only">read only</a>,
- <a href="#dynamic-configuration">dynamic configuration</a>,
- and <a href="#infrastructure-artifacts">infrastructure artifacts</a>.</p>
-
+valuable local state and a longer life cycle. The solution is to refactor
+from mutable to immutable infrastructure; this encompasses DevOps values
+via strategies which implicate new methods and tools for creating and
+consuming infrastructure on a shorter life cycle. The immutable infrastructure
+strategies are:
+<a href="#read-only">read only</a>,
+<a href="#dynamic-configuration">dynamic configuration</a>,
+and <a href="#infrastructure-artifacts">infrastructure artifacts</a>.</p>
 <h2 id="read-only">Read Only</h2>
-
 <p>Treating a resource’s local storage as read only makes the file system
- immutable and forces us to evaluate everything in a new light!
- The primary issue boils down to the question: how do I preserve local state?</p>
-
+immutable and forces us to evaluate everything in a new light!
+The primary issue boils down to the question: how do I preserve local state?</p>
 <p>For temporary state, the best answer is to use memory whenever possible
- (which is fast, but is a finite resource and must be maintained),
- otherwise it falls into the following category. For the remaining local state
- needs, migrate them to remote services via the network,
- <em>i.e.</em> ship them off box to a centralized facility for persistence.
- Treat everything as a remote data store and pick the appropriate facility!</p>
-
+(which is fast, but is a finite resource and must be maintained),
+otherwise it falls into the following category. For the remaining local state
+needs, migrate them to remote services via the network,
+<em>i.e.</em> ship them off box to a centralized facility for persistence.
+Treat everything as a remote data store and pick the appropriate facility!</p>
 <ul>
 <li>System and application logs and metrics should be delivered to centralized facilities;
 <em>this will be the topic of a future blog post.</em></li>
@@ -503,24 +470,19 @@ fleet of resources, such as in a fast NoSQL database.</li>
 <li>See <a href="#dynamic-configuration">dynamic configuration</a> strategy for
 system and application configuration.</li>
 </ul>
-
 <p>Read only implies that system and application state can not be updated and
- this will be addressed with the next two strategies:
- (dynamic configuration) and (infrastructure artifacts).
- Consider the advantages of read only file system: by design,
- it cannot be directly tampered with and it removes a raft of security issues!
- Another advantage is that read only removes most of the resource life cycle
- operations.</p>
-
+this will be addressed with the next two strategies:
+(dynamic configuration) and (infrastructure artifacts).
+Consider the advantages of read only file system: by design,
+it cannot be directly tampered with and it removes a raft of security issues!
+Another advantage is that read only removes most of the resource life cycle
+operations.</p>
 <h2 id="dynamic-configuration">Dynamic Configuration</h2>
-
 <p>For the lack of a better term, I collect a number of concerns under the
- umbrella of dynamic configuration.</p>
-
+umbrella of dynamic configuration.</p>
 <p>The initial system and application configuration state must be read from a
 remote source, even if it is ultimately communicated via local memory such as
 by environment variables:</p>
-
 <ul>
 <li>Systems and applications can be adjusted to accommodate configuration
 parameter updates, making them dynamic.</li>
@@ -529,56 +491,48 @@ deactivation of code execution paths to change application functionality
 without infrastructure redeployment;
 <em>this will be the topic of a future blog post.</em></li>
 </ul>
-
 <p>The population of resources needs an inventory to accommodate service discovery
 and scheduling:</p>
-
 <ul>
 <li>An index allows life cycle management
 (e.g.: auto scaling tools).</li>
 <li>An index allows references between members of the population
 (e.g.: load balancing, multi-tiered applications).</li>
 </ul>
-
 <p>Dynamic configuration represents an evolving area, there are many solutions
 and most are part of cluster scheduling and configuration management systems;
 <em>this will be the topic of a future blog post.</em></p>
-
 <h2 id="infrastructure-artifacts">Infrastructure Artifacts</h2>
-
 <p>If configuration management necessarily represents mutable infrastructure,
- how can it work for immutable infrastructure? This is a concern that I have
- pondered for years and it represents the struggle to unlearn traditional
- values and embrace infrastructure as code on the journey to DevOps.
- Using configuration management to build, not operate, infrastructure is the
- solution.</p>
-
+how can it work for immutable infrastructure? This is a concern that I have
+pondered for years and it represents the struggle to unlearn traditional
+values and embrace infrastructure as code on the journey to DevOps.
+Using configuration management to build, not operate, infrastructure is the
+solution.</p>
 <p>Configuration management runs after a node is provisioned and it &ldquo;builds&rdquo;
- the system into a desired role with static configuration as a run time
- operation, mutating the file system. One concern can be addressed by
- refactoring static to dynamic configuration to remove a state dependency.
- The next step is to never use configuration management again after the initial
- system build for life cycle operations. The resulting file system is treated
- as an infrastructure artifact by exporting it. To recap: we can refactor
- configuration management to move from an ongoing run time operation to
- synthesize mutable infrastructure to a one time build operation producing
- an immutable infrastructure artifact.</p>
-
+the system into a desired role with static configuration as a run time
+operation, mutating the file system. One concern can be addressed by
+refactoring static to dynamic configuration to remove a state dependency.
+The next step is to never use configuration management again after the initial
+system build for life cycle operations. The resulting file system is treated
+as an infrastructure artifact by exporting it. To recap: we can refactor
+configuration management to move from an ongoing run time operation to
+synthesize mutable infrastructure to a one time build operation producing
+an immutable infrastructure artifact.</p>
 <p>Mounting the infrastructure artifact file system as read only and relying on
- dynamic configuration yields immutable infrastructure! Building immutable
- infrastructure artifacts should be automated and tied to revision control
- and software build systems. By eliminating the barrier between application
- and infrastructure, operators have joined developers in creating buildable
- and testable infrastructure, which should be tied to
- <a href="../../../post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/#application-integration-testing-and-continuous-delivery">application integration testing</a>.
- Now the application <em>IS</em> the infrastructure!</p>
-
+dynamic configuration yields immutable infrastructure! Building immutable
+infrastructure artifacts should be automated and tied to revision control
+and software build systems. By eliminating the barrier between application
+and infrastructure, operators have joined developers in creating buildable
+and testable infrastructure, which should be tied to
+<a href="../../../post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/#application-integration-testing-and-continuous-delivery">application integration testing</a>.
+Now the application <em>IS</em> the infrastructure!</p>
 <p>Immutable infrastructure yields an amazing breakthrough: infrastructure reuse!
- No longer does one need to provision a different, localized type of
- infrastructure for each scenario development, testing, staging, and production:
- they can and should all be the same build artifact, differing only by dynamic
- configuration management. By reducing the delta between any environment from
- development to production, risk is minimized.</p>
+No longer does one need to provision a different, localized type of
+infrastructure for each scenario development, testing, staging, and production:
+they can and should all be the same build artifact, differing only by dynamic
+configuration management. By reducing the delta between any environment from
+development to production, risk is minimized.</p>
 	
 			
 
@@ -629,9 +583,12 @@ and most are part of cluster scheduling and configuration management systems;
 		
 		</ul>
 	</div>
+  
+  
 
 	<p>&copy; 2019. All rights reserved.</p>
 </div>
+
     </div>
   </div>
 	

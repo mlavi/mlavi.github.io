@@ -18,7 +18,7 @@
       <pubDate>Sun, 29 Sep 2019 12:37:07 -0600</pubDate>
       
       <guid>https://mlavi.github.io/post/developer_relations_advocate/</guid>
-      <description>&lt;p&gt;How and what is an Advocate and what is it in context of Developer Relations (DevRel)? After more than twenty years, I have returned to the realm of DevRel: so what has changed and what has remained the same?&lt;/p&gt;</description>
+      <description>&lt;p&gt;What is an Advocate and what is it in context of Developer Relations (DevRel)? After more than twenty years, I have returned to the realm of DevRel: so what has changed and what has remained the same?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,17 +28,15 @@
       
       <guid>https://mlavi.github.io/post/devops-in-a-box/</guid>
       <description>&lt;p&gt;My long time fantasy has been to demonstrate an entire CI/CD pipeline with
- continuous operations of applications to discuss behavior driven operations
- and testing as monitors.&lt;/p&gt;
-
+continuous operations of applications to discuss behavior driven operations
+and testing as monitors.&lt;/p&gt;
 &lt;p&gt;The call for this happened over and over at DevOpsDays to answer: how does one
- learn DevOps, practice site reliability engineering, or have a full
- application lifecycle environment?&lt;/p&gt;
-
-&lt;p&gt;So let&amp;rsquo;s create a minimal viable product &lt;a href=&#34;../devops-btd-pattern&#34;&gt;BTD scenario&lt;/a&gt;
- of my &lt;a href=&#34;../devops-automation&#34;&gt;DevOps Automation&lt;/a&gt; system,
- extend it to prefix Governance and suffix Management,
- and then drive maturity to illustrate and discuss best practices.&lt;/p&gt;</description>
+learn DevOps, practice site reliability engineering, or have a full
+application lifecycle environment?&lt;/p&gt;
+&lt;p&gt;So let&#39;s create a minimal viable product &lt;a href=&#34;../devops-btd-pattern&#34;&gt;BTD scenario&lt;/a&gt;
+of my &lt;a href=&#34;../devops-automation&#34;&gt;DevOps Automation&lt;/a&gt; system,
+extend it to prefix Governance and suffix Management,
+and then drive maturity to illustrate and discuss best practices.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -58,13 +56,13 @@ exposure to handle every link in the chain to launch your first Nutanix Calm blu
       
       <guid>https://mlavi.github.io/post/calm.io-recap/</guid>
       <description>&lt;p&gt;From September 23, 2015 to May 26, 2016,
- I took hiatus from my personal blog to explore, explain, and write a number
- of DevOps articles for my employer on the
- &lt;a href=&#34;http://calm.io/author/mark&#34;&gt;Calm.io blog&lt;/a&gt;. Nutanix acquired Calm.io and I
- am still part of the Nutanix Calm team, but I&amp;rsquo;m re-posting these articles on
- my personal blog since the originals are no longer directly accessible.
- I am also enhancing them to clarify language, add learnings,
- and append significant developments as &lt;a href=&#34;#postscripts&#34;&gt;postscripts&lt;/a&gt;.&lt;/p&gt;</description>
+I took hiatus from my personal blog to explore, explain, and write a number
+of DevOps articles for my employer on the
+&lt;a href=&#34;http://calm.io/author/mark&#34;&gt;Calm.io blog&lt;/a&gt;. Nutanix acquired Calm.io and I
+am still part of the Nutanix Calm team, but I&#39;m re-posting these articles on
+my personal blog since the originals are no longer directly accessible.
+I am also enhancing them to clarify language, add learnings,
+and append significant developments as &lt;a href=&#34;#postscripts&#34;&gt;postscripts&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -74,14 +72,12 @@ exposure to handle every link in the chain to launch your first Nutanix Calm blu
       
       <guid>https://mlavi.github.io/post/devops-maturity-diagram/</guid>
       <description>&lt;p&gt;The opening of
- &lt;a href=&#34;./post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/&#34;&gt;my first Calm.io DevOps article&lt;/a&gt;
- started with:&lt;/p&gt;
-
+&lt;a href=&#34;./post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/&#34;&gt;my first Calm.io DevOps article&lt;/a&gt;
+started with:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Let me share what I’ve learned on my journey to DevOps: it is a culturally
- rendered term and it has a different meaning for everyone.&lt;/p&gt;
+rendered term and it has a different meaning for everyone.&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;p&gt;In that article, I go on to define DevOps and explain the term. Let me share
 my experience to easily chart the journey of progressive stages
 to DevOps maturity.&lt;/p&gt;</description>
@@ -94,13 +90,13 @@ to DevOps maturity.&lt;/p&gt;</description>
       
       <guid>https://mlavi.github.io/post/ten_steps_from_pets_to_cattle/</guid>
       <description>&lt;p&gt;Why do we need DevOps when IT and Operations succeed in their responsibility
- for security and uptime, using administrative tools to maintain, backup, and
- restore those systems? Because the operations domain must be documented,
- democratized, and distributed to achieve agility before Operations returns
- to become a force multiplier instead of a keep the lights on organization.
- Let me demonstrate that traditional values for long lived infrastructure and
- their retroactive justification do not apply when progressing to a DevOps
- mindset.&lt;/p&gt;</description>
+for security and uptime, using administrative tools to maintain, backup, and
+restore those systems? Because the operations domain must be documented,
+democratized, and distributed to achieve agility before Operations returns
+to become a force multiplier instead of a keep the lights on organization.
+Let me demonstrate that traditional values for long lived infrastructure and
+their retroactive justification do not apply when progressing to a DevOps
+mindset.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -110,8 +106,8 @@ to DevOps maturity.&lt;/p&gt;</description>
       
       <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;./post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written and posted by me on May 26, 2016 at
-&lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&lt;/a&gt;,
+was originally written and posted by me on May 26, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&lt;/a&gt;
 and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     </item>
     
@@ -122,8 +118,8 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
       
       <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;./post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written and posted by me on May 24, 2016 at
-&lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&lt;/a&gt;,
+was originally written and posted by me on May 24, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&lt;/a&gt;
 and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     </item>
     
@@ -145,8 +141,8 @@ for our &amp;ldquo;mutable&amp;rdquo; infrastructure.&lt;/p&gt;</description>
       
       <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;./post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written and posted by me on December 28, 2015 at
-&lt;a href=&#34;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/&#34;&gt;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/&lt;/a&gt;,
+was originally written and posted by me on December 28, 2015 at
+&lt;a href=&#34;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,&#34;&gt;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,&lt;/a&gt;
 and slightly enhanced on February 18, 2018, be sure to see the
 &lt;a href=&#34;#postscript-2018-04-13-netscape-tinderbox&#34;&gt;Postscript&lt;/a&gt; for more perspective!&lt;/p&gt;</description>
     </item>
@@ -158,8 +154,8 @@ and slightly enhanced on February 18, 2018, be sure to see the
       
       <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;./post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written and posted by me on November 3, 2015 at
-&lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&lt;/a&gt;,
+was originally written and posted by me on November 3, 2015 at
+&lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,&lt;/a&gt;
 and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     </item>
     
@@ -170,8 +166,8 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
       
       <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;./post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written and posted by me on October 20, 2015 at
-&lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/&lt;/a&gt;,
+was originally written and posted by me on October 20, 2015 at
+&lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/,&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/,&lt;/a&gt;
 and slightly enhanced on February 27, 2018, be sure to see the
 &lt;a href=&#34;#postscript-february-18-2018-devops-definition&#34;&gt;Postscript&lt;/a&gt; for significant developments!&lt;/p&gt;</description>
     </item>
@@ -183,8 +179,8 @@ and slightly enhanced on February 27, 2018, be sure to see the
       
       <guid>https://mlavi.github.io/post/devops_demystified/</guid>
       <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
- for many software engineering organizations. Let me define DevOps to help you
- understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!&lt;/p&gt;</description>
+for many software engineering organizations. Let me define DevOps to help you
+understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -194,8 +190,8 @@ and slightly enhanced on February 27, 2018, be sure to see the
       
       <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;./post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written and posted by me on September 23, 2015 at
-&lt;a href=&#34;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&#34;&gt;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/&lt;/a&gt;,
+was originally written and posted by me on September 23, 2015 at
+&lt;a href=&#34;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/,&#34;&gt;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/,&lt;/a&gt;
 and slightly enhanced on February 18, 2018, be sure to see the
 &lt;a href=&#34;#postscript-february-18-2018&#34;&gt;Postscript&lt;/a&gt; for significant developments!&lt;/p&gt;</description>
     </item>
@@ -229,7 +225,7 @@ flashback to 1998.&lt;/p&gt;</description>
       <guid>https://mlavi.github.io/post/html-slideshow-survey/</guid>
       <description>&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
 We already have a universal, open system for communication
-called the web, so let&amp;rsquo;s explore web presentation applications.&lt;/p&gt;</description>
+called the web, so let&#39;s explore web presentation applications.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -260,7 +256,7 @@ to immutable infrastructure?&lt;/p&gt;</description>
       
       <guid>https://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
- You reinforce your goals to improve code flow and service design on the way to test driven development!&lt;/p&gt;</description>
+You reinforce your goals to improve code flow and service design on the way to test driven development!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -290,11 +286,11 @@ but it is even better when you can optimize and render a new map in real-time!&l
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
       <guid>https://mlavi.github.io/about/</guid>
-      <description>&lt;p&gt;A DevOps professional with pioneering work on the world&amp;rsquo;s biggest Internet real-time event
- and web sites across the engineering, operations, content, and marketing disciplines.
- Mark&amp;rsquo;s focus is on people and software development along with system design and life cycle
- thinking: he can build, secure, scale, and manage teams, applications, and infrastructure
- to work together while planning and nurturing their continuous operations and improvement.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A DevOps professional with pioneering work on the world&#39;s biggest Internet real-time event
+and web sites across the engineering, operations, content, and marketing disciplines.
+Mark&#39;s focus is on people and software development along with system design and life cycle
+thinking: he can build, secure, scale, and manage teams, applications, and infrastructure
+to work together while planning and nurturing their continuous operations and improvement.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -306,17 +302,6 @@ but it is even better when you can optimize and render a new map in real-time!&l
       <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
 and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mlavi.github.io/post/from-pet-to-cattle-in-10-steps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mlavi.github.io/post/from-pet-to-cattle-in-10-steps/</guid>
-      <description>From Pet to Cattle in 10 Steps   From Pet to Cattle in X Steps 40 mins presentation, 10 min Q&amp;amp;A, review and Call to Action: last words linger
-Overview We will take you on a journey of a system administrator, responsible for the organization&#39;s e-commerce web site, across various era IT best practices:
- bare-metal in the data center to... configuration management of VMs (circa 2010?) to.</description>
     </item>
     
   </channel>

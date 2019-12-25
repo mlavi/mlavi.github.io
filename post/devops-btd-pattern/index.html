@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
   <meta property="og:title" content="DevOps BTD Pattern for Continuous Deployment" />
@@ -305,17 +305,15 @@
 		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
 				<small class="toc-label">Contents</small>
 		   	 	<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#code-flow-and-service-design">Code Flow and Service Design</a></li>
-<li><a href="#btd-build-test-deploy-pattern">BTD: Build, Test, Deploy Pattern</a></li>
-<li><a href="#devops-btd-pattern-for-continuous-deployment">DevOps BTD Pattern for Continuous Deployment</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#code-flow-and-service-design">Code Flow and Service Design</a></li>
+        <li><a href="#btd-build-test-deploy-pattern">BTD: Build, Test, Deploy Pattern</a></li>
+        <li><a href="#devops-btd-pattern-for-continuous-deployment">DevOps BTD Pattern for Continuous Deployment</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
 		    </div>
 		    
@@ -344,78 +342,55 @@
 			
 
             <p>What happens when you find the same macro and micro pattern in your automation diagram?
- You reinforce your goals to improve code flow and service design on the way to test driven development!</p>
-
+You reinforce your goals to improve code flow and service design on the way to test driven development!</p>
 <h3 id="code-flow-and-service-design">Code Flow and Service Design</h3>
-
 <p>I created the <a href="../devops-automation/">DevOps Automation Diagram</a> to map out the flow of code from
 developer to production in a wholly automated manner: better known as continuous deployment.</p>
-
 <p>This map represents the software development life cycle, service deployment, and feedback loops that are
 integral to service design. I did this so that I could figure out where best to start work for my
 infrastructure as code project and I found a few optimizations by re-factoring the code flow and
 moving processes forward in the chain of events.</p>
-
 <p>In doing so, I describe a journey that spans different disciplines of build, test, and deployment:
 areas that have been traditionally separated into team or department silos because they represent
 the pillars or domains of software development, quality assurance, and operations.</p>
-
-<p><img src="../../img/btd-pattern-traditional.dia.png" alt="BTD Silos - 2015-03-18" /></p>
-
+<p><img src="../../img/btd-pattern-traditional.dia.png" alt="BTD Silos - 2015-03-18"></p>
 <p>Those traditional silos create code friction by introducing manual hand offs and insulating teams
 from shared responsibilities, creating barriers to proper service design and life cycle considerations.</p>
-
-<p>&ldquo;It&rsquo;s not my job,&rdquo; &ldquo;it works on my laptop,&rdquo; and &ldquo;I don&rsquo;t like the [other team&rsquo;s] attitude&rdquo; are
+<p>&ldquo;It's not my job,&rdquo; &ldquo;it works on my laptop,&rdquo; and &ldquo;I don't like the [other team's] attitude&rdquo; are
 verbal indications of code friction. They are blockers for engineers on any team or any domain
 to embrace their responsibility for service design over the entire life cycle of code.</p>
-
 <h3 id="btd-build-test-deploy-pattern">BTD: Build, Test, Deploy Pattern</h3>
-
-<p>We&rsquo;ve talked about breaking down the traditional walls between software development, quality assurance,
+<p>We've talked about breaking down the traditional walls between software development, quality assurance,
 and operations by describing a responsibility for all of these teams to embrace all of the disciplines
 of BTD (build, test, and deployment) in order to become proper service designers.</p>
-
 <ol>
 <li><strong>Build:</strong> SoftwareDeveloper codes functionality and <em>builds</em> the code</li>
 <li><strong>Test:</strong> QualityAssurance creates <em>tests</em> for the build artifacts</li>
 <li><strong>Deploy:</strong> Operations <em>deploys</em> the artifacts</li>
 </ol>
-
 <p>I call this the BTD pattern, <strong>but astute readers will note it should be the TBD pattern</strong> because we want to achieve test driven development of code, tests, and operations.</p>
-
 <p>BTD is nothing revelatory, it is the traditional pipeline for software development.
 The <a href="../devops-automation/">DevOps Automation Diagram</a> at a high level <em>is</em> a BTD pattern,
 but we will examine it further and find that BTD should exist in each domain.</p>
-
 <p>What is wrong with the BTD pattern? Nothing except how it has been implemented as traditional roles and hand-offs, e.g.:</p>
-
-<p><img src="../../img/btd_silos.pu.png" alt="BTD Silos - 2015-03-18" /></p>
-
+<p><img src="../../img/btd_silos.pu.png" alt="BTD Silos - 2015-03-18"></p>
 <p>&hellip;you can see the traditional silos and you can see all of the potential inefficiencies to remedy a bug.
 The cost and time to fix increases the further the bug is discovered from the developer.</p>
-
 <h3 id="devops-btd-pattern-for-continuous-deployment">DevOps BTD Pattern for Continuous Deployment</h3>
-
 <p>We need to prevent bugs from happening in deployment, in test, and in development.</p>
-
 <ul>
 <li>Did operations create a deployment bug? How did they test it?</li>
 <li>Did quality assurance develop a good test? How do you test the tests?</li>
 </ul>
-
 <p>BTD must be applied at the build domain, at the test domain, and at the deploy domain.</p>
-
-<p><img src="../../img/btd-pattern.dia.png" alt="BTD Pattern - 2015-03-18" /></p>
-
+<p><img src="../../img/btd-pattern.dia.png" alt="BTD Pattern - 2015-03-18"></p>
 <p>This is why everything is testable, buildable, and deployable on the developer laptop in the
 <a href="../devops-automation/">DevOps Automation Diagram</a>.
 The traditional software developer or recent college graduate, system administrator, or quality engineer
 does not code tests, code deployment, and code builds, then test deployments and test builds &ndash; <strong>but they should!</strong>
 The DevOps engineer must test monitors, deployments, and builds as well.
 This expanded skill set must be part of the engineering culture for service design and imbued into all.</p>
-
 <p><strong>SoftwareDeveloper</strong> codes and performs BTD:</p>
-
 <ol>
 <li>BDD feature descriptions (with help from product management, customer support, and sales)</li>
 <li>TDD unit test cases + test data (with help from QualityAssurance)</li>
@@ -424,9 +399,7 @@ This expanded skill set must be part of the engineering culture for service desi
 <li>Related logs, metrics, and monitors for internal SLAs (with help from Operations)</li>
 <li>Deployable and configurable artifacts (with help from Operations)</li>
 </ol>
-
 <p><strong>QualityAssurance</strong> codes and performs BTD:</p>
-
 <ol>
 <li>Test plan</li>
 <li>Test cases and test data (with help from SoftwareDevelopers) that leverage logs, monitors, and metrics</li>
@@ -434,9 +407,7 @@ This expanded skill set must be part of the engineering culture for service desi
 <li>Integration tests (with help from SoftwareDevelopers)</li>
 <li>Deployment tests (with help from Operations)</li>
 </ol>
-
 <p><strong>Operations</strong> codes and performs BTD:</p>
-
 <ol>
 <li>Deployment Tools and tests</li>
 <li>Server OS builds, run times, and dependencies</li>
@@ -445,7 +416,6 @@ This expanded skill set must be part of the engineering culture for service desi
 <li>Monitors and escalations (which are akin to integration tests)</li>
 <li>Logging and Metric reports (which are akin to service level agreements)</li>
 </ol>
-
 <p>I am sure there is more, but this is a very good start to a robust service design organization for continuous deployment!</p>
 	
 			
@@ -497,9 +467,12 @@ This expanded skill set must be part of the engineering culture for service desi
 		
 		</ul>
 	</div>
+  
+  
 
 	<p>&copy; 2019. All rights reserved.</p>
 </div>
+
     </div>
   </div>
 	

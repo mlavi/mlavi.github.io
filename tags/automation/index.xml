@@ -19,13 +19,13 @@
       
       <guid>https://mlavi.github.io/post/calm.io-recap/</guid>
       <description>&lt;p&gt;From September 23, 2015 to May 26, 2016,
- I took hiatus from my personal blog to explore, explain, and write a number
- of DevOps articles for my employer on the
- &lt;a href=&#34;http://calm.io/author/mark&#34;&gt;Calm.io blog&lt;/a&gt;. Nutanix acquired Calm.io and I
- am still part of the Nutanix Calm team, but I&amp;rsquo;m re-posting these articles on
- my personal blog since the originals are no longer directly accessible.
- I am also enhancing them to clarify language, add learnings,
- and append significant developments as &lt;a href=&#34;#postscripts&#34;&gt;postscripts&lt;/a&gt;.&lt;/p&gt;</description>
+I took hiatus from my personal blog to explore, explain, and write a number
+of DevOps articles for my employer on the
+&lt;a href=&#34;http://calm.io/author/mark&#34;&gt;Calm.io blog&lt;/a&gt;. Nutanix acquired Calm.io and I
+am still part of the Nutanix Calm team, but I&#39;m re-posting these articles on
+my personal blog since the originals are no longer directly accessible.
+I am also enhancing them to clarify language, add learnings,
+and append significant developments as &lt;a href=&#34;#postscripts&#34;&gt;postscripts&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,8 +35,8 @@
       
       <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written and posted by me on May 26, 2016 at
-&lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/&lt;/a&gt;,
+was originally written and posted by me on May 26, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&lt;/a&gt;
 and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     </item>
     
@@ -47,8 +47,8 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
       
       <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written and posted by me on May 24, 2016 at
-&lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/&lt;/a&gt;,
+was originally written and posted by me on May 24, 2016 at
+&lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&lt;/a&gt;
 and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     </item>
     
@@ -59,8 +59,8 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
       
       <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written and posted by me on December 28, 2015 at
-&lt;a href=&#34;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/&#34;&gt;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/&lt;/a&gt;,
+was originally written and posted by me on December 28, 2015 at
+&lt;a href=&#34;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,&#34;&gt;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,&lt;/a&gt;
 and slightly enhanced on February 18, 2018, be sure to see the
 &lt;a href=&#34;#postscript-2018-04-13-netscape-tinderbox&#34;&gt;Postscript&lt;/a&gt; for more perspective!&lt;/p&gt;</description>
     </item>
@@ -72,8 +72,8 @@ and slightly enhanced on February 18, 2018, be sure to see the
       
       <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written and posted by me on November 3, 2015 at
-&lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/&lt;/a&gt;,
+was originally written and posted by me on November 3, 2015 at
+&lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,&lt;/a&gt;
 and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     </item>
     
@@ -84,8 +84,8 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
       
       <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
- was originally written and posted by me on October 20, 2015 at
-&lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/&lt;/a&gt;,
+was originally written and posted by me on October 20, 2015 at
+&lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/,&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/,&lt;/a&gt;
 and slightly enhanced on February 27, 2018, be sure to see the
 &lt;a href=&#34;#postscript-february-18-2018-devops-definition&#34;&gt;Postscript&lt;/a&gt; for significant developments!&lt;/p&gt;</description>
     </item>

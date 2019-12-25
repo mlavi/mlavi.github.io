@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
   <meta property="og:title" content="The DevOps Maturity Diagram" />
@@ -305,26 +305,20 @@
 		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
 				<small class="toc-label">Contents</small>
 		   	 	<nav id="TableOfContents">
-<ul>
-<li><a href="#inspiration">Inspiration</a>
-<ul>
-<li><a href="#mentoring">Mentoring</a></li>
-<li><a href="#business-outcomes">Business Outcomes</a></li>
-</ul></li>
-<li><a href="#preparation">Preparation</a>
-<ul>
-<li><a href="#agility-devops">Agility = DevOps</a></li>
-<li><a href="#scalability-removing-pets">Scalability = Removing Pets</a></li>
-</ul></li>
-<li><a href="#first-diagram-devops-journey">First Diagram: DevOps Journey</a>
-<ul>
-<li><a href="#conflation-and-oversimplification">Conflation and Oversimplification?</a></li>
-<li><a href="#decomposure-aligns-parallel-journeys">Decomposure Aligns Parallel Journeys</a></li>
-</ul></li>
-<li><a href="#second-diagram-devops-maturity">Second Diagram: DevOps Maturity</a></li>
-<li><a href="#update-2018-05-03">Update: 2018-05-03</a></li>
-<li><a href="#update-2019-02-22">Update: 2019-02-22</a></li>
-</ul>
+  <ul>
+    <li><a href="#mentoring">Mentoring</a></li>
+    <li><a href="#business-outcomes">Business Outcomes</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#agility--devops">Agility = DevOps</a></li>
+    <li><a href="#scalability--removing-pets">Scalability = Removing Pets</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#conflation-and-oversimplification">Conflation and Oversimplification?</a></li>
+    <li><a href="#decomposure-aligns-parallel-journeys">Decomposure Aligns Parallel Journeys</a></li>
+  </ul>
 </nav>
 		    </div>
 		    
@@ -353,47 +347,38 @@
 			
 
             <p>The opening of
- <a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">my first Calm.io DevOps article</a>
- started with:</p>
-
+<a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">my first Calm.io DevOps article</a>
+started with:</p>
 <blockquote>
 <p>Let me share what I’ve learned on my journey to DevOps: it is a culturally
- rendered term and it has a different meaning for everyone.</p>
+rendered term and it has a different meaning for everyone.</p>
 </blockquote>
-
 <p>In that article, I go on to define DevOps and explain the term. Let me share
 my experience to easily chart the journey of progressive stages
 to DevOps maturity.</p>
-
 <h1 id="inspiration">Inspiration</h1>
-
 <p>How do you explain DevOps to the uninitiated or to a non-technical audience?</p>
-
 <p>In August, 2016 <a href="https://www.nutanix.com/products/calm/">Nutanix</a>
- acquired my employer, <a href="../../tags/calm.io">Calm.io</a>. I became the first
- DevOps Solutions Architect in Sales Engineering, a subject matter expert
- overlay role that supported North America.
- At Calm, our audience was the DevOps practitioner and my colleagues,
- especially <a href="https://twitter.com/aaditya">@Aaditya</a>
- and <a href="https://twitter.com/jasnoorgill">@JasnoorGill</a>,
- had created a higher-level pitch for investors to understand the need for DevOps.</p>
-
+acquired my employer, <a href="../../tags/calm.io">Calm.io</a>. I became the first
+DevOps Solutions Architect in Sales Engineering, a subject matter expert
+overlay role that supported North America.
+At Calm, our audience was the DevOps practitioner and my colleagues,
+especially <a href="https://twitter.com/aaditya">@Aaditya</a>
+and <a href="https://twitter.com/jasnoorgill">@JasnoorGill</a>,
+had created a higher-level pitch for investors to understand the need for DevOps.</p>
 <p>Nutanix had a broader and more traditional IT, Data Center,
- and Operations audience. Every day, I struggled to
- explain the benefits of DevOps in under a minute and my &ldquo;elevator pitch&rdquo;
- failed more often than succeeded. Every failure and success inspired me
- to do better and I constantly asked for feedback to improve. I still do!</p>
-
+and Operations audience. Every day, I struggled to
+explain the benefits of DevOps in under a minute and my &ldquo;elevator pitch&rdquo;
+failed more often than succeeded. Every failure and success inspired me
+to do better and I constantly asked for feedback to improve. I still do!</p>
 <h2 id="mentoring">Mentoring</h2>
-
 <p>Two discussions with Nutanix executives were another set of inspirations how to
- explain DevOps:</p>
-
+explain DevOps:</p>
 <ul>
 <li>In December, 2016, I spoke with Nutanix Chief Development Officer,
 <a href="https://www.linkedin.com/in/sunilpotti/">Sunil Potti</a>
 <a href="https://twitter.com/sunilpotti">@sunilpotti</a>,
-and he explained how Calm&rsquo;s integration into the Nutanix control plane made
+and he explained how Calm's integration into the Nutanix control plane made
 the platform stronger in contrast to the separate, diluted, fragmented
 &ldquo;bolt on&rdquo; experience that competitors continually bring to market.</li>
 <li>In January, 2017, I spoke with Nutanix Chief Architect (now co-CTO),
@@ -404,140 +389,115 @@ and he explained how Nutanix aspires to increase feature automation
 user interface. The feature can be hand-tuned via command-line if needed,
 but the administrator has oversight via feature performance summary graphs.
 The result is a platform value increase while customer complexity decreases,
-something Nutanix aspires to achieve much as Apple&rsquo;s iOS has done.</li>
+something Nutanix aspires to achieve much as Apple's iOS has done.</li>
 </ul>
-
 <p>In hindsight, I could see both discussions partially explained as a learning
- of the &ldquo;Consumption Gap.&rdquo; Other Nutanix colleagues used variations of the
- &ldquo;Consumption Gap&rdquo; diagram from
- <strong><a href="http://blog.tsia.com/blog/your-strategy-for-escaping-the-complexity-avalanche">Complexity Avalanche</a></strong>
- by J.B. Wood in 2009 (the same year the term DevOps was created) to explain how
- Nutanix hyper-converged infrastructure software data and control planes reverse
- complexity in an organization: all of these combined into another inspiration.</p>
-
+of the &ldquo;Consumption Gap.&rdquo; Other Nutanix colleagues used variations of the
+&ldquo;Consumption Gap&rdquo; diagram from
+<strong><a href="http://blog.tsia.com/blog/your-strategy-for-escaping-the-complexity-avalanche">Complexity Avalanche</a></strong>
+by J.B. Wood in 2009 (the same year the term DevOps was created) to explain how
+Nutanix hyper-converged infrastructure software data and control planes reverse
+complexity in an organization: all of these combined into another inspiration.</p>
 <h2 id="business-outcomes">Business Outcomes</h2>
-
 <p>In February, 2017, the Nutanix mid-year sales kick off included an intense
- sales methodology training based on selling positive business outcomes to
- customers. It galvanized me to figure out new ways to communicate about DevOps,
- Nutanix, and Calm. Abstractly, the sales methodology is similar to the
- Technology Services Industry Association <a href="http://blog.tsia.com/blog/navigating-the-world-of-digital-transformation-offers-infographic">Digital Transformation Journey
- Infographic: &ldquo;Navigating the World of Recurring Revenue Offers&rdquo;</a>.</p>
-
+sales methodology training based on selling positive business outcomes to
+customers. It galvanized me to figure out new ways to communicate about DevOps,
+Nutanix, and Calm. Abstractly, the sales methodology is similar to the
+Technology Services Industry Association <a href="http://blog.tsia.com/blog/navigating-the-world-of-digital-transformation-offers-infographic">Digital Transformation Journey
+Infographic: &ldquo;Navigating the World of Recurring Revenue Offers&rdquo;</a>.</p>
 <h1 id="preparation">Preparation</h1>
-
 <p>January 25, 2017: I gave a Calm deep dive session to my peers at Nutanix,
- and there were two topic requests that shed light into the DevOps world
- for them and provided insight
- (the what, who, why that Nutanix management always cites)
- for the Calm automation product&rsquo;s value and audience for DevOps.
+and there were two topic requests that shed light into the DevOps world
+for them and provided insight
+(the what, who, why that Nutanix management always cites)
+for the Calm automation product's value and audience for DevOps.
 The first topic was, &ldquo;What does a software developer do?&rdquo;
- and I showed the <a href="../devops-automation">DevOps Automation Diagram</a>
- to explain the value chain between the developer and the customer,
- then showed the <a href="../devops-btd-pattern">Build, Test, Deploy pattern</a>.
+and I showed the <a href="../devops-automation">DevOps Automation Diagram</a>
+to explain the value chain between the developer and the customer,
+then showed the <a href="../devops-btd-pattern">Build, Test, Deploy pattern</a>.
 The second topic was, &ldquo;Why do I need DevOps?&rdquo; and I landed on
- <a href="../ten_steps_from_pets_to_cattle">the roughly ten steps it takes to refactor from monolith
- to hybrid cloud applications</a>
- to show how automation accelerates all efforts.</p>
-
+<a href="../ten_steps_from_pets_to_cattle">the roughly ten steps it takes to refactor from monolith
+to hybrid cloud applications</a>
+to show how automation accelerates all efforts.</p>
 <p>April 9-13, 2017: I was at Nutanix headquarters preparing
- to speak at the third annual Nutanix .Next user conference with
- 4000 attendees. To explain Calm&rsquo;s value proposition to my colleagues,
- I likened DevOps to the business outcome of <em><a href="#agility-devops">agility</a></em>
- and Pets versus Cattle (or removing all single points of failure)
- to the business outcome of <em><a href="#scalability-removing-pets">scalability</a>.</em></p>
-
-<h2 id="agility-devops">Agility = DevOps</h2>
-
+to speak at the third annual Nutanix .Next user conference with
+4000 attendees. To explain Calm's value proposition to my colleagues,
+I likened DevOps to the business outcome of <em><a href="#agility-devops">agility</a></em>
+and Pets versus Cattle (or removing all single points of failure)
+to the business outcome of <em><a href="#scalability-removing-pets">scalability</a>.</em></p>
+<h2 id="agility--devops">Agility = DevOps</h2>
 <blockquote>
-<div style="text-align: center; font-weight: bold; font-size: large;">DevOps
- is the <em>process</em> of removing all friction
- <br />between the developer<sup>1</sup> and customer value.<br /><br /></div>
+<!-- raw HTML omitted -->
 </blockquote>
-
+<p>is the <!-- raw HTML omitted -->process<!-- raw HTML omitted --> of removing all friction
+<!-- raw HTML omitted -->between the developer<!-- raw HTML omitted -->1<!-- raw HTML omitted --> and customer value.<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p><a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">My DevOps definition</a>
- aligns everyone to deliver frictionless business value, however the
- impact can be summarized as business agility. When anyone can
- <a href="devops-btd-pattern.md">build, test, and deploy</a> value, business processes
- are transparent and work is democratized.</p>
-
-<p><sup>1</sup> To understand the emergent value of software developers,
- see <a href="https://thenewkingmakers.com/">https://thenewkingmakers.com/</a>.</p>
-
+aligns everyone to deliver frictionless business value, however the
+impact can be summarized as business agility. When anyone can
+<a href="devops-btd-pattern.md">build, test, and deploy</a> value, business processes
+are transparent and work is democratized.</p>
+<p><!-- raw HTML omitted -->1<!-- raw HTML omitted --> To understand the emergent value of software developers,
+see <a href="https://thenewkingmakers.com/">https://thenewkingmakers.com/</a>.</p>
 <p>Furthermore, the value chain or steam between the developer and customer is
 bi-directional! During the value chain mapping exercise, discovery of friction
 in the forms of technical debt and cultural debt will abound. Therefore,
 you are &ldquo;doing DevOps&rdquo; when you remove friction, even if you are doing it for
 yourself on your own laptop: it will pay dividends down the value stream.</p>
-
 <p>DevOps success is a mixture of culture and technology enablement, allowing
- the organization to transform and achieve agility. This can be observed
- in the manufacturing industry by the
- <a href="https://en.wikipedia.org/wiki/Toyota_Production_System">Toyota Production System</a>
- and I elaborate on this in
- <a href="../../post/calm.io-recap/calm.io-why-is-devops-so-hard/">Why is DevOps so Hard?</a>.</p>
-
+the organization to transform and achieve agility. This can be observed
+in the manufacturing industry by the
+<a href="https://en.wikipedia.org/wiki/Toyota_Production_System">Toyota Production System</a>
+and I elaborate on this in
+<a href="../../post/calm.io-recap/calm.io-why-is-devops-so-hard/">Why is DevOps so Hard?</a>.</p>
 <p>If technology and cultural factors enable friction-free DevOps success,
- it is easy to observe their corresponding challenges in organizations:
- fragmentation foils any technology integration
- and people naturally tend to be pets, causing single points of failure,
- concentrated power, and manual handoffs which foil automation.</p>
-
+it is easy to observe their corresponding challenges in organizations:
+fragmentation foils any technology integration
+and people naturally tend to be pets, causing single points of failure,
+concentrated power, and manual handoffs which foil automation.</p>
 <p>The next stage of refactoring friction out of the value stream is to
 progressively automate operations with key performance indicators and metrics for
- <a href="../../post/ten_steps_from_pets_to_cattle/#10-heuristic-driven-operations">heuristically driven business operations</a>.
+<a href="../../post/ten_steps_from_pets_to_cattle/#10-heuristic-driven-operations">heuristically driven business operations</a>.
 DevOps extends to run the business when
 the organization constantly tunes and expands the automation systems,
 while the employees engage to respond to new business initiatives and
 improve business efficiency, all resulting in business agility!</p>
-
 <p>These benefits are confirmed by the
- <a href="https://devops-research.com/research.html">annual State of DevOps surveys</a>,
- which compares low to high performers on the DevOps journey. The 2017 summary
- is that high performers:</p>
-
+<a href="https://devops-research.com/research.html">annual State of DevOps surveys</a>,
+which compares low to high performers on the DevOps journey. The 2017 summary
+is that high performers:</p>
 <ul>
 <li>Deliver more</li>
 <li>Repair sooner</li>
 <li>Automate more</li>
 </ul>
-
 <p>&hellip; meaning that the high performers achieve agility delivering value with
- DevOps, run higher quality operations with less downtime,
- and invest their productivity gains back into further automation
- in order to continue a positive feedback loop of DevOps success.
- DevOps success accomplishes the very definition of an agile business,
- which accelerates away from their competition.</p>
-
+DevOps, run higher quality operations with less downtime,
+and invest their productivity gains back into further automation
+in order to continue a positive feedback loop of DevOps success.
+DevOps success accomplishes the very definition of an agile business,
+which accelerates away from their competition.</p>
 <p>My interpretation is that the high performers have achieved DevOps maturity,
- which I will illustrate with the second diagram. High performer DevOps
- maturity perfectly aligns with
- <a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">my DevOps definition</a>
- because they have achieved agility.</p>
-
+which I will illustrate with the second diagram. High performer DevOps
+maturity perfectly aligns with
+<a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">my DevOps definition</a>
+because they have achieved agility.</p>
 <p>This further validated by <a href="http://www.eweek.com/it-management/capgemini-survey-finds-enterprises-reaping-profits-from-it-automation?dni=445883873&amp;rni=24948142&amp;utm_campaign=EWK_NL_EP_20180510_STR1L2&amp;utm_medium=email">http://www.eweek.com/it-management/capgemini-survey-finds-enterprises-reaping-profits-from-it-automation?dni=445883873&amp;rni=24948142&amp;utm_campaign=EWK_NL_EP_20180510_STR1L2&amp;utm_medium=email</a></p>
-
 <blockquote>
 <p><strong>DevOps Evangelism Slides forthcoming:</strong>
- speaker notes are above, but they are an update, expansion, and summary
- of my earlier work <a href="../devops_demystified">DevOps Demystified </a></p>
+speaker notes are above, but they are an update, expansion, and summary
+of my earlier work <a href="../devops_demystified">DevOps Demystified </a></p>
 </blockquote>
-
-<h2 id="scalability-removing-pets">Scalability = Removing Pets</h2>
-
+<h2 id="scalability--removing-pets">Scalability = Removing Pets</h2>
 <p>Understanding that the lens of
- <a href="http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/">pets versus cattle</a>
- allows one to evaluate and remove every single point of failure by working to
- replace each pet with distributed resources under fleet management
- and service level agreements. Any organization can progressively refactor
- and remove their pets to unlock unprecedented levels of scalability.</p>
-
+<a href="http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/">pets versus cattle</a>
+allows one to evaluate and remove every single point of failure by working to
+replace each pet with distributed resources under fleet management
+and service level agreements. Any organization can progressively refactor
+and remove their pets to unlock unprecedented levels of scalability.</p>
 <p>Upon adopting this lens, the entire world looks different and it is
- easy to identify the traditional values which no longer apply.
- Continual discovery reveals invisible prison bars which constrain progress.</p>
-
+easy to identify the traditional values which no longer apply.
+Continual discovery reveals invisible prison bars which constrain progress.</p>
 <p>Some abstract examples:</p>
-
 <table>
 <thead>
 <tr>
@@ -546,32 +506,27 @@ improve business efficiency, all resulting in business agility!</p>
 <th>Cattle</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Organization:</td>
 <td>Single Point of Failure (SPoF)</td>
 <td>Fleet (no SPoF)</td>
 </tr>
-
 <tr>
 <td>Naming:</td>
 <td>Members of a theme</td>
 <td>Naming Conventions and Numbers</td>
 </tr>
-
 <tr>
 <td>Remediation:</td>
 <td>MTTF</td>
 <td>Replace to maintain SLA</td>
 </tr>
-
 <tr>
 <td>Infrastructure:</td>
 <td>Scale up</td>
 <td>Scale out</td>
 </tr>
-
 <tr>
 <td>Architecture:</td>
 <td>Monolith</td>
@@ -579,9 +534,7 @@ improve business efficiency, all resulting in business agility!</p>
 </tr>
 </tbody>
 </table>
-
 <p>Some technology examples:</p>
-
 <table>
 <thead>
 <tr>
@@ -590,38 +543,32 @@ improve business efficiency, all resulting in business agility!</p>
 <th>Cattle</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Naming:</td>
 <td>earth.corp</td>
 <td>webtier-01.ahv01.prod.corp</td>
 </tr>
-
 <tr>
 <td>Uptime Goal:</td>
 <td>Years</td>
 <td>Seconds</td>
 </tr>
-
 <tr>
 <td>Failure:</td>
 <td>MTTR of minutes + hours</td>
 <td>No SPoF!</td>
 </tr>
-
 <tr>
 <td>Network:</td>
 <td>Hardware</td>
 <td>Software Defined</td>
 </tr>
-
 <tr>
 <td>Storage:</td>
 <td>SAN</td>
 <td>Distributed File System</td>
 </tr>
-
 <tr>
 <td>Datacenter:</td>
 <td>Single AWS Region, Cluster, or DC</td>
@@ -629,9 +576,7 @@ improve business efficiency, all resulting in business agility!</p>
 </tr>
 </tbody>
 </table>
-
 <p>Some cultural examples:</p>
-
 <table>
 <thead>
 <tr>
@@ -640,20 +585,17 @@ improve business efficiency, all resulting in business agility!</p>
 <th>Cattle</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>People:</td>
-<td>Heroic admin at HQ<sup>2</sup></td>
+<td>Heroic admin at HQ<!-- raw HTML omitted -->2<!-- raw HTML omitted --></td>
 <td>Global Operations team</td>
 </tr>
-
 <tr>
 <td>Operations:</td>
 <td>Hands on:manual ops, change controls</td>
 <td>Hands off:monitors, KPIs, ChatOps</td>
 </tr>
-
 <tr>
 <td>Values:</td>
 <td>DevOps team</td>
@@ -661,74 +603,61 @@ improve business efficiency, all resulting in business agility!</p>
 </tr>
 </tbody>
 </table>
-
-<p><sup>2</sup> <em>e.g.:</em> the sysadmin in <strong>The Phoenix Project</strong>,
+<p><!-- raw HTML omitted -->2<!-- raw HTML omitted --> <em>e.g.:</em> the sysadmin in <strong>The Phoenix Project</strong>,
 by Gene Kim, Kevin Behr, George Spafford: IT Revolution Press, 2013</p>
-
 <p>Yes, I consider the DevOps team a pet! This can be a controversial statement
-  until you use the lens and definition, but this will be a future blog entry.</p>
-
+until you use the lens and definition, but this will be a future blog entry.</p>
 <blockquote>
 <p><strong>DevOps Evangelism Slides forthcoming:</strong>
 speaker notes are above, but they are an update, expansion, and summary
 of my earlier work <a href="../devops_demystified">DevOps Demystified </a></p>
 </blockquote>
-
 <p>At this point, it should be easy to ask &ldquo;How many pets do you have?&rdquo;
- and categorize the answers into culture and technology.
- This will be developed further for maturity shortly.</p>
-
+and categorize the answers into culture and technology.
+This will be developed further for maturity shortly.</p>
 <p>To paraphrase the journey to DevOps: we all must become DevOps,
- working to continuous improve<sup>3</sup>:</p>
-
+working to continuous improve<!-- raw HTML omitted -->3<!-- raw HTML omitted -->:</p>
 <ul>
 <li><strong>Cultural change</strong> to reduce dev+test+ops silos</li>
 <li><strong>Automation</strong> increasing value delivery, by accomplishing:
-
 <ul>
 <li>Agility by democratizing expertise and distributing work
-
 <ul>
 <li>Results: continuous integration, delivery, and deployment</li>
-</ul></li>
+</ul>
+</li>
 <li>Scalability by eliminating single points of failure
-
 <ul>
 <li>Results: cattle infrastructure and operations</li>
-</ul></li>
-</ul></li>
-<li><strong>Feedback</strong> measuring closed loop value<sup>4</sup>
-
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Feedback</strong> measuring closed loop value<!-- raw HTML omitted -->4<!-- raw HTML omitted -->
 <ul>
 <li>Results: monitors + logs + metrics for Key Performance Indicators</li>
-</ul></li>
 </ul>
-
-<p><sup>3</sup> Based on <a href="http://itrevolution.com/devops-culture-part-1/">C(L)AMS by John Willis &amp; Damon Edwards</a>
-<br /><sup>4</sup> <em><a href="https://athinkingperson.com/2012/12/02/who-said-what-gets-measured-gets-managed/">Proverb:</a></em>
+</li>
+</ul>
+<p><!-- raw HTML omitted -->3<!-- raw HTML omitted --> Based on <a href="http://itrevolution.com/devops-culture-part-1/">C(L)AMS by John Willis &amp; Damon Edwards</a>
+<!-- raw HTML omitted --><!-- raw HTML omitted -->4<!-- raw HTML omitted --> <em><a href="https://athinkingperson.com/2012/12/02/who-said-what-gets-measured-gets-managed/">Proverb:</a></em>
 &ldquo;What is measured improves.&rdquo;</p>
-
 <p>This cycle is repeated to insure value increases by observing the
- feedback measured from cultural and automation changes.</p>
-
+feedback measured from cultural and automation changes.</p>
 <h1 id="first-diagram-devops-journey">First Diagram: DevOps Journey</h1>
-
 <p>Back to early April, 2017 when I was preparing for my talk,
 I arrived at graphing the abstract progressions of both agility and
- scalability to create the <strong>DevOps Journey Diagram</strong>. I reversed the initial
- axes layout and I arrived at Gartner-like diagram which yielded instant
- &ldquo;up and to the right&rdquo; parsing at a glance. The diagram yielded insight into
- the successive stages for a journey to DevOps to travel from the lower left
- quadrant to the upper right quadrant.</p>
-
-<p><img src="../devops-journey.png" alt="DevOps Journey Diagram" /></p>
-
+scalability to create the <strong>DevOps Journey Diagram</strong>. I reversed the initial
+axes layout and I arrived at Gartner-like diagram which yielded instant
+&ldquo;up and to the right&rdquo; parsing at a glance. The diagram yielded insight into
+the successive stages for a journey to DevOps to travel from the lower left
+quadrant to the upper right quadrant.</p>
+<p><img src="../devops-journey.png" alt="DevOps Journey Diagram"></p>
 <p>With my career experience, confirmed by speaking to peers at DevOpsDays
- as well as many Calm.io and Nutanix customers,
- I identified the DevOps Journey Stages. Success!
- I added a side explanation for the stages of the journey to help orient
- where one might be and where one could go next:</p>
-
+as well as many Calm.io and Nutanix customers,
+I identified the DevOps Journey Stages. Success!
+I added a side explanation for the stages of the journey to help orient
+where one might be and where one could go next:</p>
 <table>
 <thead>
 <tr>
@@ -736,75 +665,62 @@ I arrived at graphing the abstract progressions of both agility and
 <th>Outcomes</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>0</td>
 <td>Hand maintained monoliths, in a pet data center, with backups for revision control</td>
 </tr>
-
 <tr>
 <td>1</td>
 <td>Programatic change controls and operations</td>
 </tr>
-
 <tr>
 <td>2</td>
 <td>Deploy new workloads with configuration management</td>
 </tr>
-
 <tr>
 <td>3</td>
 <td>Cattle everywhere: build test driven infra artifacts, hybrid cloud deployments, KPI driven operations</td>
 </tr>
 </tbody>
 </table>
-
 <p>The next week, on April 26, 2017: I presented the DevOps Journey diagram to a
 large defense contractor and before I completed my explanation,
 one of the audience said,
- &ldquo;we&rsquo;re a pet shop and depending on the team, we&rsquo;re between stage 0 and 0.5.&rdquo;</p>
-
+&ldquo;we're a pet shop and depending on the team, we're between stage 0 and 0.5.&rdquo;</p>
 <p>The first diagram was incredibly effective, but I knew I was conflating many
- concerns. For example, re-platforming a data center onto Nutanix improved
- infrastructure by migrating to a distributed system (pets to cattle)
- moving up along the vertical access, but it also progressed automated
- operations to the right along the horizontal axis. It didn&rsquo;t make sense
- that each moved independently along a separate axis, but the combination
- did make sense along an &ldquo;up and to the right&rdquo; diagonal.</p>
-
+concerns. For example, re-platforming a data center onto Nutanix improved
+infrastructure by migrating to a distributed system (pets to cattle)
+moving up along the vertical access, but it also progressed automated
+operations to the right along the horizontal axis. It didn't make sense
+that each moved independently along a separate axis, but the combination
+did make sense along an &ldquo;up and to the right&rdquo; diagonal.</p>
 <h2 id="conflation-and-oversimplification">Conflation and Oversimplification?</h2>
-
 <p>The combination of infrastructure and operational automation implied multiple
- aspects of the journey. Progress could be made in any dimension by a siloed
- infrastructure or operations team by adopting the Nutanix platform, but this
- success would only be for the &ldquo;Ops&rdquo; side of the organization. It would
- ignore the other side of the DevOps equation, the &ldquo;Dev&rdquo; or developer impact
- that could be achieved by extending to application infrastructure and the
- software development life cycle. The combination of both sides of the house
- is the realm of DevOps and it addresses the total delivery of business value,
- further reinforcing
- <a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">my DevOps definition</a>.</p>
-
+aspects of the journey. Progress could be made in any dimension by a siloed
+infrastructure or operations team by adopting the Nutanix platform, but this
+success would only be for the &ldquo;Ops&rdquo; side of the organization. It would
+ignore the other side of the DevOps equation, the &ldquo;Dev&rdquo; or developer impact
+that could be achieved by extending to application infrastructure and the
+software development life cycle. The combination of both sides of the house
+is the realm of DevOps and it addresses the total delivery of business value,
+further reinforcing
+<a href="../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/">my DevOps definition</a>.</p>
 <p>So how could one address the multiple aspects and progressive stages of the
- DevOps journey across the entire organization? What could convey additional
- complexity, recognize the inherent traditional organization silos,
- and enhance the first diagram without spoiling its simplicity?</p>
-
+DevOps journey across the entire organization? What could convey additional
+complexity, recognize the inherent traditional organization silos,
+and enhance the first diagram without spoiling its simplicity?</p>
 <h2 id="decomposure-aligns-parallel-journeys">Decomposure Aligns Parallel Journeys</h2>
-
 <p>I worked to decompose the journey into four parallels, each
- representing infrastructure, architecture, operations, and culture.
- While any parallel could be its own isolated journey for a siloed team,
- when aligned and combined together, the overall organization could achieve
- advanced stage outcomes, yielding the second diagram.</p>
-
+representing infrastructure, architecture, operations, and culture.
+While any parallel could be its own isolated journey for a siloed team,
+when aligned and combined together, the overall organization could achieve
+advanced stage outcomes, yielding the second diagram.</p>
 <p>A legend not only helped explain the stages of each parallel, but also
- illustrated the advanced business outcomes of a mature DevOps organization
- through examples. The examples show how DevOps can align different teams,
- responsibilities, and agendas to transform an organization to achieve
- agility and scale.</p>
-
+illustrated the advanced business outcomes of a mature DevOps organization
+through examples. The examples show how DevOps can align different teams,
+responsibilities, and agendas to transform an organization to achieve
+agility and scale.</p>
 <table>
 <thead>
 <tr>
@@ -815,7 +731,6 @@ one of the audience said,
 <th>Culture</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>0</td>
@@ -824,7 +739,6 @@ one of the audience said,
 <td>Hands-on</td>
 <td>Silos</td>
 </tr>
-
 <tr>
 <td>1</td>
 <td></td>
@@ -832,7 +746,6 @@ one of the audience said,
 <td>Repeatable</td>
 <td>Governable</td>
 </tr>
-
 <tr>
 <td>2</td>
 <td>Syntheized, ephermeral</td>
@@ -840,7 +753,6 @@ one of the audience said,
 <td>Delegable deploy+ops</td>
 <td>Testable with metrics</td>
 </tr>
-
 <tr>
 <td>3</td>
 <td>Hybrid clouds</td>
@@ -850,53 +762,44 @@ one of the audience said,
 </tr>
 </tbody>
 </table>
-
 <h1 id="second-diagram-devops-maturity">Second Diagram: DevOps Maturity</h1>
-
-<p><img src="../devops-maturity.png" alt="DevOps Maturity Diagram" /></p>
-
+<p><img src="../devops-maturity.png" alt="DevOps Maturity Diagram"></p>
 <p>On June 29, I presented both diagrams on stage at .Next D.C.
- for my portion of the talk &ldquo;AW209: Agile Infrastructure for Mode 2 Apps,&rdquo;
- with my colleagues Ray Hassan (Nutanix) and
- <a href="https://cloudplatform.googleblog.com/2017/07/going-Hybrid-with-Kubernetes-on-Google-Cloud-Platform-and-Nutanix.html">Allan Naim</a> (Google Cloud).</p>
-
+for my portion of the talk &ldquo;AW209: Agile Infrastructure for Mode 2 Apps,&rdquo;
+with my colleagues Ray Hassan (Nutanix) and
+<a href="https://cloudplatform.googleblog.com/2017/07/going-Hybrid-with-Kubernetes-on-Google-Cloud-Platform-and-Nutanix.html">Allan Naim</a> (Google Cloud).</p>
 <h1 id="update-2018-05-03">Update: 2018-05-03</h1>
-
 <p>My proposal was accepted by the organizers, voted upon by the attendees, and
- delivered as a talk at DevOpsDays Austin,
+delivered as a talk at DevOpsDays Austin,
 <a href="https://www.devopsdays.org/events/2018-austin/program/mark-lavi/">How to Sell DevOps in Under an Hour</a>
- with this abstract:</p>
-
+with this abstract:</p>
 <blockquote>
-<p>You&rsquo;ve entered a new customer&rsquo;s conference room,
- the introductions are complete, and you have the remainder of an hour to
- change their traditions: how would you explain and sell DevOps to
- non-technical management, engineering, and IT?
- For the past three years, I&rsquo;ve traveled to small and large businesses
- around the world to explain how DevOps can continually impact
- any organization and I&rsquo;ve evolved to speak the language of business
- and demonstrate positive business outcomes.</p>
-
-<p>With two simple definitions of agility and scalability
- (better known to our community as &ldquo;DevOps&rdquo; and &ldquo;Pets versus Cattle,&rdquo;
- respectively), you can explain and diagram the stages of a DevOps journey
- to any organization. Once the journey has been mapped out,
- it can be deconstructed over parallel dimensions of cultural,
- architectural, operational, and infrastructure progression
- to illustrate how any organization can achieve DevOps Maturity.
- I’ll show early work on how we&rsquo;re building with our customers
- cost metric models to determine DevOps total cost of ownership.</p>
+<p>You've entered a new customer's conference room,
+the introductions are complete, and you have the remainder of an hour to
+change their traditions: how would you explain and sell DevOps to
+non-technical management, engineering, and IT?
+For the past three years, I've traveled to small and large businesses
+around the world to explain how DevOps can continually impact
+any organization and I've evolved to speak the language of business
+and demonstrate positive business outcomes.</p>
 </blockquote>
-
-<p>I didn&rsquo;t get to the DevOps TCO model, but I was happy
- John Willis <a href="https://twitter.com/botchagalupe">@botchagalupe</a>
- was at the talk and he helped define DevOps, agreeing that it is cultural:
- &ldquo;at the end of the day, it is what you make of it.&rdquo;</p>
-
+<blockquote>
+<p>With two simple definitions of agility and scalability
+(better known to our community as &ldquo;DevOps&rdquo; and &ldquo;Pets versus Cattle,&rdquo;
+respectively), you can explain and diagram the stages of a DevOps journey
+to any organization. Once the journey has been mapped out,
+it can be deconstructed over parallel dimensions of cultural,
+architectural, operational, and infrastructure progression
+to illustrate how any organization can achieve DevOps Maturity.
+I’ll show early work on how we're building with our customers
+cost metric models to determine DevOps total cost of ownership.</p>
+</blockquote>
+<p>I didn't get to the DevOps TCO model, but I was happy
+John Willis <a href="https://twitter.com/botchagalupe">@botchagalupe</a>
+was at the talk and he helped define DevOps, agreeing that it is cultural:
+&ldquo;at the end of the day, it is what you make of it.&rdquo;</p>
 <h1 id="update-2019-02-22">Update: 2019-02-22</h1>
-
 <p>Variations for abstracts:</p>
-
 <pre><code>Demystifying DevOps: Agile Infrastructure and Applications for IT
 (Session Title maximum 25 words/75 characters, Description maximum 150 words)
 
@@ -914,8 +817,9 @@ Learning Objectives and Key Takeaways: (maximum 30 words)
 # Understanding &quot;Pets versus Cattle,&quot; then using it to evaluate and eliminate single points of failure to achieve scalability.
 # Mapping agility and scalability goals onto the DevOps Maturity Diagram to illustrate your journey towards advanced IT services and service levels.
 </code></pre>
-
-<p>-</p>
+<ul>
+<li></li>
+</ul>
 	
 			
 
@@ -962,9 +866,12 @@ Learning Objectives and Key Takeaways: (maximum 30 words)
 		
 		</ul>
 	</div>
+  
+  
 
 	<p>&copy; 2019. All rights reserved.</p>
 </div>
+
     </div>
   </div>
 	

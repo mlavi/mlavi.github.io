@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
   <meta property="og:title" content="Time for a new development project!" />
@@ -305,20 +305,18 @@
 		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
 				<small class="toc-label">Contents</small>
 		   	 	<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#then-you-start">Then you start&hellip;</a></li>
-<li><a href="#to-sink-into-reality">&hellip; to sink into reality!</a></li>
-<li><a href="#a-static-web-cms">A Static Web CMS?</a></li>
-<li><a href="#infrastructure-as-code">Infrastructure as Code</a></li>
-</ul></li>
-<li><a href="#postscript-2018-05-21">Postscript: 2018-05-21</a></li>
-<li><a href="#postscript-2018-06-15">Postscript: 2018-06-15</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#then-you-start">Then you start&hellip;</a></li>
+        <li><a href="#-to-sink-into-reality">&hellip; to sink into reality!</a></li>
+        <li><a href="#a-static-web-cms">A Static Web CMS?</a></li>
+        <li><a href="#infrastructure-as-code">Infrastructure as Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#postscript-2018-05-21">Postscript: 2018-05-21</a></li>
+    <li><a href="#postscript-2018-06-15">Postscript: 2018-06-15</a></li>
+  </ul>
 </nav>
 		    </div>
 		    
@@ -349,87 +347,67 @@
             <p>What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
 and technical debt follow as I start my Infrastructure as Code blog.</p>
-
 <p>Embarking on a new adventure is always the best time in a project because all your dreams
- are possible! You research your ideas, find new tools and libraries, and smell the fresh
- scent of unhindered development.</p>
-
+are possible! You research your ideas, find new tools and libraries, and smell the fresh
+scent of unhindered development.</p>
 <h3 id="then-you-start">Then you start&hellip;</h3>
-
 <p>You find that your idea is broad and multifaceted, tools are in various states of acceptable
- use and documentation, and there is a bevy of dependencies: each representing a small
- landscape to conquer.</p>
-
-<h3 id="to-sink-into-reality">&hellip; to sink into reality!</h3>
-
+use and documentation, and there is a bevy of dependencies: each representing a small
+landscape to conquer.</p>
+<h3 id="-to-sink-into-reality">&hellip; to sink into reality!</h3>
 <p>The original title of this first post was &ldquo;Time for a new Blog&rdquo; to document my experiment
- with <a href="http://jekyllrb.com/docs/github-pages/">Jekyll and GitHub Pages</a> before settling on
- <a href="http://gohugo.io/overview/introduction/">Hugo</a>: it has been a fascinating study in scope creep.
-But I&rsquo;m prototyping, so it&rsquo;s all good, right?</p>
-
+with <a href="http://jekyllrb.com/docs/github-pages/">Jekyll and GitHub Pages</a> before settling on
+<a href="http://gohugo.io/overview/introduction/">Hugo</a>: it has been a fascinating study in scope creep.
+But I'm prototyping, so it's all good, right?</p>
 <p>Recently, I discovered <a href="http://www.mkdocs.org/">MkDocs</a> for &ldquo;Project documentation with Markdown.&rdquo;
- I started to navigating the static web site blog quest, it was an
- exercise in transferring most of the standard content management system functionality into
- smaller tools and libraries which inverts the work flow from typing content into a WYSIWYG
- form-based editor to add formatting to simple markdown during writing.
- I think the journey was be worth it because I caught glimpses which validate this efficient approach:</p>
-
+I started to navigating the static web site blog quest, it was an
+exercise in transferring most of the standard content management system functionality into
+smaller tools and libraries which inverts the work flow from typing content into a WYSIWYG
+form-based editor to add formatting to simple markdown during writing.
+I think the journey was be worth it because I caught glimpses which validate this efficient approach:</p>
 <ul>
 <li>I can blog from the command line and presumably anywhere (including my phone) with some setup.</li>
 <li>I can test the build of my content, templates, and enhanced work on those elements.</li>
 <li>Everything under revision control, therefore: blog + content = testable software!</li>
 </ul>
-
 <h3 id="a-static-web-cms">A Static Web CMS?</h3>
-
-<p>Even though I&rsquo;ve accomplished much (including e-commerce) with various web content management systems
+<p>Even though I've accomplished much (including e-commerce) with various web content management systems
 (CMS) such as:
- <a href="http://plone.org/">Plone</a>,
- <a href="http://twiki.org/">TWiki</a> &amp; <a href="http://foswiki.org/">Foswiki</a>,
- <a href="http://www.joomla.org/">Joomla</a>,
- <a href="http://drupal.org">Drupal</a>,
- <a href="http://wordpress.org">WordPress</a>,
- and <a href="http://modx.com">ModX</a>.
+<a href="http://plone.org/">Plone</a>,
+<a href="http://twiki.org/">TWiki</a> &amp; <a href="http://foswiki.org/">Foswiki</a>,
+<a href="http://www.joomla.org/">Joomla</a>,
+<a href="http://drupal.org">Drupal</a>,
+<a href="http://wordpress.org">WordPress</a>,
+and <a href="http://modx.com">ModX</a>.
 over the years, you inevitably fall <em>out of love</em> with them after the first month. You discover a
 landscape of complex and brittle software when you extend a web CMS into the enterprise by adding
 integrations, plugins, etc. which have their own security attack surface, dependencies, update schedule,
 and incompatibilities.</p>
-
 <p>You wonder if Share Point and Alfresco are just as evil (I am sure they are) and
 so you wonder if you will also inevitably fall out of love with a static CMS?</p>
-
 <p>This is not a unique problem, it is shared by many other classes of software (like Jenkins, JIRA,
 and your web browser) once you extend any API or customize a work flow (Oracle EBS). It is
 an indication of rich platform, ecosystem, or framework, but every customization leads to
 increased complexity and technical debt.</p>
-
 <p>A static, compiled web site loses dynamic, server-side functionality for persistence and
 interaction, or does it? With the advent of application service providers (ASP) or cloud hosted
 anything-as-a-service, we can move from server-side to service providers for authentication, spam filtered
 comments, forms and polls, advertising, analytics, and who knows what else?
 In addition, we can leverage improved web client capabilities to shift what was server-side to client-side processing.</p>
-
 <p>This will be a great experiment!</p>
-
 <h3 id="infrastructure-as-code">Infrastructure as Code</h3>
-
 <p>The real purpose of this blog will be to catalog and share my research and development towards my passion:
 <em>Infrastructure as Code</em> which will lead to my dream of <em>behavior driven DevOps.</em>
- It is a ripe time for system and design thinking because the entire industry
- is trying to solve basic problems and automate solutions while integrating many
- different systems and disciplines. It is an exciting and disruptive time!</p>
-
+It is a ripe time for system and design thinking because the entire industry
+is trying to solve basic problems and automate solutions while integrating many
+different systems and disciplines. It is an exciting and disruptive time!</p>
 <h2 id="postscript-2018-05-21">Postscript: 2018-05-21</h2>
-
 <p>I have to say, I enjoy a static web CMS under version control with simple deployment testing!
-Hugo has been pretty great, but I&rsquo;m curious about <a href="https://nanoc.ws/">https://nanoc.ws/</a> now.</p>
-
+Hugo has been pretty great, but I'm curious about <a href="https://nanoc.ws/">https://nanoc.ws/</a> now.</p>
 <h2 id="postscript-2018-06-15">Postscript: 2018-06-15</h2>
-
 <p>The EU GDPR: <a href="https://www.eugdpr.org/">General Data Protection Regulation</a> and
- audience comments as a service Disqus injecting ads has caused a general
- re-evaluation of static web sites and dynamic comments. Some research needed:</p>
-
+audience comments as a service Disqus injecting ads has caused a general
+re-evaluation of static web sites and dynamic comments. Some research needed:</p>
 <ul>
 <li><a href="https://montyflatts.com/mission-blog-comments/">https://montyflatts.com/mission-blog-comments/</a></li>
 <li><a href="https://stiobhart.net/2017-02-24-isso-comments/">https://stiobhart.net/2017-02-24-isso-comments/</a></li>
@@ -463,11 +441,6 @@ Self hosted, open source alternatives (from <a href="https://gohugo.io/content-m
 				<div class="paging">
 					<span class="paging-label">More Reading</span>
 					
-					<div class="paging-newer">
-						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="../../post/from-pet-to-cattle-in-10-steps/"></a>
-		            </div>
-		            
 
 					
 					<div class="paging-older">
@@ -489,9 +462,12 @@ Self hosted, open source alternatives (from <a href="https://gohugo.io/content-m
 		
 		</ul>
 	</div>
+  
+  
 
 	<p>&copy; 2019. All rights reserved.</p>
 </div>
+
     </div>
   </div>
 	

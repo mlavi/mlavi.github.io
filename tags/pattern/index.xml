@@ -19,17 +19,15 @@
       
       <guid>https://mlavi.github.io/post/devops-in-a-box/</guid>
       <description>&lt;p&gt;My long time fantasy has been to demonstrate an entire CI/CD pipeline with
- continuous operations of applications to discuss behavior driven operations
- and testing as monitors.&lt;/p&gt;
-
+continuous operations of applications to discuss behavior driven operations
+and testing as monitors.&lt;/p&gt;
 &lt;p&gt;The call for this happened over and over at DevOpsDays to answer: how does one
- learn DevOps, practice site reliability engineering, or have a full
- application lifecycle environment?&lt;/p&gt;
-
-&lt;p&gt;So let&amp;rsquo;s create a minimal viable product &lt;a href=&#34;../devops-btd-pattern&#34;&gt;BTD scenario&lt;/a&gt;
- of my &lt;a href=&#34;../devops-automation&#34;&gt;DevOps Automation&lt;/a&gt; system,
- extend it to prefix Governance and suffix Management,
- and then drive maturity to illustrate and discuss best practices.&lt;/p&gt;</description>
+learn DevOps, practice site reliability engineering, or have a full
+application lifecycle environment?&lt;/p&gt;
+&lt;p&gt;So let&#39;s create a minimal viable product &lt;a href=&#34;../devops-btd-pattern&#34;&gt;BTD scenario&lt;/a&gt;
+of my &lt;a href=&#34;../devops-automation&#34;&gt;DevOps Automation&lt;/a&gt; system,
+extend it to prefix Governance and suffix Management,
+and then drive maturity to illustrate and discuss best practices.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,7 +37,7 @@
       
       <guid>https://mlavi.github.io/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
- You reinforce your goals to improve code flow and service design on the way to test driven development!&lt;/p&gt;</description>
+You reinforce your goals to improve code flow and service design on the way to test driven development!&lt;/p&gt;</description>
     </item>
     
   </channel>
