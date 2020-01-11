@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.62.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
   <meta property="og:title" content="Reconciling Configuration Management and Immutable Infrastructure" />
@@ -306,9 +306,9 @@
 				<small class="toc-label">Contents</small>
 		   	 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#read-only">Read Only</a></li>
-    <li><a href="#dynamic-configuration">Dynamic Configuration</a></li>
-    <li><a href="#infrastructure-artifacts">Infrastructure Artifacts</a></li>
+    <li><a href="#read-only-">Read Only</a></li>
+    <li><a href="#dynamic-configuration-">Dynamic Configuration</a></li>
+    <li><a href="#infrastructure-artifacts-">Infrastructure Artifacts</a></li>
   </ul>
 </nav>
 		    </div>
@@ -351,7 +351,7 @@ immutable world of infrastructure artifacts?</p>
 is a strategic value we have discovered to increase the scale and agility of
 infrastructure and operations. Immutable infrastructure becomes an
 indispensable manner to achieve this vision.</p>
-<h1 id="long-lived-pets">Long Lived Pets</h1>
+<h1 id="long-lived-pets-">Long Lived Pets</h1>
 <p>I characterized the traditional IT operator and system administrator value
 system which views change as risk to system and application availability
 and showed their progressive journey to DevOps in my Calm.io blog post
@@ -376,7 +376,7 @@ agile infrastructure by embracing virtualization in the public or private
 cloud, they have stopped short of taking the next step.</p>
 <p>One cannot scale efforts beyond a small, hand maintained population of pets
 without embracing automation.</p>
-<h1 id="configuration-management--mutable-infrastructure">Configuration Management = Mutable Infrastructure</h1>
+<h1 id="configuration-management--mutable-infrastructure-">Configuration Management = Mutable Infrastructure</h1>
 <p>Per the <a href="https://memegenerator.net/X-All-The-Things">Internet meme</a>,
 we want to automate all the things!</p>
 <p>I quote from my blog post on <a href="../../../post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/">Configuration Management in the DevOps World</a>:</p>
@@ -408,7 +408,7 @@ While configuration management represents a huge step forward for automation,
 all life cycle operations and events conducted via configuration management
 support the maintenance of long lived servers, and thus they represent a
 regression back to <em>pet</em> values.</p>
-<h1 id="a-herd-of-cattle">A Herd of Cattle</h1>
+<h1 id="a-herd-of-cattle-">A Herd of Cattle</h1>
 <p>Harnessing automated infrastructure provisioning via configuration management
 and other methods makes it easy to create any quantity of servers, nearly as
 trivial as a single instance! Automated infrastructure requires a new approach
@@ -439,7 +439,7 @@ By scaling up and scaling down the population based upon demand, the population
 consumes resources economically. I.e. an elastic population represents cost
 savings by eliminating unused resources compared to a maximum capacity planned,
 static population.</p>
-<h1 id="the-journey-to-immutability">The Journey to Immutability</h1>
+<h1 id="the-journey-to-immutability-">The Journey to Immutability</h1>
 <p>To paraphrase Wiktionary:
 <em><a href="https://en.wiktionary.org/wiki/immutable">immutable</a></em> =
 unable to be changed; a constant.</p>
@@ -452,7 +452,7 @@ strategies are:
 <a href="#read-only">read only</a>,
 <a href="#dynamic-configuration">dynamic configuration</a>,
 and <a href="#infrastructure-artifacts">infrastructure artifacts</a>.</p>
-<h2 id="read-only">Read Only</h2>
+<h2 id="read-only-">Read Only</h2>
 <p>Treating a resource’s local storage as read only makes the file system
 immutable and forces us to evaluate everything in a new light!
 The primary issue boils down to the question: how do I preserve local state?</p>
@@ -477,7 +477,7 @@ Consider the advantages of read only file system: by design,
 it cannot be directly tampered with and it removes a raft of security issues!
 Another advantage is that read only removes most of the resource life cycle
 operations.</p>
-<h2 id="dynamic-configuration">Dynamic Configuration</h2>
+<h2 id="dynamic-configuration-">Dynamic Configuration</h2>
 <p>For the lack of a better term, I collect a number of concerns under the
 umbrella of dynamic configuration.</p>
 <p>The initial system and application configuration state must be read from a
@@ -502,7 +502,7 @@ and scheduling:</p>
 <p>Dynamic configuration represents an evolving area, there are many solutions
 and most are part of cluster scheduling and configuration management systems;
 <em>this will be the topic of a future blog post.</em></p>
-<h2 id="infrastructure-artifacts">Infrastructure Artifacts</h2>
+<h2 id="infrastructure-artifacts-">Infrastructure Artifacts</h2>
 <p>If configuration management necessarily represents mutable infrastructure,
 how can it work for immutable infrastructure? This is a concern that I have
 pondered for years and it represents the struggle to unlearn traditional
@@ -586,7 +586,7 @@ development to production, risk is minimized.</p>
   
   
 
-	<p>&copy; 2019. All rights reserved.</p>
+	<p>&copy; 2020. All rights reserved.</p>
 </div>
 
     </div>

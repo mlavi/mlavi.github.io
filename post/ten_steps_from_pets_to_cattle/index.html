@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.62.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
   <meta property="og:title" content="Ten Steps from Pets to Cattle" />
@@ -317,7 +317,7 @@
   </ul>
 
   <ul>
-    <li><a href="#overview-1">Overview</a></li>
+    <li><a href="#overview">Overview</a></li>
     <li><a href="#definitions">Definitions</a></li>
   </ul>
 </nav>
@@ -355,7 +355,7 @@ to become a force multiplier instead of a keep the lights on organization.
 Let me demonstrate that traditional values for long lived infrastructure and
 their retroactive justification do not apply when progressing to a DevOps
 mindset.</p>
-<h1 id="under-construction">Under Construction</h1>
+<h1 id="under-construction-">Under Construction</h1>
 <p>The following pictures in the <a href="#postscript">Postscript</a> are from my notebook
 and outline this article. Please return to see how I flesh out the presentation.</p>
 <h2 id="updates">Updates</h2>
@@ -364,7 +364,7 @@ and outline this article. Please return to see how I flesh out the presentation.
 will provide the final product shortly!</li>
 <li>2018-07: I've brought forward an early draft at the bottom.</li>
 </ul>
-<h1 id="overview">Overview</h1>
+<h1 id="overview-">Overview</h1>
 <p>January 25, 2017: I gave a Calm deep dive session to my peers at Nutanix,
 and there were two topic requests that shed light into the DevOps world
 for them and provided insight
@@ -380,7 +380,7 @@ we focus on application infrastructure; a SAN or backup system target is out
 of scope.</p>
 <p>Throughout this exercise, I will use a mythical, relative value of X
 as a unit of work and time, my guess is that it is 3 hours.</p>
-<h1 id="1-the-monolith-in-production">1: The Monolith in Production</h1>
+<h1 id="1-the-monolith-in-production-">1: The Monolith in Production</h1>
 <ul>
 <li>Design:
 <ul>
@@ -411,7 +411,7 @@ as a unit of work and time, my guess is that it is 3 hours.</p>
 </ul>
 </li>
 </ul>
-<h1 id="2-separate-monolithic-functions">2: Separate, Monolithic Functions</h1>
+<h1 id="2-separate-monolithic-functions-">2: Separate, Monolithic Functions</h1>
 <ul>
 <li>Design:
 <ul>
@@ -449,7 +449,7 @@ as a unit of work and time, my guess is that it is 3 hours.</p>
 </ul>
 </li>
 </ul>
-<h1 id="3-add-load-balancer-and-dmz">3: Add Load Balancer and DMZ</h1>
+<h1 id="3-add-load-balancer-and-dmz-">3: Add Load Balancer and DMZ</h1>
 <ul>
 <li>Design:
 <ul>
@@ -502,7 +502,7 @@ application downtime</li>
 </ul>
 </li>
 </ul>
-<h1 id="4-calm-blueprint-for-ops">4: Calm Blueprint for Ops</h1>
+<h1 id="4-calm-blueprint-for-ops-">4: Calm Blueprint for Ops</h1>
 <p>If all of the previous steps were on bare metal, then it is time to virtualize:
 called P2V: physical to virtual. My selfish agenda is do this on
 Nutanix with your hypervisor of choice because it would include Prism Central
@@ -566,33 +566,33 @@ This will be <a href="#8-infrastructure-ci-cd">stage #8</a>.</li>
 these operations: zero-click operations = self-healing, anti-fragile business.
 This will be <a href="#10-heuristic-driven-operations">stage #10</a>.</li>
 </ul>
-<h1 id="5-synthesis-with-scripting">5: Synthesis with Scripting</h1>
+<h1 id="5-synthesis-with-scripting-">5: Synthesis with Scripting</h1>
 <p>Cloning the blueprint <a href="#4-calm-blueprint-for-ops">from #4</a>,
 one can now refactor each host to create a new VM
 instead, then use Powershell scripting to stand up each service from scratch.
 If desired, one can skip this step to proceed to configuration management.</p>
-<h1 id="6-configuration-management">6: Configuration Management</h1>
+<h1 id="6-configuration-management-">6: Configuration Management</h1>
 <p>Cloning the blueprint from #5, one can refactor Powershell scripting to
 use configuration management instead. I consider this next generation
 scripting and the effort can benefit by bootstrapping from community
 contributions for web and database. Calm can orchestrate
 configuration management on each service host, so CM could potentially be
 client only without increasing the infrastructure need for supporting CM servers.</p>
-<h1 id="7-infrastructure-artifacts">7: Infrastructure Artifacts</h1>
+<h1 id="7-infrastructure-artifacts-">7: Infrastructure Artifacts</h1>
 <p>Creating a build script, one can now move from runtime configuration Management
 to build time infrastructure: this allows further testing automation and faster
 deployment time. The Calm blueprint can be simplified to instantiate the
 VM artifacts.</p>
-<h1 id="8-infrastructure-cicd">8: Infrastructure CI/CD</h1>
+<h1 id="8-infrastructure-cicd-">8: Infrastructure CI/CD</h1>
 <p>The Calm blueprint from #7 can be cloned and refactored to accept runtime
 arguments to the VM artifacts to be used for continuous integration as well
 as perform application integration testing. Calm blueprint changes could also
 trigger CI/CD so that every operational and governance change can also be tested!</p>
-<h1 id="9-enterprise-and-hybrid-clouds">9: Enterprise and Hybrid Clouds</h1>
+<h1 id="9-enterprise-and-hybrid-clouds-">9: Enterprise and Hybrid Clouds</h1>
 <p>The Calm blueprint from #8 can be cloned and refactored for parallel deployments
 to multiple hypervisors and public clouds in multiple datacenters for global
 application load balancing and service level agreements.</p>
-<h1 id="10-heuristic-driven-operations">10: Heuristic Driven Operations</h1>
+<h1 id="10-heuristic-driven-operations-">10: Heuristic Driven Operations</h1>
 <p>Adding monitoring, metrics, and logs allows on to heuristically trigger
 these operations: zero-click operations = self-healing, anti-fragile business.</p>
 <!-- raw HTML omitted -->
@@ -627,7 +627,7 @@ there is more to to add! Here are snapshots from my notes:
 </code></pre><h1 id="from-pet-to-cattle-in-x-steps">From Pet to Cattle in X Steps</h1>
 <p>40 mins presentation, 10 min Q&amp;A, review and Call to Action: last words
 linger</p>
-<h2 id="overview-1">Overview</h2>
+<h2 id="overview">Overview</h2>
 <p>We will take you on a journey of a system administrator, responsible for
 the organization's e-commerce web site, across various era IT best
 practices:</p>
@@ -873,7 +873,7 @@ ops</p>
   
   
 
-	<p>&copy; 2019. All rights reserved.</p>
+	<p>&copy; 2020. All rights reserved.</p>
 </div>
 
     </div>
