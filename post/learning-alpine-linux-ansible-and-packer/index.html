@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Learning AlpineLinux.org, Ansible.com, and Packer.io // Mark&#39;s Blog
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.82.0" />
+
+
+  <meta property="og:title" content="Learning AlpineLinux.org, Ansible.com, and Packer.io" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://mlavi.github.io/post/learning-alpine-linux-ansible-and-packer/" />
+
+
+  
+  <link rel="stylesheet" href="https://mlavi.github.io//css/mlavi.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://mlavi.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Mark&#39;s Blog" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4" style="background: black no-repeat url(/img/firefox_nebula.jpg);">
+  <div class="header">
+    
+
+	
+
+    
+    
+ 
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="https://mlavi.github.io/">Mark&#39;s Blog <span class="nav-item-separator">//</span> Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span> <a class="subscribe-button icon-feed" href="">Subscribe</a></li>
+        
+      </ul>
+      <ul id="all-tags"><span style="background: black;"><em><stong>Tag Cloud</strong></em></span><br />
+      
+      
+      <li><a href="../../tags/devops">devops</a><span
+        class="decorative-marker">//</span><a
+        name="devops">16</a></li>
+      
+      <li><a href="../../tags/automation">automation</a><span
+        class="decorative-marker">//</span><a
+        name="automation">8</a></li>
+      
+      <li><a href="../../tags/calm">calm</a><span
+        class="decorative-marker">//</span><a
+        name="calm">8</a></li>
+      
+      <li><a href="../../tags/configuration-management">configuration-management</a><span
+        class="decorative-marker">//</span><a
+        name="configuration-management">4</a></li>
+      
+      <li><a href="../../tags/culture">culture</a><span
+        class="decorative-marker">//</span><a
+        name="culture">4</a></li>
+      
+      <li><a href="../../tags/diagram">diagram</a><span
+        class="decorative-marker">//</span><a
+        name="diagram">4</a></li>
+      
+      <li><a href="../../tags/build">build</a><span
+        class="decorative-marker">//</span><a
+        name="build">3</a></li>
+      
+      <li><a href="../../tags/security">security</a><span
+        class="decorative-marker">//</span><a
+        name="security">3</a></li>
+      
+      <li><a href="../../tags/about">about</a><span
+        class="decorative-marker">//</span><a
+        name="about">2</a></li>
+      
+      <li><a href="../../tags/advocate">advocate</a><span
+        class="decorative-marker">//</span><a
+        name="advocate">2</a></li>
+      
+      <li><a href="../../tags/america">america</a><span
+        class="decorative-marker">//</span><a
+        name="america">2</a></li>
+      
+      <li><a href="../../tags/artifact">artifact</a><span
+        class="decorative-marker">//</span><a
+        name="artifact">2</a></li>
+      
+      <li><a href="../../tags/blacklivesmatter">blacklivesmatter</a><span
+        class="decorative-marker">//</span><a
+        name="blacklivesmatter">2</a></li>
+      
+      <li><a href="../../tags/bootstrap">bootstrap</a><span
+        class="decorative-marker">//</span><a
+        name="bootstrap">2</a></li>
+      
+      <li><a href="../../tags/cloud-init">cloud-init</a><span
+        class="decorative-marker">//</span><a
+        name="cloud-init">2</a></li>
+      
+      <li><a href="../../tags/developer">developer</a><span
+        class="decorative-marker">//</span><a
+        name="developer">2</a></li>
+      
+      <li><a href="../../tags/immutable">immutable</a><span
+        class="decorative-marker">//</span><a
+        name="immutable">2</a></li>
+      
+      <li><a href="../../tags/infrastructure">infrastructure</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure">2</a></li>
+      
+      <li><a href="../../tags/infrastructure-as-code">infrastructure-as-code</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure-as-code">2</a></li>
+      
+      <li><a href="../../tags/linux">linux</a><span
+        class="decorative-marker">//</span><a
+        name="linux">2</a></li>
+      
+      <li><a href="../../tags/operating-system">operating-system</a><span
+        class="decorative-marker">//</span><a
+        name="operating-system">2</a></li>
+      
+      <li><a href="../../tags/pattern">pattern</a><span
+        class="decorative-marker">//</span><a
+        name="pattern">2</a></li>
+      
+      <li><a href="../../tags/personal">personal</a><span
+        class="decorative-marker">//</span><a
+        name="personal">2</a></li>
+      
+      <li><a href="../../tags/pets">pets</a><span
+        class="decorative-marker">//</span><a
+        name="pets">2</a></li>
+      
+      <li><a href="../../tags/politics">politics</a><span
+        class="decorative-marker">//</span><a
+        name="politics">2</a></li>
+      
+      <li><a href="../../tags/tutorial">tutorial</a><span
+        class="decorative-marker">//</span><a
+        name="tutorial">2</a></li>
+      
+      <li><a href="../../tags/web">web</a><span
+        class="decorative-marker">//</span><a
+        name="web">2</a></li>
+      
+      <li><a href="../../tags/webmaster">webmaster</a><span
+        class="decorative-marker">//</span><a
+        name="webmaster">2</a></li>
+      
+      <li><a href="../../tags/2fa">2fa</a><span
+        class="decorative-marker">//</span><a
+        name="2fa">1</a></li>
+      
+      <li><a href="../../tags/alpine">alpine</a><span
+        class="decorative-marker">//</span><a
+        name="alpine">1</a></li>
+      
+      <li><a href="../../tags/ansible">ansible</a><span
+        class="decorative-marker">//</span><a
+        name="ansible">1</a></li>
+      
+      <li><a href="../../tags/authentication">authentication</a><span
+        class="decorative-marker">//</span><a
+        name="authentication">1</a></li>
+      
+      <li><a href="../../tags/blueprint">blueprint</a><span
+        class="decorative-marker">//</span><a
+        name="blueprint">1</a></li>
+      
+      <li><a href="../../tags/career">career</a><span
+        class="decorative-marker">//</span><a
+        name="career">1</a></li>
+      
+      <li><a href="../../tags/cattle">cattle</a><span
+        class="decorative-marker">//</span><a
+        name="cattle">1</a></li>
+      
+      <li><a href="../../tags/cms">cms</a><span
+        class="decorative-marker">//</span><a
+        name="cms">1</a></li>
+      
+      <li><a href="../../tags/code">code</a><span
+        class="decorative-marker">//</span><a
+        name="code">1</a></li>
+      
+      <li><a href="../../tags/container">container</a><span
+        class="decorative-marker">//</span><a
+        name="container">1</a></li>
+      
+      <li><a href="../../tags/continuous-delivery">continuous-delivery</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-delivery">1</a></li>
+      
+      <li><a href="../../tags/continuous-deployment">continuous-deployment</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-deployment">1</a></li>
+      
+      <li><a href="../../tags/continuous-integration">continuous-integration</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-integration">1</a></li>
+      
+      <li><a href="../../tags/database">database</a><span
+        class="decorative-marker">//</span><a
+        name="database">1</a></li>
+      
+      <li><a href="../../tags/declarative">declarative</a><span
+        class="decorative-marker">//</span><a
+        name="declarative">1</a></li>
+      
+      <li><a href="../../tags/definition">definition</a><span
+        class="decorative-marker">//</span><a
+        name="definition">1</a></li>
+      
+      <li><a href="../../tags/deploy">deploy</a><span
+        class="decorative-marker">//</span><a
+        name="deploy">1</a></li>
+      
+      <li><a href="../../tags/devrel">devrel</a><span
+        class="decorative-marker">//</span><a
+        name="devrel">1</a></li>
+      
+      <li><a href="../../tags/distribution">distribution</a><span
+        class="decorative-marker">//</span><a
+        name="distribution">1</a></li>
+      
+      <li><a href="../../tags/education">education</a><span
+        class="decorative-marker">//</span><a
+        name="education">1</a></li>
+      
+      <li><a href="../../tags/git">git</a><span
+        class="decorative-marker">//</span><a
+        name="git">1</a></li>
+      
+      <li><a href="../../tags/gitops">gitops</a><span
+        class="decorative-marker">//</span><a
+        name="gitops">1</a></li>
+      
+      <li><a href="../../tags/html">html</a><span
+        class="decorative-marker">//</span><a
+        name="html">1</a></li>
+      
+      <li><a href="../../tags/lamp">lamp</a><span
+        class="decorative-marker">//</span><a
+        name="lamp">1</a></li>
+      
+      <li><a href="../../tags/life">life</a><span
+        class="decorative-marker">//</span><a
+        name="life">1</a></li>
+      
+      <li><a href="../../tags/maturity">maturity</a><span
+        class="decorative-marker">//</span><a
+        name="maturity">1</a></li>
+      
+      <li><a href="../../tags/operators">operators</a><span
+        class="decorative-marker">//</span><a
+        name="operators">1</a></li>
+      
+      <li><a href="../../tags/packer">packer</a><span
+        class="decorative-marker">//</span><a
+        name="packer">1</a></li>
+      
+      <li><a href="../../tags/password">password</a><span
+        class="decorative-marker">//</span><a
+        name="password">1</a></li>
+      
+      <li><a href="../../tags/phing">phing</a><span
+        class="decorative-marker">//</span><a
+        name="phing">1</a></li>
+      
+      <li><a href="../../tags/relations">relations</a><span
+        class="decorative-marker">//</span><a
+        name="relations">1</a></li>
+      
+      <li><a href="../../tags/sgi">sgi</a><span
+        class="decorative-marker">//</span><a
+        name="sgi">1</a></li>
+      
+      <li><a href="../../tags/slide">slide</a><span
+        class="decorative-marker">//</span><a
+        name="slide">1</a></li>
+      
+      <li><a href="../../tags/ssh">ssh</a><span
+        class="decorative-marker">//</span><a
+        name="ssh">1</a></li>
+      
+      <li><a href="../../tags/test">test</a><span
+        class="decorative-marker">//</span><a
+        name="test">1</a></li>
+      
+      <li><a href="../../tags/totp">totp</a><span
+        class="decorative-marker">//</span><a
+        name="totp">1</a></li>
+      
+      <li><a href="../../tags/version-control">version-control</a><span
+        class="decorative-marker">//</span><a
+        name="version-control">1</a></li>
+      
+      <li><a href="../../tags/windows">windows</a><span
+        class="decorative-marker">//</span><a
+        name="windows">1</a></li>
+      
+      </ul>
+    </nav>
+
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-pre-destined-journey">A Pre-destined Journey</a></li>
+    <li><a href="#hardware">Hardware</a></li>
+    <li><a href="#operating-system">Operating System</a></li>
+    <li><a href="#reproducible-pets">Reproducible Pets</a>
+      <ul>
+        <li><a href="#configuration-management">Configuration Management</a></li>
+        <li><a href="#vm-artifacts">VM Artifacts</a></li>
+      </ul>
+    </li>
+    <li><a href="#epilog">Epilog</a></li>
+    <li><a href="#postscript-patterns-todo">Postscript: Patterns (TODO)</a></li>
+  </ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="../../post/learning-alpine-linux-ansible-and-packer/">Learning AlpineLinux.org, Ansible.com, and Packer.io</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>26</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Jan</span> <span class="post-date-year">2021</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            <p>For my 2020-1 holiday break, I decided my next personal project would be to rebuild my home infrastructure on containers. I&rsquo;d been inspired by a recent discovery of <a href="https://linuxserver.io">LinuxServer.io</a>, where open source projects are built and run as containers. While I have a burning desire to better my Kubernetes practice, not enough of the world delivers software as a Helm chart, so merely running everything as containers would be a good intermediate step. Let me share my first six steps with examples&hellip;</p>
+<h1 id="a-pre-destined-journey">A Pre-destined Journey</h1>
+<p>My previous three employers had provided an Apple laptop and most recently I requested to a Dell XPS laptop with Windows, which I made dual-boot Linux (because I knew that line supported Linux via Sputnik project). I refined my practices over the years to make my work mostly OS independent and portable, adapting everything I could towards open source applications, version controlled work, and containers when possible. The tactical choices I made along the way to support these strategic goals were exemplified by adopting <a href="./git-for-operators/#2020-04-19-securing-pets-in-git">git, dotfiles, KeePassXC</a>, and Unison. The goal was to &ldquo;containerize&rdquo; as many applications and services as possible and manage them with Kubernetes, but take smaller, logical steps to arrive there.</p>
+<h1 id="hardware">Hardware</h1>
+<p>When COVID-19 and shut-down travel, my 10 year old Linux desktop became my primary workstation. Fortunately, I&rsquo;d  upgraded my monitor earlier that year, so I was set. With a lot of polishing, I migrated all of my day to day work to Linux from Mac. Today, the primary reason I use my Mac is for being on the road, videoconferencing, and Powerpoint.</p>
+<blockquote>
+<p>Update: February 2021
+The following month, I found I could no longer use Homebrew&rsquo;s Linux compiled Python because my old AMD Athelon Phenom II processor doesn&rsquo;t support Intel Core 2 instruction set which seems to be required. Of course, my OS provides Python as a workaround, but this wasn&rsquo;t the first time I had encountered a processor compile issue. Exactly a decade (to the month), I upgraded my desktop to a current AMD Rizen 3000 desktop CPU/motherboard. COVID-19 seems to have impacted some choice and availability in the market. Ironically, I&rsquo;ve yet to feel much of a difference in performance.</p>
+</blockquote>
+<p>I had personally invested into buying double the memory for a work supplied Intel Skull Canyon i5 NUC, but it always struggled to run <a href="https://www.nutanix.com/products/community-edition">Nutanix Community Edition</a> with AOS, Prism Central, and Calm plus some workload VMs and furthermore, community support would challenge my productivity. So it was idle, smaller, faster, and quieter than my desktop, and ideal to host this holiday project as a headless server.</p>
+<h1 id="operating-system">Operating System</h1>
+<p>I considered loading my <a href="https://linuxmint.com/">Linux desktop OS</a> onto the Skull Canyon for familiarity, OS parity, and ease of maintenance (even caching OS updates across them). But my strategic goal was to boot and run containers, that meant the OS should be focused on  &ldquo;boot to Docker&rdquo; and eventually &ldquo;boot to Kubernetes&rdquo; which meant that it should be a minimal Linux OS, not a general purpose desktop focus.</p>
+<p>I investigated the current minimal Ubuntu or Debian server variant distributions to remain in the .deb package format Linux family branch. But for years, the majority of the Docker community has settled on using <a href="https://AlpineLinux.org">AlpineLinux.org</a> as a base OS image for containers because it is small and secure. The AlpineLinux team&rsquo;s pragmatic and relentless focus means that the OS minimizes (memory and disk) resource use, performs well, and updates regularly, so I pursued it.</p>
+<p>After importing the AlpineLinux.org GPG key, <a href="https://alpinelinux.org/downloads/">downloading</a>, checking,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">URL<span style="color:#f92672">=</span>https://dl-cdn.alpinelinux.org/alpine/v3.12/releases/x86_64/alpine-extended-3.12.3-x86_64.iso
+
+<span style="color:#66d9ef">for</span> FILE in <span style="color:#e6db74">&#39;&#39;</span> .asc .sha256; <span style="color:#66d9ef">do</span>
+  wget --continue <span style="color:#e6db74">${</span>URL<span style="color:#e6db74">}${</span>FILE<span style="color:#e6db74">}</span>
+<span style="color:#66d9ef">done</span>
+
+IFS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/&#39;</span> read -ra FILESPEC <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>URL<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+gpg --verify <span style="color:#e6db74">${</span>FILESPEC[-1]<span style="color:#e6db74">}</span>.asc <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> sha256sum --check <span style="color:#e6db74">${</span>FILESPEC[-1]<span style="color:#e6db74">}</span>.sha256 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> echo -e <span style="color:#e6db74">&#34;\n__VERIFIED: </span><span style="color:#e6db74">${</span>FILESPEC[-1]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> rm -i <span style="color:#e6db74">${</span>FILESPEC[-1]<span style="color:#e6db74">}</span>.*
+</code></pre></div><p>&hellip;and writing the AlpineLinux Extended 3.12.3 x86-64 ISO (525 MB) to a USB thumb drive, I booted it up on the Skull Canyon. This was important to see how much of the hardware was supported by Alpine and worked &ldquo;out of the box.&rdquo; Although the ethernet NIC wasn&rsquo;t recognized, WiFi did work.  So I perused <a href="https://wiki.alpinelinux.org/">wiki.AlpineLinux.org</a> guides, logged in as root, and began a CLI journey to learning Alpine!</p>
+<h1 id="reproducible-pets">Reproducible Pets</h1>
+<p>I knew that everything I did by hand was bespoke, so like any good scientist, I kept notes on goals, facilities (research and references), and procedures (mostly shell commands). My blog journey had already ingrained the habits of using Markdown with my choice of <a href="https://Atom.io">IDE</a> with Markdown Preview, but a recent discovery of <a href="https://typora.io/">Typora</a> as a great hybrid Markdown WYSIWYG editor had spoiled me. Now I had a nice visual notebook to log my work, reminiscent of my past work with <a href="https://jupyter.org/">Project Jyupiter</a> and Mathematica!</p>
+<p>Documenting PetOps (manual operations made by hand) was not enough, the goal was to automate my work.</p>
+<p><code>setup-alpine</code> accepts environment variables and command line arguments or an answer file for automation, so I set about to learn just enough of the initial configuration, service (NTP, SSH), network, and disk choices to install the OS to the disk. I created a stub answer file, adapted it with what I knew (hard-coded every value), and worked to repeat the OS install with the answer file. This small loop guided my research, documentation, and answer file development! (<em>Red-green-refactor!</em>)</p>
+<p>The generic answer file <code>setup-alpine -c</code> generates is a configuration file with key=&ldquo;value&rdquo; and # comment format, compatible with Java.properties or TOML. My editor can lint TOML, so I decided to organize answer files in a directory: alpine/answerfile/${HOSTNAME}.toml.</p>
+<p>I SCP&rsquo;d the answer file and any other supporting notes, scripts, or configuration off the Skull Canyon and kept the results along with my alpine/README.md documentation in Git. All of this work was done on the Skull Canyon while hooked up to a keyboard and monitor. I remember the days of VMK (Video, Mouse, Keyboard) switches and cables to each physical server in the data center, but I was eager to get the Skull Canyon off my desk and work on it remotely.</p>
+<p>Here&rsquo;s my development VM answer file = <strong>alpine/answerfile/skull-vm-packer-dev.toml</strong>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># Answer file for setup-alpine script; tested on: cat /etc/alpine-release</span>
+<span style="color:#75715e"># 3.12.3, 3.13.0</span>
+<span style="color:#75715e">#---</span>
+<span style="color:#a6e22e">KEYMAPOPTS</span>=<span style="color:#e6db74">&#34;us us&#34;</span>
+<span style="color:#a6e22e">HOSTNAMEOPTS</span>=<span style="color:#e6db74">&#34;-n skull-vm-packer-dev&#34;</span>
+
+<span style="color:#75715e"># Search domain, public nameserver</span>
+<span style="color:#a6e22e">DNSOPTS</span>=<span style="color:#e6db74">&#34;-d example.com 9.9.9.9&#34;</span>
+<span style="color:#a6e22e">TIMEZONEOPTS</span>=<span style="color:#e6db74">&#34;-z UTC&#34;</span>
+
+<span style="color:#75715e"># Contents of /etc/network/interfaces</span>
+<span style="color:#a6e22e">INTERFACESOPTS</span>=<span style="color:#e6db74">&#34;auto lo
+</span><span style="color:#e6db74">iface lo inet loopback
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">auto eth0
+</span><span style="color:#e6db74">iface eth0 inet dhcp
+</span><span style="color:#e6db74">    hostname skull-vm-packer-dev
+</span><span style="color:#e6db74">&#34;</span>
+
+<span style="color:#75715e"># If you don&#39;t want to use a certain option, then comment it out</span>
+<span style="color:#a6e22e">PROXYOPTS</span>=<span style="color:#e6db74">&#34;none&#34;</span>
+<span style="color:#75715e"># -r: Add a random mirror, -f = detect fastest</span>
+<span style="color:#a6e22e">APKREPOSOPTS</span>=<span style="color:#e6db74">&#34;-1&#34;</span>
+
+<span style="color:#a6e22e">SSHDOPTS</span>=<span style="color:#e6db74">&#34;-c openssh&#34;</span>
+<span style="color:#a6e22e">NTPOPTS</span>=<span style="color:#e6db74">&#34;-c chrony&#34;</span>
+
+<span style="color:#a6e22e">DISKOPTS</span>=<span style="color:#e6db74">&#34;-m sys -v /dev/vda&#34;</span>
+<span style="color:#a6e22e">APKCACHEOPTS</span>=<span style="color:#e6db74">&#34;/media/sda1/cache&#34;</span>
+
+</code></pre></div><p>The next goal was to setup a regular account with <code>sudo</code> access to perform post-OS install work, which became a second script. Now I could remotely work on the Skull Canyon! Having achieved a beach head with remote access to my pet Skull Canyon &ldquo;production&rdquo; server, it was time to make a virtual pet server and experiment with it safely while also speeding up development.</p>
+<p>I used VirtualBox&rsquo;s GUI to create a VM from the same Alpine ISO and figured out the basic VM resource configuration for this development instance (memory, storage, bridge network, etc.). Then I learned how to script changing the VM disk using VirtualBox&rsquo;s CLI <code>VBoxManage</code>, rather than create a new VM from scratch each time in the GUI, to simulate a new OS install and improve development cycle time. I minimized the VM disk size to further speed each cycle.</p>
+<p>I tried three experiments to further improve Alpine VM development:</p>
+<ol>
+<li>An <a href="https://app.vagrantup.com/roboxes/boxes/alpine312">Alpine Vagrant box</a> is convenient, but it substituted my source ISO with <a href="https://roboxes.org/">a less vetted source</a> and required re-learning additional Vagrant configuration to manipulate VirtualBox.</li>
+<li>Adding <a href="https://wiki.alpinelinux.org/wiki/VirtualBox_guest_additions">VirtualBox Guest Additions</a> to Alpine is a work in progress that seems to require an entire desktop installation, which is unnecessary for a headless server. I missed being able to cut and paste between guest VM and my host Desktop, but this helped keep me honest for state transfer of reproducible scripts and files for my work on the VM guest, not hand-maintained PetOps.</li>
+<li><a href="https://git.alpinelinux.org/aports/tree/community/cloud-init/README.Alpine">Cloud-init</a> is in the (rolling OS) edge repository, but I wanted to remain on a more fixed, stable OS release.</li>
+</ol>
+<p>I was spoiled by the small customizations and optimizations I could make with <code>VBoxManage</code>, which had quickened my development cycle time into a <code>vm-init.sh</code> launch script which handled:</p>
+<ol>
+<li>Rip down a running VM</li>
+<li>Create a new VM disk</li>
+<li>Start a Python HTTP web server (to supply the answer file and bootstrapping scripts)</li>
+<li>Start the VM with specific resource configurations and media as needed</li>
+</ol>
+<p>I worked to refactor many of the hard-coded values out of <code>vm-init.sh</code> and move them to a <a href="https://direnv.net/">DirEnv</a> .env file, which automatically populate my shell&rsquo;s environment variables when I change into an enabled directory. I configured <code>.gitignore</code> to omit any .env file, so I will not accidentally commit any sensitive information, such as a password. By moving the hard-coded values to environment values, my code is much more <em>portable and stable</em> because it supports different scenarios without change. The environment variables can be further leveraged for Docker, Ansible, and Packer. Finally, I can think about how to organize the environment variables for better re-use and consistency across tools and environments.</p>
+<p>Let me share my current DirEnv&rsquo;s <code>.envrc</code> and <code>.env</code> configuration files, then my <code>vm-init.sh</code> guest maintenance script. You can see I override VM_NAME and MEDIUM_ISO rather than comment them out in the <code>.env</code> file. I&rsquo;ve also expanded the maintenance script for more use cases and you will see some cloud-init experimental work.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ cat .envrc
+<span style="color:#75715e"># https://direnv.net/man/direnv-stdlib.1.html</span>
+<span style="color:#75715e"># EDITOR=vi direnv edit . &amp;&amp; direnv allow # enable delta</span>
+dotenv
+
+<span style="color:#66d9ef">if</span> on_git_branch; <span style="color:#66d9ef">then</span>
+  echo <span style="color:#f92672">&amp;&amp;</span> git status --short --branch <span style="color:#f92672">&amp;&amp;</span>
+    echo <span style="color:#f92672">&amp;&amp;</span> git fetch --verbose
+<span style="color:#66d9ef">fi</span>
+
+$ cat .env
+PUID<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>
+PGID<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>
+<span style="color:#75715e">#</span>
+BOOT_CD<span style="color:#f92672">=</span>
+CREATEMEDIUM_FORMAT<span style="color:#f92672">=</span>vdi
+CREATEMEDIUM_SIZE<span style="color:#f92672">=</span><span style="color:#ae81ff">6144</span>
+<span style="color:#75715e"># megabytes = 6GB*1024MB/GB (was 4GB)</span>
+<span style="color:#75715e"># sda3 4.3G</span>
+<span style="color:#75715e"># df -hs | grep -e Size -e sda</span>
+CREATEMEDIUM_VARIANT<span style="color:#f92672">=</span>Fixed
+<span style="color:#75715e"># CREATEMEDIUM_VARIANT=Variable didn&#39;t work with Alpine: too primitive || need VMBox.ext?</span>
+MEDIUM_ISO<span style="color:#f92672">=</span>/usr/share/virtualbox/VBoxGuestAdditions.iso
+OSTYPE<span style="color:#f92672">=</span>Linux_64
+PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">7979</span>
+POWER<span style="color:#f92672">=</span>poweroff
+SLEEP<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>
+SUFFIX<span style="color:#f92672">=</span>sys
+STORAGEATTACH_STORAGECTL<span style="color:#f92672">=</span>SATA
+STORAGEATTACH_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+VM_DIR<span style="color:#f92672">=</span>VirtualBox VMs
+<span style="color:#75715e">#</span>
+VM_NAME<span style="color:#f92672">=</span>Alpine-3.12.3
+MEDIUM_ISO<span style="color:#f92672">=</span>vm-iso/alpine-extended-3.12.3-x86_64.iso
+<span style="color:#75715e">#</span>
+VM_NAME<span style="color:#f92672">=</span>Alpine-3.13.0
+MEDIUM_ISO<span style="color:#f92672">=</span>vm-iso/alpine-virt-3.13.0-x86_64.iso
+
+$ cat vm-init.sh
+<span style="color:#75715e">#!/usr/bin/env bash</span>
+
+<span style="color:#75715e"># vboxmanage controlvm &#34;${VM_NAME}&#34; reset #poweroff</span>
+<span style="color:#75715e">#__ static and defaults moved to .env</span>
+<span style="color:#75715e"># https://www.virtualbox.org/manual/UserManual.html</span>
+
+<span style="color:#66d9ef">function</span> vm_create<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  <span style="color:#75715e"># TODO: create new VM props, we are recreating Vagrant :(</span>
+  local _image_mount
+  local _image_raw
+  local _image_vmdk
+
+  echo <span style="color:#e6db74">&#34;|CREATE|&#34;</span>
+
+  VBoxManage unregistervm <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --delete <span style="color:#f92672">||</span> true
+  VBoxManage createvm --name <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --ostype <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>OSTYPE<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --register
+  <span style="color:#75715e"># VBoxManage createhd --filename /VirtualBox/${VM_NAME}/$VM.vdi --size 32768</span>
+  VBoxManage storagectl <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --name <span style="color:#e6db74">&#39;IDE&#39;</span> --add ide
+  <span style="color:#75715e"># VBoxManage storageattach &#34;${VM_NAME}&#34; --storagectl &#34;IDE Controller&#34; --port 0 --device 0 --type dvddrive --medium /u01/Software/OL/OracleLinux-R7-U6-Server-x86_64-dvd.iso</span>
+  VBoxManage storagectl <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --name <span style="color:#e6db74">&#39;SATA&#39;</span> --add sata --controller IntelAHCI
+  <span style="color:#75715e">#VBoxManage storageattach &#34;${VM_NAME}&#34; --storagectl &#34;SATA Controller&#34; --port 0 --device 0 --type hdd --medium /VirtualBox/$VM/$VM.vdi</span>
+
+  VBoxManage modifyvm <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --ioapic on <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --boot1 disk --boot2 dvd --boot3 none --boot4 none <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --memory <span style="color:#ae81ff">1024</span> --vram <span style="color:#ae81ff">33</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --bioslogodisplaytime <span style="color:#ae81ff">20</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --nic1 bridged --bridgeadapter1 enp5s0 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --mouse ps2 --clipboard bidirectional <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --audio oss --audioout on
+
+  echo -e <span style="color:#e6db74">&#39;\n|CLOUD-INIT|development...&#39;</span>
+  _image_mount<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/mnt/cloud-init/</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+  _image_raw<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cloud-init/</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">.img&#34;</span>
+  _image_vmdk<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cloud-init/</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">_cloud-init.vmdk&#34;</span>
+
+  sudo umount <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_mount<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">||</span> true
+  rm -f <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_raw<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_vmdk<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">||</span> true
+
+  dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/zero of<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_raw<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    bs<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> seek<span style="color:#f92672">=</span>2M 2&gt; /dev/null <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> mkfs.vfat -n CIDATA <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_raw<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">(</span>sudo mkdir --parents <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_mount<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> 2&gt; /dev/null <span style="color:#f92672">||</span> true<span style="color:#f92672">)</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> sudo mount <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_raw<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_mount<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> mount -l | grep <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_mount<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> sudo cp cloud-init/meta-data <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_mount<span style="color:#e6db74">}</span><span style="color:#e6db74">/&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#39;instance-id: skull-vm-1&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    | sudo tee <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_mount<span style="color:#e6db74">}</span><span style="color:#e6db74">/user-data&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> ls -l <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_mount<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>/*-data <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> sudo umount <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_mount<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> echo -e <span style="color:#e6db74">&#39;\n\thttps://stackoverflow.com/questions/454899/how-to-convert-flat-raw-disk-image-to-vmdk-for-virtualbox-or-vmplayer&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> VBoxManage convertfromraw <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_raw<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_vmdk<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --format VMDK <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> vboxmanage storageattach <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --type hdd <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      --medium <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_image_vmdk<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      --storagectl <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>STORAGEATTACH_STORAGECTL<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      --port <span style="color:#66d9ef">$((</span>STORAGEATTACH_PORT <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">))</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;|ADD|</span><span style="color:#e6db74">${</span>_image_vmdk<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span><span style="color:#66d9ef">$(</span>vboxmanage list runningvms | grep --count <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span> &gt; 0<span style="color:#f92672">))</span>; <span style="color:#66d9ef">then</span>
+  echo <span style="color:#e6db74">&#34;|POWER|</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span>POWER<span style="color:#e6db74">}</span><span style="color:#e6db74"> ...&#34;</span>
+  vboxmanage controlvm <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>POWER<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> sleep <span style="color:#ae81ff">2</span>
+<span style="color:#66d9ef">fi</span>
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -z <span style="color:#e6db74">${</span>1<span style="color:#e6db74">}</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+  INDEX<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+
+  <span style="color:#66d9ef">if</span> vboxmanage showvminfo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> &gt; /dev/null; <span style="color:#66d9ef">then</span>
+    INDEX<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>vboxmanage showvminfo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      | grep <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>STORAGEATTACH_STORAGECTL<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      | grep <span style="color:#e6db74">&#34;(</span><span style="color:#e6db74">${</span>STORAGEATTACH_PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">,&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      | awk -F<span style="color:#e6db74">&#34;.</span><span style="color:#e6db74">${</span>CREATEMEDIUM_FORMAT<span style="color:#e6db74">}</span><span style="color:#e6db74"> &#34;</span> <span style="color:#e6db74">&#39;{print $1}&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      | awk -F<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>SUFFIX<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#39;{print $NF}&#39;</span><span style="color:#66d9ef">)</span>
+  <span style="color:#66d9ef">else</span>
+    vm_create
+  <span style="color:#66d9ef">fi</span>
+
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span><span style="color:#66d9ef">$((</span>INDEX<span style="color:#66d9ef">))</span> &gt;<span style="color:#f92672">=</span> 1<span style="color:#f92672">))</span>; <span style="color:#66d9ef">then</span>
+    echo <span style="color:#e6db74">&#34;|INDEX|Guess: </span><span style="color:#e6db74">${</span>INDEX<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+  <span style="color:#66d9ef">else</span>
+    echo <span style="color:#e6db74">&#34;|DEBUG|INDEX=</span><span style="color:#e6db74">${</span>INDEX<span style="color:#e6db74">}</span><span style="color:#e6db74">|&#34;</span>
+    ERROR<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
+    echo <span style="color:#e6db74">&#34;|ERROR|</span><span style="color:#e6db74">${</span>ERROR<span style="color:#e6db74">}</span><span style="color:#e6db74">|REQUIRED: the numeric index of the current mounted VM Disk for: </span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+    exit <span style="color:#e6db74">${</span>ERROR<span style="color:#e6db74">}</span>
+  <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">else</span>
+  INDEX<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span><span style="color:#e6db74">${</span>1<span style="color:#e6db74">}</span><span style="color:#66d9ef">))</span>
+
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span>INDEX <span style="color:#f92672">==</span> 0<span style="color:#f92672">))</span>; <span style="color:#66d9ef">then</span>
+    vm_create
+  <span style="color:#66d9ef">else</span>
+    echo <span style="color:#e6db74">&#34;|USAGE|</span><span style="color:#e6db74">${</span>0<span style="color:#e6db74">}</span><span style="color:#e6db74"> [Integer: new disk index] [VM_NAME]&#34;</span>
+  <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">fi</span>
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -z <span style="color:#e6db74">${</span>2<span style="color:#e6db74">}</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+  echo <span style="color:#e6db74">&#34;|WARNING|Using: </span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">else</span>
+  VM_NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>2<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
+
+<span style="color:#75715e">#__ derived:</span>
+<span style="color:#75715e"># echo &#34;|DEBUG|INDEX=${INDEX}|&#34;</span>
+DISK_PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">${</span>VM_DIR<span style="color:#e6db74">}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">-</span><span style="color:#e6db74">${</span>SUFFIX<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+NEW_PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>DISK_PATH<span style="color:#e6db74">}</span><span style="color:#66d9ef">$((</span>INDEX <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">))</span><span style="color:#e6db74">.</span><span style="color:#e6db74">${</span>CREATEMEDIUM_FORMAT<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+OLD_PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>DISK_PATH<span style="color:#e6db74">}${</span>INDEX<span style="color:#e6db74">}</span><span style="color:#e6db74">.</span><span style="color:#e6db74">${</span>CREATEMEDIUM_FORMAT<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> ! -e <span style="color:#e6db74">${</span>NEW_PATH<span style="color:#e6db74">}</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+  vboxmanage createmedium disk --format <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>CREATEMEDIUM_FORMAT<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --filename <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>NEW_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --variant <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>CREATEMEDIUM_VARIANT<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --size <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>CREATEMEDIUM_SIZE<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">else</span>
+  echo <span style="color:#e6db74">&#34;|EXISTS|</span><span style="color:#e6db74">${</span>NEW_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
+
+vboxmanage storageattach <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --type hdd --medium <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>NEW_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --storagectl <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>STORAGEATTACH_STORAGECTL<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --port <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>STORAGEATTACH_PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;|ADD|</span><span style="color:#e6db74">${</span>NEW_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74"> ...&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -e <span style="color:#e6db74">${</span>OLD_PATH<span style="color:#e6db74">}</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+    vboxmanage closemedium --delete disk <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>OLD_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;|DELETE|</span><span style="color:#e6db74">${</span>OLD_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+  <span style="color:#66d9ef">else</span>
+    echo <span style="color:#e6db74">&#34;|GONE|</span><span style="color:#e6db74">${</span>OLD_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+  <span style="color:#66d9ef">fi</span>
+
+<span style="color:#75715e"># TODO: change boot order?</span>
+vboxmanage storageattach <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --storagectl IDE --port <span style="color:#ae81ff">1</span> --device <span style="color:#ae81ff">0</span> --type dvddrive <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --medium <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>MEDIUM_ISO<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> echo -e <span style="color:#e6db74">&#34;|ADD|CD-ROM@IDE, port 1, slot 0|boot media: </span><span style="color:#e6db74">${</span>MEDIUM_ISO<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+
+<span style="color:#75715e"># echo -e &#34;|START|${VM_NAME}.\n|SLEEP|${SLEEP}|to allow ^Cancel...&#34;</span>
+<span style="color:#75715e"># sleep &#34;${SLEEP}&#34;</span>
+
+echo <span style="color:#f92672">&amp;&amp;</span> sleep <span style="color:#ae81ff">4</span> <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#39;|START|...&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> vboxmanage startvm <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --type gui &amp; <span style="color:#75715e"># headless || gui</span>
+
+vboxmanage showvminfo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> --machinereadable <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  &gt; <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>.machinereadable.toml
+
+<span style="color:#75715e"># sudo systemctl disable apache2</span>
+pkill --full <span style="color:#e6db74">&#34;python -m SimpleHTTPServer </span><span style="color:#e6db74">${</span>PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> echo -e <span style="color:#e6db74">&#39;\n|TERMINATE|python.http server...&#39;</span>
+<span style="color:#f92672">(</span>
+  python -m SimpleHTTPServer <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">||</span> python -m http.server <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>PORT<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">)</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> echo -e <span style="color:#e6db74">&#39;\n|START|python.http server...&#39;</span> &amp;
+
+ssh-keygen -f <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/.ssh/known_hosts&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -R <span style="color:#e6db74">&#39;skull-vm&#39;</span> -R <span style="color:#e6db74">&#39;skull-vm-dev&#39;</span> <span style="color:#f92672">||</span> true
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">((</span><span style="color:#66d9ef">$(</span>pgrep VBoxXPCOMIPCD<span style="color:#66d9ef">)</span> &gt; 0<span style="color:#f92672">))</span>; <span style="color:#66d9ef">then</span>
+  echo <span style="color:#e6db74">&#39;TODO: start GUI via: virtualbox &amp;&#39;</span>
+<span style="color:#66d9ef">fi</span>
+
+echo <span style="color:#e6db74">&#34;\
+</span><span style="color:#e6db74"> lost: mount setlogo=0 and controlvm run \
+</span><span style="color:#e6db74"> vboxmanage controlvm </span><span style="color:#e6db74">${</span>VM_NAME<span style="color:#e6db74">}</span><span style="color:#e6db74"> reset #poweroff \
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&amp;&amp;</span> head -n7 init.sh
+
+</code></pre></div><p>From the script above, I wanted to call attention to this command:</p>
+<pre><code>`vboxmanage showvminfo &quot;${VM_NAME}&quot; --machinereadable &quot;${VM_NAME}&quot;.machinereadable.toml`
+</code></pre>
+<p>which allows me to easily find the textual difference between any two VM setups, <em>e.g:</em> <code>diff alpine/*.machinereadable.toml</code>, to understand what I needed to synthesize the same results by building an infrastructure VM. This is a critical differentiation for <em>infrastructure as code</em> versus the standard operator facilities of snapshot and clone in order to reproduce VM results. Furthermore, this leads to the path of building infrastructure VM artifacts in a later section. When we act more like a scientist than a craftsman, we can amplify that knowledge gain across any organization. Of course, I aspire to be a craftsman scientist: the hybrid is more interesting and relatable. The journey to improve one&rsquo;s skills and while pursuing or improving the state of the art will never end!</p>
+<p>I continued development of my bootstrap procedure and scripts by creating an initialization script (<code>init.sh</code>), which would SCP the answer file and a post-OS install script (<code>post.sh</code>) from my desktop, then use them.</p>
+<p>Alpine&rsquo;s default shell is <code>busybox</code>, a reduced form of <code>ash</code>. Fortunately, <a href="https://www.shellcheck.net/">shellcheck</a> is a nice addition to my IDE and it kept me in good form and syntax as I developed these scripts. I didn&rsquo;t have to install and test <code>busybox</code> directly on my Desktop OS or install <code>bash</code> on Alpine, which would have required further bootstrapping during the initialization stage.</p>
+<p>I re-factored <code>init.sh</code> from using <code>scp</code> to use <code>git</code> and then to use http for file transfer with <code>wget</code>, removing the need to install any packages. You can see in my examples that I have a habit of keeping copious notes in my code. Notes can consist of goals, pseudo code, lots of URLs, #TODOs, and #TOFIX notes. All of the time, I would improve capabilities while moving procedures and references out of my code and into documentation when I found a better method, an alternate facility, or a dead-end. I also moved work between <code>init.sh</code> and <code>post.sh</code> where appropriate to minimize setup before the first reboot to boot the OS from storage.</p>
+<p>I arrived at a point where I needed to type three commands to bootstrap the development VM with a fully automated OS install and reboot, leaving one post OS configuration script that would survive the reboot. You will see this pattern repeated and most of the scripts reused in the the VM Artifact section!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">KEYMAPOPTS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;us us&#39;</span> setup-alpine -q <span style="color:#75715e"># keep commands in this order!</span>
+hostname skull-vm
+wget http://desktop:port/init.sh -O - | sh
+</code></pre></div><p>I learned about the <a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System">OpenRC init system on Alpine</a>, but did not automate the invocation of post OS configuration on first boot because I was eager to start on the next step: where fully remote automation work would take over.</p>
+<p>Let me share my current <code>init.sh</code> and <code>post.sh</code>, these have been re-factored to accommodate <code>bootstrap.sh</code> for Packer in the &ldquo;VM Artifacts&rdquo; section.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ cat init.sh
+<span style="color:#75715e">#!/usr/bin/env sh</span>
+<span style="color:#75715e"># tested on: 3.12.3, 3.13.0 # cat /etc/alpine-release</span>
+<span style="color:#75715e">#---</span>
+<span style="color:#75715e"># packer example from wiki.alpinelinux.org: &#34;ifconfig eth0 up &amp;&amp; udhcpc -i eth0&lt;enter&gt;&lt;wait5&gt;&#34;,</span>
+<span style="color:#75715e">#--- Diagnostics:</span>
+<span style="color:#75715e"># cat /etc/network/interfaces; echo; cat /etc/apk/repositories</span>
+<span style="color:#75715e"># ip link &amp;&amp; echo &amp;&amp; ip route list &amp;&amp; echo &amp;&amp; ip addr show</span>
+<span style="color:#75715e"># mount | grep md</span>
+
+_artifact_host<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;desktop&#39;</span>
+_artifact_ip<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;192.168.168.168&#39;</span>
+_artifact_port<span style="color:#f92672">=</span><span style="color:#ae81ff">7979</span>
+_artifact_url<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://</span><span style="color:#e6db74">${</span>_artifact_host<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>_artifact_port<span style="color:#e6db74">}</span><span style="color:#e6db74">/&#34;</span>
+
+<span style="color:#75715e"># shellcheck disable=SC2039</span>
+echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_artifact_ip<span style="color:#e6db74">}</span><span style="color:#e6db74">\t</span><span style="color:#e6db74">${</span>_artifact_host<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> &gt;&gt; /etc/hosts <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> wget <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_artifact_url<span style="color:#e6db74">}</span><span style="color:#e6db74">post.sh&#34;</span> -O /etc/post.sh <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;sh /etc/post.sh&#34;</span> &gt;&gt; /etc/motd <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> wget <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_artifact_url<span style="color:#e6db74">}</span><span style="color:#e6db74">id_rsa.pub&#34;</span> -O /etc/id_rsa.pub <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> wget <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_artifact_url<span style="color:#e6db74">}</span><span style="color:#e6db74">answerfile/</span><span style="color:#66d9ef">$(</span>hostname<span style="color:#66d9ef">)</span><span style="color:#e6db74">.toml&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#f92672">&amp;&amp;</span> wget <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_artifact_url<span style="color:#e6db74">}</span><span style="color:#e6db74">bootstrap.sh&#34;</span> -O - | sh
+
+$ cat post.sh
+<span style="color:#75715e">#!/usr/bin/env sh</span>
+
+_remote_group<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ansible&#39;</span>
+_remote_group_id<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>
+_remote_user<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ansible&#39;</span> <span style="color:#75715e"># defined in ansible/.env, still some hardcodes</span>
+_remote_user_id<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>
+
+apk_repo_add<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  _repos<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;community&#39;</span> <span style="color:#75715e"># community testing&#39;</span>
+  _repositories<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/etc/apk/repositories&#39;</span>
+
+  <span style="color:#75715e"># shellcheck disable=SC2015</span>
+  <span style="color:#66d9ef">for</span> _repo in <span style="color:#e6db74">${</span>_repos<span style="color:#e6db74">}</span>; <span style="color:#66d9ef">do</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> ! -e <span style="color:#e6db74">${</span>_repositories<span style="color:#e6db74">}</span>.original <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+      cp <span style="color:#e6db74">${</span>_repositories<span style="color:#e6db74">}</span> <span style="color:#e6db74">${</span>_repositories<span style="color:#e6db74">}</span>.original
+    <span style="color:#66d9ef">fi</span>
+
+    grep <span style="color:#e6db74">&#39;#&#39;</span> <span style="color:#e6db74">${</span>_repositories<span style="color:#e6db74">}</span>.original <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      | grep <span style="color:#e6db74">${</span>_repo<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      | head -n <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      | tr -d <span style="color:#e6db74">&#39;#&#39;</span> &gt;&gt; <span style="color:#e6db74">${</span>_repositories<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_repositories<span style="color:#e6db74">}</span><span style="color:#e6db74">: enabled </span><span style="color:#e6db74">${</span>_repo<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> &gt;&gt; /etc/motd
+  <span style="color:#66d9ef">done</span>
+<span style="color:#f92672">}</span>
+
+remote_user_group_add<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  addgroup -g <span style="color:#e6db74">${</span>_remote_group_id<span style="color:#e6db74">}</span> <span style="color:#e6db74">${</span>_remote_group<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> true
+  <span style="color:#75715e"># apk update &amp;&amp;</span>
+  <span style="color:#75715e"># apk add bash direnv libuser &amp;&amp;</span>
+  <span style="color:#75715e">#   mkdir /etc/default &amp;&amp;</span>
+  <span style="color:#75715e">#   touch /etc/default/useradd /etc/login.defs &amp;&amp;</span>
+  <span style="color:#75715e">#   echo -e &#34;/bin/bash\n&#34; | lchsh root &amp;&amp;</span>
+  <span style="color:#75715e">#   echo &#39;dotenv&#39; &gt; .envrc &amp;&amp;</span>
+  <span style="color:#75715e">#   direnv hook bash &gt; .profile &amp;&amp;</span>
+  <span style="color:#75715e">#   wget ${_artifact_url}.env &amp;&amp;</span>
+  <span style="color:#75715e">#   direnv allow &amp;&amp;</span>
+
+  adduser -D -h /home/<span style="color:#e6db74">${</span>_remote_user<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -u <span style="color:#e6db74">${</span>_remote_user_id<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -G <span style="color:#e6db74">${</span>_remote_group<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#e6db74">${</span>_remote_user<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> true
+
+  addgroup <span style="color:#e6db74">${</span>_remote_user<span style="color:#e6db74">}</span> wheel <span style="color:#f92672">||</span> true
+
+  su <span style="color:#e6db74">${</span>_remote_user<span style="color:#e6db74">}</span> -c <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#e6db74">&#34;mkdir /home/</span><span style="color:#e6db74">${</span>_remote_user<span style="color:#e6db74">}</span><span style="color:#e6db74">/.ssh || true &amp;&amp;
+</span><span style="color:#e6db74">      cat /etc/id_rsa.pub \
+</span><span style="color:#e6db74">      &gt;&gt; /home/</span><span style="color:#e6db74">${</span>_remote_user<span style="color:#e6db74">}</span><span style="color:#e6db74">/.ssh/authorized_keys &amp;&amp;
+</span><span style="color:#e6db74">      chmod go-rwx /home/</span><span style="color:#e6db74">${</span>_remote_user<span style="color:#e6db74">}</span><span style="color:#e6db74">/.ssh/authorized_keys&#34;</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> in
+  stage2-delete<span style="color:#f92672">)</span>
+    echo <span style="color:#e6db74">&#34;__TOFIX: /usr/bin/env bash </span><span style="color:#e6db74">${</span>0<span style="color:#e6db74">}</span><span style="color:#e6db74"> stage2&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      <span style="color:#f92672">&amp;&amp;</span> /usr/bin/env bash <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>0<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> stage2
+
+    delgroup <span style="color:#e6db74">${</span>_remote_user<span style="color:#e6db74">}</span> <span style="color:#e6db74">${</span>_remote_group<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      <span style="color:#f92672">&amp;&amp;</span> deluser --remove-home <span style="color:#e6db74">${</span>_remote_user<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      <span style="color:#f92672">&amp;&amp;</span> /usr/bin/env bash <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>0<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> stage2
+    ;;
+  *<span style="color:#f92672">)</span>
+    apk_repo_add
+
+    <span style="color:#75715e"># APK Dependencies</span>
+    <span style="color:#75715e"># Ansible: openssh-client python</span>
+    <span style="color:#75715e"># docker{-compose},cloud-init@community repo</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>hostname<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;skull-vm-dev&#39;</span> <span style="color:#f92672">]</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>grep -c <span style="color:#e6db74">&#39;3.13.&#39;</span> /etc/alpine-release<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> -gt <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+      apk add cloud-init util-linux <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> setup-cloud-init
+    <span style="color:#66d9ef">else</span>
+      remote_user_group_add
+      <span style="color:#75715e"># shellcheck disable=SC2039</span>
+      <span style="color:#75715e"># shellcheck disable=SC2015</span>
+      echo -e <span style="color:#e6db74">&#34;\n</span>$0<span style="color:#e6db74">: done!&#34;</span> &gt;&gt; /etc/motd <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> tail -n <span style="color:#ae81ff">1</span> /etc/motd <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> rm -f .env <span style="color:#f92672">||</span> true
+    <span style="color:#66d9ef">fi</span>
+
+    <span style="color:#75715e"># shellcheck disable=SC2016</span>
+    apk add openssh-client python3 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#39;TODO: echo &#34;${_remote_root_password}&#34; | chpasswd&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      <span style="color:#f92672">&amp;&amp;</span> cat /etc/alpine-release &gt;&gt; /etc/motd <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      <span style="color:#f92672">&amp;&amp;</span> mv /etc/profile.d/color_prompt /etc/profile.d/color_prompt.sh
+
+    <span style="color:#75715e"># https://wiki.syslinux.org/wiki/index.php?title=Config#GLOBAL_DIRECTIVES_-_SECONDARY</span>
+    echo <span style="color:#e6db74">&#39;TIMEOUT 15&#39;</span> &gt;&gt; /boot/extlinux.conf
+
+    echo <span style="color:#f92672">&amp;&amp;</span> df -hT | grep -e Size -e da
+    <span style="color:#75715e">#rm -f /etc/post.sh /etc/id_rsa.pub || true</span>
+    ;;
+<span style="color:#66d9ef">esac</span>
+
+</code></pre></div><p>My OS install was reproducible in development on a VM, so I worked to use these procedures to reinstall on my &ldquo;production&rdquo; hardware. I had to understand disk configuration (software RAID-1) and create conditional configuration steps for production with a related production answer file. With each production reinstall, more work was captured in git, and I finally had a reproducible pet in production!</p>
+<h2 id="configuration-management">Configuration Management</h2>
+<p>It was time to re-acquaint myself with <a href="https://www.ansible.com/">Ansible</a>, I had not used it for years! It seemed that a few major changes had happened and another major change was about to land in 10.x, so I attempted to adopt newer techniques when possible.</p>
+<p>I designated my Desktop to be an Ansible controller with <code>brew install ansible ansible-lint</code> &ndash; it was easy to reference both <code>ansible-doc</code> and web site documentation to develop a playbook and leverage roles and collections from <a href="https://galaxy.ansible.com/">Ansible Galaxy</a>.</p>
+<p>I created a simple Ansible YAML inventory of my production server and development VMs, then worked inside the playbook to configure each. I would SSH to a server only to troubleshoot issues and then re-run the playbook from the controller. As I got more comfortable with Ansible, I relied less on creating new shell and command tasks and tried to leverage built-in and community roles, loops, and conditionals.</p>
+<p>I created these shell functions to speed my development cycle: the following will check the syntax of a playbook (if the <code>${PLAYBOOK}</code> variable isn&rsquo;t defined, it defaults to <code>playbook.yml</code>) and then run the playbook with variables converted from the <code>.env</code> file.</p>
+<p>After I populate the <code>.env</code> file with variable keys and values, I type  <code>lint-playbook</code> and we&rsquo;ve started another development lifecycle test and run. I&rsquo;ve previously used a file watcher to trigger runs, but I found a new system, didn&rsquo;t get it working, and didn&rsquo;t need it enough to justify further effort because <code>!!</code> is simple enough to re-run the previous command!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ cat .env
+PLAYBOOK<span style="color:#f92672">=</span>playbook.yml
+_remote_home<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/home&#39;</span>
+_remote_mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;u+rw,go-rwx&#39;</span>
+_remote_user<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ansible&#39;</span>
+
+
+<span style="color:#66d9ef">function</span> dotenv2keypair<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  local _delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>
+  local _hold
+  local _key_value_pair
+
+  <span style="color:#66d9ef">while</span> read -r _key_value_pair; <span style="color:#66d9ef">do</span>
+    _hold<span style="color:#f92672">+=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_key_value_pair<span style="color:#e6db74">}${</span>_delimiter<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+  <span style="color:#66d9ef">done</span> &lt; .env
+
+  echo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>_hold:0<span style="color:#66d9ef">:-</span>1<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">}</span>
+
+alias lint-playbook<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ansible-lint ${PLAYBOOK:-playbook.yml}
+</span><span style="color:#e6db74">  &amp;&amp; ansible-playbook $_ --extra-vars &#34;$(dotenv2keypair)&#34;&#39;</span>
+
+$ head playbook.yml
+
+- name: <span style="color:#e6db74">&#34;Web host: monolithic&#34;</span>
+  hosts: dev
+  remote_user: <span style="color:#e6db74">&#34;{{ _remote_user }}&#34;</span>
+
+  vars:
+    _destination_filespec: <span style="color:#e6db74">&#34;{{ _remote_home }}/{{ _remote_user }}/&#34;</span>
+
+  tasks:
+  - name: <span style="color:#e6db74">&#34;Install package(s)&#34;</span>
+    become: true
+    community.general.apk:
+      name: bash, git, jq, rsync, tree
+      <span style="color:#75715e"># Bootstrap: assume community repo enabled during alpine/post.sh, unsure of dependency</span>
+      state: present
+      <span style="color:#75715e"># update_cache: yes</span>
+      <span style="color:#75715e"># state: latest</span>
+
+
+</code></pre></div><p>There are three community <a href="https://docs.ansible.com/ansible/latest/collections/community/general/apk_module.html">Alpine specific Ansible modules</a>, I used <code>apk</code> and discovered many Alpine tested Galaxy roles. Like all communities, each collection and role varies in quality, scope, assumptions, and maintenance. I also contributed to the AlpineLinux wiki a little bit!</p>
+<h2 id="vm-artifacts">VM Artifacts</h2>
+<p><a href="https://www.packer.io">Packer</a> is another fabulous HashiCorp open-source DevOps tool  I had not used in years!  I mentioned Vagrant earlier, also by HashiCorp, as an experiment. When coupled with the open source <a href="https://www.qemu.org/">QEMU</a> project, Packer can build customized VM images.</p>
+<p>After finding an <a href="https://wiki.alpinelinux.org/wiki/Packer_installation">Alpine wiki guide</a>, some other <a href="https://github.com/jakobadam/packer-qemu-templates">Packer QEMU OS examples</a>, and following the <a href="https://www.packer.io/docs/builders/qemu">QEMU Builder documentation</a>, I made a Packer <code>qemu.json</code> file which performs:</p>
+<ol>
+<li>Pull in enviroment variables</li>
+<li>Use the QEMU builder:
+<ol>
+<li>Boot the AlpineLinux ISO</li>
+<li>Provide a web server for file transfer</li>
+<li>Perform the bootstrapping steps to leverage my <code>init.sh</code> installation script</li>
+</ol>
+</li>
+<li>Provision: Wait for reboot and use SSH to perform my <code>post.sh</code> post-deployment script</li>
+<li>Post-process:
+<ol>
+<li>Create a new VM image artifact in QCOW2 format</li>
+<li>Compress, checksum, create an artifact manifest, upload to artifact repository or upload to AHV Image Service in Prism Central.</li>
+</ol>
+</li>
+</ol>
+<p>Writing JSON from scratch, even when cutting and pasting in examples, is easy to make mistakes: a good JSON lint package for my IDE was a continual life-saver to keep valid syntax. Here is a snapshot of the current file, I&rsquo;ve nearly refactored out all of the hard-coded values:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> {
+  <span style="color:#f92672">&#34;variables&#34;: </span>{
+    <span style="color:#f92672">&#34;boot_key_interval&#34;: </span><span style="color:#e6db74">&#34;{{env `boot_key_interval`}}&#34;</span>,
+    <span style="color:#f92672">&#34;boot_wait&#34;: </span><span style="color:#e6db74">&#34;{{env `boot_wait`}}&#34;</span>,
+    <span style="color:#f92672">&#34;disk_size&#34;: </span><span style="color:#e6db74">&#34;{{env `disk_size`}}&#34;</span>,
+    <span style="color:#f92672">&#34;format&#34;: </span><span style="color:#e6db74">&#34;{{env `format`}}&#34;</span>,
+    <span style="color:#f92672">&#34;iso_url&#34;: </span><span style="color:#e6db74">&#34;{{env `iso_url`}}&#34;</span>,
+    <span style="color:#f92672">&#34;iso_checksum&#34;: </span><span style="color:#e6db74">&#34;{{env `iso_checksum`}}&#34;</span>,
+    <span style="color:#f92672">&#34;remote_user&#34;: </span><span style="color:#e6db74">&#34;{{env `remote_user`}}&#34;</span>,
+    <span style="color:#f92672">&#34;remote_password&#34;: </span><span style="color:#e6db74">&#34;{{env `remote_password`}}&#34;</span>,
+    <span style="color:#f92672">&#34;ssh_timeout&#34;: </span><span style="color:#e6db74">&#34;{{env `ssh_timeout`}}&#34;</span>,
+    <span style="color:#f92672">&#34;vm_name&#34;: </span><span style="color:#e6db74">&#34;{{env `vm_name`}}&#34;</span>
+  },
+
+  <span style="color:#f92672">&#34;builders&#34;: </span>[
+    {
+      <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;qemu&#34;</span>,
+      <span style="color:#f92672">&#34;accelerator&#34;: </span><span style="color:#e6db74">&#34;kvm&#34;</span>,
+      <span style="color:#f92672">&#34;format&#34;: </span><span style="color:#e6db74">&#34;{{user `format`}}&#34;</span>,
+      <span style="color:#f92672">&#34;http_directory&#34;: </span><span style="color:#e6db74">&#34;../&#34;</span>,
+      <span style="color:#f92672">&#34;output_directory&#34;: </span><span style="color:#e6db74">&#34;packer_cache/bin&#34;</span>,
+      <span style="color:#f92672">&#34;iso_url&#34;: </span><span style="color:#e6db74">&#34;{{user `iso_url`}}&#34;</span>,
+      <span style="color:#f92672">&#34;iso_checksum&#34;: </span><span style="color:#e6db74">&#34;{{user `iso_checksum`}}&#34;</span>,
+      <span style="color:#f92672">&#34;vm_name&#34;: </span><span style="color:#e6db74">&#34;{{user `vm_name`}}.{{user `format`}}&#34;</span>,
+      <span style="color:#f92672">&#34;disk_interface&#34;: </span><span style="color:#e6db74">&#34;virtio&#34;</span>,
+      <span style="color:#f92672">&#34;disk_size&#34;: </span><span style="color:#e6db74">&#34;{{user `disk_size`}}&#34;</span>,
+      <span style="color:#f92672">&#34;net_device&#34;: </span><span style="color:#e6db74">&#34;virtio-net&#34;</span>,
+      <span style="color:#f92672">&#34;ssh_timeout&#34;: </span><span style="color:#e6db74">&#34;{{user `ssh_timeout`}}&#34;</span>,
+      <span style="color:#f92672">&#34;ssh_username&#34;: </span><span style="color:#e6db74">&#34;{{user `remote_user`}}&#34;</span>,
+      <span style="color:#f92672">&#34;ssh_password&#34;: </span><span style="color:#e6db74">&#34;{{user `remote_password`}}&#34;</span>,
+      <span style="color:#f92672">&#34;ssh_certificate_file&#34;: </span><span style="color:#e6db74">&#34;~/.ssh/id_rsa.pem&#34;</span>,
+      <span style="color:#f92672">&#34;shutdown_command&#34;: </span><span style="color:#e6db74">&#34;echo &#39;packer&#39; | sudo -S poweroff&#34;</span>,
+      <span style="color:#f92672">&#34;boot_wait&#34;: </span><span style="color:#e6db74">&#34;{{user `boot_wait`}}&#34;</span>,
+      <span style="color:#f92672">&#34;boot_key_interval&#34;: </span><span style="color:#e6db74">&#34;{{user `boot_key_interval`}}&#34;</span>,
+      <span style="color:#f92672">&#34;boot_command&#34;: </span>[
+        <span style="color:#e6db74">&#34;{{user `remote_user`}}&lt;enter&gt;&lt;wait&gt;&#34;</span>,
+        <span style="color:#e6db74">&#34;passwd&lt;enter&gt;&lt;wait1&gt;{{user `remote_password`}}&lt;enter&gt;{{user `remote_password`}}&lt;enter&gt;&#34;</span>,
+        <span style="color:#e6db74">&#34;KEYMAPOPTS=&#39;us us&#39; setup-alpine -q ; hostname {{user `vm_name`}}&lt;enter&gt;&#34;</span>,
+        <span style="color:#e6db74">&#34;wget http://{{ .HTTPIP }}:{{ .HTTPPort }}/id_rsa.pub -O /etc/id_rsa.pub&lt;enter&gt;&#34;</span>,
+        <span style="color:#e6db74">&#34;wget http://{{ .HTTPIP }}:{{ .HTTPPort }}/answerfile/{{user `vm_name`}}.toml&lt;enter&gt;&lt;wait&gt;&#34;</span>,
+        <span style="color:#e6db74">&#34;wget http://{{ .HTTPIP }}:{{ .HTTPPort }}/bootstrap.sh -O - | sh&lt;enter&gt;&#34;</span>
+      ]
+    }
+  ],
+
+  <span style="color:#f92672">&#34;provisioners&#34;: </span>[
+    {
+      <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;shell&#34;</span>,
+      <span style="color:#f92672">&#34;script&#34;: </span><span style="color:#e6db74">&#34;../post.sh&#34;</span>
+    }
+  ],
+
+  <span style="color:#f92672">&#34;post-processors&#34;: </span>[
+    {
+      <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;manifest&#34;</span>
+    },
+    {
+      <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;shell-local&#34;</span>,
+      <span style="color:#f92672">&#34;script&#34;: </span><span style="color:#e6db74">&#34;post-processor.sh&#34;</span>
+    }
+  ]
+}
+
+</code></pre></div><p>Now I have reproducible, lightly customized VM images ready for Configuration Management and further development. Cloud-init will be a welcome replacement for the Packer+QEMU work (it has entered into the Alpine community repo since I started this project), but the entire exercise has refreshed my knowledge with these great tools, leverage my previous work, and form a flexible foundation for moving forward. Another plus is that it was trivial to switch to a new release of Alpine Linux (3.13.0), use the smaller and faster 43 MB Virtual image ISO (rather than the 525MB 3.12.3 extended ISO I started with), and my post-process custom image compressed to 63MB! I will use that QCOW2 image with Nutanix AHV and convert it to VMDK for VirtualBox development.</p>
+<h1 id="epilog">Epilog</h1>
+<p>My holiday project has spilled over into all of January, but I&rsquo;ve enjoyed it immensely, sometimes waking up to work on it or not able to fall asleep without sorting out my next experiment for a feature or blocker! I&rsquo;ve used it to upskill my shell scripting and programming knowledge, refresh my Ansible and Packer skills, push VirtualBox and QEMU forward, drive towards QCOW2 and AHV, all while reaffirming my love of Linux with Alpine.</p>
+<p>I hope you&rsquo;ve seen some of my development best practices and strategies, I try to set small goals that achieve strategic wins. Because this was a personal project, I lavished a lot of time on <a href="https://en.wiktionary.org/wiki/yak_shaving">yak shaving</a> which helped me learn and improve my skills and procedures, while refactoring and reorganizing my work to reduce tech debt and toil. I made short experiments that were dead-ends or that were too challenging for me to be productive, so I would research an alternative and try a quick experiment with it for a win. When I found the alternative lacking, it justified turning back to rededicate time to pursue a discarded path. I tried to be agile, not loyal, to any facility.</p>
+<ul>
+<li>
+<p>It is worth investing time on making your development cycle (change, build, test, report) easy and fast:</p>
+<ul>
+<li>Use file format Linting inside your editor, because it:
+<ul>
+<li>cuts down on mistakes as I learned configuration syntax for AlpineLinux, Ansible, and Packer and my shell scripts for different shells</li>
+<li>prevents finding mistakes later during build and test, every context switch out of the editor costs you time and focus and fixing mistakes later is more resource costly</li>
+<li>can be even better to use specific language (Ansible, Packer, Vagrant) editor linters, but YAML, TOML, and JSON are fundamental substitutes you should already have to fall back on or seek to establish for any new facility configuration!</li>
+</ul>
+</li>
+<li>Try to make as simple as possible, a build and test change procedure:
+<ul>
+<li>Ideal for a 1-click or a simple CLI command:
+<ul>
+<li>make the command less characters by using a shell alias, function, or script to cut down on human error and parameters</li>
+<li>even more ideal to setup a file watcher or IDE plugin to build and test automatically (0-click)</li>
+<li>many of these facilities can be re-used later in CI/CD build and testing</li>
+<li>make the procedure environment variable driven with DirEnv or <code>.env</code> file reuse to further cut down on human error</li>
+</ul>
+</li>
+<li>Always use facility linting as a second check before execution:
+<ul>
+<li>work to reduce and eventually remove any exceptions and warnings</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Optimize the entire cycle to be minimal on resources, therefore faster to synthesize an ephemeral instance or provision a test
+<ul>
+<li>the smaller the time (and distance) between your change and a build+test result, the better = agility and #fastfeedback is important for developer flow</li>
+</ul>
+</li>
+<li>All of the above supports <em>red-green-refactor</em>, a development cycle pattern to keep your work in an optimal working state!</li>
+</ul>
+</li>
+<li>
+<p>Make your work reproducable:</p>
+<ul>
+<li>Script your PetOps, save your work in git, share your work from git!</li>
+<li>Virtualization is cheap: I used two providers over the course of this project to work on virtual machine guests for development, make mistakes and learn on them: <strong>#failfastfixfast</strong>!</li>
+</ul>
+</li>
+<li>
+<p>Don&rsquo;t over-rotate on custom work for a single facility if you can avoid it:</p>
+<ul>
+<li>Sprint to establish a beach head with pet ops and hard coded work
+<ul>
+<li>Relentlessly re-factor your work to use variables and scripted procedures</li>
+<li>Refactor scripts to facilities</li>
+</ul>
+</li>
+<li>Each stage helps you understand the full system and reorganize information appropriately while reducing tech debt
+<ul>
+<li>I loved that my <code>post.sh</code> was reused by Packer, that my <code>vm-init.sh</code> arrived at the same place as Packer using HTTP for basic file transfer without adding more facilities to the OS,</li>
+<li>I tried to leverage environment variables in all facilities (Docker, Vagrant, Ansible, shell scripts) to remove hard-coded values and increase re-use across facilities.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Finally, you haven&rsquo;t seen the services I&rsquo;m working on, that&rsquo;ll be for the future. There is so much bootstrapping, research, and discovery involved with each that I&rsquo;m still evaluating alternatives based upon support and documentation, when I&rsquo;m not helping improve the docs and filing bugs as well!</p>
+<h1 id="postscript-patterns-todo">Postscript: Patterns (TODO)</h1>
+<ul>
+<li>Development pattern: Red -&gt; Green -&gt; Refactor (repeat)</li>
+<li>My research and development process over time was Alpine -&gt; Ansible -&gt; VirtualBox -&gt; Packer -&gt; QEMU, but my work process is focused on either:
+<ul>
+<li>Alpine -&gt; Packer -&gt; QEMU -&gt; VirtualBox and Artifact pipeline</li>
+<li>VirtualBox -&gt; Ansible for container service development</li>
+</ul>
+</li>
+</ul>
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-linux" href="https://mlavi.github.io//tags/linux">linux</a>,
+	                
+	                <a class="post-tag post-tag-alpine" href="https://mlavi.github.io//tags/alpine">alpine</a>,
+	                
+	                <a class="post-tag post-tag-ansible" href="https://mlavi.github.io//tags/ansible">ansible</a>,
+	                
+	                <a class="post-tag post-tag-packer" href="https://mlavi.github.io//tags/packer">packer</a>,
+	                
+	                <a class="post-tag post-tag-artifact" href="https://mlavi.github.io//tags/artifact">artifact</a>,
+	                
+	                <a class="post-tag post-tag-infrastructure-as-code" href="https://mlavi.github.io//tags/infrastructure-as-code">infrastructure-as-code</a>,
+	                
+	                <a class="post-tag post-tag-developer" href="https://mlavi.github.io//tags/developer">developer</a>,
+	                
+	                <a class="post-tag post-tag-operating-system" href="https://mlavi.github.io//tags/operating-system">operating-system</a>,
+	                
+	                <a class="post-tag post-tag-pets" href="https://mlavi.github.io//tags/pets">pets</a>,
+	                
+	                <a class="post-tag post-tag-configuration-management" href="https://mlavi.github.io//tags/configuration-management">configuration-management</a>,
+	                
+	                <a class="post-tag post-tag-cloud-init" href="https://mlavi.github.io//tags/cloud-init">cloud-init</a>,
+	                
+	                <a class="post-tag post-tag-bootstrap" href="https://mlavi.github.io//tags/bootstrap">bootstrap</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="../../post/personal/us-sedition-president-censure-and-impeachment/">US Sedition, Presidential Censure, and Impeachment</a>
+		            </div>
+		            
+
+					
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+  
+  
+
+	<p>&copy; 2021. All rights reserved.</p>
+</div>
+
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

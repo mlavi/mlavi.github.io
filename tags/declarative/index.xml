@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 12 Mar 2016 15:44:02 -0800</lastBuildDate>
-    
-	<atom:link href="https://mlavi.github.io/tags/declarative/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 12 Mar 2016 15:44:02 -0800</lastBuildDate><atom:link href="https://mlavi.github.io/tags/declarative/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Declarative Operating Systems</title>
       <link>https://mlavi.github.io/post/declarative_os/</link>

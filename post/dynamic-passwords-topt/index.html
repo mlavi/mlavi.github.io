@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Why You Want Google Authenticator, but Don&#39;t Need It // Mark&#39;s Blog
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.82.0" />
+
+
+  <meta property="og:title" content="Why You Want Google Authenticator, but Don&#39;t Need It" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://mlavi.github.io/post/dynamic-passwords-topt/" />
+
+
+  
+  <link rel="stylesheet" href="https://mlavi.github.io//css/mlavi.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://mlavi.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Mark&#39;s Blog" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4" style="background: black no-repeat url(/img/firefox_nebula.jpg);">
+  <div class="header">
+    
+
+	
+
+    
+    
+ 
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="https://mlavi.github.io/">Mark&#39;s Blog <span class="nav-item-separator">//</span> Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span> <a class="subscribe-button icon-feed" href="">Subscribe</a></li>
+        
+      </ul>
+      <ul id="all-tags"><span style="background: black;"><em><stong>Tag Cloud</strong></em></span><br />
+      
+      
+      <li><a href="../../tags/devops">devops</a><span
+        class="decorative-marker">//</span><a
+        name="devops">16</a></li>
+      
+      <li><a href="../../tags/automation">automation</a><span
+        class="decorative-marker">//</span><a
+        name="automation">8</a></li>
+      
+      <li><a href="../../tags/calm">calm</a><span
+        class="decorative-marker">//</span><a
+        name="calm">8</a></li>
+      
+      <li><a href="../../tags/configuration-management">configuration-management</a><span
+        class="decorative-marker">//</span><a
+        name="configuration-management">4</a></li>
+      
+      <li><a href="../../tags/culture">culture</a><span
+        class="decorative-marker">//</span><a
+        name="culture">4</a></li>
+      
+      <li><a href="../../tags/diagram">diagram</a><span
+        class="decorative-marker">//</span><a
+        name="diagram">4</a></li>
+      
+      <li><a href="../../tags/build">build</a><span
+        class="decorative-marker">//</span><a
+        name="build">3</a></li>
+      
+      <li><a href="../../tags/security">security</a><span
+        class="decorative-marker">//</span><a
+        name="security">3</a></li>
+      
+      <li><a href="../../tags/about">about</a><span
+        class="decorative-marker">//</span><a
+        name="about">2</a></li>
+      
+      <li><a href="../../tags/advocate">advocate</a><span
+        class="decorative-marker">//</span><a
+        name="advocate">2</a></li>
+      
+      <li><a href="../../tags/america">america</a><span
+        class="decorative-marker">//</span><a
+        name="america">2</a></li>
+      
+      <li><a href="../../tags/artifact">artifact</a><span
+        class="decorative-marker">//</span><a
+        name="artifact">2</a></li>
+      
+      <li><a href="../../tags/blacklivesmatter">blacklivesmatter</a><span
+        class="decorative-marker">//</span><a
+        name="blacklivesmatter">2</a></li>
+      
+      <li><a href="../../tags/bootstrap">bootstrap</a><span
+        class="decorative-marker">//</span><a
+        name="bootstrap">2</a></li>
+      
+      <li><a href="../../tags/cloud-init">cloud-init</a><span
+        class="decorative-marker">//</span><a
+        name="cloud-init">2</a></li>
+      
+      <li><a href="../../tags/developer">developer</a><span
+        class="decorative-marker">//</span><a
+        name="developer">2</a></li>
+      
+      <li><a href="../../tags/immutable">immutable</a><span
+        class="decorative-marker">//</span><a
+        name="immutable">2</a></li>
+      
+      <li><a href="../../tags/infrastructure">infrastructure</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure">2</a></li>
+      
+      <li><a href="../../tags/infrastructure-as-code">infrastructure-as-code</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure-as-code">2</a></li>
+      
+      <li><a href="../../tags/linux">linux</a><span
+        class="decorative-marker">//</span><a
+        name="linux">2</a></li>
+      
+      <li><a href="../../tags/operating-system">operating-system</a><span
+        class="decorative-marker">//</span><a
+        name="operating-system">2</a></li>
+      
+      <li><a href="../../tags/pattern">pattern</a><span
+        class="decorative-marker">//</span><a
+        name="pattern">2</a></li>
+      
+      <li><a href="../../tags/personal">personal</a><span
+        class="decorative-marker">//</span><a
+        name="personal">2</a></li>
+      
+      <li><a href="../../tags/pets">pets</a><span
+        class="decorative-marker">//</span><a
+        name="pets">2</a></li>
+      
+      <li><a href="../../tags/politics">politics</a><span
+        class="decorative-marker">//</span><a
+        name="politics">2</a></li>
+      
+      <li><a href="../../tags/tutorial">tutorial</a><span
+        class="decorative-marker">//</span><a
+        name="tutorial">2</a></li>
+      
+      <li><a href="../../tags/web">web</a><span
+        class="decorative-marker">//</span><a
+        name="web">2</a></li>
+      
+      <li><a href="../../tags/webmaster">webmaster</a><span
+        class="decorative-marker">//</span><a
+        name="webmaster">2</a></li>
+      
+      <li><a href="../../tags/2fa">2fa</a><span
+        class="decorative-marker">//</span><a
+        name="2fa">1</a></li>
+      
+      <li><a href="../../tags/alpine">alpine</a><span
+        class="decorative-marker">//</span><a
+        name="alpine">1</a></li>
+      
+      <li><a href="../../tags/ansible">ansible</a><span
+        class="decorative-marker">//</span><a
+        name="ansible">1</a></li>
+      
+      <li><a href="../../tags/authentication">authentication</a><span
+        class="decorative-marker">//</span><a
+        name="authentication">1</a></li>
+      
+      <li><a href="../../tags/blueprint">blueprint</a><span
+        class="decorative-marker">//</span><a
+        name="blueprint">1</a></li>
+      
+      <li><a href="../../tags/career">career</a><span
+        class="decorative-marker">//</span><a
+        name="career">1</a></li>
+      
+      <li><a href="../../tags/cattle">cattle</a><span
+        class="decorative-marker">//</span><a
+        name="cattle">1</a></li>
+      
+      <li><a href="../../tags/cms">cms</a><span
+        class="decorative-marker">//</span><a
+        name="cms">1</a></li>
+      
+      <li><a href="../../tags/code">code</a><span
+        class="decorative-marker">//</span><a
+        name="code">1</a></li>
+      
+      <li><a href="../../tags/container">container</a><span
+        class="decorative-marker">//</span><a
+        name="container">1</a></li>
+      
+      <li><a href="../../tags/continuous-delivery">continuous-delivery</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-delivery">1</a></li>
+      
+      <li><a href="../../tags/continuous-deployment">continuous-deployment</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-deployment">1</a></li>
+      
+      <li><a href="../../tags/continuous-integration">continuous-integration</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-integration">1</a></li>
+      
+      <li><a href="../../tags/database">database</a><span
+        class="decorative-marker">//</span><a
+        name="database">1</a></li>
+      
+      <li><a href="../../tags/declarative">declarative</a><span
+        class="decorative-marker">//</span><a
+        name="declarative">1</a></li>
+      
+      <li><a href="../../tags/definition">definition</a><span
+        class="decorative-marker">//</span><a
+        name="definition">1</a></li>
+      
+      <li><a href="../../tags/deploy">deploy</a><span
+        class="decorative-marker">//</span><a
+        name="deploy">1</a></li>
+      
+      <li><a href="../../tags/devrel">devrel</a><span
+        class="decorative-marker">//</span><a
+        name="devrel">1</a></li>
+      
+      <li><a href="../../tags/distribution">distribution</a><span
+        class="decorative-marker">//</span><a
+        name="distribution">1</a></li>
+      
+      <li><a href="../../tags/education">education</a><span
+        class="decorative-marker">//</span><a
+        name="education">1</a></li>
+      
+      <li><a href="../../tags/git">git</a><span
+        class="decorative-marker">//</span><a
+        name="git">1</a></li>
+      
+      <li><a href="../../tags/gitops">gitops</a><span
+        class="decorative-marker">//</span><a
+        name="gitops">1</a></li>
+      
+      <li><a href="../../tags/html">html</a><span
+        class="decorative-marker">//</span><a
+        name="html">1</a></li>
+      
+      <li><a href="../../tags/lamp">lamp</a><span
+        class="decorative-marker">//</span><a
+        name="lamp">1</a></li>
+      
+      <li><a href="../../tags/life">life</a><span
+        class="decorative-marker">//</span><a
+        name="life">1</a></li>
+      
+      <li><a href="../../tags/maturity">maturity</a><span
+        class="decorative-marker">//</span><a
+        name="maturity">1</a></li>
+      
+      <li><a href="../../tags/operators">operators</a><span
+        class="decorative-marker">//</span><a
+        name="operators">1</a></li>
+      
+      <li><a href="../../tags/packer">packer</a><span
+        class="decorative-marker">//</span><a
+        name="packer">1</a></li>
+      
+      <li><a href="../../tags/password">password</a><span
+        class="decorative-marker">//</span><a
+        name="password">1</a></li>
+      
+      <li><a href="../../tags/phing">phing</a><span
+        class="decorative-marker">//</span><a
+        name="phing">1</a></li>
+      
+      <li><a href="../../tags/relations">relations</a><span
+        class="decorative-marker">//</span><a
+        name="relations">1</a></li>
+      
+      <li><a href="../../tags/sgi">sgi</a><span
+        class="decorative-marker">//</span><a
+        name="sgi">1</a></li>
+      
+      <li><a href="../../tags/slide">slide</a><span
+        class="decorative-marker">//</span><a
+        name="slide">1</a></li>
+      
+      <li><a href="../../tags/ssh">ssh</a><span
+        class="decorative-marker">//</span><a
+        name="ssh">1</a></li>
+      
+      <li><a href="../../tags/test">test</a><span
+        class="decorative-marker">//</span><a
+        name="test">1</a></li>
+      
+      <li><a href="../../tags/totp">totp</a><span
+        class="decorative-marker">//</span><a
+        name="totp">1</a></li>
+      
+      <li><a href="../../tags/version-control">version-control</a><span
+        class="decorative-marker">//</span><a
+        name="version-control">1</a></li>
+      
+      <li><a href="../../tags/windows">windows</a><span
+        class="decorative-marker">//</span><a
+        name="windows">1</a></li>
+      
+      </ul>
+    </nav>
+
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#static-password-problems">Static Password Problems</a>
+      <ul>
+        <li><a href="#sidebar-password-entropy">Sidebar: Password Entropy</a></li>
+        <li><a href="#sidebar-static-password-solutions">Sidebar: Static Password Solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#two-factor-authentication-and-dynamic-passwords">Two Factor Authentication and Dynamic Passwords</a></li>
+    <li><a href="#dynamic-password-challenges">Dynamic Password Challenges</a>
+      <ul>
+        <li><a href="#sidebar-session-tokens-and-cookies">Sidebar: Session Tokens and Cookies</a></li>
+      </ul>
+    </li>
+    <li><a href="#dynamic-password-solutions">Dynamic Password Solutions</a>
+      <ul>
+        <li><a href="#totp-application-list">TOTP Application List</a></li>
+        <li><a href="#making-totp-portable-no-pets">Making TOTP Portable (No Pets!)</a></li>
+        <li><a href="#adopting-totp-for-your-organization">Adopting TOTP for your Organization</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="../../post/dynamic-passwords-topt/">Why You Want Google Authenticator, but Don&#39;t Need It</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>14</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Dec</span> <span class="post-date-year">2020</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            <p>Two factor authentication is an important safeguard for all of your accounts and it has proven itself by protecting one of the largest software engineering organizations in the world from breach. In order to easily control your safety and privacy without resorting to cloud service providers, let&rsquo;s explore how to adopt dynamic passwords and avoid outsourcing your credentials!</p>
+<h1 id="static-password-problems">Static Password Problems</h1>
+<p>On the Internet, everyone in the world is one-click away, so distance no longer matters because #theworldisflat. When everyone can knock on every door and access every one of your accounts, all passwords need to be regularly maintained. In my line of work, I potentially get a new account on a new system every week. If I am lucky, that new system will be part of a corporate single-sign-on network to prevent the need for yet another password to maintain. When you consider the explosion of mobile phone applications and subscription services, I think it is a reasonable expectations that normal people probably are asked to create a new account and password to remember a few times a year.</p>
+<p>We are lazy, security is hard, and with very little exception, all of these passwords do not change, so they can be considered static, unchanging passwords. The normal person does not maintain their password credentials unless forced by a provider&rsquo;s security breach or password expiration policy. Combined with the automated, brute force methods of guessing weak passwords on all of your accounts around the clock, threats are constantly making last year&rsquo;s best practice slowly become insecure this year.</p>
+<p>When given some small reflection, our constantly expanding digital footprint is spread across more and more accounts. This means our security attack surface and exposure and is also growing, so the need for password maintenance has become essential. Making all of your passwords strong, unique, and updated regularly for an exploding amount of accounts is daunting task for anyone.</p>
+<p>At my employer, the policy is to change your primary corporate account password every six months, which is not too bad because we&rsquo;re given one month notice. Passwords must comply with guidelines to insure some safety, such as preventing reuse of older passwords which may have been disclosed, but the only important criteria for a new password is the minimum amount of entropy.</p>
+<h2 id="sidebar-password-entropy">Sidebar: Password Entropy</h2>
+<blockquote>
+<p>Minimal static password security requirements vary greatly for use of mixed case, numbers, and non-alphanumeric characters. But their various, inconsistent rules for use does not increase security as much as password length does! So password phrases are increasingly being adopted for static password entropy.</p>
+<p>Please see the very instructive humor &ldquo;Password Strength&rdquo; from <a href="https://xkcd.com/936/">https://xkcd.com/936/</a>
+I found some web implementations, each written in Node.js with open source licenses:</p>
+<ul>
+<li><a href="https://correcthorse.pw/">https://correcthorse.pw/</a></li>
+<li><a href="https://www.correcthorsebatterystaple.net/">https://www.correcthorsebatterystaple.net/</a></li>
+</ul>
+</blockquote>
+<p>There needs to be a better solution than trying to keep all of your password written down somewhere safe, kept up to date, and without duplication or reuse of any other static passwords! Because password maintenance is a personal responsibility owned by customers, many service providers are adding and increasingly requiring additional security to address static password risks.</p>
+<h2 id="sidebar-static-password-solutions">Sidebar: Static Password Solutions</h2>
+<blockquote>
+<p>There are many solution for static password maintenance, I present a brief overview of <a href="../../post/git-for-operators/#2020-04-19-securing-pets-in-git">my personal journey and choice</a> for an off-line, static password storage vault.</p>
+</blockquote>
+<h1 id="two-factor-authentication-and-dynamic-passwords">Two Factor Authentication and Dynamic Passwords</h1>
+<p>Adding a second password or security challenge compounds the problem for an attacker, but it also doubles the maintenance burden for the account owner. There are many approaches to incorporate <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">multi-factor authentication</a>, but we will focus on dynamic passwords. A dynamic password is also called <a href="https://en.wikipedia.org/wiki/One-time_password">OTP: One-Time Password or a One-Time PIN</a>.</p>
+<p>Dynamic passwords were implemented by leading security vendors as proprietary hardware tokens and algorithms, but standardization for industry interoperability and growth began. <a href="https://en.wikipedia.org/wiki/HMAC-based_One-Time_Password">Hash-based Message Authentication Code (HMAC) One-Time Password (OTP), or HOPT</a>, was published in 2005 as IETF RFC 4226 open standard and extended to <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm">Time-based One-Time Password (TOTP)</a> in 2011 as RFC 6238. The largest benefit of OTP solutions is that they are simpler to implement, distribute, and train users to adopt when contrasted to the more complex, but more secure Public Key Infrastructure (PKI) solutions.</p>
+<h1 id="dynamic-password-challenges">Dynamic Password Challenges</h1>
+<p>If the goal is to change your password periodically, then the shorter the time period, the better to reduce exposure. If an accidental password disclosure or provider&rsquo;s security breach happens between changes, then your account security exposure shortens to the time between password change updates. This is the idea behind dynamic passwords: password changes are required regularly.</p>
+<p>How would you feel if you were required to change your password and comply with minimum security guidelines every month? What if required password change was required every week, every day, or every hour? At some point, you would adjust to the shorter period, but eventually you would be arrive at a point of complete frustration and inconvenience.</p>
+<p>That is why dynamic passwords, especially the TOTP standard, include automation and the standard period today is 30 second changes!</p>
+<h2 id="sidebar-session-tokens-and-cookies">Sidebar: Session Tokens and Cookies</h2>
+<blockquote>
+<p>You may not be aware that you use multiple dynamic passwords every day, because they are hidden!</p>
+<p>When you login, you start a session and a new dynamic password is created for the session. The switch to use the dynamic password for the session is automatic and invisible, it minimizes static password transmission and potential exposure to login authentication only. The session uses the dynamic password to allow access to protected resources and actions in your web browser, mobile app, laptop account, etc. When your dynamic password expires, you will see &ldquo;your session has ended or timed out&rdquo; message and you will be prompted to re-authenticate. By logging in again, you&rsquo;ll start a new session with a new dynamic password, you can learn more about these dynamic passwords for authentication in different systems called a <a href="https://en.wikipedia.org/wiki/Session_ID">session identification token</a> or a <a href="https://en.wikipedia.org/wiki/HTTP_cookie">web browser cookie</a>.</p>
+</blockquote>
+<h1 id="dynamic-password-solutions">Dynamic Password Solutions</h1>
+<p>Because of the open TOTP standard, there are many implementations to choose: from hardware tokens in your possession to software applications, often called a third party authenticator, which can run on your phone.</p>
+<p><a href="https://en.wikipedia.org/wiki/Google_Authenticator">Google Authenticator</a> is probably the most widely known TOTP mobile solution on Android and iOS, it is easy to install and use, so many company IT security departments have begun to use it as well as customers using Google services.</p>
+<p>In 2017, Google switched their employees from Google Authenticator application (a software TOTP) to hardware keys using a newer standard called U2F implemented in most web browsers today, in order to protect it&rsquo;s 85,000 employees from phishing attacks and <a href="https://krebsonsecurity.com/2018/07/google-security-keys-neutralized-employee-phishing/">claimed it had succeeded for over a year in practice</a>. Even though Google has progressed past TOTP, I am advocating for TOTP adoption as an optimal first step for many to improve their security posture.</p>
+<p>However, many people do not realize there are many competing, compatible solutions to Google Authenticator (hence the title of this blog entry: I do not want anyone to think there is any exclusive or proprietary benefit to a TOTP application by Google when there is a market of potentially better and worse implementations, user interfaces, and features, but all must comply with the standard). The security benefits and relative ease of adoption have merited the rise of TOTP as it <a href="https://2fa.directory/">spreads to more web sites and services</a>, so look and ask for this security feature everywhere!</p>
+<h2 id="totp-application-list">TOTP Application List</h2>
+<ul>
+<li>Meta-list: <a href="https://alternativeto.net/software/google-authenticator/">https://alternativeto.net/software/google-authenticator/</a></li>
+<li>Curated: <a href="https://www.nytimes.com/wirecutter/reviews/best-two-factor-authentication-app/">https://www.nytimes.com/wirecutter/reviews/best-two-factor-authentication-app/</a></li>
+<li><em>I personally like <a href="https://f-droid.org/en/packages/org.shadowice.flocke.andotp/">andOTP</a> on Android</em></li>
+</ul>
+<h2 id="making-totp-portable-no-pets">Making TOTP Portable (No Pets!)</h2>
+<p>As an operator, I constantly work to remove every single point of failure. One of my colleagues lamented his total dependency on Google because Google Authenticator was a single app with all of his TOTP dynamic passwords on his phone. The application could break during an update or his phone could be lost at any time, either would result in potential lock out or the inability to login to his accounts.</p>
+<p>I sought how to solve this problem before I adopted TOTP and it is simple. During setup for a new dynamic password, TOTP depends on a pre-shared secret, which is a static password!</p>
+<p>The password is a a short hex string (typically 16 characters), but for ease it is often displayed as a <a href="https://en.wikipedia.org/wiki/QR_code">QR code</a> to prevent any human error in transmission. You may have to hunt for the hex string, decode the QR, or look for a fall back method during or after the QR code display to find the hex string.</p>
+<p>Once you find it, it can be stored as a static password to allow reuse with different TOTP applications on multiple laptops, desktops, tablets, and phones.</p>
+<blockquote>
+<p>Since my choice of static password manager is cross platform, includes TOTP, and has many compatible web browser plug-ins, I&rsquo;m already covered!</p>
+</blockquote>
+<h2 id="adopting-totp-for-your-organization">Adopting TOTP for your Organization</h2>
+<p>The <a href="https://github.com/authelia/authelia/issues/1145#issuecomment-744234967">real inspiration for this blog entry</a> is a wonderfully easy to use Single Sign On, Two Factor Authentication TOTP server called <a href="https://Authelia.com">Authelia</a>. I discovered it via the <a href="https://linuxserver.io">LinuxServer.io</a> project which uses <a href="https://en.wikipedia.org/wiki/Google_Authenticator">Docker containers to deliver all open source services</a>. I&rsquo;ve only started development with it, but I&rsquo;m very impressed!</p>
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-totp" href="https://mlavi.github.io//tags/totp">TOTP</a>,
+	                
+	                <a class="post-tag post-tag-2fa" href="https://mlavi.github.io//tags/2fa">2FA</a>,
+	                
+	                <a class="post-tag post-tag-password" href="https://mlavi.github.io//tags/password">password</a>,
+	                
+	                <a class="post-tag post-tag-security" href="https://mlavi.github.io//tags/security">security</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="../../post/personal/blacklivesmatter/">The American Soul: A Way Forward on Juneteenth</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="../../post/personal/us-sedition-president-censure-and-impeachment/">US Sedition, Presidential Censure, and Impeachment</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+  
+  
+
+	<p>&copy; 2021. All rights reserved.</p>
+</div>
+
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

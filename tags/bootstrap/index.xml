@@ -7,10 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 05 May 2018 13:42:39 -0700</lastBuildDate>
-    
-	<atom:link href="https://mlavi.github.io/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 26 Jan 2021 09:37:33 -0600</lastBuildDate><atom:link href="https://mlavi.github.io/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning AlpineLinux.org, Ansible.com, and Packer.io</title>
+      <link>https://mlavi.github.io/post/learning-alpine-linux-ansible-and-packer/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/post/learning-alpine-linux-ansible-and-packer/</guid>
+      <description>&lt;p&gt;For my 2020-1 holiday break, I decided my next personal project would be to rebuild my home infrastructure on containers. I&amp;rsquo;d been inspired by a recent discovery of &lt;a href=&#34;https://linuxserver.io&#34;&gt;LinuxServer.io&lt;/a&gt;, where open source projects are built and run as containers. While I have a burning desire to better my Kubernetes practice, not enough of the world delivers software as a Helm chart, so merely running everything as containers would be a good intermediate step. Let me share my first six steps with examples&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>DevOps in a Box</title>
@@ -24,7 +29,7 @@ and testing as monitors.&lt;/p&gt;
 &lt;p&gt;The call for this happened over and over at DevOpsDays to answer: how does one
 learn DevOps, practice site reliability engineering, or have a full
 application lifecycle environment?&lt;/p&gt;
-&lt;p&gt;So let&#39;s create a minimal viable product &lt;a href=&#34;../devops-btd-pattern&#34;&gt;BTD scenario&lt;/a&gt;
+&lt;p&gt;So let&amp;rsquo;s create a minimal viable product &lt;a href=&#34;../devops-btd-pattern&#34;&gt;BTD scenario&lt;/a&gt;
 of my &lt;a href=&#34;../devops-automation&#34;&gt;DevOps Automation&lt;/a&gt; system,
 extend it to prefix Governance and suffix Management,
 and then drive maturity to illustrate and discuss best practices.&lt;/p&gt;</description>

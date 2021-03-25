@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 26 Aug 2015 08:59:59 -0700</lastBuildDate>
-    
-	<atom:link href="https://mlavi.github.io/tags/build/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 26 Aug 2015 08:59:59 -0700</lastBuildDate><atom:link href="https://mlavi.github.io/tags/build/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Artifact Repositories</title>
       <link>https://mlavi.github.io/post/artifact_repositories/</link>

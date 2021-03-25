@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Version Control for Operators // Mark&#39;s Blog
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.82.0" />
+
+
+  <meta property="og:title" content="Version Control for Operators" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://mlavi.github.io/post/git-for-operators/" />
+
+
+  
+  <link rel="stylesheet" href="https://mlavi.github.io//css/mlavi.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://mlavi.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Mark&#39;s Blog" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4" style="background: black no-repeat url(/img/firefox_nebula.jpg);">
+  <div class="header">
+    
+
+	
+
+    
+    
+ 
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="https://mlavi.github.io/">Mark&#39;s Blog <span class="nav-item-separator">//</span> Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span> <a class="subscribe-button icon-feed" href="">Subscribe</a></li>
+        
+      </ul>
+      <ul id="all-tags"><span style="background: black;"><em><stong>Tag Cloud</strong></em></span><br />
+      
+      
+      <li><a href="../../tags/devops">devops</a><span
+        class="decorative-marker">//</span><a
+        name="devops">16</a></li>
+      
+      <li><a href="../../tags/automation">automation</a><span
+        class="decorative-marker">//</span><a
+        name="automation">8</a></li>
+      
+      <li><a href="../../tags/calm">calm</a><span
+        class="decorative-marker">//</span><a
+        name="calm">8</a></li>
+      
+      <li><a href="../../tags/configuration-management">configuration-management</a><span
+        class="decorative-marker">//</span><a
+        name="configuration-management">4</a></li>
+      
+      <li><a href="../../tags/culture">culture</a><span
+        class="decorative-marker">//</span><a
+        name="culture">4</a></li>
+      
+      <li><a href="../../tags/diagram">diagram</a><span
+        class="decorative-marker">//</span><a
+        name="diagram">4</a></li>
+      
+      <li><a href="../../tags/build">build</a><span
+        class="decorative-marker">//</span><a
+        name="build">3</a></li>
+      
+      <li><a href="../../tags/security">security</a><span
+        class="decorative-marker">//</span><a
+        name="security">3</a></li>
+      
+      <li><a href="../../tags/about">about</a><span
+        class="decorative-marker">//</span><a
+        name="about">2</a></li>
+      
+      <li><a href="../../tags/advocate">advocate</a><span
+        class="decorative-marker">//</span><a
+        name="advocate">2</a></li>
+      
+      <li><a href="../../tags/america">america</a><span
+        class="decorative-marker">//</span><a
+        name="america">2</a></li>
+      
+      <li><a href="../../tags/artifact">artifact</a><span
+        class="decorative-marker">//</span><a
+        name="artifact">2</a></li>
+      
+      <li><a href="../../tags/blacklivesmatter">blacklivesmatter</a><span
+        class="decorative-marker">//</span><a
+        name="blacklivesmatter">2</a></li>
+      
+      <li><a href="../../tags/bootstrap">bootstrap</a><span
+        class="decorative-marker">//</span><a
+        name="bootstrap">2</a></li>
+      
+      <li><a href="../../tags/cloud-init">cloud-init</a><span
+        class="decorative-marker">//</span><a
+        name="cloud-init">2</a></li>
+      
+      <li><a href="../../tags/developer">developer</a><span
+        class="decorative-marker">//</span><a
+        name="developer">2</a></li>
+      
+      <li><a href="../../tags/immutable">immutable</a><span
+        class="decorative-marker">//</span><a
+        name="immutable">2</a></li>
+      
+      <li><a href="../../tags/infrastructure">infrastructure</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure">2</a></li>
+      
+      <li><a href="../../tags/infrastructure-as-code">infrastructure-as-code</a><span
+        class="decorative-marker">//</span><a
+        name="infrastructure-as-code">2</a></li>
+      
+      <li><a href="../../tags/linux">linux</a><span
+        class="decorative-marker">//</span><a
+        name="linux">2</a></li>
+      
+      <li><a href="../../tags/operating-system">operating-system</a><span
+        class="decorative-marker">//</span><a
+        name="operating-system">2</a></li>
+      
+      <li><a href="../../tags/pattern">pattern</a><span
+        class="decorative-marker">//</span><a
+        name="pattern">2</a></li>
+      
+      <li><a href="../../tags/personal">personal</a><span
+        class="decorative-marker">//</span><a
+        name="personal">2</a></li>
+      
+      <li><a href="../../tags/pets">pets</a><span
+        class="decorative-marker">//</span><a
+        name="pets">2</a></li>
+      
+      <li><a href="../../tags/politics">politics</a><span
+        class="decorative-marker">//</span><a
+        name="politics">2</a></li>
+      
+      <li><a href="../../tags/tutorial">tutorial</a><span
+        class="decorative-marker">//</span><a
+        name="tutorial">2</a></li>
+      
+      <li><a href="../../tags/web">web</a><span
+        class="decorative-marker">//</span><a
+        name="web">2</a></li>
+      
+      <li><a href="../../tags/webmaster">webmaster</a><span
+        class="decorative-marker">//</span><a
+        name="webmaster">2</a></li>
+      
+      <li><a href="../../tags/2fa">2fa</a><span
+        class="decorative-marker">//</span><a
+        name="2fa">1</a></li>
+      
+      <li><a href="../../tags/alpine">alpine</a><span
+        class="decorative-marker">//</span><a
+        name="alpine">1</a></li>
+      
+      <li><a href="../../tags/ansible">ansible</a><span
+        class="decorative-marker">//</span><a
+        name="ansible">1</a></li>
+      
+      <li><a href="../../tags/authentication">authentication</a><span
+        class="decorative-marker">//</span><a
+        name="authentication">1</a></li>
+      
+      <li><a href="../../tags/blueprint">blueprint</a><span
+        class="decorative-marker">//</span><a
+        name="blueprint">1</a></li>
+      
+      <li><a href="../../tags/career">career</a><span
+        class="decorative-marker">//</span><a
+        name="career">1</a></li>
+      
+      <li><a href="../../tags/cattle">cattle</a><span
+        class="decorative-marker">//</span><a
+        name="cattle">1</a></li>
+      
+      <li><a href="../../tags/cms">cms</a><span
+        class="decorative-marker">//</span><a
+        name="cms">1</a></li>
+      
+      <li><a href="../../tags/code">code</a><span
+        class="decorative-marker">//</span><a
+        name="code">1</a></li>
+      
+      <li><a href="../../tags/container">container</a><span
+        class="decorative-marker">//</span><a
+        name="container">1</a></li>
+      
+      <li><a href="../../tags/continuous-delivery">continuous-delivery</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-delivery">1</a></li>
+      
+      <li><a href="../../tags/continuous-deployment">continuous-deployment</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-deployment">1</a></li>
+      
+      <li><a href="../../tags/continuous-integration">continuous-integration</a><span
+        class="decorative-marker">//</span><a
+        name="continuous-integration">1</a></li>
+      
+      <li><a href="../../tags/database">database</a><span
+        class="decorative-marker">//</span><a
+        name="database">1</a></li>
+      
+      <li><a href="../../tags/declarative">declarative</a><span
+        class="decorative-marker">//</span><a
+        name="declarative">1</a></li>
+      
+      <li><a href="../../tags/definition">definition</a><span
+        class="decorative-marker">//</span><a
+        name="definition">1</a></li>
+      
+      <li><a href="../../tags/deploy">deploy</a><span
+        class="decorative-marker">//</span><a
+        name="deploy">1</a></li>
+      
+      <li><a href="../../tags/devrel">devrel</a><span
+        class="decorative-marker">//</span><a
+        name="devrel">1</a></li>
+      
+      <li><a href="../../tags/distribution">distribution</a><span
+        class="decorative-marker">//</span><a
+        name="distribution">1</a></li>
+      
+      <li><a href="../../tags/education">education</a><span
+        class="decorative-marker">//</span><a
+        name="education">1</a></li>
+      
+      <li><a href="../../tags/git">git</a><span
+        class="decorative-marker">//</span><a
+        name="git">1</a></li>
+      
+      <li><a href="../../tags/gitops">gitops</a><span
+        class="decorative-marker">//</span><a
+        name="gitops">1</a></li>
+      
+      <li><a href="../../tags/html">html</a><span
+        class="decorative-marker">//</span><a
+        name="html">1</a></li>
+      
+      <li><a href="../../tags/lamp">lamp</a><span
+        class="decorative-marker">//</span><a
+        name="lamp">1</a></li>
+      
+      <li><a href="../../tags/life">life</a><span
+        class="decorative-marker">//</span><a
+        name="life">1</a></li>
+      
+      <li><a href="../../tags/maturity">maturity</a><span
+        class="decorative-marker">//</span><a
+        name="maturity">1</a></li>
+      
+      <li><a href="../../tags/operators">operators</a><span
+        class="decorative-marker">//</span><a
+        name="operators">1</a></li>
+      
+      <li><a href="../../tags/packer">packer</a><span
+        class="decorative-marker">//</span><a
+        name="packer">1</a></li>
+      
+      <li><a href="../../tags/password">password</a><span
+        class="decorative-marker">//</span><a
+        name="password">1</a></li>
+      
+      <li><a href="../../tags/phing">phing</a><span
+        class="decorative-marker">//</span><a
+        name="phing">1</a></li>
+      
+      <li><a href="../../tags/relations">relations</a><span
+        class="decorative-marker">//</span><a
+        name="relations">1</a></li>
+      
+      <li><a href="../../tags/sgi">sgi</a><span
+        class="decorative-marker">//</span><a
+        name="sgi">1</a></li>
+      
+      <li><a href="../../tags/slide">slide</a><span
+        class="decorative-marker">//</span><a
+        name="slide">1</a></li>
+      
+      <li><a href="../../tags/ssh">ssh</a><span
+        class="decorative-marker">//</span><a
+        name="ssh">1</a></li>
+      
+      <li><a href="../../tags/test">test</a><span
+        class="decorative-marker">//</span><a
+        name="test">1</a></li>
+      
+      <li><a href="../../tags/totp">totp</a><span
+        class="decorative-marker">//</span><a
+        name="totp">1</a></li>
+      
+      <li><a href="../../tags/version-control">version-control</a><span
+        class="decorative-marker">//</span><a
+        name="version-control">1</a></li>
+      
+      <li><a href="../../tags/windows">windows</a><span
+        class="decorative-marker">//</span><a
+        name="windows">1</a></li>
+      
+      </ul>
+    </nav>
+
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview-why-do-we-need-version-control">Overview: Why do we need Version Control?</a>
+      <ul>
+        <li><a href="#example-problems-and-approximating-version-control">Example Problems and Approximating Version Control</a></li>
+      </ul>
+    </li>
+    <li><a href="#poll-know-your-peers">Poll: Know your Peers</a></li>
+    <li><a href="#glossary-of-contextual-terms">Glossary of Contextual Terms</a>
+      <ul>
+        <li><a href="#generic">Generic</a></li>
+        <li><a href="#git">Git</a></li>
+        <li><a href="#public-git-hosting">Public git hosting</a></li>
+      </ul>
+    </li>
+    <li><a href="#revision-control-history">Revision Control History</a></li>
+    <li><a href="#git-learning-resources">Git Learning Resources</a></li>
+    <li><a href="#faq">FAQ</a>
+      <ul>
+        <li><a href="#pet-passwords">Pet Passwords</a></li>
+      </ul>
+    </li>
+    <li><a href="#git-tutorial">Git Tutorial</a>
+      <ul>
+        <li><a href="#first-steps-with-git-completely-local-and-safe">First steps with git (completely local and safe)</a></li>
+        <li><a href="#a-simple-round-trip-into-history-no-remotes-or-branches">A simple round trip into history: no remotes or branches</a>
+          <ul>
+            <li><a href="#make-some-changes">Make some changes</a></li>
+            <li><a href="#go-back-in-time">Go back in time</a></li>
+            <li><a href="#recover-accidental-deletion">Recover accidental deletion</a></li>
+            <li><a href="#make-a-detached-head-change-on-the-past-merge-into-the-present">Make a detached head change on the past, merge into the present</a></li>
+            <li><a href="#protect-yourself-with-gitignore">Protect yourself with .gitignore</a></li>
+          </ul>
+        </li>
+        <li><a href="#lets-go-public">Let&rsquo;s go public</a>
+          <ul>
+            <li><a href="#open-repolocaldemoproject-in-atom-edit-commit-and-push">Open repo.local/demoproject in Atom, edit, commit, and push!</a></li>
+            <li><a href="#clone-public-repo-and-edit-from-atom">Clone public repo and edit from Atom</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#branches">Branches</a></li>
+    <li><a href="#hooks">Hooks</a></li>
+    <li><a href="#collaboration-pulls-forks-and-submodules">Collaboration: Pulls, Forks, and Submodules</a></li>
+    <li><a href="#gitops-the-convergence-of-devops">GitOps: the Convergence of Dev+Ops</a></li>
+    <li><a href="#learn-git-safely">Learn Git Safely</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#2020-04-01-postscript-and-appendix-todo">2020-04-01: Postscript and Appendix TODO</a></li>
+    <li><a href="#2020-04-19-securing-pets-in-git">2020-04-19: Securing Pets in Git</a></li>
+    <li><a href="#2020-07-24-refactoring-the-default-branch">2020-07-24: Refactoring the default branch</a></li>
+  </ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="../../post/git-for-operators/">Version Control for Operators</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>25</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Mar</span> <span class="post-date-year">2020</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            <p>Version Control is an essential tool making your work reproducible and visible, which can unlock profound amplifying effects of your contributions. As operators
+grow into developers, they can build toward state of the art <a href="#gitops-the-convergence-of-devops">GitOps</a>!</p>
+<p><strong>Note:</strong> I use the terms <strong>revision control</strong> and <strong>version control</strong> interchangeably because they are synonyms.</p>
+<blockquote>
+<p>Sidebar: <a href="https://github.com/mlavi/hugo/commits/master/content/post/git-for-operators.md">revision history for this blog</a></p>
+</blockquote>
+<h1 id="overview-why-do-we-need-version-control">Overview: Why do we need Version Control?</h1>
+<p>Let me ask a very simple question: are you the same person you were last year? How about last month? How are you different now from one second ago?</p>
+<p>This is a deeply philosophical question, addressed by maintenance on the <a href="https://en.wikipedia.org/wiki/Ship_of_Theseus">Ship of Theseus</a> through time.</p>
+<p>Change is eternal, even when dealing with single individual. <em>e.g.:</em> I can&rsquo;t be relied upon to memorize, expire, and update a unique <a href="#pet-passwords">pet password</a> for every account on every VM on every cluster in every infrastructure provider for every project I work on and rotate those passwords every 3-12 months! Complexity multiplies with additional people, hence <a href="https://en.wikipedia.org/wiki/Change_management">change management</a> is an essential discipline for operators. Unfortunately, many operators do not utilize version control and rely on pet ops and backups for change management.</p>
+<p>Version control makes our work:</p>
+<ul>
+<li>reproducible: an essential characteristic of the scientific method</li>
+<li>historical: full point in time recovery with full attribution of change is recorded, <em>i.e.:</em> who did what and when</li>
+<li>metrics can be derived from the corpus: Lines of Code (LoC), etc. enabling process engineering</li>
+<li>shareable for collaboration: democratization of work</li>
+</ul>
+<p>Version control has amplifying network effects for work and communities
+which can be summarized as pet vs. cattle improvements:</p>
+<ul>
+<li>re-purposed: as the basis of new work (see: <a href="#collaboration-pulls-forks-and-submodules">fork, submodule</a>)</li>
+<li>incorporated: as a library or function or microservice of a bigger system</li>
+<li>scope: private to self, private to group of contributors, or&hellip;</li>
+<li>social: when public (with a public license), enables crowd sharing:
+<ul>
+<li>amplifying improvements via anyone with any skill set:</li>
+<li>development, bug finding/fixing, testing, documentation, etc.</li>
+<li>new use cases discovered, new features contributed</li>
+<li>community implications and the economy of attention</li>
+</ul>
+</li>
+</ul>
+<p>Revision control is an essential tool to manage change, collaboration, and scale work efforts, preventing inefficient overhead of workarounds and point to point synchronization. Most operators don&rsquo;t realize that <a href="#gitops-the-convergence-of-devops">GitOps</a> represents their future, but I see it as a refinement of and progression past <a href="../../post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/">CI/CD</a> for &ldquo;invisible ops.&rdquo;</p>
+<blockquote>
+<p>Sidebar: I was lucky enough to start my first year of collage on a DEC VAX system and benefit from one of the few <a href="https://en.wikipedia.org/wiki/Versioning_file_system#Files-11_(RSX-11_and_OpenVMS)">versioning file systems</a>. One of my part-time jobs (which also became my first employer after college) also leveraged this system, so version control is an ingrained discipline and in hindsight, a luxury, which I expect.</p>
+</blockquote>
+<h2 id="example-problems-and-approximating-version-control">Example Problems and Approximating Version Control</h2>
+<p>Understanding version control gives you a new perspective on social systems. You can look at operations, scientific journals, and social coding through this lens and see the same pattern. Point to point communication and artifacts are bespoke and tactical, contrasted to strategic, repeatable, scalable processes to improve results. People regularly approximate version control all over the place.</p>
+<blockquote>
+<p>Humor sidebar: <a href="https://en.wikipedia.org/wiki/Journal_of_Irreproducible_Results">Journal of Irreproducible Results</a></p>
+</blockquote>
+<p>What follows is a combination of rants and constructive criticism, <em>e.g.:</em></p>
+<ul>
+<li>Scheduling:
+<ul>
+<li>Question: do you have any time on Tuesday or Wednesday for my customer meeting? You said the afternoons were open last week.</li>
+<li>Answer: Please use our corporate calendar to save time for both of us.
+<ul>
+<li>Find the current, updated answer (<em>sync on availability</em>) and then take action to schedule directly,</li>
+<li>while also coordinating with external resources that you represent, to avoid <em>conflicts.</em></li>
+<li>Otherwise, we must resort to you getting an updated answer and potentially repeating the process again:
+question, check, answer, ACK, and then take action.
+<ul>
+<li>I copy and paste a brief version of this, sometimes with customized variations, every week!</li>
+</ul>
+</li>
+<li>Variation on the same problem:
+<ul>
+<li>I saw your invite and even though my calendar shows I&rsquo;m free:
+<ul>
+<li>something came up, I&rsquo;m really out doing something else,</li>
+<li>I didn&rsquo;t block out travel time or lunch, it would be better on X day</li>
+<li>it would be better that we meet after some dependency is satisfied.</li>
+</ul>
+</li>
+<li><em>i.e.:</em> I have a resource availability <em>conflict.</em> Can you reschedule the appointment?</li>
+<li>Answer: sure, but given that you can best represent your constraints,
+could you counter-propose a better time for both of us? :)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Positive habits:
+<ul>
+<li>Sent calendar invites to the team for the furlough weeks.</li>
+<li>Share your vacation as an invite to the team as a &ldquo;free&rdquo; time.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Collaborative work:
+<ul>
+<li>Question: I need your help on this {RFP, message, presentation}, here it is in email: <code>communication-v2-wednesday-myname</code>.</li>
+<li>Answer: Can we collaborate via Google Drive or Onedrive, which might also have passive version control built in to avoid passing the baton <em>sync</em> problems?</li>
+</ul>
+</li>
+<li>Software defects:
+<ul>
+<li>Question: I found a bug, let me verbally report it in #productname channel.</li>
+<li>Answer: If you do not have JIRA training or access, that is fine.
+<ul>
+<li>For everyone else, learn and directly contribute your work to one of the pillars of truth at Nutanix for work management.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Operations, <em>e.g.:</em>
+<ul>
+<li>Copy config.file to config.file.old.bak</li>
+<li>Production change procedure:
+<ul>
+<li>identify last night&rsquo;s backup as your revert point for server 1&hellip;X</li>
+<li>make several changes on server1
+<ul>
+<li>change monitoring alert levels, set maintenance mode, or pull out of rotation</li>
+<li>make changes, <em>e.g.:</em> database schema, data, RBAC</li>
+<li>sanity check: test the changes (in semi-isolation? depends on disruption) and proceed</li>
+<li>trigger a non-disruptive backup if possible and timely without a change control window</li>
+<li>restore monitoring alert levels, turn off maintenance mode, or put into rotation</li>
+</ul>
+</li>
+<li>repeat for other servers, unless you have to orchestrate combined operations across multiple servers</li>
+</ul>
+</li>
+<li>All of these are workarounds for <em>reverting a change</em> and reveal the need for revision control.</li>
+</ul>
+</li>
+</ul>
+<h1 id="poll-know-your-peers">Poll: Know your Peers</h1>
+<p>I asked my colleagues via a <a href="https://nutanix.slack.com/archives/G4088HLAF/p1585093304150000">poll in #xpert-automation (population 242)</a>:
+&ldquo;I can collaborate using public Git:&rdquo;</p>
+<ul>
+<li>Of 16 responses, ~1/3 request training</li>
+<li>the remainder list their public repos:
+<ol>
+<li><a href="https://github.com/thombrown">https://github.com/thombrown</a></li>
+<li><a href="https://github.com/pipoe2h">https://github.com/pipoe2h</a></li>
+<li><a href="https://github.com/akbaraziz">https://github.com/akbaraziz</a></li>
+<li><a href="https://github.com/rehmert">https://github.com/rehmert</a></li>
+<li><a href="https://github.com/gabybeitler">https://github.com/gabybeitler</a></li>
+<li><a href="https://github.com/yannickstruyf3">https://github.com/yannickstruyf3</a></li>
+<li><a href="https://github.com/sbourdeaud/nutanix">https://github.com/sbourdeaud/nutanix</a></li>
+<li><a href="https://github.com/aadis">https://github.com/aadis</a></li>
+<li><a href="https://github.com/MichaelHaigh/">https://github.com/MichaelHaigh/</a></li>
+<li>mlavi@{github, gitlab, bitbucket}</li>
+</ol>
+</li>
+</ul>
+<p>and this tutorial started soon thereafter.</p>
+<h1 id="glossary-of-contextual-terms">Glossary of Contextual Terms</h1>
+<p>It is easiest to think of revision control as managing the changes to a project folder of text files, so I&rsquo;ll define terms in that context, however there are more formal and abstract answers for many of the following terms.</p>
+<h2 id="generic">Generic</h2>
+<dl>
+<dt>Repository (repo)</dt>
+<dd>a logical &ldquo;parent folder&rdquo; for all of a project&rsquo;s content.</dd>
+<dt>Commit</dt>
+<dd>a state change recorded, becoming part of the history.
+<ul>
+<li>Note that single commit may group and combine multiple changes and operations across multiple files to the repository.</li>
+</ul>
+</dd>
+<dt>Diff (difference)</dt>
+<dd>the delta between your current work and a repository commit state.</dd>
+<dt>Merge Conflict</dt>
+<dd>local changes collide with the committed state of a remote repo (shared resource diff conflict), so the commit is blocked until either or both sides can resolve, sync updates, and try again.</dd>
+<dt>HEAD</dt>
+<dd>a pointer to the where the next commit will go, normally the latest commit. However, this can be changed to go back in history for point in time reconstruction.</dd>
+<dt>Branch</dt>
+<dd>a complete copy of the repo contents (it is contained in the repo with it&rsquo;s own HEAD), used to prevent changes from impacting the main or default branch.
+<ul>
+<li>Typically used for non-blocking work as experiments, historical releases (can be simulated with Tag), and hotfix/patches.</li>
+<li>Challenge:
+<ul>
+<li>continually merge each branch from main branch to minimize potential merge conflicts when eventually ending a branch.</li>
+<li>Lifecycle of a branch to prevent increase the repo overhead due to branch sprawl.</li>
+</ul>
+</li>
+<li>Branches benefit from increased collaboration versus an uncoordinated clone of the repo.</li>
+</ul>
+</dd>
+<dt>Main or mainline</dt>
+<dd>the default branch where all work is coordinated for release. When there are no branches, this is implicit. An older convention used to call this master.</dd>
+</dl>
+<h2 id="git">Git</h2>
+<dl>
+<dt>Stage</dt>
+<dd>local changes are added into a commit, providing granular control across the repo and planning reversible change sets.</dd>
+<dt>Hash (Short vs. Long)</dt>
+<dd>a commit identifier, the short version is a truncated long (full) hash.</dd>
+<dt>Remote</dt>
+<dd>a destination endpoint for your local repo</dd>
+<dt>Push</dt>
+<dd>send updates to a remote (branch), <em>e.g.:</em> <code>git push origin main</code></dd>
+<dt>.gitignore</dt>
+<dd>a list of files and file patterns to omit when adding files to the stage. This is useful for excluding temporary, sensitive, artifact, and binary files which should never be under revision control. See: <a href="https://gitignore.io/">https://gitignore.io/</a> for a wonderful set of ready made use cases.</dd>
+<dt>Tags and Releases</dt>
+<dd>meta data applied to a branch commit</dd>
+<dt>Gitflow and GitHub Flow</dt>
+<dd>branching strategies, see the <a href="#branches">branches</a> section, below.</dd>
+<dt>GitOps</dt>
+<dd>operations triggered by git, see the <a href="#gitops-the-convergence-of-devops">GitOps</a> section, below.</dd>
+</dl>
+<h2 id="public-git-hosting">Public git hosting</h2>
+<dl>
+<dt>Fork</dt>
+<dd>a linked copy/clone of a repo for collaboration without requiring commit access to a repo.
+<ul>
+<li>It can be thought of a one way, entire repo branch/remote, but that&rsquo;s not entirely accurate because although there is repo linkage (<em>e.g.:</em> this downstream fork is X commits behind upstream repo) there is no requirement for coordination aside from initial access to create the fork. Example uses:</li>
+<li>maintain an abandoned repo.</li>
+<li>when there is a divorce in culture and separation of work.</li>
+</ul>
+</dd>
+<dt>Pull request</dt>
+<dd>process reconcile a fork and the upstream/original repo, a commit in the fork is targeted for merge.
+<ul>
+<li>This starts a collaborative review process by the repo admins or their proxies with potentially many stages of interaction resulting in partial or complete acceptance or rejection.</li>
+</ul>
+</dd>
+</dl>
+<h1 id="revision-control-history">Revision Control History</h1>
+<p>A progression from pets to cattle:</p>
+<ul>
+<li>Local (client only): SCCS (1972), RCS (1982),
+<ul>
+<li>Cons: doesn&rsquo;t scale past one person without risk</li>
+</ul>
+</li>
+<li>Client-Server: cvs (wrapper around RCS), svn (2000),, Perforce (1995), MSFT Visual Source Safe (1994-2005), etc.
+<ul>
+<li>Cons: requires on-line connection for a check-in to a centralized server, branch and merge conflicts are painful</li>
+<li>Pros: two stages for work (update sync and commit), single source of truth (centralized server)</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Distributed_version_control">Distributed</a>:
+<ul>
+<li>Adds a staging step before pushing to a remote
+Pros: anyone can be a remote (peer to peer), facilities offline development
+Cons: multiple stages of work (fetch/pull, stage, commit, push) takes adjustment from previous generation, there can be multiple sources of truth requiring coordination (most operate with a single remote and approximate the previous generation of client-server).</li>
+<li>In 2010, software development author Joel Spolsky described distributed version control systems as &ldquo;possibly the biggest advance in software development technology in the [past] ten years&rdquo;.</li>
+<li>&ldquo;BitKeeper was used in the development of the Linux kernel from 2002 to 2005. The development of Git, now the world&rsquo;s most popular version control system, was prompted by the decision of the company that made BitKeeper to rescind the free license that Linus Torvalds and some other Linux kernel developers had previously taken advantage of.&rdquo;</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://en.wikipedia.org/wiki/Comparison_of_version-control_software#History_and_adoption">https://en.wikipedia.org/wiki/Comparison_of_version-control_software#History_and_adoption</a>
+<img src="../../img/version_control-overview.png" alt="Version Control: Overview from Wikipedia" title="mouse over"></p>
+<h1 id="git-learning-resources">Git Learning Resources</h1>
+<ul>
+<li>Git: <a href="https://git-scm.com/about">https://git-scm.com/about</a></li>
+<li>Check all the Git hosting companies for tutorials:
+<ul>
+<li>GitHub (MSFT), GitLab, BitBucket (Atlassian), Azure DevOps (MSFT)</li>
+<li><a href="https://help.github.com/en/github/getting-started-with-github/set-up-git">Getting started with GitHub: Set up Git</a></li>
+<li>OG: Sourceforge and RIP: Google CodePlex</li>
+</ul>
+</li>
+<li>LMGTFY: git tutorial
+<ul>
+<li>Search YouTube, etc. – there is a lot out there!</li>
+<li>StackOverflow has lots of help to get you out of a pinch!</li>
+</ul>
+</li>
+<li>GTS 2020: <a href="https://nutanix.handsonworkshops.com/workshops/73114240-32b0-4999-b9c9-42bdc02dc5bb/view/calm_karbon_cicd/calm_karbon_cicd/">CI/CD Lab with Calm+Karbon</a></li>
+</ul>
+<h1 id="faq">FAQ</h1>
+<dl>
+<dt>Question</dt>
+<dd>Can you give an example of how Git helps an operator?</dd>
+<dt>Answer</dt>
+<dd>Take a look at the <a href="#collaboration-pulls-forks-and-submodules">Collaboration</a> section, where the bootcamp automation scripts save SEs multiple hours for any demo or experiment, preventing mistakes when setting up a new cluster for a bootcamp, Global Tech Summit, etc. and were the basis or contributed to GTS2019 EMEA and APAC hackathon winners. This work has paid off 10,000 times the investment, enabled thousands of SEs, saved immeasurable SE hours, powered uncountable demos, and continues to improve for more use cases/labs.</dd>
+<dt>Question</dt>
+<dd>Is Git (or any revision control system) good for storing large files: videos, pictures, etc.</dd>
+<dt>Answer</dt>
+<dd>It depends on the context: if you are completely local for your private use, go for it! However there are systems like <a href="https://git-lfs.github.com/">Git Large File Storage</a> and <a href="https://git-annex.branchable.com/">git-annex</a> that are better suited for git to manage the textual metadata of large files across multiple file sources and backups.
+<p>Ultimately, the answer is no: revision control is best suited for managing text files (source code, configuration, scripts, documentation, etc.) facilitating diffs and merges, not large binary objects (BLOBs). So we arrive at the idea to store the procedure to build the application in git, not the application binary or libraries. You will see public git host providers restrict the size of an individual file in a repo and sometimes the total size of a repo to enforce these rules in order to keep their SLAs. free tier, and capacity planning as well as to prevent spillover from becoming a file host provider (<em>e.g.:</em> DropBox, OneDrive, GDrive, Netapp, S3, Files/Objects, etc.).</p>
+</dd>
+<dt>Question</dt>
+<dd>If we shouldn&rsquo;t store credentials and other hard coded pets in revision control, where should they go?</dd>
+<dt>Answer</dt>
+<dd>It depends what the best source of truth should be for each pet. Because you have revision control, you can safely refactor towards improving your processes and easily revert any experiment as you learn.
+<p>So try to answer each question, how do you manage your cattle of:</p>
+<ul>
+<li>IP addresses: try to move to DHCP and IPAM systems to get rid of them. Remember this indicates the need to adopt the category of service discovery and service addressing (DNS) solutions.</li>
+<li>Passwords: see <a href="#pet-passwords">Pet Passwords</a>, below.
+(Side note: Markdown doesn&rsquo;t handle HTML anchors gracefully.)</li>
+<li>Binary artifacts: drive to
+<ul>
+<li>filers NFS/SBM/FTP/SFTP and filer hosting</li>
+<li>artifact management (Nexxus, Artifactory) specific to the artifact for metadata and post processing
+<ul>
+<li>language libaries/installs</li>
+<li>Docker container registry</li>
+<li>etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>See <a href="https://12factor.net/">The 12 Factor App</a> for ideal design principles and Kelsey Hightower&rsquo;s response/examples: <a href="https://medium.com/@kelseyhightower/12-fractured-apps-1080c73d481c">12 Fractured Apps</a></li>
+</ul>
+</dd>
+<dt>Question</dt>
+<dd>How does one decide on multiple projects repo organization?</dd>
+<dt>Answer</dt>
+<dd>This is a huge indicator of engineering culture, <em>e.g.:</em> monoculture = one repo for everything versus fragmentation over too many repos. There is a project life cycle to consider as well. There are arguments for reducing repository count to reduce fragmentation over time.</dd>
+</dl>
+<h2 id="pet-passwords">Pet Passwords</h2>
+<p>Death to the static password on one user login on one OS, work to move or drive them towards:</p>
+<ul>
+<li>environment variable files and add those files to .gitignore</li>
+<li>synthesize variable files from your cattle systems
+<ul>
+<li>Pupper Hiera, Chef databags, etcd/database stores, Vault</li>
+<li>local secret repos (keyring, KeepassXC, etc.)</li>
+<li>authentication systems (LDAP, OAUTH, SAML, SSO/WebSSO)</li>
+</ul>
+</li>
+<li>from static passwords to ephemeral passwords/accounts: synthesized for the lifecycle of the app or user session
+<ul>
+<li>SSH keys, then ephemeral keys</li>
+<li>from credentials to dynamic, session tokens (JWT, etc.)</li>
+</ul>
+</li>
+</ul>
+<p>See the <a href="#2020-04-19-securing-pets-in-git">Postscript: Securing Pets in Git</a> for my journey in some more detail!</p>
+<hr>
+<h1 id="git-tutorial">Git Tutorial</h1>
+<h2 id="first-steps-with-git-completely-local-and-safe">First steps with git (completely local and safe)</h2>
+<p>Our first git kata will be simple: consume a public repo.</p>
+<p>First, get git! :) Because git is open source, there are multiple sources and versions and it might already be built into your editor or IDE: Integrated Development Environment. We will use the official git CLI because we will explicitly use every parameter at introduction, which a GUI or CLI defaults can hide, or worse, there may be basic git operations that some GUIs cannot easily handle.</p>
+<p>We will skip setup of credentials and use a fully public code repository,
+<em>e.g.:</em> <a href="https://github.com/nutanix/calm-dsl">https://github.com/nutanix/calm-dsl</a></p>
+<pre><code>git clone https://github.com/nutanix/calm-dsl.git
+git clone git@github.com:nutanix/calm-dsl.git # uses SSH
+</code></pre>
+<p>I like to create a standard working area for my local repositories: ~/Documents/$Organization/$Project/$Repo, <em>e.g.:</em></p>
+<ul>
+<li>Documents/github.com/nutanix/calm-dsl/</li>
+<li>Documents/gitlab.com/nutanix-se/ansible/lcm-darksite-webserver</li>
+<li>Documents/repo.local/mysecretprojects</li>
+</ul>
+<p>so it is not confusing when using GitHub, GitLab, or any other git remote instance.</p>
+<p>I found a tool that helps me navigate and enforce this convention: <a href="https://github.com/x-motemen/ghq">ghq</a>, <em>e.g.:</em> <code>ghq get nutanix/calm-dsl</code> versus <code>git clone https://github.com/nutanix/calm-dsl.git</code>. However, ghq defaults to https:// URLs, which can be a problem if you want to use SSH transport via the git: method, which is advisable for git hosting requiring two factor authentication.</p>
+<p>Once you have a local clone of the entire repository checked out with it&rsquo;s full history, it is time to play. You can experiment with the repo any way you like, even revert changes and mistakes. If you get in any trouble, you can clone again. You are free and safe to make mistakes as you learn revision control. #failfastfixfast</p>
+<h2 id="a-simple-round-trip-into-history-no-remotes-or-branches">A simple round trip into history: no remotes or branches</h2>
+<p>Our second git kata will start from scratch, this diagram from <a href="https://marklodato.github.io/visual-git-guide/index-en.html">https://marklodato.github.io/visual-git-guide/index-en.html</a> shows the basic cycle from:</p>
+<ul>
+<li>files in the local, &ldquo;working directory&rdquo;</li>
+<li><code>git add</code> files to the stage</li>
+<li><code>git commit</code> files into the repository history</li>
+<li>inspecting the commit history log</li>
+</ul>
+<p>There are some basic terms I want to introduce, see the <a href="#glossary-of-contextual-terms">#glossary</a> for more detail:</p>
+<ul>
+<li>head: pointer to the latest commit</li>
+<li>branch: we&rsquo;re going to see this used indirectly</li>
+<li>commit hash: short and long form</li>
+</ul>
+<p>Because git uses sensible defaults, you will see some parameters indicated by italics, they are usually <em>optional</em>.
+<img src="https://marklodato.github.io/visual-git-guide/basic-usage.svg" alt="Basic local cycle"></p>
+<pre><code>mkdir demoproject &amp;&amp; cd $_
+git init
+git remote --verbose # note none!
+
+for ((i = 0; i &lt; 5; i++)); do
+  echo &quot;Hello team, this is unchanged file${i}.txt&quot; &gt; file${i}.txt
+done
+ls; tree
+
+cat file4.txt
+git add file0.txt   # add to the stage
+git commit --message 'This is my first commit comment!'
+git status          # Note we are on a the default branch
+
+git add --all       # recurse child directories
+git status          # see all remaining files staged
+                    # &quot;git st&quot; works on Linux, not Mac!
+git commit -m &quot;Part 2&quot;
+git log # note the git hash for each commit.
+</code></pre>
+<h3 id="make-some-changes">Make some changes</h3>
+<pre><code>cat file*txt
+vi file{2,4}.txt
+git status  # shows two modified files
+git diff    # shows modifications
+git add .   # adds modified files recursively down from the current directory
+git commit # will use $EDITOR and omit #comment lines
+cat f*
+git mv file0.txt file5.txt  # Git Operation
+            # preserves change history
+            # vs. pet op loses history = delete and add
+vi +/change file5.txt # :s/change/move/
+git status
+git add * # lots of ways to do similar things, however not recursive
+git status
+git commit -m &quot;Renamed file0to5&quot;
+git st
+</code></pre>
+<h3 id="go-back-in-time">Go back in time</h3>
+<pre><code>git log                # pick a point in time
+git checkout master~3  # go back -3 commits or specify commit hash
+cat f* ; vi file0.txt ; git status
+</code></pre>
+<h3 id="recover-accidental-deletion">Recover accidental deletion</h3>
+<pre><code>rm file0.txt
+ls        # file0.txt is gone
+git checkout file0.txt
+tree      # file0.txt is back from history
+</code></pre>
+<h3 id="make-a-detached-head-change-on-the-past-merge-into-the-present">Make a detached head change on the past, merge into the present</h3>
+<pre><code>vi file0.txt &amp;&amp; git add -a
+git commit -m &quot;Back to the future!&quot;
+git checkout master   # Note: $ShortHash of detached head
+git merge $ShortHash
+cat file5.txt # note: both the detached head change and rename operation!
+
+git log --oneline --decorate --all --graph  # branch visualization (text)
+TIG_DIFF_OPTS=&quot;--relative-date&quot; tig         # I like this TUI
+</code></pre>
+<h3 id="protect-yourself-with-gitignore">Protect yourself with .gitignore</h3>
+<pre><code>echo &quot;file6.txt&quot; &gt; .gitignore &amp;&amp; git add . &amp;&amp; git commit -m 'ignore file6.txt'
+echo &quot;secret&quot; &gt; file6.txt
+git status
+git add . &amp;&amp; git commit # nothing to commit because file6.txt is .gitignore(d)!
+</code></pre>
+<h2 id="lets-go-public">Let&rsquo;s go public</h2>
+<p>Working with a remote repo is as simple as <code>git fetch</code> (which checks for updates) and <code>git pull</code> to synchronize state to your local repo before you push your changes to the remote repo. You can specify your choice of remote destination and branch. Because git uses sensible defaults, these parameters are usually <em>optional</em> (indicated by italics).</p>
+<p><img src="../../MarkLodato/visual-git-guide/basic-remote-usage.png" alt="basic-remote-usage.svg"></p>
+<p>Hosted git providers generally organize repositories with a organization/team/group and then the project repo under them, <em>e.g.:</em> nutanix/blueprints. For personal projects, your username is the organization, <em>e.g.:</em> mlavi/demoproject</p>
+<ul>
+<li>
+<p>Create a project in Gitlab, <em>e.g.:</em> demoproject = <a href="https://gitlab.com/mlavi/demoproject">https://gitlab.com/mlavi/demoproject</a></p>
+</li>
+<li>
+<p>Add a remote with an alias or name of &ldquo;origin,&rdquo; then set it as a push destination.</p>
+<pre><code>  git remote add origin git@gitlab.com:mlavi/demoproject.git
+  git remote --verbose
+  git push --set-upstream origin master
+</code></pre>
+<ul>
+<li>
+<p>TODO:</p>
+<pre><code>git remote add bb git@bitbucket.org:mlavi/demoproject.git
+git push --set-upstream bb master
+git push bb # https://bitbucket.org/mlavi/demoproject/src/master/
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Make changes with the webIDE and commit them.</p>
+<ul>
+<li>
+<p>Changes not seen by <code>git status</code> or tig?</p>
+<pre><code>git status
+git fetch #from the remote
+git pull  #from the remote
+git status
+</code></pre>
+</li>
+<li>
+<p>Now they are seen!</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="open-repolocaldemoproject-in-atom-edit-commit-and-push">Open repo.local/demoproject in Atom, edit, commit, and push!</h3>
+<pre><code>atom .
+</code></pre>
+<h3 id="clone-public-repo-and-edit-from-atom">Clone public repo and edit from Atom</h3>
+<pre><code>ghq get gitlab.com/mlavi/demoproject
+git status
+atom .
+</code></pre>
+<h1 id="branches">Branches</h1>
+<p>We&rsquo;ve seen that every repo is initialized with a default branch named master (unless specified otherwise). <a href="https://tech.slashdot.org/story/20/06/10/1922255/tech-terms-face-scrutiny-amid-anti-racism-efforts">Update Summer 2020</a>: there is a new convention to use &ldquo;main&rdquo; or &ldquo;primary&rdquo; instead and I will work to update this tutorial. It is sometimes called the mainline or default branch and while it is arbitrarily important, but by convention for many projects, it is where attention is focused to keep it stable from risky changes.</p>
+<p>Branching allows anyone to manage changes that should not block the main branch stability. Long lived branches are usually a bad idea and should be discarded as soon as possible to avoid larger merge conflicts due to drift. Branches usually represent different types of shorter lived work: experiments, a bug fix, a new feature, refactoring, and so on. Sometimes branches are referred to as topic branches to highlight their focused, short lived scope.</p>
+<p>You can create a branch in a repo, make some changes there, and commit changes onto your topic branch. It is ideal to merge changes from main onto your branch periodically to keep it up to date and minimize merge conflicts down the line. The final stage of a branch life cycle is to merge your branch to the mainline and then delete the topic branch.</p>
+<p>A nice visualization of branching: <a href="https://agripongit.vincenttunru.com/">https://agripongit.vincenttunru.com/</a></p>
+<p>Branching is fairly easy with git. However, merge conflicts will always be a challenge and usually requires talking to people. :) In other revision control systems, branches could be used to indicate and preserve the state of the repo for a release, but git can accommodate this with a simple tag applied to a commit.</p>
+<p>We can talk about different branch strategies:</p>
+<ul>
+<li><a href="https://nvie.com/posts/a-successful-git-branching-model/">GitFlow</a>: for more traditional software engineering release models</li>
+<li>GitHub Flow: <a href="https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project">Overview</a> || <a href="https://guides.github.com/introduction/flow/">Source</a></li>
+</ul>
+<p>Remember, software is designed and it resembles the organizational structure: <a href="https://en.wikipedia.org/wiki/Conway%27s_law">https://en.wikipedia.org/wiki/Conway%27s_law</a></p>
+<h1 id="hooks">Hooks</h1>
+<p>Git can be extended in a few ways, aliases are simple to grasp to help save keystrokes. Hooks allow scripts to run in response to an event, such as a pre-commit check running a code guideline tool, generating documentation, validating work, performing a build, etc. If a hook invokes a remote service over the network, this becomes the origin of the term &ldquo;web hook,&rdquo; and can be used to invoke local or remote build systems, CI/CD pipelines, SaaS, and more.</p>
+<h1 id="collaboration-pulls-forks-and-submodules">Collaboration: Pulls, Forks, and Submodules</h1>
+<p>With out of the box git, you get all or nothing access to the full repository contents: branches, tags, and history. The only manner to source external work inside a repo is through <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git submodules</a>. Submodule maintenance can be a little challenging because they require manual synchronization, they are just like merges.</p>
+<p>However, there are valuable extensions (not part of the git toolset) for distributed collaborative efforts of software projects by hosted git providers. RBAC: Role Based Access Control, such as read only versus contributor only on a certain branch. <em>To be confirmed:</em> Forks and pull requests are git provider specific.</p>
+<p>Take a look at this diagram from <a href="https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project">Contributing to a Project</a>: <img src="https://git-scm.com/book/en/v2/images/small-team-flow.png" alt="Small Team Flow"> and diagrams in <a href="https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows">Distributed Git - Distributed Workflows</a>.</p>
+<p>Let&rsquo;s look at <a href="https://github.com/nutanixworkshops/stageworkshop">https://github.com/nutanixworkshops/stageworkshop</a> to review all of the:</p>
+<ul>
+<li><a href="https://github.com/nutanixworkshops/stageworkshop/network/members">forks</a>
+<ul>
+<li>this public repo has been forked multiple times (one parent, multiple child repos)!</li>
+<li>forks facilitate keeping in sync without needing to be a contributor on the parent repo</li>
+</ul>
+</li>
+<li><a href="https://github.com/nutanixworkshops/stageworkshop/pulls?q=is%3Apr+is%3Aclosed">pulls</a>
+<ul>
+<li>pull requests can contribute changes back to the parent after review and acceptance: community coding!</li>
+</ul>
+</li>
+<li><a href="https://github.com/nutanixworkshops/stageworkshop/graphs/contributors">contributors</a>
+<ul>
+<li>normally, this would only list the authors with commit access to the repo</li>
+<li>when a pull request is accepted, the parent code base benefits from the collaboration, enriched by non-committers.</li>
+</ul>
+</li>
+</ul>
+<h1 id="gitops-the-convergence-of-devops">GitOps: the Convergence of Dev+Ops</h1>
+<p>We saw the benefit of git operations on our repo in the example: it replayed a file update and file move. Today, when every system has a REST API, automation of every operation can be possible, removing pet ops.</p>
+<ul>
+<li>No human touching anything BUT git!
+<ul>
+<li>Every configuration is under revision control</li>
+<li>Process is triggered by a git operation</li>
+<li>Every process is also in git (<em>e.g.:</em> Jenkinsfile build job, Dockerfile build, webhooks, scripts, blueprints, etc.)</li>
+</ul>
+</li>
+<li>Git commit a change and make a pull request to a branch that represents an environment:
+<ul>
+<li>Main = production</li>
+<li>Staging, dev, QA, etc.</li>
+</ul>
+</li>
+<li>History: WeaveWorks = makers of Calico, this will be the next generation of Karbon&rsquo;s networking feature
+<ul>
+<li>2017-08-07: <a href="https://www.weave.works/blog/gitops-operations-by-pull-request">weave.works/blog/gitops-operations-by-pull-request</a></li>
+<li>2018-08-21: <a href="https://www.weave.works/blog/what-is-gitops-really">weave.works/blog/what-is-gitops-really</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="learn-git-safely">Learn Git Safely</h1>
+<ol>
+<li>
+<p>Work locally until comfortable with the basics. #failfastfixfast</p>
+<ul>
+<li><code>git status</code> and <code>git log</code> are your friends and provide sanity checks</li>
+<li>I use <code>git status</code> so frequently, I made a short cut: <code>alias gits='git status --short --branch &amp;&amp; echo'</code> and I&rsquo;ve adjusted my shell prompt to reflect it as well!</li>
+</ul>
+</li>
+<li>
+<p>Learn about <code>.gitignore</code> and use it to:</p>
+<ul>
+<li>Isolate your pets to environment variables:
+<ul>
+<li><strong>No credentials committed into the repo, ever.</strong></li>
+<li>No host names, no IP addresses, no usernames.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Create a private repo on a Git host</p>
+<ul>
+<li>GitHub, GitLab, BitBucket, Azure DevOps, Sourceforge, etc.</li>
+<li>Host your own: <a href="https://en.wikipedia.org/wiki/Gitea">Gitea</a>, etc.</li>
+</ul>
+</li>
+<li>
+<p>After practice, make your (hosted) repo public</p>
+</li>
+<li>
+<p>Work towards <a href="../../post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/">CI/CD</a> and GitOps!</p>
+</li>
+<li>
+<p><strong>#crowdsource,</strong> make your work visible for social coding, and profit!!!</p>
+</li>
+</ol>
+<h1 id="conclusion">Conclusion</h1>
+<p>Constantly look how to make your pet work become 100X more effective as cattle.</p>
+<ul>
+<li>Adopt the mantra: &ldquo;Git or it didn&rsquo;t happen.&rdquo;</li>
+<li>Refactor your lifestyle for reproducible cattle processes!</li>
+<li>Drive towards GitOps, most of the world doesn&rsquo;t know about it yet!</li>
+</ul>
+<hr>
+<h1 id="2020-04-01-postscript-and-appendix-todo">2020-04-01: Postscript and Appendix TODO</h1>
+<p>I will continue to publish updates as I flush out and refine this material.</p>
+<p>In the initial demo, I contrasted a filesystem rename to a git mv operation (I joked that this was the first step to GitOps), then repointed HEAD to an earlier point in time (detached HEAD situation, almost a branch), and made a change to that file (before it was renamed). When I went back to master branch and merged the short hash of the detached HEAD, we saw that the file changed AND was renamed (<em>e.g.:</em> a git pull fast forward).</p>
+<p>Finish <a href="#collaboration-pulls-forks-and-submodules">#collaboration-pulls-forks-and-submodules</a></p>
+<ul>
+<li><a href="https://www.atlassian.com/git/tutorials/git-forks-and-upstreams">https://www.atlassian.com/git/tutorials/git-forks-and-upstreams</a> Git tip: ahead/behind</li>
+<li><a href="https://gitgraphjs.com/stories/?path=/story/gitgraph-js-1-basic-usage--branching-from-a-past-reference">https://gitgraphjs.com/stories/?path=/story/gitgraph-js-1-basic-usage--branching-from-a-past-reference</a></li>
+<li><a href="https://codepen.io/nicoespeon/pen/arqPWb?editors=1010">https://codepen.io/nicoespeon/pen/arqPWb?editors=1010</a></li>
+<li><a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/diagrams?id=mermaid">https://shd101wyy.github.io/markdown-preview-enhanced/#/diagrams?id=mermaid</a></li>
+</ul>
+<pre><code class="language-mermaid" data-lang="mermaid">graph TD
+  A --&gt; B;
+  B --&gt; C;
+  D --&gt; E;
+  E --&gt; F;
+  D --&gt; B;
+  B --&gt; E;
+  C --&gt; F;
+
+</code></pre><h1 id="2020-04-19-securing-pets-in-git">2020-04-19: Securing Pets in Git</h1>
+<p>I began my <a href="https://github.com/webpro/awesome-dotfiles">Dotfiles</a> journey when I began refactoring my work from a Macbook Air to a Dell XPS running <a href="https://www.linuxmint.com/">Linux Mint</a> (akin to the XPS Developer Edition/Project Sputnik). I loved the Mac for many years, but the battery and keyboard were failing, and I had wanted to make Linux my primary OS. Over the years, I prepared by driving towards cross-platform, web, and open source applications as much as possible.</p>
+<p>I had been successful making my home directory portable across OS updates on my Linux desktop, making my data somewhat OS version independent. Rather than just migrate with a one-time lift and shift from Mac to Linux, I took the time to make my work portable and that effort continues. I ended up where I can go back and forth between laptops as needed, keeping my work and environments up to date, to have the best of both worlds. Today, I have few exceptions which anchor me to one or the other. e.g.: I still need the Mac for PowerPoint, but I may get around that with Frame IT desktop, dual-booting to Windows, or running a Windows VM.</p>
+<p>Dotfiles are primarily text, therefore revision control is a more logical choice over file sync for collaboration across machines and for backups. As soon as I settled on a <a href="https://github.com/webpro/awesome-dotfiles">dotfile manager</a>, I began to put my work into a local Git repo. The first dotfile manager I tried had GPG encryption. I didn&rsquo;t stick with it long enough to take advantage of that feature; however, it set a valuable expectation for transparent encryption. I continued to document my Mac setup, placing it under revision control. As I placed more into the local repo, I eventually added and pushed to a hosted, private repo to and test my work on the Linux laptop.</p>
+<p>For my standards, a private hosted repo and security in transit wasn&rsquo;t enough to secure valuable information. I had lots of valuable pets such as: username, password, IP address, hostname, account number, install location path names, etc. I wanted to prevent accidental leakage of secrets and I tackled the problem in two stages.</p>
+<p>For the first stage, I researched GPG and wanted to coordinate that with e-mail (which is an ongoing project). I settled on an easier initial step with transparent, team-based git encryption: <a href="https://github.com/elasticdog/transcrypt">Transcrypt</a> is open source and cross platform enough. :) This solution allowed me to safely add my pet files with hard coded work while I continued to refactor them in the second stage.</p>
+<p>For the second stage, I searched for an off-line password manager for storing credentials and other confidential information for all my pets! I didn&rsquo;t want to trust an online, cloud, SaaS service to accidentally breach my secrets, e.g.: this happens regularly with credit cards. Furthermore, it was important that the app was open source, cross platform, and had web browser integration. This would allow me to refactor everything into a common store: all pet credentials, in a pet profile, in a pet browser, under a pet account, on a pet OS could finally become cattle. Bonus points for consolidating Time-based One Time Passwords (TOTP), so I no longer  maintain a separate application and credential store via Google Authenticator or equivalent. SSH and GPG keys may be next!</p>
+<p>I might elaborate on the research candidates another time, but <a href="https://keepassxc.org">KeepassXC</a> satisfied most of my requirements and won my loyalty due to design values, regular updates, and an <a href="https://ssd.eff.org/en/module/how-use-keepassxc">endorsement by the EFF</a>. While the credential file store is encrypted by pass phrase (Transcrypt doubly protects it for some defense in depth), it derives from a well known file format, allowing alternative GUI and web browser plug-in/extensions. Finally, the app fairly gracefully handles changes from file sync and I have gotten my conflict resolution process under control. I have been happy to continually refactor my hard-coded pets into the credential file store and leverage updates across several machines and apps.</p>
+<p>Finally, not only are my secrets portable across machines and apps, but now I&rsquo;ve begun to generate pet configuration files to populate environment variables from my store. I leverage them into Docker containers and Bash via <a href="https://direnv.net/">direnv</a> and insure they are <a href="https://gitignore.io">.gitignore</a>d [ <a href="https://github.com/github/gitignore">GH</a> vs. <a href="https://github.com/toptal/gitignore.io">TopTal</a>? ]. This keeps pets out of binaries, configuration files, and Git as much as possible! It is a matter of time to drive this effort towards LDAP, Kerberos, Vault, etc. for service based pets and ephemeral, dynamic session tokens and passwords with audit logs as listed in <a href="#pet-passwords">pet passwords</a>.</p>
+<h1 id="2020-07-24-refactoring-the-default-branch">2020-07-24: Refactoring the default branch</h1>
+<p><a href="https://tech.slashdot.org/story/20/06/10/1922255/tech-terms-face-scrutiny-amid-anti-racism-efforts">#BlackLivesMatter: Update Summer 2020</a>: there is a new convention to use &ldquo;main&rdquo; or &ldquo;primary&rdquo; instead and I will work to update this tutorial.</p>
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-git" href="https://mlavi.github.io//tags/git">git</a>,
+	                
+	                <a class="post-tag post-tag-operators" href="https://mlavi.github.io//tags/operators">operators</a>,
+	                
+	                <a class="post-tag post-tag-gitops" href="https://mlavi.github.io//tags/gitops">GitOps</a>,
+	                
+	                <a class="post-tag post-tag-tutorial" href="https://mlavi.github.io//tags/tutorial">tutorial</a>,
+	                
+	                <a class="post-tag post-tag-version-control" href="https://mlavi.github.io//tags/version-control">version-control</a>,
+	                
+	                <a class="post-tag post-tag-blacklivesmatter" href="https://mlavi.github.io//tags/blacklivesmatter">BlackLivesMatter</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="../../post/developer_relations_advocate/">What is a DevOps Advocate?</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="../../post/covid-19_resources/">COVID-19 Resources</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+  
+  
+
+	<p>&copy; 2021. All rights reserved.</p>
+</div>
+
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

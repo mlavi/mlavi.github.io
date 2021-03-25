@@ -2,18 +2,13 @@
 
 ## Overview
 
-A brief history of the DevOps movement and community with a cross section view
- of methods and practices that break down the barriers to
- business agility and continuous delivery of applications.
+A brief history of the DevOps movement and community with a cross sectional view of methods and practices that break down the barriers to business agility and continuous delivery of applications.
 
-For a term less than eight years old,
- DevOps remains a mysterious pursuit for many software engineering organizations.
+For a term less than eight years old, DevOps remains a mysterious pursuit for many software engineering organizations.
 
-DevOps seems intangible: you can't buy it, there is no certification, and no
- universal definition, yet everyone who wants it or does it has trouble identifying it.
+DevOps seems intangible: you can't buy it, there is no certification, and no universal definition, yet everyone who wants it or does it has trouble identifying it.
 
-We will cover these topics so that
- you can understand and chart your own journey to DevOps.
+We will cover these topics so that you can understand and chart your journey to DevOps.
 
 ---
 ## Agenda
@@ -37,16 +32,16 @@ Currently:
 
 $ cat ~/.signature
 
-DevOps and Automation Architect, Nutanix || [mark.lavi@nutanix.com](mailto:mark.lavi@nutanix.com)
+Principal DevOps Advocate, Nutanix || [mark.lavi@nutanix.com](mailto:mark.lavi@nutanix.com)
 <br />mobile:+1-650-400-2100 || Twitter [@calm_mark](http://twitter.com/calm_mark) || GitHub [@mlavi](http://github.com/mlavi/)
 
 $ cat ~/.profile || curl [http://mlavi.github.io/about/](http://mlavi.github.io/about/)
 
 Previously:
 
-- DevOps Lead at [Pertino](http://pertino.com) (Cloud VPN provider)
-- Operations at [Kaazing](http://kaazing.com) (HTML5 WebSocket pioneer)
-- Webmaster at Netscape.com, cnnfn.com, Silicon Graphics
+- DevOps Manager@[Pertino](http://pertino.com) (Cloud VPN provider)
+- Operations Manager@[Kaazing](http://kaazing.com) (HTML5 WebSocket pioneer)
+- Webmaster@Netscape.com, cnnfn.com, Silicon Graphics
     - Technology Evangelist for LDAP and JavaScript
 
 *Infrastructure as Code* blog = [http://mlavi.github.io](http://mlavi.github.io)
@@ -130,7 +125,7 @@ Use your definition as a lens to evaluate any use of the term!
     - Software discipline applied to refactoring infrastructure and operations
     - Application architectures refactor around operations
     - Manufacturing theory applied to technical work
-      
+
 ---
 ## DevOps Success and Challenges
 
@@ -182,7 +177,7 @@ Technology + Culture transformation for business agility<sup>3</sup>
     - Microservices
     - Pets versus Cattle versus Bacteria
 - Test, Build, Deploy Pattern
-- Infrastructure Orchestration and Models 
+- Infrastructure Orchestration and Models
 
 ---
 ## Agile Infrastructure
@@ -195,7 +190,7 @@ Technology + Culture transformation for business agility<sup>3</sup>
 - Ephemeral everything = agility
 
 ---
-## Infrastructure as Code 
+## Infrastructure as Code
 
 *Infrastructure as Code* = software engineering practices applied to infrastructure
 

@@ -7,10 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 29 Sep 2019 12:37:07 -0600</lastBuildDate>
-    
-	<atom:link href="https://mlavi.github.io/tags/developer/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 26 Jan 2021 09:37:33 -0600</lastBuildDate><atom:link href="https://mlavi.github.io/tags/developer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning AlpineLinux.org, Ansible.com, and Packer.io</title>
+      <link>https://mlavi.github.io/post/learning-alpine-linux-ansible-and-packer/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/post/learning-alpine-linux-ansible-and-packer/</guid>
+      <description>&lt;p&gt;For my 2020-1 holiday break, I decided my next personal project would be to rebuild my home infrastructure on containers. I&amp;rsquo;d been inspired by a recent discovery of &lt;a href=&#34;https://linuxserver.io&#34;&gt;LinuxServer.io&lt;/a&gt;, where open source projects are built and run as containers. While I have a burning desire to better my Kubernetes practice, not enough of the world delivers software as a Helm chart, so merely running everything as containers would be a good intermediate step. Let me share my first six steps with examples&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>What is a DevOps Advocate?</title>

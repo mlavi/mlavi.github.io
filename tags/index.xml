@@ -7,26 +7,265 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 29 Sep 2019 12:37:07 -0600</lastBuildDate>
-    
-	<atom:link href="https://mlavi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 26 Jan 2021 09:37:33 -0600</lastBuildDate><atom:link href="https://mlavi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>alpine</title>
+      <link>https://mlavi.github.io/tags/alpine/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/alpine/</guid>
+      <description></description>
+    </item>
     
     <item>
-      <title>advocate</title>
-      <link>https://mlavi.github.io/tags/advocate/</link>
-      <pubDate>Sun, 29 Sep 2019 12:37:07 -0600</pubDate>
+      <title>ansible</title>
+      <link>https://mlavi.github.io/tags/ansible/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/advocate/</guid>
+      <guid>https://mlavi.github.io/tags/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>artifact</title>
+      <link>https://mlavi.github.io/tags/artifact/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/artifact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bootstrap</title>
+      <link>https://mlavi.github.io/tags/bootstrap/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud-init</title>
+      <link>https://mlavi.github.io/tags/cloud-init/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/cloud-init/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Configuration Management</title>
+      <link>https://mlavi.github.io/tags/configuration-management/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/configuration-management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>developer</title>
       <link>https://mlavi.github.io/tags/developer/</link>
-      <pubDate>Sun, 29 Sep 2019 12:37:07 -0600</pubDate>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
       <guid>https://mlavi.github.io/tags/developer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infrastructure as Code</title>
+      <link>https://mlavi.github.io/tags/infrastructure-as-code/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/infrastructure-as-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://mlavi.github.io/tags/linux/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operating system</title>
+      <link>https://mlavi.github.io/tags/operating-system/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/operating-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>packer</title>
+      <link>https://mlavi.github.io/tags/packer/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/packer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pets</title>
+      <link>https://mlavi.github.io/tags/pets/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/pets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>america</title>
+      <link>https://mlavi.github.io/tags/america/</link>
+      <pubDate>Sun, 10 Jan 2021 08:18:29 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/america/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal</title>
+      <link>https://mlavi.github.io/tags/personal/</link>
+      <pubDate>Sun, 10 Jan 2021 08:18:29 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>politics</title>
+      <link>https://mlavi.github.io/tags/politics/</link>
+      <pubDate>Sun, 10 Jan 2021 08:18:29 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/politics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2FA</title>
+      <link>https://mlavi.github.io/tags/2fa/</link>
+      <pubDate>Mon, 14 Dec 2020 16:56:47 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/2fa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>password</title>
+      <link>https://mlavi.github.io/tags/password/</link>
+      <pubDate>Mon, 14 Dec 2020 16:56:47 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/password/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://mlavi.github.io/tags/security/</link>
+      <pubDate>Mon, 14 Dec 2020 16:56:47 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TOTP</title>
+      <link>https://mlavi.github.io/tags/totp/</link>
+      <pubDate>Mon, 14 Dec 2020 16:56:47 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/totp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>advocate</title>
+      <link>https://mlavi.github.io/tags/advocate/</link>
+      <pubDate>Sun, 07 Jun 2020 09:11:52 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/advocate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BlackLivesMatter</title>
+      <link>https://mlavi.github.io/tags/blacklivesmatter/</link>
+      <pubDate>Sun, 07 Jun 2020 09:11:52 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/blacklivesmatter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>culture</title>
+      <link>https://mlavi.github.io/tags/culture/</link>
+      <pubDate>Sun, 07 Jun 2020 09:11:52 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>education</title>
+      <link>https://mlavi.github.io/tags/education/</link>
+      <pubDate>Sun, 07 Jun 2020 09:11:52 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life</title>
+      <link>https://mlavi.github.io/tags/life/</link>
+      <pubDate>Thu, 26 Mar 2020 12:23:12 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://mlavi.github.io/tags/git/</link>
+      <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitOps</title>
+      <link>https://mlavi.github.io/tags/gitops/</link>
+      <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/gitops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operators</title>
+      <link>https://mlavi.github.io/tags/operators/</link>
+      <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/operators/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://mlavi.github.io/tags/tutorial/</link>
+      <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>version-control</title>
+      <link>https://mlavi.github.io/tags/version-control/</link>
+      <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/tags/version-control/</guid>
       <description></description>
     </item>
     
@@ -58,15 +297,6 @@
     </item>
     
     <item>
-      <title>bootstrap</title>
-      <link>https://mlavi.github.io/tags/bootstrap/</link>
-      <pubDate>Sat, 05 May 2018 13:42:39 -0700</pubDate>
-      
-      <guid>https://mlavi.github.io/tags/bootstrap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>pattern</title>
       <link>https://mlavi.github.io/tags/pattern/</link>
       <pubDate>Sat, 05 May 2018 13:42:39 -0700</pubDate>
@@ -85,38 +315,11 @@
     </item>
     
     <item>
-      <title>calm</title>
+      <title>Calm</title>
       <link>https://mlavi.github.io/tags/calm/</link>
       <pubDate>Sun, 22 Apr 2018 12:46:39 -0700</pubDate>
       
       <guid>https://mlavi.github.io/tags/calm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cloud-init</title>
-      <link>https://mlavi.github.io/tags/cloud-init/</link>
-      <pubDate>Sun, 22 Apr 2018 12:46:39 -0700</pubDate>
-      
-      <guid>https://mlavi.github.io/tags/cloud-init/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://mlavi.github.io/tags/linux/</link>
-      <pubDate>Sun, 22 Apr 2018 12:46:39 -0700</pubDate>
-      
-      <guid>https://mlavi.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>security</title>
-      <link>https://mlavi.github.io/tags/security/</link>
-      <pubDate>Sun, 22 Apr 2018 12:46:39 -0700</pubDate>
-      
-      <guid>https://mlavi.github.io/tags/security/</guid>
       <description></description>
     </item>
     
@@ -175,24 +378,6 @@
     </item>
     
     <item>
-      <title>pets</title>
-      <link>https://mlavi.github.io/tags/pets/</link>
-      <pubDate>Wed, 25 Jan 2017 11:05:13 -0700</pubDate>
-      
-      <guid>https://mlavi.github.io/tags/pets/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Configuration Management</title>
-      <link>https://mlavi.github.io/tags/configuration-management/</link>
-      <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
-      
-      <guid>https://mlavi.github.io/tags/configuration-management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>immutable</title>
       <link>https://mlavi.github.io/tags/immutable/</link>
       <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
@@ -207,15 +392,6 @@
       <pubDate>Sat, 12 Mar 2016 15:44:02 -0800</pubDate>
       
       <guid>https://mlavi.github.io/tags/declarative/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>operating system</title>
-      <link>https://mlavi.github.io/tags/operating-system/</link>
-      <pubDate>Sat, 12 Mar 2016 15:44:02 -0800</pubDate>
-      
-      <guid>https://mlavi.github.io/tags/operating-system/</guid>
       <description></description>
     </item>
     
@@ -256,38 +432,11 @@
     </item>
     
     <item>
-      <title>Infrastructure as Code</title>
-      <link>https://mlavi.github.io/tags/infrastructure-as-code/</link>
-      <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
-      
-      <guid>https://mlavi.github.io/tags/infrastructure-as-code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>culture</title>
-      <link>https://mlavi.github.io/tags/culture/</link>
-      <pubDate>Tue, 20 Oct 2015 12:00:00 -0700</pubDate>
-      
-      <guid>https://mlavi.github.io/tags/culture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>definition</title>
       <link>https://mlavi.github.io/tags/definition/</link>
       <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
       
       <guid>https://mlavi.github.io/tags/definition/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>artifact</title>
-      <link>https://mlavi.github.io/tags/artifact/</link>
-      <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
-      
-      <guid>https://mlavi.github.io/tags/artifact/</guid>
       <description></description>
     </item>
     
@@ -387,15 +536,6 @@
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
       <guid>https://mlavi.github.io/tags/webmaster/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>configuration</title>
-      <link>https://mlavi.github.io/tags/configuration/</link>
-      <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
-      
-      <guid>https://mlavi.github.io/tags/configuration/</guid>
       <description></description>
     </item>
     

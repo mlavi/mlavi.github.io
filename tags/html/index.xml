@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 23 Apr 2015 12:59:26 -0700</lastBuildDate>
-    
-	<atom:link href="https://mlavi.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 23 Apr 2015 12:59:26 -0700</lastBuildDate><atom:link href="https://mlavi.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTML Slide Show Survey</title>
       <link>https://mlavi.github.io/post/html-slideshow-survey/</link>
@@ -20,7 +16,7 @@
       <guid>https://mlavi.github.io/post/html-slideshow-survey/</guid>
       <description>&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
 We already have a universal, open system for communication
-called the web, so let&#39;s explore web presentation applications.&lt;/p&gt;</description>
+called the web, so let&amp;rsquo;s explore web presentation applications.&lt;/p&gt;</description>
     </item>
     
   </channel>

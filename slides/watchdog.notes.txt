@@ -1,7 +1,18 @@
 # https://github.com/gorakhargosh/watchdog
+
+vs.
+- https://github.com/emcrisostomo/fswatch
+  - brew install fswatch
+    - sudo sysctl fs.inotify.max_user_watches=524288
+    - add to: /etc/sysctl.conf
+- watchman by FBeng
+  # watchman -- trigger $(pwd) antsy '*xml,.ansible-lint' -- ansible_lint_runplaybook
+  # watchman watch $(pwd)
+- git pre-commit hooks
+
 # sudo apt-get install python-pip python-landslide
 
-cd ~/Documents/github.com/mlavi/hugo/static/slides
+gcd hugo && cd static/slides
 sudo pip install --upgrade virtualenv
 virtualenv landslide
 . landslide/bin/activate.fish

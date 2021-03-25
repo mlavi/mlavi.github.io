@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drafts on Mark&#39;s Blog</title>
+    <link>https://mlavi.github.io/draft/</link>
+    <description>Recent content in Drafts on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright><atom:link href="https://mlavi.github.io/draft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://mlavi.github.io/draft/automatic_maturity_assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlavi.github.io/draft/automatic_maturity_assessment/</guid>
+      <description>tags: [&amp;lsquo;Maturity&amp;rsquo;] draft: true date: &amp;ldquo;2020-02-09T16:29:10-06:00&amp;rdquo; title: &amp;ldquo;Automated Maturity Assessment&amp;rdquo; Notes From JenkinsWorld 2019 SF, Salesforce talk  What does good look like?  Categorize criteria: building vs. deployment vs testing vs reporting 5 expertise levels: base, beginner, Intermediate, Advanced, Experts: show org examples   Team CI/CD adoption:  At SFDC.com, of 90 scrum teams, over 7 domains, 30 have adopted in first six months: asked the Product Owner, Team Lead, etc.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mlavi.github.io/draft/career-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlavi.github.io/draft/career-start/</guid>
+      <description>tags: [&amp;lsquo;career&amp;rsquo;, &amp;lsquo;DevOps&amp;rsquo;] draft: true date: &amp;ldquo;2020-02-09T16:29:10-06:00&amp;rdquo; title: &amp;ldquo;Career as a Feedback Loop&amp;rdquo; Career as a Feedback Loop: serial DevOps? Nomadic ramblings on the attention economy of cloud, web, Internet native
+I Couldn&amp;rsquo;t Get a Job with my Degree! After graduation with my B.S. Mechanical Engineering from Boston University, I began my search for work. It was during a recession. It wasn&amp;rsquo;t for a lack of trying, I sent out over a hundred resumes with customized cover letters.</description>
+    </item>
+    
+  </channel>
+</rss>

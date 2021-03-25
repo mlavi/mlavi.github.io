@@ -1,0 +1,33 @@
+\input{visual-git-guide_mark.tex}
+\geometry{papersize={21\g,14\g}}
+\begin{document}
+\begin{tikzpicture}[main]
+    \boundingbox
+    \historynode[0,2]
+    \indexnode[0,0]
+    \worknode[0,-2]
+    \remotenode[0,4]
+
+    \path [line]
+        (work.north east)
+            edge node[cmd] {git add \emph{files}}
+        (index.south east)
+        (index.north east)
+            edge node[cmd] {git commit}
+        (head.south east)
+	(head.north east)
+	    edge node[cmd] {git push \emph{remote} \emph{branch}}
+	(remote.south east)
+	(remote.south west)
+	    edge node[cmd] {git fetch || git pull}
+	(head.north west)
+	(index.north west)
+        (index.south west)
+            edge node[cmd] {git checkout -- \emph{files}}
+        (work.north west)
+        (head.south west)
+            edge node[cmd] {git reset -- \emph{files}}
+        (index.north west)
+        ;
+\end{tikzpicture}
+\end{document}

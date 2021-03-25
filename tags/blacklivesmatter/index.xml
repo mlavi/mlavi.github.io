@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BlackLivesMatter on Mark&#39;s Blog</title>
+    <link>https://mlavi.github.io/tags/blacklivesmatter/</link>
+    <description>Recent content in BlackLivesMatter on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 09:11:52 -0500</lastBuildDate><atom:link href="https://mlavi.github.io/tags/blacklivesmatter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The American Soul: A Way Forward on Juneteenth</title>
+      <link>https://mlavi.github.io/post/personal/blacklivesmatter/</link>
+      <pubDate>Sun, 07 Jun 2020 09:11:52 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/post/personal/blacklivesmatter/</guid>
+      <description>A State of Emergency In the past three months, the soul of America has been laid bare in increasing amounts as we address our society&amp;rsquo;s response to our impaired health, economic, and political processes. There is a single crisis in all of this: our attitude as citizens to come together and solve any problem. America has been divided and exploited by those who profit by perpetuating the current system of inequalities of our society.</description>
+    </item>
+    
+    <item>
+      <title>Version Control for Operators</title>
+      <link>https://mlavi.github.io/post/git-for-operators/</link>
+      <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/post/git-for-operators/</guid>
+      <description>&lt;p&gt;Version Control is an essential tool making your work reproducible and visible, which can unlock profound amplifying effects of your contributions. As operators
+grow into developers, they can build toward state of the art &lt;a href=&#34;#gitops-the-convergence-of-devops&#34;&gt;GitOps&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

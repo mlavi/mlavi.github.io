@@ -1,0 +1,427 @@
+content/about.md: by the term [DevOps](https://en.wikipedia.org/wiki/DevOps).
+content/about.md: on [LinkedIn](https://www.linkedin.com/in/marklavi)
+content/about.md:You can follow Mark on [Twitter @calm_mark](https://twitter.com/calm_mark)
+content/about.md: and [GitHub](https://github.com/mlavi)
+content/post/artifact_repositories.md:* [Software Versioning](https://en.wikipedia.org/wiki/Software_versioning) at Wikipedia
+content/post/artifact_repositories.md:* [Semantic Versioning](http://semver.org/)
+content/post/artifact_repositories.md:* [GNU Coding Standards: Release Version Numbers](https://www.gnu.org/prep/standards/html_node/Releases.html#index-version-numbers_002c-for-releases)
+content/post/artifact_repositories.md:on [DOAP: Description of a Project](https://github.com/edumbill/doap/wiki).
+content/post/artifact_repositories.md:[Feature Matrix of Archiva, Artifactory, Maven](http://binary-repositories-comparison.github.io/)
+content/post/artifact_repositories.md:* [Docker Hub](https://hub.docker.com/)
+content/post/artifact_repositories.md:* [Quay.io](https://quay.io/) and [CoreOS Enterprise Registry](https://coreos.com/products/enterprise-registry/)
+content/post/artifact_repositories.md:* [Google Container Registry](https://cloud.google.com/container-registry/)
+content/post/artifact_repositories.md:* [Amazon EC2 Container Registry](https://aws.amazon.com/ecr/details/)
+content/post/artifact_repositories.md:Along with [Vagrant](https://www.vagrantup.com/) box hosting:
+content/post/artifact_repositories.md:* [Atlas](https://atlas.hashicorp.com/search/)
+content/post/artifact_repositories.md:* [VagrantBox.es](http://www.vagrantbox.es/)
+content/post/artifact_repositories.md:Personally, I've had very good experience with [JFrog's Artifactory](http://www.jfrog.com/open-source/),
+content/post/artifact_repositories.md:of content delivery networks such as Akami, [CacheFly](https://cachefly.com), and Fastly
+content/post/artifact_repositories.md:and [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
+content/post/artifact_repositories.md:* JFrog's [Bintray](https://bintray.com)
+content/post/artifact_repositories.md:* [SourceForge](http://sf.net)
+content/post/artifact_repositories.md:  * [CDNJS](https://cdnjs.com/about)
+content/post/artifact_repositories.md:  * [jsDelivr](http://www.jsdelivr.com/)
+content/post/artifact_repositories.md:One potentially biased resource gives a good overview of the market [http://www.cdnplanet.com/]
+content/post/blog-link-navigation.md:± |master {1} U:3 ✗| → grep -R http content
+content/post/blog-link-navigation.md:content/about.md: by the term [DevOps](https://en.wikipedia.org/wiki/DevOps).
+content/post/blog-link-navigation.md:content/about.md: on [LinkedIn](https://www.linkedin.com/in/marklavi)
+content/post/blog-link-navigation.md:content/about.md:You can follow Mark on [Twitter @calm_mark](https://twitter.com/calm_mark)
+content/post/blog-link-navigation.md:content/about.md: and [GitHub](https://github.com/mlavi)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:* [Software Versioning](https://en.wikipedia.org/wiki/Software_versioning) at Wikipedia
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:* [Semantic Versioning](http://semver.org/)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:* [GNU Coding Standards: Release Version Numbers](https://www.gnu.org/prep/standards/html_node/Releases.html#index-version-numbers_002c-for-releases)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:on [DOAP: Description of a Project](https://github.com/edumbill/doap/wiki).
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:[Feature Matrix of Archiva, Artifactory, Maven](http://binary-repositories-comparison.github.io/)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:* [Docker Hub](https://hub.docker.com/)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:* [Quay.io](https://quay.io/) and [CoreOS Enterprise Registry](https://coreos.com/products/enterprise-registry/)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:* [Google Container Registry](https://cloud.google.com/container-registry/)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:* [Amazon EC2 Container Registry](https://aws.amazon.com/ecr/details/)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:Along with [Vagrant](https://www.vagrantup.com/) box hosting:
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:* [Atlas](https://atlas.hashicorp.com/search/)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:* [VagrantBox.es](http://www.vagrantbox.es/)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:Personally, I've had very good experience with [JFrog's Artifactory](http://www.jfrog.com/open-source/),
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:of content delivery networks such as Akami, [CacheFly](https://cachefly.com), and Fastly
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:and [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:* JFrog's [Bintray](https://bintray.com)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:* [SourceForge](http://sf.net)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:  * [CDNJS](https://cdnjs.com/about)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:  * [jsDelivr](http://www.jsdelivr.com/)
+content/post/blog-link-navigation.md:content/post/artifact_repositories.md:One potentially biased resource gives a good overview of the market [http://www.cdnplanet.com/]
+content/post/blog-link-navigation.md:content/post/build-lamp-stack-with-phing.md:[VizAnt](http://vizant.sourceforge.net).
+content/post/blog-link-navigation.md:content/post/build-lamp-stack-with-phing.md:Ultimately, I found an Ant implementation written in PHP called [Phing](http://phing.info) (PHing Is Not GNU make)
+content/post/blog-link-navigation.md:content/post/build-lamp-stack-with-phing.md:- http://sgi.com was one of the first web sites I ever saw with [NCSA Mosaic](http://en.wikipedia.org/wiki/Mosaic_(web_browser)
+content/post/blog-link-navigation.md:content/post/build-lamp-stack-with-phing.md: think [Terminator 2](https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day#Effects).
+content/post/blog-link-navigation.md:content/post/build-lamp-stack-with-phing.md: - [Archived home page from 1997](https://web.archive.org/web/19970605011712/http://www.sgi.com/)
+content/post/blog-link-navigation.md:content/post/build-lamp-stack-with-phing.md:[RCS](https://en.wikipedia.org/wiki/Revision_Control_System),
+content/post/blog-link-navigation.md:content/post/build-lamp-stack-with-phing.md: cousin and functional equivalent to [CVS](https://en.wikipedia.org/wiki/Concurrent_Versions_System)
+content/post/blog-link-navigation.md:content/post/build-lamp-stack-with-phing.md: However, it ran only on [IRIX](https://en.wikipedia.org/wiki/IRIX), which was SGI's flavor of
+content/post/blog-link-navigation.md:content/post/build-lamp-stack-with-phing.md: [Subversion (svn)](https://en.wikipedia.org/wiki/Apache_Subversion)
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md:http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md: [BOFH: Bastard Operator From Hell inspired by reality](https://en.wikipedia.org/wiki/Bastard_Operator_From_Hell).
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md:* Puppet: open source with enterprise licensing/support at [PuppetLabs](https://puppet.com/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md:* Chef: open source with enterprise licensing/support at [Chef Software](https://www.chef.io/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md:* Salt: open source with enterprise licensing/support at [SaltStack, Inc.](https://saltstack.com/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md:* Ansible: open source with commercial products at [RedHat](https://www.ansible.com/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md: "all of the things" ([a popular meme](https://memegenerator.net/X-All-The-Things))
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment.md:http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment.md:https://oduinn.com/2014/06/04/farewell-to-tinderbox/)!
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md:http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/,
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md:The term [DevOps is about six years old](https://en.wikipedia.org/wiki/DevOps)
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md: [DevOpsDays](http://www.devopsdays.org/),
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md: [DevOps Meetup groups](http://www.meetup.com/find/?allMeetups=false&keywords=devops&radius=50),
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md: and [related conferences](http://devopsconferences.com/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md: __[The DevOps Handbook](https://itrevolution.com/book/the-devops-handbook/)__
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md:In August, 2016 [Nutanix](https://www.nutanix.com/products/calm/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints.md:http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints.md: (and accomplishing [Patrick Dubois' original motivation](https://groups.google.com/forum/#!topic/agile-system-administration/HKCTSee2u4w)
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure.md:http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure.md:"[Pets versus Cattle](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)"
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure.md:Per the [Internet meme](https://memegenerator.net/X-All-The-Things),
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure.md: the approach is *[STONITH](https://en.wikipedia.org/wiki/STONITH)*
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure.md: *[immutable](https://en.wiktionary.org/wiki/immutable)* =
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-why-is-devops-so-hard.md:http://calm.io/2015/10/20/why-is-devops-so-hard/,
+content/post/blog-link-navigation.md:content/post/calm.io-recap/calm.io-why-is-devops-so-hard.md: "[Pets versus Cattle](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)"
+content/post/blog-link-navigation.md:content/post/calm.io-recap.md: [Calm.io blog](http://calm.io/author/mark). Nutanix acquired Calm.io and I
+content/post/blog-link-navigation.md:content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2015/10/20/why-is-devops-so-hard/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2016/05/24/configuration-management-in-the-devops-world/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/)
+content/post/blog-link-navigation.md:content/post/calm.io-recap.md: [We have blogged previously](http://www.calm.io/2016/06/09/building-a-cicd-pipeline-with-docker-and-calm-part-2/)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:- 2015-08-19: presented at [Advanced AWS Meetup](http://www.meetup.com/AdvancedAWS/events/223822846/)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:- 2015-05-16: presented at [RootConf 2015](https://rootconf.talkfunnel.com/2015/62-container-infrastructure-strategy)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md: layers resembles [OSGi architecture](https://en.wikipedia.org/wiki/OSGi#Architecture).
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:- 2015-04-28: presented to the technical staff of [TicketFly](http://www.ticketfly.com/about-us) at the invitation of Jerome, Director of Technology.
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:- 2015-04-16: led the open space session at the Container Unconference, preceding [Container Camp @ San Francisco 2015](https://container.camp/sf-2015/).
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:(https://pantheon.io/blog/why-we-built-pantheon-containers-instead-virtual-machines)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[chroot jails](https://en.wikipedia.org/wiki/Chroot) earlier in my career,
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:but [Docker](http://docker.com) made Linux containers (LXC) easy to use,
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:just as [Vagrant](http://vagrantup.com) has done for Virtual Machines.
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[12 Fractured Apps](https://medium.com/@kelseyhightower/12-fractured-apps-1080c73d481c)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[container layer](http://docs.docker.com/terms/layer/) is a container unto itself and
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[they can be added together](http://docs.docker.com/reference/builder/#from) to **compose** a bigger container.
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:* [CoreOS](http://coreos.com/)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:* [Project Atomic](http://www.projectatomic.io/docs/introduction/) by Red Hat
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:* [RancherOS](http://rancher.com/rancher-os/)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:* 'Snappy' [Ubuntu Core](http://www.ubuntu.com/cloud/tools/snappy)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:* [Docker engine](https://www.docker.com/docker-engine)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:* [CoreOS rkt](https://coreos.com/rkt/docs/latest/)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:* [sytemd-nspawn](http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:* [LXC/LXD](https://linuxcontainers.org/)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:* [Alpine](https://hub.docker.com/_/alpine/)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:* [Baseimage-docker](http://phusion.github.io/baseimage-docker/)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:* [Passenger-docker](https://github.com/phusion/passenger-docker#why_use)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[This idea was introduced](https://www.youtube.com/watch?v=M9hBsRUeRdg)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:at the [CoreOS Meetup](http://www.meetup.com/coreos/events/215452012/)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[a partial reference](https://www.youtube.com/watch?v=P3sO9URqOhE)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[Getting Weird with Containers](https://www.youtube.com/watch?v=gMpldbcMHuI).
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:This is an example of the [pets versus cattle](https://news.ycombinator.com/item?id=7311704) discussion,
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:but then use [Packer to build your container artifact](https://packer.io/docs/builders/docker.html).
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[Ansible](http://www.ansible.com/blog/ansible-and-containers-why-and-how) and
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[Chef](https://docs.chef.io/containers.html)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:([slides](http://www.slideshare.net/mpgoetz/packing-it-in-images-containers-and-config-management-37015676)),
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:while potentially supported by [Puppet](https://puppetlabs.com/blog/simplify-managing-docker-puppet)
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:and [SaltStack](http://saltstack.com/saltstack-delivers-more-automation-docker-lxc-application-containers/),
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:(https://www.devco.net/archives/2015/02/24/moving-a-service-from-puppet-to-docker-2.php).
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[Apache Mesos](http://mesos.apache.org/), [Google Kubernetes](http://kubernetes.io/),
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:or a tool like [Terraform](http://terraform.io) to inform your load balancer, DNS, monitoring,
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[Twelve-Factor App](http://12factor.net/), but this application model certainly *does not*
+content/post/blog-link-navigation.md:content/post/container-infrastructure-strategy.md:[Reactive Manifesto](http://www.reactivemanifesto.org/).
+content/post/blog-link-navigation.md:content/post/database_change_management.md:[PassPoints](https://web.archive.org/web/20011218000620/http://www.passpoints.com/info/company_and_vision.shtml)
+content/post/blog-link-navigation.md:content/post/database_change_management.md:http://schemaspy.sourceforge.net/ -- I think this would be a valuable post commit tool to add to
+content/post/blog-link-navigation.md:content/post/database_change_management.md:choice was the [Play 1 framework](https://en.wikipedia.org/wiki/Play_framework) for Java.
+content/post/blog-link-navigation.md:content/post/database_change_management.md:[Flyway open source project](http://flywaydb.org/getstarted/how.html), but when I came
+content/post/blog-link-navigation.md:content/post/database_change_management.md:https://code.google.com/p/dbdeploy/wiki/GuidelinesForUsingDbdeploy
+content/post/blog-link-navigation.md:content/post/database_change_management.md:- http://flywaydb.org/getstarted/how.html
+content/post/blog-link-navigation.md:content/post/database_change_management.md:- http://dbv.vizuina.com/ PHP based tool with change review
+content/post/blog-link-navigation.md:content/post/database_change_management.md:- https://code.google.com/p/dbdeploy/wiki/GettingStarted
+content/post/blog-link-navigation.md:content/post/database_change_management.md:- http://www.liquibase.org/quickstart.html XML based tool
+content/post/blog-link-navigation.md:content/post/database_change_management.md:= http://launchdarkly.com/
+content/post/blog-link-navigation.md:content/post/database_change_management.md:- http://blog.codinghorror.com/get-your-database-under-version-control/
+content/post/blog-link-navigation.md:content/post/database_change_management.md:- http://www.infoq.com/articles/Database-Version-Control
+content/post/blog-link-navigation.md:content/post/declarative_os.md:[NixOS Linux](http://nixos.org/) is Linux operating system distribution which
+content/post/blog-link-navigation.md:content/post/declarative_os.md:[remote operation](http://nixos.org/nixops/). [Nix](http://nixos.org/nix/),
+content/post/blog-link-navigation.md:content/post/declarative_os.md:[Hydra](http://nixos.org/hydra/). There is a public repository of Nix
+content/post/blog-link-navigation.md:content/post/declarative_os.md:[https://www.domenkozar.com/2014/03/11/why-puppet-chef-ansible-arent-good-enough-and-we-can-do-better/]
+content/post/blog-link-navigation.md:content/post/declarative_os.md:I found a [Nix/NixOS MeetUp](https://www.meetup.com/Bay-Area-Nix-NixOS-User-Group/)
+content/post/blog-link-navigation.md:content/post/declarative_os.md:[Qubes OS](https://www.qubes-os.org/tour/#what-is-qubes-os) is a "reasonably
+content/post/blog-link-navigation.md:content/post/declarative_os.md:[Qubes integrates SaltStack](https://www.qubes-os.org/doc/salt/) for OS
+content/post/blog-link-navigation.md:content/post/declarative_os.md:[Getting Started](https://www.qubes-os.org/getting-started/) section to be a
+content/post/blog-link-navigation.md:content/post/declarative_os.md:The [Xen Project](http://xenproject.org/) has some early integration work with
+content/post/blog-link-navigation.md:content/post/declarative_os.md:[Unikernels](http://wiki.xenproject.org/wiki/Unikernels)
+content/post/blog-link-navigation.md:content/post/declarative_os.md:and [XenServer](http://xenserver.org/partners/docker.html) integrates
+content/post/blog-link-navigation.md:content/post/declarative_os.md:[Docker via APIs to a a CoreOS VM](https://xen-orchestra.com/blog/docker-support-in-xenserver-the-ultimate-guide/).
+content/post/blog-link-navigation.md:content/post/declarative_os.md:[Guix System Distribution](http://www.gnu.org/software/guix/) is GNU OS that
+content/post/blog-link-navigation.md:content/post/declarative_os.md:[system configuration](http://www.gnu.org/software/guix/manual/html_node/System-Configuration.html).
+content/post/blog-link-navigation.md:content/post/declarative_os.md:- Intel's [Clear Linux Project](https://clearlinux.org/) is distribution which
+content/post/blog-link-navigation.md:content/post/declarative_os.md:  stateless](https://clearlinux.org/features/stateless). This approach should
+content/post/blog-link-navigation.md:content/post/declarative_os.md:- Docker's recent acquisition of [Unikernel Systems](https://blog.docker.com/2016/01/unikernel/)
+content/post/blog-link-navigation.md:content/post/declarative_os.md:  and the micro-kernel movement as a whole (http://unikernel.org/projects/)
+content/post/blog-link-navigation.md:content/post/devops-automation.md:- "Perfect is the enemy of good." --[Volare](http://en.wikiquote.org/wiki/Perfection) (paraphrased)
+content/post/blog-link-navigation.md:content/post/devops-automation.md:- "Fail fast." --[Ward Cunningham](http://en.wikiquote.org/wiki/Ward_Cunningham#The_Simplest_Thing_that_Could_Possibly_Work)
+content/post/blog-link-navigation.md:content/post/devops-automation.md:  (paraphrased as [#failfast](https://twitter.com/hashtag/failfast))
+content/post/blog-link-navigation.md:content/post/devops-maturity-diagram.md:In August, 2016 [Nutanix](https://www.nutanix.com/products/calm/)
+content/post/blog-link-navigation.md:content/post/devops-maturity-diagram.md: [Sunil Potti](https://www.linkedin.com/in/sunilpotti/)
+content/post/blog-link-navigation.md:content/post/devops-maturity-diagram.md: [@sunilpotti](https://twitter.com/sunilpotti),
+content/post/blog-link-navigation.md:content/post/devops-maturity-diagram.md: [Binny Gill](https://www.linkedin.com/in/binny-gill-015977/)
+content/post/blog-link-navigation.md:content/post/devops-maturity-diagram.md: [@binnygill](https://twitter.com/binnygill),
+content/post/blog-link-navigation.md:content/post/devops-maturity-diagram.md: __[Complexity Avalanche](http://blog.tsia.com/blog/your-strategy-for-escaping-the-complexity-avalanche)__
+content/post/blog-link-navigation.md:content/post/devops-maturity-diagram.md: [Digital Transformation Journey Infographic](http://blog.tsia.com/blog/navigating-the-world-of-digital-transformation-offers-infographic).
+content/post/blog-link-navigation.md:content/post/devops-maturity-diagram.md: [annual State of DevOps surveys](https://devops-research.com/research.html),
+content/post/blog-link-navigation.md:content/post/devops-maturity-diagram.md: [pets versus cattle](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)
+content/post/blog-link-navigation.md:content/post/devops_demystified.md:- 2016-12-17: presented at [Cloud Computing Basics](https://www.meetup.com/Cloud-Computing-Basics/events/234108925/)
+content/post/blog-link-navigation.md:content/post/devops_demystified.md:    - Online presentation captured and uploaded to [YouTube](https://www.youtube.com/watch?v=7WBEhtQssn8):
+content/post/blog-link-navigation.md:content/post/devops_demystified.md:<iframe width="640" height="360" src="https://www.youtube.com/embed/7WBEhtQssn8" frameborder="0" allowfullscreen></iframe>
+content/post/blog-link-navigation.md:content/post/devops_demystified.md:- 2015-11-17: presented at [AWS Bay Area Meetup](http://www.meetup.com/awsgurus/events/226547082/)
+content/post/blog-link-navigation.md:content/post/devops_demystified.md:<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">RT <a href="https://twitter.com/raravena80">@raravena80</a>: Awesome Meetup at <a href="https://twitter.com/Coupa">@Coupa</a> HQ with <a href="https://twitter.com/calm_mark">@calm_mark</a> !! <a href="https://t.co/5kljKrreD3">pic.twitter.com/5kljKrreD3</a></p>&mdash; Coupa Software (@Coupa) <a href="https://twitter.com/Coupa/status/666818169798021120">November 18, 2015</a></blockquote>
+content/post/blog-link-navigation.md:content/post/devops_demystified.md:- 2015-10-03: presented at [Silicon Valley Code Camp 2015](https://www.siliconvalley-codecamp.com/Session/2015/demystifying-devops)
+content/post/blog-link-navigation.md:content/post/devops_demystified.md:<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;DevOps is a culturally rendered term.&quot; <a href="https://twitter.com/calm_mark">@calm_mark</a></p>&mdash; Noah Kantrowitz (@kantrn) <a href="https://twitter.com/kantrn/status/650414900682973184">October 3, 2015</a></blockquote>
+content/post/blog-link-navigation.md:content/post/diagram.md:  I used Wikipedia and [alternativeTo](http://alternativeto.net) to survey the market for competitors
+content/post/blog-link-navigation.md:content/post/diagram.md:  to my favorite open source object drawing tool, [Dia](https://wiki.gnome.org/Apps/Dia).
+content/post/blog-link-navigation.md:content/post/diagram.md:I made it with [PlantUML in Eclipse with GraphViz](http://www.plantuml.com/eclipse.html) with a view
+content/post/blog-link-navigation.md:content/post/diagram.md:There are other [UML modelers](https://en.wikipedia.org/wiki/List_of_Unified_Modeling_Language_tools),
+content/post/blog-link-navigation.md:content/post/diagram.md: I think [StarUML](http://blog.staruml.io/)
+content/post/blog-link-navigation.md:content/post/diagram.md: and [yEd](https://www.yworks.com/products/yed) are noteworthy.
+content/post/blog-link-navigation.md:content/post/diagram.md:[Business Process Modeling](https://en.wikipedia.org/wiki/Business_process_modeling)
+content/post/blog-link-navigation.md:content/post/diagram.md:[BPEL](https://en.wikipedia.org/wiki/Business_Process_Execution_Language) and
+content/post/blog-link-navigation.md:content/post/diagram.md:[BPMN](https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation).
+content/post/blog-link-navigation.md:content/post/diagram.md:and [Sirius](http://www.eclipse.org/sirius/getstarted.html)
+content/post/blog-link-navigation.md:content/post/diagram.md: which might work with implementations like [Apache ServiceMix](http://servicemix.apache.org/)
+content/post/blog-link-navigation.md:content/post/diagram.md: and [ProcessMaker](https://www.processmaker.com/)?
+content/post/blog-link-navigation.md:content/post/diagram.md: [TOSCA](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tosca)
+content/post/blog-link-navigation.md:content/post/diagram.md: and [CAMP](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=camp)
+content/post/blog-link-navigation.md:content/post/first.md: with [Jekyll and GitHub Pages](http://jekyllrb.com/docs/github-pages/) before settling on
+content/post/blog-link-navigation.md:content/post/first.md: [Hugo](http://gohugo.io/overview/introduction/): it has been a fascinating study in scope creep.
+content/post/blog-link-navigation.md:content/post/first.md:Recently, I discovered [MkDocs](http://www.mkdocs.org/) for "Project documentation with Markdown."
+content/post/blog-link-navigation.md:content/post/first.md: [Plone](http://plone.org/),
+content/post/blog-link-navigation.md:content/post/first.md: [TWiki](http://twiki.org/) & [Foswiki](http://foswiki.org/),
+content/post/blog-link-navigation.md:content/post/first.md: [Joomla](http://www.joomla.org/),
+content/post/blog-link-navigation.md:content/post/first.md: [Drupal](http://drupal.org),
+content/post/blog-link-navigation.md:content/post/first.md: [WordPress](http://wordpress.org),
+content/post/blog-link-navigation.md:content/post/first.md: and [ModX](http://modx.com).
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:exhaustive lists on http://alternativeto.net/software/microsoft-powerpoint/
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:and http://alternativeto.net/software/prezi/
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Biggie: [Source](http://github.com/tmcw/big/)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](http://www.macwright.org/biggie/) author in Markdown, interesting forks!
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * CSSS: [Source](https://github.com/LeaVerou/CSSS)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](http://leaverou.github.io/CSSS/)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [BlogPost](http://lea.verou.me/2010/10/my-ft2010-slides-and-csss-my-presentation-framework/)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Deck.js: [Source](https://github.com/imakewebthings/deck.js)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](http://imakewebthings.com/deck.js)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Flowtime.js: [Source](https://github.com/marcolago/flowtime.js)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](http://flowtime-js.marcolago.com) 2D HUD FTW!
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Scrolldeck.js: [Demo](http://johnpolacek.github.io/scrolldeck.js)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Shower: [Source](https://github.com/shower/shower)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](http://shwr.me)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Stack: [Source](https://github.com/mbostock/stack/)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](https://mbostock.github.io/stack/)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Slippy: [Source](https://github.com/Seldaek/slippy/)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](http://slides.seld.be/?file=2010-05-30+Example.html#1)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Impress.js: [Source](https://github.com/impress/impress.js)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](http://impress.github.io/impress.js)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:      * Hekyll: [Source](https://github.com/bmcmurray/hekyll)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:        || [Demo](http://bmcmurray.github.io/hekyll/preso.htm)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:      * jmpress.js: [Source](https://github.com/jmpressjs/impress.js)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:        || [Demo](http://jmpressjs.github.io/jmpress.js) fork of Impress.js using jQuery
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Slides: [Source](https://github.com/briancavalier/slides)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](http://briancavalier.com/code/slides)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Reveal.js: [Source](https://github.com/hakimel/reveal.js)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](http://lab.hakim.se/reveal-js/): promotes a paid visual editor site
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Landslide: [Source](https://github.com/adamzap/landslide)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Slide Show (S9): [Home](http://slideshow-s9.github.io): Ruby gem
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Google I/O-Slides: [Home](https://code.google.com/p/io-2012-slides/)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Bespoke.js: [Source](https://github.com/markdalgleish/bespoke.js)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](http://markdalgleish.com/projects/bespoke.js/) leverages Yeoman, Grunt, etc.
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * Pres/v/g: [Source](https://github.com/feklee/presvg)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:    || [Demo](http://feklee.github.com/presvg/demo.html)
+content/post/blog-link-navigation.md:content/post/html-slideshow-survey.md:  * PDFCube: [Home](http://code.100allora.it/pdfcube/) || [Source](https://github.com/baol/pdfcube)
+content/post/build-lamp-stack-with-phing.md:[VizAnt](http://vizant.sourceforge.net).
+content/post/build-lamp-stack-with-phing.md:Ultimately, I found an Ant implementation written in PHP called [Phing](http://phing.info) (PHing Is Not GNU make)
+content/post/build-lamp-stack-with-phing.md:- http://sgi.com was one of the first web sites I ever saw with [NCSA Mosaic](http://en.wikipedia.org/wiki/Mosaic_(web_browser)
+content/post/build-lamp-stack-with-phing.md: think [Terminator 2](https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day#Effects).
+content/post/build-lamp-stack-with-phing.md: - [Archived home page from 1997](https://web.archive.org/web/19970605011712/http://www.sgi.com/)
+content/post/build-lamp-stack-with-phing.md:[RCS](https://en.wikipedia.org/wiki/Revision_Control_System),
+content/post/build-lamp-stack-with-phing.md: cousin and functional equivalent to [CVS](https://en.wikipedia.org/wiki/Concurrent_Versions_System)
+content/post/build-lamp-stack-with-phing.md: However, it ran only on [IRIX](https://en.wikipedia.org/wiki/IRIX), which was SGI's flavor of
+content/post/build-lamp-stack-with-phing.md: [Subversion (svn)](https://en.wikipedia.org/wiki/Apache_Subversion)
+content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md:http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,
+content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md: [BOFH: Bastard Operator From Hell inspired by reality](https://en.wikipedia.org/wiki/Bastard_Operator_From_Hell).
+content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md:* Puppet: open source with enterprise licensing/support at [PuppetLabs](https://puppet.com/)
+content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md:* Chef: open source with enterprise licensing/support at [Chef Software](https://www.chef.io/)
+content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md:* Salt: open source with enterprise licensing/support at [SaltStack, Inc.](https://saltstack.com/)
+content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md:* Ansible: open source with commercial products at [RedHat](https://www.ansible.com/)
+content/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world.md: "all of the things" ([a popular meme](https://memegenerator.net/X-All-The-Things))
+content/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment.md:http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,
+content/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment.md:https://oduinn.com/2014/06/04/farewell-to-tinderbox/)!
+content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md:http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/,
+content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md:The term [DevOps is about six years old](https://en.wikipedia.org/wiki/DevOps)
+content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md: [DevOpsDays](http://www.devopsdays.org/),
+content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md: [DevOps Meetup groups](http://www.meetup.com/find/?allMeetups=false&keywords=devops&radius=50),
+content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md: and [related conferences](http://devopsconferences.com/)
+content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md: __[The DevOps Handbook](https://itrevolution.com/book/the-devops-handbook/)__
+content/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops.md:In August, 2016 [Nutanix](https://www.nutanix.com/products/calm/)
+content/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints.md:http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,
+content/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints.md: (and accomplishing [Patrick Dubois' original motivation](https://groups.google.com/forum/#!topic/agile-system-administration/HKCTSee2u4w)
+content/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure.md:http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,
+content/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure.md:"[Pets versus Cattle](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)"
+content/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure.md:Per the [Internet meme](https://memegenerator.net/X-All-The-Things),
+content/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure.md: the approach is *[STONITH](https://en.wikipedia.org/wiki/STONITH)*
+content/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure.md: *[immutable](https://en.wiktionary.org/wiki/immutable)* =
+content/post/calm.io-recap/calm.io-why-is-devops-so-hard.md:http://calm.io/2015/10/20/why-is-devops-so-hard/,
+content/post/calm.io-recap/calm.io-why-is-devops-so-hard.md: "[Pets versus Cattle](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)"
+content/post/calm.io-recap.md: [Calm.io blog](http://calm.io/author/mark). Nutanix acquired Calm.io and I
+content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/)
+content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2015/10/20/why-is-devops-so-hard/)
+content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/)
+content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/)
+content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2016/05/24/configuration-management-in-the-devops-world/)
+content/post/calm.io-recap.md:  * [Original URL](http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/)
+content/post/calm.io-recap.md: [We have blogged previously](http://www.calm.io/2016/06/09/building-a-cicd-pipeline-with-docker-and-calm-part-2/)
+content/post/container-infrastructure-strategy.md:- 2015-08-19: presented at [Advanced AWS Meetup](http://www.meetup.com/AdvancedAWS/events/223822846/)
+content/post/container-infrastructure-strategy.md:- 2015-05-16: presented at [RootConf 2015](https://rootconf.talkfunnel.com/2015/62-container-infrastructure-strategy)
+content/post/container-infrastructure-strategy.md: layers resembles [OSGi architecture](https://en.wikipedia.org/wiki/OSGi#Architecture).
+content/post/container-infrastructure-strategy.md:- 2015-04-28: presented to the technical staff of [TicketFly](http://www.ticketfly.com/about-us) at the invitation of Jerome, Director of Technology.
+content/post/container-infrastructure-strategy.md:- 2015-04-16: led the open space session at the Container Unconference, preceding [Container Camp @ San Francisco 2015](https://container.camp/sf-2015/).
+content/post/container-infrastructure-strategy.md:(https://pantheon.io/blog/why-we-built-pantheon-containers-instead-virtual-machines)
+content/post/container-infrastructure-strategy.md:[chroot jails](https://en.wikipedia.org/wiki/Chroot) earlier in my career,
+content/post/container-infrastructure-strategy.md:but [Docker](http://docker.com) made Linux containers (LXC) easy to use,
+content/post/container-infrastructure-strategy.md:just as [Vagrant](http://vagrantup.com) has done for Virtual Machines.
+content/post/container-infrastructure-strategy.md:[12 Fractured Apps](https://medium.com/@kelseyhightower/12-fractured-apps-1080c73d481c)
+content/post/container-infrastructure-strategy.md:[container layer](http://docs.docker.com/terms/layer/) is a container unto itself and
+content/post/container-infrastructure-strategy.md:[they can be added together](http://docs.docker.com/reference/builder/#from) to **compose** a bigger container.
+content/post/container-infrastructure-strategy.md:* [CoreOS](http://coreos.com/)
+content/post/container-infrastructure-strategy.md:* [Project Atomic](http://www.projectatomic.io/docs/introduction/) by Red Hat
+content/post/container-infrastructure-strategy.md:* [RancherOS](http://rancher.com/rancher-os/)
+content/post/container-infrastructure-strategy.md:* 'Snappy' [Ubuntu Core](http://www.ubuntu.com/cloud/tools/snappy)
+content/post/container-infrastructure-strategy.md:* [Docker engine](https://www.docker.com/docker-engine)
+content/post/container-infrastructure-strategy.md:* [CoreOS rkt](https://coreos.com/rkt/docs/latest/)
+content/post/container-infrastructure-strategy.md:* [sytemd-nspawn](http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html)
+content/post/container-infrastructure-strategy.md:* [LXC/LXD](https://linuxcontainers.org/)
+content/post/container-infrastructure-strategy.md:* [Alpine](https://hub.docker.com/_/alpine/)
+content/post/container-infrastructure-strategy.md:* [Baseimage-docker](http://phusion.github.io/baseimage-docker/)
+content/post/container-infrastructure-strategy.md:* [Passenger-docker](https://github.com/phusion/passenger-docker#why_use)
+content/post/container-infrastructure-strategy.md:[This idea was introduced](https://www.youtube.com/watch?v=M9hBsRUeRdg)
+content/post/container-infrastructure-strategy.md:at the [CoreOS Meetup](http://www.meetup.com/coreos/events/215452012/)
+content/post/container-infrastructure-strategy.md:[a partial reference](https://www.youtube.com/watch?v=P3sO9URqOhE)
+content/post/container-infrastructure-strategy.md:[Getting Weird with Containers](https://www.youtube.com/watch?v=gMpldbcMHuI).
+content/post/container-infrastructure-strategy.md:This is an example of the [pets versus cattle](https://news.ycombinator.com/item?id=7311704) discussion,
+content/post/container-infrastructure-strategy.md:but then use [Packer to build your container artifact](https://packer.io/docs/builders/docker.html).
+content/post/container-infrastructure-strategy.md:[Ansible](http://www.ansible.com/blog/ansible-and-containers-why-and-how) and
+content/post/container-infrastructure-strategy.md:[Chef](https://docs.chef.io/containers.html)
+content/post/container-infrastructure-strategy.md:([slides](http://www.slideshare.net/mpgoetz/packing-it-in-images-containers-and-config-management-37015676)),
+content/post/container-infrastructure-strategy.md:while potentially supported by [Puppet](https://puppetlabs.com/blog/simplify-managing-docker-puppet)
+content/post/container-infrastructure-strategy.md:and [SaltStack](http://saltstack.com/saltstack-delivers-more-automation-docker-lxc-application-containers/),
+content/post/container-infrastructure-strategy.md:(https://www.devco.net/archives/2015/02/24/moving-a-service-from-puppet-to-docker-2.php).
+content/post/container-infrastructure-strategy.md:[Apache Mesos](http://mesos.apache.org/), [Google Kubernetes](http://kubernetes.io/),
+content/post/container-infrastructure-strategy.md:or a tool like [Terraform](http://terraform.io) to inform your load balancer, DNS, monitoring,
+content/post/container-infrastructure-strategy.md:[Twelve-Factor App](http://12factor.net/), but this application model certainly *does not*
+content/post/container-infrastructure-strategy.md:[Reactive Manifesto](http://www.reactivemanifesto.org/).
+content/post/database_change_management.md:[PassPoints](https://web.archive.org/web/20011218000620/http://www.passpoints.com/info/company_and_vision.shtml)
+content/post/database_change_management.md:http://schemaspy.sourceforge.net/ -- I think this would be a valuable post commit tool to add to
+content/post/database_change_management.md:choice was the [Play 1 framework](https://en.wikipedia.org/wiki/Play_framework) for Java.
+content/post/database_change_management.md:[Flyway open source project](http://flywaydb.org/getstarted/how.html), but when I came
+content/post/database_change_management.md:https://code.google.com/p/dbdeploy/wiki/GuidelinesForUsingDbdeploy
+content/post/database_change_management.md:- http://flywaydb.org/getstarted/how.html
+content/post/database_change_management.md:- http://dbv.vizuina.com/ PHP based tool with change review
+content/post/database_change_management.md:- https://code.google.com/p/dbdeploy/wiki/GettingStarted
+content/post/database_change_management.md:- http://www.liquibase.org/quickstart.html XML based tool
+content/post/database_change_management.md:= http://launchdarkly.com/
+content/post/database_change_management.md:- http://blog.codinghorror.com/get-your-database-under-version-control/
+content/post/database_change_management.md:- http://www.infoq.com/articles/Database-Version-Control
+content/post/declarative_os.md:[NixOS Linux](http://nixos.org/) is Linux operating system distribution which
+content/post/declarative_os.md:[remote operation](http://nixos.org/nixops/). [Nix](http://nixos.org/nix/),
+content/post/declarative_os.md:[Hydra](http://nixos.org/hydra/). There is a public repository of Nix
+content/post/declarative_os.md:[https://www.domenkozar.com/2014/03/11/why-puppet-chef-ansible-arent-good-enough-and-we-can-do-better/]
+content/post/declarative_os.md:I found a [Nix/NixOS MeetUp](https://www.meetup.com/Bay-Area-Nix-NixOS-User-Group/)
+content/post/declarative_os.md:[Qubes OS](https://www.qubes-os.org/tour/#what-is-qubes-os) is a "reasonably
+content/post/declarative_os.md:[Qubes integrates SaltStack](https://www.qubes-os.org/doc/salt/) for OS
+content/post/declarative_os.md:[Getting Started](https://www.qubes-os.org/getting-started/) section to be a
+content/post/declarative_os.md:The [Xen Project](http://xenproject.org/) has some early integration work with
+content/post/declarative_os.md:[Unikernels](http://wiki.xenproject.org/wiki/Unikernels)
+content/post/declarative_os.md:and [XenServer](http://xenserver.org/partners/docker.html) integrates
+content/post/declarative_os.md:[Docker via APIs to a a CoreOS VM](https://xen-orchestra.com/blog/docker-support-in-xenserver-the-ultimate-guide/).
+content/post/declarative_os.md:[Guix System Distribution](http://www.gnu.org/software/guix/) is GNU OS that
+content/post/declarative_os.md:[system configuration](http://www.gnu.org/software/guix/manual/html_node/System-Configuration.html).
+content/post/declarative_os.md:- Intel's [Clear Linux Project](https://clearlinux.org/) is distribution which
+content/post/declarative_os.md:  stateless](https://clearlinux.org/features/stateless). This approach should
+content/post/declarative_os.md:- Docker's recent acquisition of [Unikernel Systems](https://blog.docker.com/2016/01/unikernel/)
+content/post/declarative_os.md:  and the micro-kernel movement as a whole (http://unikernel.org/projects/)
+content/post/devops-automation.md:- "Perfect is the enemy of good." --[Volare](http://en.wikiquote.org/wiki/Perfection) (paraphrased)
+content/post/devops-automation.md:- "Fail fast." --[Ward Cunningham](http://en.wikiquote.org/wiki/Ward_Cunningham#The_Simplest_Thing_that_Could_Possibly_Work)
+content/post/devops-automation.md:  (paraphrased as [#failfast](https://twitter.com/hashtag/failfast))
+content/post/devops-maturity-diagram.md:In August, 2016 [Nutanix](https://www.nutanix.com/products/calm/)
+content/post/devops-maturity-diagram.md: [Sunil Potti](https://www.linkedin.com/in/sunilpotti/)
+content/post/devops-maturity-diagram.md: [@sunilpotti](https://twitter.com/sunilpotti),
+content/post/devops-maturity-diagram.md: [Binny Gill](https://www.linkedin.com/in/binny-gill-015977/)
+content/post/devops-maturity-diagram.md: [@binnygill](https://twitter.com/binnygill),
+content/post/devops-maturity-diagram.md: __[Complexity Avalanche](http://blog.tsia.com/blog/your-strategy-for-escaping-the-complexity-avalanche)__
+content/post/devops-maturity-diagram.md: [Digital Transformation Journey Infographic](http://blog.tsia.com/blog/navigating-the-world-of-digital-transformation-offers-infographic).
+content/post/devops-maturity-diagram.md: [annual State of DevOps surveys](https://devops-research.com/research.html),
+content/post/devops-maturity-diagram.md: [pets versus cattle](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)
+content/post/devops_demystified.md:- 2016-12-17: presented at [Cloud Computing Basics](https://www.meetup.com/Cloud-Computing-Basics/events/234108925/)
+content/post/devops_demystified.md:    - Online presentation captured and uploaded to [YouTube](https://www.youtube.com/watch?v=7WBEhtQssn8):
+content/post/devops_demystified.md:<iframe width="640" height="360" src="https://www.youtube.com/embed/7WBEhtQssn8" frameborder="0" allowfullscreen></iframe>
+content/post/devops_demystified.md:- 2015-11-17: presented at [AWS Bay Area Meetup](http://www.meetup.com/awsgurus/events/226547082/)
+content/post/devops_demystified.md:<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">RT <a href="https://twitter.com/raravena80">@raravena80</a>: Awesome Meetup at <a href="https://twitter.com/Coupa">@Coupa</a> HQ with <a href="https://twitter.com/calm_mark">@calm_mark</a> !! <a href="https://t.co/5kljKrreD3">pic.twitter.com/5kljKrreD3</a></p>&mdash; Coupa Software (@Coupa) <a href="https://twitter.com/Coupa/status/666818169798021120">November 18, 2015</a></blockquote>
+content/post/devops_demystified.md:- 2015-10-03: presented at [Silicon Valley Code Camp 2015](https://www.siliconvalley-codecamp.com/Session/2015/demystifying-devops)
+content/post/devops_demystified.md:<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;DevOps is a culturally rendered term.&quot; <a href="https://twitter.com/calm_mark">@calm_mark</a></p>&mdash; Noah Kantrowitz (@kantrn) <a href="https://twitter.com/kantrn/status/650414900682973184">October 3, 2015</a></blockquote>
+content/post/diagram.md:  I used Wikipedia and [alternativeTo](http://alternativeto.net) to survey the market for competitors
+content/post/diagram.md:  to my favorite open source object drawing tool, [Dia](https://wiki.gnome.org/Apps/Dia).
+content/post/diagram.md:I made it with [PlantUML in Eclipse with GraphViz](http://www.plantuml.com/eclipse.html) with a view
+content/post/diagram.md:There are other [UML modelers](https://en.wikipedia.org/wiki/List_of_Unified_Modeling_Language_tools),
+content/post/diagram.md: I think [StarUML](http://blog.staruml.io/)
+content/post/diagram.md: and [yEd](https://www.yworks.com/products/yed) are noteworthy.
+content/post/diagram.md:[Business Process Modeling](https://en.wikipedia.org/wiki/Business_process_modeling)
+content/post/diagram.md:[BPEL](https://en.wikipedia.org/wiki/Business_Process_Execution_Language) and
+content/post/diagram.md:[BPMN](https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation).
+content/post/diagram.md:and [Sirius](http://www.eclipse.org/sirius/getstarted.html)
+content/post/diagram.md: which might work with implementations like [Apache ServiceMix](http://servicemix.apache.org/)
+content/post/diagram.md: and [ProcessMaker](https://www.processmaker.com/)?
+content/post/diagram.md: [TOSCA](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tosca)
+content/post/diagram.md: and [CAMP](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=camp)
+content/post/first.md: with [Jekyll and GitHub Pages](http://jekyllrb.com/docs/github-pages/) before settling on
+content/post/first.md: [Hugo](http://gohugo.io/overview/introduction/): it has been a fascinating study in scope creep.
+content/post/first.md:Recently, I discovered [MkDocs](http://www.mkdocs.org/) for "Project documentation with Markdown."
+content/post/first.md: [Plone](http://plone.org/),
+content/post/first.md: [TWiki](http://twiki.org/) & [Foswiki](http://foswiki.org/),
+content/post/first.md: [Joomla](http://www.joomla.org/),
+content/post/first.md: [Drupal](http://drupal.org),
+content/post/first.md: [WordPress](http://wordpress.org),
+content/post/first.md: and [ModX](http://modx.com).
+content/post/html-slideshow-survey.md:exhaustive lists on http://alternativeto.net/software/microsoft-powerpoint/
+content/post/html-slideshow-survey.md:and http://alternativeto.net/software/prezi/
+content/post/html-slideshow-survey.md:  * Biggie: [Source](http://github.com/tmcw/big/)
+content/post/html-slideshow-survey.md:    || [Demo](http://www.macwright.org/biggie/) author in Markdown, interesting forks!
+content/post/html-slideshow-survey.md:  * CSSS: [Source](https://github.com/LeaVerou/CSSS)
+content/post/html-slideshow-survey.md:    || [Demo](http://leaverou.github.io/CSSS/)
+content/post/html-slideshow-survey.md:    || [BlogPost](http://lea.verou.me/2010/10/my-ft2010-slides-and-csss-my-presentation-framework/)
+content/post/html-slideshow-survey.md:  * Deck.js: [Source](https://github.com/imakewebthings/deck.js)
+content/post/html-slideshow-survey.md:    || [Demo](http://imakewebthings.com/deck.js)
+content/post/html-slideshow-survey.md:  * Flowtime.js: [Source](https://github.com/marcolago/flowtime.js)
+content/post/html-slideshow-survey.md:    || [Demo](http://flowtime-js.marcolago.com) 2D HUD FTW!
+content/post/html-slideshow-survey.md:  * Scrolldeck.js: [Demo](http://johnpolacek.github.io/scrolldeck.js)
+content/post/html-slideshow-survey.md:  * Shower: [Source](https://github.com/shower/shower)
+content/post/html-slideshow-survey.md:    || [Demo](http://shwr.me)
+content/post/html-slideshow-survey.md:  * Stack: [Source](https://github.com/mbostock/stack/)
+content/post/html-slideshow-survey.md:    || [Demo](https://mbostock.github.io/stack/)
+content/post/html-slideshow-survey.md:  * Slippy: [Source](https://github.com/Seldaek/slippy/)
+content/post/html-slideshow-survey.md:    || [Demo](http://slides.seld.be/?file=2010-05-30+Example.html#1)
+content/post/html-slideshow-survey.md:  * Impress.js: [Source](https://github.com/impress/impress.js)
+content/post/html-slideshow-survey.md:    || [Demo](http://impress.github.io/impress.js)
+content/post/html-slideshow-survey.md:      * Hekyll: [Source](https://github.com/bmcmurray/hekyll)
+content/post/html-slideshow-survey.md:        || [Demo](http://bmcmurray.github.io/hekyll/preso.htm)
+content/post/html-slideshow-survey.md:      * jmpress.js: [Source](https://github.com/jmpressjs/impress.js)
+content/post/html-slideshow-survey.md:        || [Demo](http://jmpressjs.github.io/jmpress.js) fork of Impress.js using jQuery
+content/post/html-slideshow-survey.md:  * Slides: [Source](https://github.com/briancavalier/slides)
+content/post/html-slideshow-survey.md:    || [Demo](http://briancavalier.com/code/slides)
+content/post/html-slideshow-survey.md:  * Reveal.js: [Source](https://github.com/hakimel/reveal.js)
+content/post/html-slideshow-survey.md:    || [Demo](http://lab.hakim.se/reveal-js/): promotes a paid visual editor site
+content/post/html-slideshow-survey.md:  * Landslide: [Source](https://github.com/adamzap/landslide)
+content/post/html-slideshow-survey.md:  * Slide Show (S9): [Home](http://slideshow-s9.github.io): Ruby gem
+content/post/html-slideshow-survey.md:  * Google I/O-Slides: [Home](https://code.google.com/p/io-2012-slides/)
+content/post/html-slideshow-survey.md:  * Bespoke.js: [Source](https://github.com/markdalgleish/bespoke.js)
+content/post/html-slideshow-survey.md:    || [Demo](http://markdalgleish.com/projects/bespoke.js/) leverages Yeoman, Grunt, etc.
+content/post/html-slideshow-survey.md:  * Pres/v/g: [Source](https://github.com/feklee/presvg)
+content/post/html-slideshow-survey.md:    || [Demo](http://feklee.github.com/presvg/demo.html)
+content/post/html-slideshow-survey.md:  * PDFCube: [Home](http://code.100allora.it/pdfcube/) || [Source](https://github.com/baol/pdfcube)

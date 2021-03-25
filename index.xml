@@ -7,10 +7,61 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 29 Sep 2019 12:37:07 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 26 Jan 2021 09:37:33 -0600</lastBuildDate><atom:link href="https://mlavi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning AlpineLinux.org, Ansible.com, and Packer.io</title>
+      <link>https://mlavi.github.io/post/learning-alpine-linux-ansible-and-packer/</link>
+      <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/post/learning-alpine-linux-ansible-and-packer/</guid>
+      <description>&lt;p&gt;For my 2020-1 holiday break, I decided my next personal project would be to rebuild my home infrastructure on containers. I&amp;rsquo;d been inspired by a recent discovery of &lt;a href=&#34;https://linuxserver.io&#34;&gt;LinuxServer.io&lt;/a&gt;, where open source projects are built and run as containers. While I have a burning desire to better my Kubernetes practice, not enough of the world delivers software as a Helm chart, so merely running everything as containers would be a good intermediate step. Let me share my first six steps with examples&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
-	<atom:link href="https://mlavi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>US Sedition, Presidential Censure, and Impeachment</title>
+      <link>https://mlavi.github.io/post/personal/us-sedition-president-censure-and-impeachment/</link>
+      <pubDate>Sun, 10 Jan 2021 08:18:29 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/post/personal/us-sedition-president-censure-and-impeachment/</guid>
+      <description>&lt;p&gt;Democracy is a process: this past Wednesday was another test of United States democracy and a reckoning of our current administration&amp;rsquo;s dangerous tactics to stay in power. This has been another disheartening, depressing, embarrassing week in our enduring COVID-19 imposed lock down, but an older threat, the disease of poor thinking, was evident.&lt;/p&gt;</description>
+    </item>
     
+    <item>
+      <title>Why You Want Google Authenticator, but Don&#39;t Need It</title>
+      <link>https://mlavi.github.io/post/dynamic-passwords-topt/</link>
+      <pubDate>Mon, 14 Dec 2020 16:56:47 -0600</pubDate>
+      
+      <guid>https://mlavi.github.io/post/dynamic-passwords-topt/</guid>
+      <description>&lt;p&gt;Two factor authentication is an important safeguard for all of your accounts and it has proven itself by protecting one of the largest software engineering organizations in the world from breach. In order to easily control your safety and privacy without resorting to cloud service providers, let&amp;rsquo;s explore how to adopt dynamic passwords and avoid outsourcing your credentials!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The American Soul: A Way Forward on Juneteenth</title>
+      <link>https://mlavi.github.io/post/personal/blacklivesmatter/</link>
+      <pubDate>Sun, 07 Jun 2020 09:11:52 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/post/personal/blacklivesmatter/</guid>
+      <description>A State of Emergency In the past three months, the soul of America has been laid bare in increasing amounts as we address our society&amp;rsquo;s response to our impaired health, economic, and political processes. There is a single crisis in all of this: our attitude as citizens to come together and solve any problem. America has been divided and exploited by those who profit by perpetuating the current system of inequalities of our society.</description>
+    </item>
+    
+    <item>
+      <title>COVID-19 Resources</title>
+      <link>https://mlavi.github.io/post/covid-19_resources/</link>
+      <pubDate>Thu, 26 Mar 2020 12:23:12 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/post/covid-19_resources/</guid>
+      <description>&lt;p&gt;Some helpful resources for learning and understanding our global pandemic, which I hope unites us in achieving a global, human perspective: we&amp;rsquo;re all in this together.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Version Control for Operators</title>
+      <link>https://mlavi.github.io/post/git-for-operators/</link>
+      <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
+      
+      <guid>https://mlavi.github.io/post/git-for-operators/</guid>
+      <description>&lt;p&gt;Version Control is an essential tool making your work reproducible and visible, which can unlock profound amplifying effects of your contributions. As operators
+grow into developers, they can build toward state of the art &lt;a href=&#34;#gitops-the-convergence-of-devops&#34;&gt;GitOps&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>What is a DevOps Advocate?</title>
@@ -33,7 +84,7 @@ and testing as monitors.&lt;/p&gt;
 &lt;p&gt;The call for this happened over and over at DevOpsDays to answer: how does one
 learn DevOps, practice site reliability engineering, or have a full
 application lifecycle environment?&lt;/p&gt;
-&lt;p&gt;So let&#39;s create a minimal viable product &lt;a href=&#34;../devops-btd-pattern&#34;&gt;BTD scenario&lt;/a&gt;
+&lt;p&gt;So let&amp;rsquo;s create a minimal viable product &lt;a href=&#34;../devops-btd-pattern&#34;&gt;BTD scenario&lt;/a&gt;
 of my &lt;a href=&#34;../devops-automation&#34;&gt;DevOps Automation&lt;/a&gt; system,
 extend it to prefix Governance and suffix Management,
 and then drive maturity to illustrate and discuss best practices.&lt;/p&gt;</description>
@@ -59,7 +110,7 @@ exposure to handle every link in the chain to launch your first Nutanix Calm blu
 I took hiatus from my personal blog to explore, explain, and write a number
 of DevOps articles for my employer on the
 &lt;a href=&#34;http://calm.io/author/mark&#34;&gt;Calm.io blog&lt;/a&gt;. Nutanix acquired Calm.io and I
-am still part of the Nutanix Calm team, but I&#39;m re-posting these articles on
+am still part of the Nutanix Calm team, but I&amp;rsquo;m re-posting these articles on
 my personal blog since the originals are no longer directly accessible.
 I am also enhancing them to clarify language, add learnings,
 and append significant developments as &lt;a href=&#34;#postscripts&#34;&gt;postscripts&lt;/a&gt;.&lt;/p&gt;</description>
@@ -212,9 +263,7 @@ Release management and artifact repositories are they way we deliver software an
       <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
       
       <guid>https://mlavi.github.io/post/database_change_management/</guid>
-      <description>&lt;p&gt;Database configuration management tools allow us version the database and treat it like code!
-We want DevOps, not mysterious, hidden, hand crafted DBA ops whenever possible. Another
-flashback to 1998.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Database configuration management tools allow us version the database and treat it like code! We want DevOps, not mysterious, hidden, hand crafted DBA (pet) ops whenever possible. Another flashback to 1998.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -225,7 +274,7 @@ flashback to 1998.&lt;/p&gt;</description>
       <guid>https://mlavi.github.io/post/html-slideshow-survey/</guid>
       <description>&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
 We already have a universal, open system for communication
-called the web, so let&#39;s explore web presentation applications.&lt;/p&gt;</description>
+called the web, so let&amp;rsquo;s explore web presentation applications.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -286,11 +335,7 @@ but it is even better when you can optimize and render a new map in real-time!&l
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
       <guid>https://mlavi.github.io/about/</guid>
-      <description>&lt;p&gt;A DevOps professional with pioneering work on the world&#39;s biggest Internet real-time event
-and web sites across the engineering, operations, content, and marketing disciplines.
-Mark&#39;s focus is on people and software development along with system design and life cycle
-thinking: he can build, secure, scale, and manage teams, applications, and infrastructure
-to work together while planning and nurturing their continuous operations and improvement.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A DevOps professional with pioneering work on the world&amp;rsquo;s biggest Internet real-time event and web sites across the engineering, operations, content, and marketing disciplines. Mark&amp;rsquo;s focus is on people and software development along with system design and life cycle thinking: he can build, secure, scale, and manage teams, applications, and infrastructure to work together while planning and nurturing their continuous operations and improvement.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -302,6 +347,25 @@ to work together while planning and nurturing their continuous operations and im
       <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
 and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mlavi.github.io/draft/automatic_maturity_assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlavi.github.io/draft/automatic_maturity_assessment/</guid>
+      <description>tags: [&amp;lsquo;Maturity&amp;rsquo;] draft: true date: &amp;ldquo;2020-02-09T16:29:10-06:00&amp;rdquo; title: &amp;ldquo;Automated Maturity Assessment&amp;rdquo; Notes From JenkinsWorld 2019 SF, Salesforce talk  What does good look like?  Categorize criteria: building vs. deployment vs testing vs reporting 5 expertise levels: base, beginner, Intermediate, Advanced, Experts: show org examples   Team CI/CD adoption:  At SFDC.com, of 90 scrum teams, over 7 domains, 30 have adopted in first six months: asked the Product Owner, Team Lead, etc.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mlavi.github.io/draft/career-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlavi.github.io/draft/career-start/</guid>
+      <description>tags: [&amp;lsquo;career&amp;rsquo;, &amp;lsquo;DevOps&amp;rsquo;] draft: true date: &amp;ldquo;2020-02-09T16:29:10-06:00&amp;rdquo; title: &amp;ldquo;Career as a Feedback Loop&amp;rdquo; Career as a Feedback Loop: serial DevOps? Nomadic ramblings on the attention economy of cloud, web, Internet native
+I Couldn&amp;rsquo;t Get a Job with my Degree! After graduation with my B.S. Mechanical Engineering from Boston University, I began my search for work. It was during a recession. It wasn&amp;rsquo;t for a lack of trying, I sent out over a hundred resumes with customized cover letters.</description>
     </item>
     
   </channel>

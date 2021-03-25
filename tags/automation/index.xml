@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 18 Feb 2018 12:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://mlavi.github.io/tags/automation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 18 Feb 2018 12:00:00 -0700</lastBuildDate><atom:link href="https://mlavi.github.io/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Calm.io: a blog series recap!</title>
       <link>https://mlavi.github.io/post/calm.io-recap/</link>
@@ -22,7 +18,7 @@
 I took hiatus from my personal blog to explore, explain, and write a number
 of DevOps articles for my employer on the
 &lt;a href=&#34;http://calm.io/author/mark&#34;&gt;Calm.io blog&lt;/a&gt;. Nutanix acquired Calm.io and I
-am still part of the Nutanix Calm team, but I&#39;m re-posting these articles on
+am still part of the Nutanix Calm team, but I&amp;rsquo;m re-posting these articles on
 my personal blog since the originals are no longer directly accessible.
 I am also enhancing them to clarify language, add learnings,
 and append significant developments as &lt;a href=&#34;#postscripts&#34;&gt;postscripts&lt;/a&gt;.&lt;/p&gt;</description>
