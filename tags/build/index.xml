@@ -20,10 +20,10 @@ Release management and artifact repositories are they way we deliver software an
     
     <item>
       <title>Building the LAMP stack with Phing</title>
-      <link>https://mlavi.github.io/post/build-lamp-stack-with-phing/</link>
+      <link>http://mark.lavi.us/post/build_lamp_stack_with_phing/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/build-lamp-stack-with-phing/</guid>
+      <guid>http://mark.lavi.us/post/build_lamp_stack_with_phing/</guid>
       <description>&lt;p&gt;A flashback to 2007 with a tangible artifact in my journey to infrastructure as code: building the LAMP stack with Phing.&lt;/p&gt;</description>
     </item>
     
