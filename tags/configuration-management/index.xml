@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Configuration Management on Mark&#39;s Blog</title>
-    <link>https://mlavi.github.io/tags/configuration-management/</link>
+    <link>http://mark.lavi.us/tags/configuration-management/</link>
     <description>Recent content in Configuration Management on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 26 Jan 2021 09:37:33 -0600</lastBuildDate><atom:link href="https://mlavi.github.io/tags/configuration-management/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jan 2021 09:37:33 -0600</lastBuildDate><atom:link href="http://mark.lavi.us/tags/configuration-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning AlpineLinux.org, Ansible.com, and Packer.io</title>
-      <link>https://mlavi.github.io/post/learning-alpine-linux-ansible-and-packer/</link>
+      <link>http://mark.lavi.us/post/learning-alpine-linux-ansible-and-packer/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/post/learning-alpine-linux-ansible-and-packer/</guid>
+      <guid>http://mark.lavi.us/post/learning-alpine-linux-ansible-and-packer/</guid>
       <description>&lt;p&gt;For my 2020-1 holiday break, I decided my next personal project would be to rebuild my home infrastructure on containers. I&amp;rsquo;d been inspired by a recent discovery of &lt;a href=&#34;https://linuxserver.io&#34;&gt;LinuxServer.io&lt;/a&gt;, where open source projects are built and run as containers. While I have a burning desire to better my Kubernetes practice, not enough of the world delivers software as a Helm chart, so merely running everything as containers would be a good intermediate step. Let me share my first six steps with examples&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Reconciling Configuration Management and Immutable Infrastructure</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
       <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on May 26, 2016 at
 &lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&lt;/a&gt;
@@ -31,10 +31,10 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     
     <item>
       <title>Configuration Management in the DevOps World</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
       <pubDate>Tue, 24 May 2016 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on May 24, 2016 at
 &lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&lt;/a&gt;
@@ -43,10 +43,10 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     
     <item>
       <title>Container Infrastructure Strategy</title>
-      <link>https://mlavi.github.io/post/container-infrastructure-strategy/</link>
+      <link>http://mark.lavi.us/post/container-infrastructure-strategy/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/container-infrastructure-strategy/</guid>
+      <guid>http://mark.lavi.us/post/container-infrastructure-strategy/</guid>
       <description>&lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
 resembles virtual machines, includes the operating system user land, and desires configuration
 management. Does this starting point represent the opposite of container promise and the journey

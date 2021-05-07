@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mark&#39;s Blog</title>
-    <link>https://mlavi.github.io/post/</link>
+    <link>http://mark.lavi.us/post/</link>
     <description>Recent content in Posts on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 26 Jan 2021 09:37:33 -0600</lastBuildDate><atom:link href="https://mlavi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jan 2021 09:37:33 -0600</lastBuildDate><atom:link href="http://mark.lavi.us/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning AlpineLinux.org, Ansible.com, and Packer.io</title>
-      <link>https://mlavi.github.io/post/learning-alpine-linux-ansible-and-packer/</link>
+      <link>http://mark.lavi.us/post/learning-alpine-linux-ansible-and-packer/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/post/learning-alpine-linux-ansible-and-packer/</guid>
+      <guid>http://mark.lavi.us/post/learning-alpine-linux-ansible-and-packer/</guid>
       <description>&lt;p&gt;For my 2020-1 holiday break, I decided my next personal project would be to rebuild my home infrastructure on containers. I&amp;rsquo;d been inspired by a recent discovery of &lt;a href=&#34;https://linuxserver.io&#34;&gt;LinuxServer.io&lt;/a&gt;, where open source projects are built and run as containers. While I have a burning desire to better my Kubernetes practice, not enough of the world delivers software as a Helm chart, so merely running everything as containers would be a good intermediate step. Let me share my first six steps with examples&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>US Sedition, Presidential Censure, and Impeachment</title>
-      <link>https://mlavi.github.io/post/personal/us-sedition-president-censure-and-impeachment/</link>
+      <link>http://mark.lavi.us/post/personal/us-sedition-president-censure-and-impeachment/</link>
       <pubDate>Sun, 10 Jan 2021 08:18:29 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/post/personal/us-sedition-president-censure-and-impeachment/</guid>
+      <guid>http://mark.lavi.us/post/personal/us-sedition-president-censure-and-impeachment/</guid>
       <description>&lt;p&gt;Democracy is a process: this past Wednesday was another test of United States democracy and a reckoning of our current administration&amp;rsquo;s dangerous tactics to stay in power. This has been another disheartening, depressing, embarrassing week in our enduring COVID-19 imposed lock down, but an older threat, the disease of poor thinking, was evident.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Why You Want Google Authenticator, but Don&#39;t Need It</title>
-      <link>https://mlavi.github.io/post/dynamic-passwords-topt/</link>
+      <link>http://mark.lavi.us/post/dynamic-passwords-topt/</link>
       <pubDate>Mon, 14 Dec 2020 16:56:47 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/post/dynamic-passwords-topt/</guid>
+      <guid>http://mark.lavi.us/post/dynamic-passwords-topt/</guid>
       <description>&lt;p&gt;Two factor authentication is an important safeguard for all of your accounts and it has proven itself by protecting one of the largest software engineering organizations in the world from breach. In order to easily control your safety and privacy without resorting to cloud service providers, let&amp;rsquo;s explore how to adopt dynamic passwords and avoid outsourcing your credentials!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>The American Soul: A Way Forward on Juneteenth</title>
-      <link>https://mlavi.github.io/post/personal/blacklivesmatter/</link>
+      <link>http://mark.lavi.us/post/personal/blacklivesmatter/</link>
       <pubDate>Sun, 07 Jun 2020 09:11:52 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/post/personal/blacklivesmatter/</guid>
+      <guid>http://mark.lavi.us/post/personal/blacklivesmatter/</guid>
       <description>A State of Emergency In the past three months, the soul of America has been laid bare in increasing amounts as we address our society&amp;rsquo;s response to our impaired health, economic, and political processes. There is a single crisis in all of this: our attitude as citizens to come together and solve any problem. America has been divided and exploited by those who profit by perpetuating the current system of inequalities of our society.</description>
     </item>
     
     <item>
       <title>COVID-19 Resources</title>
-      <link>https://mlavi.github.io/post/covid-19_resources/</link>
+      <link>http://mark.lavi.us/post/covid-19_resources/</link>
       <pubDate>Thu, 26 Mar 2020 12:23:12 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/post/covid-19_resources/</guid>
+      <guid>http://mark.lavi.us/post/covid-19_resources/</guid>
       <description>&lt;p&gt;Some helpful resources for learning and understanding our global pandemic, which I hope unites us in achieving a global, human perspective: we&amp;rsquo;re all in this together.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Version Control for Operators</title>
-      <link>https://mlavi.github.io/post/git-for-operators/</link>
+      <link>http://mark.lavi.us/post/git-for-operators/</link>
       <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/post/git-for-operators/</guid>
+      <guid>http://mark.lavi.us/post/git-for-operators/</guid>
       <description>&lt;p&gt;Version Control is an essential tool making your work reproducible and visible, which can unlock profound amplifying effects of your contributions. As operators
 grow into developers, they can build toward state of the art &lt;a href=&#34;#gitops-the-convergence-of-devops&#34;&gt;GitOps&lt;/a&gt;!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>What is a DevOps Advocate?</title>
-      <link>https://mlavi.github.io/post/developer_relations_advocate/</link>
+      <link>http://mark.lavi.us/post/developer_relations_advocate/</link>
       <pubDate>Sun, 29 Sep 2019 12:37:07 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/post/developer_relations_advocate/</guid>
+      <guid>http://mark.lavi.us/post/developer_relations_advocate/</guid>
       <description>&lt;p&gt;What is an Advocate and what is it in context of Developer Relations (DevRel)? After more than twenty years, I have returned to the realm of DevRel: so what has changed and what has remained the same?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DevOps in a Box</title>
-      <link>https://mlavi.github.io/post/devops-in-a-box/</link>
+      <link>http://mark.lavi.us/post/devops-in-a-box/</link>
       <pubDate>Sat, 05 May 2018 13:42:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/devops-in-a-box/</guid>
+      <guid>http://mark.lavi.us/post/devops-in-a-box/</guid>
       <description>&lt;p&gt;My long time fantasy has been to demonstrate an entire CI/CD pipeline with
 continuous operations of applications to discuss behavior driven operations
 and testing as monitors.&lt;/p&gt;
@@ -92,20 +92,20 @@ and then drive maturity to illustrate and discuss best practices.&lt;/p&gt;</des
     
     <item>
       <title>SSH Key Authentication Overview</title>
-      <link>https://mlavi.github.io/post/ssh-key-authentication/</link>
+      <link>http://mark.lavi.us/post/ssh-key-authentication/</link>
       <pubDate>Sun, 22 Apr 2018 12:46:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/ssh-key-authentication/</guid>
+      <guid>http://mark.lavi.us/post/ssh-key-authentication/</guid>
       <description>&lt;p&gt;For those of you new to automation, it can be overwhelming on first
 exposure to handle every link in the chain to launch your first Nutanix Calm blueprint. Many Calm Marketplace blueprints leverage Linux, cloud-init, and SSH keypairs to enable security best-practices for composable infrastructure as code.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Calm.io: a blog series recap!</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/</link>
       <pubDate>Sun, 18 Feb 2018 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/</guid>
       <description>&lt;p&gt;From September 23, 2015 to May 26, 2016,
 I took hiatus from my personal blog to explore, explain, and write a number
 of DevOps articles for my employer on the
@@ -118,10 +118,10 @@ and append significant developments as &lt;a href=&#34;#postscripts&#34;&gt;post
     
     <item>
       <title>The DevOps Maturity Diagram</title>
-      <link>https://mlavi.github.io/post/devops-maturity-diagram/</link>
+      <link>http://mark.lavi.us/post/devops-maturity-diagram/</link>
       <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/devops-maturity-diagram/</guid>
+      <guid>http://mark.lavi.us/post/devops-maturity-diagram/</guid>
       <description>&lt;p&gt;The opening of
 &lt;a href=&#34;../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/&#34;&gt;my first Calm.io DevOps article&lt;/a&gt;
 started with:&lt;/p&gt;
@@ -136,10 +136,10 @@ to DevOps maturity.&lt;/p&gt;</description>
     
     <item>
       <title>Ten Steps from Pets to Cattle</title>
-      <link>https://mlavi.github.io/post/ten_steps_from_pets_to_cattle/</link>
+      <link>http://mark.lavi.us/post/ten_steps_from_pets_to_cattle/</link>
       <pubDate>Wed, 25 Jan 2017 11:05:13 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/ten_steps_from_pets_to_cattle/</guid>
+      <guid>http://mark.lavi.us/post/ten_steps_from_pets_to_cattle/</guid>
       <description>&lt;p&gt;Why do we need DevOps when IT and Operations succeed in their responsibility
 for security and uptime, using administrative tools to maintain, backup, and
 restore those systems? Because the operations domain must be documented,
@@ -152,10 +152,10 @@ mindset.&lt;/p&gt;</description>
     
     <item>
       <title>Reconciling Configuration Management and Immutable Infrastructure</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
       <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on May 26, 2016 at
 &lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&lt;/a&gt;
@@ -164,10 +164,10 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     
     <item>
       <title>Configuration Management in the DevOps World</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
       <pubDate>Tue, 24 May 2016 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on May 24, 2016 at
 &lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&lt;/a&gt;
@@ -176,10 +176,10 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     
     <item>
       <title>Declarative Operating Systems</title>
-      <link>https://mlavi.github.io/post/declarative_os/</link>
+      <link>http://mark.lavi.us/post/declarative_os/</link>
       <pubDate>Sat, 12 Mar 2016 15:44:02 -0800</pubDate>
       
-      <guid>https://mlavi.github.io/post/declarative_os/</guid>
+      <guid>http://mark.lavi.us/post/declarative_os/</guid>
       <description>&lt;p&gt;A new breed of operating systems adopt declarative configuration management for
 an interesting hybrid! OS maintenance of long-lived servers remains a challenge
 for our &amp;ldquo;mutable&amp;rdquo; infrastructure.&lt;/p&gt;</description>
@@ -187,10 +187,10 @@ for our &amp;ldquo;mutable&amp;rdquo; infrastructure.&lt;/p&gt;</description>
     
     <item>
       <title>Demystifying Continuous Integration, Delivery, and Deployment</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
       <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on December 28, 2015 at
 &lt;a href=&#34;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,&#34;&gt;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,&lt;/a&gt;
@@ -200,10 +200,10 @@ and slightly enhanced on February 18, 2018, be sure to see the
     
     <item>
       <title>Infrastructure as Code and Calm Blueprints</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</link>
       <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on November 3, 2015 at
 &lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,&lt;/a&gt;
@@ -212,10 +212,10 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     
     <item>
       <title>Why is DevOps So Hard?</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-why-is-devops-so-hard/</link>
       <pubDate>Tue, 20 Oct 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on October 20, 2015 at
 &lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/,&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/,&lt;/a&gt;
@@ -225,10 +225,10 @@ and slightly enhanced on February 27, 2018, be sure to see the
     
     <item>
       <title>DevOps Demystified</title>
-      <link>https://mlavi.github.io/post/devops_demystified/</link>
+      <link>http://mark.lavi.us/post/devops_demystified/</link>
       <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/devops_demystified/</guid>
+      <guid>http://mark.lavi.us/post/devops_demystified/</guid>
       <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
 for many software engineering organizations. Let me define DevOps to help you
 understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!&lt;/p&gt;</description>
@@ -236,10 +236,10 @@ understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultur
     
     <item>
       <title>I Dream of DevOps, but What is DevOps?</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</link>
       <pubDate>Wed, 23 Sep 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on September 23, 2015 at
 &lt;a href=&#34;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/,&#34;&gt;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/,&lt;/a&gt;
@@ -249,29 +249,29 @@ and slightly enhanced on February 18, 2018, be sure to see the
     
     <item>
       <title>Artifact Repositories</title>
-      <link>https://mlavi.github.io/post/artifact_repositories/</link>
+      <link>http://mark.lavi.us/post/artifact_repositories/</link>
       <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/artifact_repositories/</guid>
+      <guid>http://mark.lavi.us/post/artifact_repositories/</guid>
       <description>&lt;p&gt;The past: desktop builds uploaded to the FTP server; the present: global artifact delivery networks.
 Release management and artifact repositories are they way we deliver software and infrastructure today.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Database Change Management</title>
-      <link>https://mlavi.github.io/post/database_change_management/</link>
+      <link>http://mark.lavi.us/post/database_change_management/</link>
       <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/database_change_management/</guid>
+      <guid>http://mark.lavi.us/post/database_change_management/</guid>
       <description>&lt;p&gt;Database configuration management tools allow us version the database and treat it like code! We want DevOps, not mysterious, hidden, hand crafted DBA (pet) ops whenever possible. Another flashback to 1998.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>HTML Slide Show Survey</title>
-      <link>https://mlavi.github.io/post/html-slideshow-survey/</link>
+      <link>http://mark.lavi.us/post/html-slideshow-survey/</link>
       <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/html-slideshow-survey/</guid>
+      <guid>http://mark.lavi.us/post/html-slideshow-survey/</guid>
       <description>&lt;p&gt;PowerPoint and other proprietary slide-ware, bah!
 We already have a universal, open system for communication
 called the web, so let&amp;rsquo;s explore web presentation applications.&lt;/p&gt;</description>
@@ -288,10 +288,10 @@ called the web, so let&amp;rsquo;s explore web presentation applications.&lt;/p&
     
     <item>
       <title>Container Infrastructure Strategy</title>
-      <link>https://mlavi.github.io/post/container-infrastructure-strategy/</link>
+      <link>http://mark.lavi.us/post/container-infrastructure-strategy/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/container-infrastructure-strategy/</guid>
+      <guid>http://mark.lavi.us/post/container-infrastructure-strategy/</guid>
       <description>&lt;p&gt;In these early years of containers, &amp;ldquo;heavy containers&amp;rdquo; represent a typical approach which
 resembles virtual machines, includes the operating system user land, and desires configuration
 management. Does this starting point represent the opposite of container promise and the journey
@@ -300,30 +300,30 @@ to immutable infrastructure?&lt;/p&gt;</description>
     
     <item>
       <title>DevOps BTD Pattern for Continuous Deployment</title>
-      <link>https://mlavi.github.io/post/devops-btd-pattern/</link>
+      <link>http://mark.lavi.us/post/devops-btd-pattern/</link>
       <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/devops-btd-pattern/</guid>
+      <guid>http://mark.lavi.us/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
 You reinforce your goals to improve code flow and service design on the way to test driven development!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>https://mlavi.github.io/post/devops-automation/</link>
+      <link>http://mark.lavi.us/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/devops-automation/</guid>
+      <guid>http://mark.lavi.us/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
 Via open source and this blog, we can elevate the state of our software engineering and service design!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>https://mlavi.github.io/post/diagram/</link>
+      <link>http://mark.lavi.us/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/diagram/</guid>
+      <guid>http://mark.lavi.us/post/diagram/</guid>
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project:
 one should start with a map of the world before deciding where to focus,
 but it is even better when you can optimize and render a new map in real-time!&lt;/p&gt;</description>
@@ -331,10 +331,10 @@ but it is even better when you can optimize and render a new map in real-time!&l
     
     <item>
       <title>Time for a new development project!</title>
-      <link>https://mlavi.github.io/post/first/</link>
+      <link>http://mark.lavi.us/post/first/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>https://mlavi.github.io/post/first/</guid>
+      <guid>http://mark.lavi.us/post/first/</guid>
       <description>&lt;p&gt;What does one do when laid off? You need to scratch that itch and address the things
 that are in the back of your head and occasionally keep you awake at night. Technical dreams
 and technical debt follow as I start my Infrastructure as Code blog.&lt;/p&gt;</description>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Mark&#39;s Blog</title>
-    <link>https://mlavi.github.io/categories/</link>
+    <link>http://mark.lavi.us/categories/</link>
     <description>Recent content in Categories on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright><atom:link href="https://mlavi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright><atom:link href="http://mark.lavi.us/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

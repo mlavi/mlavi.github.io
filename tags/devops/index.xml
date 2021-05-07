@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DevOps on Mark&#39;s Blog</title>
-    <link>https://mlavi.github.io/tags/devops/</link>
+    <link>http://mark.lavi.us/tags/devops/</link>
     <description>Recent content in DevOps on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 29 Sep 2019 12:37:07 -0600</lastBuildDate><atom:link href="https://mlavi.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Sep 2019 12:37:07 -0600</lastBuildDate><atom:link href="http://mark.lavi.us/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is a DevOps Advocate?</title>
-      <link>https://mlavi.github.io/post/developer_relations_advocate/</link>
+      <link>http://mark.lavi.us/post/developer_relations_advocate/</link>
       <pubDate>Sun, 29 Sep 2019 12:37:07 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/post/developer_relations_advocate/</guid>
+      <guid>http://mark.lavi.us/post/developer_relations_advocate/</guid>
       <description>&lt;p&gt;What is an Advocate and what is it in context of Developer Relations (DevRel)? After more than twenty years, I have returned to the realm of DevRel: so what has changed and what has remained the same?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DevOps in a Box</title>
-      <link>https://mlavi.github.io/post/devops-in-a-box/</link>
+      <link>http://mark.lavi.us/post/devops-in-a-box/</link>
       <pubDate>Sat, 05 May 2018 13:42:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/devops-in-a-box/</guid>
+      <guid>http://mark.lavi.us/post/devops-in-a-box/</guid>
       <description>&lt;p&gt;My long time fantasy has been to demonstrate an entire CI/CD pipeline with
 continuous operations of applications to discuss behavior driven operations
 and testing as monitors.&lt;/p&gt;
@@ -37,10 +37,10 @@ and then drive maturity to illustrate and discuss best practices.&lt;/p&gt;</des
     
     <item>
       <title>Calm.io: a blog series recap!</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/</link>
       <pubDate>Sun, 18 Feb 2018 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/</guid>
       <description>&lt;p&gt;From September 23, 2015 to May 26, 2016,
 I took hiatus from my personal blog to explore, explain, and write a number
 of DevOps articles for my employer on the
@@ -53,10 +53,10 @@ and append significant developments as &lt;a href=&#34;#postscripts&#34;&gt;post
     
     <item>
       <title>The DevOps Maturity Diagram</title>
-      <link>https://mlavi.github.io/post/devops-maturity-diagram/</link>
+      <link>http://mark.lavi.us/post/devops-maturity-diagram/</link>
       <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/devops-maturity-diagram/</guid>
+      <guid>http://mark.lavi.us/post/devops-maturity-diagram/</guid>
       <description>&lt;p&gt;The opening of
 &lt;a href=&#34;../../post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/&#34;&gt;my first Calm.io DevOps article&lt;/a&gt;
 started with:&lt;/p&gt;
@@ -71,10 +71,10 @@ to DevOps maturity.&lt;/p&gt;</description>
     
     <item>
       <title>Ten Steps from Pets to Cattle</title>
-      <link>https://mlavi.github.io/post/ten_steps_from_pets_to_cattle/</link>
+      <link>http://mark.lavi.us/post/ten_steps_from_pets_to_cattle/</link>
       <pubDate>Wed, 25 Jan 2017 11:05:13 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/ten_steps_from_pets_to_cattle/</guid>
+      <guid>http://mark.lavi.us/post/ten_steps_from_pets_to_cattle/</guid>
       <description>&lt;p&gt;Why do we need DevOps when IT and Operations succeed in their responsibility
 for security and uptime, using administrative tools to maintain, backup, and
 restore those systems? Because the operations domain must be documented,
@@ -87,10 +87,10 @@ mindset.&lt;/p&gt;</description>
     
     <item>
       <title>Reconciling Configuration Management and Immutable Infrastructure</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
       <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on May 26, 2016 at
 &lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&lt;/a&gt;
@@ -99,10 +99,10 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     
     <item>
       <title>Configuration Management in the DevOps World</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
       <pubDate>Tue, 24 May 2016 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on May 24, 2016 at
 &lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&lt;/a&gt;
@@ -111,10 +111,10 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     
     <item>
       <title>Demystifying Continuous Integration, Delivery, and Deployment</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
       <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on December 28, 2015 at
 &lt;a href=&#34;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,&#34;&gt;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,&lt;/a&gt;
@@ -124,10 +124,10 @@ and slightly enhanced on February 18, 2018, be sure to see the
     
     <item>
       <title>Infrastructure as Code and Calm Blueprints</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</link>
       <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on November 3, 2015 at
 &lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,&lt;/a&gt;
@@ -136,10 +136,10 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     
     <item>
       <title>Why is DevOps So Hard?</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-why-is-devops-so-hard/</link>
       <pubDate>Tue, 20 Oct 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on October 20, 2015 at
 &lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/,&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/,&lt;/a&gt;
@@ -149,10 +149,10 @@ and slightly enhanced on February 27, 2018, be sure to see the
     
     <item>
       <title>DevOps Demystified</title>
-      <link>https://mlavi.github.io/post/devops_demystified/</link>
+      <link>http://mark.lavi.us/post/devops_demystified/</link>
       <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/devops_demystified/</guid>
+      <guid>http://mark.lavi.us/post/devops_demystified/</guid>
       <description>&lt;p&gt;For a term that is not even six years old, DevOps remains a mysterious pursuit
 for many software engineering organizations. Let me define DevOps to help you
 understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultural term!&lt;/p&gt;</description>
@@ -160,10 +160,10 @@ understand and chart your own journey. &lt;em&gt;Hint:&lt;/em&gt; it is a cultur
     
     <item>
       <title>I Dream of DevOps, but What is DevOps?</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</link>
       <pubDate>Wed, 23 Sep 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-i-dream-of-devops-but-what-is-devops/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on September 23, 2015 at
 &lt;a href=&#34;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/,&#34;&gt;http://calm.io/2015/09/23/i-dream-of-devops-but-what-is-devops/,&lt;/a&gt;
@@ -173,30 +173,30 @@ and slightly enhanced on February 18, 2018, be sure to see the
     
     <item>
       <title>DevOps BTD Pattern for Continuous Deployment</title>
-      <link>https://mlavi.github.io/post/devops-btd-pattern/</link>
+      <link>http://mark.lavi.us/post/devops-btd-pattern/</link>
       <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/devops-btd-pattern/</guid>
+      <guid>http://mark.lavi.us/post/devops-btd-pattern/</guid>
       <description>&lt;p&gt;What happens when you find the same macro and micro pattern in your automation diagram?
 You reinforce your goals to improve code flow and service design on the way to test driven development!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>https://mlavi.github.io/post/devops-automation/</link>
+      <link>http://mark.lavi.us/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/devops-automation/</guid>
+      <guid>http://mark.lavi.us/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
 Via open source and this blog, we can elevate the state of our software engineering and service design!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>https://mlavi.github.io/post/diagram/</link>
+      <link>http://mark.lavi.us/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/diagram/</guid>
+      <guid>http://mark.lavi.us/post/diagram/</guid>
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project:
 one should start with a map of the world before deciding where to focus,
 but it is even better when you can optimize and render a new map in real-time!&lt;/p&gt;</description>
@@ -204,10 +204,10 @@ but it is even better when you can optimize and render a new map in real-time!&l
     
     <item>
       <title>About Mark</title>
-      <link>https://mlavi.github.io/about/</link>
+      <link>http://mark.lavi.us/about/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>https://mlavi.github.io/about/</guid>
+      <guid>http://mark.lavi.us/about/</guid>
       <description>&lt;p&gt;A DevOps professional with pioneering work on the world&amp;rsquo;s biggest Internet real-time event and web sites across the engineering, operations, content, and marketing disciplines. Mark&amp;rsquo;s focus is on people and software development along with system design and life cycle thinking: he can build, secure, scale, and manage teams, applications, and infrastructure to work together while planning and nurturing their continuous operations and improvement.&lt;/p&gt;</description>
     </item>
     

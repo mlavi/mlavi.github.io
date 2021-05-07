@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>password on Mark&#39;s Blog</title>
-    <link>https://mlavi.github.io/tags/password/</link>
+    <link>http://mark.lavi.us/tags/password/</link>
     <description>Recent content in password on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 14 Dec 2020 16:56:47 -0600</lastBuildDate><atom:link href="https://mlavi.github.io/tags/password/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Dec 2020 16:56:47 -0600</lastBuildDate><atom:link href="http://mark.lavi.us/tags/password/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why You Want Google Authenticator, but Don&#39;t Need It</title>
-      <link>https://mlavi.github.io/post/dynamic-passwords-topt/</link>
+      <link>http://mark.lavi.us/post/dynamic-passwords-topt/</link>
       <pubDate>Mon, 14 Dec 2020 16:56:47 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/post/dynamic-passwords-topt/</guid>
+      <guid>http://mark.lavi.us/post/dynamic-passwords-topt/</guid>
       <description>&lt;p&gt;Two factor authentication is an important safeguard for all of your accounts and it has proven itself by protecting one of the largest software engineering organizations in the world from breach. In order to easily control your safety and privacy without resorting to cloud service providers, let&amp;rsquo;s explore how to adopt dynamic passwords and avoid outsourcing your credentials!&lt;/p&gt;</description>
     </item>
     

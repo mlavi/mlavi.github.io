@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>automation on Mark&#39;s Blog</title>
-    <link>https://mlavi.github.io/tags/automation/</link>
+    <link>http://mark.lavi.us/tags/automation/</link>
     <description>Recent content in automation on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 18 Feb 2018 12:00:00 -0700</lastBuildDate><atom:link href="https://mlavi.github.io/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Feb 2018 12:00:00 -0700</lastBuildDate><atom:link href="http://mark.lavi.us/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Calm.io: a blog series recap!</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/</link>
       <pubDate>Sun, 18 Feb 2018 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/</guid>
       <description>&lt;p&gt;From September 23, 2015 to May 26, 2016,
 I took hiatus from my personal blog to explore, explain, and write a number
 of DevOps articles for my employer on the
@@ -26,10 +26,10 @@ and append significant developments as &lt;a href=&#34;#postscripts&#34;&gt;post
     
     <item>
       <title>Reconciling Configuration Management and Immutable Infrastructure</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</link>
       <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-reconciling_configuration_management_and_immutable_infrastructure/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on May 26, 2016 at
 &lt;a href=&#34;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&#34;&gt;http://calm.io/2016/05/26/reconciling-configuration-management-and-immutable-infrastructure/,&lt;/a&gt;
@@ -38,10 +38,10 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     
     <item>
       <title>Configuration Management in the DevOps World</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</link>
       <pubDate>Tue, 24 May 2016 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-configuration-management-in-the-devops-world/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on May 24, 2016 at
 &lt;a href=&#34;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&#34;&gt;http://calm.io/2016/05/24/configuration-management-in-the-devops-world/,&lt;/a&gt;
@@ -50,10 +50,10 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     
     <item>
       <title>Demystifying Continuous Integration, Delivery, and Deployment</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</link>
       <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-demystifying-continuous-integration-delivery-and-deployment/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on December 28, 2015 at
 &lt;a href=&#34;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,&#34;&gt;http://calm.io/2015/12/28/demystifying-continuous-integration-delivery-and-deployment/,&lt;/a&gt;
@@ -63,10 +63,10 @@ and slightly enhanced on February 18, 2018, be sure to see the
     
     <item>
       <title>Infrastructure as Code and Calm Blueprints</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</link>
       <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-infrastructure-as-code-and-calm-blueprints/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on November 3, 2015 at
 &lt;a href=&#34;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,&#34;&gt;http://calm.io/2015/11/03/infrastructure-as-code-and-calm-blueprints/,&lt;/a&gt;
@@ -75,10 +75,10 @@ and slightly enhanced on February 18, 2018.&lt;/p&gt;</description>
     
     <item>
       <title>Why is DevOps So Hard?</title>
-      <link>https://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</link>
+      <link>http://mark.lavi.us/post/calm.io-recap/calm.io-why-is-devops-so-hard/</link>
       <pubDate>Tue, 20 Oct 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
+      <guid>http://mark.lavi.us/post/calm.io-recap/calm.io-why-is-devops-so-hard/</guid>
       <description>&lt;p&gt;This &lt;a href=&#34;../../post/calm.io-recap/&#34;&gt;Calm.io blog recap&lt;/a&gt;
 was originally written and posted by me on October 20, 2015 at
 &lt;a href=&#34;http://calm.io/2015/10/20/why-is-devops-so-hard/,&#34;&gt;http://calm.io/2015/10/20/why-is-devops-so-hard/,&lt;/a&gt;
@@ -88,20 +88,20 @@ and slightly enhanced on February 27, 2018, be sure to see the
     
     <item>
       <title>Today&#39;s DevOps Automation Diagram</title>
-      <link>https://mlavi.github.io/post/devops-automation/</link>
+      <link>http://mark.lavi.us/post/devops-automation/</link>
       <pubDate>Wed, 11 Mar 2015 10:35:41 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/devops-automation/</guid>
+      <guid>http://mark.lavi.us/post/devops-automation/</guid>
       <description>&lt;p&gt;#shipit and #failfast: I want to share and discuss the DevOps Automation Diagram for continuous deployment.
 Via open source and this blog, we can elevate the state of our software engineering and service design!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A DevOps Automation State Diagram</title>
-      <link>https://mlavi.github.io/post/diagram/</link>
+      <link>http://mark.lavi.us/post/diagram/</link>
       <pubDate>Tue, 10 Mar 2015 23:16:27 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/diagram/</guid>
+      <guid>http://mark.lavi.us/post/diagram/</guid>
       <description>&lt;p&gt;Wonderful accomplishments kicked-off my Infrastructure as Code project:
 one should start with a map of the world before deciding where to focus,
 but it is even better when you can optimize and render a new map in real-time!&lt;/p&gt;</description>

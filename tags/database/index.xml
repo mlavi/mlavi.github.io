@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>database on Mark&#39;s Blog</title>
-    <link>https://mlavi.github.io/tags/database/</link>
+    <link>http://mark.lavi.us/tags/database/</link>
     <description>Recent content in database on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 17 Aug 2015 21:09:12 -0700</lastBuildDate><atom:link href="https://mlavi.github.io/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Aug 2015 21:09:12 -0700</lastBuildDate><atom:link href="http://mark.lavi.us/tags/database/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Database Change Management</title>
-      <link>https://mlavi.github.io/post/database_change_management/</link>
+      <link>http://mark.lavi.us/post/database_change_management/</link>
       <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/post/database_change_management/</guid>
+      <guid>http://mark.lavi.us/post/database_change_management/</guid>
       <description>&lt;p&gt;Database configuration management tools allow us version the database and treat it like code! We want DevOps, not mysterious, hidden, hand crafted DBA (pet) ops whenever possible. Another flashback to 1998.&lt;/p&gt;</description>
     </item>
     

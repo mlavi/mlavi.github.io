@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>webmaster on Mark&#39;s Blog</title>
-    <link>https://mlavi.github.io/tags/webmaster/</link>
+    <link>http://mark.lavi.us/tags/webmaster/</link>
     <description>Recent content in webmaster on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 10 Apr 2015 08:44:19 -0700</lastBuildDate><atom:link href="https://mlavi.github.io/tags/webmaster/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Apr 2015 08:44:19 -0700</lastBuildDate><atom:link href="http://mark.lavi.us/tags/webmaster/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building the LAMP stack with Phing</title>
       <link>http://mark.lavi.us/post/build_lamp_stack_with_phing/</link>
@@ -19,10 +19,10 @@
     
     <item>
       <title>About Mark</title>
-      <link>https://mlavi.github.io/about/</link>
+      <link>http://mark.lavi.us/about/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>https://mlavi.github.io/about/</guid>
+      <guid>http://mark.lavi.us/about/</guid>
       <description>&lt;p&gt;A DevOps professional with pioneering work on the world&amp;rsquo;s biggest Internet real-time event and web sites across the engineering, operations, content, and marketing disciplines. Mark&amp;rsquo;s focus is on people and software development along with system design and life cycle thinking: he can build, secure, scale, and manage teams, applications, and infrastructure to work together while planning and nurturing their continuous operations and improvement.&lt;/p&gt;</description>
     </item>
     

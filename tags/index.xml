@@ -2,594 +2,594 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Mark&#39;s Blog</title>
-    <link>https://mlavi.github.io/tags/</link>
+    <link>http://mark.lavi.us/tags/</link>
     <description>Recent content in Tags on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 26 Jan 2021 09:37:33 -0600</lastBuildDate><atom:link href="https://mlavi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jan 2021 09:37:33 -0600</lastBuildDate><atom:link href="http://mark.lavi.us/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>alpine</title>
-      <link>https://mlavi.github.io/tags/alpine/</link>
+      <link>http://mark.lavi.us/tags/alpine/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/alpine/</guid>
+      <guid>http://mark.lavi.us/tags/alpine/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ansible</title>
-      <link>https://mlavi.github.io/tags/ansible/</link>
+      <link>http://mark.lavi.us/tags/ansible/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/ansible/</guid>
+      <guid>http://mark.lavi.us/tags/ansible/</guid>
       <description></description>
     </item>
     
     <item>
       <title>artifact</title>
-      <link>https://mlavi.github.io/tags/artifact/</link>
+      <link>http://mark.lavi.us/tags/artifact/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/artifact/</guid>
+      <guid>http://mark.lavi.us/tags/artifact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bootstrap</title>
-      <link>https://mlavi.github.io/tags/bootstrap/</link>
+      <link>http://mark.lavi.us/tags/bootstrap/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/bootstrap/</guid>
+      <guid>http://mark.lavi.us/tags/bootstrap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cloud-init</title>
-      <link>https://mlavi.github.io/tags/cloud-init/</link>
+      <link>http://mark.lavi.us/tags/cloud-init/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/cloud-init/</guid>
+      <guid>http://mark.lavi.us/tags/cloud-init/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Configuration Management</title>
-      <link>https://mlavi.github.io/tags/configuration-management/</link>
+      <link>http://mark.lavi.us/tags/configuration-management/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/configuration-management/</guid>
+      <guid>http://mark.lavi.us/tags/configuration-management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>developer</title>
-      <link>https://mlavi.github.io/tags/developer/</link>
+      <link>http://mark.lavi.us/tags/developer/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/developer/</guid>
+      <guid>http://mark.lavi.us/tags/developer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Infrastructure as Code</title>
-      <link>https://mlavi.github.io/tags/infrastructure-as-code/</link>
+      <link>http://mark.lavi.us/tags/infrastructure-as-code/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/infrastructure-as-code/</guid>
+      <guid>http://mark.lavi.us/tags/infrastructure-as-code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>https://mlavi.github.io/tags/linux/</link>
+      <link>http://mark.lavi.us/tags/linux/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/linux/</guid>
+      <guid>http://mark.lavi.us/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>operating system</title>
-      <link>https://mlavi.github.io/tags/operating-system/</link>
+      <link>http://mark.lavi.us/tags/operating-system/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/operating-system/</guid>
+      <guid>http://mark.lavi.us/tags/operating-system/</guid>
       <description></description>
     </item>
     
     <item>
       <title>packer</title>
-      <link>https://mlavi.github.io/tags/packer/</link>
+      <link>http://mark.lavi.us/tags/packer/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/packer/</guid>
+      <guid>http://mark.lavi.us/tags/packer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pets</title>
-      <link>https://mlavi.github.io/tags/pets/</link>
+      <link>http://mark.lavi.us/tags/pets/</link>
       <pubDate>Tue, 26 Jan 2021 09:37:33 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/pets/</guid>
+      <guid>http://mark.lavi.us/tags/pets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>america</title>
-      <link>https://mlavi.github.io/tags/america/</link>
+      <link>http://mark.lavi.us/tags/america/</link>
       <pubDate>Sun, 10 Jan 2021 08:18:29 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/america/</guid>
+      <guid>http://mark.lavi.us/tags/america/</guid>
       <description></description>
     </item>
     
     <item>
       <title>personal</title>
-      <link>https://mlavi.github.io/tags/personal/</link>
+      <link>http://mark.lavi.us/tags/personal/</link>
       <pubDate>Sun, 10 Jan 2021 08:18:29 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/personal/</guid>
+      <guid>http://mark.lavi.us/tags/personal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>politics</title>
-      <link>https://mlavi.github.io/tags/politics/</link>
+      <link>http://mark.lavi.us/tags/politics/</link>
       <pubDate>Sun, 10 Jan 2021 08:18:29 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/politics/</guid>
+      <guid>http://mark.lavi.us/tags/politics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2FA</title>
-      <link>https://mlavi.github.io/tags/2fa/</link>
+      <link>http://mark.lavi.us/tags/2fa/</link>
       <pubDate>Mon, 14 Dec 2020 16:56:47 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/2fa/</guid>
+      <guid>http://mark.lavi.us/tags/2fa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>password</title>
-      <link>https://mlavi.github.io/tags/password/</link>
+      <link>http://mark.lavi.us/tags/password/</link>
       <pubDate>Mon, 14 Dec 2020 16:56:47 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/password/</guid>
+      <guid>http://mark.lavi.us/tags/password/</guid>
       <description></description>
     </item>
     
     <item>
       <title>security</title>
-      <link>https://mlavi.github.io/tags/security/</link>
+      <link>http://mark.lavi.us/tags/security/</link>
       <pubDate>Mon, 14 Dec 2020 16:56:47 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/security/</guid>
+      <guid>http://mark.lavi.us/tags/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TOTP</title>
-      <link>https://mlavi.github.io/tags/totp/</link>
+      <link>http://mark.lavi.us/tags/totp/</link>
       <pubDate>Mon, 14 Dec 2020 16:56:47 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/totp/</guid>
+      <guid>http://mark.lavi.us/tags/totp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>advocate</title>
-      <link>https://mlavi.github.io/tags/advocate/</link>
+      <link>http://mark.lavi.us/tags/advocate/</link>
       <pubDate>Sun, 07 Jun 2020 09:11:52 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/tags/advocate/</guid>
+      <guid>http://mark.lavi.us/tags/advocate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BlackLivesMatter</title>
-      <link>https://mlavi.github.io/tags/blacklivesmatter/</link>
+      <link>http://mark.lavi.us/tags/blacklivesmatter/</link>
       <pubDate>Sun, 07 Jun 2020 09:11:52 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/tags/blacklivesmatter/</guid>
+      <guid>http://mark.lavi.us/tags/blacklivesmatter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>culture</title>
-      <link>https://mlavi.github.io/tags/culture/</link>
+      <link>http://mark.lavi.us/tags/culture/</link>
       <pubDate>Sun, 07 Jun 2020 09:11:52 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/tags/culture/</guid>
+      <guid>http://mark.lavi.us/tags/culture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>education</title>
-      <link>https://mlavi.github.io/tags/education/</link>
+      <link>http://mark.lavi.us/tags/education/</link>
       <pubDate>Sun, 07 Jun 2020 09:11:52 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/tags/education/</guid>
+      <guid>http://mark.lavi.us/tags/education/</guid>
       <description></description>
     </item>
     
     <item>
       <title>life</title>
-      <link>https://mlavi.github.io/tags/life/</link>
+      <link>http://mark.lavi.us/tags/life/</link>
       <pubDate>Thu, 26 Mar 2020 12:23:12 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/tags/life/</guid>
+      <guid>http://mark.lavi.us/tags/life/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>https://mlavi.github.io/tags/git/</link>
+      <link>http://mark.lavi.us/tags/git/</link>
       <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/tags/git/</guid>
+      <guid>http://mark.lavi.us/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GitOps</title>
-      <link>https://mlavi.github.io/tags/gitops/</link>
+      <link>http://mark.lavi.us/tags/gitops/</link>
       <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/tags/gitops/</guid>
+      <guid>http://mark.lavi.us/tags/gitops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>operators</title>
-      <link>https://mlavi.github.io/tags/operators/</link>
+      <link>http://mark.lavi.us/tags/operators/</link>
       <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/tags/operators/</guid>
+      <guid>http://mark.lavi.us/tags/operators/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>https://mlavi.github.io/tags/tutorial/</link>
+      <link>http://mark.lavi.us/tags/tutorial/</link>
       <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/tags/tutorial/</guid>
+      <guid>http://mark.lavi.us/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>version-control</title>
-      <link>https://mlavi.github.io/tags/version-control/</link>
+      <link>http://mark.lavi.us/tags/version-control/</link>
       <pubDate>Wed, 25 Mar 2020 15:15:18 -0500</pubDate>
       
-      <guid>https://mlavi.github.io/tags/version-control/</guid>
+      <guid>http://mark.lavi.us/tags/version-control/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DevOps</title>
-      <link>https://mlavi.github.io/tags/devops/</link>
+      <link>http://mark.lavi.us/tags/devops/</link>
       <pubDate>Sun, 29 Sep 2019 12:37:07 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/devops/</guid>
+      <guid>http://mark.lavi.us/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DevRel</title>
-      <link>https://mlavi.github.io/tags/devrel/</link>
+      <link>http://mark.lavi.us/tags/devrel/</link>
       <pubDate>Sun, 29 Sep 2019 12:37:07 -0600</pubDate>
       
-      <guid>https://mlavi.github.io/tags/devrel/</guid>
+      <guid>http://mark.lavi.us/tags/devrel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pattern</title>
-      <link>https://mlavi.github.io/tags/pattern/</link>
+      <link>http://mark.lavi.us/tags/pattern/</link>
       <pubDate>Sat, 05 May 2018 13:42:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/pattern/</guid>
+      <guid>http://mark.lavi.us/tags/pattern/</guid>
       <description></description>
     </item>
     
     <item>
       <title>authentication</title>
-      <link>https://mlavi.github.io/tags/authentication/</link>
+      <link>http://mark.lavi.us/tags/authentication/</link>
       <pubDate>Sun, 22 Apr 2018 12:46:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/authentication/</guid>
+      <guid>http://mark.lavi.us/tags/authentication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Calm</title>
-      <link>https://mlavi.github.io/tags/calm/</link>
+      <link>http://mark.lavi.us/tags/calm/</link>
       <pubDate>Sun, 22 Apr 2018 12:46:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/calm/</guid>
+      <guid>http://mark.lavi.us/tags/calm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ssh</title>
-      <link>https://mlavi.github.io/tags/ssh/</link>
+      <link>http://mark.lavi.us/tags/ssh/</link>
       <pubDate>Sun, 22 Apr 2018 12:46:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/ssh/</guid>
+      <guid>http://mark.lavi.us/tags/ssh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>https://mlavi.github.io/tags/windows/</link>
+      <link>http://mark.lavi.us/tags/windows/</link>
       <pubDate>Sun, 22 Apr 2018 12:46:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/windows/</guid>
+      <guid>http://mark.lavi.us/tags/windows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>automation</title>
-      <link>https://mlavi.github.io/tags/automation/</link>
+      <link>http://mark.lavi.us/tags/automation/</link>
       <pubDate>Sun, 18 Feb 2018 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/automation/</guid>
+      <guid>http://mark.lavi.us/tags/automation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>diagram</title>
-      <link>https://mlavi.github.io/tags/diagram/</link>
+      <link>http://mark.lavi.us/tags/diagram/</link>
       <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/diagram/</guid>
+      <guid>http://mark.lavi.us/tags/diagram/</guid>
       <description></description>
     </item>
     
     <item>
       <title>maturity</title>
-      <link>https://mlavi.github.io/tags/maturity/</link>
+      <link>http://mark.lavi.us/tags/maturity/</link>
       <pubDate>Wed, 12 Apr 2017 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/maturity/</guid>
+      <guid>http://mark.lavi.us/tags/maturity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cattle</title>
-      <link>https://mlavi.github.io/tags/cattle/</link>
+      <link>http://mark.lavi.us/tags/cattle/</link>
       <pubDate>Wed, 25 Jan 2017 11:05:13 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/cattle/</guid>
+      <guid>http://mark.lavi.us/tags/cattle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>immutable</title>
-      <link>https://mlavi.github.io/tags/immutable/</link>
+      <link>http://mark.lavi.us/tags/immutable/</link>
       <pubDate>Thu, 26 May 2016 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/immutable/</guid>
+      <guid>http://mark.lavi.us/tags/immutable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>declarative</title>
-      <link>https://mlavi.github.io/tags/declarative/</link>
+      <link>http://mark.lavi.us/tags/declarative/</link>
       <pubDate>Sat, 12 Mar 2016 15:44:02 -0800</pubDate>
       
-      <guid>https://mlavi.github.io/tags/declarative/</guid>
+      <guid>http://mark.lavi.us/tags/declarative/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuous Delivery</title>
-      <link>https://mlavi.github.io/tags/continuous-delivery/</link>
+      <link>http://mark.lavi.us/tags/continuous-delivery/</link>
       <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/continuous-delivery/</guid>
+      <guid>http://mark.lavi.us/tags/continuous-delivery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuous Deployment</title>
-      <link>https://mlavi.github.io/tags/continuous-deployment/</link>
+      <link>http://mark.lavi.us/tags/continuous-deployment/</link>
       <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/continuous-deployment/</guid>
+      <guid>http://mark.lavi.us/tags/continuous-deployment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuous Integration</title>
-      <link>https://mlavi.github.io/tags/continuous-integration/</link>
+      <link>http://mark.lavi.us/tags/continuous-integration/</link>
       <pubDate>Mon, 28 Dec 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/continuous-integration/</guid>
+      <guid>http://mark.lavi.us/tags/continuous-integration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blueprint</title>
-      <link>https://mlavi.github.io/tags/blueprint/</link>
+      <link>http://mark.lavi.us/tags/blueprint/</link>
       <pubDate>Tue, 03 Nov 2015 12:00:00 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/blueprint/</guid>
+      <guid>http://mark.lavi.us/tags/blueprint/</guid>
       <description></description>
     </item>
     
     <item>
       <title>definition</title>
-      <link>https://mlavi.github.io/tags/definition/</link>
+      <link>http://mark.lavi.us/tags/definition/</link>
       <pubDate>Tue, 13 Oct 2015 12:03:32 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/definition/</guid>
+      <guid>http://mark.lavi.us/tags/definition/</guid>
       <description></description>
     </item>
     
     <item>
       <title>build</title>
-      <link>https://mlavi.github.io/tags/build/</link>
+      <link>http://mark.lavi.us/tags/build/</link>
       <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/build/</guid>
+      <guid>http://mark.lavi.us/tags/build/</guid>
       <description></description>
     </item>
     
     <item>
       <title>distribution</title>
-      <link>https://mlavi.github.io/tags/distribution/</link>
+      <link>http://mark.lavi.us/tags/distribution/</link>
       <pubDate>Wed, 26 Aug 2015 08:59:59 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/distribution/</guid>
+      <guid>http://mark.lavi.us/tags/distribution/</guid>
       <description></description>
     </item>
     
     <item>
       <title>code</title>
-      <link>https://mlavi.github.io/tags/code/</link>
+      <link>http://mark.lavi.us/tags/code/</link>
       <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/code/</guid>
+      <guid>http://mark.lavi.us/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>database</title>
-      <link>https://mlavi.github.io/tags/database/</link>
+      <link>http://mark.lavi.us/tags/database/</link>
       <pubDate>Mon, 17 Aug 2015 21:09:12 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/database/</guid>
+      <guid>http://mark.lavi.us/tags/database/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HTML</title>
-      <link>https://mlavi.github.io/tags/html/</link>
+      <link>http://mark.lavi.us/tags/html/</link>
       <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/html/</guid>
+      <guid>http://mark.lavi.us/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>slide</title>
-      <link>https://mlavi.github.io/tags/slide/</link>
+      <link>http://mark.lavi.us/tags/slide/</link>
       <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/slide/</guid>
+      <guid>http://mark.lavi.us/tags/slide/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web</title>
-      <link>https://mlavi.github.io/tags/web/</link>
+      <link>http://mark.lavi.us/tags/web/</link>
       <pubDate>Thu, 23 Apr 2015 12:59:26 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/web/</guid>
+      <guid>http://mark.lavi.us/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LAMP</title>
-      <link>https://mlavi.github.io/tags/lamp/</link>
+      <link>http://mark.lavi.us/tags/lamp/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/lamp/</guid>
+      <guid>http://mark.lavi.us/tags/lamp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Phing</title>
-      <link>https://mlavi.github.io/tags/phing/</link>
+      <link>http://mark.lavi.us/tags/phing/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/phing/</guid>
+      <guid>http://mark.lavi.us/tags/phing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sgi</title>
-      <link>https://mlavi.github.io/tags/sgi/</link>
+      <link>http://mark.lavi.us/tags/sgi/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/sgi/</guid>
+      <guid>http://mark.lavi.us/tags/sgi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>webmaster</title>
-      <link>https://mlavi.github.io/tags/webmaster/</link>
+      <link>http://mark.lavi.us/tags/webmaster/</link>
       <pubDate>Fri, 10 Apr 2015 08:44:19 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/webmaster/</guid>
+      <guid>http://mark.lavi.us/tags/webmaster/</guid>
       <description></description>
     </item>
     
     <item>
       <title>container</title>
-      <link>https://mlavi.github.io/tags/container/</link>
+      <link>http://mark.lavi.us/tags/container/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/container/</guid>
+      <guid>http://mark.lavi.us/tags/container/</guid>
       <description></description>
     </item>
     
     <item>
       <title>infrastructure</title>
-      <link>https://mlavi.github.io/tags/infrastructure/</link>
+      <link>http://mark.lavi.us/tags/infrastructure/</link>
       <pubDate>Sat, 04 Apr 2015 07:55:39 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/infrastructure/</guid>
+      <guid>http://mark.lavi.us/tags/infrastructure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>deploy</title>
-      <link>https://mlavi.github.io/tags/deploy/</link>
+      <link>http://mark.lavi.us/tags/deploy/</link>
       <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/deploy/</guid>
+      <guid>http://mark.lavi.us/tags/deploy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test</title>
-      <link>https://mlavi.github.io/tags/test/</link>
+      <link>http://mark.lavi.us/tags/test/</link>
       <pubDate>Wed, 18 Mar 2015 21:02:15 -0700</pubDate>
       
-      <guid>https://mlavi.github.io/tags/test/</guid>
+      <guid>http://mark.lavi.us/tags/test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>about</title>
-      <link>https://mlavi.github.io/tags/about/</link>
+      <link>http://mark.lavi.us/tags/about/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>https://mlavi.github.io/tags/about/</guid>
+      <guid>http://mark.lavi.us/tags/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>career</title>
-      <link>https://mlavi.github.io/tags/career/</link>
+      <link>http://mark.lavi.us/tags/career/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>https://mlavi.github.io/tags/career/</guid>
+      <guid>http://mark.lavi.us/tags/career/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CMS</title>
-      <link>https://mlavi.github.io/tags/cms/</link>
+      <link>http://mark.lavi.us/tags/cms/</link>
       <pubDate>Fri, 06 Mar 2015 14:11:47 -0800</pubDate>
       
-      <guid>https://mlavi.github.io/tags/cms/</guid>
+      <guid>http://mark.lavi.us/tags/cms/</guid>
       <description></description>
     </item>
     
